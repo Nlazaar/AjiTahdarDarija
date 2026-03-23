@@ -1,0 +1,14 @@
+🔥 PHASE 8 — IMPORT DES CONTENUS DARija
+PROMPT 8 — Script d’importation
+
+Crée un script d’importation qui lit des fichiers JSON contenant :
+- vocabulaire
+- expressions
+- grammaire
+- dialogues
+- catégories
+
+Le script doit :
+- insérer dans Vocabulary, Lessons, Modules, Exercises
+- gérer les relations automatiquement
+- éviter les doublons

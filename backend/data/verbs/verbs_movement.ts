@@ -1,0 +1,22 @@
+export const darijaVerbsMovement = [
+  { darija: "مشى", latin: "mcha", fr: "marcher / aller" },
+  { darija: "جري", latin: "jri", fr: "courir" },
+  { darija: "نطّ", latin: "naTT", fr: "sauter" },
+  { darija: "طلع", latin: "Tla3", fr: "monter" },
+  { darija: "هبط", latin: "hbaT", fr: "descendre" },
+  { darija: "دخل", latin: "dkhel", fr: "entrer" },
+  { darija: "خرج", latin: "khrej", fr: "sortir" },
+  { darija: "دوز", latin: "doz", fr: "passer" },
+  { darija: "رجع", latin: "rja3", fr: "revenir / retourner" },
+  { darija: "دار دورة", latin: "dar dowra", fr: "faire un tour" },
+  { darija: "قرب", latin: "qrreb", fr: "s’approcher" },
+  { darija: "بعد", latin: "b3ed", fr: "s’éloigner" },
+  { darija: "سافر", latin: "safer", fr: "voyager" },
+  { darija: "هاجر", latin: "hajer", fr: "émigrer" },
+  { darija: "تقدّم", latin: "tqaddem", fr: "avancer" },
+  { darija: "تراجع", latin: "t raja3", fr: "reculer" },
+  { darija: "دار لفة", latin: "dar laffa", fr: "faire un détour" },
+  { darija: "تسرّح", latin: "tsarra7", fr: "se balader" },
+  { darija: "تخطّى", latin: "tkhTTa", fr: "franchir / dépasser" },
+  { darija: "تزحلق", latin: "tz7lq", fr: "glisser" }
+];

@@ -1,0 +1,22 @@
+export const darijaBody = [
+  { darija: "راس", latin: "ras", fr: "tête" },
+  { darija: "وجه", latin: "wjeh", fr: "visage" },
+  { darija: "عين", latin: "3in", fr: "œil" },
+  { darija: "ودن", latin: "wedn", fr: "oreille" },
+  { darija: "فم", latin: "femm", fr: "bouche" },
+  { darija: "سنّان", latin: "snan", fr: "dents" },
+  { darija: "رقبة", latin: "rqba", fr: "cou" },
+  { darija: "كتاف", latin: "ktaf", fr: "épaules" },
+  { darija: "يد", latin: "yed", fr: "main" },
+  { darija: "صبع", latin: "Sba3", fr: "doigt" },
+  { darija: "صدر", latin: "Sdr", fr: "poitrine" },
+  { darija: "ظهر", latin: "Dher", fr: "dos" },
+  { darija: "كرش", latin: "kerch", fr: "ventre" },
+  { darija: "رجل", latin: "rjel", fr: "jambe" },
+  { darija: "ركبة", latin: "rkba", fr: "genou" },
+  { darija: "صبع الرجل", latin: "Sba3 rjel", fr: "orteil" },
+  { darija: "قلب", latin: "qalb", fr: "cœur" },
+  { darija: "عظم", latin: "3Dhm", fr: "os" },
+  { darija: "جلد", latin: "jeld", fr: "peau" },
+  { darija: "دماغ", latin: "dmagh", fr: "cerveau" }
+];

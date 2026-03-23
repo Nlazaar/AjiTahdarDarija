@@ -1,0 +1,128 @@
+PROMPT PHASE 34 — Intégration TTS/ASR (Backend + Web + Mobile)
+Je veux ajouter un système complet d’audio TTS/ASR pour la prononciation dans mon application.
+
+==========================
+1. BACKEND — AUDIO ENGINE
+==========================
+
+1.1 Créer un module AudioModule :
+    - AudioService
+    - AudioController
+
+1.2 Ajouter un endpoint :
+    GET /audio/tts?text=...
+    → retourne un fichier audio (mp3 ou wav)
+    → utiliser un provider TTS :
+        - Google Cloud TTS
+        - Azure Cognitive Services
+        - ou Coqui TTS (open-source)
+
+1.3 Ajouter un endpoint :
+    POST /audio/asr
+    → reçoit un fichier audio (base64 ou multipart)
+    → utilise un provider ASR :
+        - Whisper (OpenAI)
+        - Vosk (open-source)
+        - Azure Speech-to-Text
+
+1.4 Ajouter un système de scoring :
+    - comparer la transcription ASR avec la phrase attendue
+    - calculer un score 0–100 basé sur :
+        - distance de Levenshtein
+        - erreurs phonétiques
+        - omissions
+        - rythme
+
+1.5 Ajouter un endpoint :
+    POST /audio/pronunciation-score
+    Body : { expectedText, userAudio }
+    → retourne :
+        { score, errors, suggestions }
+
+==========================
+2. WEB — INTÉGRATION TTS/ASR
+==========================
+
+2.1 Ajouter un hook useTTS() :
+    - play(text)
+    - stop()
+
+2.2 Ajouter un hook useASR() :
+    - startRecording()
+    - stopRecording()
+    - sendToBackend()
+    - recevoir transcription + score
+
+2.3 Ajouter un composant PronunciationExercise.tsx :
+    - bouton “Écouter”
+    - bouton “Parler”
+    - afficher transcription
+    - afficher score
+    - afficher feedback
+
+2.4 Ajouter un composant ListeningExercise.tsx :
+    - jouer audio
+    - demander transcription
+    - comparer avec réponse
+
+==========================
+3. MOBILE — INTÉGRATION TTS/ASR
+==========================
+
+3.1 Ajouter un hook useTTS() :
+    - utiliser expo-speech
+    - play(text)
+    - stop()
+
+3.2 Ajouter un hook useASR() :
+    - utiliser expo-av + expo-file-system
+    - startRecording()
+    - stopRecording()
+    - envoyer audio au backend
+    - recevoir transcription + score
+
+3.3 Ajouter un composant PronunciationExercise.tsx :
+    - bouton “Écouter”
+    - bouton “Parler”
+    - afficher transcription
+    - afficher score
+
+3.4 Ajouter un composant ListeningExercise.tsx :
+    - jouer audio
+    - demander transcription
+
+==========================
+4. EXERCICES AUDIO
+==========================
+
+4.1 Ajouter un type d’exercice “listen” :
+    - écouter → écrire ce qu’on entend
+
+4.2 Ajouter un type d’exercice “repeat” :
+    - écouter → répéter → scoring
+
+4.3 Ajouter un type d’exercice “dictation” :
+    - TTS → transcription → correction
+
+==========================
+5. DESIGN & UX
+==========================
+
+5.1 Ajouter des animations :
+    - waveform pendant l’enregistrement
+    - cercle qui pulse pendant l’écoute
+    - feedback visuel (vert/rouge)
+
+5.2 Ajouter des sons :
+    - début enregistrement
+    - fin enregistrement
+    - succès
+    - erreur
+
+==========================
+6. STOCKAGE & PERFORMANCE
+==========================
+
+6.1 Cacher les fichiers audio TTS générés (Redis ou disque)
+6.2 Limiter la taille des enregistrements
+6.3 Nettoyer les fichiers temporaires

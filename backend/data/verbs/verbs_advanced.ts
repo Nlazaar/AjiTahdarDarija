@@ -1,0 +1,22 @@
+export const darijaAdvancedVerbs = [
+  { darija: "ناقش", latin: "naqach", fr: "discuter / débattre" },
+  { darija: "حلّل", latin: "7allel", fr: "analyser" },
+  { darija: "خطّط", latin: "khaTTaT", fr: "planifier" },
+  { darija: "نظّم", latin: "naDDem", fr: "organiser" },
+  { darija: "راجع", latin: "raja3", fr: "réviser / revoir" },
+  { darija: "طوّر", latin: "Tawwer", fr: "développer / améliorer" },
+  { darija: "اقترح", latin: "qtar7", fr: "proposer" },
+  { darija: "تفاوض", latin: "tfawDe", fr: "négocier" },
+  { darija: "تأكّد", latin: "ta2akkad", fr: "vérifier / s’assurer" },
+  { darija: "ركّز", latin: "rakkaz", fr: "se concentrer" },
+  { darija: "تواصل", latin: "twaSal", fr: "communiquer" },
+  { darija: "تكيّف", latin: "takyaf", fr: "s’adapter" },
+  { darija: "تجاهل", latin: "tjahl", fr: "ignorer" },
+  { darija: "استفد", latin: "stafed", fr: "profiter / bénéficier" },
+  { darija: "ساهم", latin: "sahm", fr: "contribuer" },
+  { darija: "تعمّق", latin: "t3ammaq", fr: "approfondir" },
+  { darija: "توقّع", latin: "twaqqa3", fr: "prévoir / anticiper" },
+  { darija: "استثمر", latin: "stathmar", fr: "investir" },
+  { darija: "حلّ", latin: "7ell", fr: "résoudre" },
+  { darija: "واجه", latin: "wajeh", fr: "faire face à / affronter" }
+];

@@ -1,0 +1,18 @@
+PHASE 11 — Installer les dépendances et générer Prisma
+Tu dois maintenant exécuter les commandes système pour que ton projet fonctionne.
+👉 Dans le dossier backend :
+
+npm install
+npx prisma generate
+npx prisma migrate dev --name init
+
+👉 Dans le dossier web :
+
+npm install
+npm run dev
+
+👉 Dans le dossier mobile :
+
+npm install
+expo start
+

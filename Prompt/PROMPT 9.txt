@@ -1,0 +1,10 @@
+🔥 PHASE 9 — DESIGN SYSTEM
+PROMPT 9 — Identité visuelle
+
+Crée un design system inspiré de Duolingo mais avec une identité marocaine moderne :
+- couleurs chaudes (ocre, vert, bleu Majorelle)
+- icônes arrondies
+- typographie lisible
+- style friendly et motivant
+
+Génère les styles globaux, thèmes, tokens, et composants UI.

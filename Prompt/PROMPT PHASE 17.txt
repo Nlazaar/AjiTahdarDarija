@@ -1,0 +1,32 @@
+Je veux intégrer la révision intelligente dans l’app mobile Expo.
+
+Fais les actions suivantes :
+
+1. Dans /mobile/lib/api.ts :
+   ajoute :
+   - getReviewItems()
+   - submitReview()
+   - getReviewStats()
+
+2. Dans /mobile/app/review.tsx :
+   - charge les items
+   - si aucun → afficher “Rien à réviser”
+   - sinon :
+       afficher un exercice à la fois
+       types :
+           mcq
+           translate
+           fill
+
+3. Crée ReviewExerciseWrapper.tsx :
+   - barre de progression
+   - wrapper visuel
+   - bouton “Je ne sais pas”
+
+4. Crée ReviewResult.tsx :
+   - score
+   - erreurs
+   - message motivant
+   - bouton retour
+
+5. Ajouter un bouton “Révision” dans l’écran progression

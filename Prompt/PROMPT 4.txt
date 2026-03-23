@@ -1,0 +1,16 @@
+🔥 PHASE 4 — FRONT WEB (Next.js)
+PROMPT 4 — Architecture Web
+
+Crée une architecture Next.js 14 (App Router) pour une app d’apprentissage de la darija.
+Écrans :
+
+- Home
+- Connexion / Inscription
+- Arbre de progression
+- Leçon
+- Révision
+- Profil
+- Paramètres
+
+Ajoute TailwindCSS + shadcn/ui.
+Crée les composants réutilisables : Button, Card, ProgressBar, LessonCard, ModuleCard.

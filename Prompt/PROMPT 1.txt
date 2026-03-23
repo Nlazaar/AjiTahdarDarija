@@ -1,0 +1,18 @@
+🔥 PHASE 1 — INITIALISATION DU PROJET
+(Tu colles, Copilot construit.)
+PROMPT 1 — Création de la structure complète du projet
+
+
+Je veux créer une application d’apprentissage de la darija marocaine, style Duolingo, avec deux versions :
+- Web (Next.js 14)
+- Mobile Android (React Native + Expo)
+- Backend (NestJS)
+- Base de données PostgreSQL
+
+Crée-moi la structure suivante :
+
+/backend  → NestJS + Prisma + PostgreSQL
+/web      → Next.js 14 + App Router + Tailwind + shadcn/ui
+/mobile   → React Native + Expo + expo-router
+
+Prépare les fichiers initiaux, les scripts npm, les dépendances essentielles, et une architecture modulaire et scalable.

@@ -1,0 +1,16 @@
+🔥 PHASE 6 — API LEÇONS + EXERCICES
+PROMPT 6 — Endpoints pédagogiques
+
+Crée les endpoints suivants :
+
+GET /modules
+GET /modules/:id/lessons
+GET /lessons/:id
+GET /lessons/:id/exercises
+POST /lessons/:id/submit
+
+La réponse doit inclure :
+- score
+- erreurs
+- XP gagné
+- progression mise à jour

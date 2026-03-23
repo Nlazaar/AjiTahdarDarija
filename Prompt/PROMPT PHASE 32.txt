@@ -1,0 +1,38 @@
+Je veux ajouter un système de packs de vocabulaire avancés.
+
+==========================
+1. BACKEND
+==========================
+
+1.1 Ajouter un modèle VocabularyPack :
+    - id
+    - title
+    - description
+    - difficulty
+    - category
+    - premiumOnly
+
+1.2 Ajouter un endpoint :
+    GET /packs
+    GET /packs/:id
+    GET /packs/:id/words
+
+==========================
+2. WEB
+==========================
+
+2.1 Ajouter une page /packs :
+    - liste des packs
+    - filtres (difficulté, catégorie)
+
+2.2 Ajouter une page /packs/[id] :
+    - détails du pack
+    - liste des mots
+    - bouton “Commencer”
+
+==========================
+3. MOBILE
+==========================
+
+3.1 Ajouter un écran Packs
+3.2 Ajouter un écran PackDetails

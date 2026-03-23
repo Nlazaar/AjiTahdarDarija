@@ -1,0 +1,22 @@
+export const darijaJobs = [
+  { darija: "خدمة", latin: "khdma", fr: "travail / job" },
+  { darija: "خدام", latin: "khddam", fr: "travailleur" },
+  { darija: "طبيب", latin: "Tbib", fr: "médecin" },
+  { darija: "ممرّض", latin: "mommreD", fr: "infirmier" },
+  { darija: "أستاذ", latin: "ostad", fr: "professeur" },
+  { darija: "مهندس", latin: "mohandis", fr: "ingénieur" },
+  { darija: "محاسب", latin: "m7aseb", fr: "comptable" },
+  { darija: "محامي", latin: "mo7ami", fr: "avocat" },
+  { darija: "شرطي", latin: "chorti", fr: "policier" },
+  { darija: "جندي", latin: "jondi", fr: "soldat" },
+  { darija: "نادل", latin: "nadel", fr: "serveur" },
+  { darija: "طباخ", latin: "Tbakh", fr: "cuisinier" },
+  { darija: "خبّاز", latin: "khabbaz", fr: "boulanger" },
+  { darija: "حلاق", latin: "7llaq", fr: "coiffeur / barbier" },
+  { darija: "سائق", latin: "sa2iq", fr: "chauffeur" },
+  { darija: "فلاح", latin: "fella7", fr: "agriculteur" },
+  { darija: "نجّار", latin: "njjar", fr: "menuisier" },
+  { darija: "بنّاء", latin: "banna2", fr: "maçon" },
+  { darija: "ميكانيكي", latin: "mikaniki", fr: "mécanicien" },
+  { darija: "تاجر", latin: "tajer", fr: "commerçant" }
+];

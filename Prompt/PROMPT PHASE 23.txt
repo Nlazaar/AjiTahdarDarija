@@ -1,0 +1,31 @@
+PROMPT PHASE 20 — Préparation V1 (à coller dans la racine du projet)
+
+Je veux préparer la version V1 de l’application.
+
+Fais les actions suivantes :
+
+1. Crée un fichier VERSION.md :
+   - version actuelle : 1.0.0
+   - changelog
+   - roadmap V1.1, V1.2, V2
+
+2. Crée un fichier TODO_V1.md :
+   - liste des tâches restantes
+   - priorités
+   - bugs connus
+   - améliorations futures
+
+3. Crée un fichier QA_CHECKLIST.md :
+   - tests manuels à effectuer
+   - tests API
+   - tests UI
+   - tests mobile
+   - tests de performance
+   - tests de sécurité
+
+4. Crée un fichier RELEASE_NOTES.md :
+   - résumé de la V1
+   - fonctionnalités incluses
+   - limitations
+   - prochaines étapes
+

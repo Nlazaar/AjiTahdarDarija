@@ -1,0 +1,47 @@
+PROMPT PHASE 20 — Stabilisation front web (à coller dans /web)
+Je veux stabiliser et optimiser le front Next.js 14 avant la V1.
+
+Fais les actions suivantes :
+
+1. Ajouter un ErrorBoundary global :
+   - afficher un message propre en cas d’erreur
+   - bouton “Recharger”
+
+2. Ajouter un Loader global :
+   - spinner
+   - utilisé pour les pages async
+
+3. Ajouter un système de Toasts :
+   - succès
+   - erreur
+   - info
+
+4. Ajouter un hook useApi() :
+   - wrapper autour fetch()
+   - gère :
+       - loading
+       - error
+       - retry
+       - token JWT
+       - redirection si 401
+
+5. Optimiser les pages :
+   - progression
+   - leçon
+   - révision
+   - profil
+   - settings
+
+6. Ajouter un composant UI :
+   - SkeletonLoader pour les chargements
+
+7. Ajouter un fichier constants.ts :
+   - couleurs
+   - tailles
+   - API_URL
+   - messages d’erreur
+
+8. Nettoyer le code :
+   - supprimer les console.log
+   - organiser les composants
+   - factoriser les duplications

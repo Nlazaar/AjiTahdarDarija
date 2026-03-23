@@ -1,0 +1,28 @@
+{
+  "name": "darija-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "eas:build:android": "eas build --platform android --profile production",
+    "expo:publish": "expo publish"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^3.0.1",
+    "@types/react": "~18.0.27",
+    "expo": "~48.0.0",
+    "expo-router": "^1.5.3",
+    "jwt-decode": "^4.0.0",
+    "expo-secure-store": "~12.0.0",
+    "react": "18.2.0",
+    "react-native": "0.71.14",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react": "^7.37.5",
+    "typescript": "^5.0.0"
+  }
+}

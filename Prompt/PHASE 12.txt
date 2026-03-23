@@ -1,0 +1,17 @@
+PHASE 12 — Vérifier que tout démarre
+Tu dois vérifier :
+✔ Backend démarre
+
+npm run start:dev
+
+✔ Web démarre
+
+npm run dev
+
+✔ Mobile démarre
+
+expo start
+
+
+
+Si les trois tournent → tu as un MVP fonctionnel.

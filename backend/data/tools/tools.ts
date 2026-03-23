@@ -1,0 +1,22 @@
+export const darijaTools = [
+  { darija: "مطرقة", latin: "mTaqa", fr: "marteau" },
+  { darija: "مفك", latin: "mfakk", fr: "tournevis" },
+  { darija: "برغي", latin: "borghi", fr: "vis" },
+  { darija: "مسمار", latin: "msmar", fr: "clou" },
+  { darija: "كماشة", latin: "kmacha", fr: "pince" },
+  { darija: "منشار", latin: "menshar", fr: "scie" },
+  { darija: "متر", latin: "mitr", fr: "mètre" },
+  { darija: "مفتاح ربط", latin: "mfta7 rbat", fr: "clé à molette" },
+  { darija: "صندوق العدة", latin: "sondouq l3dda", fr: "boîte à outils" },
+  { darija: "لاصق", latin: "lasq", fr: "colle" },
+  { darija: "شريط لاصق", latin: "chrit lasq", fr: "ruban adhésif" },
+  { darija: "كماشة كهربائية", latin: "kmacha kahraba2iya", fr: "pince électrique" },
+  { darija: "مفك براغي", latin: "mfakk braghi", fr: "tournevis cruciforme" },
+  { darija: "مفتاح أنابيب", latin: "mfta7 anabib", fr: "clé à tuyau" },
+  { darija: "مستوى", latin: "mostawa", fr: "niveau à bulle" },
+  { darija: "مثقاب", latin: "mthqeb", fr: "perceuse" },
+  { darija: "رمل ورق", latin: "rml wrq", fr: "papier de verre" },
+  { darija: "كماشة قطع", latin: "kmacha qTa3", fr: "pince coupante" },
+  { darija: "كماشة ضغط", latin: "kmacha DaghT", fr: "pince multiprise" },
+  { darija: "مفتاح صواميل", latin: "mfta7 SwaMil", fr: "clé pour écrous" }
+];

@@ -1,0 +1,22 @@
+export const darijaHomeObjects = [
+  { darija: "باب", latin: "bab", fr: "porte" },
+  { darija: "شرجم", latin: "cherjm", fr: "fenêtre" },
+  { darija: "طابلة", latin: "tabla", fr: "table" },
+  { darija: "كرسي", latin: "kursi", fr: "chaise" },
+  { darija: "فراش", latin: "frach", fr: "lit / matelas" },
+  { darija: "مخدة", latin: "mkheda", fr: "oreiller" },
+  { darija: "زربية", latin: "zrbya", fr: "tapis" },
+  { darija: "تلاجة", latin: "tlaja", fr: "réfrigérateur" },
+  { darija: "فران", latin: "frran", fr: "four" },
+  { darija: "كوزينة", latin: "kouzina", fr: "cuisine" },
+  { darija: "كاس", latin: "kas", fr: "verre" },
+  { darija: "طبسيل", latin: "Tbssil", fr: "assiette" },
+  { darija: "معلقة", latin: "m3lqa", fr: "cuillère" },
+  { darija: "فرّاشة", latin: "frrasha", fr: "balai" },
+  { darija: "ماكينة الصابون", latin: "makinat ssaboun", fr: "machine à laver" },
+  { darija: "تلفازة", latin: "tlfaza", fr: "télévision" },
+  { darija: "ريموت", latin: "remote", fr: "télécommande" },
+  { darija: "حاسوب", latin: "7asoub", fr: "ordinateur" },
+  { darija: "مصباح", latin: "msba7", fr: "lampe" },
+  { darija: "ساعة حائط", latin: "sa3a 7a2iT", fr: "horloge murale" }
+];

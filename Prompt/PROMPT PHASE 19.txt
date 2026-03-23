@@ -1,0 +1,135 @@
+Je veux préparer le déploiement complet de mon application :
+
+- Backend NestJS → Railway
+- Web Next.js → Vercel
+- Mobile Expo → EAS (Play Store)
+
+Fais les actions suivantes :
+
+==========================
+1. BACKEND → RAILWAY
+==========================
+
+1.1 Crée un fichier Dockerfile optimisé pour NestJS :
+- build stage + production stage
+- utilise node:18-alpine
+- compile le projet
+- copie uniquement dist + node_modules prod
+
+1.2 Crée un fichier .dockerignore :
+- node_modules
+- dist
+- .env
+- logs
+
+1.3 Mets à jour package.json :
+- scripts :
+    "build": "nest build"
+    "start:prod": "node dist/main.js"
+
+1.4 Prépare un fichier railway.json :
+- service type : node
+- build command : npm install && npm run build
+- start command : npm run start:prod
+
+1.5 Ajoute un README_DEPLOY_BACKEND.md :
+- étapes pour déployer sur Railway
+- variables d’environnement nécessaires :
+    DATABASE_URL
+    JWT_SECRET
+    PORT
+
+==========================
+2. WEB → VERCEL
+==========================
+
+2.1 Crée un fichier vercel.json :
+- framework : nextjs
+- output : standalone
+- routes optimisées
+
+2.2 Mets à jour package.json :
+- "build": "next build"
+- "start": "next start"
+
+2.3 Ajoute un Dockerfile pour Vercel (optionnel) :
+- FROM node:18-alpine
+- build Next.js en mode standalone
+
+2.4 Ajoute un README_DEPLOY_WEB.md :
+- comment connecter le repo à Vercel
+- comment configurer les variables d’environnement :
+    NEXT_PUBLIC_API_URL
+    NEXT_PUBLIC_ENV=production
+
+==========================
+3. MOBILE → EXPO EAS
+==========================
+
+3.1 Mets à jour eas.json :
+- profiles :
+    "production": {
+        "android": {
+            "buildType": "app-bundle"
+        }
+    }
+
+3.2 Mets à jour app.json :
+- slug
+- version
+- android.package
+- icônes
+- splash screen
+
+3.3 Ajoute un fichier README_DEPLOY_MOBILE.md :
+- comment installer EAS CLI
+- comment exécuter :
+    eas build -p android --profile production
+- comment soumettre sur Play Store :
+    eas submit -p android
+
+==========================
+4. CI/CD AUTOMATIQUE
+==========================
+
+4.1 Crée un workflow GitHub Actions pour le backend :
+- déclencheur : push sur main
+- build Docker
+- déploiement Railway automatique
+
+4.2 Crée un workflow GitHub Actions pour le web :
+- déclencheur : push sur main
+- build Next.js
+- déploiement Vercel automatique
+
+4.3 Crée un workflow GitHub Actions pour mobile :
+- déclencheur : tag v*
+- build EAS
+- upload automatique sur Expo
+
+==========================
+5. VARIABLES D’ENVIRONNEMENT
+==========================
+
+Crée un fichier .env.example à la racine du projet avec :
+
+BACKEND:
+DATABASE_URL=
+JWT_SECRET=
+PORT=3000
+
+WEB:
+NEXT_PUBLIC_API_URL=
+
+MOBILE:
+EXPO_PUBLIC_API_URL=
+
+==========================
+6. DOCUMENTATION
+==========================
+
+Crée un fichier DEPLOYMENT_OVERVIEW.md qui explique :
+- comment déployer chaque partie
+- comment configurer les secrets GitHub
+- comment configurer Railway, Vercel, Expo
+- comment tester la production

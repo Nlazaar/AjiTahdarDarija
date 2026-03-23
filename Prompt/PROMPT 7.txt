@@ -1,0 +1,18 @@
+🔥 PHASE 7 — GAMIFICATION
+PROMPT 7 — XP, streak, cœurs, badges
+
+Ajoute un système de gamification complet :
+
+- XP
+- streak
+- cœurs
+- badges
+- niveaux
+
+Endpoints :
+POST /gamification/xp
+POST /gamification/streak
+POST /gamification/hearts
+GET /gamification/badges
+
+Ajoute la logique métier dans un module dédié.

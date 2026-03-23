@@ -1,0 +1,8 @@
+PHASE 16 — Ajouter la logique de leçon (front)
+Tu vas intégrer :
+QCM
+traduction
+phrases à remettre dans l’ordre
+écoute + transcription
+complétion de phrase
+Je te donnerai les prompts.

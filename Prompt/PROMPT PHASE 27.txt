@@ -1,0 +1,34 @@
+PHASE 24 — Polish V1 (animations, sons, mascotte, UI)
+Je veux ajouter le polish final pour la V1.
+
+1. Ajouter une mascotte (style Duolingo mais marocaine)
+   - composant Mascotte.tsx
+   - animations simples (react-spring / reanimated)
+
+2. Ajouter des sons :
+   - correct
+   - incorrect
+   - progression
+   - badge débloqué
+   - streak
+
+3. Ajouter des animations :
+   - bounce sur XP
+   - shake sur erreur
+   - confettis sur réussite
+
+4. Ajouter un système de thèmes :
+   - clair
+   - sombre
+   - auto
+
+5. Ajouter un écran “Bravo !” après une leçon :
+   - XP gagné
+   - streak
+   - cœurs restants
+   - badges débloqués
+
+6. Ajouter un écran “Objectifs du jour”
+   - XP à atteindre
+   - leçons à faire
+   - révisions à faire

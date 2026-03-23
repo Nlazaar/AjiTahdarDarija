@@ -1,0 +1,142 @@
+Je veux ajouter un mode conversation (chatbot darija) dans mon application.
+
+Objectif :
+- permettre à l’utilisateur de discuter en darija avec un chatbot
+- analyser ses réponses
+- corriger ses erreurs
+- proposer des réponses naturelles
+- adapter la difficulté
+- utiliser TTS/ASR si disponible
+- stocker l’historique des conversations
+
+==========================
+1. BACKEND — MODULE CHATBOT
+==========================
+
+1.1 Créer un module ChatbotModule :
+    - ChatbotService
+    - ChatbotController
+
+1.2 Ajouter un modèle Prisma ConversationMessage :
+    id
+    userId
+    role ("user" | "bot")
+    text
+    audioUrl?
+    createdAt
+
+1.3 Ajouter un endpoint :
+    POST /chatbot/message
+    Body : { userId, message, audio? }
+    → retourne :
+        { replyText, replyAudio?, suggestions, difficultyLevel }
+
+1.4 Ajouter une logique conversationnelle :
+    - analyser le message utilisateur
+    - détecter :
+        - erreurs grammaticales
+        - erreurs de vocabulaire
+        - erreurs de conjugaison
+        - faux amis
+        - niveau CEFR approximatif
+    - générer une réponse adaptée :
+        - simple si débutant
+        - plus complexe si avancé
+    - proposer 2–3 alternatives correctes
+
+1.5 Ajouter un système de correction :
+    - renvoyer :
+        corrections: [
+            { error, expected, explanation }
+        ]
+
+1.6 Ajouter un système d’adaptation :
+    - si l’utilisateur fait beaucoup d’erreurs → simplifier
+    - si l’utilisateur réussit → complexifier
+    - si l’utilisateur hésite → proposer des aides
+
+1.7 Ajouter un système d’objectifs :
+    - objectif du jour : 5 messages
+    - objectif hebdo : 30 messages
+
+==========================
+2. WEB — INTERFACE CHATBOT
+==========================
+
+2.1 Créer une page /conversation :
+    - interface type chat
+    - bulles utilisateur / bot
+    - support texte + audio
+    - bouton “Parler” (ASR)
+    - bouton “Écouter” (TTS)
+
+2.2 Ajouter un composant ChatBubble.tsx :
+    - style différent pour user/bot
+    - support texte + audio
+
+2.3 Ajouter un composant ChatInput.tsx :
+    - input texte
+    - bouton envoyer
+    - bouton micro
+
+2.4 Ajouter un hook useChatbot() :
+    - sendMessage()
+    - receiveMessage()
+    - gérer l’historique
+    - gérer l’état (loading, error)
+
+2.5 Ajouter un composant CorrectionCard.tsx :
+    - afficher les corrections
+    - afficher les suggestions
+
+==========================
+3. MOBILE — INTERFACE CHATBOT
+==========================
+
+3.1 Ajouter un écran /conversation :
+    - interface chat mobile
+    - bulles
+    - input
+    - micro
+    - TTS
+
+3.2 Ajouter un composant ChatBubble.tsx (mobile)
+3.3 Ajouter un composant ChatInput.tsx (mobile)
+3.4 Ajouter un hook useChatbot() (mobile)
+
+==========================
+4. AUDIO (OPTIONNEL MAIS RECOMMANDÉ)
+==========================
+
+4.1 Si TTS activé :
+    - lire les réponses du bot
+
+4.2 Si ASR activé :
+    - permettre à l’utilisateur de parler
+    - envoyer l’audio au backend
+    - recevoir transcription + corrections
+
+==========================
+5. UX & GAMIFICATION
+==========================
+
+5.1 Ajouter un compteur :
+    - messages envoyés aujourd’hui
+    - messages envoyés cette semaine
+
+5.2 Ajouter des récompenses :
+    - badge “Première conversation”
+    - badge “10 messages”
+    - badge “100 messages”
+
+5.3 Ajouter un système de difficulté visible :
+    - niveau actuel (A1, A2, B1, B2)
+    - progression vers le niveau suivant
+
+==========================
+6. STOCKAGE & PERFORMANCE
+==========================
+
+6.1 Stocker uniquement les 50 derniers messages par conversation
+6.2 Ajouter pagination si nécessaire
+6.3 Nettoyer les anciens messages automatiquement

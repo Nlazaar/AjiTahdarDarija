@@ -1,0 +1,40 @@
+PHASE 28 — Mode hors-ligne (Offline Mode)
+
+Je veux ajouter un mode hors-ligne complet.
+
+==========================
+1. BACKEND
+==========================
+
+1.1 Ajouter un endpoint /sync :
+    - reçoit les réponses faites hors-ligne
+    - met à jour XP, streak, progression
+    - renvoie les conflits éventuels
+
+==========================
+2. WEB
+==========================
+
+2.1 Ajouter un cache local :
+    - modules
+    - lessons
+    - exercises
+
+2.2 Ajouter un système OfflineQueue :
+    - stocker les réponses hors-ligne
+    - envoyer quand la connexion revient
+
+==========================
+3. MOBILE
+==========================
+
+3.1 Ajouter un cache local via AsyncStorage :
+    - modules
+    - lessons
+    - exercises
+
+3.2 Ajouter un OfflineQueue mobile :
+    - stocker les réponses
+    - synchroniser automatiquement
+
+3.3 Ajouter un indicateur “Mode hors-ligne”

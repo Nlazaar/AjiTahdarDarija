@@ -1,0 +1,287 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Enum definitions
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  FILL_BLANK
+  LISTENING
+  TRANSLATION
+  REORDER
+}
+
+enum PartOfSpeech {
+  NOUN
+  VERB
+  ADJECTIVE
+  ADVERB
+  PRONOUN
+  PREPOSITION
+  CONJUNCTION
+  INTERJECTION
+}
+
+/// Primary models
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String?
+  name         String?
+  locale       String   @default("fr")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  isDeleted    Boolean  @default(false)
+
+  // Gamification fields
+  xp           Int       @default(0)
+  level        Int       @default(1)
+  streak       Int       @default(0)
+  lastStreakAt DateTime?
+  hearts       Int       @default(5)
+
+  // Subscription fields
+  subscriptionStatus    String?   @default("free")
+  subscriptionExpiresAt DateTime?
+
+  // relations
+  lessonsAuthored Lesson[]         @relation("AuthorLessons")
+  progress        UserProgress[]
+  vocabularies    UserVocabulary[]
+  badges          UserBadge[]
+
+  @@index([email])
+}
+
+model Language {
+  id        String   @id @default(cuid())
+  code      String   @unique // e.g. 'ar-MA', 'fr', 'en'
+  name      String
+  createdAt DateTime @default(now())
+
+  lessons    Lesson[]
+  vocabulary Vocabulary[]
+}
+
+model Module {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  level       Int      @default(1)
+  slug        String   @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  isPublished Boolean  @default(false)
+
+  lessons Lesson[]
+
+  @@index([slug])
+  @@index([level, createdAt])
+}
+
+model Lesson {
+  id          String   @id @default(cuid())
+  title       String
+  subtitle    String?
+  description String?
+  content     Json? // structured content (blocks, steps, hints)
+  order       Int      @default(0)
+  duration    Int? // seconds estimated
+  level       Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  isPublished Boolean  @default(false)
+  isDeleted   Boolean  @default(false)
+
+  // relations
+  module     Module?  @relation(fields: [moduleId], references: [id])
+  moduleId   String?
+  author     User?    @relation("AuthorLessons", fields: [authorId], references: [id])
+  authorId   String?
+  language   Language @relation(fields: [languageId], references: [id])
+  languageId String
+
+  exercises    Exercise[]
+  userProgress UserProgress[]
+
+  @@index([moduleId, order])
+  @@index([languageId, level])
+}
+
+model Vocabulary {
+  id              String        @id @default(cuid())
+  word            String
+  transliteration String?
+  translation     Json? // supports multiple translations per language
+  partOfSpeech    PartOfSpeech?
+  examples        Json? // array of example objects
+  tags            String[]      @default([])
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  language        Language      @relation(fields: [languageId], references: [id])
+  languageId      String
+
+  exercises Exercise[]
+  users     UserVocabulary[]
+
+  @@index([word])
+  @@index([languageId, word])
+}
+
+model Exercise {
+  id        String       @id @default(cuid())
+  type      ExerciseType
+  prompt    String?
+  data      Json? // question options, audio ref, etc.
+  answer    Json? // canonical answer structure
+  points    Int          @default(10)
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  // relations
+  lesson       Lesson?     @relation(fields: [lessonId], references: [id])
+  lessonId     String?
+  vocabulary   Vocabulary? @relation(fields: [vocabularyId], references: [id])
+  vocabularyId String?
+
+  @@index([lessonId])
+  @@index([type])
+}
+
+model Badge {
+  id          String   @id @default(cuid())
+  key         String   @unique // e.g. 'first_lesson', 'streak_7'
+  title       String
+  description String?
+  icon        String? // url or asset key
+  points      Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  userBadges UserBadge[]
+}
+
+/// Join / pivot models and progress tracking
+model UserBadge {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  badge     Badge    @relation(fields: [badgeId], references: [id])
+  badgeId   String
+  awardedAt DateTime @default(now())
+
+  @@unique([userId, badgeId])
+  @@index([userId])
+}
+
+model UserVocabulary {
+  id           String     @id @default(cuid())
+  user         User       @relation(fields: [userId], references: [id])
+  userId       String
+  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id])
+  vocabularyId String
+  mastery      Int        @default(0) // 0-100
+  lastSeenAt   DateTime?
+  nextReviewAt DateTime?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([userId, vocabularyId])
+  @@index([userId, nextReviewAt])
+}
+
+model UserProgress {
+  id         String    @id @default(cuid())
+  user       User      @relation(fields: [userId], references: [id])
+  userId     String
+  lesson     Lesson    @relation(fields: [lessonId], references: [id])
+  lessonId   String
+  completed  Boolean   @default(false)
+  progress   Int       @default(0) // 0-100 percent
+  xpEarned   Int       @default(0)
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([userId, lessonId])
+  @@index([userId, updatedAt])
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  userId    String?  
+  type      String
+  payload   Json?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([type])
+}
+
+model FriendRequest {
+  id        String   @id @default(cuid())
+  fromId    String
+  toId      String
+  status    String   @default("pending") // pending, accepted, rejected
+  createdAt DateTime @default(now())
+
+  @@index([fromId])
+  @@index([toId])
+}
+
+model LeagueMembership {
+  id        String   @id @default(cuid())
+  userId    String
+  league    String   // Bronze, Silver, Gold, Diamond, Master
+  points    Int      @default(0)
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([league])
+}
+
+model VocabularyPack {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  difficulty  String?  // e.g. easy/medium/hard
+  category    String?
+  premiumOnly Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  words PackWord[]
+
+  @@index([difficulty])
+  @@index([category])
+}
+
+model PackWord {
+  id           String     @id @default(cuid())
+  pack         VocabularyPack @relation(fields: [packId], references: [id])
+  packId       String
+  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id])
+  vocabularyId String
+
+  @@index([packId])
+  @@index([vocabularyId])
+}
+
+model ConversationMessage {
+  id        String   @id @default(cuid())
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  role      String   // 'user' | 'bot'
+  text      String
+  audioUrl  String?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+// Additional indexes or extensions can be added using raw SQL migrations
+// for advanced Postgres features (GIN, full-text search, partial indexes).

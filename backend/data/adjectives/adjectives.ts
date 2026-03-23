@@ -1,0 +1,22 @@
+export const darijaAdjectives = [
+  { darija: "زوين", latin: "zwine", fr: "beau / joli" },
+  { darija: "خايب", latin: "khayeb", fr: "moche / mauvais" },
+  { darija: "كبير", latin: "kbir", fr: "grand" },
+  { darija: "صغير", latin: "sghir", fr: "petit" },
+  { darija: "طويل", latin: "Twil", fr: "long / grand (taille)" },
+  { darija: "قصير", latin: "qSir", fr: "court / petit (taille)" },
+  { darija: "ثقيل", latin: "thqil", fr: "lourd" },
+  { darija: "خفيف", latin: "khfif", fr: "léger" },
+  { darija: "سهل", latin: "sahl", fr: "facile" },
+  { darija: "صعيب", latin: "s3ib", fr: "difficile" },
+  { darija: "غالي", latin: "ghali", fr: "cher" },
+  { darija: "رخيص", latin: "rkhis", fr: "pas cher" },
+  { darija: "جديد", latin: "jdid", fr: "nouveau" },
+  { darija: "قديم", latin: "qdim", fr: "ancien / vieux" },
+  { darija: "نقي", latin: "nqi", fr: "propre" },
+  { darija: "وسخ", latin: "wskh", fr: "sale" },
+  { darija: "سريع", latin: "sri3", fr: "rapide" },
+  { darija: "بطيء", latin: "bTi2", fr: "lent" },
+  { darija: "مهم", latin: "mohem", fr: "important" },
+  { darija: "ضروري", latin: "Darouri", fr: "nécessaire / indispensable" }
+];

@@ -1,0 +1,59 @@
+Je veux intégrer la gamification complète dans l’app mobile Expo.
+
+Objectif :
+- afficher XP, streak, hearts, level, badges
+- mettre à jour après chaque leçon
+- intégrer les endpoints du backend
+- afficher les stats dans l’écran Profil
+- afficher les cœurs dans le header
+- afficher le streak dans l’écran progression
+
+Fais les actions suivantes :
+
+1. Dans /mobile/lib/api.ts :
+   ajoute :
+   - getGamification()
+   - addXp()
+   - updateStreak()
+   - updateHearts()
+
+2. Crée un hook /mobile/hooks/useGamification.ts :
+   - getGamification()
+   - refreshGamification()
+   - expose :
+       xp
+       level
+       streak
+       hearts
+       badges
+
+3. Mets à jour /mobile/app/profile.tsx :
+   - afficher :
+       XP
+       niveau
+       streak
+       hearts
+       badges (grille)
+   - utiliser Card, IconRounded
+
+4. Mets à jour /mobile/app/_layout.tsx :
+   - afficher les cœurs dans le header
+   - afficher le streak dans le header
+
+5. Dans /mobile/app/lesson/[id].tsx :
+   - après submitLesson(), appelle :
+       addXp(result.xpEarned)
+       updateStreak()
+       updateHearts(-errors.length)
+   - puis refreshGamification()
+
+6. Crée un composant BadgeCard.tsx :
+   - icône
+   - nom
+   - état
+
+7. Crée un composant GamificationHeader.tsx :
+   - XP, streak, hearts
+   - utilisé dans progression et leçon
+
+Le code doit être propre, typé, modulaire, et cohérent avec le design system.

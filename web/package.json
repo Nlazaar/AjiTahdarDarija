@@ -1,0 +1,28 @@
+{
+  "name": "darija-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "docker:build": "docker build -t YOUR_DOCKERHUB_USERNAME/darija-web:latest ."
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.264.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@nrwl/next": "^19.8.4",
+    "@types/react": "19.2.14",
+    "autoprefixer": "^10.4.0",
+    "eslint-config-next": "16.2.1",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

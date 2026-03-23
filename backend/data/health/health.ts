@@ -1,0 +1,22 @@
+export const darijaHealth = [
+  { darija: "صحة", latin: "Se77a", fr: "santé" },
+  { darija: "مرض", latin: "mraD", fr: "maladie" },
+  { darija: "طبيب", latin: "Tbib", fr: "médecin" },
+  { darija: "صيدلي", latin: "Saydali", fr: "pharmacien" },
+  { darija: "صيدلية", latin: "Saydaliya", fr: "pharmacie" },
+  { darija: "دواء", latin: "dwa", fr: "médicament" },
+  { darija: "حقنة", latin: "7oqna", fr: "piqûre / injection" },
+  { darija: "جرح", latin: "jra7", fr: "blessure" },
+  { darija: "حمّى", latin: "7omma", fr: "fièvre" },
+  { darija: "سعال", latin: "so3al", fr: "toux" },
+  { darija: "رشح", latin: "rcha7", fr: "rhume" },
+  { darija: "ألم", latin: "alam", fr: "douleur" },
+  { darija: "صداع", latin: "Sda3", fr: "mal de tête" },
+  { darija: "إسهال", latin: "ishal", fr: "diarrhée" },
+  { darija: "قيء", latin: "qi2", fr: "vomissement" },
+  { darija: "ضغط الدم", latin: "DaGht ddm", fr: "tension artérielle" },
+  { darija: "سكر", latin: "sokkar", fr: "diabète" },
+  { darija: "تنفس", latin: "tnaffos", fr: "respiration" },
+  { darija: "أكسجين", latin: "oksijin", fr: "oxygène" },
+  { darija: "تحاليل", latin: "t7alil", fr: "analyses médicales" }
+];

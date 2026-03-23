@@ -1,0 +1,10 @@
+🔥 PHASE 10 — BUILD + DÉPLOIEMENT
+PROMPT 10 — Déploiement
+
+Prépare les scripts de build et de déploiement pour :
+
+- backend NestJS (Railway ou Render)
+- web Next.js (Vercel)
+- mobile Expo (Play Store)
+
+Ajoute les fichiers Docker si nécessaire.

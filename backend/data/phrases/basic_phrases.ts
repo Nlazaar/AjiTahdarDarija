@@ -1,0 +1,22 @@
+export const darijaBasicPhrases = [
+  { darija: "السلام عليكم", latin: "salam 3likom", fr: "bonjour / que la paix soit sur vous" },
+  { darija: "وعليكم السلام", latin: "wa 3likom salam", fr: "bonjour (réponse)" },
+  { darija: "صباح الخير", latin: "sbah lkhir", fr: "bonjour (matin)" },
+  { darija: "مساء الخير", latin: "msa lkhir", fr: "bonsoir" },
+  { darija: "لاباس؟", latin: "labas?", fr: "ça va ?" },
+  { darija: "لاباس الحمد لله", latin: "labas l7amdollah", fr: "ça va, grâce à Dieu" },
+  { darija: "شكرا", latin: "choukran", fr: "merci" },
+  { darija: "عفوا", latin: "3afwan", fr: "de rien" },
+  { darija: "سمح ليا", latin: "sme7 lia", fr: "pardon / excuse‑moi" },
+  { darija: "فين هو ...؟", latin: "fin howa ...?", fr: "où est ... ?" },
+  { darija: "بشحال هادا؟", latin: "bch7al hada?", fr: "ça coûte combien ?" },
+  { darija: "بغيت هادا", latin: "bghit hada", fr: "je veux ça" },
+  { darija: "ما بغيتش", latin: "ma bghitch", fr: "je ne veux pas" },
+  { darija: "ما فهمتش", latin: "ma fhemtch", fr: "je n’ai pas compris" },
+  { darija: "عاود من فضلك", latin: "3awed men fDlek", fr: "répète s’il te plaît" },
+  { darija: "شحال الساعة؟", latin: "ch7al ssa3a?", fr: "quelle heure est‑il ?" },
+  { darija: "فين غادي؟", latin: "fin ghadi?", fr: "où vas‑tu ?" },
+  { darija: "أنا جاي", latin: "ana jay", fr: "j’arrive" },
+  { darija: "نعم / لا", latin: "na3m / la", fr: "oui / non" },
+  { darija: "مزيان", latin: "mzian", fr: "bien / bon" }
+];

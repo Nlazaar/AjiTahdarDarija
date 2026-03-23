@@ -1,0 +1,27 @@
+PHASE 25 — Préparation du lancement public
+Je veux préparer le lancement public de l’application.
+
+1. Créer un fichier LAUNCH_CHECKLIST.md :
+   - tests finaux
+   - vérification des endpoints
+   - vérification des builds
+   - vérification des stores
+
+2. Créer un fichier MARKETING.md :
+   - pitch de l’app
+   - description Play Store
+   - screenshots
+   - vidéo promo
+   - icônes
+   - couleurs
+
+3. Créer un fichier ONBOARDING.md :
+   - comment importer du contenu
+   - comment créer des leçons
+   - comment gérer les modules
+   - comment gérer les badges
+
+4. Créer un fichier SUPPORT.md :
+   - FAQ
+   - problèmes courants
+   - contact

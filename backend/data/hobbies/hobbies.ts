@@ -1,0 +1,22 @@
+export const darijaHobbies = [
+  { darija: "رياضة", latin: "riyada", fr: "sport" },
+  { darija: "كرة القدم", latin: "kora lqadam", fr: "football" },
+  { darija: "جري", latin: "jri", fr: "course à pied" },
+  { darija: "سباحة", latin: "sba7a", fr: "natation" },
+  { darija: "موسيقى", latin: "mousiqa", fr: "musique" },
+  { darija: "غناء", latin: "ghina2", fr: "chant" },
+  { darija: "رقص", latin: "raqs", fr: "danse" },
+  { darija: "مطالعة", latin: "mTala3a", fr: "lecture" },
+  { darija: "كتابة", latin: "ktaba", fr: "écriture" },
+  { darija: "رسم", latin: "rasm", fr: "dessin" },
+  { darija: "تصوير", latin: "tswir", fr: "photographie" },
+  { darija: "طبخ", latin: "Tbkh", fr: "cuisine" },
+  { darija: "سفر", latin: "safar", fr: "voyage" },
+  { darija: "تخييم", latin: "tkhim", fr: "camping" },
+  { darija: "صيد", latin: "Sayd", fr: "pêche / chasse" },
+  { darija: "ألعاب فيديو", latin: "al3ab fidyo", fr: "jeux vidéo" },
+  { darija: "شطرنج", latin: "chTrenj", fr: "échecs" },
+  { darija: "يوغا", latin: "yoga", fr: "yoga" },
+  { darija: "حديقة", latin: "7diiqa", fr: "jardinage" },
+  { darija: "تطوّع", latin: "tTaTawwa3", fr: "bénévolat" }
+];

@@ -1,0 +1,22 @@
+export const darijaVerbs = [
+  { darija: "مشى", latin: "mcha", fr: "aller / marcher" },
+  { darija: "جاب", latin: "jab", fr: "apporter" },
+  { darija: "عطى", latin: "3ta", fr: "donner" },
+  { darija: "خذا", latin: "khda", fr: "prendre" },
+  { darija: "بغى", latin: "bgha", fr: "vouloir" },
+  { darija: "قدر", latin: "qdr", fr: "pouvoir" },
+  { darija: "عرف", latin: "3rf", fr: "savoir / connaître" },
+  { darija: "فهم", latin: "fhem", fr: "comprendre" },
+  { darija: "كتب", latin: "kteb", fr: "écrire" },
+  { darija: "قرا", latin: "qra", fr: "lire / étudier" },
+  { darija: "سمع", latin: "sme3", fr: "entendre" },
+  { darija: "شاف", latin: "chaf", fr: "voir" },
+  { darija: "كل", latin: "kal", fr: "manger" },
+  { darija: "شرب", latin: "chrb", fr: "boire" },
+  { darija: "نعس", latin: "n3s", fr: "dormir" },
+  { darija: "خدم", latin: "khddem", fr: "travailler" },
+  { darija: "جلس", latin: "jless", fr: "s’asseoir" },
+  { darija: "وقف", latin: "wqef", fr: "se lever / se tenir debout" },
+  { darija: "ضحك", latin: "D7k", fr: "rire" },
+  { darija: "بكى", latin: "bka", fr: "pleurer" }
+];

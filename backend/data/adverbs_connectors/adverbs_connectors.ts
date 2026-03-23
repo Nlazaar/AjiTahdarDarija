@@ -1,0 +1,22 @@
+export const darijaAdverbsConnectors = [
+  { darija: "دابا", latin: "daba", fr: "maintenant" },
+  { darija: "غدا", latin: "ghdda", fr: "demain" },
+  { darija: "دّابز", latin: "ddabz", fr: "tout de suite" },
+  { darija: "ديما", latin: "dima", fr: "toujours" },
+  { darija: "مرّة مرّة", latin: "mra mra", fr: "de temps en temps" },
+  { darija: "بزربة", latin: "bzzerba", fr: "vite / rapidement" },
+  { darija: "بشوية", latin: "bchwiya", fr: "doucement / lentement" },
+  { darija: "حيت", latin: "7it", fr: "parce que" },
+  { darija: "حيتاش", latin: "7itach", fr: "parce que (plus long)" },
+  { darija: "حيث", latin: "7it", fr: "car" },
+  { darija: "ولكن", latin: "walakin", fr: "mais" },
+  { darija: "ومن بعد", latin: "w men b3d", fr: "et ensuite" },
+  { darija: "وخا", latin: "wakha", fr: "même si / bien que" },
+  { darija: "حيثما", latin: "7itma", fr: "où que" },
+  { darija: "باش", latin: "bach", fr: "pour / afin de" },
+  { darija: "قبل ما", latin: "qbl ma", fr: "avant de" },
+  { darija: "منين", latin: "mnin", fr: "quand / lorsque" },
+  { darija: "إلا", latin: "ila", fr: "si (condition)" },
+  { darija: "حاجة أخرى", latin: "7aja okhra", fr: "autre chose" },
+  { darija: "بالصح", latin: "bssa7", fr: "vraiment" }
+];

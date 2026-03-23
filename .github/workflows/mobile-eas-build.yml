@@ -1,0 +1,41 @@
+name: "Mobile - EAS Build (Android)"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: |
+          cd mobile
+          npm ci
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
+      - name: Login to EAS
+        env:
+          EAS_TOKEN: ${{ secrets.EAS_BUILD_TOKEN }}
+        run: |
+          eas whoami || eas login --token $EAS_TOKEN
+      - name: EAS build (android)
+        env:
+          EAS_BUILD_PROFILE: production
+        run: |
+          cd mobile
+          eas build --platform android --profile production --non-interactive
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build-artifacts
+          path: mobile/dist || mobile/build || .

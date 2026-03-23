@@ -1,0 +1,53 @@
+PHASE 27 — Social (amis, classements, ligues)
+
+Je veux ajouter un système social complet.
+
+==========================
+1. BACKEND
+==========================
+
+1.1 Créer un module Friends :
+    - envoyer une demande d’ami
+    - accepter
+    - refuser
+    - supprimer
+
+1.2 Créer un module Leaderboard :
+    - classement global
+    - classement hebdomadaire
+    - classement entre amis
+
+1.3 Créer un module Leagues :
+    - Bronze
+    - Silver
+    - Gold
+    - Diamond
+    - Master
+    - promotion / relégation chaque semaine
+
+==========================
+2. WEB
+==========================
+
+2.1 Ajouter une page /friends :
+    - liste d’amis
+    - demandes en attente
+    - recherche d’utilisateurs
+
+2.2 Ajouter une page /leaderboard :
+    - classement global
+    - classement amis
+    - classement hebdo
+
+2.3 Ajouter une page /leagues :
+    - ligue actuelle
+    - progression
+    - classement de la ligue
+
+==========================
+3. MOBILE
+==========================
+
+3.1 Ajouter un écran Friends
+3.2 Ajouter un écran Leaderboard
+3.3 Ajouter un écran Leagues

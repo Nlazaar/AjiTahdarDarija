@@ -1,0 +1,23 @@
+export const darijaNumbersBasic = [
+  { darija: "صفر", latin: "sifr", fr: "zéro" },
+  { darija: "واحد", latin: "wa7ed", fr: "un" },
+  { darija: "جوج", latin: "jouj", fr: "deux" },
+  { darija: "ثلاثة", latin: "tlata", fr: "trois" },
+  { darija: "ربعة", latin: "rb3a", fr: "quatre" },
+  { darija: "خمسة", latin: "khmsa", fr: "cinq" },
+  { darija: "ستة", latin: "setta", fr: "six" },
+  { darija: "سبعة", latin: "sb3a", fr: "sept" },
+  { darija: "ثمانية", latin: "tmnya", fr: "huit" },
+  { darija: "تسعود", latin: "ts3oud", fr: "neuf" },
+  { darija: "عشرة", latin: "3achra", fr: "dix" },
+  { darija: "حداش", latin: "7dach", fr: "onze" },
+  { darija: "تناش", latin: "tnach", fr: "douze" },
+  { darija: "تلطاش", latin: "tltach", fr: "treize" },
+  { darija: "ربعتاش", latin: "rb3tach", fr: "quatorze" },
+  { darija: "خمستاش", latin: "khmstach", fr: "quinze" },
+  { darija: "ستاش", latin: "stach", fr: "seize" },
+  { darija: "سبعتاش", latin: "sb3tach", fr: "dix‑sept" },
+  { darija: "ثمانتاش", latin: "tmntach", fr: "dix‑huit" },
+  { darija: "تسعتاش", latin: "ts3tach", fr: "dix‑neuf" },
+  { darija: "عشرين", latin: "3chrin", fr: "vingt" }
+];

@@ -1,0 +1,19 @@
+
+PHASE 2 — BACKEND (NestJS + Prisma + PostgreSQL)
+PROMPT 2 — Génération du backend complet
+
+Crée un backend NestJS modulaire pour une app d’apprentissage de la darija.
+Modules nécessaires :
+
+- auth
+- users
+- modules (cours)
+- lessons
+- vocabulary
+- exercises
+- progress
+- gamification
+- i18n
+
+Configure PostgreSQL avec Prisma.
+Génère les services, controllers, DTO, guards, pipes, et une architecture propre.

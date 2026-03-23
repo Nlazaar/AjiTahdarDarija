@@ -1,0 +1,26 @@
+export const darijaAnimals = [
+  { darija: "كلب", latin: "kelb", fr: "chien" },
+  { darija: "قط", latin: "qeTT", fr: "chat" },
+  { darija: "حصان", latin: "7san", fr: "cheval" },
+  { darija: "بقرة", latin: "bqra", fr: "vache" },
+  { darija: "خروف", latin: "khrouf", fr: "mouton" },
+  { darija: "ماعز", latin: "ma3z", fr: "chèvre" },
+  { darija: "جمل", latin: "jmel", fr: "chameau" },
+  { darija: "ديك", latin: "dik", fr: "coq" },
+  { darija: "دجاجة", latin: "djaja", fr: "poule" },
+  { darija: "سمكة", latin: "smka", fr: "poisson" },
+  { darija: "عصفور", latin: "3sfor", fr: "oiseau" },
+  { darija: "نحلة", latin: "n7la", fr: "abeille" },
+  { darija: "فيل", latin: "fil", fr: "éléphant" },
+  { darija: "أسد", latin: "asad", fr: "lion" },
+  { darija: "نمر", latin: "nmr", fr: "tigre" },
+  { darija: "قرد", latin: "qerd", fr: "singe" },
+  { darija: "ثعلب", latin: "tha3lab", fr: "renard" },
+  { darija: "ذئب", latin: "di2b", fr: "loup" },
+  { darija: "ضفدع", latin: "Dfda3", fr: "grenouille" },
+  { darija: "حية", latin: "7ya", fr: "serpent" }
+  { darija: "حيوان", latin: "7ayawan", fr: "animal" },
+  { darija: "بطّة", latin: "baTTa", fr: "canard" },
+  { darija: "أرنب", latin: "arnab", fr: "lapin" },
+];
+

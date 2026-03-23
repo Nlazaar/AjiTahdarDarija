@@ -1,0 +1,15 @@
+🔥 PHASE 5 — APP ANDROID (React Native)
+PROMPT 5 — Architecture Mobile
+
+Crée une architecture React Native + Expo pour une app d’apprentissage de la darija.
+Écrans :
+
+- Home
+- Login
+- Progression
+- Leçon
+- Révision
+- Profil
+
+Utilise expo-router.
+Crée les composants réutilisables : Button, Card, LessonCard, ModuleCard.

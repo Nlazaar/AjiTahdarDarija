@@ -1,0 +1,58 @@
+Je veux connecter mon front Next.js 14 au backend NestJS.
+
+Crée-moi un client API complet dans /web/lib/api.ts avec les fonctions suivantes :
+
+1) getModules()
+   → GET http://localhost:3000/modules
+
+2) getLessonsByModule(moduleId)
+   → GET http://localhost:3000/modules/${moduleId}/lessons
+
+3) getLesson(lessonId)
+   → GET http://localhost:3000/lessons/${lessonId}
+
+4) getExercises(lessonId)
+   → GET http://localhost:3000/lessons/${lessonId}/exercises
+
+5) submitLesson(lessonId, answers)
+   → POST http://localhost:3000/lessons/${lessonId}/submit
+   Body : { userId, answers }
+
+6) getGamification(userId)
+   → GET http://localhost:3000/gamification/badges?userId=${userId}
+
+7) addXp(userId, amount)
+   → POST http://localhost:3000/gamification/xp
+
+8) updateStreak(userId)
+   → POST http://localhost:3000/gamification/streak
+
+9) updateHearts(userId, delta)
+   → POST http://localhost:3000/gamification/hearts
+
+Le client doit :
+- utiliser fetch()
+- gérer les erreurs proprement
+- retourner les données JSON
+- être exporté proprement pour être utilisé dans les pages Next.js
+- prévoir un futur token JWT (placeholder dans les headers)
+
+Ensuite, mets à jour les pages suivantes pour utiliser ce client API :
+
+/web/app/progress/page.tsx
+  → afficher la liste des modules via getModules()
+
+/web/app/lesson/[id]/page.tsx
+  → afficher la leçon via getLesson()
+  → charger les exercices via getExercises()
+
+/web/app/review/page.tsx
+  → charger les exercices à réviser (placeholder pour l’instant)
+
+/web/app/profile/page.tsx
+  → afficher XP, streak, hearts, badges via getGamification()
+
+/web/app/settings/page.tsx
+  → placeholder pour les futures préférences
+
+Le code doit être propre, typé, modulaire, et utiliser les composants existants (Card, LessonCard, ModuleCard, ProgressBar).

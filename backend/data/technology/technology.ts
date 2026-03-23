@@ -1,0 +1,22 @@
+export const darijaTechnology = [
+  { darija: "تكنولوجيا", latin: "tiknolojia", fr: "technologie" },
+  { darija: "حاسوب", latin: "7asoub", fr: "ordinateur" },
+  { darija: "لاب توب", latin: "labtop", fr: "ordinateur portable" },
+  { darija: "تليفون", latin: "tilifun", fr: "téléphone" },
+  { darija: "سمارتفون", latin: "smartfon", fr: "smartphone" },
+  { darija: "طابليت", latin: "tablette", fr: "tablette" },
+  { darija: "إنترنت", latin: "internet", fr: "internet" },
+  { darija: "واي فاي", latin: "wifi", fr: "wifi" },
+  { darija: "شبكة", latin: "chabka", fr: "réseau" },
+  { darija: "تطبيق", latin: "tatbiq", fr: "application" },
+  { darija: "برنامج", latin: "barnamaj", fr: "logiciel" },
+  { darija: "ملف", latin: "mlaf", fr: "fichier" },
+  { darija: "خازن", latin: "khazen", fr: "stockage" },
+  { darija: "سيرفر", latin: "server", fr: "serveur" },
+  { darija: "كلاود", latin: "cloud", fr: "cloud" },
+  { darija: "شاشة", latin: "chacha", fr: "écran" },
+  { darija: "كيبورد", latin: "keyboard", fr: "clavier" },
+  { darija: "فأرة", latin: "fa2ra", fr: "souris" },
+  { darija: "شاحن", latin: "cha7en", fr: "chargeur" },
+  { darija: "بطارية", latin: "baTTariya", fr: "batterie" }
+];

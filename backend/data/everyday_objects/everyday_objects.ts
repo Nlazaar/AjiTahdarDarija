@@ -1,0 +1,22 @@
+export const darijaEverydayObjects = [
+  { darija: "مفتاح", latin: "mfta7", fr: "clé" },
+  { darija: "تليفون", latin: "tilifun", fr: "téléphone" },
+  { darija: "حاسوب", latin: "7asoub", fr: "ordinateur" },
+  { darija: "قلم", latin: "qelm", fr: "stylo" },
+  { darija: "ورقة", latin: "wrqa", fr: "feuille / papier" },
+  { darija: "محفظة", latin: "m7faDa", fr: "sac / cartable" },
+  { darija: "محفظة نقود", latin: "portmona", fr: "portefeuille" },
+  { darija: "كرسي", latin: "kursi", fr: "chaise" },
+  { darija: "طابلة", latin: "tabla", fr: "table" },
+  { darija: "ساعة", latin: "sa3a", fr: "montre / horloge" },
+  { darija: "مصباح", latin: "msba7", fr: "lampe" },
+  { darija: "تلفاز", latin: "tilfaz", fr: "télévision" },
+  { darija: "ريموت", latin: "rimot", fr: "télécommande" },
+  { darija: "كاس", latin: "kas", fr: "verre" },
+  { darija: "طبسيل", latin: "Tbssil", fr: "assiette" },
+  { darija: "معلقة", latin: "m3lqa", fr: "cuillère" },
+  { darija: "فرّاشة", latin: "frrasha", fr: "brosse" },
+  { darija: "مراية", latin: "mraya", fr: "miroir" },
+  { darija: "مظلة", latin: "mDalla", fr: "parapluie" },
+  { darija: "قنينة", latin: "qnina", fr: "bouteille" }
+];

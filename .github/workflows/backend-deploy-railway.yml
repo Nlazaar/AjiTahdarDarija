@@ -1,0 +1,43 @@
+name: Backend CI / Deploy (Railway)
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          npm ci
+
+      - name: Build
+        run: |
+          cd backend
+          npm run build
+
+      - name: Build Docker image
+        if: env.RAILWAY_API_KEY != ''
+        run: |
+          cd backend
+          docker build -t darija-backend:latest .
+
+      - name: Railway Deploy (CLI)
+        if: secrets.RAILWAY_API_KEY
+        env:
+          RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+        run: |
+          npm install -g @railway/cli
+          railway login --apiKey $RAILWAY_API_KEY
+          cd backend
+          # This will attempt to deploy the current directory to your linked Railway project
+          railway up --detach || true

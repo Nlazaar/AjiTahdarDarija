@@ -1,0 +1,22 @@
+export const darijaIntermediatePhrases = [
+  { darija: "شنو كتدير دابا؟", latin: "chnou katdir daba?", fr: "que fais‑tu maintenant ?" },
+  { darija: "فين ساكن؟", latin: "fin saken?", fr: "où habites‑tu ?" },
+  { darija: "شحال فالعمرك؟", latin: "ch7al f l3omr dyalk?", fr: "quel âge as‑tu ?" },
+  { darija: "عافاك تعاونّي", latin: "3afak t3awenni", fr: "s’il te plaît aide‑moi" },
+  { darija: "عندي واحد السؤال", latin: "3ndi wa7d ssou2al", fr: "j’ai une question" },
+  { darija: "ممكن توضّح ليا؟", latin: "momkin twDDe7 lia?", fr: "peux‑tu m’expliquer ?" },
+  { darija: "بغيت نتعلّم الدارجة مزيان", latin: "bghit nt3llm ddarija mzian", fr: "je veux bien apprendre la darija" },
+  { darija: "سمح ليا ما سمعتكش", latin: "sme7 lia ma sma3tkch", fr: "désolé, je ne t’ai pas entendu" },
+  { darija: "رجع ليا من بعد", latin: "rje3 lia men b3d", fr: "reviens vers moi plus tard" },
+  { darija: "ما عنديش الوقت دابا", latin: "ma 3ndich lwa9t daba", fr: "je n’ai pas le temps maintenant" },
+  { darija: "نتلاقاو غدا", latin: "ntlaqaw ghdda", fr: "on se voit demain" },
+  { darija: "عجباتني هاد الفكرة", latin: "3jbatni had lfekra", fr: "j’aime bien cette idée" },
+  { darija: "ماشي مشكل", latin: "machi mochkil", fr: "pas de problème" },
+  { darija: "علاش لا؟", latin: "3lach la", fr: "pourquoi pas" },
+  { darija: "خاصني نمشي دابا", latin: "khasni nmchi daba", fr: "je dois y aller maintenant" },
+  { darija: "نتفاهمو عليها", latin: "ntfahmo 3liha", fr: "on s’arrangera" },
+  { darija: "مازال مفكرتش", latin: "mazal mfkkrtch", fr: "je n’ai pas encore réfléchi" },
+  { darija: "عطيني شوية ديال الوقت", latin: "3tini chwya dyal lwa9t", fr: "donne‑moi un peu de temps" },
+  { darija: "باغي نطوّر راسي", latin: "baghi nTawwer rassi", fr: "je veux m’améliorer" },
+  { darija: "الله يسهّل", latin: "allah ysshel", fr: "que Dieu facilite" }
+];

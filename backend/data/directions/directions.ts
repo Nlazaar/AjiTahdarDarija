@@ -1,0 +1,22 @@
+export const darijaDirections = [
+  { darija: "فين", latin: "fin", fr: "où" },
+  { darija: "هنا", latin: "hna", fr: "ici" },
+  { darija: "تما", latin: "tma", fr: "là-bas" },
+  { darija: "قدّام", latin: "qddam", fr: "devant" },
+  { darija: "لور", latin: "lour", fr: "derrière" },
+  { darija: "على اليمين", latin: "3la limin", fr: "à droite" },
+  { darija: "على اليسار", latin: "3la lisar", fr: "à gauche" },
+  { darija: "فوق", latin: "foq", fr: "au-dessus" },
+  { darija: "لتحت", latin: "lt7t", fr: "en dessous" },
+  { darija: "قريب", latin: "qrib", fr: "près" },
+  { darija: "بعيد", latin: "b3id", fr: "loin" },
+  { darija: "دغيّة", latin: "dghiyya", fr: "vite / rapidement" },
+  { darija: "بشوية", latin: "bchwiya", fr: "lentement" },
+  { darija: "وقف", latin: "wqef", fr: "s’arrêter" },
+  { darija: "زيد", latin: "zid", fr: "avancer / continuer" },
+  { darija: "دوّر", latin: "dwwr", fr: "tourner" },
+  { darija: "رجع", latin: "rja3", fr: "revenir / retourner" },
+  { darija: "دخل", latin: "dkhol", fr: "entrer" },
+  { darija: "خرج", latin: "khrej", fr: "sortir" },
+  { darija: "شد الطريق", latin: "ched Triq", fr: "prendre la route" }
+];
