@@ -50,10 +50,11 @@ model User {
   subscriptionExpiresAt DateTime?
 
   // relations
-  lessonsAuthored Lesson[]         @relation("AuthorLessons")
-  progress        UserProgress[]
-  vocabularies    UserVocabulary[]
-  badges          UserBadge[]
+  lessonsAuthored      Lesson[]              @relation("AuthorLessons")
+  progress             UserProgress[]
+  vocabularies         UserVocabulary[]
+  badges               UserBadge[]
+  conversationMessages ConversationMessage[]
 
   @@index([email])
 }
@@ -71,9 +72,13 @@ model Language {
 model Module {
   id          String   @id @default(cuid())
   title       String
+  subtitle    String?
   description String?
   level       Int      @default(1)
   slug        String   @unique
+  colorA      String?
+  colorB      String?
+  shadowColor String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   isPublished Boolean  @default(false)
@@ -87,6 +92,7 @@ model Module {
 model Lesson {
   id          String   @id @default(cuid())
   title       String
+  slug        String?  @unique
   subtitle    String?
   description String?
   content     Json? // structured content (blocks, steps, hints)
@@ -128,6 +134,7 @@ model Vocabulary {
 
   exercises Exercise[]
   users     UserVocabulary[]
+  packWords PackWord[]
 
   @@index([word])
   @@index([languageId, word])
@@ -213,7 +220,7 @@ model UserProgress {
 
 model AnalyticsEvent {
   id        String   @id @default(cuid())
-  userId    String?  
+  userId    String?
   type      String
   payload   Json?
   createdAt DateTime @default(now())
@@ -236,7 +243,7 @@ model FriendRequest {
 model LeagueMembership {
   id        String   @id @default(cuid())
   userId    String
-  league    String   // Bronze, Silver, Gold, Diamond, Master
+  league    String // Bronze, Silver, Gold, Diamond, Master
   points    Int      @default(0)
   updatedAt DateTime @updatedAt
 
@@ -248,7 +255,7 @@ model VocabularyPack {
   id          String   @id @default(cuid())
   title       String
   description String?
-  difficulty  String?  // e.g. easy/medium/hard
+  difficulty  String? // e.g. easy/medium/hard
   category    String?
   premiumOnly Boolean  @default(false)
   createdAt   DateTime @default(now())
@@ -260,10 +267,10 @@ model VocabularyPack {
 }
 
 model PackWord {
-  id           String     @id @default(cuid())
+  id           String         @id @default(cuid())
   pack         VocabularyPack @relation(fields: [packId], references: [id])
   packId       String
-  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id])
+  vocabulary   Vocabulary     @relation(fields: [vocabularyId], references: [id])
   vocabularyId String
 
   @@index([packId])
@@ -274,7 +281,7 @@ model ConversationMessage {
   id        String   @id @default(cuid())
   user      User?    @relation(fields: [userId], references: [id])
   userId    String?
-  role      String   // 'user' | 'bot'
+  role      String // 'user' | 'bot'
   text      String
   audioUrl  String?
   createdAt DateTime @default(now())

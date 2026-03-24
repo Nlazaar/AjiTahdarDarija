@@ -18,6 +18,13 @@ async function bootstrap() {
   // Global validation pipe
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }))
 
+  // CORS — autoriser le frontend Next.js
+  app.enableCors({
+    origin: ['http://localhost:3000', 'http://localhost:3001'],
+    methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  })
+
   // Global exception filter
   app.useGlobalFilters(new HttpExceptionFilter())
   // app.use(compression()) — missing dependency in demo

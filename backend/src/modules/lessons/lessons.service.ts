@@ -11,8 +11,16 @@ export class LessonsService {
     return this.prisma.lesson.findMany();
   }
 
+  async findBySlug(slug: string) {
+    if (!slug) return null;
+    return this.prisma.lesson.findUnique({ where: { slug } });
+  }
+
   async findOne(id: string) {
-    return this.prisma.lesson.findUnique({ where: { id } });
+    return this.prisma.lesson.findUnique({
+      where: { id },
+      include: { _count: { select: { exercises: true } } },
+    });
   }
 
   async getExercises(lessonId: string) {

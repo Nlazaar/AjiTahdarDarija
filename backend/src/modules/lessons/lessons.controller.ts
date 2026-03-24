@@ -15,6 +15,11 @@ export class LessonsController {
     return this.lessonsService.findOne(id);
   }
 
+  @Get('slug/:slug')
+  findBySlug(@Param('slug') slug: string) {
+    return this.lessonsService.findBySlug(slug);
+  }
+
   @Get(':id/exercises')
   getExercises(@Param('id') id: string) {
     return this.lessonsService.getExercises(id);
