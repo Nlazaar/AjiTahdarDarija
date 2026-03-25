@@ -1,15 +1,17 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { DarijaLetter } from '@/types/alphabet';
 
 interface AssocierLettresProps {
-  pairs: DarijaLetter[];
-  onRoundComplete: () => void;
-  onSpeak: (letter: DarijaLetter) => void;
+  pairs: Array<{
+    letter: string;
+    latin: string;
+    fr: string;
+  }>;
+  onConfirm: () => void;
 }
 
-export default function AssocierLettres({ pairs, onRoundComplete, onSpeak }: AssocierLettresProps) {
+export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresProps) {
   const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
@@ -23,8 +25,14 @@ export default function AssocierLettres({ pairs, onRoundComplete, onSpeak }: Ass
     if (matchedIds.has(id)) return;
 
     if (side === 'left') {
-      const letter = pairs.find(p => p.latin === id);
-      if (letter) onSpeak(letter);
+      // Prononcer la lettre arabe (pas la romanisation)
+      const pair = pairs.find(p => p.latin === id);
+      if (pair && typeof window !== 'undefined') {
+        const t = new SpeechSynthesisUtterance(pair.letter);
+        t.lang = 'ar-MA';
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(t);
+      }
       setSelectedLeft(id === selectedLeft ? null : id);
     } else {
       setSelectedRight(id === selectedRight ? null : id);
@@ -50,85 +58,169 @@ export default function AssocierLettres({ pairs, onRoundComplete, onSpeak }: Ass
 
   useEffect(() => {
     if (matchedIds.size === pairs.length && pairs.length > 0) {
-      const timer = setTimeout(onRoundComplete, 1200);
+      const timer = setTimeout(onConfirm, 1000);
       return () => clearTimeout(timer);
     }
-  }, [matchedIds.size, pairs.length, onRoundComplete]);
+  }, [matchedIds.size, pairs.length, onConfirm]);
 
   return (
-    <div className="max-w-2xl mx-auto w-full px-4 space-y-8 animate-fadeUp">
-      <div className="text-center">
-        <h2 className="text-xl font-bold text-gray-800 tracking-tight">Associe chaque lettre à sa prononciation</h2>
-        <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mt-1">Étape d'apprentissage</p>
+    <div className="animate-fade-up" style={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      width: '100%', 
+      maxWidth: '800px', 
+      margin: '0 auto' 
+    }}>
+      {/* Question Text */}
+      <div style={{ marginBottom: '40px', textAlign: 'center' }}>
+        <h1 style={{ 
+          fontSize: '28px', 
+          fontWeight: '900', 
+          color: '#4b4b4b', 
+          marginBottom: '8px',
+          lineHeight: '1.2'
+        }}>
+          Associe chaque lettre
+        </h1>
+        <p style={{ 
+          fontSize: '14px', 
+          fontWeight: '700', 
+          color: '#afafaf', 
+          textTransform: 'uppercase', 
+          letterSpacing: '0.1em' 
+        }}>
+           Lqi kol horf m'a l-latin dyalo
+        </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-8 md:gap-x-12">
-        {/* Left Column - Letters */}
-        <div className="space-y-4">
-          <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2 mb-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
-            Lettres
-          </div>
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: '1fr 1fr', 
+        gap: '40px', 
+        width: '100%', 
+        maxWidth: '600px',
+        padding: '0 20px'
+      }}>
+        {/* Colonne Gauche - Lettres Arabe */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {pairs.map((p) => {
             const isMatched = matchedIds.has(p.latin);
             const isSelected = selectedLeft === p.latin;
             const isError = errorPair?.[0] === p.latin;
+
+            let shadowColor = "#e5e5e5";
+            let borderColor = "#e5e5e5";
+            let bgColor = "white";
+            let textColor = "#4b4b4b";
+
+            if (isMatched) {
+              bgColor = "#f7f7f7";
+              borderColor = "#e5e5e5";
+              textColor = "#d7d7d7";
+              shadowColor = "transparent";
+            } else if (isError) {
+              shadowColor = "#ff4b4b";
+              borderColor = "#ff4b4b";
+              bgColor = "#ffdbdb";
+            } else if (isSelected) {
+              shadowColor = "#1cb0f6";
+              borderColor = "#1cb0f6";
+              bgColor = "#ddf4ff";
+              textColor = "#1cb0f6";
+            }
 
             return (
               <button
                 key={p.latin}
                 onClick={() => handleSelect(p.latin, 'left')}
                 disabled={isMatched || (!!selectedLeft && !!selectedRight)}
-                className={`
-                  w-full h-16 flex items-center justify-center text-4xl font-arabic
-                  rounded-2xl border-2 transition-all duration-200 select-none
-                  ${isMatched 
-                    ? 'bg-green-100 border-green-400 text-green-700 shadow-none' 
-                    : isError 
-                      ? 'bg-red-50 border-red-500 text-red-700 animate-shakeX'
-                      : isSelected
-                        ? 'bg-green-50 border-green-400 ring-2 ring-green-100 scale-[1.03] shadow-md z-10'
-                        : 'bg-white border-gray-100 text-gray-800 hover:border-green-300 shadow-sm'}
-                `}
+                className={isError ? "animate-shake-x" : ""}
+                style={{
+                  width: '100%',
+                  height: '72px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '44px',
+                  fontFamily: '"Amiri", serif',
+                  backgroundColor: bgColor,
+                  borderColor: borderColor,
+                  borderStyle: 'solid',
+                  borderWidth: '2px',
+                  borderRadius: '16px',
+                  boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
+                  color: textColor,
+                  opacity: isMatched ? 0.3 : 1,
+                  cursor: isMatched ? 'default' : 'pointer',
+                  transition: 'all 0.1s',
+                  transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
+                }}
               >
                 {p.letter}
-                {isMatched && <span className="absolute right-3 text-xs text-green-600 font-bold opacity-50">✓</span>}
               </button>
             );
           })}
         </div>
 
-        {/* Right Column - Sounds */}
-        <div className="space-y-4">
-          <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2 mb-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-violet-400" />
-            Sons
-          </div>
+        {/* Colonne Droite - Sons Latin */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {shuffledSounds.map((s) => {
             const isMatched = matchedIds.has(s.latin);
             const isSelected = selectedRight === s.latin;
             const isError = errorPair?.[1] === s.latin;
+
+            let shadowColor = "#e5e5e5";
+            let borderColor = "#e5e5e5";
+            let bgColor = "white";
+            let textColor = "#4b4b4b";
+
+            if (isMatched) {
+              bgColor = "#f7f7f7";
+              borderColor = "#e5e5e5";
+              textColor = "#d7d7d7";
+              shadowColor = "transparent";
+            } else if (isError) {
+              shadowColor = "#ff4b4b";
+              borderColor = "#ff4b4b";
+              bgColor = "#ffdbdb";
+            } else if (isSelected) {
+              shadowColor = "#1cb0f6";
+              borderColor = "#1cb0f6";
+              bgColor = "#ddf4ff";
+              textColor = "#1cb0f6";
+            }
 
             return (
               <button
                 key={s.latin}
                 onClick={() => handleSelect(s.latin, 'right')}
                 disabled={isMatched || (!!selectedLeft && !!selectedRight)}
-                className={`
-                  w-full h-16 flex flex-col items-center justify-center gap-0.5
-                  rounded-2xl border-2 transition-all duration-200
-                  ${isMatched 
-                    ? 'bg-green-100 border-green-400 text-green-700' 
-                    : isError 
-                      ? 'bg-red-50 border-red-500 text-red-700 animate-shakeX'
-                      : isSelected
-                        ? 'bg-violet-50 border-violet-400 ring-2 ring-violet-100 scale-[1.03] shadow-md z-10 text-violet-900'
-                        : 'bg-white border-gray-100 text-gray-500 hover:border-violet-300 shadow-sm'}
-                `}
+                className={isError ? "animate-shake-x" : ""}
+                style={{
+                  width: '100%',
+                  height: '72px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: bgColor,
+                  borderColor: borderColor,
+                  borderStyle: 'solid',
+                  borderWidth: '2px',
+                  borderRadius: '16px',
+                  boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
+                  color: textColor,
+                  opacity: isMatched ? 0.3 : 1,
+                  cursor: isMatched ? 'default' : 'pointer',
+                  transition: 'all 0.1s',
+                  transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
+                }}
               >
-                <span className={`text-lg font-bold font-outfit leading-none ${isSelected || isMatched ? 'text-inherit' : 'text-gray-800'}`}>{s.latin}</span>
-                <span className="text-[9px] font-bold opacity-40 uppercase tracking-tighter">{s.fr}</span>
-                {isMatched && <span className="absolute right-3 text-xs text-green-600 font-bold opacity-50">✓</span>}
+                <span style={{ fontSize: '20px', fontWeight: '900' }}>{s.latin}</span>
+                <span style={{ fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', opacity: 0.5 }}>
+                  {s.fr}
+                </span>
               </button>
             );
           })}

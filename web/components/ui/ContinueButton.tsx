@@ -1,24 +1,20 @@
 "use client"
-import React from "react"
 
-interface ContinueButtonProps {
-  onClick: () => void
-  label?: string
-}
-
-export const ContinueButton: React.FC<ContinueButtonProps> = ({
-  onClick,
-  label = "Continuer →"
-}) => (
-  <button
-    onClick={onClick}
-    className="
-      w-full py-4 bg-green-500 hover:bg-green-600 active:scale-95
-      text-white font-bold text-base rounded-2xl
-      transition-all duration-150 animate-fadeUp
-      shadow-[0_4px_0_#16a34a] hover:shadow-[0_2px_0_#16a34a]
-    "
-  >
-    {label}
-  </button>
-)
+export const ContinueButton = ({ onClick, label = "CONTINUER", disabled = false }: { onClick?: () => void; label?: string; disabled?: boolean }) => {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={`
+        w-full py-4 rounded-2xl text-white text-base font-black transition-all duration-100 animate-fade-up
+        uppercase tracking-widest
+        ${disabled 
+          ? 'bg-[#e5e5e5] text-[#afafaf] cursor-not-allowed shadow-[0_5px_0_#afafaf]' 
+          : 'bg-[#58cc02] active:translate-y-0.5 shadow-[0_5px_0_#46a302] active:shadow-[0_2px_0_#46a302]'}
+      `}
+    >
+      {label}
+    </button>
+  );
+};
+export default ContinueButton

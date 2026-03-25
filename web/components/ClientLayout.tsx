@@ -8,56 +8,53 @@ import StatsPanel from '@/components/StatsPanel';
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   
-  const isAuth = pathname === '/login' || pathname === '/register' || pathname === '/' || pathname?.startsWith('/welcome');
-  const isLesson = pathname?.startsWith('/lesson');
+  const isAuth    = pathname === '/login' || pathname === '/register' || pathname === '/' || pathname?.startsWith('/welcome');
+  const isLesson  = pathname?.startsWith('/lesson');
+  const isChat    = pathname?.startsWith('/practice');   // chat plein-écran dans la col centrale
   const showSidebar = !isAuth && !isLesson;
 
   if (showSidebar) {
     return (
-      <div 
-        style={{ 
-          display: 'grid',
-          gridTemplateColumns: '96px 1fr 340px',
-          minHeight: '100vh',
-          backgroundColor: '#ffffff',
-          width: '100%'
-        }}
-      >
-        {/* Column 1: Left Sidebar (Fixed width) */}
-        <aside style={{ borderRight: '2px solid #e5e5e5', backgroundColor: '#233b5d' }}>
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '260px 1fr 300px',
+        minHeight: '100vh',
+        backgroundColor: '#ffffff',
+        width: '100%',
+      }}>
+        {/* Col 1 — Left nav */}
+        <aside style={{ backgroundColor: 'white' }}>
           <Sidebar />
         </aside>
-        
-        {/* Column 2: Central Content (Scrollable) */}
-        <main 
-          style={{ 
-            display: 'flex', 
-            flexDirection: 'column', 
-            alignItems: 'center',
-            paddingTop: '2rem',
-            paddingBottom: '6rem',
-            overflowY: 'auto'
-          }}
-        >
-          <div style={{ width: '100%', maxWidth: '640px' }}>
+
+        {/* Col 2 — Main content */}
+        <main style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: isChat ? 'stretch' : 'center',
+          paddingTop: isChat ? 0 : '2rem',
+          paddingBottom: isChat ? 0 : '6rem',
+          overflowY: isChat ? 'hidden' : 'auto',
+          height: isChat ? '100vh' : 'auto',
+        }}>
+          <div style={{ width: '100%', maxWidth: isChat ? '100%' : '640px', flex: isChat ? 1 : 'none', minHeight: 0 }}>
             {children}
           </div>
         </main>
 
-        {/* Column 3: Right Sidebar (Sticky/Fixed) */}
-        <aside 
-          className="hidden xl:flex"
-          style={{ 
-            borderLeft: '2px solid #e5e5e5', 
-            padding: '2rem',
-            flexDirection: 'column',
-            gap: '1.5rem',
-            position: 'sticky',
-            top: 0,
-            height: '100vh',
-            overflowY: 'auto'
-          }}
-        >
+        {/* Col 3 — Right stats panel */}
+        <aside style={{
+          borderLeft: '2px solid #e5e5e5',
+          padding: '1.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem',
+          position: 'sticky',
+          top: 0,
+          height: '100vh',
+          overflowY: 'auto',
+          backgroundColor: '#fafafa',
+        }}>
           <StatsPanel />
         </aside>
       </div>

@@ -1,5 +1,6 @@
-import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Request, UseGuards } from '@nestjs/common';
 import { LessonsService } from './lessons.service';
+import { JwtGuard } from '../auth/guards/jwt.guard';
 
 @Controller('lessons')
 export class LessonsController {
@@ -10,14 +11,14 @@ export class LessonsController {
     return this.lessonsService.findAll();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.lessonsService.findOne(id);
-  }
-
   @Get('slug/:slug')
   findBySlug(@Param('slug') slug: string) {
     return this.lessonsService.findBySlug(slug);
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.lessonsService.findOne(id);
   }
 
   @Get(':id/exercises')
@@ -25,10 +26,9 @@ export class LessonsController {
     return this.lessonsService.getExercises(id);
   }
 
+  @UseGuards(JwtGuard)
   @Post(':id/submit')
-  async submit(@Param('id') id: string, @Body() body: any) {
-    // expected body: { userId: string, answers: [{ exerciseId, answer }] }
-    const { userId, answers } = body;
-    return this.lessonsService.submit(id, userId, answers || []);
+  submit(@Param('id') id: string, @Request() req: any, @Body() body: any) {
+    return this.lessonsService.submit(id, req.user.id, body.answers ?? []);
   }
 }

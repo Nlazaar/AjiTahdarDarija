@@ -1,53 +1,57 @@
-"use client";
-
-import React, { useEffect } from 'react';
-import { ExerciseCard } from '../ui/ExerciseCard';
-import { AudioButton } from '../ui/AudioButton';
-import { ContinueButton } from '../ui/ContinueButton';
-import { DarijaLetter } from '@/types/alphabet';
+"use client"
+import React, { useEffect } from "react"
+import { AudioButton, ContinueButton } from "@/components/ui"
+import type { DarijaLetter } from "./types"
 
 interface FlashCardProps {
-  letter: DarijaLetter;
-  onContinue: () => void;
-  onSpeak: (l: DarijaLetter) => void;
+  letter:     DarijaLetter
+  onContinue: () => void
+  onSpeak:    (l: DarijaLetter) => void
+  progress?:  string  // ex. "2 / 4"
 }
 
-export default function FlashCard({ letter, onContinue, onSpeak }: FlashCardProps) {
+export default function FlashCard({ letter, onContinue, onSpeak, progress }: FlashCardProps) {
   useEffect(() => {
-    const timer = setTimeout(() => onSpeak(letter), 500);
-    return () => clearTimeout(timer);
-  }, [letter, onSpeak]);
+    const t = setTimeout(() => onSpeak(letter), 500)
+    return () => clearTimeout(t)
+  }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="max-w-md mx-auto w-full">
-      <ExerciseCard className="flex flex-col items-center gap-8 py-10">
-        <div className="bg-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-bold animate-bounceIn uppercase tracking-widest border border-amber-200">
-          🆕 Nouvelle lettre
-        </div>
+    <div className="flex flex-col items-center gap-4" style={{ animation: 'fadeUp 0.3s ease both' }}>
+      {/* Badge + progression */}
+      <div className="flex items-center gap-2">
+        <span className="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+          Nouvelle lettre
+        </span>
+        {progress && (
+          <span className="text-xs text-gray-400 font-medium">{progress}</span>
+        )}
+      </div>
 
-        <div className="text-9xl font-arabic text-royal text-center leading-none mt-4 drop-shadow-sm">
-          {letter.letter}
-        </div>
+      {/* Lettre arabe */}
+      <div
+        className="text-[96px] leading-none text-center text-[#1b3a6b] my-2"
+        style={{ fontFamily: 'Amiri, serif' }}
+      >
+        {letter.letter}
+      </div>
 
-        <div className="flex flex-col items-center gap-8 w-full">
-          <AudioButton onPlay={() => onSpeak(letter)} size="lg" />
+      {/* Bouton son */}
+      <AudioButton onPlay={() => onSpeak(letter)} size="lg" />
 
-          <div className="bg-gray-50 rounded-2xl p-6 w-full border border-gray-100 shadow-inner space-y-4">
-            <div className="flex justify-between items-center border-b border-gray-200/60 pb-3">
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Romanisation</span>
-              <span className="text-3xl font-bold text-gray-800 font-outfit">{letter.latin}</span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">Prononciation FR</span>
-              <span className="text-xl font-semibold text-gray-600 font-outfit">"{letter.fr}"</span>
-            </div>
-          </div>
+      {/* Infos */}
+      <div className="w-full bg-gray-50 rounded-xl p-4 space-y-2">
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-500">Romanisation</span>
+          <span className="font-bold text-gray-800">{letter.latin}</span>
         </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-500">Prononciation FR</span>
+          <span className="font-bold text-gray-800">"{letter.fr}"</span>
+        </div>
+      </div>
 
-        <div className="w-full pt-4">
-          <ContinueButton onClick={onContinue} />
-        </div>
-      </ExerciseCard>
+      <ContinueButton onClick={onContinue} label="Continuer →" />
     </div>
-  );
+  )
 }

@@ -1,0 +1,23 @@
+flowchart TD
+  A[Landing / Welcome] --> B[Level Selection]
+  B --> C[/progress (Modules list)]
+  C --> D[Module Unit]
+  D --> E[Lesson Node]
+  E --> F[/lesson/:id (Lesson Player)]
+  F --> F1[Flashcards]
+  F --> F2[MCQ / Exercises]
+  F --> F3[New Word]
+  F1 --> G[Bravo / Summary]
+  F2 --> G
+  F3 --> G
+  G --> C[Progress update (module/lesson state)]
+
+  subgraph Social
+    H[/conversation (Chatbot)]
+    I[/friends]
+    J[/leaderboard]
+  end
+
+  C --> H
+  C --> I
+  C --> J

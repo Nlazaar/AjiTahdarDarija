@@ -1,28 +1,33 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-const PROTECTED_PATHS = ['/progress', '/lesson', '/profile', '/review', '/settings']
+const PROTECTED = ['/progress', '/lesson', '/review', '/practice', '/leaderboard', '/profile', '/settings', '/friends'];
 
 export function middleware(req: NextRequest) {
-  // Contournement temporaire en mode développement pour tester l'UI sans compte
-  if (process.env.NODE_ENV === 'development') {
-    return NextResponse.next()
-  }
+  const { pathname } = req.nextUrl;
 
-  const { pathname } = req.nextUrl
-  // only check protected paths
-  if (PROTECTED_PATHS.some((p) => pathname.startsWith(p))) {
-    const token = req.cookies.get('jwt')?.value || null
+  if (PROTECTED.some(p => pathname.startsWith(p))) {
+    const token = req.cookies.get('jwt')?.value;
     if (!token) {
-      const url = req.nextUrl.clone()
-      url.pathname = '/login'
-
-      return NextResponse.redirect(url)
+      const url = req.nextUrl.clone();
+      url.pathname = '/login';
+      url.searchParams.set('from', pathname);
+      return NextResponse.redirect(url);
     }
   }
-  return NextResponse.next()
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/progress/:path*', '/lesson/:path*', '/profile/:path*', '/review/:path*', '/settings/:path*'],
-}
+  matcher: [
+    '/progress/:path*',
+    '/lesson/:path*',
+    '/review/:path*',
+    '/practice/:path*',
+    '/leaderboard/:path*',
+    '/profile/:path*',
+    '/settings/:path*',
+    '/friends/:path*',
+  ],
+};

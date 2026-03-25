@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express'
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
+import * as path from 'path'
 
 const LOG_PATH = process.env.AUDIT_LOG_PATH || path.join(process.cwd(), 'logs', 'audit.log')
 try { fs.mkdirSync(path.dirname(LOG_PATH), { recursive: true }) } catch {}

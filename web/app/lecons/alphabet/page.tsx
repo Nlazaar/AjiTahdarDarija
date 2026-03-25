@@ -309,8 +309,7 @@ export default function AlphabetLessonPage() {
           <AssocierLettres
             key={`assoc-${roundIdx}`}
             pairs={assocRounds[roundIdx]}
-            onRoundComplete={nextAssoc}
-            onSpeak={onSpeak}
+            onConfirm={nextAssoc}
           />
         )}
 
@@ -318,9 +317,7 @@ export default function AlphabetLessonPage() {
           <TrouverLesPaires
             key={`paires-${pairesRoundIdx}`}
             pairs={pairesRounds[pairesRoundIdx]}
-            onRoundComplete={nextPaires}
-            onSpeak={onSpeak}
-            onHeartLost={loseHeart}
+            onConfirm={nextPaires}
           />
         )}
 
@@ -347,15 +344,25 @@ export default function AlphabetLessonPage() {
           />
         )}
 
-        {phase === "dicter" && dicterPool[dicterIdx] && (
-          <DicterRomanisation
-            key={`dict-${dicterIdx}`}
-            letter={dicterPool[dicterIdx]}
-            onSpeak={onSpeak}
-            onSuccess={handlePhaseSuccess}
-            onFailed={handlePhaseFailed}
-          />
-        )}
+        {phase === "dicter" && dicterPool[dicterIdx] && (() => {
+          const current = dicterPool[dicterIdx];
+          const distractors = dicterPool
+            .filter(l => l.latin !== current.latin)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3)
+            .map(l => l.latin);
+          const choices = [current.latin, ...distractors].sort(() => Math.random() - 0.5);
+          return (
+            <DicterRomanisation
+              key={`dict-${dicterIdx}`}
+              letter={current}
+              choices={choices}
+              onSpeak={onSpeak}
+              onSuccess={handlePhaseSuccess}
+              onFailed={handlePhaseFailed}
+            />
+          );
+        })()}
 
         {/* FEEDBACK CONTINUATION FOR NEW PHASES */}
         {isAnswered && (

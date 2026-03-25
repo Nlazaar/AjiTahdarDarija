@@ -1,4 +1,4 @@
-import { getLesson, getExercises } from '@/lib/api'
+import { getLesson, getExercises, getLessonsByModule } from '@/lib/api'
 import LessonClient from './LessonClient'
 
 const MOCK_LESSON = { id: 'l1', title: 'Les Bases (Tanger)' }
@@ -42,22 +42,37 @@ export default async function LessonPage({ params, searchParams }: { params: { i
     return <MinimalProgress value={25} />;
   }
   let lesson, exercises;
-  
+
+  let nextLessonId: string | null = null
+
   try {
-    lesson = await getLesson(id)
+    lesson    = await getLesson(id)
     exercises = await getExercises(id)
-    
-    // Fallback if the backend returned empty object arrays because the file was empty
     if (!lesson || !lesson.id) lesson = MOCK_LESSON
-    // Currently hardcoded to return Level 1 data for UI review regardless of the node clicked
-    if (!exercises || !Array.isArray(exercises) || exercises.length === 0) exercises = MOCK_EXERCISES_L1
+    if (!Array.isArray(exercises))   exercises = []
+
+    // Trouve la leçon suivante dans le même module
+    if (lesson?.moduleId) {
+      const siblings = await getLessonsByModule(lesson.moduleId).catch(() => [])
+      const sorted   = [...(siblings as any[])].sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+      const idx      = sorted.findIndex((l: any) => l.id === id)
+      if (idx >= 0 && idx < sorted.length - 1) nextLessonId = sorted[idx + 1].id
+    }
   } catch (err) {
-    lesson = MOCK_LESSON
-    exercises = MOCK_EXERCISES_L1
+    lesson    = MOCK_LESSON
+    exercises = []
   }
-  
+
   const userId = 'user_123'
 
-  return <LessonClient lesson={lesson} exercises={exercises} userId={userId} />
+  return (
+    <LessonClient
+      lesson={lesson}
+      exercises={exercises}
+      userId={userId}
+      nextLessonId={nextLessonId}
+      isLastLesson={!nextLessonId}
+    />
+  )
 }
 

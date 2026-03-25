@@ -1,128 +1,110 @@
-// Simple API client for Next.js -> NestJS backend
-// Uses fetch(), returns parsed JSON, includes placeholder for JWT token
+import { getToken } from '@/lib/auth';
 
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3001'
+const BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3001';
 
+export type Module = {
+  id: string;
+  title: string;
+  description?: string;
+  progress?: number;
+};
 
-type Module = {
-  id: string
-  title: string
-  description?: string
-  progress?: number
-}
+export type Lesson = {
+  id: string;
+  title: string;
+  excerpt?: string;
+  content?: string;
+};
 
-type Lesson = {
-  id: string
-  title: string
-  excerpt?: string
-  content?: string
-}
+export type Exercise = {
+  id: string;
+  type: string;
+  question: string;
+  options?: string[];
+};
 
-type Exercise = {
-  id: string
-  type: string
-  question: string
-  options?: string[]
-}
+export type Badge = {
+  id: string;
+  name: string;
+  description?: string;
+  icon?: string;
+};
 
-type Badge = {
-  id: string
-  name: string
-  description?: string
-  icon?: string
-}
-
-type Gamification = {
-  xp: number
-  streak: number
-  hearts: number
-  badges: Badge[]
-}
+export type Gamification = {
+  xp: number;
+  streak: number;
+  hearts: number;
+  gemmes: number;
+  badges: Badge[];
+};
 
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
+  const token = getToken();
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
     ...(init.headers as Record<string, string>),
-  }
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+  };
 
-  // Placeholder for future JWT support
-  const token = process.env.NEXT_PUBLIC_JWT_TOKEN ?? ''
-  if (token) headers['Authorization'] = `Bearer ${token}`
-
-  let res: Response
+  let res: Response;
   try {
-    res = await fetch(`${BASE}${path}`, { ...init, headers })
+    res = await fetch(`${BASE}${path}`, { ...init, headers, cache: 'no-store' });
   } catch (err) {
-    // Network error (backend down, CORS, DNS). Return empty fallback to avoid unhandled runtime error during demo.
-    // Callers should handle empty responses / provide local mocks.
-    // Log the error for debugging.
-    // eslint-disable-next-line no-console
-    console.warn('API request failed:', err)
-    return {} as T
+    console.warn('[api] Network error:', err);
+    return {} as T;
   }
 
-  const text = await res.text().catch(() => '')
-  if (!res.ok) {
-    throw new Error(`API ${res.status} ${res.statusText}: ${text}`)
+  if (res.status === 401) {
+    if (typeof window !== 'undefined') window.location.href = '/login';
+    return {} as T;
   }
-  if (!text) {
-    return {} as T
-  }
-  return JSON.parse(text) as T
+
+  const text = await res.text().catch(() => '');
+  if (!res.ok) throw new Error(`API ${res.status}: ${text}`);
+  if (!text) return {} as T;
+  return JSON.parse(text) as T;
 }
 
-export async function getModules(): Promise<Module[]> {
-  return request<Module[]>('/modules')
-}
+export const getModules            = ()                 => request<Module[]>('/modules');
+export const getLessonsByModule    = (moduleId: string) => request<Lesson[]>(`/modules/${moduleId}/lessons`);
+export const getLesson             = (lessonId: string) => request<Lesson>(`/lessons/${lessonId}`);
+export const getExercises          = (lessonId: string) => request<Exercise[]>(`/lessons/${lessonId}/exercises`);
+export const getGamification       = ()                 => request<Gamification>('/gamification/me');
+export const getProfile            = ()                 => request<any>('/auth/me');
+export const getMyProgress         = ()                 => request<any>('/progress/me');
 
-export async function getLessonsByModule(moduleId: string): Promise<Lesson[]> {
-  return request<Lesson[]>(`/modules/${moduleId}/lessons`)
-}
+// Leaderboard
+export const getLeaderboard        = ()                 => request<any[]>('/leaderboard/global');
+export const getWeeklyLeaderboard  = ()                 => request<any[]>('/leaderboard/weekly');
+export const getFriendsLeaderboard = ()                 => request<any[]>('/leaderboard/friends');
 
-export async function getLesson(lessonId: string): Promise<Lesson> {
-  return request<Lesson>(`/lessons/${lessonId}`)
-}
+// Friends
+export const getFriends         = ()                 => request<any[]>('/friends');
+export const getFriendRequests  = ()                 => request<any[]>('/friends/requests');
+export const searchFriends      = (q: string)        => request<any[]>(`/friends/search?q=${encodeURIComponent(q)}`);
+export const sendFriendRequest  = (email: string)    => request('/friends/request', { method: 'POST', body: JSON.stringify({ email }) });
+export const respondFriendReq   = (id: string, accept: boolean) => request(`/friends/respond/${id}`, { method: 'POST', body: JSON.stringify({ accept }) });
+export const removeFriend       = (id: string)       => request(`/friends/${id}`, { method: 'DELETE' });
 
-export async function getExercises(lessonId: string): Promise<Exercise[]> {
-  return request<Exercise[]>(`/lessons/${lessonId}/exercises`)
-}
+export const submitLesson = (
+  lessonId: string,
+  body: { answers: Array<{ exerciseId: string; answer: any }> },
+) => request(`/lessons/${lessonId}/submit`, { method: 'POST', body: JSON.stringify(body) });
 
-export async function submitLesson(lessonId: string, body: { userId: string; answers: any[] }) {
-  return request('/lessons/' + lessonId + '/submit', {
-    method: 'POST',
-    body: JSON.stringify(body),
-  })
-}
+export const addXp = (amount: number) =>
+  request('/gamification/xp', { method: 'POST', body: JSON.stringify({ amount }) });
 
-export async function getGamification(userId: string): Promise<Gamification> {
-  return request<Gamification>(`/gamification/badges?userId=${encodeURIComponent(userId)}`)
-}
+export const updateStreak = () =>
+  request('/gamification/streak', { method: 'POST', body: JSON.stringify({}) });
 
-export async function addXp(userId: string, amount: number) {
-  return request('/gamification/xp', {
-    method: 'POST',
-    body: JSON.stringify({ userId, amount }),
-  })
-}
+export const updateHearts = (delta: number) =>
+  request('/gamification/hearts', { method: 'POST', body: JSON.stringify({ delta }) });
 
-export async function updateStreak(userId: string) {
-  return request('/gamification/streak', {
-    method: 'POST',
-    body: JSON.stringify({ userId }),
-  })
-}
+// Shop
+export const getShopItems   = ()             => request<any[]>('/shop');
+export const getMyInventory = ()             => request<any[]>('/shop/inventory');
+export const buyShopItem    = (key: string)  => request<any>(`/shop/buy/${key}`, { method: 'POST' });
 
-export async function updateHearts(userId: string, delta: number) {
-  return request('/gamification/hearts', {
-    method: 'POST',
-    body: JSON.stringify({ userId, delta }),
-  })
-}
-
-export async function getLeaderboard(): Promise<any[]> {
-  return request<any[]>('/leaderboard/global')
-}
-
-export type { Module, Lesson, Exercise, Badge, Gamification }
-
-
+// Quests
+export const getQuestState   = ()            => request<any>('/quests');
+export const claimQuestReward = (key: string) => request<any>(`/quests/claim/${key}`, { method: 'POST' });

@@ -17,6 +17,10 @@ export class LeaguesService {
 
   async assignLeague(userId: string, league: string) {
     if (!LEAGUES.includes(league)) throw new Error('Invalid league')
-    return this.prisma.leagueMembership.upsert({ where: { userId }, create: { userId, league }, update: { league } })
+    const existing = await this.prisma.leagueMembership.findFirst({ where: { userId } })
+    if (existing) {
+      return this.prisma.leagueMembership.update({ where: { id: existing.id }, data: { league } })
+    }
+    return this.prisma.leagueMembership.create({ data: { userId, league } })
   }
 }

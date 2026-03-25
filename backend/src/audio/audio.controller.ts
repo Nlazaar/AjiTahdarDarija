@@ -33,7 +33,7 @@ export class AudioController {
 
   @Post('asr')
   @UseInterceptors(FileInterceptor('file'))
-  async asr(@UploadedFile() file: Express.Multer.File, @Body() body: any) {
+  async asr(@UploadedFile() file: any, @Body() body: any) {
     if (file) {
       const transcript = await this.audioService.transcribeBuffer?.(file.buffer, file.mimetype)
       return { transcription: transcript }
@@ -48,7 +48,7 @@ export class AudioController {
 
   @Post('pronunciation-score')
   @UseInterceptors(FileInterceptor('file'))
-  async pronunciationScore(@UploadedFile() file: Express.Multer.File, @Body() body: PronunciationScoreDto) {
+  async pronunciationScore(@UploadedFile() file: any, @Body() body: PronunciationScoreDto) {
     if (!body?.expectedText) throw new HttpException('expectedText is required', HttpStatus.BAD_REQUEST)
 
     let transcription = body.transcription

@@ -1,7 +1,13 @@
 # VERSION
 
-- Version actuelle : 1.0.0
-- Date de release : 2026-03-21
+- Version actuelle : 1.1.0
+- Date de release : 2026-03-25
+
+## Changelog (v1.1.0)
+- Backend : extension du domaine auth (DTO/strategies), ajout de nouveaux modules de progression et engagement (`quests`, `shop`), et évolution des contrôleurs/services (friends, lessons, progress, leaderboard, gamification).
+- Data : ajout de scripts de seed pour le curriculum, les modules et la boutique, plus support Prisma associé.
+- Web : mise à jour des pages clés (auth, conversation, friends, leaderboard, progress, lessons), refonte de composants d'exercices et amélioration de l'intégration API côté client.
+- Architecture : ajout/mise à jour de la documentation d'architecture et du flow écran.
 
 ## Changelog (v1.0.0)
 - Backend : API NestJS + Prisma, authentification JWT, validation globale, gestion d'erreurs uniforme, logging requêtes, rate limiter (auth), endpoints santé et métriques.

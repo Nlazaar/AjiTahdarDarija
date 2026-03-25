@@ -1,11 +1,15 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
+import { QuestsService } from '../quests/quests.service';
 
 type AnswerPayload = { exerciseId: string; answer: any }[];
 
 @Injectable()
 export class LessonsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly questsService: QuestsService,
+  ) {}
 
   async findAll() {
     return this.prisma.lesson.findMany();
@@ -70,10 +74,24 @@ export class LessonsService {
       updatedProgress = await this.prisma.userProgress.update({ where: { userId_lessonId: { userId, lessonId } }, data: { progress: newProgress, completed: newProgress === 100, xpEarned: existing.xpEarned + xpEarned } });
     }
 
+    // Award gemmes on lesson completion (score >= 60)
+    const gemmesEarned = score >= 60 ? 15 : 0;
+    if (gemmesEarned > 0) {
+      await this.prisma.user.update({ where: { id: userId }, data: { gemmes: { increment: gemmesEarned } } });
+    }
+
+    // Update quest progress (fire-and-forget, don't block the response)
+    this.questsService.updateProgress(userId, {
+      xpEarned,
+      lessonCompleted: score >= 60,
+      score,
+    }).catch(() => {});
+
     return {
       score,
       errors,
       xpEarned,
+      gemmesEarned,
       progress: updatedProgress,
     };
   }

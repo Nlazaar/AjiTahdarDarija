@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import api from './api'
+import { getLesson, getExercises } from './api'
 import { setLocalCache, getLocalCache } from './localCache'
 
 export function usePrefetchLesson(nextLessonId?: string) {
@@ -11,7 +11,7 @@ export function usePrefetchLesson(nextLessonId?: string) {
     let mounted = true
     ;(async () => {
       try {
-        const data = await api.get(`/lessons/${nextLessonId}`)
+        const data = await getLesson(nextLessonId)
         if (!mounted) return
         setLocalCache(key, data, 60 * 5)
       } catch {
@@ -27,7 +27,7 @@ export async function prefetchExercise(exId: string) {
   try {
     const cached = getLocalCache(key)
     if (cached) return
-    const data = await api.get(`/exercises/${exId}`)
+    const data = await getExercises(exId)
     setLocalCache(key, data, 60 * 5)
   } catch {
     // ignore

@@ -1,16 +1,19 @@
-import { Controller, Get, Req } from '@nestjs/common'
+import { Controller, Get, Request, UseGuards } from '@nestjs/common'
 import { LeaderboardService } from './leaderboard.service'
+import { JwtGuard } from '../auth/guards/jwt.guard'
 
 @Controller('leaderboard')
 export class LeaderboardController {
   constructor(private svc: LeaderboardService) {}
 
   @Get('global')
-  async global() { return this.svc.global() }
+  global() { return this.svc.global() }
 
+  @UseGuards(JwtGuard)
   @Get('weekly')
-  async weekly() { return this.svc.weekly() }
+  weekly() { return this.svc.weekly() }
 
+  @UseGuards(JwtGuard)
   @Get('friends')
-  async friends(@Req() req: any) { return this.svc.friends(req.user?.id) }
+  friends(@Request() req: any) { return this.svc.friendsRanking(req.user.id) }
 }
