@@ -20,21 +20,22 @@ let AuthService = class AuthService {
         this.jwt = jwt;
     }
     async register(dto) {
-        const existing = await this.prisma.user.findUnique({
-            where: { email: dto.email.toLowerCase() },
-        });
-        if (existing) {
-            throw new common_1.ConflictException('Cet email est déjà utilisé');
+        try {
+            const existing = await this.prisma.user.findUnique({
+                where: { email: dto.email.toLowerCase() },
+            });
+            if (existing)
+                throw new common_1.ConflictException('Cet email est déjà utilisé');
+            const passwordHash = await bcrypt.hash(dto.password, 10);
+            const user = await this.prisma.user.create({
+                data: { email: dto.email.toLowerCase(), name: dto.name ?? null, passwordHash },
+            });
+            return this.buildResponse(user);
         }
-        const passwordHash = await bcrypt.hash(dto.password, 10);
-        const user = await this.prisma.user.create({
-            data: {
-                email: dto.email.toLowerCase(),
-                name: dto.name ?? null,
-                passwordHash,
-            },
-        });
-        return this.buildResponse(user);
+        catch (e) {
+            console.error('[REGISTER ERROR]', e?.message ?? e);
+            throw e;
+        }
     }
     async login(dto) {
         const user = await this.prisma.user.findUnique({
