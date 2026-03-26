@@ -69,15 +69,6 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
         ))}
       </div>
 
-      {answered && (
-        <FeedbackBanner
-          type={selected === letter.latin ? "correct" : "incorrect"}
-          message={selected === letter.latin
-            ? "Bonne réponse !"
-            : `C'était ${letter.letter} (${letter.latin})`
-          }
-        />
-      )}
     </div>
   )
 }

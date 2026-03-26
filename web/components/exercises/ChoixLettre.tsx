@@ -85,15 +85,6 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
         ))}
       </div>
 
-      {answered && (
-        <FeedbackBanner
-          type={state === "correct" ? "correct" : "incorrect"}
-          message={state === "correct"
-            ? "Bonne réponse !"
-            : `Faux — la bonne réponse est ${letter.latin} (${letter.fr})`
-          }
-        />
-      )}
     </div>
   )
 }

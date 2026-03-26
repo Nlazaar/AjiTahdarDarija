@@ -69,15 +69,6 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
         </div>
       )}
 
-      {answered && (
-        <FeedbackBanner
-          type={correct ? "correct" : "incorrect"}
-          message={correct
-            ? "Bonne réponse !"
-            : `Faux — ${letter.letter} = ${letter.latin}`
-          }
-        />
-      )}
     </div>
   )
 }
