@@ -395,7 +395,7 @@ export default function LessonClient({
     <div className="min-h-screen bg-[#f8f9fa] flex flex-col">
 
       {/* ── HEADER ─────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-100 px-4 py-3">
+      <header className="sticky top-0 z-50 px-4 py-3">
 
         {/* Ligne 1 : retour + barre de progression + cœurs */}
         <div className="flex items-center gap-3 mb-2">

@@ -11,266 +11,184 @@ interface TrouverLesPairesProps {
   onConfirm: () => void;
 }
 
-export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesProps) {
-  const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
-  const [selectedRight, setSelectedRight] = useState<string | null>(null);
-  const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
-  const [wrongPair, setWrongPair] = useState<string[] | null>(null);
+function playLetter(letter: string) {
+  if (typeof window === "undefined") return;
+  const t = new SpeechSynthesisUtterance(letter);
+  t.lang = "ar-MA";
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(t);
+}
 
-  // Mélange de la colonne de droite (une seule fois)
-  const [shuffledSounds] = useState(() => [...pairs].sort(() => Math.random() - 0.5));
+export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesProps) {
+  const [selectedLeft,  setSelectedLeft]  = useState<string | null>(null);
+  const [selectedRight, setSelectedRight] = useState<string | null>(null);
+  const [matchedIds,    setMatchedIds]    = useState<Set<string>>(new Set());
+  const [wrongPair,     setWrongPair]     = useState<string[] | null>(null);
+
+  const [shuffledRight] = useState(() => [...pairs].sort(() => Math.random() - 0.5));
 
   useEffect(() => {
-    if (selectedLeft && selectedRight) {
-      if (selectedLeft === selectedRight) {
-        setMatchedIds(prev => new Set(prev).add(selectedLeft));
+    if (!selectedLeft || !selectedRight) return;
+    if (selectedLeft === selectedRight) {
+      const matched = pairs.find(p => p.latin === selectedLeft);
+      if (matched) playLetter(matched.letter);
+      setMatchedIds(prev => new Set(prev).add(selectedLeft));
+      setSelectedLeft(null);
+      setSelectedRight(null);
+    } else {
+      setWrongPair([selectedLeft, selectedRight]);
+      setTimeout(() => {
+        setWrongPair(null);
         setSelectedLeft(null);
         setSelectedRight(null);
-        
-        // Prononcer la lettre arabe (pas la romanisation)
-        const matched = pairs.find(p => p.latin === selectedLeft);
-        if (matched && typeof window !== 'undefined') {
-          const t = new SpeechSynthesisUtterance(matched.letter);
-          t.lang = 'ar-MA';
-          window.speechSynthesis.speak(t);
-        }
-      } else {
-        setWrongPair([selectedLeft, selectedRight]);
-        setTimeout(() => {
-          setSelectedLeft(null);
-          setSelectedRight(null);
-          setWrongPair(null);
-        }, 800);
-      }
+      }, 800);
     }
   }, [selectedLeft, selectedRight]);
 
   const allFound = matchedIds.size === pairs.length;
 
+  const leftStyle = (latin: string) => {
+    const isMatched  = matchedIds.has(latin);
+    const isSelected = selectedLeft === latin;
+    const isError    = wrongPair?.[0] === latin;
+    if (isMatched)  return { bg: "#d1fae5", border: "#34d399", shadow: "transparent", text: "#065f46" };
+    if (isError)    return { bg: "#ffdbdb", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#991b1b" };
+    if (isSelected) return { bg: "#ddf4ff", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#0369a1" };
+    return           { bg: "white",    border: "#e5e5e5", shadow: "#e5e5e5",     text: "#4b4b4b" };
+  };
+
+  const rightStyle = (latin: string) => {
+    const isMatched  = matchedIds.has(latin);
+    const isSelected = selectedRight === latin;
+    const isError    = wrongPair?.[1] === latin;
+    if (isMatched)  return { bg: "#d1fae5", border: "#34d399", shadow: "transparent", text: "#065f46" };
+    if (isError)    return { bg: "#ffdbdb", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#991b1b" };
+    if (isSelected) return { bg: "#ddf4ff", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#0369a1" };
+    return           { bg: "white",    border: "#e5e5e5", shadow: "#e5e5e5",     text: "#4b4b4b" };
+  };
+
   return (
-    <div className="animate-fade-up" style={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', 
-      width: '100%', 
-      maxWidth: '800px', 
-      margin: '0 auto' 
-    }}>
-      {/* Question Text */}
-      <div style={{ marginBottom: '40px', textAlign: 'center' }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: '900', 
-          color: '#4b4b4b', 
-          marginBottom: '8px',
-          lineHeight: '1.2'
-        }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", maxWidth: "600px", margin: "0 auto" }}>
+
+      {/* Titre + compteur */}
+      <div style={{ marginBottom: "24px", textAlign: "center" }}>
+        <h1 style={{ fontSize: "24px", fontWeight: "900", color: "#4b4b4b", marginBottom: "6px" }}>
           Trouve les paires
         </h1>
-        <p style={{ 
-          fontSize: '14px', 
-          fontWeight: '700', 
-          color: '#afafaf', 
-          textTransform: 'uppercase', 
-          letterSpacing: '0.1em' 
+        <div style={{
+          display: "inline-flex", alignItems: "center", gap: "6px",
+          background: matchedIds.size > 0 ? "#d1fae5" : "#f3f4f6",
+          borderRadius: "20px", padding: "4px 14px"
         }}>
-           Mémorisation active
-        </p>
+          <span style={{ fontSize: "18px", fontWeight: "900", color: matchedIds.size > 0 ? "#059669" : "#9ca3af" }}>
+            {matchedIds.size}
+          </span>
+          <span style={{ fontSize: "13px", color: "#9ca3af", fontWeight: "600" }}>
+            / {pairs.length} trouvées
+          </span>
+        </div>
       </div>
 
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: '1fr 1fr', 
-        gap: '20px', 
-        width: '100%', 
-        maxWidth: '600px',
-        padding: '0 20px'
-      }}>
-        {/* Colonne ARABE */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {pairs.map((p, idx) => {
-            const isMatched = matchedIds.has(p.latin);
+      {/* Grille */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", width: "100%", padding: "0 8px" }}>
+
+        {/* Colonne gauche — boutons audio */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          {pairs.map((p) => {
+            const s = leftStyle(p.latin);
+            const isMatched  = matchedIds.has(p.latin);
             const isSelected = selectedLeft === p.latin;
-            const isError = wrongPair?.[0] === p.latin;
-            
-            let shadowColor = "#e5e5e5";
-            let borderColor = "#e5e5e5";
-            let bgColor = "white";
-            let textColor = "#4b4b4b";
-
-            if (isMatched) {
-              bgColor = "#f7f7f7";
-              borderColor = "#e5e5e5";
-              textColor = "#d7d7d7";
-              shadowColor = "transparent";
-            } else if (isError) {
-              shadowColor = "#ff4b4b";
-              borderColor = "#ff4b4b";
-              bgColor = "#ffdbdb";
-            } else if (isSelected) {
-              shadowColor = "#1cb0f6";
-              borderColor = "#1cb0f6";
-              bgColor = "#ddf4ff";
-              textColor = "#1cb0f6";
-            }
-
             return (
               <button
                 key={p.latin}
                 disabled={isMatched || !!wrongPair}
-                onClick={() => setSelectedLeft(isSelected ? null : p.latin)}
-                className={isError ? "animate-shake-x" : ""}
+                onClick={() => {
+                  playLetter(p.letter);
+                  setSelectedLeft(isSelected ? null : p.latin);
+                }}
+                className={wrongPair?.[0] === p.latin ? "animate-shake-x" : ""}
                 style={{
-                  width: '100%',
-                  height: '72px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  padding: '0 16px',
-                  gap: '12px',
-                  backgroundColor: bgColor,
-                  borderColor: borderColor,
-                  borderStyle: 'solid',
-                  borderWidth: '2px',
-                  borderRadius: '16px',
-                  boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
-                  color: textColor,
-                  opacity: isMatched ? 0.3 : 1,
-                  cursor: isMatched ? 'default' : 'pointer',
-                  transition: 'all 0.1s',
-                  transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
+                  width: "100%", height: "68px",
+                  display: "flex", alignItems: "center", justifyContent: "center", gap: "10px",
+                  backgroundColor: s.bg, borderColor: s.border,
+                  borderStyle: "solid", borderWidth: "2px", borderRadius: "16px",
+                  boxShadow: s.shadow === "transparent" ? "none" : `0 4px 0 ${s.shadow}`,
+                  color: s.text,
+                  cursor: isMatched ? "default" : "pointer",
+                  transition: "all 0.1s",
+                  transform: isSelected && !isMatched ? "translateY(2px)" : "none",
                 }}
               >
-                <div style={{ 
-                  width: '24px', 
-                  height: '24px', 
-                  borderRadius: '6px', 
-                  border: '2px solid',
-                  borderColor: isSelected ? '#1cb0f6' : '#e5e5e5',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '10px',
-                  fontWeight: '900',
-                  color: isSelected ? '#1cb0f6' : '#afafaf'
-                }}>
-                  {idx + 1}
-                </div>
-                <div style={{ flex: 1, textAlign: 'center', fontSize: '32px', fontFamily: '"Amiri", serif', marginTop: '4px' }}>
-                  {p.letter}
-                </div>
+                {isMatched ? (
+                  <span style={{ fontSize: "20px" }}>✓</span>
+                ) : (
+                  <>
+                    <span style={{ fontSize: "22px" }}>🔊</span>
+                    <span style={{ fontSize: "13px", fontWeight: "700", color: s.text, opacity: 0.7 }}>
+                      {p.latin}
+                    </span>
+                  </>
+                )}
               </button>
             );
           })}
         </div>
 
-        {/* Colonne LATIN */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {shuffledSounds.map((s, idx) => {
-            const isMatched = matchedIds.has(s.latin);
-            const isSelected = selectedRight === s.latin;
-            const isError = wrongPair?.[1] === s.latin;
-
-            let shadowColor = "#e5e5e5";
-            let borderColor = "#e5e5e5";
-            let bgColor = "white";
-            let textColor = "#4b4b4b";
-
-            if (isMatched) {
-              bgColor = "#f7f7f7";
-              borderColor = "#e5e5e5";
-              textColor = "#d7d7d7";
-              shadowColor = "transparent";
-            } else if (isError) {
-              shadowColor = "#ff4b4b";
-              borderColor = "#ff4b4b";
-              bgColor = "#ffdbdb";
-            } else if (isSelected) {
-              shadowColor = "#1cb0f6";
-              borderColor = "#1cb0f6";
-              bgColor = "#ddf4ff";
-              textColor = "#1cb0f6";
-            }
-
+        {/* Colonne droite — sens français */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          {shuffledRight.map((s_) => {
+            const s = rightStyle(s_.latin);
+            const isMatched  = matchedIds.has(s_.latin);
+            const isSelected = selectedRight === s_.latin;
             return (
               <button
-                key={s.latin}
+                key={s_.latin}
                 disabled={isMatched || !!wrongPair}
-                onClick={() => setSelectedRight(isSelected ? null : s.latin)}
-                className={isError ? "animate-shake-x" : ""}
+                onClick={() => setSelectedRight(isSelected ? null : s_.latin)}
+                className={wrongPair?.[1] === s_.latin ? "animate-shake-x" : ""}
                 style={{
-                  width: '100%',
-                  height: '72px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  padding: '0 16px',
-                  gap: '12px',
-                  backgroundColor: bgColor,
-                  borderColor: borderColor,
-                  borderStyle: 'solid',
-                  borderWidth: '2px',
-                  borderRadius: '16px',
-                  boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
-                  color: textColor,
-                  opacity: isMatched ? 0.3 : 1,
-                  cursor: isMatched ? 'default' : 'pointer',
-                  transition: 'all 0.1s',
-                  transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
+                  width: "100%", height: "68px",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  padding: "0 12px",
+                  backgroundColor: s.bg, borderColor: s.border,
+                  borderStyle: "solid", borderWidth: "2px", borderRadius: "16px",
+                  boxShadow: s.shadow === "transparent" ? "none" : `0 4px 0 ${s.shadow}`,
+                  color: s.text,
+                  cursor: isMatched ? "default" : "pointer",
+                  transition: "all 0.1s",
+                  transform: isSelected && !isMatched ? "translateY(2px)" : "none",
+                  textAlign: "center",
                 }}
               >
-                <div style={{ 
-                  width: '24px', 
-                  height: '24px', 
-                  borderRadius: '6px', 
-                  border: '2px solid',
-                  borderColor: isSelected ? '#1cb0f6' : '#e5e5e5',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '10px',
-                  fontWeight: '900',
-                  color: isSelected ? '#1cb0f6' : '#afafaf'
-                }}>
-                  {idx + 5}
-                </div>
-                <div style={{ 
-                  flex: 1, 
-                  textAlign: 'center', 
-                  display: 'flex', 
-                  flexDirection: 'column', 
-                  justifyContent: 'center',
-                  gap: '0'
-                }}>
-                  <span style={{ fontSize: '16px', fontWeight: '900', textTransform: 'uppercase' }}>{s.latin}</span>
-                  <span style={{ fontSize: '9px', fontWeight: '700', textTransform: 'uppercase', opacity: 0.5 }}>{s.fr}</span>
-                </div>
+                {isMatched ? (
+                  <span style={{ fontSize: "20px" }}>✓</span>
+                ) : (
+                  <span style={{ fontSize: "13px", fontWeight: "700", lineHeight: "1.3" }}>
+                    {s_.fr}
+                  </span>
+                )}
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* Trigger auto-confirm when all matched */}
+      {/* Bouton valider */}
       {allFound && (
-        <div style={{ marginTop: '40px' }}>
-          <button 
-            onClick={onConfirm}
-            className="animate-fade-up"
-            style={{
-              padding: '12px 32px',
-              backgroundColor: '#58cc02',
-              color: 'white',
-              border: 'none',
-              borderRadius: '16px',
-              boxShadow: '0 4px 0 #46a302',
-              fontWeight: '900',
-              fontSize: '14px',
-              letterSpacing: '0.1em',
-              cursor: 'pointer'
-            }}
-          >
-            VALIDER
-          </button>
-        </div>
+        <button
+          onClick={onConfirm}
+          className="animate-fade-up"
+          style={{
+            marginTop: "32px", padding: "14px 40px",
+            backgroundColor: "#58cc02", color: "white",
+            border: "none", borderRadius: "16px",
+            boxShadow: "0 4px 0 #46a302",
+            fontWeight: "900", fontSize: "14px",
+            letterSpacing: "0.1em", cursor: "pointer",
+          }}
+        >
+          CONTINUER →
+        </button>
       )}
     </div>
   );
