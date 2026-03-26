@@ -7,31 +7,34 @@ import {
   sendFriendRequest, respondFriendReq, removeFriend,
 } from '@/lib/api';
 
+/* ─── Colors ──────────────────────────────────────────────────────────────── */
+const CARD   = '#1e2d36';
+const CARD2  = '#243b4a';
+const BORDER = 'rgba(255,255,255,0.07)';
+const TEXT   = '#ffffff';
+const SUB    = '#8b9eb0';
+const GREEN  = '#58cc02';
+
 type Tab = 'friends' | 'requests' | 'search';
 
-function Avatar({ name, xp, size = 40 }: { name: string; xp?: number; size?: number }) {
-  const LEAGUE_COLOR =
-    (xp ?? 0) >= 10000 ? '#7c3aed' :
-    (xp ?? 0) >= 5000  ? '#42a5f5' :
-    (xp ?? 0) >= 2000  ? '#f5c518' :
-    (xp ?? 0) >= 1000  ? '#9e9e9e' : '#cd7f32';
+function leagueColor(xp: number) {
+  if (xp >= 10000) return '#7c3aed';
+  if (xp >= 5000)  return '#42a5f5';
+  if (xp >= 2000)  return '#f5c518';
+  if (xp >= 1000)  return '#9e9e9e';
+  return '#cd7f32';
+}
 
+function Avatar({ name, xp, size = 40 }: { name: string; xp?: number; size?: number }) {
+  const c = leagueColor(xp ?? 0);
   return (
     <div style={{
-      width: size, height: size, borderRadius: Math.round(size * 0.35),
-      background: `linear-gradient(135deg, ${LEAGUE_COLOR}, ${LEAGUE_COLOR}cc)`,
+      width: size, height: size, borderRadius: Math.round(size * 0.3),
+      background: `linear-gradient(135deg, ${c}, ${c}99)`,
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       fontSize: size * 0.35, fontWeight: 900, color: 'white', flexShrink: 0,
     }}>
       {(name ?? '?').slice(0, 2).toUpperCase()}
-    </div>
-  );
-}
-
-function XPBadge({ xp }: { xp: number }) {
-  return (
-    <div style={{ fontSize: 13, fontWeight: 800, color: '#f59e0b' }}>
-      {xp.toLocaleString()} <span style={{ fontSize: 10, fontWeight: 700, color: '#9ca3af' }}>XP</span>
     </div>
   );
 }
@@ -43,18 +46,12 @@ function FriendsList({ meId }: { meId?: string }) {
 
   const load = useCallback(() => {
     setLoading(true);
-    getFriends().then(data => {
-      setFriends(Array.isArray(data) ? data : []);
-      setLoading(false);
-    }).catch(() => setLoading(false));
+    getFriends().then(d => { setFriends(Array.isArray(d) ? d : []); setLoading(false); }).catch(() => setLoading(false));
   }, []);
 
   useEffect(() => { load(); }, [load]);
 
-  const handleRemove = async (friendshipId: string) => {
-    await removeFriend(friendshipId).catch(() => {});
-    load();
-  };
+  const handleRemove = async (id: string) => { await removeFriend(id).catch(() => {}); load(); };
 
   if (loading) return <Loader />;
   if (friends.length === 0) return (
@@ -69,18 +66,21 @@ function FriendsList({ meId }: { meId?: string }) {
         const xp = friend?.xp ?? 0;
         return (
           <div key={f.id} style={{
-            background: 'white', borderRadius: 18, padding: '14px 16px',
-            border: '2px solid #f0f0f0', display: 'flex', alignItems: 'center', gap: 14,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+            background: CARD, borderRadius: 18, padding: '14px 16px',
+            border: `1px solid ${BORDER}`, display: 'flex', alignItems: 'center', gap: 14,
           }}>
             <Avatar name={name} xp={xp} />
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontSize: 15, fontWeight: 800, color: '#111827' }}>{name}</div>
-              <XPBadge xp={xp} />
+              <div style={{ fontSize: 15, fontWeight: 800, color: TEXT }}>{name}</div>
+              <div style={{ fontSize: 13, fontWeight: 800, color: '#f59e0b' }}>
+                {xp.toLocaleString()} <span style={{ fontSize: 10, fontWeight: 700, color: SUB }}>XP</span>
+              </div>
             </div>
             <button onClick={() => handleRemove(f.id)} style={{
-              padding: '7px 14px', borderRadius: 10, border: '1.5px solid #fca5a5',
-              background: '#fef2f2', color: '#dc2626', fontSize: 12, fontWeight: 700, cursor: 'pointer',
+              padding: '7px 14px', borderRadius: 10,
+              border: '1px solid rgba(255,75,75,0.3)',
+              background: 'rgba(255,75,75,0.1)', color: '#ff4b4b',
+              fontSize: 12, fontWeight: 700, cursor: 'pointer',
             }}>
               Retirer
             </button>
@@ -98,18 +98,12 @@ function RequestsList() {
 
   const load = useCallback(() => {
     setLoading(true);
-    getFriendRequests().then(data => {
-      setRequests(Array.isArray(data) ? data : []);
-      setLoading(false);
-    }).catch(() => setLoading(false));
+    getFriendRequests().then(d => { setRequests(Array.isArray(d) ? d : []); setLoading(false); }).catch(() => setLoading(false));
   }, []);
 
   useEffect(() => { load(); }, [load]);
 
-  const handleRespond = async (id: string, accept: boolean) => {
-    await respondFriendReq(id, accept).catch(() => {});
-    load();
-  };
+  const handleRespond = async (id: string, accept: boolean) => { await respondFriendReq(id, accept).catch(() => {}); load(); };
 
   if (loading) return <Loader />;
   if (requests.length === 0) return (
@@ -120,30 +114,30 @@ function RequestsList() {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
       {requests.map((r: any) => {
         const name = r.from?.name ?? r.from?.email?.split('@')[0] ?? 'Anonyme';
-        const xp = r.from?.xp ?? 0;
         return (
           <div key={r.id} style={{
-            background: 'white', borderRadius: 18, padding: '14px 16px',
-            border: '2px solid #f0f0f0', boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+            background: CARD, borderRadius: 18, padding: '14px 16px',
+            border: `1px solid ${BORDER}`,
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
-              <Avatar name={name} xp={xp} />
+              <Avatar name={name} xp={r.from?.xp ?? 0} />
               <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: 15, fontWeight: 800, color: '#111827' }}>{name}</div>
-                <div style={{ fontSize: 12, color: '#9ca3af' }}>{r.from?.email}</div>
+                <div style={{ fontSize: 15, fontWeight: 800, color: TEXT }}>{name}</div>
+                <div style={{ fontSize: 12, color: SUB }}>{r.from?.email}</div>
               </div>
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
               <button onClick={() => handleRespond(r.id, true)} style={{
                 flex: 1, padding: '10px', borderRadius: 12, border: 'none',
-                background: '#111827', color: 'white', fontSize: 13, fontWeight: 800, cursor: 'pointer',
+                background: GREEN, color: 'white', fontSize: 13, fontWeight: 800, cursor: 'pointer',
+                boxShadow: '0 3px 0 #46a302',
               }}>
                 ✓ Accepter
               </button>
               <button onClick={() => handleRespond(r.id, false)} style={{
                 flex: 1, padding: '10px', borderRadius: 12,
-                border: '1.5px solid #e5e7eb', background: 'white',
-                color: '#6b7280', fontSize: 13, fontWeight: 700, cursor: 'pointer',
+                border: `1px solid ${BORDER}`, background: CARD2,
+                color: SUB, fontSize: 13, fontWeight: 700, cursor: 'pointer',
               }}>
                 ✗ Refuser
               </button>
@@ -157,21 +151,19 @@ function RequestsList() {
 
 /* ─── Search tab ─────────────────────────────────────────────────────────── */
 function SearchFriends() {
-  const [query,    setQuery]   = useState('');
-  const [results,  setResults] = useState<any[]>([]);
-  const [sent,     setSent]    = useState<Set<string>>(new Set());
-  const [loading,  setLoading] = useState(false);
+  const [query, setQuery]     = useState('');
+  const [results, setResults] = useState<any[]>([]);
+  const [sent, setSent]       = useState<Set<string>>(new Set());
+  const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
 
   const handleSearch = useCallback(async () => {
     if (!query.trim()) return;
     setLoading(true);
     try {
-      const data = await searchFriends(query.trim());
-      setResults(Array.isArray(data) ? data : []);
-    } catch {
-      setResults([]);
-    }
+      const d = await searchFriends(query.trim());
+      setResults(Array.isArray(d) ? d : []);
+    } catch { setResults([]); }
     setLoading(false);
   }, [query]);
 
@@ -197,8 +189,8 @@ function SearchFriends() {
       {/* Search input */}
       <div style={{
         display: 'flex', gap: 10, marginBottom: 16,
-        background: 'white', borderRadius: 16, padding: '4px 4px 4px 16px',
-        border: '2px solid #f0f0f0', boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+        background: CARD, borderRadius: 16, padding: '4px 4px 4px 16px',
+        border: `1px solid ${BORDER}`,
       }}>
         <input
           value={query}
@@ -207,12 +199,12 @@ function SearchFriends() {
           placeholder="Nom ou adresse e-mail…"
           style={{
             flex: 1, border: 'none', outline: 'none', fontSize: 14,
-            fontWeight: 600, color: '#111827', background: 'transparent',
+            fontWeight: 600, color: TEXT, background: 'transparent',
           }}
         />
         <button onClick={handleSearch} style={{
           padding: '10px 18px', borderRadius: 12, border: 'none',
-          background: '#111827', color: 'white', fontSize: 13, fontWeight: 800, cursor: 'pointer',
+          background: GREEN, color: 'white', fontSize: 13, fontWeight: 800, cursor: 'pointer',
         }}>
           🔍
         </button>
@@ -221,9 +213,9 @@ function SearchFriends() {
       {feedback && (
         <div style={{
           padding: '10px 16px', borderRadius: 12, marginBottom: 12,
-          background: feedback.includes('envoyée') ? '#f0fdf4' : '#fef2f2',
-          border: `1.5px solid ${feedback.includes('envoyée') ? '#86efac' : '#fca5a5'}`,
-          color: feedback.includes('envoyée') ? '#16a34a' : '#dc2626',
+          background: feedback.includes('envoyée') ? 'rgba(88,204,2,0.12)' : 'rgba(255,75,75,0.12)',
+          border: `1px solid ${feedback.includes('envoyée') ? 'rgba(88,204,2,0.3)' : 'rgba(255,75,75,0.3)'}`,
+          color: feedback.includes('envoyée') ? GREEN : '#ff4b4b',
           fontSize: 13, fontWeight: 700,
         }}>
           {feedback}
@@ -231,7 +223,6 @@ function SearchFriends() {
       )}
 
       {loading && <Loader />}
-
       {!loading && query.trim() && results.length === 0 && (
         <EmptyState icon="🔍" text="Aucun résultat." sub="Vérifie le nom ou l'adresse e-mail." />
       )}
@@ -242,23 +233,24 @@ function SearchFriends() {
           const isSent = sent.has(u.id);
           return (
             <div key={u.id} style={{
-              background: 'white', borderRadius: 18, padding: '14px 16px',
-              border: '2px solid #f0f0f0', display: 'flex', alignItems: 'center', gap: 14,
-              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              background: CARD, borderRadius: 18, padding: '14px 16px',
+              border: `1px solid ${BORDER}`, display: 'flex', alignItems: 'center', gap: 14,
             }}>
               <Avatar name={name} xp={u.xp ?? 0} />
               <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: 15, fontWeight: 800, color: '#111827' }}>{name}</div>
-                <div style={{ fontSize: 12, color: '#9ca3af' }}>{u.email}</div>
+                <div style={{ fontSize: 15, fontWeight: 800, color: TEXT }}>{name}</div>
+                <div style={{ fontSize: 12, color: SUB }}>{u.email}</div>
               </div>
               <button
                 disabled={isSent || u.isFriend}
                 onClick={() => handleAdd(u.email, u.id)}
                 style={{
                   padding: '8px 14px', borderRadius: 10, border: 'none',
-                  background: isSent || u.isFriend ? '#f3f4f6' : '#111827',
-                  color: isSent || u.isFriend ? '#9ca3af' : 'white',
-                  fontSize: 12, fontWeight: 800, cursor: isSent || u.isFriend ? 'default' : 'pointer',
+                  background: isSent || u.isFriend ? CARD2 : GREEN,
+                  color: isSent || u.isFriend ? SUB : 'white',
+                  fontSize: 12, fontWeight: 800,
+                  cursor: isSent || u.isFriend ? 'default' : 'pointer',
+                  boxShadow: isSent || u.isFriend ? 'none' : '0 3px 0 #46a302',
                   transition: 'all 0.15s',
                 }}
               >
@@ -274,23 +266,23 @@ function SearchFriends() {
 
 /* ─── Helpers ─────────────────────────────────────────────────────────────── */
 function Loader() {
-  return <div style={{ padding: '40px 0', textAlign: 'center', color: '#9ca3af', fontSize: 14 }}>Chargement…</div>;
+  return <div style={{ padding: '40px 0', textAlign: 'center', color: SUB, fontSize: 14 }}>Chargement…</div>;
 }
 
 function EmptyState({ icon, text, sub }: { icon: string; text: string; sub: string }) {
   return (
     <div style={{ padding: '40px 16px', textAlign: 'center' }}>
       <div style={{ fontSize: 40, marginBottom: 10 }}>{icon}</div>
-      <div style={{ fontSize: 15, fontWeight: 800, color: '#374151', marginBottom: 4 }}>{text}</div>
-      <div style={{ fontSize: 13, color: '#9ca3af' }}>{sub}</div>
+      <div style={{ fontSize: 15, fontWeight: 800, color: TEXT, marginBottom: 4 }}>{text}</div>
+      <div style={{ fontSize: 13, color: SUB }}>{sub}</div>
     </div>
   );
 }
 
 /* ─── Page ─────────────────────────────────────────────────────────────────── */
 const TABS: { key: Tab; label: string }[] = [
-  { key: 'friends',  label: '👥 Mes amis'  },
-  { key: 'requests', label: '📨 Demandes'  },
+  { key: 'friends',  label: '👥 Mes amis'   },
+  { key: 'requests', label: '📨 Demandes'   },
   { key: 'search',   label: '🔍 Rechercher' },
 ];
 
@@ -299,12 +291,12 @@ export default function FriendsPage() {
   const [tab, setTab] = useState<Tab>('friends');
 
   return (
-    <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px' }}>
+    <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px', color: TEXT }}>
 
       {/* Header */}
       <div style={{ padding: '32px 0 24px' }}>
-        <h1 style={{ fontSize: 28, fontWeight: 900, color: '#111827', marginBottom: 4 }}>Amis</h1>
-        <p style={{ fontSize: 14, color: '#6b7280', margin: 0 }}>
+        <h1 style={{ fontSize: 28, fontWeight: 900, color: TEXT, marginBottom: 4 }}>Amis</h1>
+        <p style={{ fontSize: 14, color: SUB, margin: 0 }}>
           Apprends avec tes amis et grimpe ensemble dans les ligues !
         </p>
       </div>
@@ -315,8 +307,9 @@ export default function FriendsPage() {
           <button key={key} onClick={() => setTab(key)} style={{
             flex: 1, padding: '10px 6px', borderRadius: 14,
             fontWeight: 800, fontSize: 12, cursor: 'pointer', border: 'none',
-            background: tab === key ? '#111827' : '#f3f4f6',
-            color: tab === key ? 'white' : '#6b7280',
+            background: tab === key ? GREEN : CARD,
+            color: tab === key ? 'white' : SUB,
+            boxShadow: tab === key ? '0 3px 0 #46a302' : 'none',
             transition: 'all 0.15s',
           }}>
             {label}

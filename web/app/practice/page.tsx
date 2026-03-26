@@ -4,6 +4,15 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 import { SCENARIOS, type ScenarioData, type BotStep, type ChoiceStep, type Step } from './scenarios';
 
+/* ─── Dark theme ─────────────────────────────────────────────────────────── */
+const BG     = '#131f24';
+const CARD   = '#1e2d36';
+const CARD2  = '#243b4a';
+const BORDER = 'rgba(255,255,255,0.07)';
+const TEXT   = '#ffffff';
+const SUB    = '#8b9eb0';
+const BLUE   = '#1cb0f6';
+
 /* ─────────────────────────────────────────────
    WAVE BARS
 ───────────────────────────────────────────── */
@@ -44,7 +53,7 @@ function SpeakBtn({ text }: { text: string }) {
   return (
     <button onClick={speak} style={{
       width: 32, height: 32, borderRadius: 10, border: 'none',
-      background: playing ? '#dbeafe' : '#f0f4ff', cursor: 'pointer',
+      background: playing ? 'rgba(59,130,246,0.25)' : CARD2, cursor: 'pointer',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       flexShrink: 0, transition: 'background 0.2s',
     }}>
@@ -70,15 +79,15 @@ function BotBubble({ step, accent, emoji }: { step: BotStep; accent: string; emo
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
         <div style={{
-          background: 'white', borderRadius: '4px 18px 18px 18px',
-          border: '1.5px solid #e5e7eb', padding: '14px 16px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+          background: CARD, borderRadius: '4px 18px 18px 18px',
+          border: `1.5px solid ${BORDER}`, padding: '14px 16px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
         }}>
           {step.darija && (
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 8 }}>
               <div style={{
                 fontSize: 21, fontFamily: 'var(--font-amiri), serif',
-                color: '#111827', direction: 'rtl', lineHeight: 1.7,
+                color: TEXT, direction: 'rtl', lineHeight: 1.7,
                 flex: 1, textAlign: 'right',
               }}>
                 {step.darija}
@@ -89,8 +98,8 @@ function BotBubble({ step, accent, emoji }: { step: BotStep; accent: string; emo
 
           {step.translit && (
             <div style={{
-              fontSize: 13, color: '#6b7280', fontStyle: 'italic',
-              borderTop: step.darija ? '1px solid #f0f0f0' : 'none',
+              fontSize: 13, color: SUB, fontStyle: 'italic',
+              borderTop: step.darija ? `1px solid ${BORDER}` : 'none',
               paddingTop: step.darija ? 8 : 0, marginBottom: 8, lineHeight: 1.5,
             }}>
               {step.translit}
@@ -99,8 +108,8 @@ function BotBubble({ step, accent, emoji }: { step: BotStep; accent: string; emo
 
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: '#eff6ff', borderRadius: 8, padding: '4px 10px',
-            fontSize: 13, color: '#1d4ed8', fontWeight: 600, lineHeight: 1.4,
+            background: 'rgba(28,176,246,0.12)', borderRadius: 8, padding: '4px 10px',
+            fontSize: 13, color: BLUE, fontWeight: 600, lineHeight: 1.4,
           }}>
             🇫🇷 {step.fr}
           </div>
@@ -108,9 +117,9 @@ function BotBubble({ step, accent, emoji }: { step: BotStep; accent: string; emo
 
         {step.note && (
           <div style={{
-            background: '#fffbeb', border: '1.5px solid #fde68a',
+            background: 'rgba(245,158,11,0.10)', border: '1.5px solid rgba(245,158,11,0.25)',
             borderRadius: '4px 14px 14px 14px', padding: '8px 12px',
-            fontSize: 12, color: '#92400e', lineHeight: 1.5,
+            fontSize: 12, color: '#fbbf24', lineHeight: 1.5,
           }}>
             💡 {step.note}
           </div>
@@ -152,20 +161,20 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px' }}>
       <div style={{ padding: '32px 0 24px' }}>
-        <h1 style={{ fontSize: 28, fontWeight: 900, color: '#111827', marginBottom: 8 }}>
+        <h1 style={{ fontSize: 28, fontWeight: 900, color: TEXT, marginBottom: 8 }}>
           Entraînement
         </h1>
-        <p style={{ fontSize: 15, color: '#6b7280', lineHeight: 1.5 }}>
+        <p style={{ fontSize: 15, color: SUB, lineHeight: 1.5 }}>
           Pratique le Darija dans de vraies conversations guidées
         </p>
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-        <div style={{ flex: 1, height: 1.5, background: '#e5e7eb' }} />
-        <span style={{ fontSize: 11, fontWeight: 800, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.07em' }}>
+        <div style={{ flex: 1, height: 1.5, background: BORDER }} />
+        <span style={{ fontSize: 11, fontWeight: 800, color: SUB, textTransform: 'uppercase', letterSpacing: '0.07em' }}>
           Conversations 💬
         </span>
-        <div style={{ flex: 1, height: 1.5, background: '#e5e7eb' }} />
+        <div style={{ flex: 1, height: 1.5, background: BORDER }} />
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
@@ -174,10 +183,11 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
             style={{
               display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
               padding: '16px', borderRadius: 20,
-              background: s.bg, border: `2px solid ${s.accent}25`,
+              background: `${CARD}`,
+              border: `2px solid ${s.accent}30`,
               cursor: 'pointer', textAlign: 'left',
               transition: 'transform 0.12s, box-shadow 0.12s',
-              boxShadow: `0 4px 0 ${s.accent}30`,
+              boxShadow: `0 4px 0 ${s.accent}20`,
             }}
             onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'; }}
             onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'none'; }}
@@ -187,33 +197,33 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
               <span style={{
                 fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em',
                 padding: '3px 10px', borderRadius: 20,
-                background: s.level === 'Débutant' ? '#dcfce7' : '#ede9fe',
-                color: s.level === 'Débutant' ? '#15803d' : '#6d28d9',
+                background: s.level === 'Débutant' ? 'rgba(88,204,2,0.15)' : 'rgba(109,40,217,0.2)',
+                color: s.level === 'Débutant' ? '#58cc02' : '#a78bfa',
               }}>
                 {s.level}
               </span>
             </div>
-            <div style={{ fontSize: 15, fontWeight: 900, color: '#111827', marginBottom: 2 }}>{s.title}</div>
+            <div style={{ fontSize: 15, fontWeight: 900, color: TEXT, marginBottom: 2 }}>{s.title}</div>
             <div style={{ fontSize: 12, fontWeight: 700, color: s.accent, marginBottom: 6 }}>
               {s.character} · {s.role}
             </div>
-            <div style={{ fontSize: 12, color: '#6b7280', lineHeight: 1.4, marginBottom: 10 }}>
+            <div style={{ fontSize: 12, color: SUB, lineHeight: 1.4, marginBottom: 10 }}>
               {s.description}
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ fontSize: 11, color: s.accent, fontWeight: 700 }}>+{s.xp} XP</span>
-              <span style={{ fontSize: 11, color: '#9ca3af' }}>· ~5 min</span>
+              <span style={{ fontSize: 11, color: SUB }}>· ~5 min</span>
             </div>
           </button>
         ))}
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '28px 0 16px' }}>
-        <div style={{ flex: 1, height: 1.5, background: '#e5e7eb' }} />
-        <span style={{ fontSize: 11, fontWeight: 800, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.07em' }}>
+        <div style={{ flex: 1, height: 1.5, background: BORDER }} />
+        <span style={{ fontSize: 11, fontWeight: 800, color: SUB, textTransform: 'uppercase', letterSpacing: '0.07em' }}>
           Bientôt 🔜
         </span>
-        <div style={{ flex: 1, height: 1.5, background: '#e5e7eb' }} />
+        <div style={{ flex: 1, height: 1.5, background: BORDER }} />
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
         {[
@@ -222,11 +232,11 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
         ].map(item => (
           <div key={item.title} style={{
             padding: '16px', borderRadius: 20,
-            background: '#f9fafb', border: '2px dashed #e5e7eb', opacity: 0.6,
+            background: CARD2, border: `2px dashed ${BORDER}`, opacity: 0.6,
           }}>
             <span style={{ fontSize: 28, display: 'block', marginBottom: 6 }}>{item.emoji}</span>
-            <div style={{ fontSize: 14, fontWeight: 700, color: '#374151' }}>{item.title}</div>
-            <div style={{ fontSize: 12, color: '#9ca3af', marginTop: 2 }}>{item.desc}</div>
+            <div style={{ fontSize: 14, fontWeight: 700, color: TEXT }}>{item.title}</div>
+            <div style={{ fontSize: 12, color: SUB, marginTop: 2 }}>{item.desc}</div>
           </div>
         ))}
       </div>
@@ -245,11 +255,11 @@ function DoneScreen({ scenario, onBack }: { scenario: ScenarioData; onBack: () =
       padding: '32px 24px', textAlign: 'center',
     }}>
       <div style={{ fontSize: 64, marginBottom: 16 }}>🎉</div>
-      <div style={{ fontSize: 24, fontWeight: 900, color: '#111827', marginBottom: 8 }}>
+      <div style={{ fontSize: 24, fontWeight: 900, color: TEXT, marginBottom: 8 }}>
         Bravo !
       </div>
-      <div style={{ fontSize: 15, color: '#6b7280', marginBottom: 28, lineHeight: 1.5 }}>
-        Tu as terminé <strong>{scenario.title}</strong> avec {scenario.character}.
+      <div style={{ fontSize: 15, color: SUB, marginBottom: 28, lineHeight: 1.5 }}>
+        Tu as terminé <strong style={{ color: TEXT }}>{scenario.title}</strong> avec {scenario.character}.
       </div>
 
       {/* XP badge */}
@@ -262,7 +272,7 @@ function DoneScreen({ scenario, onBack }: { scenario: ScenarioData; onBack: () =
         <div style={{ fontSize: 36, fontWeight: 900 }}>+{scenario.xp} XP</div>
       </div>
 
-      <div style={{ fontSize: 14, color: '#6b7280', marginBottom: 32, lineHeight: 1.6, maxWidth: 300 }}>
+      <div style={{ fontSize: 14, color: SUB, marginBottom: 32, lineHeight: 1.6, maxWidth: 300 }}>
         Continue à pratiquer chaque jour pour progresser vite en Darija !
       </div>
 
@@ -329,21 +339,21 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
 
   if (finished) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: 640, margin: '0 auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: 640, margin: '0 auto', background: BG }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px',
-          borderBottom: '1.5px solid #f0f0f0', background: 'white', flexShrink: 0,
+          borderBottom: `1.5px solid ${BORDER}`, background: CARD, flexShrink: 0,
         }}>
           <div style={{
             width: 44, height: 44, borderRadius: 14,
-            background: scenario.bg, border: `2px solid ${scenario.accent}30`,
+            background: `${scenario.accent}20`, border: `2px solid ${scenario.accent}30`,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             fontSize: 22,
           }}>
             {scenario.emoji}
           </div>
           <div>
-            <div style={{ fontSize: 15, fontWeight: 900, color: '#111827' }}>{scenario.character}</div>
+            <div style={{ fontSize: 15, fontWeight: 900, color: TEXT }}>{scenario.character}</div>
             <div style={{ fontSize: 12, color: scenario.accent, fontWeight: 600 }}>{scenario.title}</div>
           </div>
         </div>
@@ -354,25 +364,26 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: 640, margin: '0 auto' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: 640, margin: '0 auto', background: BG }}>
 
       {/* ── Header ── */}
       <div style={{
         display: 'flex', alignItems: 'center', gap: 12,
-        padding: '14px 16px', borderBottom: '1.5px solid #f0f0f0',
-        background: 'white', flexShrink: 0,
+        padding: '14px 16px', borderBottom: `1.5px solid ${BORDER}`,
+        background: CARD, flexShrink: 0,
       }}>
         <button onClick={onBack} style={{
           width: 36, height: 36, borderRadius: 10,
-          background: '#f3f4f6', border: 'none', cursor: 'pointer',
-          fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          background: CARD2, border: 'none', cursor: 'pointer',
+          fontSize: 16, color: TEXT,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
           ←
         </button>
 
         <div style={{
           width: 44, height: 44, borderRadius: 14,
-          background: scenario.bg, border: `2px solid ${scenario.accent}30`,
+          background: `${scenario.accent}20`, border: `2px solid ${scenario.accent}30`,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           fontSize: 22, flexShrink: 0,
         }}>
@@ -380,7 +391,7 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: 15, fontWeight: 900, color: '#111827' }}>{scenario.character}</div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: TEXT }}>{scenario.character}</div>
           <div style={{ fontSize: 12, color: scenario.accent, fontWeight: 600 }}>
             {scenario.role} · {scenario.title}
           </div>
@@ -389,7 +400,7 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
         {/* XP badge */}
         <div style={{
           padding: '4px 10px', borderRadius: 10,
-          background: scenario.bg, border: `1.5px solid ${scenario.accent}30`,
+          background: `${scenario.accent}18`, border: `1.5px solid ${scenario.accent}30`,
           fontSize: 12, fontWeight: 800, color: scenario.accent,
         }}>
           +{scenario.xp} XP
@@ -397,7 +408,7 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
       </div>
 
       {/* ── Progress bar ── */}
-      <div style={{ height: 4, background: '#f3f4f6', flexShrink: 0 }}>
+      <div style={{ height: 4, background: 'rgba(255,255,255,0.08)', flexShrink: 0 }}>
         <div style={{
           height: '100%', width: `${progress}%`,
           background: `linear-gradient(90deg, ${scenario.accent}99, ${scenario.accent})`,
@@ -427,7 +438,6 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
           const madeChoice = choicesMade.get(idx);
 
           if (madeChoice !== undefined) {
-            // Show what was chosen as a user bubble
             const chosen = choiceStep.choices[madeChoice];
             return (
               <UserBubble
@@ -439,12 +449,11 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
             );
           }
 
-          // Show active choice buttons (only for last step)
           if (idx === revealedCount - 1) {
             return (
               <div key={idx} style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8, maxWidth: '90%' }}>
-                  <div style={{ fontSize: 11, fontWeight: 700, color: '#9ca3af', textAlign: 'right', marginBottom: 2 }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: SUB, textAlign: 'right', marginBottom: 2 }}>
                     Que veux-tu dire ?
                   </div>
                   {choiceStep.choices.map((choice, ci) => (
@@ -452,33 +461,33 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
                       key={ci}
                       onClick={() => handleChoice(idx, ci)}
                       style={{
-                        background: 'white',
+                        background: CARD,
                         border: `2px solid ${scenario.accent}30`,
                         borderRadius: 16, padding: '10px 14px',
                         cursor: 'pointer', textAlign: 'right',
                         transition: 'all 0.15s',
-                        boxShadow: `0 2px 0 ${scenario.accent}20`,
+                        boxShadow: `0 2px 0 ${scenario.accent}15`,
                       }}
                       onMouseEnter={e => {
                         const el = e.currentTarget as HTMLButtonElement;
-                        el.style.background = scenario.bg;
+                        el.style.background = `${scenario.accent}15`;
                         el.style.borderColor = scenario.accent + '60';
                         el.style.transform = 'translateY(-1px)';
                       }}
                       onMouseLeave={e => {
                         const el = e.currentTarget as HTMLButtonElement;
-                        el.style.background = 'white';
+                        el.style.background = CARD;
                         el.style.borderColor = scenario.accent + '30';
                         el.style.transform = 'none';
                       }}
                     >
                       <div style={{
                         fontSize: 17, fontFamily: 'var(--font-amiri), serif',
-                        direction: 'rtl', color: '#111827', lineHeight: 1.6, marginBottom: 2,
+                        direction: 'rtl', color: TEXT, lineHeight: 1.6, marginBottom: 2,
                       }}>
                         {choice.darija}
                       </div>
-                      <div style={{ fontSize: 12, color: '#6b7280', fontStyle: 'italic' }}>{choice.translit}</div>
+                      <div style={{ fontSize: 12, color: SUB, fontStyle: 'italic' }}>{choice.translit}</div>
                       <div style={{ fontSize: 12, color: scenario.accent, fontWeight: 600, marginTop: 2 }}>
                         {choice.fr}
                       </div>
@@ -498,8 +507,8 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
       {/* ── Bottom action bar ── */}
       {lastStep && lastStep.type !== 'choice' && (
         <div style={{
-          padding: '12px 16px', borderTop: '1.5px solid #f0f0f0',
-          background: 'white', flexShrink: 0,
+          padding: '12px 16px', borderTop: `1.5px solid ${BORDER}`,
+          background: CARD, flexShrink: 0,
         }}>
           {lastStep.type === 'end' ? (
             <button onClick={handleFinish} style={{
@@ -518,19 +527,19 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
           ) : (
             <button onClick={handleContinue} style={{
               width: '100%', padding: '14px', borderRadius: 16,
-              background: '#f8fafc', border: `2px solid ${scenario.accent}30`,
-              color: '#374151', cursor: 'pointer',
+              background: CARD2, border: `2px solid ${scenario.accent}30`,
+              color: TEXT, cursor: 'pointer',
               fontSize: 15, fontWeight: 700,
               transition: 'all 0.15s',
             }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = scenario.bg;
+                el.style.background = `${scenario.accent}15`;
                 el.style.borderColor = scenario.accent + '50';
               }}
               onMouseLeave={e => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = '#f8fafc';
+                el.style.background = CARD2;
                 el.style.borderColor = scenario.accent + '30';
               }}
             >

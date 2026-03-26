@@ -99,7 +99,7 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
       {/* Emoji icon */}
       <div style={{
         width: 44, height: 44,
-        background: done ? '#fef3c7' : '#f3f4f6',
+        background: done ? 'rgba(245,158,11,0.15)' : 'rgba(255,255,255,0.06)',
         borderRadius: 12,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontSize: 22, flexShrink: 0,
@@ -111,7 +111,7 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{
           fontSize: 12, fontWeight: 800,
-          color: done ? '#92400e' : '#374151',
+          color: done ? '#fbbf24' : '#e5e7eb',
           marginBottom: 5, lineHeight: 1.3,
         }}>
           {quest.label}
@@ -121,7 +121,7 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
         <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
           <div style={{
             flex: 1, height: 10,
-            background: '#e5e7eb',
+            background: 'rgba(255,255,255,0.08)',
             borderRadius: 5, overflow: 'hidden',
             position: 'relative',
           }}>
@@ -147,7 +147,7 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
           </div>
           {/* Fraction outside bar when ≤ 40% */}
           {pct <= 35 && (
-            <span style={{ fontSize: 10, fontWeight: 700, color: '#9ca3af', flexShrink: 0 }}>
+            <span style={{ fontSize: 10, fontWeight: 700, color: '#8b9eb0', flexShrink: 0 }}>
               {quest.current}/{quest.total}
             </span>
           )}
@@ -179,6 +179,7 @@ export default function StatsPanel() {
       <div style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         background: '#1a1f2e',
+        border: '1px solid rgba(180,180,180,0.4)',
         borderRadius: 16,
         padding: '10px 14px',
         boxShadow: '0 2px 12px rgba(0,0,0,0.2)',
@@ -213,15 +214,27 @@ export default function StatsPanel() {
       {/* ── League card ───────────────────────────────── */}
       <div style={{
         background: '#1a1f2e',
+        border: '1px solid rgba(180,180,180,0.4)',
         borderRadius: 18,
         padding: '16px',
         boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
       }}>
         {/* Header row */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-          <span style={{ fontSize: 16, fontWeight: 900, color: 'white' }}>
-            Division {league.name}
-          </span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 16, fontWeight: 900, color: 'white', whiteSpace: 'nowrap' }}>
+              Division {league.name}
+            </span>
+            <span style={{
+              minWidth: 22, height: 22,
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 10, fontWeight: 900, color: '#fff',
+              background: league.color, borderRadius: '50%',
+              padding: '0 5px', flexShrink: 0,
+            }}>
+              {league.rank}
+            </span>
+          </div>
           <button style={{
             fontSize: 11, fontWeight: 900, color: '#60a5fa',
             background: 'none', border: 'none', cursor: 'pointer',
@@ -269,13 +282,25 @@ export default function StatsPanel() {
       {/* ── Daily quests card ─────────────────────────── */}
       <div style={{
         background: '#1a1f2e',
+        border: '1px solid rgba(180,180,180,0.4)',
         borderRadius: 18,
         padding: '14px 16px',
         boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
       }}>
         {/* Header */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
-          <span style={{ fontSize: 15, fontWeight: 900, color: 'white' }}>Quêtes du jour</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 15, fontWeight: 900, color: 'white' }}>Quêtes du jour</span>
+            <span style={{
+              minWidth: 22, height: 22,
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 10, fontWeight: 900, color: '#fff',
+              background: '#f59e0b', borderRadius: '50%',
+              padding: '0 5px', flexShrink: 0,
+            }}>
+              {progress.quetes.filter(q => q.current < q.total).length}
+            </span>
+          </div>
           <button style={{
             fontSize: 11, fontWeight: 900, color: '#2a9d8f',
             background: 'none', border: 'none', cursor: 'pointer',
@@ -286,7 +311,7 @@ export default function StatsPanel() {
         </div>
 
         {/* Divider */}
-        <div style={{ height: 1, background: '#f3f4f6', margin: '8px 0' }}/>
+        <div style={{ height: 1, background: 'rgba(255,255,255,0.07)', margin: '8px 0' }}/>
 
         {/* Quest list */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -294,7 +319,7 @@ export default function StatsPanel() {
             <React.Fragment key={q.id}>
               <QuestItem quest={q}/>
               {i < progress.quetes.length - 1 && (
-                <div style={{ height: 1, background: '#f9fafb' }}/>
+                <div style={{ height: 1, background: 'rgba(255,255,255,0.05)' }}/>
               )}
             </React.Fragment>
           ))}
@@ -303,18 +328,28 @@ export default function StatsPanel() {
 
       {/* ── Hearts / Vies ─────────────────────────────── */}
       <div style={{
-        background: 'white',
-        border: '2px solid #f3f4f6',
+        background: '#1a1f2e',
+        border: '1px solid rgba(180,180,180,0.4)',
         borderRadius: 16,
         padding: '12px 16px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
       }}>
         <div>
-          <div style={{ fontSize: 11, fontWeight: 700, color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-            Vies restantes
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: '#8b9eb0', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              Vies restantes
+            </div>
+            <span style={{
+              minWidth: 22, height: 22,
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 10, fontWeight: 900, color: '#fff',
+              background: '#f87171', borderRadius: '50%',
+              padding: '0 5px', flexShrink: 0,
+            }}>
+              5
+            </span>
           </div>
           <div style={{ display: 'flex', gap: 3, marginTop: 4 }}>
             {Array.from({ length: 5 }).map((_, i) => (
@@ -322,7 +357,7 @@ export default function StatsPanel() {
             ))}
           </div>
         </div>
-        <div style={{ fontSize: 11, color: '#9ca3af', fontWeight: 600, textAlign: 'right', lineHeight: 1.4 }}>
+        <div style={{ fontSize: 11, color: '#8b9eb0', fontWeight: 600, textAlign: 'right', lineHeight: 1.4 }}>
           Plein<br/>rechargement
         </div>
       </div>

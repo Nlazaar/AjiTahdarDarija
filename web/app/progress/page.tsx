@@ -2,315 +2,579 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useApi } from '@/hooks/useApi';
-import { getModules } from '@/lib/api';
-import Loader from '@/components/Loader';
+import Link from 'next/link';
+import { getModules, getLessonsByModule } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
+import { useMascot, MASCOT_EMOJI } from '@/contexts/MascotContext';
 
-/* ─────────────────────────────────────────────
-   SECTION THEMES
-───────────────────────────────────────────── */
-const SECTION_THEMES = [
-  { name: 'Désert',    animal: '🐪', colorA: '#e9a84c', colorB: '#d4842a', shadow: '#b06818',
-    phrase: 'ا ب ت ث ج', phraseFr: 'Les premières lettres' },
-  { name: 'Médina',    animal: '🐈', colorA: '#2a9d8f', colorB: '#1e7a6d', shadow: '#155e54',
-    phrase: 'سلام، كيداير؟', phraseFr: 'Saluer en darija' },
-  { name: 'Mer',       animal: '🐟', colorA: '#457b9d', colorB: '#2c5f7e', shadow: '#1a4560',
-    phrase: 'واحد، جوج، تلاتة', phraseFr: 'Compter en darija' },
-  { name: 'Montagne',  animal: '🦅', colorA: '#588157', colorB: '#3a5a40', shadow: '#2a4030',
-    phrase: 'أحمر، أزرق، أخضر', phraseFr: 'Les couleurs' },
-  { name: 'Forêt',     animal: '🦔', colorA: '#6a994e', colorB: '#4a7230', shadow: '#3a5820',
-    phrase: 'بابا، ماما، خويا', phraseFr: 'La famille' },
-  { name: 'Ville',     animal: '🐦', colorA: '#4a4e69', colorB: '#2c2f45', shadow: '#1a1c30',
-    phrase: 'فين كتمشي؟', phraseFr: 'Demander son chemin' },
-  { name: 'Jardin',    animal: '🦋', colorA: '#e76f51', colorB: '#c05540', shadow: '#9a3020',
-    phrase: 'شنو هدا؟', phraseFr: 'Nommer les objets' },
-  { name: 'Palais',    animal: '🦁', colorA: '#c9941a', colorB: '#a07830', shadow: '#7a5818',
-    phrase: 'كلشي مزيان!', phraseFr: 'Tout est bien !' },
-] as const;
+/* ── Types ──────────────────────────────────────────────── */
+interface ModuleData {
+  id: string;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  level?: number;
+  colorA?: string;
+  colorB?: string;
+  shadowColor?: string;
+  lessons: LessonData[];
+}
 
-/* ─────────────────────────────────────────────
-   MOCK DATA
-───────────────────────────────────────────── */
-const MOCK_MODULES = [
-  // ── Niveau 1 — Débutant ──
-  { id: '1',  title: "L'Alphabet Arabe",         subtitle: 'Les 28 lettres',            colorA: '#2a9d8f', colorB: '#1e7a6d', shadowColor: '#155e54', level: 1, lessons: [{},{},{},{},{}] },
-  { id: '2',  title: 'Les Salutations',           subtitle: 'Premiers mots en darija',   colorA: '#e76f51', colorB: '#c05540', shadowColor: '#9a3020', level: 1, lessons: [{},{},{},{}] },
-  { id: '3',  title: 'Se Présenter',              subtitle: 'Parler de soi',             colorA: '#e9a84c', colorB: '#d4842a', shadowColor: '#b06818', level: 1, lessons: [{},{},{},{}] },
-  { id: '4',  title: 'Les Chiffres',              subtitle: 'Compter en Darija',         colorA: '#c9941a', colorB: '#a07830', shadowColor: '#7a5818', level: 1, lessons: [{},{},{},{}] },
-  { id: '5',  title: 'Les Couleurs',              subtitle: 'Arc-en-ciel en Darija',     colorA: '#6a994e', colorB: '#4a7230', shadowColor: '#3a5820', level: 1, lessons: [{},{},{}] },
-  // ── Niveau 2 — Élémentaire ──
-  { id: '6',  title: 'La Famille',                subtitle: 'Liens et relations',        colorA: '#457b9d', colorB: '#2c5f7e', shadowColor: '#1a4560', level: 2, lessons: [{},{},{}] },
-  { id: '7',  title: 'La Nourriture',             subtitle: 'Manger et boire en darija', colorA: '#e63946', colorB: '#c01c28', shadowColor: '#8a0f18', level: 2, lessons: [{},{},{},{}] },
-  { id: '8',  title: 'Les Directions',            subtitle: 'Se repérer en ville',       colorA: '#7b2d8b', colorB: '#5a1e68', shadowColor: '#3a1045', level: 2, lessons: [{},{},{},{}] },
-  { id: '9',  title: 'Le Temps et les Jours',     subtitle: 'Heures, jours et mois',     colorA: '#264653', colorB: '#1a3040', shadowColor: '#0d1e28', level: 2, lessons: [{},{},{}] },
-  // ── Niveau 3 — Intermédiaire ──
-  { id: '10', title: 'Les Achats',                subtitle: 'Au souk et en boutique',    colorA: '#f4845f', colorB: '#d4643f', shadowColor: '#a44020', level: 3, lessons: [{},{}] },
-  { id: '11', title: 'Les Transports',            subtitle: 'Voyager au Maroc',          colorA: '#4a6fa5', colorB: '#2a4f85', shadowColor: '#1a3060', level: 3, lessons: [{},{}] },
-  { id: '12', title: 'Le Logement',               subtitle: 'La maison en darija',       colorA: '#8b5e3c', colorB: '#6b3e1c', shadowColor: '#4a2010', level: 3, lessons: [{},{}] },
-  { id: '13', title: 'Le Corps et la Santé',      subtitle: 'Chez le médecin',           colorA: '#e07a8e', colorB: '#c05a6e', shadowColor: '#9a3a4e', level: 3, lessons: [{},{}] },
-  { id: '14', title: 'Le Travail',                subtitle: 'Métiers et vie pro',        colorA: '#2d6a4f', colorB: '#1a4a30', shadowColor: '#0d2e1a', level: 3, lessons: [{},{}] },
-  // ── Niveau 4 — Avancé ──
-  { id: '15', title: 'Expressions Idiomatiques',  subtitle: 'Parler comme un Marocain',  colorA: '#1b3a6b', colorB: '#0f2550', shadowColor: '#071530', level: 4, lessons: [{},{},{}] },
-  { id: '16', title: 'Darija Avancé',             subtitle: 'Fluidité et nuances',       colorA: '#4a4e69', colorB: '#2c2f45', shadowColor: '#1a1c30', level: 4, lessons: [{},{},{}] },
+interface LessonData {
+  id: string;
+  title: string;
+  order?: number;
+}
+
+/* ── Design constants ───────────────────────────────────── */
+const MODULE_COLORS = [
+  { colorA: '#2a9d8f', colorB: '#1e7a6d', shadow: '#155e54' },
+  { colorA: '#e76f51', colorB: '#c05540', shadow: '#9a3020' },
+  { colorA: '#e9a84c', colorB: '#d4842a', shadow: '#b06818' },
+  { colorA: '#c9941a', colorB: '#a07830', shadow: '#7a5818' },
+  { colorA: '#6a994e', colorB: '#4a7230', shadow: '#3a5820' },
+  { colorA: '#457b9d', colorB: '#2c5f7e', shadow: '#1a4560' },
+  { colorA: '#e63946', colorB: '#c01c28', shadow: '#8a0f18' },
+  { colorA: '#7b2d8b', colorB: '#5a1e68', shadow: '#3a1045' },
+  { colorA: '#264653', colorB: '#1a3040', shadow: '#0d1e28' },
+  { colorA: '#f4845f', colorB: '#d4643f', shadow: '#a44020' },
 ];
 
-/* ─────────────────────────────────────────────
-   CHAPTER CARD
-───────────────────────────────────────────── */
-function ChapterCard({
-  m, index, isActive, isLocked, completedLessons,
-}: {
-  m: any; index: number; isActive: boolean; isLocked: boolean; completedLessons: string[];
+// Zigzag X positions as % of container width (S-curve)
+const ZIGZAG_X = [50, 68, 78, 68, 50, 32, 22, 32];
+
+const LEVEL_LABELS: Record<number, string> = {
+  1: 'Débutant',
+  2: 'Élémentaire',
+  3: 'Intermédiaire',
+  4: 'Avancé',
+};
+
+// Mock modules with lessons for fallback
+const MOCK_MODULES: ModuleData[] = [
+  { id: 'm1', title: "L'Alphabet Arabe",      subtitle: 'Les 28 lettres',          level: 1, colorA: '#2a9d8f', colorB: '#1e7a6d', shadowColor: '#155e54', lessons: [{id:'l1',title:'Voyelles'},{id:'l2',title:'Consonnes I'},{id:'l3',title:'Consonnes II'},{id:'l4',title:'Lettres spéciales'},{id:'l5',title:'Pratique'}] },
+  { id: 'm2', title: 'Les Salutations',        subtitle: 'Premiers mots',           level: 1, colorA: '#e76f51', colorB: '#c05540', shadowColor: '#9a3020', lessons: [{id:'l6',title:'Bonjour'},{id:'l7',title:'Au revoir'},{id:'l8',title:'Comment ça va ?'},{id:'l9',title:'Révision'}] },
+  { id: 'm3', title: 'Se Présenter',           subtitle: 'Parler de soi',           level: 1, colorA: '#e9a84c', colorB: '#d4842a', shadowColor: '#b06818', lessons: [{id:'l10',title:'Mon prénom'},{id:'l11',title:'Mon pays'},{id:'l12',title:'Ma famille'}] },
+  { id: 'm4', title: 'Les Chiffres',           subtitle: 'Compter en Darija',       level: 1, colorA: '#c9941a', colorB: '#a07830', shadowColor: '#7a5818', lessons: [{id:'l13',title:'1 à 10'},{id:'l14',title:'11 à 100'},{id:'l15',title:'Les grands nombres'}] },
+  { id: 'm5', title: 'Les Couleurs',           subtitle: 'Arc-en-ciel en Darija',   level: 1, colorA: '#6a994e', colorB: '#4a7230', shadowColor: '#3a5820', lessons: [{id:'l16',title:'Couleurs de base'},{id:'l17',title:'Nuances'},{id:'l18',title:'Dans la nature'}] },
+  { id: 'm6', title: 'La Famille',             subtitle: 'Liens et relations',      level: 2, colorA: '#457b9d', colorB: '#2c5f7e', shadowColor: '#1a4560', lessons: [{id:'l19',title:'Parents'},{id:'l20',title:'Frères et sœurs'},{id:'l21',title:'La maison'}] },
+  { id: 'm7', title: 'La Nourriture',          subtitle: 'Manger et boire',         level: 2, colorA: '#e63946', colorB: '#c01c28', shadowColor: '#8a0f18', lessons: [{id:'l22',title:'Les plats'},{id:'l23',title:'Les boissons'},{id:'l24',title:'Au restaurant'}] },
+  { id: 'm8', title: 'Les Directions',         subtitle: 'Se repérer en ville',     level: 2, colorA: '#7b2d8b', colorB: '#5a1e68', shadowColor: '#3a1045', lessons: [{id:'l25',title:'Gauche / Droite'},{id:'l26',title:'Loin / Près'},{id:'l27',title:'En ville'}] },
+  { id: 'm9', title: 'Le Temps',               subtitle: 'Heures, jours, mois',    level: 2, colorA: '#264653', colorB: '#1a3040', shadowColor: '#0d1e28', lessons: [{id:'l28',title:'Les heures'},{id:'l29',title:'Les jours'},{id:'l30',title:'Les saisons'}] },
+  { id: 'm10', title: 'Les Achats',            subtitle: 'Au souk',                 level: 3, colorA: '#f4845f', colorB: '#d4643f', shadowColor: '#a44020', lessons: [{id:'l31',title:'Les prix'},{id:'l32',title:'Négocier'}] },
+  { id: 'm11', title: 'Les Transports',        subtitle: 'Voyager au Maroc',        level: 3, colorA: '#4a6fa5', colorB: '#2a4f85', shadowColor: '#1a3060', lessons: [{id:'l33',title:'Taxi et bus'},{id:'l34',title:'Gare et aéroport'}] },
+  { id: 'm12', title: 'La Santé',              subtitle: 'Chez le médecin',         level: 3, colorA: '#e07a8e', colorB: '#c05a6e', shadowColor: '#9a3a4e', lessons: [{id:'l35',title:'Le corps'},{id:'l36',title:'Les maladies'}] },
+  { id: 'm13', title: 'Le Travail',            subtitle: 'Vie professionnelle',     level: 3, colorA: '#2d6a4f', colorB: '#1a4a30', shadowColor: '#0d2e1a', lessons: [{id:'l37',title:'Les métiers'},{id:'l38',title:'Au bureau'}] },
+  { id: 'm14', title: 'Expressions',           subtitle: 'Parler comme un Marocain',level: 4, colorA: '#1b3a6b', colorB: '#0f2550', shadowColor: '#071530', lessons: [{id:'l39',title:'Idiomes I'},{id:'l40',title:'Idiomes II'},{id:'l41',title:'Argot'}] },
+  { id: 'm15', title: 'Darija Avancé',         subtitle: 'Fluidité et nuances',     level: 4, colorA: '#4a4e69', colorB: '#2c2f45', shadowColor: '#1a1c30', lessons: [{id:'l42',title:'Dialogue complexe'},{id:'l43',title:'Éloquence'},{id:'l44',title:'Certification'}] },
+];
+
+/* ── Helper: speech bubble content per module ── */
+const MODULE_PHRASES = [
+  { ar: 'الف با تا', fr: 'Alef, ba, ta…' },
+  { ar: 'سلام عليكم', fr: 'Salam ! Bonjour !' },
+  { ar: 'اسمي…', fr: 'Mon prénom est…' },
+  { ar: 'واحد جوج تلاتة', fr: '1, 2, 3…' },
+  { ar: 'حمر، خضر، زرق', fr: 'Rouge, vert, bleu' },
+  { ar: 'عائلتي كبيرة', fr: 'Ma famille est grande' },
+  { ar: 'بغيت كوسكوس', fr: 'Je veux du couscous !' },
+  { ar: 'فين كتمشي؟', fr: 'Où vas-tu ?' },
+  { ar: 'شحال الساعة؟', fr: 'Quelle heure est-il ?' },
+  { ar: 'بشحال هاد؟', fr: 'Combien ça coûte ?' },
+  { ar: 'عطيني تاكسي', fr: 'Appelle-moi un taxi' },
+  { ar: 'راسي كايدير', fr: "J'ai mal à la tête" },
+  { ar: 'أنا كنخدم', fr: 'Je travaille' },
+  { ar: 'ماشي مشكيل!', fr: 'Pas de problème !' },
+  { ar: 'الدارجة سهلة!', fr: "Le Darija c'est facile !" },
+];
+
+/* ── Node components ──────────────────────────────────────── */
+function SpeechBubble({ phrase }: { phrase: { ar: string; fr: string } }) {
+  return (
+    <div style={{
+      position: 'absolute',
+      bottom: '110%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      background: '#243b4a',
+      borderRadius: 14,
+      padding: '8px 14px',
+      whiteSpace: 'nowrap',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+      border: '1.5px solid rgba(255,255,255,0.12)',
+      zIndex: 20,
+    }}>
+      <div style={{ fontSize: 15, fontWeight: 900, color: '#ffffff', fontFamily: 'var(--font-amiri)', direction: 'rtl' }}>
+        {phrase.ar}
+      </div>
+      <div style={{ fontSize: 10, color: '#8b9eb0', fontWeight: 700, marginTop: 1 }}>{phrase.fr}</div>
+      {/* Tail */}
+      <div style={{
+        position: 'absolute', bottom: -8, left: '50%', transform: 'translateX(-50%)',
+        width: 0, height: 0,
+        borderLeft: '7px solid transparent',
+        borderRight: '7px solid transparent',
+        borderTop: '8px solid rgba(255,255,255,0.12)',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: -5, left: '50%', transform: 'translateX(-50%)',
+        width: 0, height: 0,
+        borderLeft: '5px solid transparent',
+        borderRight: '5px solid transparent',
+        borderTop: '6px solid #243b4a',
+        zIndex: 1,
+      }} />
+    </div>
+  );
+}
+
+function LevelBanner({ level }: { level: number }) {
+  const COLORS: Record<number, { bg: string; border: string; text: string; stars: string }> = {
+    1: { bg: 'rgba(88,204,2,0.08)',   border: 'rgba(88,204,2,0.25)',   text: '#58cc02', stars: '⭐' },
+    2: { bg: 'rgba(245,158,11,0.08)', border: 'rgba(245,158,11,0.25)', text: '#f59e0b', stars: '⭐⭐' },
+    3: { bg: 'rgba(249,115,22,0.08)', border: 'rgba(249,115,22,0.25)', text: '#fb923c', stars: '⭐⭐⭐' },
+    4: { bg: 'rgba(167,139,250,0.08)',border: 'rgba(167,139,250,0.25)',text: '#a78bfa', stars: '⭐⭐⭐⭐' },
+  };
+  const c = COLORS[level] ?? COLORS[1];
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
+      padding: '12px 20px', margin: '8px 16px 0',
+      background: c.bg, border: `2px solid ${c.border}`,
+      borderRadius: 16,
+    }}>
+      <span style={{ fontSize: 14 }}>{c.stars}</span>
+      <span style={{ fontSize: 13, fontWeight: 900, color: c.text, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+        Niveau {level} — {LEVEL_LABELS[level]}
+      </span>
+      <span style={{ fontSize: 14 }}>{c.stars}</span>
+    </div>
+  );
+}
+
+function ChapterHeader({ mod, colorA, colorB, shadow, isActive, onClick }: {
+  mod: ModuleData; colorA: string; colorB: string; shadow: string;
+  isActive: boolean; onClick: () => void;
 }) {
-  const router = useRouter();
-  const theme  = SECTION_THEMES[index % SECTION_THEMES.length];
-  const colorA = m.colorA ?? theme.colorA;
-  const colorB = m.colorB ?? theme.colorB;
-  const shadow = m.shadowColor ?? theme.shadow;
-  const lessons = m.lessons ?? [];
-  const count   = lessons.length;
-
-  // Nombre de leçons complétées pour ce chapitre
-  const doneCount  = lessons.filter((l: any) => l.id && completedLessons.includes(String(l.id))).length;
-  const progressPct = count > 0 ? Math.round((doneCount / count) * 100) : 0;
-
   return (
     <div
-      className="w-full rounded-2xl overflow-hidden relative cursor-pointer select-none"
+      onClick={onClick}
       style={{
-        background: 'linear-gradient(160deg, #1e2235 0%, #252b40 100%)',
-        boxShadow: isActive
-          ? `0 0 0 3px ${colorA}cc, 0 8px 32px rgba(0,0,0,0.3)`
-          : `0 0 0 1px ${colorA}33, 0 4px 20px rgba(0,0,0,0.2)`,
-        minHeight: '160px',
-        animation: `fadeInUp 0.4s ease both ${index * 0.07}s`,
-        transition: 'transform 0.15s, box-shadow 0.15s',
+        margin: '16px 16px 0',
+        borderRadius: 20,
+        background: `linear-gradient(135deg, ${colorA}, ${colorB})`,
+        boxShadow: `0 5px 0 ${shadow}, 0 8px 24px ${colorA}40`,
+        padding: '14px 18px',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        cursor: isActive ? 'pointer' : 'default',
       }}
-      onClick={() => !isLocked && router.push(`/progress/${m.id}`)}
     >
-      {/* Color stripe — always visible, full opacity if active, subtle if locked */}
-      <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl"
-        style={{
-          background: `linear-gradient(180deg, ${colorA}, ${shadow})`,
-          opacity: isLocked ? 0.35 : 1,
-        }}/>
-
-      {/* Speech bubble + animal — right side */}
-      <div className="absolute right-4 top-3 flex flex-col items-center" style={{ maxWidth: 150 }}>
-        {/* Bubble */}
-        <div className="bg-white rounded-2xl rounded-tr-sm px-3 py-2 shadow-lg relative">
-          <p className="text-[14px] font-bold text-gray-800 leading-snug text-right"
-            style={{ fontFamily: 'var(--font-amiri)', direction: 'rtl' }}>
-            {theme.phrase}
-          </p>
-          <p className="text-[10px] text-gray-400 mt-0.5 text-left">{theme.phraseFr}</p>
-          {/* Tail */}
-          <div className="absolute -bottom-[7px] left-5 w-0 h-0"
-            style={{
-              borderLeft: '7px solid transparent',
-              borderRight: '7px solid transparent',
-              borderTop: '8px solid white',
-            }}/>
+      <div>
+        <div style={{ fontSize: 10, fontWeight: 900, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 3 }}>
+          {mod.level ? `Niveau ${mod.level} · ` : ''}{mod.subtitle}
         </div>
-        {/* Animal */}
-        <div className="text-[52px] leading-none mt-1 select-none"
-          style={{ filter: 'drop-shadow(2px 4px 8px rgba(0,0,0,0.35))' }}>
-          {theme.animal}
-        </div>
+        <div style={{ fontSize: 17, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>{mod.title}</div>
       </div>
+      {isActive && (
+        <button style={{
+          background: 'rgba(255,255,255,0.25)', border: '2px solid rgba(255,255,255,0.4)',
+          borderRadius: 12, padding: '8px 16px',
+          color: 'white', fontSize: 12, fontWeight: 900,
+          cursor: 'pointer', letterSpacing: '0.06em', textTransform: 'uppercase',
+          backdropFilter: 'blur(4px)',
+        }}>
+          GUIDE
+        </button>
+      )}
+    </div>
+  );
+}
 
-      {/* Left content */}
-      <div className="px-5 pt-4 pb-5 pr-44">
-        {/* Badge */}
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-[9px] font-black tracking-[0.3em] uppercase px-2.5 py-1 rounded-full"
-            style={{
-              background: isActive ? `${colorA}40` : 'rgba(255,255,255,0.08)',
-              color: isActive ? colorA : 'rgba(255,255,255,0.4)',
-            }}>
-            CHAPITRE {index + 1}
-          </span>
-          {isLocked && (
-            <span className="text-[9px] font-bold text-gray-500">🔒 {count} UNITÉS</span>
-          )}
-          {!isLocked && !isActive && (
-            <span className="text-[9px] font-bold" style={{ color: colorA }}>{count} UNITÉS</span>
-          )}
-        </div>
+function LessonNode({ lesson, status, colorA, colorB, shadow, isCurrentModule, phraseIndex, showMascot, mascotEmoji, onPress }: {
+  lesson: LessonData;
+  status: 'completed' | 'current' | 'locked';
+  colorA: string; colorB: string; shadow: string;
+  isCurrentModule: boolean;
+  phraseIndex: number;
+  showMascot: boolean;
+  mascotEmoji: string;
+  onPress: () => void;
+}) {
+  const isCurrent   = status === 'current';
+  const isCompleted = status === 'completed';
+  const isLocked    = status === 'locked';
+  const size        = isCurrent ? 80 : 68;
 
-        {/* Title */}
-        <h2 className="text-[19px] font-black leading-tight"
-          style={{ color: isLocked ? 'rgba(255,255,255,0.45)' : 'white' }}>
-          {isLocked && <span style={{ color: `${colorA}88` }}>🔒 </span>}{m.title}
-        </h2>
-        <p className="text-[12px] font-medium mt-1"
-          style={{ color: 'rgba(255,255,255,0.4)' }}>
-          {m.subtitle ?? theme.name}
-        </p>
-
-        {/* Progress bar — only when not locked */}
-        {!isLocked && count > 0 && (
-          <div className="mt-3 mb-1">
-            <div className="flex items-center gap-2">
-              <div style={{
-                flex: 1, height: 7, background: 'rgba(255,255,255,0.12)',
-                borderRadius: 4, overflow: 'hidden',
-              }}>
-                <div style={{
-                  height: '100%',
-                  width: `${progressPct}%`,
-                  background: progressPct >= 100
-                    ? '#fbbf24'
-                    : `linear-gradient(90deg, ${colorA}, ${colorB})`,
-                  borderRadius: 4,
-                  transition: 'width 0.6s ease',
-                }} />
-              </div>
-              <span style={{
-                fontSize: 10, fontWeight: 900, flexShrink: 0,
-                color: progressPct >= 100 ? '#fbbf24' : colorA,
-              }}>
-                {doneCount}/{count}
-              </span>
+  return (
+    <div style={{ position: 'relative', display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
+      {/* Mascot above current node */}
+      {showMascot && (
+        <div style={{ position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', paddingBottom: 8, zIndex: 30 }}>
+          <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <SpeechBubble phrase={MODULE_PHRASES[phraseIndex % MODULE_PHRASES.length]} />
+            <div style={{ fontSize: 56, lineHeight: 1, animation: 'mascotFloat 2.5s ease-in-out infinite' }}>
+              {mascotEmoji}
             </div>
           </div>
-        )}
-
-        {/* CTA button */}
-        <div className="mt-4">
-          {isActive ? (
-            <button
-              className="px-6 py-2.5 rounded-xl text-white font-black text-[13px] tracking-widest uppercase"
-              style={{
-                background: `linear-gradient(135deg, ${colorA}, ${colorB})`,
-                boxShadow: `0 4px 0 ${shadow}`,
-              }}>
-              CONTINUER
-            </button>
-          ) : isLocked ? (
-            <button
-              className="px-5 py-2.5 rounded-xl text-[12px] font-black tracking-wider uppercase"
-              style={{
-                background: `${colorA}18`,
-                border: `2px solid ${colorA}44`,
-                color: `${colorA}99`,
-                cursor: 'default',
-              }}>
-              PASSER À LA SECTION {index + 1}
-            </button>
-          ) : (
-            <button
-              className="px-5 py-2.5 rounded-xl text-[12px] font-black tracking-wider uppercase"
-              style={{
-                background: `linear-gradient(135deg, ${colorA}, ${colorB})`,
-                boxShadow: `0 4px 0 ${shadow}`,
-                color: 'white',
-              }}>
-              COMMENCER →
-            </button>
-          )
-          }
         </div>
+      )}
+
+      {/* Node button — Zellige star */}
+      <button
+        onClick={isLocked ? undefined : onPress}
+        style={{
+          width: size, height: size,
+          border: 'none', background: 'transparent', padding: 0,
+          cursor: isLocked ? 'default' : 'pointer',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          flexShrink: 0,
+        }}
+      >
+        <svg width={size} height={size} viewBox="0 0 110 110" style={
+          isCompleted ? { filter: 'drop-shadow(0 5px 0 #2d6e02)' } :
+          isCurrent   ? { animation: 'zelligePulse 2s ease-in-out infinite' } :
+          { filter: 'drop-shadow(0 5px 0 #111827)', opacity: 0.55 }
+        }>
+          {isCompleted ? (
+            <>
+              <polygon points="55,4 68,22 93,14 87,40 107,50 87,62 93,88 68,80 55,96 42,80 17,88 23,62 3,50 23,40 17,14 42,22" fill="#58cc02"/>
+              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#46a302"/>
+              <circle cx="55" cy="51" r="14" fill="#3a8a02"/>
+              <text x="55" y="51" textAnchor="middle" dominantBaseline="central" fontSize="17" fill="#ffffff" fontWeight="900" fontFamily="sans-serif">✓</text>
+            </>
+          ) : isCurrent ? (
+            <>
+              <polygon points="55,1 68,22 93,14 87,40 112,51 87,62 93,88 68,80 55,101 42,80 17,88 23,62 -2,51 23,40 17,14 42,22" fill="#ffffff"/>
+              <polygon points="55,6 67,25 90,18 84,42 107,52 84,62 90,86 67,79 55,98 43,79 20,86 26,62 3,52 26,42 20,18 43,25" fill="#1b3a6b"/>
+              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#e76f51"/>
+              <polygon points="55,29 63,40 75,36 71,48 82,52 71,56 75,68 63,64 55,75 47,64 35,68 39,56 28,52 39,48 35,36 47,40" fill="#2a9d8f"/>
+              <circle cx="55" cy="52" r="13" fill="#c9941a"/>
+              <text x="55" y="52" textAnchor="middle" dominantBaseline="central" fontSize="14" fontFamily="sans-serif">📖</text>
+            </>
+          ) : (
+            <>
+              <polygon points="55,4 68,22 93,14 87,40 107,50 87,62 93,88 68,80 55,96 42,80 17,88 23,62 3,50 23,40 17,14 42,22" fill="#374151"/>
+              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#4b5563"/>
+              <circle cx="55" cy="51" r="14" fill="#1f2937"/>
+              <text x="55" y="51" textAnchor="middle" dominantBaseline="central" fontSize="15" fontFamily="sans-serif">🔒</text>
+            </>
+          )}
+        </svg>
+      </button>
+
+      {/* Label below node for current */}
+      {isCurrent && (
+        <div style={{
+          marginTop: 8,
+          background: `${colorA}30`,
+          border: `1.5px solid ${colorA}60`,
+          borderRadius: 10,
+          padding: '4px 12px',
+          fontSize: 11, fontWeight: 900,
+          color: colorA, whiteSpace: 'nowrap',
+          letterSpacing: '0.03em',
+        }}>
+          {lesson.title}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function TrophyNode({ unlocked }: { unlocked: boolean }) {
+  return (
+    <button style={{
+      width: 60, height: 60, borderRadius: '50%',
+      border: 'none', cursor: unlocked ? 'pointer' : 'default',
+      background: unlocked
+        ? 'linear-gradient(135deg, #f59e0b, #d97706)'
+        : '#374151',
+      boxShadow: unlocked
+        ? '0 5px 0 #b45309, 0 6px 20px rgba(245,158,11,0.4)'
+        : '0 4px 0 #1f2937',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontSize: 26, flexShrink: 0,
+    }}>
+      {unlocked ? '🏆' : '🔒'}
+    </button>
+  );
+}
+
+function ChestNode({ unlocked }: { unlocked: boolean }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+      <div style={{ fontSize: 44, lineHeight: 1, filter: unlocked ? 'drop-shadow(0 4px 8px rgba(245,158,11,0.5))' : 'grayscale(1) brightness(0.5)' }}>
+        🪙
+      </div>
+      <div style={{
+        fontSize: 10, fontWeight: 900,
+        color: unlocked ? '#f59e0b' : '#4b5563',
+        letterSpacing: '0.06em', textTransform: 'uppercase',
+      }}>
+        {unlocked ? 'Récompense !' : 'Verrouillé'}
       </div>
     </div>
   );
 }
 
-/* ─────────────────────────────────────────────
-   PAGE
-───────────────────────────────────────────── */
-export default function ChaptersPage() {
-  const { loading, callApi } = useApi();
-  const { progress }         = useUserProgress();
-  const [modules, setModules] = useState<any[]>([]);
+/* ── Main page ───────────────────────────────────────────── */
+export default function ProgressPage() {
+  const router = useRouter();
+  const { progress } = useUserProgress();
+  const { mascot } = useMascot();
+  const mascotEmoji = mascot ? (MASCOT_EMOJI[mascot.id] ?? '🦉') : '🦉';
+  const [modules, setModules] = useState<ModuleData[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    callApi(getModules).then(setModules).catch(() => setModules(MOCK_MODULES));
+    async function load() {
+      try {
+        const mods = await getModules() as ModuleData[];
+        if (!Array.isArray(mods) || mods.length === 0) throw new Error('empty');
+
+        // Fetch lessons for each module in parallel
+        const withLessons = await Promise.all(
+          mods.map(async (m: ModuleData) => {
+            try {
+              const lessons = await getLessonsByModule(m.id) as LessonData[];
+              return { ...m, lessons: Array.isArray(lessons) ? lessons : [] };
+            } catch {
+              return { ...m, lessons: [] as LessonData[] };
+            }
+          })
+        );
+        setModules(withLessons);
+      } catch {
+        setModules(MOCK_MODULES);
+      }
+      setLoading(false);
+    }
+    load();
   }, []);
 
-  const moduleList: any[] = Array.isArray(modules)
-    ? modules
-    : (modules as any)?.modules ?? MOCK_MODULES;
+  // Determine completed/unlocked state
+  const completedLessons = new Set(progress.completedLessons.map(String));
 
-  if (loading && moduleList.length === 0) return <Loader />;
+  const isModuleComplete = (mod: ModuleData) =>
+    mod.lessons.length > 0 && mod.lessons.every(l => completedLessons.has(l.id));
 
-  // Un module est complété si toutes ses leçons sont dans completedLessons
-  const isModuleCompleted = (m: any) => {
-    if (!m) return false
-    const lessons = m.lessons ?? []
-    return lessons.length > 0 &&
-      lessons.every((l: any) => l.id && progress.completedLessons.includes(String(l.id)))
+  const isModuleUnlocked = (idx: number) =>
+    idx === 0 || isModuleComplete(modules[idx - 1]);
+
+  // Find current lesson (first non-completed in first unlocked module)
+  let currentLessonId: string | null = null;
+  for (const mod of modules) {
+    if (!isModuleUnlocked(modules.indexOf(mod))) continue;
+    for (const lesson of mod.lessons) {
+      if (!completedLessons.has(lesson.id)) {
+        currentLessonId = lesson.id;
+        break;
+      }
+    }
+    if (currentLessonId) break;
   }
 
-  // Module i est débloqué si i === 0 ou si le module i-1 est complété
-  const unlockedSet = new Set<number>([0])
-  for (let i = 1; i < moduleList.length; i++) {
-    if (isModuleCompleted(moduleList[i - 1])) unlockedSet.add(i)
+  if (loading) {
+    return (
+      <div style={{ minHeight: '100vh', background: '#131f24', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#9ca3af', fontSize: 14, fontWeight: 700 }}>Chargement de la carte…</div>
+      </div>
+    );
   }
 
-  // Module actif = premier débloqué et non complété
-  let activeIndex = 0
-  Array.from(unlockedSet).forEach(i => {
-    if (activeIndex === 0 && i < moduleList.length && !isModuleCompleted(moduleList[i])) activeIndex = i
-  })
+  let globalLessonIndex = 0; // for zigzag X position
+  let prevLevel: number | null = null;
 
   return (
-    <div className="flex flex-col items-center w-full min-h-screen bg-zellige pb-32 pt-6">
-
-      {/* Top bar */}
-      <div className="w-full max-w-sm px-4 mb-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-[22px] font-black text-gray-900">Mon parcours</h1>
-            <p className="text-[12px] text-gray-500 font-semibold mt-0.5">
-              {moduleList.length} chapitres · {progress.xp} XP
-            </p>
+    <div style={{
+      minHeight: '100vh',
+      background: '#131f24',
+      paddingBottom: 80,
+    }}>
+      {/* Top header */}
+      <div style={{
+        position: 'sticky', top: 0, zIndex: 100,
+        background: 'rgba(19,31,36,0.95)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        padding: '14px 20px',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      }}>
+        <div>
+          <Link href="/cours" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 5,
+            fontSize: 11, fontWeight: 800, color: '#8b9eb0',
+            textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.07em',
+            marginBottom: 4,
+          }}>
+            ← Mon Cours
+          </Link>
+          <div style={{ fontSize: 18, fontWeight: 900, color: 'white', lineHeight: 1 }}>Carte de jeu</div>
+          <div style={{ fontSize: 12, color: '#9ca3af', fontWeight: 600, marginTop: 2 }}>
+            {modules.length} modules · {progress.xp} XP
           </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ fontSize: 18 }}>🔥</span>
+            <span style={{ fontSize: 15, fontWeight: 900, color: '#fb923c' }}>{progress.streak}</span>
           </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ fontSize: 18 }}>💎</span>
+            <span style={{ fontSize: 15, fontWeight: 900, color: '#38bdf8' }}>{progress.gemmes}</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ fontSize: 18 }}>❤️</span>
+            <span style={{ fontSize: 15, fontWeight: 900, color: '#f87171' }}>{progress.hearts}</span>
+          </div>
+        </div>
       </div>
 
-      {/* Chapter cards with level separators */}
-      <div className="w-full max-w-sm px-4 flex flex-col gap-4">
-        {moduleList.map((m, i) => {
-          const prevLevel = i > 0 ? (moduleList[i - 1].level ?? 1) : null;
-          const curLevel  = m.level ?? 1;
-          const LEVEL_LABELS: Record<number, { label: string; color: string }> = {
-            1: { label: '⭐ Niveau 1 — Débutant',       color: '#2a9d8f' },
-            2: { label: '⭐⭐ Niveau 2 — Élémentaire',   color: '#e9a84c' },
-            3: { label: '⭐⭐⭐ Niveau 3 — Intermédiaire', color: '#e76f51' },
-            4: { label: '⭐⭐⭐⭐ Niveau 4 — Avancé',     color: '#7b2d8b' },
-          };
-          const showBanner = curLevel !== prevLevel;
-          const lvl = LEVEL_LABELS[curLevel];
+      {/* Map content */}
+      <div style={{ maxWidth: 440, margin: '0 auto', position: 'relative' }}>
+        {modules.map((mod, modIdx) => {
+          const colors = MODULE_COLORS[modIdx % MODULE_COLORS.length];
+          const colorA = mod.colorA ?? colors.colorA;
+          const colorB = mod.colorB ?? colors.colorB;
+          const shadow = mod.shadowColor ?? colors.shadow;
+          const curLevel = mod.level ?? 1;
+          const unlocked = isModuleUnlocked(modIdx);
+          const completed = isModuleComplete(mod);
+          const isActiveModule = !completed && unlocked;
+          const showLevelBanner = curLevel !== prevLevel;
+          prevLevel = curLevel;
+
           return (
-            <React.Fragment key={m.id}>
-              {showBanner && lvl && (
-                <div style={{
-                  display: 'flex', alignItems: 'center', gap: 10,
-                  padding: '6px 12px',
-                  borderRadius: 12,
-                  background: `${lvl.color}18`,
-                  border: `1.5px solid ${lvl.color}44`,
-                  marginTop: i === 0 ? 0 : 4,
-                }}>
-                  <span style={{ fontSize: 11, fontWeight: 900, color: lvl.color, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-                    {lvl.label}
-                  </span>
+            <div key={mod.id}>
+              {/* Level banner */}
+              {showLevelBanner && <LevelBanner level={curLevel} />}
+
+              {/* Chapter header */}
+              <ChapterHeader
+                mod={mod}
+                colorA={unlocked ? colorA : '#374151'}
+                colorB={unlocked ? colorB : '#1f2937'}
+                shadow={unlocked ? shadow : '#111827'}
+                isActive={isActiveModule}
+                onClick={() => {
+                  if (isActiveModule && mod.lessons[0]?.id) {
+                    router.push(`/lesson/${mod.lessons[0].id}`);
+                  }
+                }}
+              />
+
+              {/* Lesson nodes */}
+              <div style={{ padding: '20px 16px 8px', position: 'relative' }}>
+                {mod.lessons.map((lesson, lIdx) => {
+                  const isCompleted = completedLessons.has(lesson.id);
+                  const isCurrent   = lesson.id === currentLessonId;
+                  const isLocked    = !unlocked || (!isCompleted && !isCurrent &&
+                    !mod.lessons.slice(0, lIdx).every(l => completedLessons.has(l.id)));
+
+                  const status: 'completed' | 'current' | 'locked' = isCompleted ? 'completed' : isCurrent ? 'current' : 'locked';
+                  const xPct = ZIGZAG_X[globalLessonIndex % ZIGZAG_X.length];
+                  const showMascot = isCurrent;
+
+                  const node = (
+                    <div
+                      key={lesson.id}
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'flex-start',
+                        marginBottom: 0,
+                      }}
+                    >
+                      <div style={{
+                        marginLeft: `${xPct}%`,
+                        transform: 'translateX(-50%)',
+                        paddingTop: showMascot ? 100 : 0,
+                      }}>
+                        <LessonNode
+                          lesson={lesson}
+                          status={status}
+                          colorA={colorA} colorB={colorB} shadow={shadow}
+                          isCurrentModule={isActiveModule}
+                          phraseIndex={modIdx}
+                          showMascot={showMascot}
+                          mascotEmoji={mascotEmoji}
+                          onPress={() => router.push(`/lesson/${lesson.id}`)}
+                        />
+                      </div>
+
+                      {/* Connector to next node */}
+                      {(lIdx < mod.lessons.length - 1) && (
+                        <div style={{
+                          marginLeft: `${xPct}%`,
+                          transform: 'translateX(-50%)',
+                          width: 4,
+                          height: 32,
+                          background: isCompleted
+                            ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
+                            : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
+                          borderRadius: 2,
+                          opacity: isLocked ? 0.4 : 1,
+                          marginTop: 4,
+                        }} />
+                      )}
+                    </div>
+                  );
+
+                  globalLessonIndex++;
+                  return node;
+                })}
+
+                {/* Trophy at end of module */}
+                {mod.lessons.length > 0 && (() => {
+                  const xPct = ZIGZAG_X[globalLessonIndex % ZIGZAG_X.length];
+                  const prevXPct = ZIGZAG_X[(globalLessonIndex - 1) % ZIGZAG_X.length];
+                  const elem = (
+                    <div key="trophy" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: 4 }}>
+                      {/* Connector from last lesson to trophy */}
+                      <div style={{
+                        marginLeft: `${prevXPct}%`,
+                        transform: 'translateX(-50%)',
+                        width: 4, height: 28,
+                        background: completed
+                          ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
+                          : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
+                        borderRadius: 2,
+                      }} />
+                      <div style={{ marginLeft: `${xPct}%`, transform: 'translateX(-50%)', marginTop: 4 }}>
+                        <TrophyNode unlocked={completed} />
+                      </div>
+                    </div>
+                  );
+                  globalLessonIndex++;
+                  return elem;
+                })()}
+              </div>
+
+              {/* Chest between chapters (every 3 modules) */}
+              {modIdx % 3 === 2 && modIdx < modules.length - 1 && (
+                <div style={{ display: 'flex', justifyContent: 'center', padding: '8px 0 16px' }}>
+                  <ChestNode unlocked={isModuleComplete(mod)} />
                 </div>
               )}
-              <ChapterCard
-                m={m}
-                index={i}
-                isActive={i === activeIndex}
-                isLocked={!unlockedSet.has(i)}
-                completedLessons={progress.completedLessons}
-              />
-            </React.Fragment>
+            </div>
           );
         })}
+
+        {/* End of journey */}
+        <div style={{ textAlign: 'center', padding: '32px 20px', color: '#4b5563' }}>
+          <div style={{ fontSize: 32, marginBottom: 8 }}>🌟</div>
+          <div style={{ fontSize: 13, fontWeight: 700 }}>
+            Continue à apprendre pour débloquer de nouveaux modules !
+          </div>
+        </div>
       </div>
 
+      <style>{`
+        @keyframes mascotFloat {
+          0%, 100% { transform: translateY(0px); }
+          50%       { transform: translateY(-10px); }
+        }
+      `}</style>
     </div>
   );
 }

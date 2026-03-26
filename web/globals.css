@@ -49,8 +49,8 @@
 
 /* ── VARIABLES CSS LEGACY ── */
 :root {
-  --background: #ffffff;
-  --foreground: #4b4b4b;
+  --background: #131f24;
+  --foreground: #ffffff;
 
   /* Duolingo officiel */
   --duo-green:       #58cc02;
@@ -66,13 +66,19 @@
   --teal-light: rgba(0,160,160,0.12);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+main::-webkit-scrollbar { display: none; }
+main { scrollbar-width: none; background-color: #131f24; }
+
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: "Nunito", "Inter", -apple-system, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -261,6 +267,34 @@ body {
 
 /* animate-shake-x utility class */
 .animate-shake-x { animation: shakeX 0.35s ease both; }
+
+/* ── GAME MAP ANIMATIONS ── */
+@keyframes currentPulse {
+  0%, 100% { box-shadow: 0 6px 0 var(--shadow), 0 8px 28px var(--glow); transform: scale(1); }
+  50%       { box-shadow: 0 6px 0 var(--shadow), 0 8px 40px var(--glow), 0 0 0 10px rgba(255,255,255,0.08); transform: scale(1.04); }
+}
+
+/* ── DARK BACKGROUND PAGES ── */
+.page-dark {
+  background: #131f24;
+  min-height: 100vh;
+}
+
+/* ── NODE ACTIVE PULSE ── */
+@keyframes nodePulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+/* ── ZELLIGE NODE PULSE ── */
+@keyframes zelligePulse {
+  0%, 100% {
+    filter: drop-shadow(0 5px 0 #923d28) drop-shadow(0 0 0px rgba(231,111,81,0));
+  }
+  50% {
+    filter: drop-shadow(0 5px 0 #923d28) drop-shadow(0 0 14px rgba(231,111,81,0.65));
+  }
+}
 
 /* ── STATS PANEL ── */
 .widget-card {

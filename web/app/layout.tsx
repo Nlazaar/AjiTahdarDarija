@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${outfit.variable} ${amiri.variable}`}>
-      <body className="min-h-screen bg-white font-outfit">
+      <body className="min-h-screen font-outfit" style={{ backgroundColor: '#131f24', overflowX: 'hidden' }}>
         <MascotProvider>
           <UserProgressProvider>
             <UserProvider>
