@@ -41,15 +41,15 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
   }
 
   const getClass = (c: DarijaLetter) => {
-    if (!answered) return "border-gray-200 bg-white hover:border-[#1cb0f6] hover:bg-blue-50"
-    if (c.latin === letter.latin) return "border-[#58cc02] bg-green-100"
-    if (c.latin === selected)     return "border-red-400 bg-red-100"
-    return "border-gray-100 opacity-40"
+    if (!answered) return "border-[#2a3d47] bg-[#263744] hover:border-[#1cb0f6] hover:bg-[#1a2e3e]"
+    if (c.latin === letter.latin) return "border-[#58cc02] bg-[#1e3a2e]"
+    if (c.latin === selected)     return "border-red-500 bg-[#3a1e1e]"
+    return "border-[#2a3d47] opacity-40"
   }
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <p className="text-sm text-gray-500 font-medium text-center">
+      <p className="text-sm text-[#8a9baa] font-medium text-center">
         Quelle lettre correspond à ce son ?
       </p>
 
@@ -61,7 +61,7 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
             key={c.latin}
             disabled={answered}
             onClick={() => handleChoice(c)}
-            className={`h-20 flex items-center justify-center text-5xl text-[#1b3a6b] border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
+            className={`h-20 flex items-center justify-center text-5xl text-white border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
             style={{ fontFamily: 'Amiri, serif' }}
           >
             {c.letter}

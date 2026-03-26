@@ -3,7 +3,7 @@ import React from "react";
 
 export const ExerciseCard = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   return (
-    <div className={`bg-white rounded-2xl border border-gray-100 shadow-sm p-6 w-full animate-fadeUp ${className}`}>
+    <div className={`bg-[#1e2d35] rounded-2xl border border-[#2a3d47] p-6 w-full animate-fadeUp ${className}`}>
       {children}
     </div>
   );

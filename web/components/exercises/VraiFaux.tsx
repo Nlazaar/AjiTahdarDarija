@@ -31,22 +31,22 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
 
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-sm text-gray-500 font-medium text-center">
+      <p className="text-sm text-[#8a9baa] font-medium text-center">
         Cette association est-elle correcte ?
       </p>
 
       {/* Carte centrale */}
       <div className={`flex flex-col items-center gap-3 p-8 rounded-2xl border-2 transition-all ${
-        !answered          ? "bg-gray-50 border-gray-200" :
-        correct            ? "bg-green-50 border-green-400" :
-        "bg-red-50 border-red-400"
+        !answered          ? "bg-[#263744] border-[#2a3d47]" :
+        correct            ? "bg-[#1e3a2e] border-[#34d399]" :
+        "bg-[#3a1e1e] border-red-500"
       }`}>
-        <span className="text-8xl leading-none text-[#1b3a6b]" style={{ fontFamily: 'Amiri, serif' }}>
+        <span className="text-8xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
           {letter.letter}
         </span>
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />
-        <div className="w-10 h-0.5 bg-gray-200 rounded-full"/>
-        <span className="text-2xl font-bold text-gray-700">{proposed}</span>
+        <div className="w-10 h-0.5 bg-[#2a3d47] rounded-full"/>
+        <span className="text-2xl font-bold text-white">{proposed}</span>
       </div>
 
       {/* Boutons VRAI / FAUX */}

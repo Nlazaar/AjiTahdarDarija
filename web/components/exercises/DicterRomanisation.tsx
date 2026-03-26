@@ -75,7 +75,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
 
   return (
     <div className="flex flex-col gap-5">
-      <p className="text-sm font-semibold text-gray-500 text-center">
+      <p className="text-sm font-semibold text-[#8a9baa] text-center">
         Appuie sur ce que tu entends
       </p>
 
@@ -120,7 +120,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
       {!useKeyboard && (
         <>
           {/* Zone réponse */}
-          <div className="min-h-[56px] border-b-2 border-gray-300 flex items-end pb-2 px-2 gap-2 flex-wrap">
+          <div className="min-h-[56px] border-b-2 border-[#2a3d47] flex items-end pb-2 px-2 gap-2 flex-wrap">
             {selected ? (
               <button
                 disabled={answered}
@@ -128,16 +128,16 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
                 className={`px-4 py-2 rounded-xl border-2 font-bold text-base transition-all ${
                   answered
                     ? correct
-                      ? "bg-green-100 border-[#58cc02] text-green-800"
-                      : "bg-red-100 border-red-400 text-red-800"
-                    : "bg-[#ddf4ff] border-[#1cb0f6] text-[#1b3a6b] hover:bg-blue-100"
+                      ? "bg-[#1e3a2e] border-[#58cc02] text-[#34d399]"
+                      : "bg-[#3a1e1e] border-red-500 text-red-400"
+                    : "bg-[#1a2e3e] border-[#1cb0f6] text-[#1cb0f6] hover:bg-[#1e3347]"
                 }`}
                 style={{ boxShadow: answered ? 'none' : '0 3px 0 #0a8fc4' }}
               >
                 {selected}
               </button>
             ) : (
-              <span className="text-gray-300 text-sm italic">Choisis une réponse…</span>
+              <span className="text-[#4a5d6a] text-sm italic">Choisis une réponse…</span>
             )}
           </div>
 
@@ -148,9 +148,9 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
                 key={tile}
                 disabled={answered}
                 onClick={() => { if (!answered) setSelected(selected === tile ? null : tile) }}
-                className="px-4 py-2 bg-white border-2 border-gray-200 rounded-xl font-bold text-base text-gray-800
-                  hover:border-[#1cb0f6] hover:bg-[#ddf4ff] transition-all disabled:opacity-50"
-                style={{ boxShadow: '0 3px 0 #d1d5db' }}
+                className="px-4 py-2 bg-[#263744] border-2 border-[#2a3d47] rounded-xl font-bold text-base text-white
+                  hover:border-[#1cb0f6] hover:bg-[#1a2e3e] transition-all disabled:opacity-50"
+                style={{ boxShadow: '0 3px 0 #1a2830' }}
               >
                 {tile}
               </button>
@@ -173,11 +173,11 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
             className={`w-full px-4 py-3 rounded-2xl border-2 font-bold text-base outline-none transition-all ${
               answered
                 ? correct
-                  ? "border-[#58cc02] bg-green-50 text-green-800"
-                  : "border-red-400 bg-red-50 text-red-800"
-                : "border-gray-300 focus:border-[#1cb0f6] bg-white text-gray-800"
+                  ? "border-[#58cc02] bg-[#1e3a2e] text-[#34d399]"
+                  : "border-red-500 bg-[#3a1e1e] text-red-400"
+                : "border-[#2a3d47] focus:border-[#1cb0f6] bg-[#263744] text-white placeholder-[#4a5d6a]"
             }`}
-            style={{ boxShadow: answered ? 'none' : '0 3px 0 #d1d5db' }}
+            style={{ boxShadow: answered ? 'none' : '0 3px 0 #1a2830' }}
           />
         </div>
       )}
@@ -190,7 +190,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
           className={`w-full py-4 rounded-2xl font-bold text-base transition-all ${
             currentAnswer
               ? "bg-[#58cc02] hover:bg-[#46a302] text-white"
-              : "bg-gray-200 text-gray-400 cursor-not-allowed"
+              : "bg-[#263744] text-[#4a5d6a] cursor-not-allowed"
           }`}
           style={currentAnswer ? { boxShadow: '0 4px 0 #46a302' } : {}}
         >
@@ -198,21 +198,14 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
         </button>
       )}
 
-      {answered && (
-        <FeedbackBanner
-          type={correct ? "correct" : "incorrect"}
-          message={correct ? "Parfait !" : `La bonne réponse était : ${letter.latin}`}
-        />
-      )}
-
       {/* ── BARRE BASSE : UTILISER LE CLAVIER / LES TUILES ── */}
       {!answered && (
-        <div className="flex items-center justify-center pt-2 border-t border-gray-100">
+        <div className="flex items-center justify-center pt-2 border-t border-[#2a3d47]">
           {!useKeyboard ? (
             <button
               onClick={switchToKeyboard}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-gray-200 text-gray-500
-                font-bold text-sm hover:border-gray-300 hover:text-gray-700 transition-all"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-[#2a3d47] text-[#6b7f8a]
+                font-bold text-sm hover:border-[#3a4d57] hover:text-white transition-all"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <rect x="2" y="6" width="20" height="12" rx="2"/>
@@ -223,8 +216,8 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
           ) : (
             <button
               onClick={switchToTiles}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-gray-200 text-gray-500
-                font-bold text-sm hover:border-gray-300 hover:text-gray-700 transition-all"
+              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-[#2a3d47] text-[#6b7f8a]
+                font-bold text-sm hover:border-[#3a4d57] hover:text-white transition-all"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <rect x="3" y="3" width="7" height="7" rx="1"/>

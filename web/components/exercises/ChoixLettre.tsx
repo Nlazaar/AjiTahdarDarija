@@ -37,21 +37,21 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
   }
 
   const getClass = (c: DarijaLetter) => {
-    if (!answered) return "border-gray-200 bg-white hover:border-[#58cc02] hover:bg-green-50"
-    if (c.latin === letter.latin) return "border-[#58cc02] bg-green-100"
-    if (c.latin === selected)     return "border-red-400 bg-red-100"
-    return "border-gray-200 opacity-40"
+    if (!answered) return "border-[#2a3d47] bg-[#263744] hover:border-[#58cc02] hover:bg-[#1e3a2e]"
+    if (c.latin === letter.latin) return "border-[#58cc02] bg-[#1e3a2e]"
+    if (c.latin === selected)     return "border-red-500 bg-[#3a1e1e]"
+    return "border-[#2a3d47] opacity-40"
   }
 
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-sm text-gray-500 font-medium text-center">
+      <p className="text-sm text-[#8a9baa] font-medium text-center">
         Comment se prononce cette lettre ?
       </p>
 
       {/* Lettre + son */}
-      <div className="flex items-center justify-center gap-6 bg-green-50 border-2 border-green-200 rounded-2xl px-8 py-5 mx-auto w-fit">
-        <span className="text-7xl leading-none text-[#1b3a6b]" style={{ fontFamily: 'Amiri, serif' }}>
+      <div className="flex items-center justify-center gap-6 bg-[#1e3a2e] border-2 border-[#34d399]/30 rounded-2xl px-8 py-5 mx-auto w-fit">
+        <span className="text-7xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
           {letter.letter}
         </span>
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />
@@ -74,13 +74,13 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
             }
           >
             <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 ${
-              !answered             ? "border-gray-300" :
+              !answered             ? "border-[#4a5d6a]" :
               c.latin===letter.latin ? "border-[#58cc02] bg-[#58cc02]" :
-              c.latin===selected    ? "border-red-400 bg-red-400" :
-              "border-gray-300"
+              c.latin===selected    ? "border-red-500 bg-red-500" :
+              "border-[#4a5d6a]"
             }`}/>
-            <span className="text-base font-bold text-gray-800">{c.latin}</span>
-            <span className="text-xs text-gray-400 ml-auto">{c.fr}</span>
+            <span className="text-base font-bold text-white">{c.latin}</span>
+            <span className="text-xs text-[#6b7f8a] ml-auto">{c.fr}</span>
           </button>
         ))}
       </div>

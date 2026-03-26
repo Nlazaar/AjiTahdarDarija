@@ -73,25 +73,28 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
       margin: '0 auto' 
     }}>
       {/* Question Text */}
-      <div style={{ marginBottom: '40px', textAlign: 'center' }}>
-        <h1 style={{ 
-          fontSize: '28px', 
-          fontWeight: '900', 
-          color: '#4b4b4b', 
+      <div style={{ marginBottom: '24px', textAlign: 'center' }}>
+        <h1 style={{
+          fontSize: '24px',
+          fontWeight: '900',
+          color: '#ffffff',
           marginBottom: '8px',
           lineHeight: '1.2'
         }}>
           Associe chaque lettre
         </h1>
-        <p style={{ 
-          fontSize: '14px', 
-          fontWeight: '700', 
-          color: '#afafaf', 
-          textTransform: 'uppercase', 
-          letterSpacing: '0.1em' 
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: '6px',
+          background: matchedIds.size > 0 ? 'rgba(52,211,153,0.15)' : '#1e2d35',
+          borderRadius: '20px', padding: '4px 14px', marginTop: '8px'
         }}>
-           Lqi kol horf m'a l-latin dyalo
-        </p>
+          <span style={{ fontSize: '18px', fontWeight: '900', color: matchedIds.size > 0 ? '#34d399' : '#4a5d6a' }}>
+            {matchedIds.size}
+          </span>
+          <span style={{ fontSize: '13px', color: '#6b7f8a', fontWeight: '600' }}>
+            / {pairs.length} associées
+          </span>
+        </div>
       </div>
 
       <div style={{ 
@@ -109,24 +112,25 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
             const isSelected = selectedLeft === p.latin;
             const isError = errorPair?.[0] === p.latin;
 
-            let shadowColor = "#e5e5e5";
-            let borderColor = "#e5e5e5";
-            let bgColor = "white";
-            let textColor = "#4b4b4b";
+            let shadowColor = "#1a2830";
+            let borderColor = "#2a3d47";
+            let bgColor = "#263744";
+            let textColor = "#ffffff";
 
             if (isMatched) {
-              bgColor = "#f7f7f7";
-              borderColor = "#e5e5e5";
-              textColor = "#d7d7d7";
+              bgColor = "#1a3328";
+              borderColor = "#34d399";
+              textColor = "#34d399";
               shadowColor = "transparent";
             } else if (isError) {
               shadowColor = "#ff4b4b";
               borderColor = "#ff4b4b";
-              bgColor = "#ffdbdb";
+              bgColor = "#3a1e1e";
+              textColor = "#ff4b4b";
             } else if (isSelected) {
               shadowColor = "#1cb0f6";
               borderColor = "#1cb0f6";
-              bgColor = "#ddf4ff";
+              bgColor = "#1a2e3e";
               textColor = "#1cb0f6";
             }
 
@@ -151,13 +155,13 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
                   borderRadius: '16px',
                   boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
                   color: textColor,
-                  opacity: isMatched ? 0.3 : 1,
+                  opacity: isMatched ? 0.9 : 1,
                   cursor: isMatched ? 'default' : 'pointer',
                   transition: 'all 0.1s',
                   transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
                 }}
               >
-                {p.letter}
+                {isMatched ? <span style={{ fontSize: '24px' }}>✓</span> : p.letter}
               </button>
             );
           })}
@@ -170,24 +174,25 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
             const isSelected = selectedRight === s.latin;
             const isError = errorPair?.[1] === s.latin;
 
-            let shadowColor = "#e5e5e5";
-            let borderColor = "#e5e5e5";
-            let bgColor = "white";
-            let textColor = "#4b4b4b";
+            let shadowColor = "#1a2830";
+            let borderColor = "#2a3d47";
+            let bgColor = "#263744";
+            let textColor = "#ffffff";
 
             if (isMatched) {
-              bgColor = "#f7f7f7";
-              borderColor = "#e5e5e5";
-              textColor = "#d7d7d7";
+              bgColor = "#1a3328";
+              borderColor = "#34d399";
+              textColor = "#34d399";
               shadowColor = "transparent";
             } else if (isError) {
               shadowColor = "#ff4b4b";
               borderColor = "#ff4b4b";
-              bgColor = "#ffdbdb";
+              bgColor = "#3a1e1e";
+              textColor = "#ff4b4b";
             } else if (isSelected) {
               shadowColor = "#1cb0f6";
               borderColor = "#1cb0f6";
-              bgColor = "#ddf4ff";
+              bgColor = "#1a2e3e";
               textColor = "#1cb0f6";
             }
 
@@ -211,16 +216,22 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
                   borderRadius: '16px',
                   boxShadow: shadowColor === "transparent" ? "none" : `0 4px 0 ${shadowColor}`,
                   color: textColor,
-                  opacity: isMatched ? 0.3 : 1,
+                  opacity: isMatched ? 0.9 : 1,
                   cursor: isMatched ? 'default' : 'pointer',
                   transition: 'all 0.1s',
                   transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
                 }}
               >
-                <span style={{ fontSize: '20px', fontWeight: '900' }}>{s.latin}</span>
-                <span style={{ fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', opacity: 0.5 }}>
-                  {s.fr}
-                </span>
+                {isMatched ? (
+                  <span style={{ fontSize: '24px' }}>✓</span>
+                ) : (
+                  <>
+                    <span style={{ fontSize: '20px', fontWeight: '900' }}>{s.latin}</span>
+                    <span style={{ fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', opacity: 0.5 }}>
+                      {s.fr}
+                    </span>
+                  </>
+                )}
               </button>
             );
           })}

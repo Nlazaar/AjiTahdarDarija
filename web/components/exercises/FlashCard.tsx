@@ -7,7 +7,7 @@ interface FlashCardProps {
   letter:     DarijaLetter
   onContinue: () => void
   onSpeak:    (l: DarijaLetter) => void
-  progress?:  string  // ex. "2 / 4"
+  progress?:  string
 }
 
 export default function FlashCard({ letter, onContinue, onSpeak, progress }: FlashCardProps) {
@@ -18,36 +18,32 @@ export default function FlashCard({ letter, onContinue, onSpeak, progress }: Fla
 
   return (
     <div className="flex flex-col items-center gap-4" style={{ animation: 'fadeUp 0.3s ease both' }}>
-      {/* Badge + progression */}
       <div className="flex items-center gap-2">
-        <span className="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+        <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
           Nouvelle lettre
         </span>
         {progress && (
-          <span className="text-xs text-gray-400 font-medium">{progress}</span>
+          <span className="text-xs text-[#6b7f8a] font-medium">{progress}</span>
         )}
       </div>
 
-      {/* Lettre arabe */}
       <div
-        className="text-[96px] leading-none text-center text-[#1b3a6b] my-2"
+        className="text-[96px] leading-none text-center text-white my-2"
         style={{ fontFamily: 'Amiri, serif' }}
       >
         {letter.letter}
       </div>
 
-      {/* Bouton son */}
       <AudioButton onPlay={() => onSpeak(letter)} size="lg" />
 
-      {/* Infos */}
-      <div className="w-full bg-gray-50 rounded-xl p-4 space-y-2">
+      <div className="w-full bg-[#263744] rounded-xl p-4 space-y-2">
         <div className="flex justify-between text-sm">
-          <span className="text-gray-500">Romanisation</span>
-          <span className="font-bold text-gray-800">{letter.latin}</span>
+          <span className="text-[#8a9baa]">Romanisation</span>
+          <span className="font-bold text-white">{letter.latin}</span>
         </div>
         <div className="flex justify-between text-sm">
-          <span className="text-gray-500">Prononciation FR</span>
-          <span className="font-bold text-gray-800">"{letter.fr}"</span>
+          <span className="text-[#8a9baa]">Prononciation FR</span>
+          <span className="font-bold text-white">"{letter.fr}"</span>
         </div>
       </div>
 

@@ -79,8 +79,8 @@ function TransitionScreen({ emoji, title, sub, onContinue }: {
       <span className="text-7xl" style={{ animation: 'bounceIn 0.5s ease both 0.1s' }}>
         {emoji}
       </span>
-      <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
-      <p className="text-sm text-gray-500 max-w-xs">{sub}</p>
+      <h2 className="text-2xl font-bold text-white">{title}</h2>
+      <p className="text-sm text-[#8a9baa] max-w-xs">{sub}</p>
       <div className="w-full max-w-xs mt-2">
         <ContinueButton onClick={onContinue} label="Continuer →" />
       </div>
@@ -92,8 +92,8 @@ function FinishedScreen({ onNext, hasNext }: { onNext: () => void; hasNext: bool
   return (
     <div className="flex flex-col items-center gap-4 py-8 px-4 text-center" style={{ animation: 'fadeUp 0.4s ease both' }}>
       <span className="text-7xl" style={{ animation: 'bounceIn 0.5s ease both' }}>🎉</span>
-      <h2 className="text-2xl font-bold text-gray-800">Leçon terminée !</h2>
-      <p className="text-sm text-gray-500 max-w-xs">
+      <h2 className="text-2xl font-bold text-white">Leçon terminée !</h2>
+      <p className="text-sm text-[#8a9baa] max-w-xs">
         {hasNext ? 'La leçon suivante est débloquée !' : 'Tu as terminé le chapitre !'}
       </p>
 
@@ -300,7 +300,7 @@ export default function LessonClient({
   // ── Écran de fin ─────────────────────────────────────────────────────────
   if (phase === "finished") {
     return (
-      <div className="min-h-screen bg-[#f8f9fa] flex flex-col items-center justify-center px-4">
+      <div className="min-h-screen bg-[#131f24] flex flex-col items-center justify-center px-4">
         <ExerciseCard className="max-w-sm w-full">
           <FinishedScreen onNext={handleNext} hasNext={!!nextLessonId} />
         </ExerciseCard>
@@ -312,7 +312,7 @@ export default function LessonClient({
   if (["t1","t2","t3","t4","t5","t6"].includes(phase)) {
     const trn = TRANSITIONS[phase as TrnPhase]
     return (
-      <div className="min-h-screen bg-[#f8f9fa] flex flex-col items-center justify-center px-4">
+      <div className="min-h-screen bg-[#131f24] flex flex-col items-center justify-center px-4">
         <ExerciseCard className="max-w-sm w-full">
           <TransitionScreen {...trn} onContinue={advancePhase} />
         </ExerciseCard>
@@ -392,21 +392,21 @@ export default function LessonClient({
 
   // ── Rendu principal ───────────────────────────────────────────────────────
   return (
-    <div className="min-h-screen bg-[#f8f9fa] flex flex-col">
+    <div className="min-h-screen bg-[#131f24] flex flex-col">
 
       {/* ── HEADER ─────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-50 bg-[#f8f9fa] px-4 py-3">
+      <header className="sticky top-0 z-50 bg-[#131f24] px-4 py-3">
 
         {/* Ligne 1 : retour + barre de progression + cœurs */}
         <div className="flex items-center gap-3 mb-2">
           <button
             onClick={() => router.back()}
-            className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 flex-shrink-0 transition-colors text-lg font-bold"
+            className="w-8 h-8 flex items-center justify-center text-[#6b7f8a] hover:text-white flex-shrink-0 transition-colors text-lg font-bold"
           >
             ✕
           </button>
 
-          <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
+          <div className="flex-1 h-4 bg-[#2a3d47] rounded-full overflow-hidden">
             <div
               className="h-full bg-[#58cc02] rounded-full transition-all duration-500"
               style={{ width: `${globalPct}%` }}
@@ -437,8 +437,8 @@ export default function LessonClient({
                 title={PHASE_LABELS[i]}
                 className={`flex items-center justify-center rounded-full text-[10px] font-bold transition-all duration-200 ${
                   isDone   ? 'w-6 h-6 bg-[#58cc02] text-white' :
-                  isActive ? 'w-7 h-7 bg-[#1b3a6b] text-white' :
-                             'w-6 h-6 bg-gray-200 text-gray-400'
+                  isActive ? 'w-7 h-7 bg-[#1cb0f6] text-white' :
+                             'w-6 h-6 bg-[#2a3d47] text-[#6b7f8a]'
                 }`}
               >
                 {i + 1}
@@ -462,7 +462,7 @@ export default function LessonClient({
             type={isCorrect ? "correct" : "incorrect"}
             message={feedbackMsg}
           />
-          <div className="bg-white border-t border-gray-200 px-4 py-4">
+          <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4">
             <div className="max-w-lg mx-auto">
               <ContinueButton onClick={advancePhase} label="Continuer →" />
             </div>

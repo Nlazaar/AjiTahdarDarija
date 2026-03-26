@@ -51,20 +51,20 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
     const isMatched  = matchedIds.has(latin);
     const isSelected = selectedLeft === latin;
     const isError    = wrongPair?.[0] === latin;
-    if (isMatched)  return { bg: "#d1fae5", border: "#34d399", shadow: "transparent", text: "#065f46" };
-    if (isError)    return { bg: "#ffdbdb", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#991b1b" };
-    if (isSelected) return { bg: "#ddf4ff", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#0369a1" };
-    return           { bg: "white",    border: "#e5e5e5", shadow: "#e5e5e5",     text: "#4b4b4b" };
+    if (isMatched)  return { bg: "#1a3328", border: "#34d399", shadow: "transparent", text: "#34d399" };
+    if (isError)    return { bg: "#3a1e1e", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#ff6b6b" };
+    if (isSelected) return { bg: "#1a2e3e", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#1cb0f6" };
+    return           { bg: "#263744",  border: "#2a3d47", shadow: "#1a2830",    text: "#ffffff" };
   };
 
   const rightStyle = (latin: string) => {
     const isMatched  = matchedIds.has(latin);
     const isSelected = selectedRight === latin;
     const isError    = wrongPair?.[1] === latin;
-    if (isMatched)  return { bg: "#d1fae5", border: "#34d399", shadow: "transparent", text: "#065f46" };
-    if (isError)    return { bg: "#ffdbdb", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#991b1b" };
-    if (isSelected) return { bg: "#ddf4ff", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#0369a1" };
-    return           { bg: "white",    border: "#e5e5e5", shadow: "#e5e5e5",     text: "#4b4b4b" };
+    if (isMatched)  return { bg: "#1a3328", border: "#34d399", shadow: "transparent", text: "#34d399" };
+    if (isError)    return { bg: "#3a1e1e", border: "#ff4b4b", shadow: "#ff4b4b",     text: "#ff6b6b" };
+    if (isSelected) return { bg: "#1a2e3e", border: "#1cb0f6", shadow: "#1cb0f6",     text: "#1cb0f6" };
+    return           { bg: "#263744",  border: "#2a3d47", shadow: "#1a2830",    text: "#ffffff" };
   };
 
   return (
@@ -72,18 +72,18 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
 
       {/* Titre + compteur */}
       <div style={{ marginBottom: "24px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "24px", fontWeight: "900", color: "#4b4b4b", marginBottom: "6px" }}>
+        <h1 style={{ fontSize: "24px", fontWeight: "900", color: "#ffffff", marginBottom: "6px" }}>
           Trouve les paires
         </h1>
         <div style={{
           display: "inline-flex", alignItems: "center", gap: "6px",
-          background: matchedIds.size > 0 ? "#d1fae5" : "#f3f4f6",
+          background: matchedIds.size > 0 ? "rgba(52,211,153,0.15)" : "#1e2d35",
           borderRadius: "20px", padding: "4px 14px"
         }}>
-          <span style={{ fontSize: "18px", fontWeight: "900", color: matchedIds.size > 0 ? "#059669" : "#9ca3af" }}>
+          <span style={{ fontSize: "18px", fontWeight: "900", color: matchedIds.size > 0 ? "#34d399" : "#4a5d6a" }}>
             {matchedIds.size}
           </span>
-          <span style={{ fontSize: "13px", color: "#9ca3af", fontWeight: "600" }}>
+          <span style={{ fontSize: "13px", color: "#6b7f8a", fontWeight: "600" }}>
             / {pairs.length} trouvées
           </span>
         </div>
@@ -123,8 +123,18 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
                   <span style={{ fontSize: "20px" }}>✓</span>
                 ) : (
                   <>
-                    <span style={{ fontSize: "22px" }}>🔊</span>
-                    <span style={{ fontSize: "13px", fontWeight: "700", color: s.text, opacity: 0.7 }}>
+                    <span style={{ display: "flex", alignItems: "center", gap: "2px", height: "20px" }}>
+                      {[0, 1, 2, 3].map(i => (
+                        <span key={i} style={{
+                          display: "block", width: "3px", borderRadius: "2px",
+                          background: isSelected ? "#1cb0f6" : "#6b7f8a",
+                          height: "100%",
+                          animation: isSelected ? `waveBar 0.8s ease-in-out ${i * 0.15}s infinite` : "none",
+                          transform: "scaleY(0.4)",
+                        }} />
+                      ))}
+                    </span>
+                    <span style={{ fontSize: "13px", fontWeight: "700", color: s.text, opacity: 0.9 }}>
                       {p.latin}
                     </span>
                   </>
