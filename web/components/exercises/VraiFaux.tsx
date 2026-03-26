@@ -41,7 +41,7 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
         correct            ? "bg-green-50 border-green-400" :
         "bg-red-50 border-red-400"
       }`}>
-        <span className="text-8xl leading-none" style={{ fontFamily: 'Amiri, serif' }}>
+        <span className="text-8xl leading-none text-[#1b3a6b]" style={{ fontFamily: 'Amiri, serif' }}>
           {letter.letter}
         </span>
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />

@@ -61,7 +61,7 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
             key={c.latin}
             disabled={answered}
             onClick={() => handleChoice(c)}
-            className={`h-20 flex items-center justify-center text-5xl border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
+            className={`h-20 flex items-center justify-center text-5xl text-[#1b3a6b] border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
             style={{ fontFamily: 'Amiri, serif' }}
           >
             {c.letter}
