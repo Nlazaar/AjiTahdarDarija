@@ -1,0 +1,80 @@
+import { UsersService } from './users.service';
+export declare class UsersController {
+    private readonly usersService;
+    constructor(usersService: UsersService);
+    findAll(): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }[]>;
+    findOne(id: string): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    create(body: any): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    update(id: string, body: any): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    remove(id: string): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+}

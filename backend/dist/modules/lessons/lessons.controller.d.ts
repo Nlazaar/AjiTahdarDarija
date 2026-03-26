@@ -1,0 +1,112 @@
+import { LessonsService } from './lessons.service';
+export declare class LessonsController {
+    private readonly lessonsService;
+    constructor(lessonsService: LessonsService);
+    findAll(): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        order: number;
+        duration: number | null;
+        isPublished: boolean;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }[]>;
+    findOne(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        order: number;
+        duration: number | null;
+        isPublished: boolean;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    getExercises(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        data: import("@prisma/client/runtime/library").JsonValue | null;
+        type: import(".prisma/client").$Enums.ExerciseType;
+        prompt: string | null;
+        answer: import("@prisma/client/runtime/library").JsonValue | null;
+        points: number;
+        lessonId: string | null;
+        vocabularyId: string | null;
+    }[]>;
+    submit(id: string, body: any): Promise<{
+        score: number;
+        errors: {
+            exerciseId: string;
+            expected: any;
+            got: any;
+        }[];
+        xpEarned: number;
+        progress: any;
+    }>;
+    create(body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        order: number;
+        duration: number | null;
+        isPublished: boolean;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    update(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        order: number;
+        duration: number | null;
+        isPublished: boolean;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    remove(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        order: number;
+        duration: number | null;
+        isPublished: boolean;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+}

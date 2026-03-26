@@ -1,0 +1,82 @@
+import { PrismaService } from '../../prisma/prisma.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
+export declare class UsersService {
+    private readonly prisma;
+    constructor(prisma: PrismaService);
+    findAll(): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }[]>;
+    findOne(id: string): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    create(data: CreateUserDto): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    update(id: string, data: UpdateUserDto): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+    remove(id: string): Promise<{
+        id: string;
+        email: string;
+        passwordHash: string | null;
+        name: string | null;
+        locale: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        xp: number;
+        level: number;
+        streak: number;
+        lastStreakAt: Date | null;
+        hearts: number;
+    }>;
+}
