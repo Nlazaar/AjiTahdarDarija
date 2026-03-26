@@ -9,9 +9,10 @@ interface AssocierLettresProps {
     fr: string;
   }>;
   onConfirm: () => void;
+  onReadyChange?: (ready: boolean) => void;
 }
 
-export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresProps) {
+export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: AssocierLettresProps) {
   const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
@@ -57,11 +58,10 @@ export default function AssocierLettres({ pairs, onConfirm }: AssocierLettresPro
   }, [selectedLeft, selectedRight]);
 
   useEffect(() => {
-    if (matchedIds.size === pairs.length && pairs.length > 0) {
-      const timer = setTimeout(onConfirm, 1000);
-      return () => clearTimeout(timer);
+    if (pairs.length > 0) {
+      onReadyChange?.(matchedIds.size === pairs.length);
     }
-  }, [matchedIds.size, pairs.length, onConfirm]);
+  }, [matchedIds.size, pairs.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="animate-fade-up" style={{ 

@@ -9,6 +9,7 @@ interface TrouverLesPairesProps {
     fr: string;
   }>;
   onConfirm: () => void;
+  onReadyChange?: (ready: boolean) => void;
 }
 
 function playLetter(letter: string) {
@@ -19,7 +20,7 @@ function playLetter(letter: string) {
   window.speechSynthesis.speak(t);
 }
 
-export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesProps) {
+export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: TrouverLesPairesProps) {
   const [selectedLeft,  setSelectedLeft]  = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matchedIds,    setMatchedIds]    = useState<Set<string>>(new Set());
@@ -46,6 +47,10 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
   }, [selectedLeft, selectedRight]);
 
   const allFound = matchedIds.size === pairs.length;
+
+  useEffect(() => {
+    onReadyChange?.(allFound);
+  }, [allFound]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const leftStyle = (latin: string) => {
     const isMatched  = matchedIds.has(latin);
@@ -177,23 +182,6 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
         </div>
       </div>
 
-      {/* Bouton valider */}
-      {allFound && (
-        <button
-          onClick={onConfirm}
-          className="animate-fade-up"
-          style={{
-            marginTop: "32px", padding: "14px 40px",
-            backgroundColor: "#58cc02", color: "white",
-            border: "none", borderRadius: "16px",
-            boxShadow: "0 4px 0 #46a302",
-            fontWeight: "900", fontSize: "14px",
-            letterSpacing: "0.1em", cursor: "pointer",
-          }}
-        >
-          CONTINUER →
-        </button>
-      )}
     </div>
   );
 }

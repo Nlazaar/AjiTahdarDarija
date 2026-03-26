@@ -61,8 +61,11 @@ const TRANSITIONS: Record<TrnPhase, { emoji: string; title: string; sub: string 
 
 // Phases où les cœurs sont affichés
 const HEART_PHASES: ExPhase[] = ["paires", "entendre", "vrai_faux"]
-// Phases avec feedback + bouton Continuer dans le footer parent
+// Phases avec footer (PASSER + VALIDER/CONTINUER)
 const FEEDBACK_PHASES: ExPhase[] = ["choix", "entendre", "vrai_faux", "dicter"]
+// Phases sans feedback binaire (matching) — juste PASSER + CONTINUER quand tout trouvé
+const MATCHING_PHASES: ExPhase[] = ["association", "paires"]
+const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
 const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5)
 
@@ -257,7 +260,8 @@ export default function LessonClient({
   const globalPct  = phase === "finished" ? 100 : lo
   const phaseIdx   = EX_PHASES.indexOf(mainPhase)
   const showHearts = HEART_PHASES.includes(mainPhase)
-  const showFooter = FEEDBACK_PHASES.includes(phase as ExPhase)
+  const showFooter   = FOOTER_PHASES.includes(phase as ExPhase)
+  const isMatching   = MATCHING_PHASES.includes(phase as ExPhase)
 
   const advancePhase = () => {
     const i = PHASE_SEQUENCE.indexOf(phase)
@@ -311,7 +315,11 @@ export default function LessonClient({
 
   const handleValider = () => {
     if (!isReady) return
-    setShouldValidate(true)
+    if (isMatching) {
+      advancePhase()
+    } else {
+      setShouldValidate(true)
+    }
   }
 
   const handleSpeak = (l: DarijaLetter) => speak(l.letter, "ar-MA")
@@ -380,9 +388,9 @@ export default function LessonClient({
           />
         )
       case "association":
-        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} />
+        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} onReadyChange={setIsReady} />
       case "paires":
-        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} />
+        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} onReadyChange={setIsReady} />
       case "entendre":
         return (
           <EntendreEtChoisir
@@ -513,7 +521,7 @@ export default function LessonClient({
                   }`}
                   style={isReady ? { boxShadow: '0 4px 0 #46a302' } : {}}
                 >
-                  VALIDER
+                  {isMatching ? "CONTINUER" : "VALIDER"}
                 </button>
               </div>
             </div>
