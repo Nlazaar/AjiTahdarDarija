@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm ci --production=false
 COPY . .
+RUN npx prisma generate
 RUN npm run build
 
 ## Production image
