@@ -8,4 +8,4 @@ RUN npx prisma generate
 RUN npm run build
 ENV NODE_ENV=production
 EXPOSE 3000
-CMD ["node", "dist/main.js"]
+CMD ["sh", "-c", "npm run build && node dist/main.js"]
