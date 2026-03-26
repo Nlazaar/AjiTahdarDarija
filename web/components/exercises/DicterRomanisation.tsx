@@ -4,14 +4,16 @@ import { FeedbackBanner } from "@/components/ui"
 import type { DarijaLetter } from "./types"
 
 interface DicterRomanisationProps {
-  letter:    DarijaLetter
-  choices:   string[]        // romanisations proposées (correct + leurres)
-  onSuccess: () => void
-  onFailed:  () => void
-  onSpeak:   (l: DarijaLetter) => void
+  letter:          DarijaLetter
+  choices:         string[]        // romanisations proposées (correct + leurres)
+  onSuccess:       () => void
+  onFailed:        () => void
+  onSpeak:         (l: DarijaLetter) => void
+  onReadyChange?:  (ready: boolean) => void
+  shouldValidate?: boolean
 }
 
-export default function DicterRomanisation({ letter, choices, onSuccess, onFailed, onSpeak }: DicterRomanisationProps) {
+export default function DicterRomanisation({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: DicterRomanisationProps) {
   const [selected,    setSelected]    = useState<string | null>(null)
   const [answered,    setAnswered]    = useState(false)
   const [correct,     setCorrect]     = useState<boolean | null>(null)
@@ -25,6 +27,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
   useEffect(() => {
     setSelected(null); setAnswered(false); setCorrect(null)
     setInputValue(""); setUseKeyboard(false)
+    onReadyChange?.(false)
     const t = setTimeout(() => handlePlay(false), 400)
     return () => clearTimeout(t)
   }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -33,6 +36,17 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
   useEffect(() => {
     if (useKeyboard && inputRef.current) inputRef.current.focus()
   }, [useKeyboard])
+
+  // Notify parent when answer readiness changes
+  useEffect(() => {
+    onReadyChange?.(!!currentAnswer)
+  }, [selected, inputValue]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Evaluate when shouldValidate fires
+  useEffect(() => {
+    if (!shouldValidate || !currentAnswer || answered) return
+    verify()
+  }, [shouldValidate]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePlay = (slow = false) => {
     if (typeof window === "undefined" || !window.speechSynthesis) return
@@ -180,22 +194,6 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
             style={{ boxShadow: answered ? 'none' : '0 3px 0 #1a2830' }}
           />
         </div>
-      )}
-
-      {/* Bouton Vérifier */}
-      {!answered && (
-        <button
-          onClick={verify}
-          disabled={!currentAnswer}
-          className={`w-full py-4 rounded-2xl font-bold text-base transition-all ${
-            currentAnswer
-              ? "bg-[#58cc02] hover:bg-[#46a302] text-white"
-              : "bg-[#263744] text-[#4a5d6a] cursor-not-allowed"
-          }`}
-          style={currentAnswer ? { boxShadow: '0 4px 0 #46a302' } : {}}
-        >
-          VÉRIFIER
-        </button>
       )}
 
       {/* ── BARRE BASSE : UTILISER LE CLAVIER / LES TUILES ── */}

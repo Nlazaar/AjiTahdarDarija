@@ -193,6 +193,10 @@ export default function LessonClient({
   const [isCorrect,   setIsCorrect]= useState<boolean | null>(null)
   const [feedbackMsg, setFeedback] = useState("")
   const [xpAdded,     setXpAdded] = useState(false)
+  const [isReady,      setIsReady]      = useState(false)
+  const [shouldValidate, setShouldValidate] = useState(false)
+  const [skippedQueue, setSkippedQueue] = useState<Phase[]>([])
+  const [renderKey,    setRenderKey]    = useState(0)
 
   // XP gagné une seule fois à la fin (flow alphabet)
   useEffect(() => {
@@ -253,16 +257,25 @@ export default function LessonClient({
   const globalPct  = phase === "finished" ? 100 : lo
   const phaseIdx   = EX_PHASES.indexOf(mainPhase)
   const showHearts = HEART_PHASES.includes(mainPhase)
-  const showFooter = FEEDBACK_PHASES.includes(phase as ExPhase) && answered
+  const showFooter = FEEDBACK_PHASES.includes(phase as ExPhase)
 
   const advancePhase = () => {
     const i = PHASE_SEQUENCE.indexOf(phase)
-    if (i < PHASE_SEQUENCE.length - 1) {
-      setPhase(PHASE_SEQUENCE[i + 1])
-      setAnswered(false)
-      setIsCorrect(null)
-      setFeedback("")
+    const nextInSeq = PHASE_SEQUENCE[i + 1]
+    let nextPhase: Phase
+    if (nextInSeq === 'finished' && skippedQueue.length > 0) {
+      nextPhase = skippedQueue[0]
+      setSkippedQueue(q => q.slice(1))
+    } else {
+      nextPhase = nextInSeq ?? 'finished'
     }
+    setPhase(nextPhase)
+    setAnswered(false)
+    setIsCorrect(null)
+    setFeedback("")
+    setIsReady(false)
+    setShouldValidate(false)
+    setRenderKey(k => k + 1)
   }
 
   // FlashCard : défile toutes les lettres du groupe avant de passer à la phase suivante
@@ -275,16 +288,30 @@ export default function LessonClient({
   }
 
   const handleSuccess = () => {
+    setShouldValidate(false)
     setAnswered(true)
     setIsCorrect(true)
     setFeedback("Bonne réponse ! 🎉")
   }
 
-  const handleFailed = (correctLatin?: string) => {
+  const handleFailed = (correctHint?: string) => {
+    setShouldValidate(false)
     setAnswered(true)
     setIsCorrect(false)
     setHearts(h => Math.max(0, h - 1))
-    setFeedback(`La bonne réponse était : ${correctLatin ?? target.latin}`)
+    setFeedback(correctHint ?? target.latin)
+  }
+
+  const handlePasser = () => {
+    if (FEEDBACK_PHASES.includes(phase as ExPhase)) {
+      setSkippedQueue(q => [...q, phase])
+    }
+    advancePhase()
+  }
+
+  const handleValider = () => {
+    if (!isReady) return
+    setShouldValidate(true)
   }
 
   const handleSpeak = (l: DarijaLetter) => speak(l.letter, "ar-MA")
@@ -348,6 +375,8 @@ export default function LessonClient({
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
+            onReadyChange={setIsReady}
+            shouldValidate={shouldValidate}
           />
         )
       case "association":
@@ -362,6 +391,8 @@ export default function LessonClient({
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
+            onReadyChange={setIsReady}
+            shouldValidate={shouldValidate}
           />
         )
       case "vrai_faux":
@@ -373,6 +404,8 @@ export default function LessonClient({
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
+            onReadyChange={setIsReady}
+            shouldValidate={shouldValidate}
           />
         )
       case "dicter":
@@ -383,6 +416,8 @@ export default function LessonClient({
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
+            onReadyChange={setIsReady}
+            shouldValidate={shouldValidate}
           />
         )
       default:
@@ -449,24 +484,82 @@ export default function LessonClient({
       </header>
 
       {/* ── CONTENU ────────────────────────────────────────────────────── */}
-      <main className="flex-1 flex flex-col items-center px-4 py-6 pb-32">
-        <ExerciseCard className="max-w-lg w-full">
+      <main className="flex-1 flex flex-col items-center px-4 py-6 pb-40">
+        <ExerciseCard className="max-w-lg w-full" key={renderKey}>
           {renderExercise()}
         </ExerciseCard>
       </main>
 
-      {/* ── FOOTER FEEDBACK + CONTINUER ────────────────────────────────── */}
+      {/* ── FOOTER ──────────────────────────────────────────────────────── */}
       {showFooter && (
-        <footer className="fixed bottom-0 left-0 right-0 z-50 flex flex-col" style={{ animation: 'fadeUp 0.2s ease both' }}>
-          <FeedbackBanner
-            type={isCorrect ? "correct" : "incorrect"}
-            message={feedbackMsg}
-          />
-          <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4">
-            <div className="max-w-lg mx-auto">
-              <ContinueButton onClick={advancePhase} label="Continuer →" />
+        <footer className="fixed bottom-0 left-0 right-0 z-50">
+          {!answered ? (
+            /* Before validation */
+            <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4" style={{ animation: 'fadeUp 0.15s ease both' }}>
+              <div className="max-w-lg mx-auto flex gap-3">
+                <button
+                  onClick={handlePasser}
+                  className="px-6 py-4 rounded-2xl font-black text-sm uppercase tracking-widest border-2 border-[#2a3d47] text-[#6b7f8a] hover:border-[#3a4d57] hover:text-white transition-all"
+                >
+                  PASSER
+                </button>
+                <button
+                  onClick={isReady ? handleValider : undefined}
+                  disabled={!isReady}
+                  className={`flex-1 py-4 rounded-2xl font-black text-base uppercase tracking-widest transition-all ${
+                    isReady
+                      ? "bg-[#58cc02] text-white hover:bg-[#46a302] active:translate-y-0.5"
+                      : "bg-[#2a3d47] text-[#4a5d6a] cursor-not-allowed"
+                  }`}
+                  style={isReady ? { boxShadow: '0 4px 0 #46a302' } : {}}
+                >
+                  VALIDER
+                </button>
+              </div>
             </div>
-          </div>
+          ) : (
+            /* After validation */
+            <div style={{ animation: 'fadeUp 0.2s ease both' }}>
+              {/* Feedback row */}
+              <div className={`px-6 py-4 border-t ${
+                isCorrect
+                  ? 'bg-[#1a3328] border-[#34d399]/20'
+                  : 'bg-[#3a1e1e] border-red-500/20'
+              }`}>
+                <div className="max-w-lg mx-auto flex items-center gap-4">
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 font-black text-lg text-white ${
+                    isCorrect ? 'bg-[#58cc02]' : 'bg-[#ff4b4b]'
+                  }`}>
+                    {isCorrect ? '✓' : '✗'}
+                  </div>
+                  <div>
+                    <div className={`font-black text-sm ${isCorrect ? 'text-[#58cc02]' : 'text-[#ff4b4b]'}`}>
+                      {isCorrect ? 'Bonne réponse !' : 'La bonne réponse est :'}
+                    </div>
+                    {!isCorrect && (
+                      <div className="text-white text-sm font-bold mt-0.5">{feedbackMsg}</div>
+                    )}
+                  </div>
+                </div>
+              </div>
+              {/* CONTINUER button */}
+              <div className={`px-4 py-4 ${isCorrect ? 'bg-[#1a3328]' : 'bg-[#3a1e1e]'}`}>
+                <div className="max-w-lg mx-auto">
+                  <button
+                    onClick={advancePhase}
+                    className={`w-full py-4 rounded-2xl font-black text-base uppercase tracking-widest text-white active:translate-y-0.5 transition-all ${
+                      isCorrect
+                        ? 'bg-[#58cc02] hover:bg-[#46a302]'
+                        : 'bg-[#ff4b4b] hover:bg-[#cc2a2a]'
+                    }`}
+                    style={{ boxShadow: isCorrect ? '0 4px 0 #46a302' : '0 4px 0 #cc2a2a' }}
+                  >
+                    CONTINUER →
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </footer>
       )}
     </div>

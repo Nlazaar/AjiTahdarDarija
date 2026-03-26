@@ -1,23 +1,26 @@
 "use client"
 import React, { useState, useEffect } from "react"
-import { AudioButton, FeedbackBanner } from "@/components/ui"
+import { AudioButton } from "@/components/ui"
 import type { DarijaLetter } from "./types"
 
 interface EntendreEtChoisirProps {
-  letter:    DarijaLetter
-  choices:   DarijaLetter[]
-  onSuccess: () => void
-  onFailed:  () => void
-  onSpeak:   (l: DarijaLetter) => void
+  letter:          DarijaLetter
+  choices:         DarijaLetter[]
+  onSuccess:       () => void
+  onFailed:        (correct?: string) => void
+  onSpeak:         (l: DarijaLetter) => void
+  onReadyChange?:  (ready: boolean) => void
+  shouldValidate?: boolean
 }
 
-export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed, onSpeak }: EntendreEtChoisirProps) {
+export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: EntendreEtChoisirProps) {
   const [playing,  setPlaying]  = useState(false)
   const [answered, setAnswered] = useState(false)
   const [selected, setSelected] = useState<string | null>(null)
 
   useEffect(() => {
     setPlaying(false); setAnswered(false); setSelected(null)
+    onReadyChange?.(false)
     const t = setTimeout(() => {
       onSpeak(letter)
       setPlaying(true)
@@ -35,13 +38,21 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
   const handleChoice = (c: DarijaLetter) => {
     if (answered) return
     setSelected(c.latin)
-    setAnswered(true)
-    if (c.latin === letter.latin) onSuccess()
-    else onFailed()
+    onReadyChange?.(true)
   }
 
+  useEffect(() => {
+    if (!shouldValidate || !selected || answered) return
+    setAnswered(true)
+    if (selected === letter.latin) onSuccess()
+    else onFailed(letter.latin)
+  }, [shouldValidate]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const getClass = (c: DarijaLetter) => {
-    if (!answered) return "border-[#2a3d47] bg-[#263744] hover:border-[#1cb0f6] hover:bg-[#1a2e3e]"
+    if (!answered) {
+      if (c.latin === selected) return "border-[#1cb0f6] bg-[#1a2e3e]"
+      return "border-[#2a3d47] bg-[#263744] hover:border-[#1cb0f6] hover:bg-[#1a2e3e]"
+    }
     if (c.latin === letter.latin) return "border-[#58cc02] bg-[#1e3a2e]"
     if (c.latin === selected)     return "border-red-500 bg-[#3a1e1e]"
     return "border-[#2a3d47] opacity-40"
@@ -68,7 +79,6 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
           </button>
         ))}
       </div>
-
     </div>
   )
 }

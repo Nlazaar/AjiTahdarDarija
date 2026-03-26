@@ -122,22 +122,16 @@ export default function TrouverLesPaires({ pairs, onConfirm }: TrouverLesPairesP
                 {isMatched ? (
                   <span style={{ fontSize: "20px" }}>✓</span>
                 ) : (
-                  <>
-                    <span style={{ display: "flex", alignItems: "center", gap: "2px", height: "20px" }}>
-                      {[0, 1, 2, 3].map(i => (
-                        <span key={i} style={{
-                          display: "block", width: "3px", borderRadius: "2px",
-                          background: isSelected ? "#1cb0f6" : "#6b7f8a",
-                          height: "100%",
-                          animation: isSelected ? `waveBar 0.8s ease-in-out ${i * 0.15}s infinite` : "none",
-                          transform: "scaleY(0.4)",
-                        }} />
-                      ))}
-                    </span>
-                    <span style={{ fontSize: "13px", fontWeight: "700", color: s.text, opacity: 0.9 }}>
-                      {p.latin}
-                    </span>
-                  </>
+                  <span style={{ display: "flex", alignItems: "center", gap: "3px", height: "22px" }}>
+                    {[0, 1, 2, 3].map(i => (
+                      <span key={i} style={{
+                        display: "block", width: "3px", borderRadius: "2px",
+                        background: isSelected ? "#1cb0f6" : "#6b7f8a",
+                        height: "100%",
+                        animation: `waveBar 0.8s ease-in-out ${i * 0.15}s infinite`,
+                      }} />
+                    ))}
+                  </span>
                 )}
               </button>
             );

@@ -1,32 +1,65 @@
 "use client"
 import React, { useState, useEffect } from "react"
-import { AudioButton, FeedbackBanner } from "@/components/ui"
+import { AudioButton } from "@/components/ui"
 import type { DarijaLetter } from "./types"
 
 interface VraiFauxProps {
-  letter:    DarijaLetter
-  proposed:  string
-  isTrue:    boolean
-  onSuccess: () => void
-  onFailed:  () => void
-  onSpeak:   (l: DarijaLetter) => void
+  letter:          DarijaLetter
+  proposed:        string
+  isTrue:          boolean
+  onSuccess:       () => void
+  onFailed:        (correct?: string) => void
+  onSpeak:         (l: DarijaLetter) => void
+  onReadyChange?:  (ready: boolean) => void
+  shouldValidate?: boolean
 }
 
-export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed, onSpeak }: VraiFauxProps) {
-  const [answered, setAnswered] = useState(false)
-  const [correct,  setCorrect]  = useState<boolean | null>(null)
+export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: VraiFauxProps) {
+  const [answered,      setAnswered]      = useState(false)
+  const [correct,       setCorrect]       = useState<boolean | null>(null)
+  const [pendingAnswer, setPendingAnswer] = useState<boolean | null>(null)
 
   useEffect(() => {
-    setAnswered(false); setCorrect(null)
-  }, [letter.latin])
+    setAnswered(false); setCorrect(null); setPendingAnswer(null)
+    onReadyChange?.(false)
+  }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  const answer = (userSaysTrue: boolean) => {
+  const select = (val: boolean) => {
     if (answered) return
+    const next = pendingAnswer === val ? null : val
+    setPendingAnswer(next)
+    onReadyChange?.(next !== null)
+  }
+
+  useEffect(() => {
+    if (!shouldValidate || pendingAnswer === null || answered) return
     setAnswered(true)
-    const ok = userSaysTrue === isTrue
+    const ok = pendingAnswer === isTrue
     setCorrect(ok)
     if (ok) onSuccess()
-    else    onFailed()
+    else onFailed(isTrue ? "VRAI" : "FAUX")
+  }, [shouldValidate]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const cardBg =
+    !answered          ? "bg-[#263744] border-[#2a3d47]" :
+    correct            ? "bg-[#1e3a2e] border-[#34d399]" :
+    "bg-[#3a1e1e] border-red-500"
+
+  const btnClass = (val: boolean) => {
+    const isSelected = pendingAnswer === val
+    const isAnswered = answered
+    if (!isAnswered) {
+      if (isSelected) return val
+        ? "bg-[#1e3a2e] border-[#58cc02] text-[#58cc02]"
+        : "bg-[#3a1e1e] border-red-500 text-red-400"
+      return val
+        ? "bg-[#1e3a2e]/40 border-[#2a3d47] text-[#58cc02]/70 hover:border-[#58cc02] hover:bg-[#1e3a2e]"
+        : "bg-[#3a1e1e]/40 border-[#2a3d47] text-red-400/70 hover:border-red-500 hover:bg-[#3a1e1e]"
+    }
+    // answered state
+    if (val === isTrue) return "bg-[#1e3a2e] border-[#58cc02] text-[#58cc02]"
+    if (isSelected && !correct) return "border-red-500 bg-[#3a1e1e] text-red-400"
+    return "border-[#2a3d47] opacity-30 text-[#4a5d6a]"
   }
 
   return (
@@ -35,12 +68,7 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
         Cette association est-elle correcte ?
       </p>
 
-      {/* Carte centrale */}
-      <div className={`flex flex-col items-center gap-3 p-8 rounded-2xl border-2 transition-all ${
-        !answered          ? "bg-[#263744] border-[#2a3d47]" :
-        correct            ? "bg-[#1e3a2e] border-[#34d399]" :
-        "bg-[#3a1e1e] border-red-500"
-      }`}>
+      <div className={`flex flex-col items-center gap-3 p-8 rounded-2xl border-2 transition-all ${cardBg}`}>
         <span className="text-8xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
           {letter.letter}
         </span>
@@ -49,26 +77,24 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
         <span className="text-2xl font-bold text-white">{proposed}</span>
       </div>
 
-      {/* Boutons VRAI / FAUX */}
-      {!answered && (
-        <div className="flex gap-3">
-          <button
-            onClick={() => answer(true)}
-            className="flex-1 py-4 rounded-2xl font-bold text-base text-white bg-[#58cc02] hover:bg-[#46a302] active:translate-y-0.5 transition-all"
-            style={{ borderBottom: '4px solid #46a302' }}
-          >
-            VRAI
-          </button>
-          <button
-            onClick={() => answer(false)}
-            className="flex-1 py-4 rounded-2xl font-bold text-base text-white bg-[#ff4b4b] hover:bg-[#cc2a2a] active:translate-y-0.5 transition-all"
-            style={{ borderBottom: '4px solid #cc2a2a' }}
-          >
-            FAUX
-          </button>
-        </div>
-      )}
-
+      <div className="flex gap-3">
+        <button
+          disabled={answered}
+          onClick={() => select(true)}
+          className={`flex-1 py-4 rounded-2xl font-bold text-base border-2 transition-all ${btnClass(true)}`}
+          style={pendingAnswer === true && !answered ? { borderBottom: '4px solid #46a302' } : {}}
+        >
+          VRAI
+        </button>
+        <button
+          disabled={answered}
+          onClick={() => select(false)}
+          className={`flex-1 py-4 rounded-2xl font-bold text-base border-2 transition-all ${btnClass(false)}`}
+          style={pendingAnswer === false && !answered ? { borderBottom: '4px solid #cc2a2a' } : {}}
+        >
+          FAUX
+        </button>
+      </div>
     </div>
   )
 }
