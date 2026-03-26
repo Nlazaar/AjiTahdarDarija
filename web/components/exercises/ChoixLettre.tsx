@@ -51,7 +51,7 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
 
       {/* Lettre + son */}
       <div className="flex items-center justify-center gap-6 bg-green-50 border-2 border-green-200 rounded-2xl px-8 py-5 mx-auto w-fit">
-        <span className="text-7xl leading-none" style={{ fontFamily: 'Amiri, serif' }}>
+        <span className="text-7xl leading-none text-[#1b3a6b]" style={{ fontFamily: 'Amiri, serif' }}>
           {letter.letter}
         </span>
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />

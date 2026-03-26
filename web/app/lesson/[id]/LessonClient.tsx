@@ -406,7 +406,7 @@ export default function LessonClient({
             ✕
           </button>
 
-          <div className="flex-1 h-4 bg-gray-100 rounded-full overflow-hidden">
+          <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
             <div
               className="h-full bg-[#58cc02] rounded-full transition-all duration-500"
               style={{ width: `${globalPct}%` }}
