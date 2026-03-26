@@ -72,6 +72,7 @@ export const getExercises          = (lessonId: string) => request<Exercise[]>(`
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
 export const getMyProgress         = ()                 => request<any>('/progress/me');
+export const completeLessonApi     = (lessonId: string) => request<any>(`/progress/complete/${lessonId}`, { method: 'POST' });
 
 // Leaderboard
 export const getLeaderboard        = ()                 => request<any[]>('/leaderboard/global');

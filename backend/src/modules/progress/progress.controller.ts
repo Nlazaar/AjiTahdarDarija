@@ -1,4 +1,4 @@
-import { Controller, Get, Request, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Param, Request, UseGuards } from '@nestjs/common';
 import { ProgressService } from './progress.service';
 import { JwtGuard } from '../auth/guards/jwt.guard';
 
@@ -10,5 +10,10 @@ export class ProgressController {
   @Get('me')
   me(@Request() req: any) {
     return this.progressService.getUserProgress(req.user.id);
+  }
+
+  @Post('complete/:lessonId')
+  complete(@Request() req: any, @Param('lessonId') lessonId: string) {
+    return this.progressService.completeLesson(req.user.id, lessonId);
   }
 }

@@ -1,7 +1,7 @@
 "use client"
 import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from "react"
 import { getToken } from "@/lib/auth"
-import { addXp, updateStreak, getGamification, updateHearts } from "@/lib/api"
+import { addXp, updateStreak, getGamification, updateHearts, getMyProgress, completeLessonApi } from "@/lib/api"
 
 export interface Quete {
   id:      string
@@ -56,19 +56,26 @@ export function UserProgressProvider({ children }: { children: React.ReactNode }
   const syncFromBackend = useCallback(async () => {
     if (!getToken()) return
     try {
-      const [profile] = await Promise.allSettled([getGamification()])
-      if (profile.status === 'fulfilled' && profile.value?.xp !== undefined) {
-        const data = profile.value as any
-        setProgress(p => ({
-          ...p,
-          xp:     data.xp     ?? p.xp,
-          streak: data.streak  ?? p.streak,
-          hearts: data.hearts  ?? p.hearts,
-          gemmes: data.gemmes  ?? p.gemmes,
-          level:  data.level   ?? p.level,
-          niveau: getNiveau(data.xp ?? p.xp),
-        }))
-      }
+      const [gamif, prog] = await Promise.allSettled([getGamification(), getMyProgress()])
+      setProgress(p => {
+        let next = { ...p }
+        if (gamif.status === 'fulfilled' && gamif.value?.xp !== undefined) {
+          const d = gamif.value as any
+          next = {
+            ...next,
+            xp:     d.xp     ?? p.xp,
+            streak: d.streak  ?? p.streak,
+            hearts: d.hearts  ?? p.hearts,
+            gemmes: d.gemmes  ?? p.gemmes,
+            level:  d.level   ?? p.level,
+            niveau: getNiveau(d.xp ?? p.xp),
+          }
+        }
+        if (prog.status === 'fulfilled' && Array.isArray(prog.value?.completedLessons)) {
+          next = { ...next, completedLessons: prog.value.completedLessons }
+        }
+        return next
+      })
     } catch {
       // backend indispo → on garde l'état local
     }
@@ -135,6 +142,7 @@ export function UserProgressProvider({ children }: { children: React.ReactNode }
         q.id === "lecons" ? { ...q, current: Math.min(q.current + 1, q.total) } : q
       ),
     }))
+    if (getToken()) completeLessonApi(lessonId).catch(() => {})
   }, [])
 
   return (

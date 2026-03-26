@@ -5,6 +5,15 @@ import { PrismaService } from '../../prisma/prisma.service';
 export class ProgressService {
   constructor(private readonly prisma: PrismaService) {}
 
+  async completeLesson(userId: string, lessonId: string) {
+    await this.prisma.userProgress.upsert({
+      where:  { userId_lessonId: { userId, lessonId } },
+      create: { userId, lessonId, completed: true, progress: 100, xpEarned: 0, finishedAt: new Date() },
+      update: { completed: true, progress: 100, finishedAt: new Date() },
+    });
+    return { ok: true };
+  }
+
   async getUserProgress(userId: string) {
     const progresses = await this.prisma.userProgress.findMany({
       where: { userId },
