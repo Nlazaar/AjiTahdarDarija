@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node dist/main.js",
     "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
-    "build": "nest build",
+    "build": "nest build && npx tsc prisma/seed.ts --target ES2020 --module commonjs --esModuleInterop --outDir dist/src --rootDir prisma --skipLibCheck",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "ts-node-dev --transpile-only prisma/seed.ts",
