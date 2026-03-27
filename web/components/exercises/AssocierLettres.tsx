@@ -12,7 +12,16 @@ interface AssocierLettresProps {
   onReadyChange?: (ready: boolean) => void;
 }
 
+function adaptiveFontSize(pairs: { letter: string }[]): number {
+  const max = Math.max(...pairs.map(p => p.letter.length));
+  if (max <= 3)  return 44;
+  if (max <= 6)  return 32;
+  if (max <= 10) return 22;
+  return 16;
+}
+
 export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: AssocierLettresProps) {
+  const arabicFontSize = adaptiveFontSize(pairs);
   const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
@@ -146,8 +155,9 @@ export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: Ass
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '44px',
+                  fontSize: `${arabicFontSize}px`,
                   fontFamily: '"Amiri", serif',
+                  whiteSpace: 'nowrap',
                   backgroundColor: bgColor,
                   borderColor: borderColor,
                   borderStyle: 'solid',
