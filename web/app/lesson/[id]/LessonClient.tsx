@@ -324,6 +324,16 @@ export default function LessonClient({
   const [renderKey,    setRenderKey]    = useState(0)
   const [showSignaler, setShowSignaler] = useState(false)
 
+  // Quand toutes les paires sont trouvées (matching), déclencher le succès automatiquement
+  useEffect(() => {
+    const matching = MATCHING_PHASES.includes(phase as ExPhase)
+    if (isReady && matching && !answered) {
+      setAnswered(true)
+      setIsCorrect(true)
+      setFeedback(randomSuccess())
+    }
+  }, [isReady, phase, answered]) // eslint-disable-line react-hooks/exhaustive-deps
+
   // XP gagné une seule fois à la fin (flow alphabet)
   useEffect(() => {
     if (phase === "finished" && !xpAdded) {
