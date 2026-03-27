@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { getModules, getLessonsByModule } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 import { useMascot, MASCOT_EMOJI } from '@/contexts/MascotContext';
@@ -308,7 +308,8 @@ function ChestNode({ unlocked }: { unlocked: boolean }) {
 
 /* ── Main page ───────────────────────────────────────────── */
 export default function ProgressPage() {
-  const router = useRouter();
+  const router      = useRouter();
+  const params      = useSearchParams();
   const { progress } = useUserProgress();
   const { mascot } = useMascot();
   const mascotEmoji = mascot ? (MASCOT_EMOJI[mascot.id] ?? '🦉') : '🦉';
@@ -334,14 +335,20 @@ export default function ProgressPage() {
         );
         setModules(withLessons);
 
-        // Positionner sur le module courant (premier avec une leçon non complétée)
-        const completedSet = new Set(progress.completedLessons.map(String));
-        const isComplete = (mod: ModuleData) =>
-          mod.lessons.length > 0 && mod.lessons.every(l => completedSet.has(l.id));
-        const currentIdx = withLessons.findIndex((m, i) =>
-          (i === 0 || isComplete(withLessons[i - 1])) && !isComplete(m)
-        );
-        setActiveModuleIdx(currentIdx >= 0 ? currentIdx : withLessons.length - 1);
+        // Positionner sur l'idx passé en query param, sinon le module courant
+        const idxParam = params.get('idx');
+        if (idxParam !== null) {
+          const n = parseInt(idxParam, 10);
+          setActiveModuleIdx(!isNaN(n) && n >= 0 && n < withLessons.length ? n : 0);
+        } else {
+          const completedSet = new Set(progress.completedLessons.map(String));
+          const isComplete = (mod: ModuleData) =>
+            mod.lessons.length > 0 && mod.lessons.every(l => completedSet.has(l.id));
+          const currentIdx = withLessons.findIndex((m, i) =>
+            (i === 0 || isComplete(withLessons[i - 1])) && !isComplete(m)
+          );
+          setActiveModuleIdx(currentIdx >= 0 ? currentIdx : withLessons.length - 1);
+        }
       } catch {
         setModules(MOCK_MODULES);
       }
@@ -391,64 +398,20 @@ export default function ProgressPage() {
   return (
     <div style={{ minHeight: '100vh', background: '#131f24', paddingBottom: 100 }}>
 
-      {/* ── Navigation chapitres ── */}
-      <div style={{
-        maxWidth: 440, margin: '0 auto',
-        padding: '16px 16px 0',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12,
-      }}>
+      {/* ── Retour vers cours ── */}
+      <div style={{ maxWidth: 440, margin: '0 auto', padding: '16px 16px 0' }}>
         <button
-          onClick={() => setActiveModuleIdx(i => Math.max(0, i - 1))}
-          disabled={activeModuleIdx === 0}
+          onClick={() => router.push('/cours')}
           style={{
-            width: 40, height: 40, borderRadius: '50%', border: 'none',
-            background: activeModuleIdx === 0 ? '#1e2d35' : '#2a3d47',
-            color: activeModuleIdx === 0 ? '#4a5d6a' : '#ffffff',
-            fontSize: 18, cursor: activeModuleIdx === 0 ? 'default' : 'pointer',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            flexShrink: 0,
+            display: 'flex', alignItems: 'center', gap: 6,
+            background: 'none', border: 'none',
+            color: '#6b7f8a', fontSize: 13, fontWeight: 800,
+            cursor: 'pointer', padding: '4px 0',
+            letterSpacing: '0.03em',
           }}
-        >‹</button>
-
-        <div style={{ flex: 1, textAlign: 'center' }}>
-          <div style={{ fontSize: 11, fontWeight: 800, color: '#6b7f8a', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            Chapitre {activeModuleIdx + 1} / {modules.length}
-          </div>
-          {/* Indicateur de progression */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginTop: 6 }}>
-            {modules.map((m, i) => {
-              const done = isModuleComplete(m);
-              const active = i === activeModuleIdx;
-              return (
-                <button
-                  key={m.id}
-                  onClick={() => setActiveModuleIdx(i)}
-                  style={{
-                    width: active ? 20 : 6, height: 6,
-                    borderRadius: 3, border: 'none',
-                    background: done ? '#58cc02' : active ? colorA : '#2a3d47',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s',
-                    padding: 0,
-                  }}
-                />
-              );
-            })}
-          </div>
-        </div>
-
-        <button
-          onClick={() => setActiveModuleIdx(i => Math.min(modules.length - 1, i + 1))}
-          disabled={activeModuleIdx === modules.length - 1}
-          style={{
-            width: 40, height: 40, borderRadius: '50%', border: 'none',
-            background: activeModuleIdx === modules.length - 1 ? '#1e2d35' : '#2a3d47',
-            color: activeModuleIdx === modules.length - 1 ? '#4a5d6a' : '#ffffff',
-            fontSize: 18, cursor: activeModuleIdx === modules.length - 1 ? 'default' : 'pointer',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            flexShrink: 0,
-          }}
-        >›</button>
+        >
+          ← Mes cours
+        </button>
       </div>
 
       {/* ── Carte du chapitre actif ── */}
@@ -544,20 +507,28 @@ export default function ProgressPage() {
               <span style={{ fontSize: 18 }}>🏆</span>
               <span style={{ fontSize: 13, fontWeight: 800, color: '#58cc02' }}>Chapitre terminé !</span>
             </div>
-            {activeModuleIdx < modules.length - 1 && (
-              <button
-                onClick={() => setActiveModuleIdx(activeModuleIdx + 1)}
-                style={{
-                  display: 'block', width: '100%', marginTop: 12,
-                  padding: '14px', borderRadius: 16, border: 'none',
-                  background: '#58cc02', color: 'white',
-                  fontSize: 14, fontWeight: 900, cursor: 'pointer',
-                  boxShadow: '0 4px 0 #46a302',
-                }}
-              >
-                Chapitre suivant →
-              </button>
-            )}
+          </div>
+        )}
+
+        {/* Chapitre suivant verrouillé */}
+        {activeModuleIdx < modules.length - 1 && (
+          <div
+            onClick={() => router.push('/cours')}
+            style={{
+              margin: '16px 12px 0', borderRadius: 16,
+              background: '#1e2d35', border: '2px solid #2a3d47',
+              padding: '20px 24px', opacity: 0.6, cursor: 'pointer',
+            }}
+          >
+            <div style={{
+              fontSize: 11, fontWeight: 800, color: '#6b7f8a',
+              letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 6,
+            }}>
+              Chapitre {activeModuleIdx + 2}
+            </div>
+            <div style={{ fontSize: 18, fontWeight: 900, color: '#4b5563', lineHeight: 1.2 }}>
+              🔒 {modules[activeModuleIdx + 1]?.title}
+            </div>
           </div>
         )}
 
