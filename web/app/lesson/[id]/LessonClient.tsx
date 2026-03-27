@@ -9,6 +9,7 @@ import { ExerciseCard, ContinueButton, FeedbackBanner } from "@/components/ui"
 import GenericExercisePlayer, { type CollectedAnswer } from "@/components/exercises/GenericExercisePlayer"
 import { submitLesson } from "@/lib/api"
 import { useUserProgress } from "@/contexts/UserProgressContext"
+import { getSettings } from "@/hooks/useSettings"
 
 import FlashCard          from "@/components/exercises/FlashCard"
 import ChoixLettre        from "@/components/exercises/ChoixLettre"
@@ -193,15 +194,15 @@ const randomSuccess = () => SUCCESS_MESSAGES[Math.floor(Math.random() * SUCCESS_
 
 // ── Composants internes ───────────────────────────────────────────────────────
 
-function TransitionScreen({ emoji, title, sub, onContinue }: {
-  emoji: string; title: string; sub: string; onContinue: () => void
+function TransitionScreen({ emoji, title, sub, onContinue, animate = true }: {
+  emoji: string; title: string; sub: string; onContinue: () => void; animate?: boolean
 }) {
   return (
     <div
       className="flex flex-col items-center gap-4 py-12 px-4 text-center"
-      style={{ animation: 'fadeUp 0.4s ease both' }}
+      style={animate ? { animation: 'fadeUp 0.4s ease both' } : undefined}
     >
-      <span className="text-7xl" style={{ animation: 'bounceIn 0.5s ease both 0.1s' }}>
+      <span className="text-7xl" style={animate ? { animation: 'bounceIn 0.5s ease both 0.1s' } : undefined}>
         {emoji}
       </span>
       <h2 className="text-2xl font-bold text-white">{title}</h2>
@@ -213,10 +214,10 @@ function TransitionScreen({ emoji, title, sub, onContinue }: {
   )
 }
 
-function FinishedScreen({ onNext, hasNext }: { onNext: () => void; hasNext: boolean }) {
+function FinishedScreen({ onNext, hasNext, animate = true }: { onNext: () => void; hasNext: boolean; animate?: boolean }) {
   return (
-    <div className="flex flex-col items-center gap-4 py-8 px-4 text-center" style={{ animation: 'fadeUp 0.4s ease both' }}>
-      <span className="text-7xl" style={{ animation: 'bounceIn 0.5s ease both' }}>🎉</span>
+    <div className="flex flex-col items-center gap-4 py-8 px-4 text-center" style={animate ? { animation: 'fadeUp 0.4s ease both' } : undefined}>
+      <span className="text-7xl" style={animate ? { animation: 'bounceIn 0.5s ease both' } : undefined}>🎉</span>
       <h2 className="text-2xl font-bold text-white">Leçon terminée !</h2>
       <p className="text-sm text-[#8a9baa] max-w-xs">
         {hasNext ? 'La leçon suivante est débloquée !' : 'Tu as terminé le chapitre !'}
@@ -266,6 +267,7 @@ export default function LessonClient({
 }) {
   const router    = useRouter()
   const { speak } = useAudio()
+  const settings  = getSettings()
 
   const { addXP, addGemmes, incrementStreak, updateQuete, completeLesson } = useUserProgress()
 
@@ -325,7 +327,12 @@ export default function LessonClient({
   )
 
   // File de phases : la phase courante est toujours queue[0]
-  const [queue, setQueue] = useState<Phase[]>(PHASE_SEQUENCE.filter(p => p !== 'finished'))
+  const [queue, setQueue] = useState<Phase[]>(() => {
+    let seq = PHASE_SEQUENCE.filter(p => p !== 'finished')
+    if (!settings.listeningExercises) seq = seq.filter(p => p !== 'entendre' && p !== 't4')
+    if (!settings.encouragement)      seq = seq.filter(p => !['t1','t2','t3','t4','t5','t6'].includes(p))
+    return seq
+  })
   const phase = queue[0] ?? 'finished'
 
   const [hearts,      setHearts]   = useState(5)
@@ -466,7 +473,7 @@ export default function LessonClient({
     }
   }
 
-  const handleSpeak = (l: DarijaLetter) => speak(l.letter, "ar-MA")
+  const handleSpeak = (l: DarijaLetter) => { if (settings.soundEffects) speak(l.letter, "ar-MA") }
 
   const handleNext = () => {
     router.push('/progress')
@@ -477,7 +484,7 @@ export default function LessonClient({
     return (
       <div className="min-h-screen bg-[#131f24] flex flex-col items-center justify-center px-4">
         <ExerciseCard className="max-w-sm w-full">
-          <FinishedScreen onNext={handleNext} hasNext={!!nextLessonId} />
+          <FinishedScreen onNext={handleNext} hasNext={!!nextLessonId} animate={settings.animations} />
         </ExerciseCard>
       </div>
     )
@@ -489,7 +496,7 @@ export default function LessonClient({
     return (
       <div className="min-h-screen bg-[#131f24] flex flex-col items-center justify-center px-4">
         <ExerciseCard className="max-w-sm w-full">
-          <TransitionScreen {...trn} onContinue={advancePhase} />
+          <TransitionScreen {...trn} onContinue={advancePhase} animate={settings.animations} />
         </ExerciseCard>
       </div>
     )

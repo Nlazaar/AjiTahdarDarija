@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { getSettings } from "@/hooks/useSettings";
 
 interface TrouverLesPairesProps {
   pairs: Array<{
@@ -14,6 +15,7 @@ interface TrouverLesPairesProps {
 
 function playLetter(letter: string) {
   if (typeof window === "undefined") return;
+  if (!getSettings().soundEffects) return;
   const t = new SpeechSynthesisUtterance(letter);
   t.lang = "ar-MA";
   window.speechSynthesis.cancel();
