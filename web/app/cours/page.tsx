@@ -125,18 +125,28 @@ function ChapterCard({ mod, modIdx, status, completedCount, totalCount, accent, 
   const isLocked  = status === 'locked';
   const isDone    = status === 'completed';
   const levelInfo = LEVEL_LABELS[mod.level ?? 1];
+  const [hovered, setHovered] = useState(false);
+
+  const borderColor = isDone ? '#58cc02' : hovered ? '#2a9d8f' : '#374151';
+  const background  = isDone ? '#0d2010'  : hovered ? '#1a3040'  : CARD;
 
   return (
-    <div style={{
-      background: CARD,
-      border: `1.5px solid ${isLocked ? BORDER : isDone ? 'rgba(88,204,2,0.25)' : `${accent}30`}`,
-      borderRadius: 20,
-      padding: '16px 16px',
-      display: 'flex',
-      gap: 12,
-      opacity: isLocked ? 0.55 : 1,
-      transition: 'opacity 0.2s',
-    }}>
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background,
+        border: `1.5px solid ${borderColor}`,
+        borderRadius: 12,
+        padding: '12px 14px',
+        display: 'flex',
+        gap: 12,
+        opacity: isLocked ? 0.55 : 1,
+        transition: 'all 0.15s',
+        cursor: isLocked ? 'default' : 'pointer',
+      }}
+      onClick={isLocked ? undefined : onContinue}
+    >
 
       {/* ── Left: info ── */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 5, minWidth: 0 }}>
