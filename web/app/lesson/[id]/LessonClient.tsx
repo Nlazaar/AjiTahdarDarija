@@ -69,6 +69,18 @@ const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
 const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5)
 
+const SUCCESS_MESSAGES = [
+  "Super !",
+  "Excellent !",
+  "Parfait !",
+  "Bravo !",
+  "Bien joué !",
+  "C'est ça !",
+  "Magnifique !",
+  "Tu assures !",
+]
+const randomSuccess = () => SUCCESS_MESSAGES[Math.floor(Math.random() * SUCCESS_MESSAGES.length)]
+
 // ── Composants internes ───────────────────────────────────────────────────────
 
 function TransitionScreen({ emoji, title, sub, onContinue }: {
@@ -295,7 +307,7 @@ export default function LessonClient({
     setShouldValidate(false)
     setAnswered(true)
     setIsCorrect(true)
-    setFeedback("Bonne réponse ! 🎉")
+    setFeedback(randomSuccess())
   }
 
   const handleFailed = (correctHint?: string) => {
@@ -542,11 +554,18 @@ export default function LessonClient({
                   </div>
                   <div>
                     <div className={`font-black text-sm ${isCorrect ? 'text-[#58cc02]' : 'text-[#ff4b4b]'}`}>
-                      {isCorrect ? 'Bonne réponse !' : 'La bonne réponse est :'}
+                      {isCorrect ? feedbackMsg : 'La bonne réponse est :'}
                     </div>
                     {!isCorrect && (
                       <div className="text-white text-sm font-bold mt-0.5">{feedbackMsg}</div>
                     )}
+                    <button
+                      onClick={() => {/* TODO: ouvrir modal signalement */}}
+                      className="flex items-center gap-1 mt-1 text-[11px] font-bold uppercase tracking-wider opacity-60 hover:opacity-100 transition-opacity"
+                      style={{ color: isCorrect ? '#58cc02' : '#ff4b4b' }}
+                    >
+                      <span>↩</span> SIGNALER
+                    </button>
                   </div>
                 </div>
               </div>

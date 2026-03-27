@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react"
+import React from "react"
 import { AudioButton, ContinueButton } from "@/components/ui"
 import type { DarijaLetter } from "./types"
 
@@ -11,10 +11,6 @@ interface FlashCardProps {
 }
 
 export default function FlashCard({ letter, onContinue, onSpeak, progress }: FlashCardProps) {
-  useEffect(() => {
-    const t = setTimeout(() => onSpeak(letter), 500)
-    return () => clearTimeout(t)
-  }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="flex flex-col items-center gap-4" style={{ animation: 'fadeUp 0.3s ease both' }}>
