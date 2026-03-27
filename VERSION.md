@@ -1,7 +1,16 @@
 # VERSION
 
-- Version actuelle : 1.1.0
-- Date de release : 2026-03-25
+- Version actuelle : 1.3.0
+- Date de release : 2026-03-27
+
+## Changelog (v1.3.0)
+- Web : page `/cours` affiche la liste complète des chapitres, clic navigue vers `/progress?idx=N`.
+- Web : page `/progress` affiche uniquement le chapitre sélectionné, bouton `← Mes cours` en haut, bloc chapitre suivant verrouillé en bas.
+- Web : `ChapterHeader` redesigné à la Duolingo — couleur plate, sans ombre ni effet 3D.
+- Web : suppression du bouton PASSER, mauvaise réponse → reste sur la même question jusqu'à la bonne réponse.
+- Web : `EntendreEtChoisir` ne lance plus le son automatiquement au chargement.
+- Web : correction boucle infinie en fin de leçon (navigation vers `/progress` + guard `TrouverLesPaires`).
+- Web : fix build Vercel — `useSearchParams` enveloppé dans `<Suspense>`.
 
 ## Changelog (v1.1.0)
 - Backend : extension du domaine auth (DTO/strategies), ajout de nouveaux modules de progression et engagement (`quests`, `shop`), et évolution des contrôleurs/services (friends, lessons, progress, leaderboard, gamification).
