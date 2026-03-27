@@ -24,6 +24,13 @@ export class LeaderboardService {
     })
   }
 
+  async myRank(userId: string) {
+    const user = await this.prisma.user.findUnique({ where: { id: userId }, select: { xp: true } })
+    if (!user) return { rank: null, xp: 0 }
+    const ahead = await this.prisma.user.count({ where: { xp: { gt: user.xp } } })
+    return { rank: ahead + 1, xp: user.xp }
+  }
+
   async friendsRanking(userId: string) {
     const accepted = await this.prisma.friendRequest.findMany({
       where: { status: 'accepted', OR: [{ fromId: userId }, { toId: userId }] },

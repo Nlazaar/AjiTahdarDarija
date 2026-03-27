@@ -14,6 +14,10 @@ export class LeaderboardController {
   weekly() { return this.svc.weekly() }
 
   @UseGuards(JwtGuard)
+  @Get('my-rank')
+  myRank(@Request() req: any) { return this.svc.myRank(req.user.id) }
+
+  @UseGuards(JwtGuard)
   @Get('friends')
   friends(@Request() req: any) { return this.svc.friendsRanking(req.user.id) }
 }

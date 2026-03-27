@@ -1,21 +1,26 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useUserProgress } from '@/contexts/UserProgressContext';
+import { getMyRank } from '@/lib/api';
 
 /* ─────────────────────────────────────────────────────────────
    LEAGUES
 ───────────────────────────────────────────────────────────── */
 const LEAGUES = [
-  { name: 'Bronze',     color: '#cd7f32', bg: '#fdf3e7', xpMin: 0,    rank: 22 },
-  { name: 'Argent',     color: '#8c9aaa', bg: '#f4f6f8', xpMin: 200,  rank: 18 },
-  { name: 'Or',         color: '#f59e0b', bg: '#fffbeb', xpMin: 500,  rank: 15 },
-  { name: 'Rubis',      color: '#e63946', bg: '#fff1f2', xpMin: 1000, rank: 12 },
-  { name: 'Saphir',     color: '#3b82f6', bg: '#eff6ff', xpMin: 2000, rank: 8  },
-  { name: 'Émeraude',   color: '#10b981', bg: '#ecfdf5', xpMin: 3500, rank: 5  },
-  { name: 'Diamant',    color: '#06b6d4', bg: '#ecfeff', xpMin: 5000, rank: 3  },
-  { name: 'Obsidienne', color: '#7c3aed', bg: '#f5f3ff', xpMin: 8000, rank: 1  },
+  { name: 'Bronze',     color: '#cd7f32', bg: '#fdf3e7', xpMin: 0    },
+  { name: 'Argent',     color: '#8c9aaa', bg: '#f4f6f8', xpMin: 200  },
+  { name: 'Or',         color: '#f59e0b', bg: '#fffbeb', xpMin: 500  },
+  { name: 'Rubis',      color: '#e63946', bg: '#fff1f2', xpMin: 1000 },
+  { name: 'Saphir',     color: '#3b82f6', bg: '#eff6ff', xpMin: 2000 },
+  { name: 'Émeraude',   color: '#10b981', bg: '#ecfdf5', xpMin: 3500 },
+  { name: 'Diamant',    color: '#06b6d4', bg: '#ecfeff', xpMin: 5000 },
+  { name: 'Obsidienne', color: '#7c3aed', bg: '#f5f3ff', xpMin: 8000 },
 ];
+
+// Relegation zone = bottom 10 of any league division (league size = 30)
+const LEAGUE_SIZE = 30;
+const RELEGATION_CUTOFF = 20;
 
 function getLeague(xp: number) {
   return [...LEAGUES].reverse().find(l => xp >= l.xpMin) ?? LEAGUES[0];
@@ -165,12 +170,24 @@ export default function StatsPanel() {
   const { progress } = useUserProgress();
   const league = getLeague(progress.xp);
 
-  const isRelegation = league.rank >= 15;
-  const statusText   = isRelegation
-    ? `Tu as chuté dans la zone de relégation !`
-    : league.rank <= 5
-      ? `Tu es dans le top 5 ! Continue !`
-      : `Continue pour grimper dans le classement.`;
+  const [realRank, setRealRank] = useState<number | null>(null);
+
+  useEffect(() => {
+    getMyRank().then(r => { if (r?.rank != null) setRealRank(r.rank) }).catch(() => {});
+  }, []);
+
+  // Position dans la division = ((rank - 1) % LEAGUE_SIZE) + 1
+  const divisionRank = realRank != null ? ((realRank - 1) % LEAGUE_SIZE) + 1 : null;
+  const displayRank  = divisionRank ?? '…';
+
+  const isRelegation = divisionRank != null && divisionRank > RELEGATION_CUTOFF;
+  const statusText   = divisionRank == null
+    ? 'Chargement du classement…'
+    : isRelegation
+      ? `Tu as chuté dans la zone de relégation !`
+      : divisionRank <= 5
+        ? `Tu es dans le top 5 ! Continue !`
+        : `Continue pour grimper dans le classement.`;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12, width: '100%' }}>
@@ -232,7 +249,7 @@ export default function StatsPanel() {
               background: league.color, borderRadius: '50%',
               padding: '0 5px', flexShrink: 0,
             }}>
-              {league.rank}
+              {displayRank}
             </span>
           </div>
           <button style={{
@@ -251,7 +268,7 @@ export default function StatsPanel() {
             <div style={{ fontSize: 14, fontWeight: 800, color: '#e5e7eb', lineHeight: 1.3 }}>
               Tu es{' '}
               <span style={{ color: isRelegation ? '#ef4444' : '#fbbf24', fontWeight: 900 }}>
-                n° {league.rank}
+                n° {displayRank}
               </span>
               {' '}du classement
             </div>

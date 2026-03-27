@@ -79,6 +79,7 @@ export const completeLessonApi     = (lessonId: string) => request<any>(`/progre
 export const getLeaderboard        = ()                 => request<any[]>('/leaderboard/global');
 export const getWeeklyLeaderboard  = ()                 => request<any[]>('/leaderboard/weekly');
 export const getFriendsLeaderboard = ()                 => request<any[]>('/leaderboard/friends');
+export const getMyRank             = ()                 => request<{ rank: number | null; xp: number }>('/leaderboard/my-rank');
 
 // Friends
 export const getFriends         = ()                 => request<any[]>('/friends');
