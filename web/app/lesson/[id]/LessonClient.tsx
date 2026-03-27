@@ -69,6 +69,110 @@ const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
 const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5)
 
+// ── Modal Signaler ────────────────────────────────────────────────────────────
+
+const SIGNALER_OPTIONS = [
+  { id: 'enregistrement', label: <>Il y a un problème avec <strong>l&apos;enregistrement</strong>.</> },
+  { id: 'indices_faux',   label: <><strong>Les indices</strong> sont faux.</> },
+  { id: 'son_manque',     label: <>Il manque <strong>le son</strong>.</> },
+  { id: 'indices_manque', label: <>Il manque <strong>des indices</strong>.</> },
+  { id: 'ma_reponse',     label: <><strong>Ma réponse</strong> ne devrait pas être acceptée.</> },
+  { id: 'autre',          label: <><strong>Un autre problème</strong> s&apos;est produit.</> },
+]
+
+function SignalerModal({ onClose }: { onClose: () => void }) {
+  const [selected, setSelected] = useState<Set<string>>(new Set())
+  const [sent, setSent] = useState(false)
+
+  const toggle = (id: string) => {
+    setSelected(prev => {
+      const next = new Set(prev)
+      next.has(id) ? next.delete(id) : next.add(id)
+      return next
+    })
+  }
+
+  const handleEnvoyer = () => {
+    if (selected.size === 0) return
+    // TODO: envoyer au backend
+    setSent(true)
+    setTimeout(onClose, 1200)
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center"
+      style={{ background: 'rgba(0,0,0,0.7)' }}
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-sm rounded-t-3xl sm:rounded-3xl p-6 flex flex-col gap-4"
+        style={{ background: '#1e2d35', border: '1px solid #2a3d47' }}
+        onClick={e => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <span className="font-black text-white text-base">Signaler un problème</span>
+          <button onClick={onClose} className="text-[#6b7f8a] hover:text-white text-xl font-bold">✕</button>
+        </div>
+
+        {sent ? (
+          <div className="text-center py-4">
+            <div className="text-4xl mb-2">✅</div>
+            <p className="text-white font-bold">Merci pour ton signalement !</p>
+          </div>
+        ) : (
+          <>
+            {/* Options */}
+            <div className="flex flex-col gap-2">
+              {SIGNALER_OPTIONS.map(opt => {
+                const isSelected = selected.has(opt.id)
+                return (
+                  <button
+                    key={opt.id}
+                    onClick={() => toggle(opt.id)}
+                    className="flex items-center gap-3 text-left px-4 py-3 rounded-xl transition-all"
+                    style={{
+                      background: isSelected ? 'rgba(28,176,246,0.1)' : 'transparent',
+                      border: `2px solid ${isSelected ? '#1cb0f6' : '#2a3d47'}`,
+                    }}
+                  >
+                    <span
+                      className="w-5 h-5 rounded flex-shrink-0 flex items-center justify-center"
+                      style={{
+                        border: `2px solid ${isSelected ? '#1cb0f6' : '#4a5d6a'}`,
+                        background: isSelected ? '#1cb0f6' : 'transparent',
+                      }}
+                    >
+                      {isSelected && <span className="text-white text-xs font-black">✓</span>}
+                    </span>
+                    <span className="text-sm text-white leading-snug">{opt.label}</span>
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* Bouton envoyer */}
+            <button
+              onClick={handleEnvoyer}
+              disabled={selected.size === 0}
+              className="w-full py-3 rounded-2xl font-black text-sm uppercase tracking-widest transition-all"
+              style={{
+                background: selected.size > 0 ? '#58cc02' : '#2a3d47',
+                color: selected.size > 0 ? 'white' : '#4a5d6a',
+                boxShadow: selected.size > 0 ? '0 4px 0 #46a302' : 'none',
+                cursor: selected.size === 0 ? 'not-allowed' : 'pointer',
+              }}
+            >
+              ENVOYER
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  )
+}
+
 const SUCCESS_MESSAGES = [
   "Super !",
   "Excellent !",
@@ -212,6 +316,7 @@ export default function LessonClient({
   const [shouldValidate, setShouldValidate] = useState(false)
   const [skippedQueue, setSkippedQueue] = useState<Phase[]>([])
   const [renderKey,    setRenderKey]    = useState(0)
+  const [showSignaler, setShowSignaler] = useState(false)
 
   // XP gagné une seule fois à la fin (flow alphabet)
   useEffect(() => {
@@ -510,6 +615,9 @@ export default function LessonClient({
         </ExerciseCard>
       </main>
 
+      {/* ── MODAL SIGNALER ──────────────────────────────────────────────── */}
+      {showSignaler && <SignalerModal onClose={() => setShowSignaler(false)} />}
+
       {/* ── FOOTER ──────────────────────────────────────────────────────── */}
       {showFooter && (
         <footer className="fixed bottom-0 left-0 right-0 z-50">
@@ -560,7 +668,7 @@ export default function LessonClient({
                       <div className="text-white text-sm font-bold mt-0.5">{feedbackMsg}</div>
                     )}
                     <button
-                      onClick={() => {/* TODO: ouvrir modal signalement */}}
+                      onClick={() => setShowSignaler(true)}
                       className="flex items-center gap-1 mt-1 text-[11px] font-bold uppercase tracking-wider opacity-60 hover:opacity-100 transition-opacity"
                       style={{ color: isCorrect ? '#58cc02' : '#ff4b4b' }}
                     >
