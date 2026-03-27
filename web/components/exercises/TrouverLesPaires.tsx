@@ -152,7 +152,7 @@ export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: Tr
             return (
               <button
                 key={s_.latin}
-                disabled={isMatched || !!wrongPair}
+                disabled={isMatched || !!wrongPair || !selectedLeft}
                 onClick={() => setSelectedRight(isSelected ? null : s_.latin)}
                 className={wrongPair?.[1] === s_.latin ? "animate-shake-x" : ""}
                 style={{
@@ -163,10 +163,11 @@ export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: Tr
                   borderStyle: "solid", borderWidth: "2px", borderRadius: "16px",
                   boxShadow: s.shadow === "transparent" ? "none" : `0 4px 0 ${s.shadow}`,
                   color: s.text,
-                  cursor: isMatched ? "default" : "pointer",
+                  cursor: (isMatched || !selectedLeft) ? "default" : "pointer",
                   transition: "all 0.1s",
                   transform: isSelected && !isMatched ? "translateY(2px)" : "none",
                   textAlign: "center",
+                  opacity: (!isMatched && !selectedLeft) ? 0.45 : 1,
                 }}
               >
                 {isMatched ? (
