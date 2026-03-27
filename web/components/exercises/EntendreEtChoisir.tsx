@@ -54,7 +54,7 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <p className="text-sm text-[#8a9baa] font-medium text-center">
+      <p className="text-sm text-[#8a9baa] font-medium text-center whitespace-nowrap">
         Quelle lettre correspond à ce son ?
       </p>
 
