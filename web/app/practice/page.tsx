@@ -157,7 +157,9 @@ function UserBubble({ darija, translit, fr }: { darija: string; translit: string
 /* ─────────────────────────────────────────────
    SCENARIO PICKER
 ───────────────────────────────────────────── */
-function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
+const PRACTICE_KEY = 'practice_completed';
+
+function ScenarioPicker({ onSelect, completed }: { onSelect: (s: ScenarioData) => void; completed: string[] }) {
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px' }}>
       <div style={{ padding: '32px 0 24px' }}>
@@ -178,13 +180,15 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-        {SCENARIOS.map(s => (
+        {SCENARIOS.map(s => {
+          const isDone = completed.includes(s.id);
+          return (
           <button key={s.id} onClick={() => onSelect(s)}
             style={{
               display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
               padding: '16px', borderRadius: 20,
-              background: `${CARD}`,
-              border: `2px solid ${s.accent}30`,
+              background: isDone ? `${s.accent}0d` : `${CARD}`,
+              border: `2px solid ${isDone ? s.accent + '50' : s.accent + '30'}`,
               cursor: 'pointer', textAlign: 'left',
               transition: 'transform 0.12s, box-shadow 0.12s',
               boxShadow: `0 4px 0 ${s.accent}20`,
@@ -194,14 +198,23 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: 8 }}>
               <span style={{ fontSize: 30 }}>{s.emoji}</span>
-              <span style={{
-                fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em',
-                padding: '3px 10px', borderRadius: 20,
-                background: s.level === 'Débutant' ? 'rgba(88,204,2,0.15)' : 'rgba(109,40,217,0.2)',
-                color: s.level === 'Débutant' ? '#58cc02' : '#a78bfa',
-              }}>
-                {s.level}
-              </span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                {isDone && (
+                  <span style={{
+                    fontSize: 10, fontWeight: 800,
+                    padding: '3px 8px', borderRadius: 20,
+                    background: 'rgba(88,204,2,0.15)', color: '#58cc02',
+                  }}>✓ Fait</span>
+                )}
+                <span style={{
+                  fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em',
+                  padding: '3px 10px', borderRadius: 20,
+                  background: s.level === 'Débutant' ? 'rgba(88,204,2,0.15)' : 'rgba(109,40,217,0.2)',
+                  color: s.level === 'Débutant' ? '#58cc02' : '#a78bfa',
+                }}>
+                  {s.level}
+                </span>
+              </div>
             </div>
             <div style={{ fontSize: 15, fontWeight: 900, color: TEXT, marginBottom: 2 }}>{s.title}</div>
             <div style={{ fontSize: 12, fontWeight: 700, color: s.accent, marginBottom: 6 }}>
@@ -215,7 +228,8 @@ function ScenarioPicker({ onSelect }: { onSelect: (s: ScenarioData) => void }) {
               <span style={{ fontSize: 11, color: SUB }}>· ~5 min</span>
             </div>
           </button>
-        ))}
+          );
+        })}
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '28px 0 16px' }}>
@@ -558,16 +572,33 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
    PAGE
 ───────────────────────────────────────────── */
 export default function PracticePage() {
-  const { addXP } = useUserProgress();
+  const { addXP, incrementStreak, updateQuete } = useUserProgress();
   const [scenario, setScenario] = useState<ScenarioData | null>(null);
+  const [completed, setCompleted] = useState<string[]>([]);
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(PRACTICE_KEY);
+      if (raw) setCompleted(JSON.parse(raw));
+    } catch {}
+  }, []);
 
   const handleFinish = () => {
-    if (scenario) addXP(scenario.xp);
+    if (!scenario) return;
+    addXP(scenario.xp);
+    incrementStreak();
+    updateQuete('lecons', 1);
+    setCompleted(prev => {
+      if (prev.includes(scenario.id)) return prev;
+      const next = [...prev, scenario.id];
+      localStorage.setItem(PRACTICE_KEY, JSON.stringify(next));
+      return next;
+    });
   };
 
   const handleBack = () => setScenario(null);
 
-  if (!scenario) return <ScenarioPicker onSelect={setScenario} />;
+  if (!scenario) return <ScenarioPicker onSelect={setScenario} completed={completed} />;
 
   return (
     <DialoguePlayer
