@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@/context/UserContext';
 import { useUserProgress } from '@/contexts/UserProgressContext';
-import { getGamification, getMyProgress, getProfile, getFriends } from '@/lib/api';
+import { getGamification, getMyProgress, getProfile, getFriends, updateProfile } from '@/lib/api';
 
 const AVATAR_KEY = 'darija_avatar';
 const PRESET_AVATARS = [
@@ -333,22 +333,32 @@ export default function ProfilePage() {
   const [avatar,        setAvatarState]  = useState<string>('');
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
 
-  useEffect(() => {
-    const saved = localStorage.getItem(AVATAR_KEY);
-    if (saved) setAvatarState(saved);
-  }, []);
-
   const handleSelectAvatar = (v: string) => {
     setAvatarState(v);
     localStorage.setItem(AVATAR_KEY, v);
     setShowAvatarPicker(false);
+    updateProfile({ avatar: v }).catch(() => {});
   };
 
   useEffect(() => {
     Promise.allSettled([getGamification(), getMyProgress(), getProfile()]).then(([g, p, pr]) => {
       if (g.status  === 'fulfilled') setGamification(g.value);
       if (p.status  === 'fulfilled') setUserProgress(p.value);
-      if (pr.status === 'fulfilled') setProfileData(pr.value);
+      if (pr.status === 'fulfilled') {
+        setProfileData(pr.value);
+        // Priorité : avatar serveur > localStorage
+        const serverAvatar = pr.value?.avatar;
+        if (serverAvatar) {
+          setAvatarState(serverAvatar);
+          localStorage.setItem(AVATAR_KEY, serverAvatar);
+        } else {
+          const saved = localStorage.getItem(AVATAR_KEY);
+          if (saved) setAvatarState(saved);
+        }
+      } else {
+        const saved = localStorage.getItem(AVATAR_KEY);
+        if (saved) setAvatarState(saved);
+      }
       setLoading(false);
     });
   }, []);

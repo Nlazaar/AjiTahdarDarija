@@ -59,6 +59,7 @@ export class AuthService {
         id: true,
         email: true,
         name: true,
+        avatar: true,
         xp: true,
         level: true,
         streak: true,
@@ -68,6 +69,15 @@ export class AuthService {
     });
     if (!user) throw new NotFoundException('Utilisateur introuvable');
     return user;
+  }
+
+  async updateProfile(userId: string, data: { avatar?: string; name?: string }) {
+    const updated = await this.prisma.user.update({
+      where: { id: userId },
+      data,
+      select: { id: true, email: true, name: true, avatar: true },
+    });
+    return updated;
   }
 
   private buildResponse(user: { id: string; email: string; name?: string | null }) {

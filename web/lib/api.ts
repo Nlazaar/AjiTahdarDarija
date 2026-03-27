@@ -72,6 +72,7 @@ export const getExercises          = (lessonId: string) => request<Exercise[]>(`
 export const getVocabularyByLesson = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/vocabulary`);
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
+export const updateProfile         = (data: { avatar?: string; name?: string }) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });
 export const getMyProgress         = ()                 => request<any>('/progress/me');
 export const completeLessonApi     = (lessonId: string) => request<any>(`/progress/complete/${lessonId}`, { method: 'POST' });
 
