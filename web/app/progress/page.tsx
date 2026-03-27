@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { getModules, getLessonsByModule } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 import { useMascot, MASCOT_EMOJI } from '@/contexts/MascotContext';
@@ -150,38 +149,33 @@ function LevelBanner({ level }: { level: number }) {
   );
 }
 
-function ChapterHeader({ mod, colorA, shadow, chapterNum, onClick }: {
+function ChapterHeader({ mod, colorA, shadow, chapterNum, unitNum, onClick }: {
   mod: ModuleData; colorA: string; shadow: string;
-  chapterNum: number; onClick: () => void;
+  chapterNum: number; unitNum: number; onClick: () => void;
 }) {
   return (
     <div
       onClick={onClick}
       style={{
-        margin: '16px 12px 0',
-        borderRadius: 22,
+        margin: '0 12px',
+        borderRadius: 20,
         background: colorA,
         boxShadow: `0 6px 0 ${shadow}`,
-        padding: '18px 22px 22px',
+        padding: '18px 22px 20px',
         cursor: 'pointer',
       }}
     >
       <div style={{
-        fontSize: 11, fontWeight: 900,
+        fontSize: 11, fontWeight: 800,
         color: 'rgba(255,255,255,0.75)',
-        letterSpacing: '0.1em', textTransform: 'uppercase',
-        marginBottom: 6,
+        letterSpacing: '0.09em', textTransform: 'uppercase',
+        marginBottom: 8,
       }}>
-        Chapitre {chapterNum}
+        ← Chapitre {chapterNum}, Unité {unitNum}
       </div>
       <div style={{ fontSize: 22, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>
         {mod.title}
       </div>
-      {mod.subtitle && (
-        <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)', fontWeight: 600, marginTop: 4 }}>
-          {mod.subtitle}
-        </div>
-      )}
     </div>
   );
 }
@@ -393,45 +387,10 @@ export default function ProgressPage() {
   const unlocked   = isModuleUnlocked(activeModuleIdx);
   const completed  = isModuleComplete(mod);
   const isActiveModule = !completed && unlocked;
+  const unitNum = mod.lessons.findIndex(l => !completedLessons.has(l.id)) + 1 || mod.lessons.length;
 
   return (
     <div style={{ minHeight: '100vh', background: '#131f24', paddingBottom: 100 }}>
-
-      {/* ── Header ── */}
-      <div style={{
-        position: 'sticky', top: 0, zIndex: 100,
-        background: 'rgba(19,31,36,0.95)',
-        backdropFilter: 'blur(12px)',
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
-        padding: '14px 20px',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      }}>
-        <div>
-          <Link href="/cours" style={{
-            display: 'inline-flex', alignItems: 'center', gap: 5,
-            fontSize: 11, fontWeight: 800, color: '#8b9eb0',
-            textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.07em',
-            marginBottom: 4,
-          }}>
-            ← Mon Cours
-          </Link>
-          <div style={{ fontSize: 18, fontWeight: 900, color: 'white', lineHeight: 1 }}>Carte de jeu</div>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ fontSize: 18 }}>🔥</span>
-            <span style={{ fontSize: 15, fontWeight: 900, color: '#fb923c' }}>{progress.streak}</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ fontSize: 18 }}>💎</span>
-            <span style={{ fontSize: 15, fontWeight: 900, color: '#38bdf8' }}>{progress.gemmes}</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ fontSize: 18 }}>❤️</span>
-            <span style={{ fontSize: 15, fontWeight: 900, color: '#f87171' }}>{progress.hearts}</span>
-          </div>
-        </div>
-      </div>
 
       {/* ── Navigation chapitres ── */}
       <div style={{
@@ -500,6 +459,7 @@ export default function ProgressPage() {
           colorA={unlocked ? colorA : '#374151'}
           shadow={unlocked ? shadow : '#111827'}
           chapterNum={activeModuleIdx + 1}
+          unitNum={unitNum}
           onClick={() => {
             const firstUnfinished = mod.lessons.find(l => !completedLessons.has(l.id));
             const target = firstUnfinished ?? mod.lessons[0];
