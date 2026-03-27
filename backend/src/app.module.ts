@@ -39,6 +39,7 @@ import { I18nModule } from './modules/i18n/i18n.module';
     require('./modules/chatbot/chatbot.module').ChatbotModule,
     require('./modules/shop/shop.module').ShopModule,
     require('./modules/quests/quests.module').QuestsModule,
+    require('./modules/signalement/signalement.module').SignalementModule,
     require('./audio/audio.module').AudioModule,
     require('./modules/modules/modules.module').ModulesModule,
   ],

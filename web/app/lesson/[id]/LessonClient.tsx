@@ -92,9 +92,15 @@ function SignalerModal({ onClose }: { onClose: () => void }) {
     })
   }
 
-  const handleEnvoyer = () => {
+  const handleEnvoyer = async () => {
     if (selected.size === 0) return
-    // TODO: envoyer au backend
+    try {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/signalement`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reasons: Array.from(selected) }),
+      })
+    } catch { /* silencieux */ }
     setSent(true)
     setTimeout(onClose, 1200)
   }
