@@ -35,15 +35,15 @@ function AvatarPicker({ current, onSelect, onClose }: {
         onClick={e => e.stopPropagation()}
         style={{
           width: '100%', maxWidth: 440, margin: '0 16px',
-          background: '#1e2d36', borderRadius: 24,
+          background: 'var(--c-card)', borderRadius: 24,
           padding: '20px 20px 24px',
-          border: '1px solid rgba(255,255,255,0.07)',
+          border: '1px solid var(--c-border)',
           boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <div style={{ fontSize: 16, fontWeight: 900, color: '#fff' }}>Choisir un avatar</div>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', color: '#8b9eb0', fontSize: 20, cursor: 'pointer' }}>✕</button>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', color: 'var(--c-sub)', fontSize: 20, cursor: 'pointer' }}>✕</button>
         </div>
 
         {/* Preset grid */}
@@ -54,8 +54,8 @@ function AvatarPicker({ current, onSelect, onClose }: {
               onClick={() => onSelect(av)}
               style={{
                 width: '100%', aspectRatio: '1', borderRadius: 12,
-                border: `2px solid ${current === av ? '#58cc02' : 'rgba(255,255,255,0.07)'}`,
-                background: current === av ? 'rgba(88,204,2,0.12)' : '#243b4a',
+                border: `2px solid ${current === av ? '#58cc02' : 'var(--c-border)'}`,
+                background: current === av ? 'rgba(88,204,2,0.12)' : 'var(--c-card2)',
                 fontSize: 26, cursor: 'pointer',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
               }}
@@ -71,8 +71,8 @@ function AvatarPicker({ current, onSelect, onClose }: {
           onClick={() => fileRef.current?.click()}
           style={{
             width: '100%', padding: '12px', borderRadius: 14,
-            background: '#243b4a', border: '1px solid rgba(255,255,255,0.07)',
-            color: '#8b9eb0', fontSize: 13, fontWeight: 800, cursor: 'pointer',
+            background: 'var(--c-card2)', border: '1px solid var(--c-border)',
+            color: 'var(--c-sub)', fontSize: 13, fontWeight: 800, cursor: 'pointer',
           }}
         >
           📷 Importer une photo
@@ -83,12 +83,12 @@ function AvatarPicker({ current, onSelect, onClose }: {
 }
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
-const BG   = '#131f24';
-const CARD = '#1e2d36';
-const CARD2 = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT  = '#ffffff';
-const SUB   = '#8b9eb0';
+const BG     = 'var(--c-bg)';
+const CARD = 'var(--c-card)';
+const CARD2 = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN = '#58cc02';
 
 /* ─── League config ───────────────────────────────────────────────────────── */
@@ -220,7 +220,7 @@ function AchievementCard({ emoji, iconBg, title, description, current, total, le
             {current.toLocaleString()}/{total.toLocaleString()}
           </div>
         </div>
-        <div style={{ height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 99, overflow: 'hidden', marginBottom: 6 }}>
+        <div style={{ height: 8, background: 'var(--c-border)', borderRadius: 99, overflow: 'hidden', marginBottom: 6 }}>
           <div style={{
             height: '100%', borderRadius: 99, width: `${pct}%`,
             background: done
@@ -422,7 +422,7 @@ export default function ProfilePage() {
               fontSize: avatar && !avatar.startsWith('data:') ? 46 : 32,
               fontWeight: 900, color: 'white',
               boxShadow: `0 6px 24px ${league.color}40`,
-              border: `3px solid rgba(255,255,255,0.1)`,
+              border: `3px solid var(--c-border)`,
               overflow: 'hidden',
             }}>
               {avatar
@@ -480,7 +480,7 @@ export default function ProfilePage() {
             <span style={{ fontSize: 12, fontWeight: 700, color: SUB }}>{xp % 1000} / 1 000 XP</span>
             <span style={{ fontSize: 12, fontWeight: 700, color: league.color }}>Prochain palier</span>
           </div>
-          <div style={{ height: 10, background: 'rgba(255,255,255,0.08)', borderRadius: 99, overflow: 'hidden' }}>
+          <div style={{ height: 10, background: 'var(--c-border)', borderRadius: 99, overflow: 'hidden' }}>
             <div style={{
               height: '100%', borderRadius: 99,
               width: `${(xp % 1000) / 10}%`,

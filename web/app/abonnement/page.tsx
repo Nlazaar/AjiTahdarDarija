@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 /* ─── Dark theme ──────────────────────────────────────────────────────────── */
-const BG     = '#131f24';
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const BG     = 'var(--c-bg)';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 const GOLD   = '#f59e0b';
 

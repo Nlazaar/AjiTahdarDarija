@@ -152,7 +152,7 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
           </div>
           {/* Fraction outside bar when ≤ 40% */}
           {pct <= 35 && (
-            <span style={{ fontSize: 10, fontWeight: 700, color: '#8b9eb0', flexShrink: 0 }}>
+            <span style={{ fontSize: 10, fontWeight: 700, color: 'var(--c-sub)', flexShrink: 0 }}>
               {quest.current}/{quest.total}
             </span>
           )}
@@ -355,7 +355,7 @@ export default function StatsPanel() {
       }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: '#8b9eb0', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--c-sub)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
               Vies restantes
             </div>
             <span style={{
@@ -374,7 +374,7 @@ export default function StatsPanel() {
             ))}
           </div>
         </div>
-        <div style={{ fontSize: 11, color: '#8b9eb0', fontWeight: 600, textAlign: 'right', lineHeight: 1.4 }}>
+        <div style={{ fontSize: 11, color: 'var(--c-sub)', fontWeight: 600, textAlign: 'right', lineHeight: 1.4 }}>
           Plein<br/>rechargement
         </div>
       </div>

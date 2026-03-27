@@ -5,11 +5,11 @@ import { useUserProgress } from '@/contexts/UserProgressContext';
 import { getShopItems, getMyInventory, buyShopItem } from '@/lib/api';
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 
 type Category = 'all' | 'consumable' | 'cosmetic' | 'pack';
@@ -30,7 +30,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 function ItemCard({ item, owned, quantity, onBuy }: {
   item: any; owned: boolean; quantity: number; onBuy: () => void;
 }) {
-  const color = CATEGORY_COLORS[item.category] ?? '#8b9eb0';
+  const color = CATEGORY_COLORS[item.category] ?? 'var(--c-sub)';
 
   return (
     <div style={{

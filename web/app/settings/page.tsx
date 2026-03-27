@@ -8,11 +8,11 @@ import { useMascot, type MascotId } from '@/contexts/MascotContext';
 import { useTheme } from '@/hooks/useTheme';
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 
 /* ─── Settings stored in localStorage ────────────────────────────────────── */

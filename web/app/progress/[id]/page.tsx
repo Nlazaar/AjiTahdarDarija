@@ -82,12 +82,12 @@ function SpeechBubble({ phrase }: { phrase: { ar: string; fr: string } }) {
   return (
     <div style={{
       position: 'absolute', bottom: '110%', left: '50%', transform: 'translateX(-50%)',
-      background: '#243b4a', borderRadius: 14, padding: '8px 14px',
+      background: 'var(--c-card2)', borderRadius: 14, padding: '8px 14px',
       whiteSpace: 'nowrap', boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
       border: '1.5px solid rgba(255,255,255,0.12)', zIndex: 20,
     }}>
-      <div style={{ fontSize: 15, fontWeight: 900, color: '#ffffff', direction: 'rtl' }}>{phrase.ar}</div>
-      <div style={{ fontSize: 10, color: '#8b9eb0', fontWeight: 700, marginTop: 1 }}>{phrase.fr}</div>
+      <div style={{ fontSize: 15, fontWeight: 900, color: 'var(--c-text)', direction: 'rtl' }}>{phrase.ar}</div>
+      <div style={{ fontSize: 10, color: 'var(--c-sub)', fontWeight: 700, marginTop: 1 }}>{phrase.fr}</div>
       <div style={{
         position: 'absolute', bottom: -8, left: '50%', transform: 'translateX(-50%)',
         width: 0, height: 0,
@@ -130,7 +130,7 @@ function LessonPopup({
           maxWidth: '420px', margin: '0 auto',
           background: '#1e2d35',
           boxShadow: '0 -8px 40px rgba(0,0,0,0.5)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          border: '1px solid var(--c-border)',
           animation: 'slideUp 0.28s ease out',
         }}>
         <div className="h-1.5 w-full rounded-t-3xl"
@@ -168,7 +168,7 @@ function LessonPopup({
               { v: '~3',                 u: 'min',       e: '⏱',  c: '#34d399' },
             ].map(({ v, u, e, c }) => (
               <div key={u} className="flex-1 rounded-xl p-2.5 text-center"
-                style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid var(--c-border)' }}>
                 <div className="text-lg mb-0.5">{e}</div>
                 <div className="text-[18px] font-black" style={{ color: c }}>{v}</div>
                 <div className="text-[9px] font-bold uppercase tracking-wider mt-0.5"
@@ -358,12 +358,12 @@ function UnitCompleteModal({
           background: '#1e2d35', borderRadius: 28, padding: '36px 28px',
           width: '100%', maxWidth: 380, textAlign: 'center',
           boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
-          border: '1px solid rgba(255,255,255,0.1)',
+          border: '1px solid var(--c-border)',
           animation: 'bounceIn 0.45s cubic-bezier(0.34,1.56,0.64,1) both 0.1s',
         }}>
           <div style={{ width: 100, height: 100, borderRadius: '50%', margin: '0 auto 20px', background: `linear-gradient(135deg, ${colorA}, ${colorB})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 52, boxShadow: `0 6px 0 ${shadow}` }}>🏆</div>
           <p style={{ fontSize: 11, fontWeight: 900, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.2em', margin: '0 0 8px' }}>Unité terminée !</p>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: '#ffffff', margin: '0 0 4px', lineHeight: 1.2 }}>{module?.title}</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 900, color: 'var(--c-text)', margin: '0 0 4px', lineHeight: 1.2 }}>{module?.title}</h2>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', margin: '0 0 24px' }}>{module?.subtitle}</p>
           <div style={{ display: 'flex', gap: 10, marginBottom: 24 }}>
             {[
@@ -371,14 +371,14 @@ function UnitCompleteModal({
               { icon: '⭐', val: `+${xpTotal}`,        label: 'XP total' },
               { icon: '✅', val: '100%',                label: 'Complet' },
             ].map(s => (
-              <div key={s.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 14, padding: '12px 6px', border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div key={s.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 14, padding: '12px 6px', border: '1px solid var(--c-border)' }}>
                 <div style={{ fontSize: 20 }}>{s.icon}</div>
                 <div style={{ fontSize: 18, fontWeight: 900, color: colorA }}>{s.val}</div>
                 <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', fontWeight: 700, textTransform: 'uppercase' }}>{s.label}</div>
               </div>
             ))}
           </div>
-          <div style={{ height: 10, background: 'rgba(255,255,255,0.08)', borderRadius: 5, overflow: 'hidden', marginBottom: 24 }}>
+          <div style={{ height: 10, background: 'var(--c-border)', borderRadius: 5, overflow: 'hidden', marginBottom: 24 }}>
             <div style={{ height: '100%', width: '100%', background: `linear-gradient(90deg, ${colorA}, ${colorB})`, borderRadius: 5, animation: 'growWidth 1s ease both 0.3s' }} />
           </div>
           <style>{`@keyframes growWidth { from { width: 0% } to { width: 100% } }`}</style>
@@ -470,14 +470,14 @@ export default function UnitPathPage() {
     : 0;
 
   return (
-    <div style={{ background: '#131f24', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: 120 }}>
+    <div style={{ background: 'var(--c-bg)', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: 120 }}>
 
       {/* ── STICKY HEADER ── */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 50, width: '100%',
         backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)',
         backgroundColor: 'rgba(19,31,36,0.92)',
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        borderBottom: '1px solid var(--c-border)',
       }}>
         <div style={{ maxWidth: 420, margin: '0 auto', padding: '12px 16px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
@@ -485,7 +485,7 @@ export default function UnitPathPage() {
               onClick={() => router.push('/progress')}
               style={{
                 width: 32, height: 32, borderRadius: '50%', border: 'none',
-                background: 'rgba(255,255,255,0.08)', cursor: 'pointer',
+                background: 'var(--c-border)', cursor: 'pointer',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
               }}>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
@@ -493,13 +493,13 @@ export default function UnitPathPage() {
               </svg>
             </button>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontSize: 13, fontWeight: 900, color: '#ffffff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{module.title}</div>
+              <div style={{ fontSize: 13, fontWeight: 900, color: 'var(--c-text)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{module.title}</div>
               <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', fontWeight: 600 }}>{module.subtitle}</div>
             </div>
           </div>
           {/* Progress bar */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{ flex: 1, height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' }}>
+            <div style={{ flex: 1, height: 8, background: 'var(--c-border)', borderRadius: 4, overflow: 'hidden' }}>
               <div style={{
                 height: '100%', borderRadius: 4, transition: 'width 0.7s ease',
                 width: `${progressPct}%`,
@@ -555,10 +555,10 @@ export default function UnitPathPage() {
       <div style={{ width: '100%', maxWidth: 420, padding: '8px 16px 0', display: 'flex', justifyContent: 'center' }}>
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 10,
-          background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
+          background: 'rgba(255,255,255,0.05)', border: '1px solid var(--c-border)',
           borderRadius: 20, padding: '8px 20px',
         }}>
-          <div style={{ width: 100, height: 6, background: 'rgba(255,255,255,0.08)', borderRadius: 3, overflow: 'hidden' }}>
+          <div style={{ width: 100, height: 6, background: 'var(--c-border)', borderRadius: 3, overflow: 'hidden' }}>
             <div style={{ height: '100%', width: `${progressPct}%`, background: `linear-gradient(90deg, ${colorA}, ${colorB})`, borderRadius: 3, transition: 'width 0.7s' }}/>
           </div>
           <span style={{ fontSize: 12, fontWeight: 900, color: progressPct > 0 ? colorA : 'rgba(255,255,255,0.3)' }}>
@@ -608,17 +608,17 @@ export default function UnitPathPage() {
             marginTop: 40, width: 'calc(100% - 32px)', borderRadius: 20,
             padding: 20, textAlign: 'center',
             background: 'linear-gradient(160deg, #1e2d35, #263744)',
-            border: '1px solid rgba(255,255,255,0.06)',
+            border: '1px solid var(--c-border)',
             boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
           }}>
             <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-            <div style={{ fontSize: 15, fontWeight: 900, color: '#ffffff' }}>Fin du chapitre</div>
+            <div style={{ fontSize: 15, fontWeight: 900, color: 'var(--c-text)' }}>Fin du chapitre</div>
             <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 4 }}>
               Terminez toutes les unités pour débloquer le suivant
             </div>
             <button onClick={() => router.push('/progress')} style={{
               marginTop: 16, padding: '10px 20px', borderRadius: 12,
-              background: 'rgba(255,255,255,0.08)', border: '2px solid rgba(255,255,255,0.12)',
+              background: 'var(--c-border)', border: '2px solid rgba(255,255,255,0.12)',
               color: 'rgba(255,255,255,0.7)', fontSize: 12, fontWeight: 900,
               letterSpacing: '0.06em', textTransform: 'uppercase', cursor: 'pointer',
             }}>

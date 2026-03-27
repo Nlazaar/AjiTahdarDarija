@@ -81,17 +81,18 @@
 }
 
 [data-theme="light"] {
-  --background:       #f4f6f8;
+  --background:       #f0f4f7;
   --foreground:       #0f1c22;
-  --c-bg:             #f4f6f8;
+  --c-bg:             #f0f4f7;
   --c-card:           #ffffff;
-  --c-card2:          #eef1f4;
-  --c-border:         rgba(0,0,0,0.09);
-  --c-border-hard:    #c8d4db;
-  --c-nav-border:     rgba(0,0,0,0.08);
+  --c-card2:          #e8edf2;
+  --c-border:         rgba(0,0,0,0.08);
+  --c-border-hard:    #c2cdd6;
+  --c-nav-border:     rgba(0,0,0,0.07);
   --c-text:           #0f1c22;
-  --c-sub:            #5a7080;
+  --c-sub:            #4e6372;
   --c-input-bg:       #ffffff;
+  --c-card-shadow:    0 2px 8px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.06);
 
   /* Duolingo officiel (inchangé) */
   --duo-green:       #58cc02;
@@ -105,6 +106,11 @@
 
   /* Teal */
   --teal-light: rgba(0,160,160,0.12);
+}
+
+/* Ombres portées en mode clair pour les cartes */
+[data-theme="light"] .widget-card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.05);
 }
 
 html, body {

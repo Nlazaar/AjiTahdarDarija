@@ -5,12 +5,12 @@ import { useUserProgress } from '@/contexts/UserProgressContext';
 import { SCENARIOS, type ScenarioData, type BotStep, type ChoiceStep, type Step } from './scenarios';
 
 /* ─── Dark theme ─────────────────────────────────────────────────────────── */
-const BG     = '#131f24';
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const BG     = 'var(--c-bg)';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const BLUE   = '#1cb0f6';
 
 /* ─────────────────────────────────────────────
@@ -422,7 +422,7 @@ function DialoguePlayer({ scenario, onBack, onFinish }: {
       </div>
 
       {/* ── Progress bar ── */}
-      <div style={{ height: 4, background: 'rgba(255,255,255,0.08)', flexShrink: 0 }}>
+      <div style={{ height: 4, background: 'var(--c-border)', flexShrink: 0 }}>
         <div style={{
           height: '100%', width: `${progress}%`,
           background: `linear-gradient(90deg, ${scenario.accent}99, ${scenario.accent})`,

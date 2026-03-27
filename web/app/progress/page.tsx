@@ -95,7 +95,7 @@ function SpeechBubble({ phrase }: { phrase: { ar: string; fr: string } }) {
       bottom: '110%',
       left: '50%',
       transform: 'translateX(-50%)',
-      background: '#243b4a',
+      background: 'var(--c-card2)',
       borderRadius: 14,
       padding: '8px 14px',
       whiteSpace: 'nowrap',
@@ -103,10 +103,10 @@ function SpeechBubble({ phrase }: { phrase: { ar: string; fr: string } }) {
       border: '1.5px solid rgba(255,255,255,0.12)',
       zIndex: 20,
     }}>
-      <div style={{ fontSize: 15, fontWeight: 900, color: '#ffffff', fontFamily: 'var(--font-amiri)', direction: 'rtl' }}>
+      <div style={{ fontSize: 15, fontWeight: 900, color: 'var(--c-text)', fontFamily: 'var(--font-amiri)', direction: 'rtl' }}>
         {phrase.ar}
       </div>
-      <div style={{ fontSize: 10, color: '#8b9eb0', fontWeight: 700, marginTop: 1 }}>{phrase.fr}</div>
+      <div style={{ fontSize: 10, color: 'var(--c-sub)', fontWeight: 700, marginTop: 1 }}>{phrase.fr}</div>
       {/* Tail */}
       <div style={{
         position: 'absolute', bottom: -8, left: '50%', transform: 'translateX(-50%)',
@@ -377,7 +377,7 @@ function ProgressPageInner() {
 
   if (loading) {
     return (
-      <div style={{ minHeight: '100vh', background: '#131f24', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ minHeight: '100vh', background: 'var(--c-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ color: '#9ca3af', fontSize: 14, fontWeight: 700 }}>Chargement de la carte…</div>
       </div>
     );
@@ -396,7 +396,7 @@ function ProgressPageInner() {
   const unitNum = mod.lessons.findIndex(l => !completedLessons.has(l.id)) + 1 || mod.lessons.length;
 
   return (
-    <div style={{ minHeight: '100vh', background: '#131f24', paddingBottom: 100 }}>
+    <div style={{ minHeight: '100vh', background: 'var(--c-bg)', paddingBottom: 100 }}>
 
       {/* ── Retour vers cours ── */}
       <div style={{ maxWidth: 440, margin: '0 auto', padding: '16px 16px 0' }}>
@@ -562,7 +562,7 @@ function ProgressPageInner() {
 export default function ProgressPage() {
   return (
     <Suspense fallback={
-      <div style={{ minHeight: '100vh', background: '#131f24', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ minHeight: '100vh', background: 'var(--c-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ color: '#9ca3af', fontSize: 14, fontWeight: 700 }}>Chargement de la carte…</div>
       </div>
     }>

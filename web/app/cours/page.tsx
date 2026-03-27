@@ -7,12 +7,12 @@ import { useUserProgress } from '@/contexts/UserProgressContext';
 import { useMascot, type MascotId } from '@/contexts/MascotContext';
 
 /* ─── Dark theme ──────────────────────────────────────────────────────────── */
-const BG     = '#131f24';
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const BG     = 'var(--c-bg)';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const BLUE   = '#1cb0f6';
 const GREEN  = '#58cc02';
 
@@ -184,7 +184,7 @@ function ChapterCard({ mod, modIdx, status, completedCount, totalCount, accent, 
               </span>
               {isDone && <span style={{ fontSize: 13 }}>🏆</span>}
             </div>
-            <div style={{ height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' }}>
+            <div style={{ height: 8, background: 'var(--c-border)', borderRadius: 4, overflow: 'hidden' }}>
               <div style={{
                 height: '100%', width: `${pct}%`,
                 background: isDone ? `linear-gradient(90deg, ${GREEN}, #46a302)` : `linear-gradient(90deg, ${BLUE}, #1899d6)`,
@@ -304,7 +304,7 @@ export default function CoursPage() {
   }
 
   return (
-    <div style={{ width: '100%', padding: '0 0 80px', color: TEXT, backgroundColor: '#131f24' }}>
+    <div style={{ width: '100%', padding: '0 0 80px', color: TEXT, backgroundColor: 'var(--c-bg)' }}>
 
       {/* ── Titre ── */}
       <div style={{ padding: '24px 0 16px' }}>

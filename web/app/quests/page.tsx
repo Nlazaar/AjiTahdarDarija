@@ -5,11 +5,11 @@ import { useUserProgress } from '@/contexts/UserProgressContext';
 import { getQuestState, claimQuestReward } from '@/lib/api';
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 
 /* ── Helpers ──────────────────────────────────────────────────────────────── */
@@ -134,7 +134,7 @@ function DailyQuestRow({ quest, onClaim, claiming }: {
         <div style={{ fontSize: 14, fontWeight: 800, color: isClaimed ? SUB : TEXT, marginBottom: 6 }}>
           {quest.label}
         </div>
-        <div style={{ height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 99, overflow: 'hidden', marginBottom: 5 }}>
+        <div style={{ height: 8, background: 'var(--c-border)', borderRadius: 99, overflow: 'hidden', marginBottom: 5 }}>
           <div style={{
             height: '100%', borderRadius: 99, width: `${pct}%`,
             background: isClaimed

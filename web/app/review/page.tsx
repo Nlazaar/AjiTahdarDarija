@@ -7,12 +7,12 @@ import { useAudio } from '@/hooks/useAudio';
 import ExerciseSession, { buildExercises } from './ExerciseSession';
 
 /* ─── Dark theme colors ──────────────────────────────────────────────────── */
-const BG     = '#131f24';
-const CARD   = '#1e2d36';
-const CARD2  = '#243b4a';
-const BORDER = 'rgba(255,255,255,0.07)';
-const TEXT   = '#ffffff';
-const SUB    = '#8b9eb0';
+const BG     = 'var(--c-bg)';
+const CARD   = 'var(--c-card)';
+const CARD2  = 'var(--c-card2)';
+const BORDER = 'var(--c-border)';
+const TEXT   = 'var(--c-text)';
+const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 const BLUE   = '#1cb0f6';
 
@@ -84,7 +84,7 @@ const SHORT_VOWELS: VowelKey[] = [
 
 const SUKUN_KEY: VowelKey = {
   id: 'sukun', mark: '\u0652', name: 'Sukun', arabic: 'السُّكُونُ', sound: 'muette',
-  roman: '', color: '#8b9eb0', glow: 'rgba(139,158,176,0.2)',
+  roman: '', color: 'var(--c-sub)', glow: 'rgba(139,158,176,0.2)',
   light: 'rgba(139,158,176,0.10)', border: 'rgba(139,158,176,0.30)',
 };
 
@@ -139,7 +139,7 @@ function LetterCard({ letter, isKnown, isSelected, onSpeak, onSelect }: {
       </span>
       <div style={{
         width: 32, height: 4, borderRadius: 2, marginTop: 2,
-        background: isSelected ? '#6366f1' : isKnown ? GREEN : 'rgba(255,255,255,0.1)',
+        background: isSelected ? '#6366f1' : isKnown ? GREEN : 'var(--c-border)',
         transition: 'background 0.3s',
       }} />
     </div>
@@ -442,7 +442,7 @@ export default function LettresPage() {
           background: CARD, borderRadius: 12, padding: '10px 16px', marginBottom: 20,
           border: `1px solid ${BORDER}`,
         }}>
-          <div style={{ flex: 1, height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' }}>
+          <div style={{ flex: 1, height: 8, background: 'var(--c-border)', borderRadius: 4, overflow: 'hidden' }}>
             <div style={{
               height: '100%', width: `${progressPct}%`,
               background: `linear-gradient(90deg, ${BLUE}, ${GREEN})`,
