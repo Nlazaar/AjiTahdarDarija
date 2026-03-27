@@ -149,8 +149,8 @@ function LevelBanner({ level }: { level: number }) {
   );
 }
 
-function ChapterHeader({ mod, colorA, shadow, chapterNum, unitNum, onClick }: {
-  mod: ModuleData; colorA: string; shadow: string;
+function ChapterHeader({ mod, colorA, chapterNum, unitNum, onClick }: {
+  mod: ModuleData; colorA: string;
   chapterNum: number; unitNum: number; onClick: () => void;
 }) {
   return (
@@ -158,22 +158,21 @@ function ChapterHeader({ mod, colorA, shadow, chapterNum, unitNum, onClick }: {
       onClick={onClick}
       style={{
         margin: '0 12px',
-        borderRadius: 20,
+        borderRadius: 16,
         background: colorA,
-        boxShadow: `0 6px 0 ${shadow}`,
-        padding: '18px 22px 20px',
+        padding: '20px 24px',
         cursor: 'pointer',
       }}
     >
       <div style={{
         fontSize: 11, fontWeight: 800,
-        color: 'rgba(255,255,255,0.75)',
-        letterSpacing: '0.09em', textTransform: 'uppercase',
-        marginBottom: 8,
+        color: 'rgba(255,255,255,0.7)',
+        letterSpacing: '0.1em', textTransform: 'uppercase',
+        marginBottom: 6,
       }}>
         ← Chapitre {chapterNum}, Unité {unitNum}
       </div>
-      <div style={{ fontSize: 22, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>
+      <div style={{ fontSize: 24, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>
         {mod.title}
       </div>
     </div>
@@ -457,7 +456,6 @@ export default function ProgressPage() {
         <ChapterHeader
           mod={mod}
           colorA={unlocked ? colorA : '#374151'}
-          shadow={unlocked ? shadow : '#111827'}
           chapterNum={activeModuleIdx + 1}
           unitNum={unitNum}
           onClick={() => {
