@@ -89,9 +89,9 @@ const SUKUN_KEY: VowelKey = {
 };
 
 const LONG_VOWELS: VowelKey[] = [
-  { id: 'long-aa', mark: '\u064E\u0627', name: 'Alif madda', arabic: 'مَدَّة الألف', sound: 'son "aa"', roman: 'aa', color: '#f97316', glow: 'rgba(249,115,22,0.25)', light: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.35)' },
-  { id: 'long-uu', mark: '\u064F\u0648', name: 'Waw madda',  arabic: 'مَدَّة الواو', sound: 'son "uu"', roman: 'uu', color: '#3b82f6', glow: 'rgba(59,130,246,0.25)',  light: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.35)'  },
-  { id: 'long-ii', mark: '\u0650\u064A', name: 'Ya madda',   arabic: 'مَدَّة الياء', sound: 'son "ii"', roman: 'ii', color: '#10b981', glow: 'rgba(16,185,129,0.25)', light: 'rgba(16,185,129,0.12)', border: 'rgba(16,185,129,0.35)' },
+  { id: 'long-aa', mark: '\u064E\u0627', name: 'Alif madda', arabic: 'مَدَّة الألف', sound: 'son "aaa" — voyelle longue', roman: 'aa', color: '#f97316', glow: 'rgba(249,115,22,0.25)', light: 'rgba(249,115,22,0.12)', border: 'rgba(249,115,22,0.35)' },
+  { id: 'long-uu', mark: '\u064F\u0648', name: 'Waw madda',  arabic: 'مَدَّة الواو', sound: 'son "uuu" — voyelle longue', roman: 'uu', color: '#3b82f6', glow: 'rgba(59,130,246,0.25)',  light: 'rgba(59,130,246,0.12)',  border: 'rgba(59,130,246,0.35)'  },
+  { id: 'long-ii', mark: '\u0650\u064A', name: 'Ya madda',   arabic: 'مَدَّة الياء', sound: 'son "iii" — voyelle longue', roman: 'ii', color: '#10b981', glow: 'rgba(16,185,129,0.25)', light: 'rgba(16,185,129,0.12)', border: 'rgba(16,185,129,0.35)' },
 ];
 
 const ALL_KEYS: VowelKey[] = [...SHORT_VOWELS, SUKUN_KEY, ...LONG_VOWELS];
