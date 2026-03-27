@@ -49,8 +49,10 @@ export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: Tr
   const allFound = matchedIds.size === pairs.length;
 
   useEffect(() => {
-    onReadyChange?.(allFound);
-  }, [allFound]); // eslint-disable-line react-hooks/exhaustive-deps
+    if (pairs.length > 0) {
+      onReadyChange?.(allFound);
+    }
+  }, [allFound, pairs.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const leftStyle = (latin: string) => {
     const isMatched  = matchedIds.has(latin);

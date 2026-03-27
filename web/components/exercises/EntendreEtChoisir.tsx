@@ -21,12 +21,6 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
   useEffect(() => {
     setPlaying(false); setAnswered(false); setSelected(null)
     onReadyChange?.(false)
-    const t = setTimeout(() => {
-      onSpeak(letter)
-      setPlaying(true)
-      setTimeout(() => setPlaying(false), 800)
-    }, 400)
-    return () => clearTimeout(t)
   }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePlay = () => {
