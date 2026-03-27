@@ -45,11 +45,58 @@ const PLANS = [
   },
 ];
 
+function ComingSoonModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div
+      onClick={onClose}
+      style={{
+        position: 'fixed', inset: 0, zIndex: 1000,
+        background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        padding: 24,
+      }}
+    >
+      <div
+        onClick={e => e.stopPropagation()}
+        style={{
+          background: CARD, borderRadius: 24,
+          border: `1.5px solid ${BORDER}`,
+          padding: '32px 28px', maxWidth: 360, width: '100%',
+          textAlign: 'center',
+          boxShadow: '0 24px 48px rgba(0,0,0,0.4)',
+        }}
+      >
+        <div style={{ fontSize: 52, marginBottom: 16 }}>🔜</div>
+        <div style={{ fontSize: 20, fontWeight: 900, color: TEXT, marginBottom: 10 }}>
+          Bientôt disponible
+        </div>
+        <div style={{ fontSize: 14, color: SUB, lineHeight: 1.6, marginBottom: 24 }}>
+          Le paiement en ligne sera disponible très prochainement.
+          En attendant, continue à apprendre gratuitement !
+        </div>
+        <button
+          onClick={onClose}
+          style={{
+            width: '100%', padding: '13px', borderRadius: 14,
+            background: GREEN, border: 'none', cursor: 'pointer',
+            fontSize: 15, fontWeight: 900, color: 'white',
+            boxShadow: '0 4px 0 #3a8a01',
+          }}
+        >
+          Continuer gratuitement
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function AbonnementPage() {
   const [selected, setSelected] = useState<'monthly' | 'yearly'>('yearly');
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px', color: TEXT }}>
+      {showModal && <ComingSoonModal onClose={() => setShowModal(false)} />}
 
       {/* Breadcrumb */}
       <div style={{ padding: '24px 0 4px', display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -172,16 +219,19 @@ export default function AbonnementPage() {
       </div>
 
       {/* CTA */}
-      <button style={{
-        width: '100%', padding: '16px', borderRadius: 18,
-        background: selected === 'yearly' ? GOLD : '#1cb0f6',
-        border: 'none', cursor: 'pointer',
-        color: selected === 'yearly' ? '#1a1a1a' : 'white',
-        fontSize: 16, fontWeight: 900,
-        textTransform: 'uppercase', letterSpacing: '0.06em',
-        boxShadow: `0 4px 0 ${selected === 'yearly' ? '#d97706' : '#1899d6'}`,
-        transition: 'all 0.15s',
-      }}>
+      <button
+        onClick={() => setShowModal(true)}
+        style={{
+          width: '100%', padding: '16px', borderRadius: 18,
+          background: selected === 'yearly' ? GOLD : '#1cb0f6',
+          border: 'none', cursor: 'pointer',
+          color: selected === 'yearly' ? '#1a1a1a' : 'white',
+          fontSize: 16, fontWeight: 900,
+          textTransform: 'uppercase', letterSpacing: '0.06em',
+          boxShadow: `0 4px 0 ${selected === 'yearly' ? '#d97706' : '#1899d6'}`,
+          transition: 'all 0.15s',
+        }}
+      >
         ⭐ S'abonner maintenant
       </button>
 
