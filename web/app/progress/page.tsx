@@ -323,6 +323,7 @@ export default function ProgressPage() {
   const mascotEmoji = mascot ? (MASCOT_EMOJI[mascot.id] ?? '🦉') : '🦉';
   const [modules, setModules] = useState<ModuleData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [activeModuleIdx, setActiveModuleIdx] = useState(0);
 
   useEffect(() => {
     async function load() {
@@ -330,7 +331,6 @@ export default function ProgressPage() {
         const mods = await getModules() as ModuleData[];
         if (!Array.isArray(mods) || mods.length === 0) throw new Error('empty');
 
-        // Fetch lessons for each module in parallel
         const withLessons = await Promise.all(
           mods.map(async (m: ModuleData) => {
             try {
@@ -342,15 +342,23 @@ export default function ProgressPage() {
           })
         );
         setModules(withLessons);
+
+        // Positionner sur le module courant (premier avec une leçon non complétée)
+        const completedSet = new Set(progress.completedLessons.map(String));
+        const isComplete = (mod: ModuleData) =>
+          mod.lessons.length > 0 && mod.lessons.every(l => completedSet.has(l.id));
+        const currentIdx = withLessons.findIndex((m, i) =>
+          (i === 0 || isComplete(withLessons[i - 1])) && !isComplete(m)
+        );
+        setActiveModuleIdx(currentIdx >= 0 ? currentIdx : withLessons.length - 1);
       } catch {
         setModules(MOCK_MODULES);
       }
       setLoading(false);
     }
     load();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Determine completed/unlocked state
   const completedLessons = new Set(progress.completedLessons.map(String));
 
   const isModuleComplete = (mod: ModuleData) =>
@@ -359,15 +367,12 @@ export default function ProgressPage() {
   const isModuleUnlocked = (idx: number) =>
     idx === 0 || isModuleComplete(modules[idx - 1]);
 
-  // Find current lesson (first non-completed in first unlocked module)
+  // Leçon courante globale
   let currentLessonId: string | null = null;
   for (const mod of modules) {
     if (!isModuleUnlocked(modules.indexOf(mod))) continue;
     for (const lesson of mod.lessons) {
-      if (!completedLessons.has(lesson.id)) {
-        currentLessonId = lesson.id;
-        break;
-      }
+      if (!completedLessons.has(lesson.id)) { currentLessonId = lesson.id; break; }
     }
     if (currentLessonId) break;
   }
@@ -380,16 +385,21 @@ export default function ProgressPage() {
     );
   }
 
-  let globalLessonIndex = 0; // for zigzag X position
-  let prevLevel: number | null = null;
+  const mod = modules[activeModuleIdx];
+  if (!mod) return null;
+
+  const colors  = MODULE_COLORS[activeModuleIdx % MODULE_COLORS.length];
+  const colorA  = mod.colorA ?? colors.colorA;
+  const colorB  = mod.colorB ?? colors.colorB;
+  const shadow  = mod.shadowColor ?? colors.shadow;
+  const unlocked   = isModuleUnlocked(activeModuleIdx);
+  const completed  = isModuleComplete(mod);
+  const isActiveModule = !completed && unlocked;
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: '#131f24',
-      paddingBottom: 80,
-    }}>
-      {/* Top header */}
+    <div style={{ minHeight: '100vh', background: '#131f24', paddingBottom: 100 }}>
+
+      {/* ── Header ── */}
       <div style={{
         position: 'sticky', top: 0, zIndex: 100,
         background: 'rgba(19,31,36,0.95)',
@@ -408,9 +418,6 @@ export default function ProgressPage() {
             ← Mon Cours
           </Link>
           <div style={{ fontSize: 18, fontWeight: 900, color: 'white', lineHeight: 1 }}>Carte de jeu</div>
-          <div style={{ fontSize: 12, color: '#9ca3af', fontWeight: 600, marginTop: 2 }}>
-            {modules.length} modules · {progress.xp} XP
-          </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
@@ -428,139 +435,192 @@ export default function ProgressPage() {
         </div>
       </div>
 
-      {/* Map content */}
-      <div style={{ maxWidth: 440, margin: '0 auto', position: 'relative' }}>
-        {modules.map((mod, modIdx) => {
-          const colors = MODULE_COLORS[modIdx % MODULE_COLORS.length];
-          const colorA = mod.colorA ?? colors.colorA;
-          const colorB = mod.colorB ?? colors.colorB;
-          const shadow = mod.shadowColor ?? colors.shadow;
-          const curLevel = mod.level ?? 1;
-          const unlocked = isModuleUnlocked(modIdx);
-          const completed = isModuleComplete(mod);
-          const isActiveModule = !completed && unlocked;
-          prevLevel = curLevel;
+      {/* ── Navigation chapitres ── */}
+      <div style={{
+        maxWidth: 440, margin: '0 auto',
+        padding: '16px 16px 0',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12,
+      }}>
+        <button
+          onClick={() => setActiveModuleIdx(i => Math.max(0, i - 1))}
+          disabled={activeModuleIdx === 0}
+          style={{
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: activeModuleIdx === 0 ? '#1e2d35' : '#2a3d47',
+            color: activeModuleIdx === 0 ? '#4a5d6a' : '#ffffff',
+            fontSize: 18, cursor: activeModuleIdx === 0 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexShrink: 0,
+          }}
+        >‹</button>
 
-          return (
-            <div key={mod.id}>
-              {/* Chapter header */}
-              <ChapterHeader
-                mod={mod}
-                colorA={unlocked ? colorA : '#374151'}
-                colorB={unlocked ? colorB : '#1f2937'}
-                shadow={unlocked ? shadow : '#111827'}
-                isActive={isActiveModule}
-                onClick={() => {
-                  if (isActiveModule && mod.lessons[0]?.id) {
-                    router.push(`/lesson/${mod.lessons[0].id}`);
-                  }
-                }}
-              />
-
-              {/* Lesson nodes */}
-              <div style={{ padding: '20px 16px 8px', position: 'relative' }}>
-                {mod.lessons.map((lesson, lIdx) => {
-                  const isCompleted = completedLessons.has(lesson.id);
-                  const isCurrent   = lesson.id === currentLessonId;
-                  const isLocked    = !unlocked || (!isCompleted && !isCurrent &&
-                    !mod.lessons.slice(0, lIdx).every(l => completedLessons.has(l.id)));
-
-                  const status: 'completed' | 'current' | 'locked' = isCompleted ? 'completed' : isCurrent ? 'current' : 'locked';
-                  const xPct = ZIGZAG_X[globalLessonIndex % ZIGZAG_X.length];
-                  const showMascot = isCurrent;
-
-                  const node = (
-                    <div
-                      key={lesson.id}
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-start',
-                        marginBottom: 0,
-                      }}
-                    >
-                      <div style={{
-                        marginLeft: `${xPct}%`,
-                        transform: 'translateX(-50%)',
-                        paddingTop: showMascot ? 100 : 0,
-                      }}>
-                        <LessonNode
-                          lesson={lesson}
-                          status={status}
-                          colorA={colorA} colorB={colorB} shadow={shadow}
-                          isCurrentModule={isActiveModule}
-                          phraseIndex={modIdx}
-                          showMascot={showMascot}
-                          mascotEmoji={mascotEmoji}
-                          onPress={() => router.push(`/lesson/${lesson.id}`)}
-                        />
-                      </div>
-
-                      {/* Connector to next node */}
-                      {(lIdx < mod.lessons.length - 1) && (
-                        <div style={{
-                          marginLeft: `${xPct}%`,
-                          transform: 'translateX(-50%)',
-                          width: 4,
-                          height: 32,
-                          background: isCompleted
-                            ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
-                            : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
-                          borderRadius: 2,
-                          opacity: isLocked ? 0.4 : 1,
-                          marginTop: 4,
-                        }} />
-                      )}
-                    </div>
-                  );
-
-                  globalLessonIndex++;
-                  return node;
-                })}
-
-                {/* Trophy at end of module */}
-                {mod.lessons.length > 0 && (() => {
-                  const xPct = ZIGZAG_X[globalLessonIndex % ZIGZAG_X.length];
-                  const prevXPct = ZIGZAG_X[(globalLessonIndex - 1) % ZIGZAG_X.length];
-                  const elem = (
-                    <div key="trophy" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: 4 }}>
-                      {/* Connector from last lesson to trophy */}
-                      <div style={{
-                        marginLeft: `${prevXPct}%`,
-                        transform: 'translateX(-50%)',
-                        width: 4, height: 28,
-                        background: completed
-                          ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
-                          : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
-                        borderRadius: 2,
-                      }} />
-                      <div style={{ marginLeft: `${xPct}%`, transform: 'translateX(-50%)', marginTop: 4 }}>
-                        <TrophyNode unlocked={completed} />
-                      </div>
-                    </div>
-                  );
-                  globalLessonIndex++;
-                  return elem;
-                })()}
-              </div>
-
-              {/* Chest between chapters (every 3 modules) */}
-              {modIdx % 3 === 2 && modIdx < modules.length - 1 && (
-                <div style={{ display: 'flex', justifyContent: 'center', padding: '8px 0 16px' }}>
-                  <ChestNode unlocked={isModuleComplete(mod)} />
-                </div>
-              )}
-            </div>
-          );
-        })}
-
-        {/* End of journey */}
-        <div style={{ textAlign: 'center', padding: '32px 20px', color: '#4b5563' }}>
-          <div style={{ fontSize: 32, marginBottom: 8 }}>🌟</div>
-          <div style={{ fontSize: 13, fontWeight: 700 }}>
-            Continue à apprendre pour débloquer de nouveaux modules !
+        <div style={{ flex: 1, textAlign: 'center' }}>
+          <div style={{ fontSize: 11, fontWeight: 800, color: '#6b7f8a', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            Chapitre {activeModuleIdx + 1} / {modules.length}
+          </div>
+          {/* Indicateur de progression */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginTop: 6 }}>
+            {modules.map((m, i) => {
+              const done = isModuleComplete(m);
+              const active = i === activeModuleIdx;
+              return (
+                <button
+                  key={m.id}
+                  onClick={() => setActiveModuleIdx(i)}
+                  style={{
+                    width: active ? 20 : 6, height: 6,
+                    borderRadius: 3, border: 'none',
+                    background: done ? '#58cc02' : active ? colorA : '#2a3d47',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    padding: 0,
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
+
+        <button
+          onClick={() => setActiveModuleIdx(i => Math.min(modules.length - 1, i + 1))}
+          disabled={activeModuleIdx === modules.length - 1}
+          style={{
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: activeModuleIdx === modules.length - 1 ? '#1e2d35' : '#2a3d47',
+            color: activeModuleIdx === modules.length - 1 ? '#4a5d6a' : '#ffffff',
+            fontSize: 18, cursor: activeModuleIdx === modules.length - 1 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexShrink: 0,
+          }}
+        >›</button>
+      </div>
+
+      {/* ── Carte du chapitre actif ── */}
+      <div style={{ maxWidth: 440, margin: '0 auto', position: 'relative' }}>
+        <ChapterHeader
+          mod={mod}
+          colorA={unlocked ? colorA : '#374151'}
+          colorB={unlocked ? colorB : '#1f2937'}
+          shadow={unlocked ? shadow : '#111827'}
+          isActive={isActiveModule}
+          onClick={() => {
+            if (isActiveModule && mod.lessons[0]?.id) {
+              router.push(`/lesson/${mod.lessons[0].id}`);
+            }
+          }}
+        />
+
+        <div style={{ padding: '20px 16px 8px', position: 'relative' }}>
+          {mod.lessons.map((lesson, lIdx) => {
+            const isCompleted = completedLessons.has(lesson.id);
+            const isCurrent   = lesson.id === currentLessonId;
+            const isLocked    = !unlocked || (!isCompleted && !isCurrent &&
+              !mod.lessons.slice(0, lIdx).every(l => completedLessons.has(l.id)));
+
+            const status: 'completed' | 'current' | 'locked' = isCompleted ? 'completed' : isCurrent ? 'current' : 'locked';
+            const xPct      = ZIGZAG_X[lIdx % ZIGZAG_X.length];
+            const showMascot = isCurrent;
+
+            return (
+              <div key={lesson.id} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                <div style={{
+                  marginLeft: `${xPct}%`,
+                  transform: 'translateX(-50%)',
+                  paddingTop: showMascot ? 100 : 0,
+                }}>
+                  <LessonNode
+                    lesson={lesson}
+                    status={status}
+                    colorA={colorA} colorB={colorB} shadow={shadow}
+                    isCurrentModule={isActiveModule}
+                    phraseIndex={activeModuleIdx}
+                    showMascot={showMascot}
+                    mascotEmoji={mascotEmoji}
+                    onPress={() => router.push(`/lesson/${lesson.id}`)}
+                  />
+                </div>
+                {lIdx < mod.lessons.length - 1 && (
+                  <div style={{
+                    marginLeft: `${xPct}%`,
+                    transform: 'translateX(-50%)',
+                    width: 4, height: 32,
+                    background: isCompleted
+                      ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
+                      : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
+                    borderRadius: 2,
+                    opacity: isLocked ? 0.4 : 1,
+                    marginTop: 4,
+                  }} />
+                )}
+              </div>
+            );
+          })}
+
+          {/* Trophée en fin de module */}
+          {mod.lessons.length > 0 && (() => {
+            const lastXPct = ZIGZAG_X[(mod.lessons.length - 1) % ZIGZAG_X.length];
+            const trophyXPct = ZIGZAG_X[mod.lessons.length % ZIGZAG_X.length];
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: 4 }}>
+                <div style={{
+                  marginLeft: `${lastXPct}%`, transform: 'translateX(-50%)',
+                  width: 4, height: 28,
+                  background: completed
+                    ? `repeating-linear-gradient(to bottom, ${colorA} 0px, ${colorA} 6px, transparent 6px, transparent 12px)`
+                    : 'repeating-linear-gradient(to bottom, #4b5563 0px, #4b5563 6px, transparent 6px, transparent 12px)',
+                  borderRadius: 2,
+                }} />
+                <div style={{ marginLeft: `${trophyXPct}%`, transform: 'translateX(-50%)', marginTop: 4 }}>
+                  <TrophyNode unlocked={completed} />
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+
+        {/* Message si module complété */}
+        {completed && (
+          <div style={{ textAlign: 'center', padding: '16px 20px 8px' }}>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              background: 'rgba(88,204,2,0.1)', border: '1.5px solid rgba(88,204,2,0.3)',
+              borderRadius: 16, padding: '10px 20px',
+            }}>
+              <span style={{ fontSize: 18 }}>🏆</span>
+              <span style={{ fontSize: 13, fontWeight: 800, color: '#58cc02' }}>Chapitre terminé !</span>
+            </div>
+            {activeModuleIdx < modules.length - 1 && (
+              <button
+                onClick={() => setActiveModuleIdx(activeModuleIdx + 1)}
+                style={{
+                  display: 'block', width: '100%', marginTop: 12,
+                  padding: '14px', borderRadius: 16, border: 'none',
+                  background: '#58cc02', color: 'white',
+                  fontSize: 14, fontWeight: 900, cursor: 'pointer',
+                  boxShadow: '0 4px 0 #46a302',
+                }}
+              >
+                Chapitre suivant →
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Message si module verrouillé */}
+        {!unlocked && (
+          <div style={{ textAlign: 'center', padding: '16px 20px 8px' }}>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              background: 'rgba(75,85,99,0.2)', border: '1.5px solid #374151',
+              borderRadius: 16, padding: '10px 20px',
+            }}>
+              <span style={{ fontSize: 18 }}>🔒</span>
+              <span style={{ fontSize: 13, fontWeight: 800, color: '#6b7280' }}>
+                Termine le chapitre précédent pour débloquer
+              </span>
+            </div>
+          </div>
+        )}
       </div>
 
       <style>{`
