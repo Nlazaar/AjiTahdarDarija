@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 
-const BG   = '#131f24';
-const CARD = '#1e2d36';
+const BG   = 'var(--c-bg)';
+const CARD = 'var(--c-card)';
 
 function NavItem({
   href, label, icon, isActive, badge = false,
@@ -94,7 +94,7 @@ export default function Sidebar() {
       display: 'flex', flexDirection: 'column',
       height: '100vh', padding: '20px 12px',
       background: BG, position: 'sticky', top: 0,
-      gap: 2, borderRight: '1px solid rgba(255,255,255,0.06)',
+      gap: 2, borderRight: '1px solid var(--c-nav-border)',
     }}>
       {/* Brand */}
       <Link href="/cours" style={{ textDecoration: 'none', marginBottom: 20, padding: '0 8px' }}>

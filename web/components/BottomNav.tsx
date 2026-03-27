@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 
-const BG = '#131f24';
+const BG = 'var(--c-bg)';
 
 const ITEMS = [
   { href: '/cours',       icon: '🏠', label: 'Cours'     },
@@ -26,7 +26,7 @@ export default function BottomNav() {
     <nav style={{
       position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 100,
       backgroundColor: BG,
-      borderTop: '1px solid rgba(255,255,255,0.06)',
+      borderTop: '1px solid var(--c-nav-border)',
       display: 'flex',
       paddingBottom: 'env(safe-area-inset-bottom)',
     }}>

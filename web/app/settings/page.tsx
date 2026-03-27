@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useUser } from '@/context/UserContext';
 import { useMascot, type MascotId } from '@/contexts/MascotContext';
+import { useTheme } from '@/hooks/useTheme';
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
 const CARD   = '#1e2d36';
@@ -145,6 +146,7 @@ const MASCOT_OPTIONS: { id: MascotId; emoji: string; name: string; desc: string 
 export default function SettingsPage() {
   const { logout } = useUser();
   const { mascot, setMascot } = useMascot();
+  const { setTheme } = useTheme();
   const router = useRouter();
   const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
 
@@ -154,6 +156,10 @@ export default function SettingsPage() {
     const next = { ...settings, [key]: value };
     setSettings(next);
     saveSettings(next);
+    if (key === 'theme') {
+      const v = value as Settings['theme'];
+      setTheme(v === 'default' ? 'auto' : v as 'light' | 'dark');
+    }
   };
 
   const handleLogout = () => { logout(); router.push('/'); };

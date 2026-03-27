@@ -6,7 +6,7 @@ import Sidebar from '@/components/Sidebar';
 import StatsPanel from '@/components/StatsPanel';
 import BottomNav from '@/components/BottomNav';
 
-const BG = '#131f24';
+const BG = 'var(--c-bg)';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -35,7 +35,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           overflowY: 'auto',
           overflowX: 'hidden',
           flexShrink: 0,
-          borderRight: '1px solid rgba(255,255,255,0.06)',
+          borderRight: '1px solid var(--c-nav-border)',
         }}
       >
         <Sidebar />

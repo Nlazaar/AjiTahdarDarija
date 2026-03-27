@@ -6,6 +6,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { UserProvider } from '@/context/UserContext';
 import { MascotProvider } from '@/contexts/MascotContext';
 import { UserProgressProvider } from '@/contexts/UserProgressContext';
+import { ThemeProvider } from '@/hooks/useTheme';
 import { Amiri, Outfit } from 'next/font/google';
 
 const amiri = Amiri({
@@ -27,7 +28,8 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${outfit.variable} ${amiri.variable}`}>
-      <body className="min-h-screen font-outfit" style={{ backgroundColor: '#131f24', overflowX: 'hidden' }}>
+      <body className="min-h-screen font-outfit" style={{ backgroundColor: 'var(--c-bg)', overflowX: 'hidden' }}>
+        <ThemeProvider>
         <MascotProvider>
           <UserProgressProvider>
             <UserProvider>
@@ -41,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </UserProvider>
           </UserProgressProvider>
         </MascotProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

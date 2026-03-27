@@ -51,12 +51,49 @@
   50%     { transform: scaleY(0.25); }
 }
 
-/* ── VARIABLES CSS LEGACY ── */
-:root {
-  --background: #131f24;
-  --foreground: #ffffff;
+/* ── VARIABLES CSS ── */
+:root,
+[data-theme="dark"] {
+  --background:       #131f24;
+  --foreground:       #ffffff;
+  --c-bg:             #131f24;
+  --c-card:           #1e2d36;
+  --c-card2:          #243b4a;
+  --c-border:         rgba(255,255,255,0.07);
+  --c-border-hard:    #2a3d47;
+  --c-nav-border:     rgba(255,255,255,0.06);
+  --c-text:           #ffffff;
+  --c-sub:            #8b9eb0;
+  --c-input-bg:       #1e2d36;
 
   /* Duolingo officiel */
+  --duo-green:       #58cc02;
+  --duo-green-dark:  #46a302;
+  --duo-blue:        #1cb0f6;
+  --duo-blue-dark:   #1899d6;
+  --duo-blue-light:  #ddf4ff;
+  --duo-gray-border: #e5e5e5;
+  --duo-gray-text:   #4b4b4b;
+  --duo-gray-sub:    #afafaf;
+
+  /* Teal */
+  --teal-light: rgba(0,160,160,0.12);
+}
+
+[data-theme="light"] {
+  --background:       #f4f6f8;
+  --foreground:       #0f1c22;
+  --c-bg:             #f4f6f8;
+  --c-card:           #ffffff;
+  --c-card2:          #eef1f4;
+  --c-border:         rgba(0,0,0,0.09);
+  --c-border-hard:    #c8d4db;
+  --c-nav-border:     rgba(0,0,0,0.08);
+  --c-text:           #0f1c22;
+  --c-sub:            #5a7080;
+  --c-input-bg:       #ffffff;
+
+  /* Duolingo officiel (inchangé) */
   --duo-green:       #58cc02;
   --duo-green-dark:  #46a302;
   --duo-blue:        #1cb0f6;
@@ -75,7 +112,7 @@ html, body {
 }
 
 main::-webkit-scrollbar { display: none; }
-main { scrollbar-width: none; background-color: #131f24; }
+main { scrollbar-width: none; background-color: var(--c-bg); }
 
 body {
   background-color: var(--background);
