@@ -325,8 +325,7 @@ export default function LessonClient({
   )
 
   // File de phases : la phase courante est toujours queue[0]
-  const [queue,       setQueue]    = useState<Phase[]>(PHASE_SEQUENCE.filter(p => p !== 'finished'))
-  const [retriedPhases, setRetriedPhases] = useState<Set<string>>(new Set())
+  const [queue, setQueue] = useState<Phase[]>(PHASE_SEQUENCE.filter(p => p !== 'finished'))
   const phase = queue[0] ?? 'finished'
 
   const [hearts,      setHearts]   = useState(5)
@@ -420,23 +419,17 @@ export default function LessonClient({
     setRenderKey(k => k + 1)
   }
 
-  // retry=true → remet la phase courante en fin de file (pour la refaire)
-  const advancePhase = (retry = false) => {
-    setQueue(q => {
-      const [current, ...rest] = q
-      return retry && current ? [...rest, current] : rest
-    })
+  const advancePhase = () => {
+    setQueue(q => q.slice(1))
     resetPhaseState()
   }
 
   // Appelé par le bouton CONTINUER après feedback
   const handleContinuer = () => {
-    const shouldRetry = isCorrect === false && !retriedPhases.has(phase as string)
-    if (shouldRetry) {
-      setRetriedPhases(s => new Set(s).add(phase as string))
-      advancePhase(true)
+    if (isCorrect === false) {
+      resetPhaseState()  // mauvaise réponse → on reste sur la phase
     } else {
-      advancePhase(false)
+      advancePhase()  // bonne réponse → phase suivante
     }
   }
 
@@ -465,13 +458,7 @@ export default function LessonClient({
   }
 
   const handlePasser = () => {
-    const canRetry = FEEDBACK_PHASES.includes(phase as ExPhase) && !retriedPhases.has(phase as string)
-    if (canRetry) {
-      setRetriedPhases(s => new Set(s).add(phase as string))
-      advancePhase(true)
-    } else {
-      advancePhase(false)
-    }
+    advancePhase()
   }
 
   const handleValider = () => {
