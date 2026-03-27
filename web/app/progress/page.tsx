@@ -143,11 +143,9 @@ function LevelBanner({ level }: { level: number }) {
       background: c.bg, border: `2px solid ${c.border}`,
       borderRadius: 16,
     }}>
-      <span style={{ fontSize: 14 }}>{c.stars}</span>
       <span style={{ fontSize: 13, fontWeight: 900, color: c.text, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
         Niveau {level} — {LEVEL_LABELS[level]}
       </span>
-      <span style={{ fontSize: 14 }}>{c.stars}</span>
     </div>
   );
 }
