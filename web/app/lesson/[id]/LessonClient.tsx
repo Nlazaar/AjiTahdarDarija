@@ -312,7 +312,11 @@ export default function LessonClient({
     shuffle([target.latin ?? '', ...shuffle(pool).slice(0, 6).map(l => l.latin ?? '')])
   )
 
-  const [phase,       setPhase]    = useState<Phase>("flashcard")
+  // File de phases : la phase courante est toujours queue[0]
+  const [queue,       setQueue]    = useState<Phase[]>(PHASE_SEQUENCE.filter(p => p !== 'finished'))
+  const [retriedPhases, setRetriedPhases] = useState<Set<string>>(new Set())
+  const phase = queue[0] ?? 'finished'
+
   const [hearts,      setHearts]   = useState(5)
   const [answered,    setAnswered] = useState(false)
   const [isCorrect,   setIsCorrect]= useState<boolean | null>(null)
@@ -320,7 +324,6 @@ export default function LessonClient({
   const [xpAdded,     setXpAdded] = useState(false)
   const [isReady,      setIsReady]      = useState(false)
   const [shouldValidate, setShouldValidate] = useState(false)
-  const [skippedQueue, setSkippedQueue] = useState<Phase[]>([])
   const [renderKey,    setRenderKey]    = useState(0)
   const [showSignaler, setShowSignaler] = useState(false)
 
@@ -336,7 +339,7 @@ export default function LessonClient({
 
   // XP gagné une seule fois à la fin (flow alphabet)
   useEffect(() => {
-    if (phase === "finished" && !xpAdded) {
+    if (queue.length === 0 && !xpAdded) {
       addXP(50)
       addGemmes(10)
       incrementStreak()
@@ -345,7 +348,7 @@ export default function LessonClient({
       updateQuete('xp', 50)
       setXpAdded(true)
     }
-  }, [phase]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [queue.length]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // handleFinish pour GenericExercisePlayer (doit être défini avant le return conditionnel)
   const handleGenericFinish = async (xp: number, answers: CollectedAnswer[]) => {
@@ -396,23 +399,33 @@ export default function LessonClient({
   const showFooter   = FOOTER_PHASES.includes(phase as ExPhase)
   const isMatching   = MATCHING_PHASES.includes(phase as ExPhase)
 
-  const advancePhase = () => {
-    const i = PHASE_SEQUENCE.indexOf(phase)
-    const nextInSeq = PHASE_SEQUENCE[i + 1]
-    let nextPhase: Phase
-    if (nextInSeq === 'finished' && skippedQueue.length > 0) {
-      nextPhase = skippedQueue[0]
-      setSkippedQueue(q => q.slice(1))
-    } else {
-      nextPhase = nextInSeq ?? 'finished'
-    }
-    setPhase(nextPhase)
+  const resetPhaseState = () => {
     setAnswered(false)
     setIsCorrect(null)
     setFeedback("")
     setIsReady(false)
     setShouldValidate(false)
     setRenderKey(k => k + 1)
+  }
+
+  // retry=true → remet la phase courante en fin de file (pour la refaire)
+  const advancePhase = (retry = false) => {
+    setQueue(q => {
+      const [current, ...rest] = q
+      return retry && current ? [...rest, current] : rest
+    })
+    resetPhaseState()
+  }
+
+  // Appelé par le bouton CONTINUER après feedback
+  const handleContinuer = () => {
+    const shouldRetry = isCorrect === false && !retriedPhases.has(phase as string)
+    if (shouldRetry) {
+      setRetriedPhases(s => new Set(s).add(phase as string))
+      advancePhase(true)
+    } else {
+      advancePhase(false)
+    }
   }
 
   // FlashCard : défile toutes les lettres du groupe avant de passer à la phase suivante
@@ -440,10 +453,13 @@ export default function LessonClient({
   }
 
   const handlePasser = () => {
-    if (FEEDBACK_PHASES.includes(phase as ExPhase)) {
-      setSkippedQueue(q => [...q, phase])
+    const canRetry = FEEDBACK_PHASES.includes(phase as ExPhase) && !retriedPhases.has(phase as string)
+    if (canRetry) {
+      setRetriedPhases(s => new Set(s).add(phase as string))
+      advancePhase(true)
+    } else {
+      advancePhase(false)
     }
-    advancePhase()
   }
 
   const handleValider = () => {
@@ -697,7 +713,7 @@ export default function LessonClient({
               <div className={`px-4 py-4 ${isCorrect ? 'bg-[#1a3328]' : 'bg-[#3a1e1e]'}`}>
                 <div className="max-w-lg mx-auto">
                   <button
-                    onClick={advancePhase}
+                    onClick={handleContinuer}
                     className={`w-full py-4 rounded-2xl font-black text-base uppercase tracking-widest text-white active:translate-y-0.5 transition-all ${
                       isCorrect
                         ? 'bg-[#58cc02] hover:bg-[#46a302]'
