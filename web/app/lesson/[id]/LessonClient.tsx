@@ -374,11 +374,7 @@ export default function LessonClient({
     updateQuete('lecons', 1)
     updateQuete('xp', xp)
 
-    const moduleId = lesson?.moduleId ?? ''
-    const dest = moduleId
-      ? `/progress/${moduleId}${isLastLesson ? '?unitComplete=true' : ''}`
-      : '/progress'
-    router.push(dest)
+    router.push('/progress')
   }
 
   // ── Si pas de groupe de lettres ni vocab DB → exercices DB (player générique) ─
@@ -473,11 +469,7 @@ export default function LessonClient({
   const handleSpeak = (l: DarijaLetter) => speak(l.letter, "ar-MA")
 
   const handleNext = () => {
-    const moduleId = lesson?.moduleId ?? ''
-    const dest = moduleId
-      ? `/progress/${moduleId}${isLastLesson ? '?unitComplete=true' : ''}`
-      : '/progress'
-    router.push(dest)
+    router.push('/progress')
   }
 
   // ── Écran de fin ─────────────────────────────────────────────────────────
@@ -656,17 +648,11 @@ export default function LessonClient({
           {!answered ? (
             /* Before validation */
             <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4" style={{ animation: 'fadeUp 0.15s ease both' }}>
-              <div className="max-w-lg mx-auto flex gap-3">
-                <button
-                  onClick={handlePasser}
-                  className="px-6 py-4 rounded-2xl font-black text-sm uppercase tracking-widest border-2 border-[#2a3d47] text-[#6b7f8a] hover:border-[#3a4d57] hover:text-white transition-all"
-                >
-                  PASSER
-                </button>
+              <div className="max-w-lg mx-auto">
                 <button
                   onClick={isReady ? handleValider : undefined}
                   disabled={!isReady}
-                  className={`flex-1 py-4 rounded-2xl font-black text-base uppercase tracking-widest transition-all ${
+                  className={`w-full py-4 rounded-2xl font-black text-base uppercase tracking-widest transition-all ${
                     isReady
                       ? "bg-[#58cc02] text-white hover:bg-[#46a302] active:translate-y-0.5"
                       : "bg-[#2a3d47] text-[#4a5d6a] cursor-not-allowed"
