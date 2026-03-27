@@ -467,10 +467,8 @@ export default function ProfilePage() {
           border: `1px solid ${league.color}30`,
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-            <span style={{ fontSize: 12, fontWeight: 700, color: SUB }}>Niveau {level}</span>
-            <span style={{ fontSize: 12, fontWeight: 700, color: league.color }}>
-              {xp % 1000} / 1 000 XP → Niveau {level + 1}
-            </span>
+            <span style={{ fontSize: 12, fontWeight: 700, color: SUB }}>{xp % 1000} / 1 000 XP</span>
+            <span style={{ fontSize: 12, fontWeight: 700, color: league.color }}>Prochain palier</span>
           </div>
           <div style={{ height: 10, background: 'rgba(255,255,255,0.08)', borderRadius: 99, overflow: 'hidden' }}>
             <div style={{

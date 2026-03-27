@@ -169,7 +169,7 @@ function ChapterHeader({ mod, colorA, colorB, shadow, isActive, onClick }: {
     >
       <div>
         <div style={{ fontSize: 10, fontWeight: 900, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 3 }}>
-          {mod.level ? `Niveau ${mod.level} · ` : ''}{mod.subtitle}
+          {mod.subtitle}
         </div>
         <div style={{ fontSize: 17, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>{mod.title}</div>
       </div>
