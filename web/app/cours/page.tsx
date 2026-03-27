@@ -247,6 +247,7 @@ export default function CoursPage() {
   const { mascot }   = useMascot();
   const [modules, setModules] = useState<ModuleData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   const mascotId: MascotId = mascot?.id ?? 'lion';
 
@@ -266,13 +267,22 @@ export default function CoursPage() {
           })
         );
         setModules(withLessons);
+
+        // Positionner sur le module courant
+        const completedSet = new Set(progress.completedLessons.map(String));
+        const isComplete = (m: ModuleData) =>
+          m.lessons.length > 0 && m.lessons.every(l => completedSet.has(l.id));
+        const currentIdx = withLessons.findIndex((m, i) =>
+          (i === 0 || isComplete(withLessons[i - 1])) && !isComplete(m)
+        );
+        setActiveIdx(currentIdx >= 0 ? currentIdx : withLessons.length - 1);
       } catch {
         setModules(MOCK_MODULES);
       }
       setLoading(false);
     }
     load();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const completedSet = new Set(progress.completedLessons.map(String));
 
@@ -285,8 +295,6 @@ export default function CoursPage() {
   const completedInModule = (m: ModuleData) =>
     m.lessons.filter(l => completedSet.has(l.id)).length;
 
-  const completedModules  = modules.filter(isModuleComplete).length;
-
   if (loading) {
     return (
       <div style={{ minHeight: '100vh', background: BG, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -295,48 +303,75 @@ export default function CoursPage() {
     );
   }
 
+  const mod = modules[activeIdx];
+  if (!mod) return null;
+
+  const unlocked = isModuleUnlocked(activeIdx);
+  const done     = isModuleComplete(mod);
+  const status: 'completed' | 'active' | 'locked' = done ? 'completed' : unlocked ? 'active' : 'locked';
+  const accent   = mod.colorA ?? '#2a9d8f';
+
   return (
     <div style={{ width: '100%', padding: '0 0 80px', color: TEXT, backgroundColor: '#131f24' }}>
 
-      {/* ── Header ── */}
-      <div style={{ padding: '24px 0 20px', position: 'sticky', top: 0, zIndex: 999, backgroundColor: '#131f24', boxShadow: '0 -40px 0 0 #131f24' }}>
+      {/* ── Navigation chapitres ── */}
+      <div style={{ padding: '20px 0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
         <button
-          onClick={() => router.push('/progress')}
+          onClick={() => setActiveIdx(i => Math.max(0, i - 1))}
+          disabled={activeIdx === 0}
           style={{
-            display: 'inline-flex', alignItems: 'center', gap: 6,
-            background: 'none', border: 'none', cursor: 'pointer',
-            fontSize: 15, fontWeight: 700, color: SUB, padding: 0,
-            marginBottom: 16,
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: activeIdx === 0 ? '#1e2d35' : '#2a3d47',
+            color: activeIdx === 0 ? '#4a5d6a' : '#ffffff',
+            fontSize: 18, cursor: activeIdx === 0 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
           }}
-        >
-          ← Retour
-        </button>
-        <div style={{ height: 1, background: BORDER, marginBottom: 20 }} />
+        >‹</button>
+
+        <div style={{ flex: 1, textAlign: 'center' }}>
+          <div style={{ fontSize: 11, fontWeight: 800, color: '#6b7f8a', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            Chapitre {activeIdx + 1} / {modules.length}
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 4, marginTop: 6 }}>
+            {modules.map((m, i) => (
+              <button
+                key={m.id}
+                onClick={() => setActiveIdx(i)}
+                style={{
+                  width: i === activeIdx ? 20 : 6, height: 6,
+                  borderRadius: 3, border: 'none',
+                  background: isModuleComplete(m) ? '#58cc02' : i === activeIdx ? accent : '#2a3d47',
+                  cursor: 'pointer', transition: 'all 0.2s', padding: 0,
+                }}
+              />
+            ))}
+          </div>
+        </div>
+
+        <button
+          onClick={() => setActiveIdx(i => Math.min(modules.length - 1, i + 1))}
+          disabled={activeIdx === modules.length - 1}
+          style={{
+            width: 40, height: 40, borderRadius: '50%', border: 'none',
+            background: activeIdx === modules.length - 1 ? '#1e2d35' : '#2a3d47',
+            color: activeIdx === modules.length - 1 ? '#4a5d6a' : '#ffffff',
+            fontSize: 18, cursor: activeIdx === modules.length - 1 ? 'default' : 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+          }}
+        >›</button>
       </div>
 
-      {/* ── Chapter cards ── */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-        {modules.map((mod, idx) => {
-          const unlocked = isModuleUnlocked(idx);
-          const done     = isModuleComplete(mod);
-          const status: 'completed' | 'active' | 'locked' =
-            done ? 'completed' : unlocked ? 'active' : 'locked';
-
-          return (
-            <ChapterCard
-              key={mod.id}
-              mod={mod}
-              modIdx={idx}
-              status={status}
-              completedCount={completedInModule(mod)}
-              totalCount={mod.lessons.length}
-              accent={mod.colorA ?? '#2a9d8f'}
-              mascotId={mascotId}
-              onContinue={() => router.push('/progress')}
-            />
-          );
-        })}
-      </div>
+      {/* ── Chapitre actif ── */}
+      <ChapterCard
+        mod={mod}
+        modIdx={activeIdx}
+        status={status}
+        completedCount={completedInModule(mod)}
+        totalCount={mod.lessons.length}
+        accent={accent}
+        mascotId={mascotId}
+        onContinue={() => router.push('/progress')}
+      />
     </div>
   );
 }
