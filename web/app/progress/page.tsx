@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getModules, getLessonsByModule } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
@@ -307,7 +307,7 @@ function ChestNode({ unlocked }: { unlocked: boolean }) {
 }
 
 /* ── Main page ───────────────────────────────────────────── */
-export default function ProgressPage() {
+function ProgressPageInner() {
   const router      = useRouter();
   const params      = useSearchParams();
   const { progress } = useUserProgress();
@@ -556,5 +556,17 @@ export default function ProgressPage() {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function ProgressPage() {
+  return (
+    <Suspense fallback={
+      <div style={{ minHeight: '100vh', background: '#131f24', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#9ca3af', fontSize: 14, fontWeight: 700 }}>Chargement de la carte…</div>
+      </div>
+    }>
+      <ProgressPageInner />
+    </Suspense>
   );
 }
