@@ -439,14 +439,10 @@ export default function ProgressPage() {
           const unlocked = isModuleUnlocked(modIdx);
           const completed = isModuleComplete(mod);
           const isActiveModule = !completed && unlocked;
-          const showLevelBanner = curLevel !== prevLevel;
           prevLevel = curLevel;
 
           return (
             <div key={mod.id}>
-              {/* Level banner */}
-              {showLevelBanner && <LevelBanner level={curLevel} />}
-
               {/* Chapter header */}
               <ChapterHeader
                 mod={mod}
