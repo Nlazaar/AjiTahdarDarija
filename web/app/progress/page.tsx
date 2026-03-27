@@ -150,39 +150,37 @@ function LevelBanner({ level }: { level: number }) {
   );
 }
 
-function ChapterHeader({ mod, colorA, colorB, shadow, isActive, onClick }: {
-  mod: ModuleData; colorA: string; colorB: string; shadow: string;
-  isActive: boolean; onClick: () => void;
+function ChapterHeader({ mod, colorA, shadow, chapterNum, onClick }: {
+  mod: ModuleData; colorA: string; shadow: string;
+  chapterNum: number; onClick: () => void;
 }) {
   return (
     <div
       onClick={onClick}
       style={{
-        margin: '16px 16px 0',
-        borderRadius: 20,
-        background: `linear-gradient(135deg, ${colorA}, ${colorB})`,
-        boxShadow: `0 5px 0 ${shadow}, 0 8px 24px ${colorA}40`,
-        padding: '14px 18px',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        cursor: isActive ? 'pointer' : 'default',
+        margin: '16px 12px 0',
+        borderRadius: 22,
+        background: colorA,
+        boxShadow: `0 6px 0 ${shadow}`,
+        padding: '18px 22px 22px',
+        cursor: 'pointer',
       }}
     >
-      <div>
-        <div style={{ fontSize: 10, fontWeight: 900, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 3 }}>
+      <div style={{
+        fontSize: 11, fontWeight: 900,
+        color: 'rgba(255,255,255,0.75)',
+        letterSpacing: '0.1em', textTransform: 'uppercase',
+        marginBottom: 6,
+      }}>
+        Chapitre {chapterNum}
+      </div>
+      <div style={{ fontSize: 22, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>
+        {mod.title}
+      </div>
+      {mod.subtitle && (
+        <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)', fontWeight: 600, marginTop: 4 }}>
           {mod.subtitle}
         </div>
-        <div style={{ fontSize: 17, fontWeight: 900, color: 'white', lineHeight: 1.2 }}>{mod.title}</div>
-      </div>
-      {isActive && (
-        <button style={{
-          background: 'rgba(255,255,255,0.25)', border: '2px solid rgba(255,255,255,0.4)',
-          borderRadius: 12, padding: '8px 16px',
-          color: 'white', fontSize: 12, fontWeight: 900,
-          cursor: 'pointer', letterSpacing: '0.06em', textTransform: 'uppercase',
-          backdropFilter: 'blur(4px)',
-        }}>
-          GUIDE
-        </button>
       )}
     </div>
   );
@@ -500,13 +498,12 @@ export default function ProgressPage() {
         <ChapterHeader
           mod={mod}
           colorA={unlocked ? colorA : '#374151'}
-          colorB={unlocked ? colorB : '#1f2937'}
           shadow={unlocked ? shadow : '#111827'}
-          isActive={isActiveModule}
+          chapterNum={activeModuleIdx + 1}
           onClick={() => {
-            if (isActiveModule && mod.lessons[0]?.id) {
-              router.push(`/lesson/${mod.lessons[0].id}`);
-            }
+            const firstUnfinished = mod.lessons.find(l => !completedLessons.has(l.id));
+            const target = firstUnfinished ?? mod.lessons[0];
+            if (unlocked && target?.id) router.push(`/lesson/${target.id}`);
           }}
         />
 
