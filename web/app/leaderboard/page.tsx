@@ -25,18 +25,6 @@ function getLeague(xp: number) {
   return [...LEAGUE_CONFIG].reverse().find(l => xp >= l.min) ?? LEAGUE_CONFIG[0];
 }
 
-const MOCK_GLOBAL = [
-  { id: 'm1',  name: 'Amine B.',   xp: 3240, level: 4 },
-  { id: 'm2',  name: 'Sara K.',    xp: 2950, level: 3 },
-  { id: 'm3',  name: 'Yassine M.', xp: 2710, level: 3 },
-  { id: 'm4',  name: 'Leila A.',   xp: 2480, level: 3 },
-  { id: 'm5',  name: 'Omar T.',    xp: 2100, level: 3 },
-  { id: 'm6',  name: 'Nadia R.',   xp: 1890, level: 2 },
-  { id: 'm7',  name: 'Karim D.',   xp: 1750, level: 2 },
-  { id: 'm8',  name: 'Hind L.',    xp: 1620, level: 2 },
-  { id: 'm9',  name: 'Mehdi S.',   xp: 1410, level: 2 },
-  { id: 'm10', name: 'Rim F.',     xp: 1280, level: 2 },
-];
 
 function getRankMedal(rank: number) {
   if (rank === 1) return '🥇';
@@ -115,6 +103,7 @@ export default function LeaderboardPage() {
   const [globalList, setGlobal]  = useState<any[]>([]);
   const [friendList, setFriends] = useState<any[]>([]);
   const [loading,    setLoading] = useState(true);
+  const [apiError,   setApiError] = useState(false);
   const [myAvatar,   setMyAvatar] = useState<string>('');
 
   useEffect(() => {
@@ -124,9 +113,13 @@ export default function LeaderboardPage() {
   useEffect(() => {
     setLoading(true);
     Promise.allSettled([getLeaderboard(), getFriendsLeaderboard()]).then(([g, f]) => {
-      const globalData = g.status === 'fulfilled' && Array.isArray(g.value) && g.value.length > 0
-        ? g.value : MOCK_GLOBAL;
-      setGlobal(globalData);
+      if (g.status === 'fulfilled' && Array.isArray(g.value) && g.value.length > 0) {
+        setGlobal(g.value);
+        setApiError(false);
+      } else {
+        setGlobal([]);
+        setApiError(true);
+      }
       if (f.status === 'fulfilled' && Array.isArray(f.value)) setFriends(f.value);
       setLoading(false);
     });
@@ -209,6 +202,12 @@ export default function LeaderboardPage() {
       }}>
         {loading ? (
           <div style={{ padding: '40px', textAlign: 'center', color: SUB }}>Chargement…</div>
+        ) : tab === 'global' && apiError ? (
+          <div style={{ padding: '40px', textAlign: 'center' }}>
+            <div style={{ fontSize: 32, marginBottom: 12 }}>📡</div>
+            <div style={{ fontSize: 14, fontWeight: 800, color: TEXT, marginBottom: 6 }}>Classement indisponible</div>
+            <div style={{ fontSize: 12, color: SUB }}>Impossible de charger le classement. Réessaie plus tard.</div>
+          </div>
         ) : listWithMe.length === 0 ? (
           <div style={{ padding: '40px', textAlign: 'center', color: SUB }}>
             {tab === 'friends' ? 'Ajoute des amis pour les voir ici !' : "Aucun joueur pour l'instant."}
