@@ -69,6 +69,7 @@ export const getModules            = ()                 => request<Module[]>('/m
 export const getLessonsByModule    = (moduleId: string) => request<Lesson[]>(`/modules/${moduleId}/lessons`);
 export const getLesson             = (lessonId: string) => request<Lesson>(`/lessons/${lessonId}`);
 export const getExercises          = (lessonId: string) => request<Exercise[]>(`/lessons/${lessonId}/exercises`);
+export const getVocabularyByLesson = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/vocabulary`);
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
 export const getMyProgress         = ()                 => request<any>('/progress/me');

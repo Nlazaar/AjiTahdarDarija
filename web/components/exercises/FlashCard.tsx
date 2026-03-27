@@ -8,15 +8,17 @@ interface FlashCardProps {
   onContinue: () => void
   onSpeak:    (l: DarijaLetter) => void
   progress?:  string
+  mode?:      'lettre' | 'mot'
 }
 
-export default function FlashCard({ letter, onContinue, onSpeak, progress }: FlashCardProps) {
+export default function FlashCard({ letter, onContinue, onSpeak, progress, mode = 'lettre' }: FlashCardProps) {
+  const isVocab = mode === 'mot'
 
   return (
     <div className="flex flex-col items-center gap-4" style={{ animation: 'fadeUp 0.3s ease both' }}>
       <div className="flex items-center gap-2">
         <span className="bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-          Nouvelle lettre
+          {isVocab ? 'Nouveau mot' : 'Nouvelle lettre'}
         </span>
         {progress && (
           <span className="text-xs text-[#6b7f8a] font-medium">{progress}</span>
@@ -24,7 +26,7 @@ export default function FlashCard({ letter, onContinue, onSpeak, progress }: Fla
       </div>
 
       <div
-        className="text-[96px] leading-none text-center text-white my-2"
+        className={`leading-none text-center text-white my-2 ${isVocab ? 'text-[64px]' : 'text-[96px]'}`}
         style={{ fontFamily: 'Amiri, serif' }}
       >
         {letter.letter}
@@ -38,7 +40,7 @@ export default function FlashCard({ letter, onContinue, onSpeak, progress }: Fla
           <span className="font-bold text-white">{letter.latin}</span>
         </div>
         <div className="flex justify-between text-sm">
-          <span className="text-[#8a9baa]">Prononciation FR</span>
+          <span className="text-[#8a9baa]">{isVocab ? 'Traduction' : 'Prononciation FR'}</span>
           <span className="font-bold text-white">"{letter.fr}"</span>
         </div>
       </div>

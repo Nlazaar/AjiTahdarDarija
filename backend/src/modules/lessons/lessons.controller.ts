@@ -26,6 +26,11 @@ export class LessonsController {
     return this.lessonsService.getExercises(id);
   }
 
+  @Get(':id/vocabulary')
+  getVocabulary(@Param('id') id: string) {
+    return this.lessonsService.getVocabulary(id);
+  }
+
   @UseGuards(JwtGuard)
   @Post(':id/submit')
   submit(@Param('id') id: string, @Request() req: any, @Body() body: any) {

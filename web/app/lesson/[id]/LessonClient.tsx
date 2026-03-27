@@ -252,12 +252,14 @@ function FinishedScreen({ onNext, hasNext }: { onNext: () => void; hasNext: bool
 export default function LessonClient({
   lesson,
   exercises: _exercises,
+  vocabulary: _vocabulary,
   userId,
   nextLessonId,
   isLastLesson,
 }: {
   lesson:         any
   exercises:      any[]
+  vocabulary?:    any[]
   userId:         string
   nextLessonId?:  string | null
   isLastLesson?:  boolean
@@ -268,8 +270,18 @@ export default function LessonClient({
   const { addXP, addGemmes, incrementStreak, updateQuete, completeLesson } = useUserProgress()
 
   // ── Données lettres ───────────────────────────────────────────────────────
-  // Priorité : groupe de lettres de la leçon (letterGroups.ts) > exercices DB
-  const letterGroup: DarijaLetter[] = LETTER_GROUPS[lesson?.slug ?? ''] ?? []
+  // Priorité : groupe de lettres de la leçon (letterGroups.ts) > vocabulaire DB
+  const staticGroup: DarijaLetter[] = LETTER_GROUPS[lesson?.slug ?? ''] ?? []
+  const vocabGroup: DarijaLetter[] = Array.isArray(_vocabulary)
+    ? _vocabulary
+        .filter(v => v?.word)
+        .map(v => ({
+          letter: v.word as string,
+          latin:  (v.transliteration ?? '') as string,
+          fr:     ((v.translation as any)?.fr ?? '') as string,
+        }))
+    : []
+  const letterGroup: DarijaLetter[] = staticGroup.length > 0 ? staticGroup : vocabGroup
   const hasLetterGroup = letterGroup.length > 0
 
   // Pour les exercices à lettre unique : on prend la 1ère lettre du groupe
@@ -370,7 +382,7 @@ export default function LessonClient({
     router.push(dest)
   }
 
-  // ── Si pas de groupe de lettres → exercices DB (player générique) ─────────
+  // ── Si pas de groupe de lettres ni vocab DB → exercices DB (player générique) ─
   if (!hasLetterGroup && dbExercises.length > 0) {
     return (
       <GenericExercisePlayer
@@ -522,6 +534,7 @@ export default function LessonClient({
             onContinue={handleFlashContinue}
             onSpeak={handleSpeak}
             progress={flashProgress}
+            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
           />
         )
       case "choix":

@@ -31,6 +31,15 @@ export class LessonsService {
     return this.prisma.exercise.findMany({ where: { lessonId } });
   }
 
+  async getVocabulary(lessonId: string) {
+    const exercises = await this.prisma.exercise.findMany({
+      where: { lessonId, vocabularyId: { not: null } },
+      include: { vocabulary: true },
+      distinct: ['vocabularyId'],
+    });
+    return exercises.map(e => e.vocabulary).filter(Boolean);
+  }
+
   /**
    * Submit answers for a lesson. Returns score, errors, xpEarned and updated progress.
    * Simple scoring: exact equality for answers; XP = sum(points) for correct answers.
