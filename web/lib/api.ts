@@ -55,7 +55,17 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   }
 
   if (res.status === 401) {
-    if (typeof window !== 'undefined') window.location.href = '/login';
+    if (typeof window !== 'undefined') {
+      // Effacer le token invalide pour éviter une boucle de redirection
+      localStorage.removeItem('darija_token');
+      localStorage.removeItem('darija_user');
+      document.cookie = 'jwt=; path=/; max-age=0';
+      // Ne rediriger que si on n'est pas déjà sur une page d'auth
+      const p = window.location.pathname;
+      if (!p.startsWith('/login') && !p.startsWith('/register') && p !== '/') {
+        window.location.href = '/login';
+      }
+    }
     return {} as T;
   }
 
