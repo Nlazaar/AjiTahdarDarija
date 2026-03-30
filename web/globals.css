@@ -81,36 +81,45 @@
 }
 
 [data-theme="light"] {
-  --background:       #f0f4f7;
-  --foreground:       #0f1c22;
-  --c-bg:             #f0f4f7;
+  /* ── Palette Duolingo light (référence officielle) ── */
+  --background:       #f7f7f7;
+  --foreground:       #1f1f1f;
+  --c-bg:             #f7f7f7;
   --c-card:           #ffffff;
-  --c-card2:          #e8edf2;
-  --c-border:         rgba(0,0,0,0.08);
-  --c-border-hard:    #c2cdd6;
-  --c-nav-border:     rgba(0,0,0,0.07);
-  --c-text:           #0f1c22;
-  --c-sub:            #4e6372;
+  --c-card2:          #f3f4f6;
+  --c-border:         #e5e7eb;
+  --c-border-hard:    #d1d5db;
+  --c-nav-border:     #e5e7eb;
+  --c-text:           #1f1f1f;
+  --c-sub:            #4b5563;
+  --c-sub2:           #9ca3af;
   --c-input-bg:       #ffffff;
-  --c-card-shadow:    0 2px 8px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.06);
+  --c-card-shadow:    0 2px 8px rgba(0,0,0,0.06);
 
   /* Duolingo officiel (inchangé) */
   --duo-green:       #58cc02;
-  --duo-green-dark:  #46a302;
+  --duo-green-dark:  #3a8a02;
   --duo-blue:        #1cb0f6;
   --duo-blue-dark:   #1899d6;
   --duo-blue-light:  #ddf4ff;
-  --duo-gray-border: #e5e5e5;
-  --duo-gray-text:   #4b4b4b;
-  --duo-gray-sub:    #afafaf;
+  --duo-gray-border: #e5e7eb;
+  --duo-gray-text:   #4b5563;
+  --duo-gray-sub:    #9ca3af;
 
   /* Teal */
-  --teal-light: rgba(0,160,160,0.12);
+  --teal-light: rgba(0,160,160,0.10);
 }
 
-/* Ombres portées en mode clair pour les cartes */
+/* Ombres portées en mode clair */
 [data-theme="light"] .widget-card {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1.5px solid #e5e7eb;
+}
+
+/* Sidebar active item — style Duolingo light */
+[data-theme="light"] .sidebar-active {
+  background: #ddf4ff !important;
+  color: #1cb0f6 !important;
 }
 
 html, body {
@@ -136,10 +145,10 @@ body {
 
 /* Carte / Bouton de choix style Duolingo */
 .duo-card {
-  background-color: white;
-  border: 2px solid var(--duo-gray-border);
+  background-color: var(--c-card);
+  border: 2px solid var(--c-border);
   border-radius: 16px;
-  box-shadow: 0 4px 0 var(--duo-gray-border);
+  box-shadow: 0 4px 0 var(--c-border);
   transition: all 0.1s;
   cursor: pointer;
 }
@@ -181,11 +190,11 @@ body {
 /* Speech Bubble mascotte */
 .duo-bubble {
   position: relative;
-  background-color: white;
-  border: 2px solid var(--duo-gray-border);
+  background-color: var(--c-card);
+  border: 2px solid var(--c-border);
   border-radius: 20px;
   padding: 20px 24px;
-  box-shadow: 0 4px 0 var(--duo-gray-border);
+  box-shadow: 0 4px 0 var(--c-border);
 }
 .duo-bubble::after {
   content: '';
@@ -195,9 +204,9 @@ body {
   transform: translateY(-50%) rotate(45deg);
   width: 16px;
   height: 16px;
-  background-color: white;
-  border-left: 2px solid var(--duo-gray-border);
-  border-bottom: 2px solid var(--duo-gray-border);
+  background-color: var(--c-card);
+  border-left: 2px solid var(--c-border);
+  border-bottom: 2px solid var(--c-border);
 }
 
 /* ── PROGRESS PAGE ── */
@@ -271,14 +280,14 @@ body {
 }
 
 .speech-bubble {
-  background: white;
-  border: 2px solid #e5e7eb;
+  background: var(--c-card);
+  border: 2px solid var(--c-border);
   border-radius: 16px;
   padding: 8px 14px;
   font-size: 13px;
   font-weight: 800;
-  color: #374151;
-  box-shadow: 0 3px 0 #e5e7eb;
+  color: var(--c-text);
+  box-shadow: 0 3px 0 var(--c-border);
   position: relative;
   white-space: nowrap;
   animation: fadeUp 0.4s ease 0.3s both;
@@ -289,7 +298,7 @@ body {
   left: 18px;
   bottom: -9px;
   border: 8px solid transparent;
-  border-top-color: #e5e7eb;
+  border-top-color: var(--c-border);
 }
 .speech-bubble::before {
   content: '';
@@ -297,7 +306,7 @@ body {
   left: 20px;
   bottom: -6px;
   border: 6px solid transparent;
-  border-top-color: white;
+  border-top-color: var(--c-card);
   z-index: 1;
 }
 
@@ -323,7 +332,7 @@ body {
 
 /* ── DARK BACKGROUND PAGES ── */
 .page-dark {
-  background: #131f24;
+  background: var(--c-bg);
   min-height: 100vh;
 }
 
@@ -345,8 +354,8 @@ body {
 
 /* ── STATS PANEL ── */
 .widget-card {
-  background: white;
-  border: 2px solid #f3f4f6;
+  background: var(--c-card);
+  border: 1.5px solid var(--c-border);
   border-radius: 20px;
   padding: 14px 18px;
   display: flex;

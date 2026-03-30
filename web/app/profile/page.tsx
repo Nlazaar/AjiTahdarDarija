@@ -42,7 +42,7 @@ function AvatarPicker({ current, onSelect, onClose }: {
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
-          <div style={{ fontSize: 16, fontWeight: 900, color: '#fff' }}>Choisir un avatar</div>
+          <div style={{ fontSize: 16, fontWeight: 900, color: 'var(--c-text)' }}>Choisir un avatar</div>
           <button onClick={onClose} style={{ background: 'none', border: 'none', color: 'var(--c-sub)', fontSize: 20, cursor: 'pointer' }}>✕</button>
         </div>
 
