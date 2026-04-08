@@ -4,24 +4,27 @@ import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { useUser } from '@/context/UserContext';
+import { useMascot, type MascotId } from '@/contexts/MascotContext';
 
 export default function WelcomePage() {
   const { t } = useLanguage();
   const { setMascot, setUserName } = useUser();
+  const { setMascot: setMascotConfig } = useMascot();
   const [step, setStep] = React.useState(0);
   const [selectedMascot, setSelectedMascotLocal] = React.useState('/images/maroccan-lion.png');
   const [showInput, setShowInput] = React.useState(false);
   const [localName, setLocalName] = React.useState('');
 
   const mascots = [
-    { id: 'boy', name: t.welcome.mascotBoy, img: '/images/maroccan-child.png' },
-    { id: 'lion', name: t.welcome.mascotLion, img: '/images/maroccan-lion.png' },
-    { id: 'girl', name: t.welcome.mascotGirl, img: '/images/maroccan-girl.png' }
+    { id: 'boy' as MascotId, name: t.welcome.mascotBoy, img: '/images/maroccan-child.png' },
+    { id: 'lion' as MascotId, name: t.welcome.mascotLion, img: '/images/maroccan-lion.png' },
+    { id: 'girl' as MascotId, name: t.welcome.mascotGirl, img: '/images/maroccan-girl.png' }
   ];
 
-  const handleMascotSelect = (img: string) => {
+  const handleMascotSelect = (id: MascotId, img: string, name: string) => {
     setSelectedMascotLocal(img);
-    setMascot(img); // Global save
+    setMascot(img); // UserContext (login/register display)
+    setMascotConfig({ id, name }); // MascotContext (main app)
     setStep(1);
   };
 
@@ -94,7 +97,7 @@ export default function WelcomePage() {
               {mascots.map((m) => (
                 <div 
                   key={m.id} 
-                  onClick={() => handleMascotSelect(m.img)}
+                  onClick={() => handleMascotSelect(m.id, m.img, m.name)}
                   style={{
                     display: 'flex',
                     flexDirection: 'column',

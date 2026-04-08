@@ -51,7 +51,7 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
     res = await fetch(`${BASE}${path}`, { ...init, headers, cache: 'no-store' });
   } catch (err) {
     console.warn('[api] Network error:', err);
-    return {} as T;
+    throw err;
   }
 
   if (res.status === 401) {
