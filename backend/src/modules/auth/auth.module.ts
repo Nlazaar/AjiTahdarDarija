@@ -11,9 +11,12 @@ import { PrismaModule } from '../../prisma/prisma.module';
   imports: [
     PrismaModule,
     PassportModule.register({ defaultStrategy: 'jwt' }),
-    JwtModule.register({
-      secret: process.env.JWT_SECRET || 'darija_secret_change_in_production',
-      signOptions: { expiresIn: '7d' },
+    JwtModule.registerAsync({
+      useFactory: () => {
+        const secret = process.env.JWT_SECRET;
+        if (!secret) throw new Error('JWT_SECRET environment variable is required');
+        return { secret, signOptions: { expiresIn: '7d' } };
+      },
     }),
   ],
   providers: [AuthService, JwtStrategy, JwtGuard],

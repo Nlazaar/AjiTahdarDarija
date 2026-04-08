@@ -50,7 +50,7 @@ export function storeAuth(res: AuthResponse) {
   localStorage.setItem(TOKEN_KEY, res.token);
   localStorage.setItem(USER_KEY,  JSON.stringify(res.user));
   // Cookie lu par le middleware Next.js pour la protection des routes
-  document.cookie = `jwt=${res.token}; path=/; max-age=${7 * 24 * 3600}; SameSite=Lax`;
+  document.cookie = `jwt=${res.token}; path=/; max-age=${7 * 24 * 3600}; SameSite=Strict`;
 }
 
 export function clearAuth() {

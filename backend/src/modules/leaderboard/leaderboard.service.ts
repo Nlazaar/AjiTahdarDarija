@@ -1,27 +1,48 @@
-import { Injectable } from '@nestjs/common'
+import { Injectable, Logger } from '@nestjs/common'
 import { PrismaService } from '../../prisma/prisma.service'
+import { TTLCacheService } from '../../common/cache/ttl-cache.service'
+
+const GLOBAL_TTL  = 60       // 1 minute
+const WEEKLY_TTL  = 120      // 2 minutes
 
 @Injectable()
 export class LeaderboardService {
-  constructor(private prisma: PrismaService) {}
+  private readonly logger = new Logger(LeaderboardService.name)
+
+  constructor(
+    private prisma: PrismaService,
+    private cache: TTLCacheService,
+  ) {}
 
   async global(limit = 50) {
-    return this.prisma.user.findMany({
+    const key = `lb:global:${limit}`
+    const cached = this.cache.get<any[]>(key)
+    if (cached) return cached
+
+    const result = await this.prisma.user.findMany({
       orderBy: { xp: 'desc' },
       take: limit,
       select: { id: true, name: true, xp: true, level: true, streak: true },
     })
+    this.cache.set(key, result, GLOBAL_TTL)
+    return result
   }
 
   async weekly(limit = 50) {
+    const key = `lb:weekly:${limit}`
+    const cached = this.cache.get<any[]>(key)
+    if (cached) return cached
+
     const since = new Date()
     since.setDate(since.getDate() - 7)
-    return this.prisma.user.findMany({
+    const result = await this.prisma.user.findMany({
       where: { updatedAt: { gt: since } },
       orderBy: { xp: 'desc' },
       take: limit,
       select: { id: true, name: true, xp: true, level: true, streak: true },
     })
+    this.cache.set(key, result, WEEKLY_TTL)
+    return result
   }
 
   async myRank(userId: string) {

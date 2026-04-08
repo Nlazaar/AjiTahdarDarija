@@ -2,6 +2,7 @@ import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { TasksModule } from './common/tasks/tasks.module';
 import { MetricsModule } from './metrics/metrics.module';
 import { HealthModule } from './health/health.module';
 import { PrismaModule } from './prisma/prisma.module';
@@ -18,6 +19,7 @@ import { I18nModule } from './modules/i18n/i18n.module';
 @Module({
   imports: [
     PrismaModule,
+    TasksModule,
     AuthModule,
     UsersModule,
     CoursesModule,

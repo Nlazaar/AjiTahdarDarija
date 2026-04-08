@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Patch, Body, UseGuards, Request } from '@nestjs/common';
+import { Controller, Post, Get, Patch, Delete, Body, UseGuards, Request } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
@@ -28,5 +28,19 @@ export class AuthController {
   @Patch('me')
   updateMe(@Request() req: any, @Body() body: { avatar?: string; name?: string }) {
     return this.authService.updateProfile(req.user.id, body);
+  }
+
+  /** RGPD — Droit à la portabilité : exporter toutes ses données */
+  @UseGuards(JwtGuard)
+  @Get('me/export')
+  exportData(@Request() req: any) {
+    return this.authService.exportUserData(req.user.id);
+  }
+
+  /** RGPD — Droit à l'effacement : supprimer le compte et anonymiser les données PII */
+  @UseGuards(JwtGuard)
+  @Delete('me')
+  deleteAccount(@Request() req: any) {
+    return this.authService.deleteAccount(req.user.id);
   }
 }

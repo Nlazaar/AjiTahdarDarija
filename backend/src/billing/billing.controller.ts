@@ -15,9 +15,9 @@ export class BillingController {
 
   @Post('webhook')
   async webhook(@Req() req: any, @Res() res: any) {
-    // For simplicity, accept parsed payload
-    const payload = req.body
-    await this.svc.handleWebhook(payload, req.headers['stripe-signature'])
+    // rawBody requis pour la validation de signature HMAC Stripe
+    const rawBody: Buffer = req.rawBody ?? Buffer.from(JSON.stringify(req.body))
+    await this.svc.handleWebhook(rawBody, req.headers['stripe-signature'])
     res.status(200).send('ok')
   }
 

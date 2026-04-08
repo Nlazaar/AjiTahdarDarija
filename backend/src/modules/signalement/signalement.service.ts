@@ -7,14 +7,14 @@ export class SignalementService {
   private readonly logger = new Logger(SignalementService.name);
 
   private transporter = nodemailer.createTransport({
-    host: 'smtp-mail.outlook.com',
-    port: 587,
-    secure: false,
+    host: process.env.SMTP_HOST ?? 'smtp-mail.outlook.com',
+    port: parseInt(process.env.SMTP_PORT ?? '587'),
+    secure: process.env.SMTP_SECURE === 'true',
     auth: {
-      user: 'najib_lazaar@hotmail.com',
+      user: process.env.SIGNALEMENT_EMAIL,
       pass: process.env.HOTMAIL_PASSWORD,
     },
-    tls: { ciphers: 'SSLv3' },
+    tls: { rejectUnauthorized: true },
   });
 
   async send(dto: SignalementDto) {
@@ -34,8 +34,8 @@ Envoyé automatiquement depuis l'application.
 
     try {
       await this.transporter.sendMail({
-        from: '"AjiTahdar 🇲🇦" <najib_lazaar@hotmail.com>',
-        to: 'najib_lazaar@hotmail.com',
+        from: `"AjiTahdar 🇲🇦" <${process.env.SIGNALEMENT_EMAIL}>`,
+        to: process.env.SIGNALEMENT_EMAIL,
         subject: `🚨 Signalement — ${dto.phase ?? 'leçon'}`,
         text: body,
       });

@@ -36,16 +36,41 @@ export class BillingService {
     return { url: session.url }
   }
 
-  async handleWebhook(payload: any, sig?: string) {
-    // Minimal handling: react to checkout.session.completed
+  async handleWebhook(rawBody: Buffer, sig?: string) {
+    if (!StripeClient) {
+      this.logger.warn('Stripe not configured — webhook ignored')
+      return
+    }
+
+    const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
+    if (!webhookSecret) {
+      this.logger.error('STRIPE_WEBHOOK_SECRET is not set — cannot validate webhook')
+      throw new Error('Webhook secret not configured')
+    }
+
+    let evt: any
     try {
-      const evt = payload // assume already parsed
+      // Valider la signature HMAC Stripe pour prévenir les requêtes forgées
+      evt = StripeClient.webhooks.constructEvent(rawBody, sig ?? '', webhookSecret)
+    } catch (e) {
+      this.logger.error('Stripe webhook signature validation failed', e as any)
+      throw new Error('Invalid webhook signature')
+    }
+
+    try {
       if (evt.type === 'checkout.session.completed') {
         const session = evt.data.object
         const userId = session.metadata?.userId
-        // mark subscription active; expiry handled via webhook/subscription events in real implementation
         if (userId) {
           await this.prisma.user.update({ where: { id: userId }, data: { subscriptionStatus: 'active' } })
+          this.logger.log(`Subscription activated for user ${userId}`)
+        }
+      } else if (evt.type === 'customer.subscription.deleted') {
+        const sub = evt.data.object
+        const userId = sub.metadata?.userId
+        if (userId) {
+          await this.prisma.user.update({ where: { id: userId }, data: { subscriptionStatus: 'free' } })
+          this.logger.log(`Subscription cancelled for user ${userId}`)
         }
       }
     } catch (e) {

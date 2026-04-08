@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { darijaAlphabet } from "@/data/alphabet";
 import { useAudio } from "@/hooks/useAudio";
 import { useExerciseEngine } from "@/hooks/useExerciseEngine";
-import { useExerciseEngine as useEngine } from "@/hooks/useExerciseEngine";
 
 // UI Components
 import { ExerciseCard } from "@/components/ui/ExerciseCard";

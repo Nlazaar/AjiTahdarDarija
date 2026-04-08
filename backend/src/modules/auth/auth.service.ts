@@ -3,6 +3,7 @@ import {
   ConflictException,
   UnauthorizedException,
   NotFoundException,
+  Logger,
 } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { PrismaService } from '../../prisma/prisma.service';
@@ -12,6 +13,8 @@ import { LoginDto } from './dto/login.dto';
 
 @Injectable()
 export class AuthService {
+  private readonly logger = new Logger(AuthService.name);
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly jwt: JwtService,
@@ -30,7 +33,7 @@ export class AuthService {
       });
       return this.buildResponse(user);
     } catch (e) {
-      console.error('[REGISTER ERROR]', e?.message ?? e);
+      this.logger.error('Register failed', (e as Error)?.message ?? e);
       throw e;
     }
   }
@@ -78,6 +81,48 @@ export class AuthService {
       select: { id: true, email: true, name: true, avatar: true },
     });
     return updated;
+  }
+
+  /** RGPD — Exporter toutes les données de l'utilisateur (droit à la portabilité) */
+  async exportUserData(userId: string) {
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+      include: {
+        progress: true,
+        vocabulary: true,
+        badges: true,
+        analytics: { take: 1000, orderBy: { createdAt: 'desc' } },
+      },
+    });
+    if (!user) throw new NotFoundException('Utilisateur introuvable');
+    // Masquer le hash du mot de passe
+    const { passwordHash: _pw, ...safeUser } = user as any;
+    return { exportedAt: new Date().toISOString(), data: safeUser };
+  }
+
+  /** RGPD — Supprimer le compte et anonymiser toutes les données PII */
+  async deleteAccount(userId: string) {
+    const anonymous = `deleted_${userId.slice(0, 8)}`;
+    // Anonymiser les données PII (email, nom, avatar)
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        email: `${anonymous}@deleted.invalid`,
+        name: 'Utilisateur supprimé',
+        avatar: null,
+        passwordHash: '',
+        isDeleted: true,
+      },
+    });
+    // Supprimer les messages de conversation
+    await this.prisma.conversationMessage.deleteMany({ where: { userId } });
+    // Anonymiser les événements analytiques
+    await this.prisma.analyticsEvent.updateMany({
+      where: { userId },
+      data: { userId: null },
+    });
+    this.logger.log(`Account deleted and anonymized: ${userId}`);
+    return { message: 'Compte supprimé avec succès' };
   }
 
   private buildResponse(user: { id: string; email: string; name?: string | null }) {

@@ -1,4 +1,4 @@
-import { Controller, Get, Request, UseGuards } from '@nestjs/common'
+import { Controller, Get, Request, UseGuards, Query } from '@nestjs/common'
 import { LeaderboardService } from './leaderboard.service'
 import { JwtGuard } from '../auth/guards/jwt.guard'
 
@@ -7,11 +7,15 @@ export class LeaderboardController {
   constructor(private svc: LeaderboardService) {}
 
   @Get('global')
-  global() { return this.svc.global() }
+  global(@Query('limit') limit?: string) {
+    return this.svc.global(Math.min(parseInt(limit ?? '50') || 50, 100))
+  }
 
   @UseGuards(JwtGuard)
   @Get('weekly')
-  weekly() { return this.svc.weekly() }
+  weekly(@Query('limit') limit?: string) {
+    return this.svc.weekly(Math.min(parseInt(limit ?? '50') || 50, 100))
+  }
 
   @UseGuards(JwtGuard)
   @Get('my-rank')

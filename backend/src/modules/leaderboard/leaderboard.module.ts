@@ -3,6 +3,7 @@ import { LeaderboardService } from './leaderboard.service'
 import { LeaderboardController } from './leaderboard.controller'
 import { PrismaModule } from '../../prisma/prisma.module'
 import { AuthModule } from '../auth/auth.module'
+import { CacheModule } from '../../common/cache/cache.module'
 
-@Module({ imports: [PrismaModule, AuthModule], providers: [LeaderboardService], controllers: [LeaderboardController] })
+@Module({ imports: [PrismaModule, AuthModule, CacheModule], providers: [LeaderboardService], controllers: [LeaderboardController] })
 export class LeaderboardModule {}

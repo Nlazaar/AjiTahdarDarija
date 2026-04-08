@@ -1,9 +1,32 @@
 node_modules/
+
+# Env files — JAMAIS committer
 .env
 .env.local
+.env.production
+.env.staging
 .env*.local
+backend/.env
+mobile/.env
+
+# Build outputs
 web/dist/
-*.log
-.DS_Store
 web/.next/
 web/tsconfig.tsbuildinfo
+backend/dist/
+mobile/.expo/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Audit logs (contiennent des IPs et actions utilisateurs)
+backend/logs/
