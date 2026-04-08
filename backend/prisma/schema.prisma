@@ -127,6 +127,7 @@ model Vocabulary {
   word            String
   transliteration String?
   translation     Json? // supports multiple translations per language
+  audioUrl        String?       // URL relative vers le fichier MP3 généré par Habibi-TTS
   partOfSpeech    PartOfSpeech?
   examples        Json? // array of example objects
   tags            String[]      @default([])

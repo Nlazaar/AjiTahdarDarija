@@ -19,7 +19,9 @@
     "start:prod": "node dist/main.js",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
-    "lint": "eslint 'src/**/*.{ts,js}' --fix"
+    "lint": "eslint 'src/**/*.{ts,js}' --fix",
+    "generate:audio": "node scripts/generate-audio.js",
+    "generate:audio:force": "node scripts/generate-audio.js --force"
   },
   "dependencies": {
     "@nestjs/cli": "^10.0.0",
@@ -28,8 +30,10 @@
     "@nestjs/jwt": "^11.0.2",
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/schedule": "^6.1.1",
     "@nestjs/schematics": "^10.0.0",
     "@prisma/client": "^5.0.0",
+    "@sentry/node": "^10.47.0",
     "@types/nodemailer": "^7.0.11",
     "bcryptjs": "^3.0.3",
     "class-transformer": "^0.5.1",
