@@ -11,6 +11,7 @@ interface TrouverLesPairesProps {
   }>;
   onConfirm: () => void;
   onReadyChange?: (ready: boolean) => void;
+  mode?: 'lettre' | 'mot';
 }
 
 function playLetter(letter: string) {
@@ -22,7 +23,8 @@ function playLetter(letter: string) {
   window.speechSynthesis.speak(t);
 }
 
-export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: TrouverLesPairesProps) {
+export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange, mode = 'lettre' }: TrouverLesPairesProps) {
+  const isVocab = mode === 'mot';
   const [selectedLeft,  setSelectedLeft]  = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matchedIds,    setMatchedIds]    = useState<Set<string>>(new Set());
@@ -130,6 +132,11 @@ export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange }: Tr
               >
                 {isMatched ? (
                   <span style={{ fontSize: "20px" }}>✓</span>
+                ) : isVocab ? (
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                    <span style={{ fontSize: "16px", fontWeight: "900", color: s.text }}>{p.latin}</span>
+                    <span style={{ fontSize: "11px", fontFamily: '"Amiri", serif', opacity: 0.6, color: s.text }}>{p.letter}</span>
+                  </div>
                 ) : (
                   <span style={{ display: "flex", alignItems: "center", gap: "3px", height: "22px" }}>
                     {[0, 1, 2, 3].map(i => (

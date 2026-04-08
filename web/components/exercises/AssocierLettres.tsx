@@ -10,6 +10,7 @@ interface AssocierLettresProps {
   }>;
   onConfirm: () => void;
   onReadyChange?: (ready: boolean) => void;
+  mode?: 'lettre' | 'mot';
 }
 
 function adaptiveFontSize(pairs: { letter: string }[]): number {
@@ -20,7 +21,8 @@ function adaptiveFontSize(pairs: { letter: string }[]): number {
   return 16;
 }
 
-export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: AssocierLettresProps) {
+export default function AssocierLettres({ pairs, onConfirm, onReadyChange, mode = 'lettre' }: AssocierLettresProps) {
+  const isVocab = mode === 'mot';
   const arabicFontSize = adaptiveFontSize(pairs);
   const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
@@ -153,10 +155,12 @@ export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: Ass
                   width: '100%',
                   height: '72px',
                   display: 'flex',
+                  flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: `${arabicFontSize}px`,
-                  fontFamily: '"Amiri", serif',
+                  fontSize: isVocab ? '18px' : `${arabicFontSize}px`,
+                  fontFamily: isVocab ? 'inherit' : '"Amiri", serif',
+                  fontWeight: isVocab ? '900' : 'normal',
                   whiteSpace: 'nowrap',
                   backgroundColor: bgColor,
                   borderColor: borderColor,
@@ -171,7 +175,14 @@ export default function AssocierLettres({ pairs, onConfirm, onReadyChange }: Ass
                   transform: isSelected && !isMatched ? 'translateY(2px)' : 'none'
                 }}
               >
-                {isMatched ? <span style={{ fontSize: '24px' }}>✓</span> : p.letter}
+                {isMatched ? (
+                  <span style={{ fontSize: '24px' }}>✓</span>
+                ) : isVocab ? (
+                  <>
+                    <span>{p.latin}</span>
+                    <span style={{ fontSize: '11px', fontFamily: '"Amiri", serif', opacity: 0.6 }}>{p.letter}</span>
+                  </>
+                ) : p.letter}
               </button>
             );
           })}

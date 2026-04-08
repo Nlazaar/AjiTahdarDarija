@@ -11,11 +11,13 @@ interface ChoixLettreProps {
   onSpeak:         (l: DarijaLetter) => void
   onReadyChange?:  (ready: boolean) => void
   shouldValidate?: boolean
+  mode?:           'lettre' | 'mot'
 }
 
 type State = "idle" | "correct" | "incorrect"
 
-export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: ChoixLettreProps) {
+export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate, mode = 'lettre' }: ChoixLettreProps) {
+  const isVocab = mode === 'mot'
   const [state,    setState]    = useState<State>("idle")
   const [selected, setSelected] = useState<string | null>(null)
   const [answered, setAnswered] = useState(false)
@@ -61,9 +63,16 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
       </p>
 
       <div className="flex items-center justify-center gap-6 bg-[#1e3a2e] border-2 border-[#34d399]/30 rounded-2xl px-8 py-5 mx-auto w-fit">
-        <span className="text-7xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
-          {letter.letter}
-        </span>
+        {isVocab ? (
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-4xl font-black text-white tracking-wide">{letter.latin}</span>
+            <span className="text-base text-[#8a9baa]" style={{ fontFamily: 'Amiri, serif' }}>{letter.letter}</span>
+          </div>
+        ) : (
+          <span className="text-7xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
+            {letter.letter}
+          </span>
+        )}
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />
       </div>
 
@@ -88,8 +97,14 @@ export default function ChoixLettre({ letter, choices, onSuccess, onFailed, onSp
               c.latin===selected       ? "border-red-500 bg-red-500" :
               "border-[#4a5d6a]"
             }`}/>
-            <span className="text-base font-bold text-white">{c.latin}</span>
-            <span className="text-xs text-[#6b7f8a] ml-auto">{c.fr}</span>
+            {isVocab ? (
+              <span className="text-base font-bold text-white">{c.fr}</span>
+            ) : (
+              <>
+                <span className="text-base font-bold text-white">{c.latin}</span>
+                <span className="text-xs text-[#6b7f8a] ml-auto">{c.fr}</span>
+              </>
+            )}
           </button>
         ))}
       </div>

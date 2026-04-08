@@ -25,22 +25,34 @@ export default function FlashCard({ letter, onContinue, onSpeak, progress, mode 
         )}
       </div>
 
-      <div
-        className={`leading-none text-center text-white my-2 ${isVocab ? 'text-[64px]' : 'text-[96px]'}`}
-        style={{ fontFamily: 'Amiri, serif' }}
-      >
-        {letter.letter}
-      </div>
+      {isVocab ? (
+        /* Mode mot : translittération en grand + arabe en petit */
+        <div className="flex flex-col items-center gap-1 my-2">
+          <div className="text-[52px] leading-none font-black text-white tracking-wide">
+            {letter.latin}
+          </div>
+          <div className="text-[22px] leading-none text-[#8a9baa]" style={{ fontFamily: 'Amiri, serif' }}>
+            {letter.letter}
+          </div>
+        </div>
+      ) : (
+        /* Mode lettre : arabe en grand */
+        <div className="text-[96px] leading-none text-center text-white my-2" style={{ fontFamily: 'Amiri, serif' }}>
+          {letter.letter}
+        </div>
+      )}
 
       <AudioButton onPlay={() => onSpeak(letter)} size="lg" />
 
       <div className="w-full bg-[#263744] rounded-xl p-4 space-y-2">
+        {!isVocab && (
+          <div className="flex justify-between text-sm">
+            <span className="text-[#8a9baa]">Romanisation</span>
+            <span className="font-bold text-white">{letter.latin}</span>
+          </div>
+        )}
         <div className="flex justify-between text-sm">
-          <span className="text-[#8a9baa]">Romanisation</span>
-          <span className="font-bold text-white">{letter.latin}</span>
-        </div>
-        <div className="flex justify-between text-sm">
-          <span className="text-[#8a9baa]">{isVocab ? 'Traduction' : 'Prononciation FR'}</span>
+          <span className="text-[#8a9baa]">Traduction</span>
           <span className="font-bold text-white">"{letter.fr}"</span>
         </div>
       </div>

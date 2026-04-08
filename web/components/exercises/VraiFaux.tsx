@@ -12,9 +12,11 @@ interface VraiFauxProps {
   onSpeak:         (l: DarijaLetter) => void
   onReadyChange?:  (ready: boolean) => void
   shouldValidate?: boolean
+  mode?:           'lettre' | 'mot'
 }
 
-export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: VraiFauxProps) {
+export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate, mode = 'lettre' }: VraiFauxProps) {
+  const isVocab = mode === 'mot'
   const [answered,      setAnswered]      = useState(false)
   const [correct,       setCorrect]       = useState<boolean | null>(null)
   const [pendingAnswer, setPendingAnswer] = useState<boolean | null>(null)
@@ -69,9 +71,16 @@ export default function VraiFaux({ letter, proposed, isTrue, onSuccess, onFailed
       </p>
 
       <div className={`flex flex-col items-center gap-3 p-8 rounded-2xl border-2 transition-all ${cardBg}`}>
-        <span className="text-8xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
-          {letter.letter}
-        </span>
+        {isVocab ? (
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-4xl font-black text-white tracking-wide">{letter.latin}</span>
+            <span className="text-lg text-[#8a9baa]" style={{ fontFamily: 'Amiri, serif' }}>{letter.letter}</span>
+          </div>
+        ) : (
+          <span className="text-8xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>
+            {letter.letter}
+          </span>
+        )}
         <AudioButton onPlay={() => onSpeak(letter)} size="md" />
         <div className="w-10 h-0.5 bg-[#2a3d47] rounded-full"/>
         <span className="text-2xl font-bold text-white">{proposed}</span>

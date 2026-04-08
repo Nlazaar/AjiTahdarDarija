@@ -533,12 +533,13 @@ export default function LessonClient({
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
+            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
           />
         )
       case "association":
-        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} onReadyChange={setIsReady} />
+        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={staticGroup.length > 0 ? 'lettre' : 'mot'} />
       case "paires":
-        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} onReadyChange={setIsReady} />
+        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={staticGroup.length > 0 ? 'lettre' : 'mot'} />
       case "entendre":
         return (
           <EntendreEtChoisir
@@ -549,6 +550,7 @@ export default function LessonClient({
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
+            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
           />
         )
       case "vrai_faux":
@@ -562,6 +564,7 @@ export default function LessonClient({
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
+            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
           />
         )
       case "dicter":

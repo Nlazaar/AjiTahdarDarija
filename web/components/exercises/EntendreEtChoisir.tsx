@@ -11,9 +11,11 @@ interface EntendreEtChoisirProps {
   onSpeak:         (l: DarijaLetter) => void
   onReadyChange?:  (ready: boolean) => void
   shouldValidate?: boolean
+  mode?:           'lettre' | 'mot'
 }
 
-export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: EntendreEtChoisirProps) {
+export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate, mode = 'lettre' }: EntendreEtChoisirProps) {
+  const isVocab = mode === 'mot'
   const [playing,  setPlaying]  = useState(false)
   const [answered, setAnswered] = useState(false)
   const [selected, setSelected] = useState<string | null>(null)
@@ -66,10 +68,17 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
             key={c.latin}
             disabled={answered}
             onClick={() => handleChoice(c)}
-            className={`h-20 flex items-center justify-center text-5xl text-white border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
-            style={{ fontFamily: 'Amiri, serif' }}
+            className={`h-20 flex flex-col items-center justify-center gap-1 border-2 rounded-2xl transition-all duration-150 ${getClass(c)}`}
+            style={isVocab ? undefined : { fontFamily: 'Amiri, serif' }}
           >
-            {c.letter}
+            {isVocab ? (
+              <>
+                <span className="text-lg font-black text-white leading-none">{c.latin}</span>
+                <span className="text-xs text-[#8a9baa]">{c.fr}</span>
+              </>
+            ) : (
+              <span className="text-5xl text-white">{c.letter}</span>
+            )}
           </button>
         ))}
       </div>
