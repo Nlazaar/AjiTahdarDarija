@@ -1,0 +1,129 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Chercher et entourer des éléments cachés dans une illustration, puis compter et entourer le bon chiffre parmi 1 à 5",
+  "titre": {
+    "fr": "Je cherche et je compte",
+    "ar": "أَبْحَث وَ أَعُدّ"
+  },
+  "enonce": {
+    "fr": "Exercice 8 : Je cherche les papillons dans l'image et je les entoure. Combien en as-tu trouvé ? Exercice 9 : Je cherche les poissons dans l'image et je les entoure. Combien en as-tu trouvé ?",
+    "ar": "تمرين 8 : أَبْحَث عن الفَرَاشَات الَّتِي فِي الصُّورَة وَ أُحِيطُها بِخَطٍّ مُغْلَق. كم وَجَدْت من فَرَاشَة؟ تمرين 9 : أَبْحَث عن السَّمَكَاتِ الَّتِي فِي الصُّورَة وَ أُحِيطُها بِخَطٍّ مُغْلَق. كم وَجَدْت من سَمَكَةٍ؟"
+  },
+  "elements": [
+    {
+      "id": "papillon",
+      "ar": "فَرَاشَة",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "poisson",
+      "ar": "سَمَكَة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "chiffre_1",
+      "ar": "١",
+      "fr": "1",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "chiffre_2",
+      "ar": "٢",
+      "fr": "2",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "chiffre_3",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "chiffre_4",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "chiffre_5",
+      "ar": "٥",
+      "fr": "5",
+      "emoji": "5️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "تمرين 8 : أَبْحَث عن الفَرَاشَات الَّتِي فِي الصُّورَة وَ أُحِيطُها بِخَطٍّ مُغْلَق. كم وَجَدْت من فَرَاشَة؟ تمرين 9 : أَبْحَث عن السَّمَكَاتِ الَّتِي فِي الصُّورَة وَ أُحِيطُها بِخَطٍّ مُغْلَق. كم وَجَدْت من سَمَكَةٍ؟",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_papillon",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_papillon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_papillon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poisson",
+      "texte_ar": "سَمَكَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_poisson_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_poisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chiffre_1",
+      "texte_ar": "١",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_chiffre_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_chiffre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chiffre_2",
+      "texte_ar": "٢",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_chiffre_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_chiffre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chiffre_3",
+      "texte_ar": "٣",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_chiffre_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_chiffre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chiffre_4",
+      "texte_ar": "٤",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_chiffre_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_chiffre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chiffre_5",
+      "texte_ar": "٥",
+      "voix_m": "coursarabe_niveau1_lecon04_p9_chiffre_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p9_chiffre_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:45:39.407443",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 8
+  }
+}

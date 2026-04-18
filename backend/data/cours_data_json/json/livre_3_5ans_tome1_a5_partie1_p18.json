@@ -1,0 +1,129 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie chaque ver de terre et chaque papillon de la couleur de mon choix",
+    "ar": "أَلْوَن كُلَّ دُودَةٍ وَ فَرَاشَةٍ بِلَوْنٍ أَخْتَارُهُ"
+  },
+  "enonce": {
+    "fr": "Colorie chaque ver de terre de la couleur de ton choix, puis colorie chaque papillon de la couleur de ton choix. Ne colorie pas les autres animaux.",
+    "ar": "أَلْوَن كُلَّ دُودَةٍ بِلَوْنٍ أَخْتَارُهُ، وَ أَلْوَن كُلَّ فَرَاشَةٍ بِلَوْنٍ أَخْتَارُهُ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دُودَة",
+      "fr": "ver de terre",
+      "emoji": "🪱"
+    },
+    {
+      "id": "2",
+      "ar": "خَرُوف",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "3",
+      "ar": "ضِفْدَع",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "4",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "5",
+      "ar": "فَرَاشَة",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "6",
+      "ar": "قِرْد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "7",
+      "ar": "بَقَرَة",
+      "fr": "vache",
+      "emoji": "🐄"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "أَلْوَن كُلَّ دُودَةٍ بِلَوْنٍ أَخْتَارُهُ، وَ أَلْوَن كُلَّ فَرَاشَةٍ بِلَوْنٍ أَخْتَارُهُ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دُودَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خَرُوف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَطَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قِرْد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَقَرَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p18_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p18_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:03.185700",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

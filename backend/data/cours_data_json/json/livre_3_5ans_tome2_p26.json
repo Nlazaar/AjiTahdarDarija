@@ -1,0 +1,272 @@
+{
+  "page_nb": 26,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure la lettre Haa sous toutes ses formes",
+    "ar": "أحيط الحرف بمختلف أشكاله"
+  },
+  "enonce": {
+    "fr": "Entoure toutes les formes de la lettre Haa (ح) parmi les lettres proposées",
+    "ar": "أحيط جميع أشكال حرف الحاء (ح) من بين الحروف المعروضة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ك",
+      "fr": "Kaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "ح",
+      "fr": "Haa (isolé)",
+      "emoji": "✅"
+    },
+    {
+      "id": "3",
+      "ar": "ج",
+      "fr": "Djim",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ح",
+      "fr": "Haa (forme médiane)",
+      "emoji": "✅"
+    },
+    {
+      "id": "5",
+      "ar": "ي",
+      "fr": "Ya",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ة",
+      "fr": "Ta marbuta",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "ض",
+      "fr": "Dad",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "ء",
+      "fr": "Hamza",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "ع",
+      "fr": "Ain",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "خ",
+      "fr": "Kha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "ح",
+      "fr": "Haa (forme initiale)",
+      "emoji": "✅"
+    },
+    {
+      "id": "15",
+      "ar": "ح",
+      "fr": "Haa (forme finale)",
+      "emoji": "✅"
+    },
+    {
+      "id": "16",
+      "ar": "ح",
+      "fr": "Haa (dernière rangée)",
+      "emoji": "✅"
+    },
+    {
+      "id": "17",
+      "ar": "غ",
+      "fr": "Ghain",
+      "emoji": "🔤"
+    },
+    {
+      "id": "18",
+      "ar": "ع",
+      "fr": "Ain (isolé)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p26_consigne",
+      "texte_ar": "أحيط جميع أشكال حرف الحاء (ح) من بين الحروف المعروضة",
+      "voix_m": "livre_3_5ans_tome2_p26_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ك",
+      "voix_m": "livre_3_5ans_tome2_p26_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p26_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p26_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p26_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome2_p26_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_p26_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ض",
+      "voix_m": "livre_3_5ans_tome2_p26_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_p26_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_p26_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ء",
+      "voix_m": "livre_3_5ans_tome2_p26_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome2_p26_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ع",
+      "voix_m": "livre_3_5ans_tome2_p26_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_p26_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p26_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p26_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p26_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "غ",
+      "voix_m": "livre_3_5ans_tome2_p26_17_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "ع",
+      "voix_m": "livre_3_5ans_tome2_p26_18_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p26_18_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:59:43.324251",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 19
+  }
+}

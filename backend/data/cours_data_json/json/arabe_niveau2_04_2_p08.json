@@ -1,0 +1,90 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Lignes et tracés",
+    "ar": "خطوط"
+  },
+  "enonce": {
+    "fr": "Trace les formes en suivant le modèle pointillé : des cercles, la lettre ر, la lettre ق, puis le mot قمر (lune).",
+    "ar": "تتبع الأشكال على النقاط: دوائر، حرف ر، حرف ق، ثم كلمة قمر."
+  },
+  "elements": [
+    {
+      "id": "cercle",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "lettre_ra",
+      "ar": "ر",
+      "fr": "lettre Ra",
+      "emoji": "✍️"
+    },
+    {
+      "id": "lettre_qaf",
+      "ar": "ق",
+      "fr": "lettre Qaf",
+      "emoji": "✍️"
+    },
+    {
+      "id": "mot_qamar",
+      "ar": "قمر",
+      "fr": "lune",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "تتبع الأشكال على النقاط: دوائر، حرف ر، حرف ق، ثم كلمة قمر.",
+      "voix_m": "arabe_niveau2_04_2_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle",
+      "texte_ar": "دائرة",
+      "voix_m": "arabe_niveau2_04_2_p8_cercle_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p8_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ra",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_04_2_p8_lettre_ra_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p8_lettre_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_qaf",
+      "texte_ar": "ق",
+      "voix_m": "arabe_niveau2_04_2_p8_lettre_qaf_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p8_lettre_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_qamar",
+      "texte_ar": "قمر",
+      "voix_m": "arabe_niveau2_04_2_p8_mot_qamar_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p8_mot_qamar_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:43:49.761737",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 5
+  }
+}

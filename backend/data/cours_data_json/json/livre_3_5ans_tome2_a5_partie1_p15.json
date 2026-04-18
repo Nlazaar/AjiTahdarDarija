@@ -1,0 +1,64 @@
+{
+  "page_nb": 15,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلْوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Regarde l'image, lis le mot et colorie les lettres qui composent ce mot parmi celles proposées",
+    "ar": "اُنْظُرْ إلى الصورة، اقرأ الكلمة ثم لوِّن الحروف التي تُكوِّن هذه الكلمة من بين الحروف المعروضة"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "mot2",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p15_consigne",
+      "texte_ar": "اُنْظُرْ إلى الصورة، اقرأ الكلمة ثم لوِّن الحروف التي تُكوِّن هذه الكلمة من بين الحروف المعروضة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p15_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p15_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p15_mot1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p15_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p15_mot2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p15_mot2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:17:25.512654",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 3
+  }
+}

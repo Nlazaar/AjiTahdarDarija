@@ -1,0 +1,194 @@
+{
+  "page_nb": 57,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorier la lettre Fa dans les mots",
+    "ar": "أُلَوِّنُ الحَرْفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre Fa (ف) dans chaque mot selon sa position : rouge au début, vert au milieu, orange à la fin, bleu isolé",
+    "ar": "لوّن حرف الفاء في كل كلمة حسب موضعه: أحمر في البداية، أخضر في الوسط، برتقالي في النهاية، أزرق منفرد"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَلْفَة",
+      "fr": "Alfa (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "2",
+      "ar": "فُسْتَان",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "3",
+      "ar": "فَتَاة",
+      "fr": "Fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "4",
+      "ar": "أَنْف",
+      "fr": "Nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "5",
+      "ar": "فَاتَ",
+      "fr": "Il est passé",
+      "emoji": "⏳"
+    },
+    {
+      "id": "6",
+      "ar": "حَافِلَة",
+      "fr": "Bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "7",
+      "ar": "فَأْس",
+      "fr": "Hache",
+      "emoji": "🪓"
+    },
+    {
+      "id": "8",
+      "ar": "فَقْر",
+      "fr": "Pauvreté",
+      "emoji": "💸"
+    },
+    {
+      "id": "9",
+      "ar": "فُتَات",
+      "fr": "Miettes",
+      "emoji": "🍞"
+    },
+    {
+      "id": "10",
+      "ar": "فَأْر",
+      "fr": "Souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "11",
+      "ar": "رُفُوف",
+      "fr": "Étagères",
+      "emoji": "📚"
+    },
+    {
+      "id": "12",
+      "ar": "سَفِير",
+      "fr": "Ambassadeur",
+      "emoji": "🏛️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p57_consigne",
+      "texte_ar": "لوّن حرف الفاء في كل كلمة حسب موضعه: أحمر في البداية، أخضر في الوسط، برتقالي في النهاية، أزرق منفرد",
+      "voix_m": "livre_3_5ans_tome2_p57_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَلْفَة",
+      "voix_m": "livre_3_5ans_tome2_p57_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "livre_3_5ans_tome2_p57_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَتَاة",
+      "voix_m": "livre_3_5ans_tome2_p57_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَنْف",
+      "voix_m": "livre_3_5ans_tome2_p57_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَاتَ",
+      "voix_m": "livre_3_5ans_tome2_p57_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حَافِلَة",
+      "voix_m": "livre_3_5ans_tome2_p57_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فَأْس",
+      "voix_m": "livre_3_5ans_tome2_p57_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "فَقْر",
+      "voix_m": "livre_3_5ans_tome2_p57_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "فُتَات",
+      "voix_m": "livre_3_5ans_tome2_p57_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "فَأْر",
+      "voix_m": "livre_3_5ans_tome2_p57_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رُفُوف",
+      "voix_m": "livre_3_5ans_tome2_p57_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سَفِير",
+      "voix_m": "livre_3_5ans_tome2_p57_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p57_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:05:11.704298",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 13
+  }
+}

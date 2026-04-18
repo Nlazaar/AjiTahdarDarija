@@ -1,0 +1,142 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Leçon 3 – Relier, compléter et trouver des mots",
+    "ar": "الدَّرْسُ 3 – رَبْطٌ وَإِكْمَالٌ وَاسْتِخْرَاجٌ"
+  },
+  "enonce": {
+    "fr": "1) Je relie pour obtenir une phrase du texte. 2) Je complète en m'aidant du texte. 3) Je retrouve dans le texte trois mots contenant les lettres أ et ب",
+    "ar": "1) أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ. 2) أُكْمِلُ بِمَا يُنَاسِبُ حَسَبَ النَّصِّ. 3) أَسْتَخْرِجُ مِنَ النَّصِّ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "أَنْفِي",
+      "fr": "mon nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "e2",
+      "ar": "شَعْرِي",
+      "fr": "mes cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "e3",
+      "ar": "أَلْبَسُ مَلابِسَ",
+      "fr": "je porte des vêtements",
+      "emoji": "👗"
+    },
+    {
+      "id": "e4",
+      "ar": "بِأَلْوَانٍ عَدِيدَةٍ وَ زَاهِيَةٍ",
+      "fr": "de nombreuses couleurs vives",
+      "emoji": "🎨"
+    },
+    {
+      "id": "e5",
+      "ar": "كَبِيرٌ وَ أَحْمَرُ",
+      "fr": "grand et rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "e6",
+      "ar": "لَوْنُهُ أَصْفَرُ",
+      "fr": "sa couleur est jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "e7",
+      "ar": "أ",
+      "fr": "lettre alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e8",
+      "ar": "ب",
+      "fr": "lettre ba",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "1) أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ. 2) أُكْمِلُ بِمَا يُنَاسِبُ حَسَبَ النَّصِّ. 3) أَسْتَخْرِجُ مِنَ النَّصِّ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ",
+      "voix_m": "lecture_niv4_lec03_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "أَنْفِي",
+      "voix_m": "lecture_niv4_lec03_p2_e1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "شَعْرِي",
+      "voix_m": "lecture_niv4_lec03_p2_e2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "أَلْبَسُ مَلابِسَ",
+      "voix_m": "lecture_niv4_lec03_p2_e3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "بِأَلْوَانٍ عَدِيدَةٍ وَ زَاهِيَةٍ",
+      "voix_m": "lecture_niv4_lec03_p2_e4_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "كَبِيرٌ وَ أَحْمَرُ",
+      "voix_m": "lecture_niv4_lec03_p2_e5_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e6",
+      "texte_ar": "لَوْنُهُ أَصْفَرُ",
+      "voix_m": "lecture_niv4_lec03_p2_e6_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e7",
+      "texte_ar": "أ",
+      "voix_m": "lecture_niv4_lec03_p2_e7_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e8",
+      "texte_ar": "ب",
+      "voix_m": "lecture_niv4_lec03_p2_e8_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p2_e8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:38:18.973712",
+    "niveau": 4,
+    "lecon": 3,
+    "nom_pdf": "lecture_niv4_lec03",
+    "bucket_audio": "audio-lessons/niveau4/lecon03/",
+    "nb_audio_assets": 9
+  }
+}

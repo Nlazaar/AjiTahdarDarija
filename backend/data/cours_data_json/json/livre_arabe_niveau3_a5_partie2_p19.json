@@ -1,0 +1,103 @@
+{
+  "page_nb": 19,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon que j'entends la lettre : au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أسْمَعُ الْحَرْفَ فِي أوَّل أو وسط أو آخِرِ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Relie chaque image à la position de la lettre ث dans le mot (début, milieu ou fin)",
+    "ar": "اربط كل صورة بموضع حرف الثاء في الكلمة (أول أو وسط أو آخر)"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثَلَّاجَة",
+      "fr": "réfrigérateur",
+      "emoji": "🧊"
+    },
+    {
+      "id": "2",
+      "ar": "مُثَلَّث",
+      "fr": "triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "3",
+      "ar": "بُوظَة",
+      "fr": "glace/crème glacée",
+      "emoji": "🍦"
+    },
+    {
+      "id": "4",
+      "ar": "ثَلْج",
+      "fr": "glaçons",
+      "emoji": "🧊"
+    },
+    {
+      "id": "5",
+      "ar": "ثُوم",
+      "fr": "ail",
+      "emoji": "🧄"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p19_consigne",
+      "texte_ar": "اربط كل صورة بموضع حرف الثاء في الكلمة (أول أو وسط أو آخر)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثَلَّاجَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مُثَلَّث",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بُوظَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثَلْج",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ثُوم",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p19_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p19_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:33:47.280870",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 6
+  }
+}

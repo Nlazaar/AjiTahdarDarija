@@ -1,0 +1,233 @@
+{
+  "page_nb": 61,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ فِي الْكَلِمَات"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre Hamza (ء / أ / إ / ؤ / ئ) dans chaque mot",
+    "ar": "أَحُطْ بِخَطٍّ مُغْلَقٍ حَرْفَ الهَمْزَةِ فِي كُلِّ كَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "إِبْخَاصَةٌ",
+      "fr": "aiguille",
+      "emoji": "🪡"
+    },
+    {
+      "id": "2",
+      "ar": "مَاءٌ",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "3",
+      "ar": "رُؤْيَا",
+      "fr": "vision/rêve",
+      "emoji": "💭"
+    },
+    {
+      "id": "4",
+      "ar": "رَأَى",
+      "fr": "il a vu",
+      "emoji": "👁️"
+    },
+    {
+      "id": "5",
+      "ar": "لَئِيمٌ",
+      "fr": "avare/vil",
+      "emoji": "😒"
+    },
+    {
+      "id": "6",
+      "ar": "أَنَامَ",
+      "fr": "il a endormi",
+      "emoji": "😴"
+    },
+    {
+      "id": "7",
+      "ar": "سَأَلَ",
+      "fr": "il a demandé",
+      "emoji": "🙋"
+    },
+    {
+      "id": "8",
+      "ar": "سَاءَ",
+      "fr": "il a empiré",
+      "emoji": "😞"
+    },
+    {
+      "id": "9",
+      "ar": "فُؤَادُ",
+      "fr": "cœur/Fouad",
+      "emoji": "❤️"
+    },
+    {
+      "id": "10",
+      "ar": "سَيِّئٌ",
+      "fr": "mauvais",
+      "emoji": "👎"
+    },
+    {
+      "id": "11",
+      "ar": "بَرِيءٌ",
+      "fr": "innocent",
+      "emoji": "😇"
+    },
+    {
+      "id": "12",
+      "ar": "مَأْوَى",
+      "fr": "refuge/abri",
+      "emoji": "🏠"
+    },
+    {
+      "id": "13",
+      "ar": "أَتْلُو",
+      "fr": "je récite",
+      "emoji": "📖"
+    },
+    {
+      "id": "14",
+      "ar": "أَفْعَى",
+      "fr": "vipère",
+      "emoji": "🐍"
+    },
+    {
+      "id": "15",
+      "ar": "إِلَى",
+      "fr": "vers/à",
+      "emoji": "➡️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p61_consigne",
+      "texte_ar": "أَحُطْ بِخَطٍّ مُغْلَقٍ حَرْفَ الهَمْزَةِ فِي كُلِّ كَلِمَة",
+      "voix_m": "livre_arabe_niveau3_p61_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "إِبْخَاصَةٌ",
+      "voix_m": "livre_arabe_niveau3_p61_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَاءٌ",
+      "voix_m": "livre_arabe_niveau3_p61_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رُؤْيَا",
+      "voix_m": "livre_arabe_niveau3_p61_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "رَأَى",
+      "voix_m": "livre_arabe_niveau3_p61_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "لَئِيمٌ",
+      "voix_m": "livre_arabe_niveau3_p61_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَنَامَ",
+      "voix_m": "livre_arabe_niveau3_p61_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَأَلَ",
+      "voix_m": "livre_arabe_niveau3_p61_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سَاءَ",
+      "voix_m": "livre_arabe_niveau3_p61_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "فُؤَادُ",
+      "voix_m": "livre_arabe_niveau3_p61_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "سَيِّئٌ",
+      "voix_m": "livre_arabe_niveau3_p61_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "بَرِيءٌ",
+      "voix_m": "livre_arabe_niveau3_p61_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَأْوَى",
+      "voix_m": "livre_arabe_niveau3_p61_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "أَتْلُو",
+      "voix_m": "livre_arabe_niveau3_p61_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "أَفْعَى",
+      "voix_m": "livre_arabe_niveau3_p61_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "إِلَى",
+      "voix_m": "livre_arabe_niveau3_p61_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p61_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:06:48.567758",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 16
+  }
+}

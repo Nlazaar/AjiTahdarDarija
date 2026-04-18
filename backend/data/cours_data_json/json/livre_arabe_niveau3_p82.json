@@ -1,0 +1,116 @@
+{
+  "page_nb": 82,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بالحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la bonne forme de la lettre ص (ص، صـ، ـصـ)",
+    "ar": "أكمِّل الكَلِمَة بالحَرْفِ النَّاقِصِ: ص، صـ، ـصـ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَحْنُ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "2",
+      "ar": "حِصَانُ",
+      "fr": "cheval",
+      "emoji": "🐴"
+    },
+    {
+      "id": "3",
+      "ar": "عُصْفُورُ",
+      "fr": "moineau / oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "4",
+      "ar": "عَصِيرُ",
+      "fr": "jus",
+      "emoji": "🥤"
+    },
+    {
+      "id": "5",
+      "ar": "بَصَلُ",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "6",
+      "ar": "صِنَّارَةُ",
+      "fr": "canne à pêche",
+      "emoji": "🎣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p82_consigne",
+      "texte_ar": "أكمِّل الكَلِمَة بالحَرْفِ النَّاقِصِ: ص، صـ، ـصـ",
+      "voix_m": "livre_arabe_niveau3_p82_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَحْنُ",
+      "voix_m": "livre_arabe_niveau3_p82_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حِصَانُ",
+      "voix_m": "livre_arabe_niveau3_p82_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عُصْفُورُ",
+      "voix_m": "livre_arabe_niveau3_p82_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "عَصِيرُ",
+      "voix_m": "livre_arabe_niveau3_p82_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بَصَلُ",
+      "voix_m": "livre_arabe_niveau3_p82_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "صِنَّارَةُ",
+      "voix_m": "livre_arabe_niveau3_p82_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p82_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:10:57.250088",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

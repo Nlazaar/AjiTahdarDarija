@@ -1,0 +1,142 @@
+{
+  "page_nb": 22,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie le bon élément",
+    "ar": "أَلْوِنُ الصَّحِيح"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement l'élément correspondant au mot indiqué parmi les images proposées",
+    "ar": "لَوِّنْ فَقَطِ الصُّورَةَ الْمُطَابِقَةَ لِلْكَلِمَةِ الْمَذْكُورَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عَنْكَبُوت",
+      "fr": "araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "2",
+      "ar": "شَمْس",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "3",
+      "ar": "دَار",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "4",
+      "ar": "فَرَاشَة",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "5",
+      "ar": "هِلَال",
+      "fr": "croissant de lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "6",
+      "ar": "سَحَابَة",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "7",
+      "ar": "كُرَة",
+      "fr": "ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "8",
+      "ar": "كُرْسِي",
+      "fr": "chaise",
+      "emoji": "🪑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p22_consigne",
+      "texte_ar": "لَوِّنْ فَقَطِ الصُّورَةَ الْمُطَابِقَةَ لِلْكَلِمَةِ الْمَذْكُورَةِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عَنْكَبُوت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَمْس",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "دَار",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "هِلَال",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سَحَابَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "كُرَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "كُرْسِي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p22_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p22_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:40.846486",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 9
+  }
+}

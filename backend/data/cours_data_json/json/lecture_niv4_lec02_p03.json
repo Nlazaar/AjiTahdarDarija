@@ -1,0 +1,103 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "La famille – Je complète les phrases",
+    "ar": "الْعَائِلَةُ – أُكْمِلُ بِمَا يُنَاسِبُ"
+  },
+  "enonce": {
+    "fr": "Complète chaque phrase avec le mot qui convient parmi : أَبِي، أُمِّي، أَنَا، جَدِّي، أُخْتِي",
+    "ar": "أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ: أَبِي، أُمِّي، أَنَا، جَدِّي، أُخْتِي"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": ".......... مَرِيضٌ.",
+      "fr": ".......... est malade.",
+      "emoji": "👴"
+    },
+    {
+      "id": "2",
+      "ar": ".......... تُسَاعِدُ جَدَّتِي.",
+      "fr": ".......... aide ma grand-mère.",
+      "emoji": "👩"
+    },
+    {
+      "id": "3",
+      "ar": ".......... أُسَاعِدُ أُمِّي.",
+      "fr": ".......... j'aide ma maman.",
+      "emoji": "👧"
+    },
+    {
+      "id": "4",
+      "ar": ".......... يُوَاسِي جَدِّي.",
+      "fr": ".......... réconforte mon grand-père.",
+      "emoji": "👦"
+    },
+    {
+      "id": "5",
+      "ar": ".......... تُقَدِّمُ الطَّعَامَ لِجَدَّتِي.",
+      "fr": ".......... apporte la nourriture à ma grand-mère.",
+      "emoji": "👩‍🦱"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "lecture_niv4_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ: أَبِي، أُمِّي، أَنَا، جَدِّي، أُخْتِي",
+      "voix_m": "lecture_niv4_lec02_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": ".......... مَرِيضٌ.",
+      "voix_m": "lecture_niv4_lec02_p3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": ".......... تُسَاعِدُ جَدَّتِي.",
+      "voix_m": "lecture_niv4_lec02_p3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": ".......... أُسَاعِدُ أُمِّي.",
+      "voix_m": "lecture_niv4_lec02_p3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": ".......... يُوَاسِي جَدِّي.",
+      "voix_m": "lecture_niv4_lec02_p3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": ".......... تُقَدِّمُ الطَّعَامَ لِجَدَّتِي.",
+      "voix_m": "lecture_niv4_lec02_p3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p3_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:37:39.179050",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 6
+  }
+}

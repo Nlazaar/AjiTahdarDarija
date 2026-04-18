@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Sur la table",
+    "ar": "عَلَى الطَّاوِلَةِ"
+  },
+  "enonce": {
+    "fr": "Appuie sur chaque image pour entendre le mot en arabe",
+    "ar": "اِضْغَطْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ بِالْعَرَبِيَّةِ"
+  },
+  "elements": [
+    {
+      "id": "kas",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "sahn",
+      "ar": "صَحْنٌ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "shawka",
+      "ar": "شَوْكَةٌ",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "mil3aqa",
+      "ar": "مِلْعَقَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "sikkeen",
+      "ar": "سِكِّينٌ",
+      "fr": "couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِضْغَطْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ بِالْعَرَبِيَّةِ",
+      "voix_m": "arabe_niveau2_06_1_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kas",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "arabe_niveau2_06_1_p1_kas_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_kas_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sahn",
+      "texte_ar": "صَحْنٌ",
+      "voix_m": "arabe_niveau2_06_1_p1_sahn_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_sahn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shawka",
+      "texte_ar": "شَوْكَةٌ",
+      "voix_m": "arabe_niveau2_06_1_p1_shawka_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_shawka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mil3aqa",
+      "texte_ar": "مِلْعَقَةٌ",
+      "voix_m": "arabe_niveau2_06_1_p1_mil3aqa_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_mil3aqa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sikkeen",
+      "texte_ar": "سِكِّينٌ",
+      "voix_m": "arabe_niveau2_06_1_p1_sikkeen_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p1_sikkeen_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:47:28.297247",
+    "niveau": 2,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau2_06_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon17/",
+    "nb_audio_assets": 6
+  }
+}

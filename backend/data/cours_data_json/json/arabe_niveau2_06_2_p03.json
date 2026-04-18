@@ -1,0 +1,168 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'صحن' (assiette) parmi les mots proposés et entoure chaque fois qu'il apparaît exactement",
+    "ar": "أبحثُ عن كلمة صحن وأحيطُ بها خطًّا في كل مرة تظهر فيها"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "سحن",
+      "fr": "sahne (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "e2",
+      "ar": "ضحن",
+      "fr": "dhahne (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "e3",
+      "ar": "صحن",
+      "fr": "sahne (correct)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e4",
+      "ar": "صحن",
+      "fr": "sahne (correct)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e5",
+      "ar": "طحن",
+      "fr": "tahne (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "e6",
+      "ar": "صحن",
+      "fr": "sahne (correct)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e7",
+      "ar": "صحن",
+      "fr": "sahne (correct)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e8",
+      "ar": "صحين",
+      "fr": "sahhine (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "e9",
+      "ar": "صحن",
+      "fr": "sahne (correct)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e10",
+      "ar": "صحون",
+      "fr": "souhoun (incorrect)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أبحثُ عن كلمة صحن وأحيطُ بها خطًّا في كل مرة تظهر فيها",
+      "voix_m": "arabe_niveau2_06_2_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "سحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e1_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "ضحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e2_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "صحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e3_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "صحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e4_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "طحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e5_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e6",
+      "texte_ar": "صحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e6_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e7",
+      "texte_ar": "صحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e7_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e8",
+      "texte_ar": "صحين",
+      "voix_m": "arabe_niveau2_06_2_p3_e8_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e9",
+      "texte_ar": "صحن",
+      "voix_m": "arabe_niveau2_06_2_p3_e9_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e10",
+      "texte_ar": "صحون",
+      "voix_m": "arabe_niveau2_06_2_p3_e10_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p3_e10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:49:05.651118",
+    "niveau": 2,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau2_06_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon18/",
+    "nb_audio_assets": 11
+  }
+}

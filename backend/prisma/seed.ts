@@ -921,6 +921,612 @@ async function seedVocabModule(
   }
 }
 
+// ─── DONNÉES : ALPHABET MSA ──────────────────────────────────────────────────
+
+const MSA_ALPHABET_GROUPS = [
+  {
+    lessonTitle: 'Les premières lettres',
+    lessonSlug: 'msa-alphabet-1',
+    lessonSubtitle: 'ا ب ت ث ج',
+    order: 1,
+    letters: [
+      { arabic: 'ا', latin: 'a',  fr: "Alif — voyelle longue 'a'" },
+      { arabic: 'ب', latin: 'b',  fr: "Ba — comme dans 'bateau'" },
+      { arabic: 'ت', latin: 't',  fr: "Ta — comme dans 'table'" },
+      { arabic: 'ث', latin: 'th', fr: "Tha — son 'th' anglais de 'think'" },
+      { arabic: 'ج', latin: 'j',  fr: "Jim — comme dans 'jardin'" },
+    ],
+  },
+  {
+    lessonTitle: 'Sons gutturaux',
+    lessonSlug: 'msa-alphabet-2',
+    lessonSubtitle: 'ح خ د ذ ر',
+    order: 2,
+    letters: [
+      { arabic: 'ح', latin: 'h',  fr: "Ha — h aspiré profond" },
+      { arabic: 'خ', latin: 'kh', fr: "Kha — comme le 'ch' allemand" },
+      { arabic: 'د', latin: 'd',  fr: "Dal — comme dans 'dire'" },
+      { arabic: 'ذ', latin: 'dh', fr: "Dhal — son 'th' anglais de 'the'" },
+      { arabic: 'ر', latin: 'r',  fr: "Ra — r roulé" },
+    ],
+  },
+  {
+    lessonTitle: 'Les sifflantes',
+    lessonSlug: 'msa-alphabet-3',
+    lessonSubtitle: 'ز س ش ص ض',
+    order: 3,
+    letters: [
+      { arabic: 'ز', latin: 'z',  fr: "Zay — comme dans 'zéro'" },
+      { arabic: 'س', latin: 's',  fr: "Sin — comme dans 'soleil'" },
+      { arabic: 'ش', latin: 'sh', fr: "Shin — comme dans 'chat'" },
+      { arabic: 'ص', latin: 'S',  fr: "Sad — s emphatique, profond" },
+      { arabic: 'ض', latin: 'D',  fr: "Dad — d emphatique, profond" },
+    ],
+  },
+  {
+    lessonTitle: 'Les emphatiques',
+    lessonSlug: 'msa-alphabet-4',
+    lessonSubtitle: 'ط ظ ع غ ف',
+    order: 4,
+    letters: [
+      { arabic: 'ط', latin: 'T',  fr: "Tah — t emphatique" },
+      { arabic: 'ظ', latin: 'Z',  fr: "Zah — z emphatique" },
+      { arabic: 'ع', latin: "'",  fr: "Ayn — son guttural profond" },
+      { arabic: 'غ', latin: 'gh', fr: "Ghayn — r grasseyé" },
+      { arabic: 'ف', latin: 'f',  fr: "Fa — comme dans 'fleur'" },
+    ],
+  },
+  {
+    lessonTitle: "Fin de l'alphabet",
+    lessonSlug: 'msa-alphabet-5',
+    lessonSubtitle: 'ق ك ل م ن ه و ي',
+    order: 5,
+    letters: [
+      { arabic: 'ق', latin: 'q',  fr: "Qaf — k profond guttural" },
+      { arabic: 'ك', latin: 'k',  fr: "Kaf — comme dans 'café'" },
+      { arabic: 'ل', latin: 'l',  fr: "Lam — comme dans 'lune'" },
+      { arabic: 'م', latin: 'm',  fr: "Mim — comme dans 'maison'" },
+      { arabic: 'ن', latin: 'n',  fr: "Noun — comme dans 'nuit'" },
+      { arabic: 'ه', latin: 'h',  fr: "Ha — h léger aspiré" },
+      { arabic: 'و', latin: 'w',  fr: "Waw — w ou voyelle longue 'ou'" },
+      { arabic: 'ي', latin: 'y',  fr: "Ya — y ou voyelle longue 'i'" },
+    ],
+  },
+];
+
+const ALL_MSA_LETTERS = MSA_ALPHABET_GROUPS.flatMap((g) => g.letters);
+
+async function seedMSAAlphabet(langId: string) {
+  console.log("\n  📖 Module MSA: L'Alphabet Arabe...");
+
+  const module = await prisma.module.upsert({
+    where: { slug: 'msa-module-alphabet' },
+    update: { isPublished: true },
+    create: {
+      title: "MSA — L'Alphabet Arabe",
+      subtitle: 'Les 28 lettres arabes',
+      description: "Maîtrise les 28 lettres de l'alphabet arabe littéraire",
+      slug: 'msa-module-alphabet',
+      level: 1,
+      colorA: '#2a9d8f',
+      colorB: '#21867a',
+      shadowColor: '#1a6b62',
+      isPublished: true,
+    },
+  });
+
+  for (const group of MSA_ALPHABET_GROUPS) {
+    const lesson = await prisma.lesson.upsert({
+      where: { slug: group.lessonSlug },
+      update: { isPublished: true },
+      create: {
+        title: group.lessonTitle,
+        slug: group.lessonSlug,
+        subtitle: group.lessonSubtitle,
+        description: `Apprends ${group.letters.length} lettres : ${group.letters.map(l => l.arabic).join(' ')}`,
+        order: group.order,
+        level: 1,
+        duration: 300,
+        moduleId: module.id,
+        languageId: langId,
+        isPublished: true,
+      },
+    });
+
+    await prisma.exercise.deleteMany({ where: { lessonId: lesson.id } });
+
+    for (const letter of group.letters) {
+      let vocab = await prisma.vocabulary.findFirst({
+        where: { word: letter.arabic, languageId: langId },
+      });
+      if (!vocab) {
+        vocab = await prisma.vocabulary.create({
+          data: {
+            word: letter.arabic,
+            transliteration: letter.latin,
+            translation: { fr: letter.fr },
+            tags: ['alphabet', 'lettre'],
+            languageId: langId,
+          },
+        });
+      }
+
+      // Exercice 1 — QCM : lettre arabe → romanisation
+      const mcDistractors = pickDistractors(letter, ALL_MSA_LETTERS, 3);
+      const mcOptions = shuffle([letter, ...mcDistractors]).map(l => ({
+        value: l.latin, label: l.latin, hint: l.fr,
+      }));
+
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.MULTIPLE_CHOICE,
+          prompt: 'Comment se prononce cette lettre ?',
+          data: { arabic: letter.arabic, options: mcOptions },
+          answer: { value: letter.latin },
+          points: 10,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+
+      // Exercice 2 — LISTENING : son → lettre
+      const listenDistractors = pickDistractors(letter, group.letters, 3);
+      const listenOptions = shuffle([letter, ...listenDistractors]).map(l => ({
+        value: l.arabic, label: l.arabic, latin: l.latin,
+      }));
+
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.LISTENING,
+          prompt: 'Quelle lettre correspond à ce son ?',
+          data: { text: letter.arabic, lang: 'ar-SA', options: listenOptions },
+          answer: { value: letter.arabic },
+          points: 10,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+
+      // Exercice 3 — FILL_BLANK : romanisation → lettre
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.FILL_BLANK,
+          prompt: `Écris la lettre qui se prononce "${letter.latin}"`,
+          data: { latin: letter.latin, hint: letter.fr },
+          answer: { value: letter.arabic, accepted: [letter.arabic] },
+          points: 15,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+    }
+
+    const count = group.letters.length * 3;
+    console.log(`    ✓ "${group.lessonTitle}" — ${group.letters.length} lettres, ${count} exercices`);
+  }
+}
+
+// ─── DONNÉES : VOCABULAIRE MSA ────────────────────────────────────────────────
+
+const MSA_SALUTATIONS: VocabGroup[] = [
+  {
+    lessonTitle: 'Salutations de base',
+    lessonSlug: 'msa-salutations-1',
+    lessonSubtitle: 'السلام عليكم — أهلاً',
+    order: 1,
+    words: [
+      { darija: 'مَرْحَباً',    latin: 'marhaban',        fr: 'Bonjour / Bienvenue', example_d: 'مَرْحَباً، كَيْفَ حَالُكَ؟',     example_f: 'Bonjour, comment vas-tu ?' },
+      { darija: 'السَّلَامُ عَلَيْكُمْ', latin: 'assalamu alaykum', fr: 'Paix sur vous (salut)', example_d: 'السَّلَامُ عَلَيْكُمْ يَا أَصْدِقَاء', example_f: 'Paix sur vous les amis' },
+      { darija: 'شُكْراً',      latin: 'shukran',         fr: 'Merci',               example_d: 'شُكْراً جَزِيلاً',              example_f: 'Merci beaucoup' },
+      { darija: 'مِنْ فَضْلِكَ', latin: 'min fadlika',    fr: "S'il te plaît",       example_d: 'أَعْطِنِي الكِتَابَ مِنْ فَضْلِكَ', example_f: "Donne-moi le livre s'il te plaît" },
+      { darija: 'آسِفٌ',        latin: 'asif',            fr: 'Désolé / Pardon',     example_d: 'آسِفٌ، لَمْ أَفْهَمْ',          example_f: "Désolé, je n'ai pas compris" },
+    ],
+  },
+  {
+    lessonTitle: 'Se présenter',
+    lessonSlug: 'msa-salutations-2',
+    lessonSubtitle: 'اسمي... أنا من...',
+    order: 2,
+    words: [
+      { darija: 'اِسْمِي',       latin: 'ismi',            fr: 'Mon nom est',         example_d: 'اِسْمِي أَحْمَد',               example_f: 'Mon nom est Ahmed' },
+      { darija: 'كَيْفَ حَالُكَ؟', latin: 'kayfa haluk',    fr: 'Comment vas-tu ?',    example_d: 'كَيْفَ حَالُكَ يَا صَدِيقِي؟',  example_f: 'Comment vas-tu mon ami ?' },
+      { darija: 'بِخَيْرٍ',      latin: 'bikhair',         fr: 'Bien / Je vais bien', example_d: 'أَنَا بِخَيْرٍ، شُكْراً',       example_f: 'Je vais bien, merci' },
+      { darija: 'نَعَمْ',        latin: "na'am",           fr: 'Oui',                 example_d: 'نَعَمْ، أَفْهَمُ العَرَبِيَّة', example_f: "Oui, je comprends l'arabe" },
+      { darija: 'لَا',           latin: 'la',              fr: 'Non',                 example_d: 'لَا، لَا أَعْرِفُ',             example_f: 'Non, je ne sais pas' },
+    ],
+  },
+];
+
+const MSA_OBJETS: VocabGroup[] = [
+  {
+    lessonTitle: 'Objets courants',
+    lessonSlug: 'msa-objets-1',
+    lessonSubtitle: 'كِتَاب — قَلَم — بَاب',
+    order: 1,
+    words: [
+      { darija: 'كِتَابٌ',     latin: 'kitab',      fr: 'Un livre',       example_d: 'هَذَا كِتَابٌ مُفِيدٌ',        example_f: 'Ce livre est utile' },
+      { darija: 'قَلَمٌ',      latin: 'qalam',      fr: 'Un stylo',       example_d: 'أَحْتَاجُ إِلَى قَلَمٍ',       example_f: "J'ai besoin d'un stylo" },
+      { darija: 'بَابٌ',       latin: 'bab',        fr: 'Une porte',      example_d: 'البَابُ مَفْتُوحٌ',             example_f: 'La porte est ouverte' },
+      { darija: 'نَافِذَةٌ',   latin: 'nafidha',    fr: 'Une fenêtre',    example_d: 'النَّافِذَةُ مَكْسُورَةٌ',      example_f: 'La fenêtre est cassée' },
+      { darija: 'كُرْسِيٌّ',  latin: 'kursi',      fr: 'Une chaise',     example_d: 'الكُرْسِيُّ مُرِيحٌ',           example_f: 'La chaise est confortable' },
+    ],
+  },
+  {
+    lessonTitle: 'À la maison',
+    lessonSlug: 'msa-objets-2',
+    lessonSubtitle: 'بَيْت — طَاوِلَة — هَاتِف',
+    order: 2,
+    words: [
+      { darija: 'طَاوِلَةٌ',   latin: 'taawila',    fr: 'Une table',      example_d: 'الطَّاوِلَةُ كَبِيرَةٌ',        example_f: 'La table est grande' },
+      { darija: 'هَاتِفٌ',     latin: 'hatif',      fr: 'Un téléphone',   example_d: 'هَاتِفِي جَدِيدٌ',             example_f: 'Mon téléphone est neuf' },
+      { darija: 'بَيْتٌ',      latin: 'bayt',       fr: 'Une maison',     example_d: 'بَيْتُنَا كَبِيرٌ',             example_f: 'Notre maison est grande' },
+      { darija: 'سَيَّارَةٌ', latin: 'sayyara',    fr: 'Une voiture',    example_d: 'السَّيَّارَةُ حَمْرَاءُ',       example_f: 'La voiture est rouge' },
+      { darija: 'مَاءٌ',       latin: "ma'",        fr: 'De l\'eau',      example_d: 'أُرِيدُ كُوبَ مَاءٍ',           example_f: "Je veux un verre d'eau" },
+    ],
+  },
+];
+
+const MSA_NOURRITURE: VocabGroup[] = [
+  {
+    lessonTitle: 'Aliments de base',
+    lessonSlug: 'msa-nourriture-1',
+    lessonSubtitle: 'خُبْز — تُفَّاح — حَلِيب',
+    order: 1,
+    words: [
+      { darija: 'خُبْزٌ',      latin: 'khubz',      fr: 'Du pain',        example_d: 'الخُبْزُ طَازَجٌ',              example_f: 'Le pain est frais' },
+      { darija: 'تُفَّاحَةٌ', latin: 'tuffaha',    fr: 'Une pomme',      example_d: 'التُّفَّاحَةُ حَمْرَاءُ',       example_f: 'La pomme est rouge' },
+      { darija: 'مَوْزٌ',      latin: 'mawz',       fr: 'Une banane',     example_d: 'أُحِبُّ المَوْزَ',              example_f: "J'aime la banane" },
+      { darija: 'حَلِيبٌ',     latin: 'halib',      fr: 'Du lait',        example_d: 'الحَلِيبُ مُفِيدٌ لِلصِّحَّة', example_f: 'Le lait est bon pour la santé' },
+      { darija: 'شَايٌ',       latin: 'shay',       fr: 'Du thé',         example_d: 'أَشْرَبُ الشَّايَ صَبَاحاً',    example_f: 'Je bois le thé le matin' },
+    ],
+  },
+  {
+    lessonTitle: 'Repas et boissons',
+    lessonSlug: 'msa-nourriture-2',
+    lessonSubtitle: 'قَهْوَة — أُرُزّ — لَحْم',
+    order: 2,
+    words: [
+      { darija: 'قَهْوَةٌ',    latin: 'qahwa',      fr: 'Un café',        example_d: 'أُرِيدُ فِنْجَانَ قَهْوَة',    example_f: 'Je veux une tasse de café' },
+      { darija: 'أُرُزٌّ',     latin: 'aruzz',      fr: 'Du riz',         example_d: 'الأُرُزُّ طَعَامٌ أَسَاسِيٌّ', example_f: 'Le riz est un aliment de base' },
+      { darija: 'لَحْمٌ',      latin: 'lahm',       fr: 'De la viande',   example_d: 'أُحِبُّ اللَّحْمَ المَشْوِيَّ', example_f: "J'aime la viande grillée" },
+      { darija: 'فَاكِهَةٌ',   latin: 'fakiha',     fr: 'Un fruit',       example_d: 'الفَاكِهَةُ صِحِّيَّةٌ',       example_f: 'Les fruits sont sains' },
+      { darija: 'خُضَرٌ',      latin: 'khudar',     fr: 'Des légumes',    example_d: 'الخُضَرُ مُفِيدَةٌ لِلجِسْم',  example_f: 'Les légumes sont bons pour le corps' },
+    ],
+  },
+];
+
+const MSA_FAMILLE: VocabGroup[] = [
+  {
+    lessonTitle: 'La famille proche',
+    lessonSlug: 'msa-famille-1',
+    lessonSubtitle: 'أَب — أُم — أَخ',
+    order: 1,
+    words: [
+      { darija: 'أَبٌ',        latin: 'ab',         fr: 'Un père',        example_d: 'أَبِي طَيِّبٌ جِدًّا',          example_f: 'Mon père est très gentil' },
+      { darija: 'أُمٌّ',       latin: 'umm',        fr: 'Une mère',       example_d: 'أُمِّي تُحِبُّنِي كَثِيراً',    example_f: 'Ma mère m\'aime beaucoup' },
+      { darija: 'أَخٌ',        latin: 'akh',        fr: 'Un frère',       example_d: 'لِي أَخٌ كَبِيرٌ',             example_f: "J'ai un grand frère" },
+      { darija: 'أُخْتٌ',      latin: 'ukht',       fr: 'Une sœur',       example_d: 'أُخْتِي تَدْرُسُ الطِّبَّ',    example_f: 'Ma sœur étudie la médecine' },
+      { darija: 'ابْنٌ',       latin: 'ibn',        fr: 'Un fils',        example_d: 'هَذَا اِبْنِي الصَّغِير',       example_f: 'Voici mon petit fils' },
+    ],
+  },
+  {
+    lessonTitle: 'La famille élargie',
+    lessonSlug: 'msa-famille-2',
+    lessonSubtitle: 'جَد — عَم — خَال',
+    order: 2,
+    words: [
+      { darija: 'جَدٌّ',       latin: 'jadd',       fr: 'Un grand-père',  example_d: 'جَدِّي عُمْرُهُ ثَمَانُونَ',   example_f: 'Mon grand-père a quatre-vingts ans' },
+      { darija: 'جَدَّةٌ',     latin: 'jadda',      fr: 'Une grand-mère', example_d: 'جَدَّتِي تَحْكِي قِصَصاً',      example_f: 'Ma grand-mère raconte des histoires' },
+      { darija: 'عَمٌّ',       latin: 'amm',        fr: 'Un oncle (paternel)', example_d: 'عَمِّي يَسْكُنُ فِي القَاهِرَة', example_f: 'Mon oncle habite au Caire' },
+      { darija: 'خَالٌ',       latin: 'khal',       fr: 'Un oncle (maternel)', example_d: 'خَالِي طَبِيبٌ مَاهِر',    example_f: 'Mon oncle est un médecin habile' },
+      { darija: 'بِنْتٌ',      latin: 'bint',       fr: 'Une fille',      example_d: 'بِنْتُهُ تُحِبُّ الرِّسَامَة', example_f: 'Sa fille aime le dessin' },
+    ],
+  },
+];
+
+const MSA_COULEURS: VocabGroup[] = [
+  {
+    lessonTitle: 'Les couleurs primaires',
+    lessonSlug: 'msa-couleurs-1',
+    lessonSubtitle: 'أَحْمَر — أَزْرَق — أَخْضَر',
+    order: 1,
+    words: [
+      { darija: 'أَحْمَرُ',    latin: 'ahmar',      fr: 'Rouge',          example_d: 'الوَرْدَةُ حَمْرَاءُ',         example_f: 'La rose est rouge' },
+      { darija: 'أَزْرَقُ',    latin: 'azraq',      fr: 'Bleu',           example_d: 'السَّمَاءُ زَرْقَاءُ',          example_f: 'Le ciel est bleu' },
+      { darija: 'أَخْضَرُ',    latin: 'akhDar',     fr: 'Vert',           example_d: 'العُشْبُ أَخْضَرُ',             example_f: "L'herbe est verte" },
+      { darija: 'أَصْفَرُ',    latin: 'asfar',      fr: 'Jaune',          example_d: 'الشَّمْسُ صَفْرَاءُ',           example_f: 'Le soleil est jaune' },
+      { darija: 'أَبْيَضُ',    latin: 'abyad',      fr: 'Blanc',          example_d: 'الثَّلْجُ أَبْيَضُ',            example_f: 'La neige est blanche' },
+    ],
+  },
+  {
+    lessonTitle: 'Plus de couleurs',
+    lessonSlug: 'msa-couleurs-2',
+    lessonSubtitle: 'أَسْوَد — بُرْتُقَالِي — بَنَفْسَجِي',
+    order: 2,
+    words: [
+      { darija: 'أَسْوَدُ',    latin: 'aswad',      fr: 'Noir',           example_d: 'اللَّيْلُ أَسْوَدُ',            example_f: 'La nuit est noire' },
+      { darija: 'بُرْتُقَالِيٌّ', latin: 'burtuqali', fr: 'Orange',      example_d: 'البُرْتُقَالَةُ لَوْنُهَا بُرْتُقَالِيٌّ', example_f: "L'orange est de couleur orange" },
+      { darija: 'بَنَفْسَجِيٌّ', latin: 'banafsaji', fr: 'Violet',       example_d: 'الزَّهْرَةُ بَنَفْسَجِيَّة',     example_f: 'La fleur est violette' },
+      { darija: 'بُنِّيٌّ',     latin: 'bunni',      fr: 'Marron',         example_d: 'الأَرْضُ لَوْنُهَا بُنِّيٌّ',   example_f: 'La terre est marron' },
+      { darija: 'رَمَادِيٌّ',   latin: 'ramadi',     fr: 'Gris',           example_d: 'الغُيُومُ رَمَادِيَّة',         example_f: 'Les nuages sont gris' },
+    ],
+  },
+];
+
+// ─── DONNÉES MSA : LES CHIFFRES ──────────────────────────────────────────────
+
+const MSA_CHIFFRES: VocabGroup[] = [
+  {
+    lessonTitle: 'Les nombres de 1 à 10',
+    lessonSlug: 'msa-chiffres-1',
+    lessonSubtitle: 'وَاحِد — اثْنَان — ثَلَاثَة',
+    order: 1,
+    words: [
+      { darija: 'وَاحِدٌ',     latin: 'wahid',    fr: 'Un (1)',       example_d: 'عِنْدِي كِتَابٌ وَاحِدٌ',       example_f: "J'ai un seul livre" },
+      { darija: 'اثْنَانِ',    latin: 'ithnan',   fr: 'Deux (2)',     example_d: 'عِنْدِي اثْنَانِ مِنَ الأَقْلَام', example_f: "J'ai deux stylos" },
+      { darija: 'ثَلَاثَةٌ',   latin: 'thalatha', fr: 'Trois (3)',    example_d: 'ثَلَاثَةُ أَيَّامٍ',              example_f: 'Trois jours' },
+      { darija: 'أَرْبَعَةٌ',  latin: "arba'a",   fr: 'Quatre (4)',   example_d: 'أَرْبَعَةُ أَشْخَاصٍ',            example_f: 'Quatre personnes' },
+      { darija: 'خَمْسَةٌ',    latin: 'khamsa',   fr: 'Cinq (5)',     example_d: 'خَمْسُ دَقَائِقَ',                 example_f: 'Cinq minutes' },
+    ],
+  },
+  {
+    lessonTitle: 'Les nombres de 6 à 10',
+    lessonSlug: 'msa-chiffres-2',
+    lessonSubtitle: 'سِتَّة — سَبْعَة — عَشَرَة',
+    order: 2,
+    words: [
+      { darija: 'سِتَّةٌ',     latin: 'sitta',    fr: 'Six (6)',      example_d: 'سِتَّةُ أَشْهُرٍ',                example_f: 'Six mois' },
+      { darija: 'سَبْعَةٌ',    latin: "sab'a",    fr: 'Sept (7)',     example_d: 'سَبْعَةُ أَيَّامٍ فِي الأُسْبُوع', example_f: 'Sept jours dans la semaine' },
+      { darija: 'ثَمَانِيَةٌ',  latin: 'thamaniya',fr: 'Huit (8)',     example_d: 'الدَّرْسُ فِي السَّاعَة الثَّامِنَة', example_f: 'Le cours est à huit heures' },
+      { darija: 'تِسْعَةٌ',    latin: "tis'a",    fr: 'Neuf (9)',     example_d: 'تِسْعُ نِقَاطٍ',                   example_f: 'Neuf points' },
+      { darija: 'عَشَرَةٌ',    latin: 'ashara',   fr: 'Dix (10)',     example_d: 'عَشَرَةُ طُلَّابٍ',                example_f: 'Dix élèves' },
+    ],
+  },
+];
+
+// ─── DONNÉES MSA : LES ANIMAUX ───────────────────────────────────────────────
+
+const MSA_ANIMAUX: VocabGroup[] = [
+  {
+    lessonTitle: 'Les animaux domestiques',
+    lessonSlug: 'msa-animaux-1',
+    lessonSubtitle: 'قِطَّة — كَلْب — حِصَان',
+    order: 1,
+    words: [
+      { darija: 'قِطَّةٌ',     latin: 'qitta',    fr: 'Un chat',       example_d: 'القِطَّةُ تَنَامُ كَثِيراً',     example_f: 'Le chat dort beaucoup' },
+      { darija: 'كَلْبٌ',      latin: 'kalb',     fr: 'Un chien',      example_d: 'الكَلْبُ وَفِيٌّ',               example_f: 'Le chien est fidèle' },
+      { darija: 'حِصَانٌ',     latin: 'hisan',    fr: 'Un cheval',     example_d: 'الحِصَانُ سَرِيعٌ',              example_f: 'Le cheval est rapide' },
+      { darija: 'بَقَرَةٌ',    latin: 'baqara',   fr: 'Une vache',     example_d: 'البَقَرَةُ تُعْطِي الحَلِيبَ',   example_f: 'La vache donne du lait' },
+      { darija: 'دَجَاجَةٌ',   latin: 'dajaja',   fr: 'Une poule',     example_d: 'الدَّجَاجَةُ تَبِيضُ كُلَّ يَوْم', example_f: 'La poule pond chaque jour' },
+    ],
+  },
+  {
+    lessonTitle: 'Les animaux sauvages',
+    lessonSlug: 'msa-animaux-2',
+    lessonSubtitle: 'أَسَد — فِيل — طَائِر',
+    order: 2,
+    words: [
+      { darija: 'أَسَدٌ',      latin: 'asad',     fr: 'Un lion',       example_d: 'الأَسَدُ مَلِكُ الغَابَة',       example_f: 'Le lion est le roi de la forêt' },
+      { darija: 'فِيلٌ',       latin: 'fil',      fr: 'Un éléphant',   example_d: 'الفِيلُ حَيَوَانٌ ضَخْم',        example_f: "L'éléphant est un animal énorme" },
+      { darija: 'طَائِرٌ',     latin: "ta'ir",    fr: 'Un oiseau',     example_d: 'الطَّائِرُ يُغَنِّي صَبَاحاً',   example_f: "L'oiseau chante le matin" },
+      { darija: 'سَمَكَةٌ',    latin: 'samaka',   fr: 'Un poisson',    example_d: 'السَّمَكَةُ تَعِيشُ فِي المَاء',  example_f: 'Le poisson vit dans l\'eau' },
+      { darija: 'قِرْدٌ',      latin: 'qird',     fr: 'Un singe',      example_d: 'القِرْدُ ذَكِيٌّ',               example_f: 'Le singe est intelligent' },
+    ],
+  },
+];
+
+// ─── DONNÉES MSA : LE CORPS HUMAIN ───────────────────────────────────────────
+
+const MSA_CORPS: VocabGroup[] = [
+  {
+    lessonTitle: 'Le visage',
+    lessonSlug: 'msa-corps-1',
+    lessonSubtitle: 'رَأْس — عَيْن — أَنْف',
+    order: 1,
+    words: [
+      { darija: 'رَأْسٌ',      latin: "ra's",     fr: 'La tête',       example_d: 'رَأْسِي يُؤْلِمُنِي',            example_f: "J'ai mal à la tête" },
+      { darija: 'عَيْنٌ',      latin: 'ayn',      fr: "L'œil",         example_d: 'عَيْنَاهُ جَمِيلَتَان',          example_f: 'Ses yeux sont beaux' },
+      { darija: 'أَنْفٌ',      latin: 'anf',      fr: 'Le nez',        example_d: 'أَنْفِي مَسْدُودٌ',              example_f: 'Mon nez est bouché' },
+      { darija: 'فَمٌ',        latin: 'fam',      fr: 'La bouche',     example_d: 'اِفْتَحْ فَمَكَ',                example_f: 'Ouvre ta bouche' },
+      { darija: 'أُذُنٌ',      latin: 'udhun',    fr: "L'oreille",     example_d: 'أُذُنِي تُؤْلِمُنِي',            example_f: 'Mon oreille me fait mal' },
+    ],
+  },
+  {
+    lessonTitle: 'Le corps',
+    lessonSlug: 'msa-corps-2',
+    lessonSubtitle: 'يَد — رِجْل — قَلْب',
+    order: 2,
+    words: [
+      { darija: 'يَدٌ',        latin: 'yad',      fr: 'La main',       example_d: 'اغْسِلْ يَدَيْكَ',               example_f: 'Lave tes mains' },
+      { darija: 'رِجْلٌ',      latin: 'rijl',     fr: 'La jambe',      example_d: 'رِجْلِي تُؤْلِمُنِي',            example_f: 'Ma jambe me fait mal' },
+      { darija: 'قَلْبٌ',      latin: 'qalb',     fr: 'Le cœur',       example_d: 'قَلْبُهُ طَيِّبٌ',               example_f: 'Il a bon cœur' },
+      { darija: 'ظَهْرٌ',      latin: 'dhahr',    fr: 'Le dos',        example_d: 'ظَهْرِي يُؤْلِمُنِي',            example_f: "J'ai mal au dos" },
+      { darija: 'كَتِفٌ',      latin: 'katif',    fr: "L'épaule",      example_d: 'كَتِفِي يُؤْلِمُنِي',            example_f: "Mon épaule me fait mal" },
+    ],
+  },
+];
+
+// ─── DONNÉES MSA : LES MÉTIERS ───────────────────────────────────────────────
+
+const MSA_METIERS: VocabGroup[] = [
+  {
+    lessonTitle: 'Les métiers courants',
+    lessonSlug: 'msa-metiers-1',
+    lessonSubtitle: 'طَبِيب — مُعَلِّم — مُهَنْدِس',
+    order: 1,
+    words: [
+      { darija: 'طَبِيبٌ',     latin: 'tabib',    fr: 'Un médecin',    example_d: 'الطَّبِيبُ يُعَالِجُ المَرْضَى', example_f: 'Le médecin soigne les malades' },
+      { darija: 'مُعَلِّمٌ',    latin: "mu'allim", fr: 'Un enseignant', example_d: 'المُعَلِّمُ يُحِبُّ عَمَلَه',     example_f: "L'enseignant aime son travail" },
+      { darija: 'مُهَنْدِسٌ',   latin: 'muhandis', fr: 'Un ingénieur',  example_d: 'أَخِي مُهَنْدِسٌ',              example_f: 'Mon frère est ingénieur' },
+      { darija: 'طَبَّاخٌ',     latin: 'tabbakh',  fr: 'Un cuisinier',  example_d: 'الطَّبَّاخُ مَاهِرٌ',            example_f: 'Le cuisinier est habile' },
+      { darija: 'شُرْطِيٌّ',   latin: 'shurti',   fr: 'Un policier',   example_d: 'الشُّرْطِيُّ يَحْمِي المَدِينَة', example_f: 'Le policier protège la ville' },
+    ],
+  },
+  {
+    lessonTitle: 'Plus de métiers',
+    lessonSlug: 'msa-metiers-2',
+    lessonSubtitle: 'فَلَّاح — تَاجِر — سَائِق',
+    order: 2,
+    words: [
+      { darija: 'فَلَّاحٌ',     latin: 'fallah',   fr: 'Un agriculteur', example_d: 'الفَلَّاحُ يَزْرَعُ القَمْح',    example_f: "L'agriculteur cultive le blé" },
+      { darija: 'تَاجِرٌ',      latin: 'tajir',    fr: 'Un commerçant',  example_d: 'التَّاجِرُ فِي السُّوق',         example_f: 'Le commerçant est au marché' },
+      { darija: 'سَائِقٌ',      latin: "sa'iq",    fr: 'Un chauffeur',   example_d: 'السَّائِقُ مَحْتَرِفٌ',          example_f: 'Le chauffeur est professionnel' },
+      { darija: 'مُمَرِّضَةٌ',   latin: 'mumarriDa',fr: 'Une infirmière', example_d: 'المُمَرِّضَةُ لَطِيفَةٌ',       example_f: "L'infirmière est gentille" },
+      { darija: 'حَلَّاقٌ',     latin: 'hallaq',   fr: 'Un coiffeur',    example_d: 'ذَهَبْتُ إِلَى الحَلَّاق',      example_f: 'Je suis allé chez le coiffeur' },
+    ],
+  },
+];
+
+// ─── DONNÉES MSA : LES TRANSPORTS ────────────────────────────────────────────
+
+const MSA_TRANSPORTS: VocabGroup[] = [
+  {
+    lessonTitle: 'Les moyens de transport',
+    lessonSlug: 'msa-transports-1',
+    lessonSubtitle: 'سَيَّارَة — قِطَار — طَائِرَة',
+    order: 1,
+    words: [
+      { darija: 'سَيَّارَةٌ',  latin: 'sayyara',  fr: 'Une voiture',   example_d: 'السَّيَّارَةُ سَرِيعَةٌ',        example_f: 'La voiture est rapide' },
+      { darija: 'قِطَارٌ',     latin: 'qitar',    fr: 'Un train',      example_d: 'القِطَارُ فِي المَحَطَّة',       example_f: 'Le train est à la gare' },
+      { darija: 'طَائِرَةٌ',   latin: "ta'ira",   fr: 'Un avion',      example_d: 'الطَّائِرَةُ تُقْلِعُ السَّاعَة العَاشِرَة', example_f: "L'avion décolle à dix heures" },
+      { darija: 'حَافِلَةٌ',   latin: 'hafila',   fr: 'Un bus',        example_d: 'الحَافِلَةُ مُمْتَلِئَةٌ',       example_f: 'Le bus est plein' },
+      { darija: 'دَرَّاجَةٌ',  latin: 'darraja',  fr: 'Un vélo',       example_d: 'أَرْكَبُ الدَّرَّاجَة كُلَّ يَوْم', example_f: 'Je fais du vélo chaque jour' },
+    ],
+  },
+  {
+    lessonTitle: 'Se déplacer',
+    lessonSlug: 'msa-transports-2',
+    lessonSubtitle: 'يَمِين — يَسَار — قَرِيب',
+    order: 2,
+    words: [
+      { darija: 'يَمِينٌ',     latin: 'yamin',    fr: 'Droite',        example_d: 'اُدْخُلْ مِنَ اليَمِين',        example_f: 'Entre par la droite' },
+      { darija: 'يَسَارٌ',     latin: 'yasar',    fr: 'Gauche',        example_d: 'المَدْرَسَةُ عَلَى اليَسَار',    example_f: "L'école est à gauche" },
+      { darija: 'قَرِيبٌ',     latin: 'qarib',    fr: 'Proche',        example_d: 'البَيْتُ قَرِيبٌ',               example_f: 'La maison est proche' },
+      { darija: 'بَعِيدٌ',     latin: "ba'id",    fr: 'Loin',          example_d: 'المَدِينَةُ بَعِيدَة',            example_f: 'La ville est loin' },
+      { darija: 'مُسْتَقِيمٌ', latin: 'mustaqim', fr: 'Tout droit',    example_d: 'اِمْشِ مُسْتَقِيماً',            example_f: 'Marche tout droit' },
+    ],
+  },
+];
+
+// ─── SEED : MODULE MSA ────────────────────────────────────────────────────────
+
+async function seedMSAModule(
+  langId: string,
+  meta: ModuleMeta,
+  groups: VocabGroup[],
+) {
+  console.log(`\n  📖 Module MSA: ${meta.title}...`);
+
+  const module = await prisma.module.upsert({
+    where: { slug: meta.slug },
+    update: { isPublished: true },
+    create: {
+      title: meta.title,
+      subtitle: meta.subtitle,
+      description: meta.description,
+      slug: meta.slug,
+      level: meta.level,
+      colorA: meta.colorA,
+      colorB: meta.colorB,
+      shadowColor: meta.shadowColor,
+      isPublished: true,
+    },
+  });
+
+  const allWords = groups.flatMap((g) => g.words);
+
+  for (const group of groups) {
+    const lesson = await prisma.lesson.upsert({
+      where: { slug: group.lessonSlug },
+      update: { isPublished: true },
+      create: {
+        title: group.lessonTitle,
+        slug: group.lessonSlug,
+        subtitle: group.lessonSubtitle,
+        order: group.order,
+        level: meta.level,
+        duration: 300,
+        moduleId: module.id,
+        languageId: langId,
+        isPublished: true,
+      },
+    });
+
+    await prisma.exercise.deleteMany({ where: { lessonId: lesson.id } });
+
+    for (const word of group.words) {
+      let vocab = await prisma.vocabulary.findFirst({
+        where: { word: word.darija, languageId: langId },
+      });
+      if (!vocab) {
+        vocab = await prisma.vocabulary.create({
+          data: {
+            word: word.darija,
+            transliteration: word.latin,
+            translation: { fr: word.fr },
+            examples: [{ darija: word.example_d, fr: word.example_f }],
+            tags: ['msa', 'fus7a'],
+            languageId: langId,
+          },
+        });
+      }
+
+      // Exercice 1 — MULTIPLE_CHOICE : arabe → français
+      const mcDistractors = pickDistractors(word, allWords, 3);
+      const mcOptions = shuffle([word, ...mcDistractors]).map((w) => ({
+        value: w.fr,
+        label: w.fr,
+      }));
+
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.MULTIPLE_CHOICE,
+          prompt: word.darija,
+          data: { word: word.darija, transliteration: word.latin, options: mcOptions },
+          answer: { value: word.fr },
+          points: 10,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+
+      // Exercice 2 — TRANSLATION : français → translittération
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.TRANSLATION,
+          prompt: `Comment dit-on "${word.fr}" en arabe ?`,
+          data: { fr: word.fr, hint: word.example_f, example: { darija: word.example_d, fr: word.example_f } },
+          answer: { value: word.latin, accepted: [word.latin.toLowerCase(), word.darija] },
+          points: 15,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+
+      // Exercice 3 — LISTENING : son → identifier le mot
+      const listenDistractors = pickDistractors(word, group.words, 3);
+      const listenOptions = shuffle([word, ...listenDistractors]).map((w) => ({
+        value: w.fr,
+        label: w.fr,
+      }));
+
+      await prisma.exercise.create({
+        data: {
+          type: ExerciseType.LISTENING,
+          prompt: 'Quel mot entends-tu ?',
+          data: { text: word.darija, lang: 'ar-SA', options: listenOptions },
+          answer: { value: word.fr },
+          points: 10,
+          lessonId: lesson.id,
+          vocabularyId: vocab.id,
+        },
+      });
+    }
+
+    console.log(`    ✓ "${group.lessonTitle}" — ${group.words.length} mots, ${group.words.length * 3} exercices`);
+  }
+}
+
 // ─── SEED : BADGES ────────────────────────────────────────────────────────────
 
 async function seedBadges() {
@@ -971,12 +1577,17 @@ async function main() {
     update: {},
     create: { code: 'ar-MA', name: 'Darija marocaine' },
   });
+  const langArSA = await prisma.language.upsert({
+    where: { code: 'ar-SA' },
+    update: {},
+    create: { code: 'ar-SA', name: 'Arabe littéraire (MSA)' },
+  });
   await prisma.language.upsert({
     where: { code: 'fr' },
     update: {},
     create: { code: 'fr', name: 'Français' },
   });
-  console.log('\n  ✓ Langues (ar-MA, fr)');
+  console.log('\n  ✓ Langues (ar-MA, ar-SA, fr)');
 
   // Modules
   await seedAlphabet(langArMA.id);
@@ -1145,6 +1756,122 @@ async function main() {
     colorB: '#00838f',
     shadowColor: '#006064',
   }, SANTE_GROUPS);
+
+  // ── Modules MSA (Arabe Littéraire) ──
+  console.log('\n\n📖 Parcours MSA — Arabe Littéraire');
+
+  // Section 1 — L'Alphabet (doit être le PREMIER module MSA)
+  await seedMSAAlphabet(langArSA.id);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Salutations',
+    subtitle: 'Bonjour, merci, au revoir',
+    slug: 'msa-module-salutations',
+    description: "Les bases pour saluer et se présenter en arabe littéraire",
+    level: 1,
+    colorA: '#1565c0',
+    colorB: '#0d47a1',
+    shadowColor: '#0a3880',
+  }, MSA_SALUTATIONS);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Objets du quotidien',
+    subtitle: 'Livre, porte, maison...',
+    slug: 'msa-module-objets',
+    description: "Nommer les objets courants en arabe littéraire",
+    level: 1,
+    colorA: '#00838f',
+    colorB: '#006064',
+    shadowColor: '#004d40',
+  }, MSA_OBJETS);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — La Nourriture',
+    subtitle: 'Pain, fruits, boissons',
+    slug: 'msa-module-nourriture',
+    description: "Vocabulaire alimentaire en arabe littéraire",
+    level: 1,
+    colorA: '#2e7d32',
+    colorB: '#1b5e20',
+    shadowColor: '#144d18',
+  }, MSA_NOURRITURE);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — La Famille',
+    subtitle: 'Père, mère, frères...',
+    slug: 'msa-module-famille',
+    description: "Parler de sa famille en arabe littéraire",
+    level: 1,
+    colorA: '#ad1457',
+    colorB: '#880e4f',
+    shadowColor: '#6d0c3e',
+  }, MSA_FAMILLE);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Les Couleurs',
+    subtitle: 'Rouge, bleu, vert...',
+    slug: 'msa-module-couleurs',
+    description: "Les couleurs en arabe littéraire",
+    level: 2,
+    colorA: '#e65100',
+    colorB: '#bf360c',
+    shadowColor: '#992b0a',
+  }, MSA_COULEURS);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Les Chiffres',
+    subtitle: 'Compter de 1 à 10',
+    slug: 'msa-module-chiffres',
+    description: "Les nombres en arabe littéraire",
+    level: 1,
+    colorA: '#c9941a',
+    colorB: '#a67a10',
+    shadowColor: '#8a6508',
+  }, MSA_CHIFFRES);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Les Animaux',
+    subtitle: 'Chat, lion, oiseau...',
+    slug: 'msa-module-animaux',
+    description: "Les animaux en arabe littéraire",
+    level: 2,
+    colorA: '#6a994e',
+    colorB: '#4a7a2e',
+    shadowColor: '#3a6420',
+  }, MSA_ANIMAUX);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Le Corps Humain',
+    subtitle: 'Tête, main, cœur...',
+    slug: 'msa-module-corps',
+    description: "Le corps humain en arabe littéraire",
+    level: 2,
+    colorA: '#e07a8e',
+    colorB: '#c05a6e',
+    shadowColor: '#a04858',
+  }, MSA_CORPS);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Les Métiers',
+    subtitle: 'Médecin, enseignant...',
+    slug: 'msa-module-metiers',
+    description: "Les métiers en arabe littéraire",
+    level: 2,
+    colorA: '#2d6a4f',
+    colorB: '#1b503a',
+    shadowColor: '#14402e',
+  }, MSA_METIERS);
+
+  await seedMSAModule(langArSA.id, {
+    title: 'MSA — Les Transports',
+    subtitle: 'Voiture, train, avion...',
+    slug: 'msa-module-transports',
+    description: "Se déplacer en arabe littéraire",
+    level: 3,
+    colorA: '#4a6fa5',
+    colorB: '#3a5a8a',
+    shadowColor: '#2e4a72',
+  }, MSA_TRANSPORTS);
 
   await seedBadges();
 

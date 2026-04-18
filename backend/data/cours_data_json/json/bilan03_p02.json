@@ -1,0 +1,259 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Révision et évaluation : barrer les mauvaises orthographes, relier les syllabes pour former des mots et les associer à leur image, compléter des phrases avec les mots de position appropriés",
+  "titre": {
+    "fr": "Révision et évaluation (3)",
+    "ar": "مُرَاجَعَة وَ تَقْيِيم (3)"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je barre quand ce n'est pas la bonne orthographe. Exercice 6 : Je relie pour constituer le mot puis je le relie à son image. Exercice 5 : Je complète avec ce qui convient (أمَامَ / وَرَاءَ).",
+    "ar": "3: أَشْطُبُ الْكِتَابَاتِ الْخَاطِئَةَ. 6: أَرْبِطُ لِأُكَوِّنَ الْكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. 5: أُكْمِلُ بِمَا يُنَاسِبُ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دَرَّاجَةٌ",
+      "fr": "vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "2",
+      "ar": "مِيزَانٌ",
+      "fr": "balance",
+      "emoji": "⚖️"
+    },
+    {
+      "id": "3",
+      "ar": "أَزْهَارٌ",
+      "fr": "fleurs",
+      "emoji": "🌷"
+    },
+    {
+      "id": "4",
+      "ar": "كَنْزٌ",
+      "fr": "trésor",
+      "emoji": "💰"
+    },
+    {
+      "id": "5",
+      "ar": "ذَهَبٌ",
+      "fr": "or",
+      "emoji": "✨"
+    },
+    {
+      "id": "6",
+      "ar": "رَهْزَةٌ",
+      "fr": "fleur",
+      "emoji": "🌸"
+    },
+    {
+      "id": "7",
+      "ar": "وَرْدَةٌ",
+      "fr": "rose",
+      "emoji": "🌹"
+    },
+    {
+      "id": "8",
+      "ar": "رِيحٌ",
+      "fr": "vent/tornade",
+      "emoji": "🌪️"
+    },
+    {
+      "id": "9",
+      "ar": "دَلْوٌ",
+      "fr": "seau",
+      "emoji": "🪣"
+    },
+    {
+      "id": "10",
+      "ar": "إِعْصَارٌ",
+      "fr": "ouragan",
+      "emoji": "🌀"
+    },
+    {
+      "id": "11",
+      "ar": "أَمَامَ",
+      "fr": "devant",
+      "emoji": "➡️"
+    },
+    {
+      "id": "12",
+      "ar": "وَرَاءَ",
+      "fr": "derrière",
+      "emoji": "⬅️"
+    },
+    {
+      "id": "13",
+      "ar": "الْبَطَّةُ",
+      "fr": "le canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "14",
+      "ar": "الْحِمَارُ",
+      "fr": "l'âne",
+      "emoji": "🫏"
+    },
+    {
+      "id": "15",
+      "ar": "الْبَقَرَةُ",
+      "fr": "la vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "16",
+      "ar": "الْخَرُوفُ",
+      "fr": "le mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "17",
+      "ar": "الْجَرَّارُ",
+      "fr": "le tracteur",
+      "emoji": "🚜"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "bilan03",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "3: أَشْطُبُ الْكِتَابَاتِ الْخَاطِئَةَ. 6: أَرْبِطُ لِأُكَوِّنَ الْكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. 5: أُكْمِلُ بِمَا يُنَاسِبُ.",
+      "voix_m": "bilan03_p2_consigne_m.mp3",
+      "voix_f": "bilan03_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دَرَّاجَةٌ",
+      "voix_m": "bilan03_p2_1_m.mp3",
+      "voix_f": "bilan03_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِيزَانٌ",
+      "voix_m": "bilan03_p2_2_m.mp3",
+      "voix_f": "bilan03_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أَزْهَارٌ",
+      "voix_m": "bilan03_p2_3_m.mp3",
+      "voix_f": "bilan03_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كَنْزٌ",
+      "voix_m": "bilan03_p2_4_m.mp3",
+      "voix_f": "bilan03_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ذَهَبٌ",
+      "voix_m": "bilan03_p2_5_m.mp3",
+      "voix_f": "bilan03_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَهْزَةٌ",
+      "voix_m": "bilan03_p2_6_m.mp3",
+      "voix_f": "bilan03_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "وَرْدَةٌ",
+      "voix_m": "bilan03_p2_7_m.mp3",
+      "voix_f": "bilan03_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "رِيحٌ",
+      "voix_m": "bilan03_p2_8_m.mp3",
+      "voix_f": "bilan03_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "دَلْوٌ",
+      "voix_m": "bilan03_p2_9_m.mp3",
+      "voix_f": "bilan03_p2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "إِعْصَارٌ",
+      "voix_m": "bilan03_p2_10_m.mp3",
+      "voix_f": "bilan03_p2_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "أَمَامَ",
+      "voix_m": "bilan03_p2_11_m.mp3",
+      "voix_f": "bilan03_p2_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "وَرَاءَ",
+      "voix_m": "bilan03_p2_12_m.mp3",
+      "voix_f": "bilan03_p2_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "الْبَطَّةُ",
+      "voix_m": "bilan03_p2_13_m.mp3",
+      "voix_f": "bilan03_p2_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "الْحِمَارُ",
+      "voix_m": "bilan03_p2_14_m.mp3",
+      "voix_f": "bilan03_p2_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "الْبَقَرَةُ",
+      "voix_m": "bilan03_p2_15_m.mp3",
+      "voix_f": "bilan03_p2_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "الْخَرُوفُ",
+      "voix_m": "bilan03_p2_16_m.mp3",
+      "voix_f": "bilan03_p2_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "الْجَرَّارُ",
+      "voix_m": "bilan03_p2_17_m.mp3",
+      "voix_f": "bilan03_p2_17_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:03:05.514859",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "bilan03",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 18
+  }
+}

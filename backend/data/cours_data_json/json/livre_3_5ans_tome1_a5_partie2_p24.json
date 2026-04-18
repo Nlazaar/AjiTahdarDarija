@@ -1,0 +1,129 @@
+{
+  "page_nb": 24,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Les légumes - Trouve l'intrus",
+    "ar": "الخُضَر - أشطُبُ الشَّكل المُختلِف"
+  },
+  "enonce": {
+    "fr": "Barre l'élément différent : est-ce que c'est un légume ?",
+    "ar": "أشطُبُ الشَّكل المُختلِف: هل الـ... خضر؟"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فُلْفُل",
+      "fr": "Poivron",
+      "emoji": "🫑"
+    },
+    {
+      "id": "2",
+      "ar": "ثَوْم",
+      "fr": "Ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "3",
+      "ar": "بَصَل",
+      "fr": "Oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "4",
+      "ar": "عِنَب",
+      "fr": "Raisin (intrus)",
+      "emoji": "🍇"
+    },
+    {
+      "id": "5",
+      "ar": "طَمَاطِم",
+      "fr": "Tomate",
+      "emoji": "🍅"
+    },
+    {
+      "id": "6",
+      "ar": "جَزَر",
+      "fr": "Carottes",
+      "emoji": "🥕"
+    },
+    {
+      "id": "7",
+      "ar": "جُلْبَانَة",
+      "fr": "Petit pois",
+      "emoji": "🟢"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p24_consigne",
+      "texte_ar": "أشطُبُ الشَّكل المُختلِف: هل الـ... خضر؟",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فُلْفُل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثَوْم",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بَصَل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "عِنَب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَمَاطِم",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "جَزَر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "جُلْبَانَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p24_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p24_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:32:06.538694",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 8
+  }
+}

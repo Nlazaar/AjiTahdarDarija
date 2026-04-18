@@ -1,0 +1,77 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Relier des points en repassant sur des pointillés pour former des carrés de différentes tailles",
+  "titre": {
+    "fr": "Je relie pour dessiner des grands carrés",
+    "ar": "أَرْبُطُ لِأَرْسُمَ مُرَبَّعَاتٍ كَبِيرَةً"
+  },
+  "enonce": {
+    "fr": "Je relie en repassant sur les pointillés pour dessiner des carrés",
+    "ar": "أَرْبُطُ لِأَرْسُمَ مُرَبَّعَاتٍ كَبِيرَةً"
+  },
+  "elements": [
+    {
+      "id": "carre_vert",
+      "ar": "مُرَبَّعٌ أَخْضَرُ كَبِيرٌ",
+      "fr": "Grand carré vert",
+      "emoji": "🟩"
+    },
+    {
+      "id": "carre_rouge",
+      "ar": "مُرَبَّعٌ أَحْمَرُ مُتَوَسِّطٌ",
+      "fr": "Carré rouge moyen",
+      "emoji": "🟥"
+    },
+    {
+      "id": "carre_bleu",
+      "ar": "مُرَبَّعٌ أَزْرَقُ صَغِيرٌ",
+      "fr": "Petit carré bleu",
+      "emoji": "🟦"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَرْبُطُ لِأَرْسُمَ مُرَبَّعَاتٍ كَبِيرَةً",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carre_vert",
+      "texte_ar": "مُرَبَّعٌ أَخْضَرُ كَبِيرٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p6_carre_vert_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p6_carre_vert_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carre_rouge",
+      "texte_ar": "مُرَبَّعٌ أَحْمَرُ مُتَوَسِّطٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p6_carre_rouge_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p6_carre_rouge_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carre_bleu",
+      "texte_ar": "مُرَبَّعٌ أَزْرَقُ صَغِيرٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p6_carre_bleu_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p6_carre_bleu_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:35:59.716868",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 4
+  }
+}

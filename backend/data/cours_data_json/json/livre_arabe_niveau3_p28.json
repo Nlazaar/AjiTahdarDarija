@@ -1,0 +1,220 @@
+{
+  "page_nb": 28,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Le sukoun - Les jours de la semaine",
+    "ar": "السُّكُون - أيام الأسبوع"
+  },
+  "enonce": {
+    "fr": "Lis à voix haute les syllabes avec le sukoun et les jours de la semaine",
+    "ar": "اقرأ بصوت عالٍ المقاطع التي تحتوي على السكون وأيام الأسبوع"
+  },
+  "elements": [
+    {
+      "id": "jour1",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour2",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour3",
+      "ar": "الأرْبَعَاء",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour4",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour5",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour6",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour7",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "sukoun1",
+      "ar": "تَأْ",
+      "fr": "ta' avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun2",
+      "ar": "أبْ",
+      "fr": "alif-ba avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun3",
+      "ar": "أتْ",
+      "fr": "alif-ta avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun4",
+      "ar": "أثْ",
+      "fr": "alif-tha avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun5",
+      "ar": "أجْ",
+      "fr": "alif-jim avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun6",
+      "ar": "أحْ",
+      "fr": "alif-ha avec sukoun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sukoun7",
+      "ar": "أخْ",
+      "fr": "alif-kha avec sukoun",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p28_consigne",
+      "texte_ar": "اقرأ بصوت عالٍ المقاطع التي تحتوي على السكون وأيام الأسبوع",
+      "voix_m": "livre_arabe_niveau3_p28_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour1",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "livre_arabe_niveau3_p28_jour1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour2",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "livre_arabe_niveau3_p28_jour2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour3",
+      "texte_ar": "الأرْبَعَاء",
+      "voix_m": "livre_arabe_niveau3_p28_jour3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour4",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "livre_arabe_niveau3_p28_jour4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour5",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "livre_arabe_niveau3_p28_jour5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "livre_arabe_niveau3_p28_jour6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour7",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "livre_arabe_niveau3_p28_jour7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_jour7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun1",
+      "texte_ar": "تَأْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun2",
+      "texte_ar": "أبْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun3",
+      "texte_ar": "أتْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun4",
+      "texte_ar": "أثْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun5",
+      "texte_ar": "أجْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun6",
+      "texte_ar": "أحْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sukoun7",
+      "texte_ar": "أخْ",
+      "voix_m": "livre_arabe_niveau3_p28_sukoun7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p28_sukoun7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:59:51.430611",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 15
+  }
+}

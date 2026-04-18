@@ -1,0 +1,164 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Découper des images d'animaux et des cartes mot/image à assembler pour des exercices ultérieurs",
+  "titre": {
+    "fr": "Je découpe ces images pour les exercices suivants",
+    "ar": "أقصُّ هذه الصّور للتّمارين التّالية"
+  },
+  "enonce": {
+    "fr": "Découpe ces images d'animaux et ces cartes illustrées avec leur nom partiel en arabe",
+    "ar": "أقصُّ هذه الصّور للتّمارين التّالية"
+  },
+  "elements": [
+    {
+      "id": "animal_1",
+      "ar": "حوت قاتل / دلفين",
+      "fr": "Orque / dauphin",
+      "emoji": "🐬"
+    },
+    {
+      "id": "animal_2",
+      "ar": "قرد",
+      "fr": "Singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "animal_3",
+      "ar": "بطة",
+      "fr": "Canard / oie",
+      "emoji": "🦆"
+    },
+    {
+      "id": "animal_4",
+      "ar": "زرافة",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "animal_5",
+      "ar": "سمكة",
+      "fr": "Poisson clown",
+      "emoji": "🐠"
+    },
+    {
+      "id": "animal_6",
+      "ar": "حلزون",
+      "fr": "Escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "carte_1",
+      "ar": "سَمَكة",
+      "fr": "Poisson (carte mot partiel)",
+      "emoji": "🐠"
+    },
+    {
+      "id": "carte_2",
+      "ar": "قِرْد",
+      "fr": "Singe (carte mot partiel)",
+      "emoji": "🐒"
+    },
+    {
+      "id": "carte_3",
+      "ar": "قِرْد",
+      "fr": "Singe queue (carte mot partiel)",
+      "emoji": "🐒"
+    },
+    {
+      "id": "carte_4",
+      "ar": "سَمَك",
+      "fr": "Poisson dos (carte mot partiel)",
+      "emoji": "🐠"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أقصُّ هذه الصّور للتّمارين التّالية",
+      "voix_m": "v1_l3_p8_consigne_m.mp3",
+      "voix_f": "v1_l3_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_1",
+      "texte_ar": "حوت قاتل / دلفين",
+      "voix_m": "v1_l3_p8_animal_1_m.mp3",
+      "voix_f": "v1_l3_p8_animal_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_2",
+      "texte_ar": "قرد",
+      "voix_m": "v1_l3_p8_animal_2_m.mp3",
+      "voix_f": "v1_l3_p8_animal_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_3",
+      "texte_ar": "بطة",
+      "voix_m": "v1_l3_p8_animal_3_m.mp3",
+      "voix_f": "v1_l3_p8_animal_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_4",
+      "texte_ar": "زرافة",
+      "voix_m": "v1_l3_p8_animal_4_m.mp3",
+      "voix_f": "v1_l3_p8_animal_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_5",
+      "texte_ar": "سمكة",
+      "voix_m": "v1_l3_p8_animal_5_m.mp3",
+      "voix_f": "v1_l3_p8_animal_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_6",
+      "texte_ar": "حلزون",
+      "voix_m": "v1_l3_p8_animal_6_m.mp3",
+      "voix_f": "v1_l3_p8_animal_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_1",
+      "texte_ar": "سَمَكة",
+      "voix_m": "v1_l3_p8_carte_1_m.mp3",
+      "voix_f": "v1_l3_p8_carte_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_2",
+      "texte_ar": "قِرْد",
+      "voix_m": "v1_l3_p8_carte_2_m.mp3",
+      "voix_f": "v1_l3_p8_carte_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_3",
+      "texte_ar": "قِرْد",
+      "voix_m": "v1_l3_p8_carte_3_m.mp3",
+      "voix_f": "v1_l3_p8_carte_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_4",
+      "texte_ar": "سَمَك",
+      "voix_m": "v1_l3_p8_carte_4_m.mp3",
+      "voix_f": "v1_l3_p8_carte_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:54:04.601185",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 11
+  }
+}

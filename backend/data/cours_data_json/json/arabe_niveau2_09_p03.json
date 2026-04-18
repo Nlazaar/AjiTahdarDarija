@@ -1,0 +1,94 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot illustré parmi les lettres proposées",
+    "ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ الكَلِمَةَ الْمُصَوَّرَةَ مِنْ بَيْنِ الحُرُوفِ الْمَقْتَرَحَةِ"
+  },
+  "elements": [
+    {
+      "id": "exercice_2",
+      "ar": "غُرَاب",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛",
+      "lettres_mot": [
+        "غ",
+        "ر",
+        "ا",
+        "ب"
+      ],
+      "lettres_proposees": [
+        "ع",
+        "غ",
+        "و",
+        "ز",
+        "ر",
+        "ا",
+        "ب"
+      ]
+    },
+    {
+      "id": "exercice_3",
+      "ar": "ضِفْدَع",
+      "fr": "grenouille",
+      "emoji": "🐸",
+      "lettres_mot": [
+        "ض",
+        "ف",
+        "د",
+        "ع"
+      ],
+      "lettres_proposees": [
+        "ض",
+        "ق",
+        "ف",
+        "ر",
+        "د",
+        "غ",
+        "ع"
+      ]
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_09",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ الكَلِمَةَ الْمُصَوَّرَةَ مِنْ بَيْنِ الحُرُوفِ الْمَقْتَرَحَةِ",
+      "voix_m": "arabe_niveau2_09_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_09_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_2",
+      "texte_ar": "غُرَاب",
+      "voix_m": "arabe_niveau2_09_p3_exercice_2_m.mp3",
+      "voix_f": "arabe_niveau2_09_p3_exercice_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_3",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "arabe_niveau2_09_p3_exercice_3_m.mp3",
+      "voix_f": "arabe_niveau2_09_p3_exercice_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:52:52.257333",
+    "niveau": 2,
+    "lecon": 21,
+    "nom_pdf": "arabe_niveau2_09",
+    "bucket_audio": "audio-lessons/niveau2/lecon21/",
+    "nb_audio_assets": 3
+  }
+}

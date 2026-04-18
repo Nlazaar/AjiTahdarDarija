@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, tracer une lettre, compléter des mots avec la lettre أ et ses formes",
+  "titre": {
+    "fr": "Exercices sur la lettre Alif (أ)",
+    "ar": "تمارين على حرف الألف"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre. 3) Je complète avec ce qui convient.",
+    "ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب. ٣) أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "أسنان",
+      "fr": "des dents",
+      "emoji": "🦷"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "كأس",
+      "fr": "un verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "حذاء",
+      "fr": "une chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "خنفساء",
+      "fr": "une coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "أسد",
+      "fr": "un lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "أرنب",
+      "fr": "un lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "ex4_1",
+      "ar": "أ",
+      "fr": "lettre Alif à tracer",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "ببغاء",
+      "fr": "un perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "فأر",
+      "fr": "une souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "طائرة",
+      "fr": "un avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "أخطبوط",
+      "fr": "une pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "رأس",
+      "fr": "une tête",
+      "emoji": "👤"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "إنسان",
+      "fr": "un être humain / un enfant",
+      "emoji": "🧒"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "حساء",
+      "fr": "une soupe",
+      "emoji": "🥣"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "أواني",
+      "fr": "des ustensiles / vaisselle",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "بئر",
+      "fr": "un puits",
+      "emoji": "🪣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec02_hamza",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب. ٣) أكمل بما يناسب.",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "أسنان",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "كأس",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "حذاء",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "خنفساء",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "أسد",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "أرنب",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_1",
+      "texte_ar": "أ",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex4_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "ببغاء",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "فأر",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "طائرة",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "أخطبوط",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "رأس",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "إنسان",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "حساء",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "أواني",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "بئر",
+      "voix_m": "lecture_niv4_lec02_hamza_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:41:48.173939",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02_hamza",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 17
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : écriture de mots à partir d'images, complétion de mots avec la bonne forme de la lettre ب, et complétion d'une phrase avec des mots donnés",
+  "titre": {
+    "fr": "J'écris le mot / Je complète / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أُكْمِلُ بِمَا يُنَاسِبُ / أُكْمِلُ كِتَابَةَ الْجُمْلَةِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot correspondant à chaque image. Exercice 7 : Je complète avec la forme qui convient de la lettre ب. Exercice 8 : Je complète la phrase par les mots suivants : الْمَرِيضَةِ، تُعْطِي، الدَّوَاءَ",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تحت كل صورة. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ من أشكال حرف ب. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ: الْمَرِيضَةِ، تُعْطِي، الدَّوَاءَ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "بَصَل",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "mot_2",
+      "ar": "بَيْت",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "mot_3",
+      "ar": "بَاب",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "mot_4",
+      "ar": "أَرْنَب",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "completion_1",
+      "ar": "بِئْر / آبَار",
+      "fr": "puits / puits (pluriel)",
+      "emoji": "🪣"
+    },
+    {
+      "id": "completion_2",
+      "ar": "بَاب / أَبْوَاب",
+      "fr": "porte / portes (pluriel)",
+      "emoji": "🚪"
+    },
+    {
+      "id": "completion_3",
+      "ar": "حَبْل / حِبَال",
+      "fr": "corde / cordes (pluriel)",
+      "emoji": "🪢"
+    },
+    {
+      "id": "completion_4",
+      "ar": "ثُعْبَان / ثَعَابِين",
+      "fr": "serpent / serpents (pluriel)",
+      "emoji": "🐍"
+    },
+    {
+      "id": "phrase_1",
+      "ar": "الْأُمُّ تُعْطِي الْمَرِيضَةَ الدَّوَاءَ لِابْنَتِهَا",
+      "fr": "La mère donne le médicament à sa fille malade",
+      "emoji": "👩‍⚕️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec04_ba",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تحت كل صورة. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ من أشكال حرف ب. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ: الْمَرِيضَةِ، تُعْطِي، الدَّوَاءَ",
+      "voix_m": "lecture_niv5_lec04_ba_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "بَصَل",
+      "voix_m": "lecture_niv5_lec04_ba_p3_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "بَيْت",
+      "voix_m": "lecture_niv5_lec04_ba_p3_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "بَاب",
+      "voix_m": "lecture_niv5_lec04_ba_p3_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "أَرْنَب",
+      "voix_m": "lecture_niv5_lec04_ba_p3_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion_1",
+      "texte_ar": "بِئْر / آبَار",
+      "voix_m": "lecture_niv5_lec04_ba_p3_completion_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_completion_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion_2",
+      "texte_ar": "بَاب / أَبْوَاب",
+      "voix_m": "lecture_niv5_lec04_ba_p3_completion_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_completion_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion_3",
+      "texte_ar": "حَبْل / حِبَال",
+      "voix_m": "lecture_niv5_lec04_ba_p3_completion_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_completion_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion_4",
+      "texte_ar": "ثُعْبَان / ثَعَابِين",
+      "voix_m": "lecture_niv5_lec04_ba_p3_completion_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_completion_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "الْأُمُّ تُعْطِي الْمَرِيضَةَ الدَّوَاءَ لِابْنَتِهَا",
+      "voix_m": "lecture_niv5_lec04_ba_p3_phrase_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p3_phrase_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:21:41.139457",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv5_lec04_ba",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 10
+  }
+}

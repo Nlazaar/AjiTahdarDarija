@@ -1,0 +1,51 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie",
+    "ar": "أُلَوِّنُ"
+  },
+  "enonce": {
+    "fr": "Colorie le clown et apprends son nom en arabe : مُهَرِّج",
+    "ar": "لَوِّنِ الصُّورَةَ وَتَعَلَّمْ كَلِمَةَ مُهَرِّج"
+  },
+  "elements": [
+    {
+      "id": "clown",
+      "ar": "مُهَرِّج",
+      "fr": "clown",
+      "emoji": "🤡"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "لَوِّنِ الصُّورَةَ وَتَعَلَّمْ كَلِمَةَ مُهَرِّج",
+      "voix_m": "coursarabe_niveau1_lecon09_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown",
+      "texte_ar": "مُهَرِّج",
+      "voix_m": "coursarabe_niveau1_lecon09_p8_clown_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p8_clown_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:21:28.431816",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 2
+  }
+}

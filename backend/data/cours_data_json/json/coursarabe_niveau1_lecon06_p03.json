@@ -1,0 +1,181 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Deux exercices : 1) Colorier la gazelle parmi plusieurs animaux, 2) Entourer le mot 'غزال' parmi d'autres mots",
+  "titre": {
+    "fr": "Je colorie la gazelle / J'entoure le mot",
+    "ar": "أَلوِّن الغَزال / أُحيطُ الكَلِمةَ بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Exercice 1 : Colorie la gazelle parmi les animaux proposés. Exercice 2 : Entoure le mot 'gazelle' parmi les mots proposés.",
+    "ar": "تمرين 1 : أَلوِّن الغَزال. تمرين 2 : أُحيطُ الكَلِمةَ غزال بِخَطٍّ مُغْلَق."
+  },
+  "elements": [
+    {
+      "id": "animal_1",
+      "ar": "بطة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "animal_2",
+      "ar": "سمكة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "animal_3",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "animal_4",
+      "ar": "حلزون",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "mot_1",
+      "ar": "غابة",
+      "fr": "forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "mot_2",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "mot_3",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "mot_4",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "mot_5",
+      "ar": "أرنب",
+      "fr": "lapin",
+      "emoji": "🐇"
+    },
+    {
+      "id": "mot_6",
+      "ar": "دار",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "mot_7",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon06",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 1 : أَلوِّن الغَزال. تمرين 2 : أُحيطُ الكَلِمةَ غزال بِخَطٍّ مُغْلَق.",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_1",
+      "texte_ar": "بطة",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_animal_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_animal_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_2",
+      "texte_ar": "سمكة",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_animal_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_animal_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_3",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_animal_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_animal_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_4",
+      "texte_ar": "حلزون",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_animal_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_animal_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "غابة",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "أرنب",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "دار",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_7",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon06_p3_mot_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p3_mot_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:50:35.133675",
+    "niveau": 1,
+    "lecon": 35,
+    "nom_pdf": "coursarabe_niveau1_lecon06",
+    "bucket_audio": "audio-lessons/niveau1/lecon35/",
+    "nb_audio_assets": 12
+  }
+}

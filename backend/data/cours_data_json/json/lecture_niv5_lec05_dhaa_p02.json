@@ -1,0 +1,220 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mots à images, écriture de la lettre ظ, et compléter des mots avec ظ",
+  "titre": {
+    "fr": "La lettre Dha (ظ) - Lecture, écriture et complétion",
+    "ar": "حرف الظاء - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3: Je lis le mot et je le relie à son image. Exercice 4: J'écris la lettre ظ. Exercice 5: Je complète avec ce qui convient parmi ظَ ظُ ظْ ظَا ظَأ",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الظاء. تمرين 5: أكمل بما يناسب"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "ظَلَامٌ",
+      "fr": "Obscurité",
+      "emoji": "🌑"
+    },
+    {
+      "id": "mot2",
+      "ar": "ظَهْرٌ",
+      "fr": "Dos / Midi",
+      "emoji": "🦴"
+    },
+    {
+      "id": "mot3",
+      "ar": "عَظْمٌ",
+      "fr": "Os",
+      "emoji": "🦴"
+    },
+    {
+      "id": "mot4",
+      "ar": "مِحْفَظَةٌ",
+      "fr": "Cartable",
+      "emoji": "🎒"
+    },
+    {
+      "id": "mot5",
+      "ar": "مِظَلَّةٌ",
+      "fr": "Parasol / Parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "mot6",
+      "ar": "نَظَّارَةٌ",
+      "fr": "Lunettes",
+      "emoji": "👓"
+    },
+    {
+      "id": "comp1",
+      "ar": "هَيْكَلٌ عَظْمِيٌّ",
+      "fr": "Squelette",
+      "emoji": "💀"
+    },
+    {
+      "id": "comp2",
+      "ar": "اِسْتَيْقَظَ",
+      "fr": "S'est réveillé",
+      "emoji": "🌅"
+    },
+    {
+      "id": "comp3",
+      "ar": "ظَبْيٌ",
+      "fr": "Antilope",
+      "emoji": "🦌"
+    },
+    {
+      "id": "comp4",
+      "ar": "عِظَامٌ",
+      "fr": "Des os",
+      "emoji": "🦴"
+    },
+    {
+      "id": "comp5",
+      "ar": "أَظَافِرٌ",
+      "fr": "Des ongles",
+      "emoji": "💅"
+    },
+    {
+      "id": "comp6",
+      "ar": "يَنْظُرُ",
+      "fr": "Il regarde",
+      "emoji": "👀"
+    },
+    {
+      "id": "comp7",
+      "ar": "مُظْلِمٌ",
+      "fr": "Obscure",
+      "emoji": "🌑"
+    },
+    {
+      "id": "comp8",
+      "ar": "يَحْفَظُ الْقُرْآنَ",
+      "fr": "Il apprend le Coran",
+      "emoji": "📖"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec05_dhaa",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الظاء. تمرين 5: أكمل بما يناسب",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "ظَلَامٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "ظَهْرٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "عَظْمٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "مِحْفَظَةٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "مِظَلَّةٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "نَظَّارَةٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp1",
+      "texte_ar": "هَيْكَلٌ عَظْمِيٌّ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp2",
+      "texte_ar": "اِسْتَيْقَظَ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp3",
+      "texte_ar": "ظَبْيٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp4",
+      "texte_ar": "عِظَامٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp5",
+      "texte_ar": "أَظَافِرٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp5_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp6",
+      "texte_ar": "يَنْظُرُ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp6_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp7",
+      "texte_ar": "مُظْلِمٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp7_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp8",
+      "texte_ar": "يَحْفَظُ الْقُرْآنَ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p2_comp8_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p2_comp8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:25:02.492471",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv5_lec05_dhaa",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 15
+  }
+}

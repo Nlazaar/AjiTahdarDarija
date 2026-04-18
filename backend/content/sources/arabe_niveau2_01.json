@@ -1,0 +1,1618 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "arabe_niveau2_01",
+    "type": "pdf-dataset",
+    "title": "J'aime apprendre l'arabe (niveau 2) : Leçon 1",
+    "documentPath": "/Users/lazaar/Documents/cours arabe/arabe_niveau2_01.pdf",
+    "pageCount": 9,
+    "publisher": "www.nospetitsmusulmans.com",
+    "extraction": {
+      "method": [
+        "PDFKit text extraction",
+        "visual review of rendered pages"
+      ],
+      "notes": "Arabic glyph extraction from the PDF is fragmented in places; the canonical words and phrases below were checked against rendered pages."
+    }
+  },
+  "language": {
+    "code": "ar-SA",
+    "name": "Arabe standard",
+    "track": "MSA"
+  },
+  "module": {
+    "slug": "aime-apprendre-arabe-niveau-2",
+    "title": "J'aime apprendre l'arabe - Niveau 2",
+    "subtitle": "Parcours issu des PDF",
+    "description": "Contenus importés depuis les supports PDF et transformés en vocabulaire, leçons et exercices dynamiques.",
+    "level": 2,
+    "isPublished": true,
+    "colorA": "#2a9d8f",
+    "colorB": "#e76f51",
+    "shadowColor": "#1f6f65"
+  },
+  "lessons": [
+    {
+      "slug": "arabe-niveau-2-lecon-1",
+      "title": "Leçon 1 - Lettres, mots et routine",
+      "subtitle": "Lettres manquantes, mots أسد / فيل / مطر et actions après l'école",
+      "description": "Première leçon extraite du PDF niveau 2 : reconnaissance des lettres, association mot-image, écoute et ordre des actions.",
+      "order": 1,
+      "duration": 1200,
+      "level": 2,
+      "isPublished": true,
+      "content": {
+        "presentation": "generic-db",
+        "source": {
+          "id": "arabe_niveau2_01",
+          "type": "pdf-dataset",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "activities": [
+          {
+            "page": 1,
+            "title": "ألصق بطاقات الحروف الناقصة",
+            "objective": "Compléter les mots avec leur première lettre."
+          },
+          {
+            "page": 2,
+            "title": "أبحث عن الحرف و ألونه",
+            "objective": "Repérer les lettres س et ي parmi des distracteurs."
+          },
+          {
+            "page": 3,
+            "title": "ألصق أجزاء الصور داخل المربعات",
+            "objective": "Reconstruire et nommer les images أسد، فيل، مطر."
+          },
+          {
+            "page": 4,
+            "title": "أبحث عن الكلمة و أحيطها بخط",
+            "objective": "Identifier le mot مطر parmi des mots proches."
+          },
+          {
+            "page": 5,
+            "title": "أبحث عن الكلمة و أحيطها بخط",
+            "objective": "Identifier le mot فيل parmi des mots proches."
+          },
+          {
+            "page": 6,
+            "title": "أربط بين الكلمة و الصورة",
+            "objective": "Associer أسد، مطر، فيل aux images correspondantes."
+          },
+          {
+            "page": 7,
+            "title": "أكمل الخطوط",
+            "objective": "Tracer la lettre ف et le mot فيل."
+          },
+          {
+            "page": 8,
+            "title": "أرتب الأعمال التي أقوم بها بعد العودة من المدرسة",
+            "objective": "Ordonner quatre actions de routine."
+          },
+          {
+            "page": 9,
+            "title": "أقص الصور",
+            "objective": "Cartes à découper pour les exercices 1, 4 et 9."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "word": "أسد",
+          "transliteration": "asad",
+          "translation": {
+            "fr": "lion"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "بقرة",
+          "transliteration": "baqara",
+          "translation": {
+            "fr": "vache"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "ثلج",
+          "transliteration": "thalj",
+          "translation": {
+            "fr": "neige"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "nature"
+          ]
+        },
+        {
+          "word": "جمل",
+          "transliteration": "jamal",
+          "translation": {
+            "fr": "chameau"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "خوخ",
+          "transliteration": "khawkh",
+          "translation": {
+            "fr": "pêche"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "fruit"
+          ]
+        },
+        {
+          "word": "دار",
+          "transliteration": "dar",
+          "translation": {
+            "fr": "maison"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "home"
+          ]
+        },
+        {
+          "word": "ريشة",
+          "transliteration": "risha",
+          "translation": {
+            "fr": "plume"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "object"
+          ]
+        },
+        {
+          "word": "زرافة",
+          "transliteration": "zarafa",
+          "translation": {
+            "fr": "girafe"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "شمعة",
+          "transliteration": "sham'a",
+          "translation": {
+            "fr": "bougie"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "object"
+          ]
+        },
+        {
+          "word": "صباح",
+          "transliteration": "sabah",
+          "translation": {
+            "fr": "matin"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "time"
+          ]
+        },
+        {
+          "word": "ضفدع",
+          "transliteration": "difda'",
+          "translation": {
+            "fr": "grenouille"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "ظرف",
+          "transliteration": "zarf",
+          "translation": {
+            "fr": "enveloppe"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "object"
+          ]
+        },
+        {
+          "word": "فأر",
+          "transliteration": "fa'r",
+          "translation": {
+            "fr": "souris"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "غزال",
+          "transliteration": "ghazal",
+          "translation": {
+            "fr": "gazelle"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "قلم",
+          "transliteration": "qalam",
+          "translation": {
+            "fr": "stylo"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "school"
+          ]
+        },
+        {
+          "word": "كلب",
+          "transliteration": "kalb",
+          "translation": {
+            "fr": "chien"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "مسجد",
+          "transliteration": "masjid",
+          "translation": {
+            "fr": "mosquée"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "place"
+          ]
+        },
+        {
+          "word": "نمر",
+          "transliteration": "namir",
+          "translation": {
+            "fr": "tigre"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "animal"
+          ]
+        },
+        {
+          "word": "يد",
+          "transliteration": "yad",
+          "translation": {
+            "fr": "main"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "body"
+          ]
+        },
+        {
+          "word": "وردة",
+          "transliteration": "warda",
+          "translation": {
+            "fr": "rose"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:1",
+            "nature"
+          ]
+        },
+        {
+          "word": "فيل",
+          "transliteration": "fil",
+          "translation": {
+            "fr": "éléphant"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:3",
+            "page:5",
+            "page:6",
+            "animal"
+          ]
+        },
+        {
+          "word": "مطر",
+          "transliteration": "matar",
+          "translation": {
+            "fr": "pluie"
+          },
+          "partOfSpeech": "NOUN",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:3",
+            "page:4",
+            "page:6",
+            "weather"
+          ]
+        },
+        {
+          "word": "أغسل يديّ",
+          "transliteration": "aghsil yadayya",
+          "translation": {
+            "fr": "je lave mes mains"
+          },
+          "partOfSpeech": "VERB",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:8",
+            "routine"
+          ]
+        },
+        {
+          "word": "أتناول العشاء",
+          "transliteration": "atanawal al-asha",
+          "translation": {
+            "fr": "je prends le dîner"
+          },
+          "partOfSpeech": "VERB",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:8",
+            "routine"
+          ]
+        },
+        {
+          "word": "أنظف أسناني",
+          "transliteration": "unazzif asnani",
+          "translation": {
+            "fr": "je me brosse les dents"
+          },
+          "partOfSpeech": "VERB",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:8",
+            "routine"
+          ]
+        },
+        {
+          "word": "أنام",
+          "transliteration": "anam",
+          "translation": {
+            "fr": "je dors"
+          },
+          "partOfSpeech": "VERB",
+          "tags": [
+            "source:arabe_niveau2_01",
+            "page:8",
+            "routine"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « أسد » avec la bonne lettre.",
+          "data": {
+            "sentence": "___سد",
+            "options": [
+              "أ",
+              "ب",
+              "ث",
+              "ج"
+            ],
+            "audio": "أسد",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "أ"
+          },
+          "points": 10,
+          "vocabularyWord": "أسد"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « بقرة » avec la bonne lettre.",
+          "data": {
+            "sentence": "___قرة",
+            "options": [
+              "أ",
+              "ب",
+              "خ",
+              "د"
+            ],
+            "audio": "بقرة",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ب"
+          },
+          "points": 10,
+          "vocabularyWord": "بقرة"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « ثلج » avec la bonne lettre.",
+          "data": {
+            "sentence": "___لج",
+            "options": [
+              "ت",
+              "ث",
+              "س",
+              "ش"
+            ],
+            "audio": "ثلج",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ث"
+          },
+          "points": 10,
+          "vocabularyWord": "ثلج"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « جمل » avec la bonne lettre.",
+          "data": {
+            "sentence": "___مل",
+            "options": [
+              "ح",
+              "ج",
+              "خ",
+              "غ"
+            ],
+            "audio": "جمل",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ج"
+          },
+          "points": 10,
+          "vocabularyWord": "جمل"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « خوخ » avec la bonne lettre.",
+          "data": {
+            "sentence": "___وخ",
+            "options": [
+              "خ",
+              "ح",
+              "ج",
+              "ك"
+            ],
+            "audio": "خوخ",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "خ"
+          },
+          "points": 10,
+          "vocabularyWord": "خوخ"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « دار » avec la bonne lettre.",
+          "data": {
+            "sentence": "___ار",
+            "options": [
+              "ذ",
+              "د",
+              "ر",
+              "ز"
+            ],
+            "audio": "دار",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "د"
+          },
+          "points": 10,
+          "vocabularyWord": "دار"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « ريشة » avec la bonne lettre.",
+          "data": {
+            "sentence": "___يشة",
+            "options": [
+              "ر",
+              "ز",
+              "د",
+              "و"
+            ],
+            "audio": "ريشة",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ر"
+          },
+          "points": 10,
+          "vocabularyWord": "ريشة"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « زرافة » avec la bonne lettre.",
+          "data": {
+            "sentence": "___رافة",
+            "options": [
+              "ر",
+              "ز",
+              "ذ",
+              "ظ"
+            ],
+            "audio": "زرافة",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ز"
+          },
+          "points": 10,
+          "vocabularyWord": "زرافة"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « شمعة » avec la bonne lettre.",
+          "data": {
+            "sentence": "___معة",
+            "options": [
+              "س",
+              "ش",
+              "ص",
+              "ض"
+            ],
+            "audio": "شمعة",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ش"
+          },
+          "points": 10,
+          "vocabularyWord": "شمعة"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « صباح » avec la bonne lettre.",
+          "data": {
+            "sentence": "___باح",
+            "options": [
+              "س",
+              "ص",
+              "ض",
+              "ش"
+            ],
+            "audio": "صباح",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ص"
+          },
+          "points": 10,
+          "vocabularyWord": "صباح"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « ضفدع » avec la bonne lettre.",
+          "data": {
+            "sentence": "___فدع",
+            "options": [
+              "ص",
+              "ض",
+              "ظ",
+              "غ"
+            ],
+            "audio": "ضفدع",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ض"
+          },
+          "points": 10,
+          "vocabularyWord": "ضفدع"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « ظرف » avec la bonne lettre.",
+          "data": {
+            "sentence": "___رف",
+            "options": [
+              "ض",
+              "ظ",
+              "ز",
+              "ذ"
+            ],
+            "audio": "ظرف",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ظ"
+          },
+          "points": 10,
+          "vocabularyWord": "ظرف"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « فأر » avec la bonne lettre.",
+          "data": {
+            "sentence": "___أر",
+            "options": [
+              "ف",
+              "ق",
+              "غ",
+              "ك"
+            ],
+            "audio": "فأر",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ف"
+          },
+          "points": 10,
+          "vocabularyWord": "فأر"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « غزال » avec la bonne lettre.",
+          "data": {
+            "sentence": "___زال",
+            "options": [
+              "ع",
+              "غ",
+              "ف",
+              "ق"
+            ],
+            "audio": "غزال",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "غ"
+          },
+          "points": 10,
+          "vocabularyWord": "غزال"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « قلم » avec la bonne lettre.",
+          "data": {
+            "sentence": "___لم",
+            "options": [
+              "ف",
+              "ق",
+              "ك",
+              "م"
+            ],
+            "audio": "قلم",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ق"
+          },
+          "points": 10,
+          "vocabularyWord": "قلم"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « كلب » avec la bonne lettre.",
+          "data": {
+            "sentence": "___لب",
+            "options": [
+              "ق",
+              "ك",
+              "ل",
+              "م"
+            ],
+            "audio": "كلب",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ك"
+          },
+          "points": 10,
+          "vocabularyWord": "كلب"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « مسجد » avec la bonne lettre.",
+          "data": {
+            "sentence": "___سجد",
+            "options": [
+              "م",
+              "ن",
+              "ق",
+              "ف"
+            ],
+            "audio": "مسجد",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "م"
+          },
+          "points": 10,
+          "vocabularyWord": "مسجد"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « نمر » avec la bonne lettre.",
+          "data": {
+            "sentence": "___مر",
+            "options": [
+              "م",
+              "ن",
+              "ي",
+              "و"
+            ],
+            "audio": "نمر",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ن"
+          },
+          "points": 10,
+          "vocabularyWord": "نمر"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « يد » avec la bonne lettre.",
+          "data": {
+            "sentence": "___د",
+            "options": [
+              "ي",
+              "و",
+              "ن",
+              "م"
+            ],
+            "audio": "يد",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "ي"
+          },
+          "points": 10,
+          "vocabularyWord": "يد"
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète le mot « وردة » avec la bonne lettre.",
+          "data": {
+            "sentence": "___ردة",
+            "options": [
+              "ي",
+              "و",
+              "ر",
+              "د"
+            ],
+            "audio": "وردة",
+            "source": {
+              "page": 1,
+              "activity": "missing-letter"
+            }
+          },
+          "answer": {
+            "text": "و"
+          },
+          "points": 10,
+          "vocabularyWord": "وردة"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Dans l'activité de la page 2, quelle lettre faut-il colorier ici : « س » ?",
+          "data": {
+            "options": [
+              {
+                "id": "sin",
+                "text": "س",
+                "transliteration": "sin"
+              },
+              {
+                "id": "shin",
+                "text": "ش",
+                "transliteration": "shin"
+              },
+              {
+                "id": "sad",
+                "text": "ص",
+                "transliteration": "sad"
+              },
+              {
+                "id": "dad",
+                "text": "ض",
+                "transliteration": "dad"
+              }
+            ],
+            "audio": "س",
+            "source": {
+              "page": 2,
+              "activity": "letter-search"
+            }
+          },
+          "answer": {
+            "id": "sin"
+          },
+          "points": 10
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis la lettre س.",
+          "data": {
+            "audio": "س",
+            "options": [
+              {
+                "id": "sin",
+                "text": "س"
+              },
+              {
+                "id": "shin",
+                "text": "ش"
+              },
+              {
+                "id": "sad",
+                "text": "ص"
+              },
+              {
+                "id": "tha",
+                "text": "ث"
+              }
+            ],
+            "source": {
+              "page": 2,
+              "activity": "letter-listening"
+            }
+          },
+          "answer": {
+            "id": "sin"
+          },
+          "points": 10
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Dans l'activité de la page 2, quelle lettre faut-il colorier ici : « ي » ?",
+          "data": {
+            "options": [
+              {
+                "id": "ya",
+                "text": "ي",
+                "transliteration": "ya"
+              },
+              {
+                "id": "nun",
+                "text": "ن",
+                "transliteration": "nun"
+              },
+              {
+                "id": "waw",
+                "text": "و",
+                "transliteration": "waw"
+              },
+              {
+                "id": "ba",
+                "text": "ب",
+                "transliteration": "ba"
+              }
+            ],
+            "audio": "ي",
+            "source": {
+              "page": 2,
+              "activity": "letter-search"
+            }
+          },
+          "answer": {
+            "id": "ya"
+          },
+          "points": 10
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis la lettre ي.",
+          "data": {
+            "audio": "ي",
+            "options": [
+              {
+                "id": "ya",
+                "text": "ي"
+              },
+              {
+                "id": "nun",
+                "text": "ن"
+              },
+              {
+                "id": "waw",
+                "text": "و"
+              },
+              {
+                "id": "mim",
+                "text": "م"
+              }
+            ],
+            "source": {
+              "page": 2,
+              "activity": "letter-listening"
+            }
+          },
+          "answer": {
+            "id": "ya"
+          },
+          "points": 10
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Quel mot correspond à l'image du lion ?",
+          "data": {
+            "options": [
+              {
+                "id": "asad",
+                "text": "أسد",
+                "transliteration": "asad"
+              },
+              {
+                "id": "fil",
+                "text": "فيل",
+                "transliteration": "fil"
+              },
+              {
+                "id": "matar",
+                "text": "مطر",
+                "transliteration": "matar"
+              }
+            ],
+            "imageConcept": "lion",
+            "audio": "أسد",
+            "source": {
+              "page": 3,
+              "activity": "image-parts"
+            }
+          },
+          "answer": {
+            "id": "asad"
+          },
+          "points": 10,
+          "vocabularyWord": "أسد"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Quel mot correspond à l'image de l'éléphant ?",
+          "data": {
+            "options": [
+              {
+                "id": "fil",
+                "text": "فيل",
+                "transliteration": "fil"
+              },
+              {
+                "id": "asad",
+                "text": "أسد",
+                "transliteration": "asad"
+              },
+              {
+                "id": "matar",
+                "text": "مطر",
+                "transliteration": "matar"
+              }
+            ],
+            "imageConcept": "elephant",
+            "audio": "فيل",
+            "source": {
+              "page": 3,
+              "activity": "image-parts"
+            }
+          },
+          "answer": {
+            "id": "fil"
+          },
+          "points": 10,
+          "vocabularyWord": "فيل"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Quel mot correspond à l'image de la pluie ?",
+          "data": {
+            "options": [
+              {
+                "id": "matar",
+                "text": "مطر",
+                "transliteration": "matar"
+              },
+              {
+                "id": "fil",
+                "text": "فيل",
+                "transliteration": "fil"
+              },
+              {
+                "id": "asad",
+                "text": "أسد",
+                "transliteration": "asad"
+              }
+            ],
+            "imageConcept": "rain",
+            "audio": "مطر",
+            "source": {
+              "page": 3,
+              "activity": "image-parts"
+            }
+          },
+          "answer": {
+            "id": "matar"
+          },
+          "points": 10,
+          "vocabularyWord": "مطر"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Parmi ces mots, lequel est exactement « مطر » ?",
+          "data": {
+            "options": [
+              {
+                "id": "matar",
+                "text": "مطر",
+                "transliteration": "matar"
+              },
+              {
+                "id": "matar-airport",
+                "text": "مطار",
+                "transliteration": "matar"
+              },
+              {
+                "id": "momtir",
+                "text": "ممطر",
+                "transliteration": "mumtir"
+              },
+              {
+                "id": "mitat",
+                "text": "مطاط",
+                "transliteration": "mitat"
+              }
+            ],
+            "audio": "مطر",
+            "source": {
+              "page": 4,
+              "activity": "word-search"
+            }
+          },
+          "answer": {
+            "id": "matar"
+          },
+          "points": 10,
+          "vocabularyWord": "مطر"
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis le mot « مطر ».",
+          "data": {
+            "audio": "مطر",
+            "options": [
+              {
+                "id": "matar",
+                "text": "مطر"
+              },
+              {
+                "id": "amtar",
+                "text": "أمطار"
+              },
+              {
+                "id": "mitat",
+                "text": "مطاط"
+              },
+              {
+                "id": "misr",
+                "text": "مصر"
+              }
+            ],
+            "source": {
+              "page": 4,
+              "activity": "word-listening"
+            }
+          },
+          "answer": {
+            "id": "matar"
+          },
+          "points": 10,
+          "vocabularyWord": "مطر"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Parmi ces mots, lequel est exactement « فيل » ?",
+          "data": {
+            "options": [
+              {
+                "id": "fil",
+                "text": "فيل",
+                "transliteration": "fil"
+              },
+              {
+                "id": "fawq",
+                "text": "فوق",
+                "transliteration": "fawq"
+              },
+              {
+                "id": "nile",
+                "text": "نيل",
+                "transliteration": "nil"
+              },
+              {
+                "id": "fila",
+                "text": "فيلة",
+                "transliteration": "fila"
+              }
+            ],
+            "audio": "فيل",
+            "source": {
+              "page": 5,
+              "activity": "word-search"
+            }
+          },
+          "answer": {
+            "id": "fil"
+          },
+          "points": 10,
+          "vocabularyWord": "فيل"
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis le mot « فيل ».",
+          "data": {
+            "audio": "فيل",
+            "options": [
+              {
+                "id": "fil",
+                "text": "فيل"
+              },
+              {
+                "id": "nile",
+                "text": "نيل"
+              },
+              {
+                "id": "qabl",
+                "text": "قبل"
+              },
+              {
+                "id": "wil",
+                "text": "ويل"
+              }
+            ],
+            "source": {
+              "page": 5,
+              "activity": "word-listening"
+            }
+          },
+          "answer": {
+            "id": "fil"
+          },
+          "points": 10,
+          "vocabularyWord": "فيل"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Associe l'image de l'éléphant au bon mot.",
+          "data": {
+            "options": [
+              {
+                "id": "fil",
+                "text": "فيل"
+              },
+              {
+                "id": "asad",
+                "text": "أسد"
+              },
+              {
+                "id": "matar",
+                "text": "مطر"
+              }
+            ],
+            "imageConcept": "elephant",
+            "audio": "فيل",
+            "source": {
+              "page": 6,
+              "activity": "word-image-match"
+            }
+          },
+          "answer": {
+            "id": "fil"
+          },
+          "points": 10,
+          "vocabularyWord": "فيل"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Associe l'image du lion au bon mot.",
+          "data": {
+            "options": [
+              {
+                "id": "asad",
+                "text": "أسد"
+              },
+              {
+                "id": "matar",
+                "text": "مطر"
+              },
+              {
+                "id": "fil",
+                "text": "فيل"
+              }
+            ],
+            "imageConcept": "lion",
+            "audio": "أسد",
+            "source": {
+              "page": 6,
+              "activity": "word-image-match"
+            }
+          },
+          "answer": {
+            "id": "asad"
+          },
+          "points": 10,
+          "vocabularyWord": "أسد"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Associe l'image de la pluie au bon mot.",
+          "data": {
+            "options": [
+              {
+                "id": "matar",
+                "text": "مطر"
+              },
+              {
+                "id": "fil",
+                "text": "فيل"
+              },
+              {
+                "id": "asad",
+                "text": "أسد"
+              }
+            ],
+            "imageConcept": "rain",
+            "audio": "مطر",
+            "source": {
+              "page": 6,
+              "activity": "word-image-match"
+            }
+          },
+          "answer": {
+            "id": "matar"
+          },
+          "points": 10,
+          "vocabularyWord": "مطر"
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "prompt": "Quelle lettre est travaillée dans l'activité de tracé de la page 7 ?",
+          "data": {
+            "options": [
+              {
+                "id": "fa",
+                "text": "ف",
+                "transliteration": "fa"
+              },
+              {
+                "id": "qaf",
+                "text": "ق",
+                "transliteration": "qaf"
+              },
+              {
+                "id": "mim",
+                "text": "م",
+                "transliteration": "mim"
+              },
+              {
+                "id": "ya",
+                "text": "ي",
+                "transliteration": "ya"
+              }
+            ],
+            "audio": "ف",
+            "source": {
+              "page": 7,
+              "activity": "tracing"
+            }
+          },
+          "answer": {
+            "id": "fa"
+          },
+          "points": 10
+        },
+        {
+          "type": "FILL_BLANK",
+          "prompt": "Complète « فيل » avec la lettre travaillée à la page 7.",
+          "data": {
+            "sentence": "___يل",
+            "options": [
+              "ف",
+              "ق",
+              "م",
+              "ي"
+            ],
+            "audio": "فيل",
+            "source": {
+              "page": 7,
+              "activity": "tracing-to-word"
+            }
+          },
+          "answer": {
+            "text": "ف"
+          },
+          "points": 10,
+          "vocabularyWord": "فيل"
+        },
+        {
+          "type": "REORDER",
+          "prompt": "Remets les actions dans l'ordre après le retour de l'école.",
+          "data": {
+            "items": [
+              "أنام",
+              "أتناول العشاء",
+              "أنظف أسناني",
+              "أغسل يديّ"
+            ],
+            "audio": "أغسل يديّ. أتناول العشاء. أنظف أسناني. أنام.",
+            "source": {
+              "page": 8,
+              "activity": "routine-order"
+            }
+          },
+          "answer": {
+            "order": [
+              "أغسل يديّ",
+              "أتناول العشاء",
+              "أنظف أسناني",
+              "أنام"
+            ]
+          },
+          "points": 20
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis « je lave mes mains ».",
+          "data": {
+            "audio": "أغسل يديّ",
+            "options": [
+              {
+                "id": "wash-hands",
+                "text": "أغسل يديّ"
+              },
+              {
+                "id": "dinner",
+                "text": "أتناول العشاء"
+              },
+              {
+                "id": "sleep",
+                "text": "أنام"
+              },
+              {
+                "id": "brush-teeth",
+                "text": "أنظف أسناني"
+              }
+            ],
+            "source": {
+              "page": 8,
+              "activity": "routine-listening"
+            }
+          },
+          "answer": {
+            "id": "wash-hands"
+          },
+          "points": 10,
+          "vocabularyWord": "أغسل يديّ"
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis « je prends le dîner ».",
+          "data": {
+            "audio": "أتناول العشاء",
+            "options": [
+              {
+                "id": "dinner",
+                "text": "أتناول العشاء"
+              },
+              {
+                "id": "wash-hands",
+                "text": "أغسل يديّ"
+              },
+              {
+                "id": "brush-teeth",
+                "text": "أنظف أسناني"
+              },
+              {
+                "id": "sleep",
+                "text": "أنام"
+              }
+            ],
+            "source": {
+              "page": 8,
+              "activity": "routine-listening"
+            }
+          },
+          "answer": {
+            "id": "dinner"
+          },
+          "points": 10,
+          "vocabularyWord": "أتناول العشاء"
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis « je me brosse les dents ».",
+          "data": {
+            "audio": "أنظف أسناني",
+            "options": [
+              {
+                "id": "brush-teeth",
+                "text": "أنظف أسناني"
+              },
+              {
+                "id": "wash-hands",
+                "text": "أغسل يديّ"
+              },
+              {
+                "id": "sleep",
+                "text": "أنام"
+              },
+              {
+                "id": "dinner",
+                "text": "أتناول العشاء"
+              }
+            ],
+            "source": {
+              "page": 8,
+              "activity": "routine-listening"
+            }
+          },
+          "answer": {
+            "id": "brush-teeth"
+          },
+          "points": 10,
+          "vocabularyWord": "أنظف أسناني"
+        },
+        {
+          "type": "LISTENING",
+          "prompt": "Écoute puis choisis « je dors ».",
+          "data": {
+            "audio": "أنام",
+            "options": [
+              {
+                "id": "sleep",
+                "text": "أنام"
+              },
+              {
+                "id": "dinner",
+                "text": "أتناول العشاء"
+              },
+              {
+                "id": "brush-teeth",
+                "text": "أنظف أسناني"
+              },
+              {
+                "id": "wash-hands",
+                "text": "أغسل يديّ"
+              }
+            ],
+            "source": {
+              "page": 8,
+              "activity": "routine-listening"
+            }
+          },
+          "answer": {
+            "id": "sleep"
+          },
+          "points": 10,
+          "vocabularyWord": "أنام"
+        }
+      ]
+    }
+  ]
+}

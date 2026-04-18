@@ -1,0 +1,103 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'poisson' (سمكة) parmi toutes les lettres proposées",
+    "ar": "لوّن الحروف التي تتكون منها كلمة سمكة فقط"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "س",
+      "fr": "s (lettre س)",
+      "emoji": "🔵"
+    },
+    {
+      "id": "2",
+      "ar": "م",
+      "fr": "m (lettre م)",
+      "emoji": "🟢"
+    },
+    {
+      "id": "3",
+      "ar": "ك",
+      "fr": "k (lettre ك)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "4",
+      "ar": "ة",
+      "fr": "a (lettre ة)",
+      "emoji": "🟡"
+    },
+    {
+      "id": "5",
+      "ar": "سمكة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "لوّن الحروف التي تتكون منها كلمة سمكة فقط",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "م",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سمكة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p6_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p6_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:16:05.363696",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 6
+  }
+}

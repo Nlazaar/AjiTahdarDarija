@@ -1,0 +1,77 @@
+{
+  "page_nb": 131,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis puis je relie avec l'image qui correspond",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Lis le mot puis relie-le à l'image correspondante",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "كَتَبَ",
+      "fr": "il a écrit",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "أَكَلَ",
+      "fr": "il a mangé",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "3",
+      "ar": "طَرَقَ",
+      "fr": "il a frappé (à la porte)",
+      "emoji": "👊"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p131_consigne",
+      "texte_ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p131_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p131_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "كَتَبَ",
+      "voix_m": "livre_arabe_niveau3_p131_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p131_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أَكَلَ",
+      "voix_m": "livre_arabe_niveau3_p131_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p131_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَرَقَ",
+      "voix_m": "livre_arabe_niveau3_p131_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p131_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:19:31.867857",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 25,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Relie chaque vêtement à celui qui le porte habituellement",
+    "ar": "أربط بسهم كلَّ واحدٍ بما يَلبَسُ عادةً"
+  },
+  "enonce": {
+    "fr": "Relie par une flèche chaque vêtement à la personne qui le porte habituellement (garçon ou fille).",
+    "ar": "أربط بسهم كلَّ واحدٍ بما يَلبَسُ عادةً"
+  },
+  "elements": [
+    {
+      "id": "robe_rose",
+      "ar": "فستان وردي",
+      "fr": "Robe rose",
+      "emoji": "👗"
+    },
+    {
+      "id": "pantalon",
+      "ar": "بنطلون",
+      "fr": "Pantalon jean",
+      "emoji": "👖"
+    },
+    {
+      "id": "jupe_jaune",
+      "ar": "تنورة صفراء",
+      "fr": "Jupe jaune",
+      "emoji": "👗"
+    },
+    {
+      "id": "chemise_rose",
+      "ar": "قميص وردي",
+      "fr": "Chemise rose",
+      "emoji": "👚"
+    },
+    {
+      "id": "tshirt_noir",
+      "ar": "تيشرت أسود",
+      "fr": "T-shirt noir",
+      "emoji": "👕"
+    },
+    {
+      "id": "garcon",
+      "ar": "ولد",
+      "fr": "Garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "fille",
+      "ar": "بنت",
+      "fr": "Fille",
+      "emoji": "👧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p25_consigne",
+      "texte_ar": "أربط بسهم كلَّ واحدٍ بما يَلبَسُ عادةً",
+      "voix_m": "livre_3_5ans_tome2_p25_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_robe_rose",
+      "texte_ar": "فستان وردي",
+      "voix_m": "livre_3_5ans_tome2_p25_robe_rose_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_robe_rose_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pantalon",
+      "texte_ar": "بنطلون",
+      "voix_m": "livre_3_5ans_tome2_p25_pantalon_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_pantalon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jupe_jaune",
+      "texte_ar": "تنورة صفراء",
+      "voix_m": "livre_3_5ans_tome2_p25_jupe_jaune_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_jupe_jaune_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chemise_rose",
+      "texte_ar": "قميص وردي",
+      "voix_m": "livre_3_5ans_tome2_p25_chemise_rose_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_chemise_rose_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tshirt_noir",
+      "texte_ar": "تيشرت أسود",
+      "voix_m": "livre_3_5ans_tome2_p25_tshirt_noir_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_tshirt_noir_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_garcon",
+      "texte_ar": "ولد",
+      "voix_m": "livre_3_5ans_tome2_p25_garcon_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_garcon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fille",
+      "texte_ar": "بنت",
+      "voix_m": "livre_3_5ans_tome2_p25_fille_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p25_fille_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:59:30.790616",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 8
+  }
+}

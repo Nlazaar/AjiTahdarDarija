@@ -1,0 +1,103 @@
+{
+  "page_nb": 16,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon que j'entends la lettre : au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أسْمَعُ الْحَرْفَ فِي أوَّل أو وسط أو آخِرِ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Relie chaque image à la position où tu entends la lettre غ dans le mot (début, milieu ou fin)",
+    "ar": "أرْبِطُ كُلَّ صُورَةٍ بِمَكَانِ سَمَاعِ حَرْفِ الغَيْن فِي الكَلِمَةِ (أوَّل، وسط، آخِر)"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غُصْن",
+      "fr": "branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "2",
+      "ar": "غُرَاب",
+      "fr": "perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "3",
+      "ar": "سَحَابَة",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "4",
+      "ar": "كَنْغَر",
+      "fr": "kangourou",
+      "emoji": "🦘"
+    },
+    {
+      "id": "5",
+      "ar": "غَسَّالَة",
+      "fr": "machine à laver",
+      "emoji": "🫧"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p16_consigne",
+      "texte_ar": "أرْبِطُ كُلَّ صُورَةٍ بِمَكَانِ سَمَاعِ حَرْفِ الغَيْن فِي الكَلِمَةِ (أوَّل، وسط، آخِر)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غُصْن",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غُرَاب",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سَحَابَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كَنْغَر",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "غَسَّالَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p16_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p16_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:33:19.224725",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 6
+  }
+}

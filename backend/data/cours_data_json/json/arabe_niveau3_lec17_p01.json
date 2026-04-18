@@ -1,0 +1,77 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Le jour - Relier le mot à l'image",
+    "ar": "اليَوْمُ هُوَ يَوْمُ - أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis le mot puis je relie avec l'image qui correspond",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَرِضَ",
+      "fr": "malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "2",
+      "ar": "حَزِنَ",
+      "fr": "triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "3",
+      "ar": "فَرِحَ",
+      "fr": "joyeux / content",
+      "emoji": "😄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec17",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "arabe_niveau3_lec17_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَرِضَ",
+      "voix_m": "arabe_niveau3_lec17_p1_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "arabe_niveau3_lec17_p1_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَرِحَ",
+      "voix_m": "arabe_niveau3_lec17_p1_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p1_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:48:25.609094",
+    "niveau": 3,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau3_lec17",
+    "bucket_audio": "audio-lessons/niveau3/lecon17/",
+    "nb_audio_assets": 4
+  }
+}

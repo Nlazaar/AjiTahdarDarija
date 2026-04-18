@@ -1,0 +1,181 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des mots à trous avec les lettres manquantes et relier à l'image, compléter des phrases avec les mots proposés, remettre des mots dans l'ordre pour former une phrase",
+  "titre": {
+    "fr": "Exercices de complètement et d'ordre des mots",
+    "ar": "أُكْمِلُ وَ أُرَتِّبُ الْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : Je complète puis je relie à l'image. Exercice 7 : Je complète avec ce qui convient. Exercice 8 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "٦- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "دِيَّةٌ",
+      "fr": "tasse (de café)",
+      "emoji": "☕"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "نَحْلَةٌ",
+      "fr": "abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "كَفُّ",
+      "fr": "cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "قَوَّةٌ",
+      "fr": "corde / lasso",
+      "emoji": "🪢"
+    },
+    {
+      "id": "ex6_5",
+      "ar": "بُلُّ",
+      "fr": "viande",
+      "emoji": "🥩"
+    },
+    {
+      "id": "ex6_6",
+      "ar": "لَمُّ",
+      "fr": "grotte",
+      "emoji": "🏔️"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "يَرْكَبُ الطِّفْلُ عَلَى ظَهْرِ جَدِّهِ",
+      "fr": "L'enfant monte sur le dos de son grand-père",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "تُهْدِي حِكَايَةً مَاهِرَةً لِأُمِّهَا",
+      "fr": "Elle offre un beau cadeau à sa mère",
+      "emoji": "👩"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "يَرْوِي لَنَا أَبِي زُهُورًا",
+      "fr": "Notre père nous raconte des fleurs",
+      "emoji": "👨"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "جَدَّتِي طَبَّاخَةٌ",
+      "fr": "Ma grand-mère est cuisinière",
+      "emoji": "👵"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "جَدَّتِي تَرْوِي لَنَا جَمِيلَةً حِكَايَاتٍ",
+      "fr": "Ma grand-mère nous raconte de belles histoires",
+      "emoji": "📖"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec01_01_hee",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "٦- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "دِيَّةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "نَحْلَةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "كَفُّ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "قَوَّةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_5",
+      "texte_ar": "بُلُّ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_6",
+      "texte_ar": "لَمُّ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex6_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "يَرْكَبُ الطِّفْلُ عَلَى ظَهْرِ جَدِّهِ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "تُهْدِي حِكَايَةً مَاهِرَةً لِأُمِّهَا",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "يَرْوِي لَنَا أَبِي زُهُورًا",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "جَدَّتِي طَبَّاخَةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "جَدَّتِي تَرْوِي لَنَا جَمِيلَةً حِكَايَاتٍ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:14:16.610868",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_01_hee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 12
+  }
+}

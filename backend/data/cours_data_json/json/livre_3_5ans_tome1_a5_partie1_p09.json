@@ -1,0 +1,155 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie chacun avec ses affaires",
+    "ar": "أَرْبِطُ كُلَّ وَاحِدٍ بِالأَغرَاضِ الخَاصَّة بِه"
+  },
+  "enonce": {
+    "fr": "Relie chaque personne ou élément à l'objet qui lui appartient",
+    "ar": "اِرْبِطْ كُلَّ وَاحِدٍ بِالأَغرَاضِ الخَاصَّةِ بِهِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عَائِلَة",
+      "fr": "Famille",
+      "emoji": "👨‍👩‍👧‍👦"
+    },
+    {
+      "id": "2",
+      "ar": "كُرَة قَدَم",
+      "fr": "Ballon de foot",
+      "emoji": "⚽"
+    },
+    {
+      "id": "3",
+      "ar": "حِذَاء رِيَاضِي",
+      "fr": "Chaussure de sport",
+      "emoji": "👟"
+    },
+    {
+      "id": "4",
+      "ar": "حِذَاء كَعْب",
+      "fr": "Chaussure à talon",
+      "emoji": "👠"
+    },
+    {
+      "id": "5",
+      "ar": "رَبْطَة عُنُق",
+      "fr": "Cravate",
+      "emoji": "👔"
+    },
+    {
+      "id": "6",
+      "ar": "تَنُّورَة",
+      "fr": "Jupe",
+      "emoji": "👗"
+    },
+    {
+      "id": "7",
+      "ar": "فُسْتَان",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "8",
+      "ar": "مِجَفَّف شَعْر",
+      "fr": "Sèche-cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "9",
+      "ar": "أَلْعَاب",
+      "fr": "Jouets",
+      "emoji": "🧸"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اِرْبِطْ كُلَّ وَاحِدٍ بِالأَغرَاضِ الخَاصَّةِ بِهِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عَائِلَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كُرَة قَدَم",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حِذَاء رِيَاضِي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "حِذَاء كَعْب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "رَبْطَة عُنُق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تَنُّورَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مِجَفَّف شَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أَلْعَاب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p9_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p9_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:42.339493",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 10
+  }
+}

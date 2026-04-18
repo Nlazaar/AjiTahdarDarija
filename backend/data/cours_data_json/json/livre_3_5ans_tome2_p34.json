@@ -1,0 +1,155 @@
+{
+  "page_nb": 34,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre سـ / س en couleur dans chaque mot",
+    "ar": "لوّن الحرف سـ / س بالألوان في كل كلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سرور",
+      "fr": "Bonheur",
+      "emoji": "😊"
+    },
+    {
+      "id": "2",
+      "ar": "سيير",
+      "fr": "Bracelet",
+      "emoji": "📿"
+    },
+    {
+      "id": "3",
+      "ar": "سمر",
+      "fr": "Samra (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "4",
+      "ar": "رسم",
+      "fr": "Dessin",
+      "emoji": "🎨"
+    },
+    {
+      "id": "5",
+      "ar": "شمس",
+      "fr": "Soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "سر",
+      "fr": "Secret",
+      "emoji": "🤫"
+    },
+    {
+      "id": "7",
+      "ar": "فأس",
+      "fr": "Hache",
+      "emoji": "🪓"
+    },
+    {
+      "id": "8",
+      "ar": "سار",
+      "fr": "Il a marché",
+      "emoji": "🚶"
+    },
+    {
+      "id": "9",
+      "ar": "أسر",
+      "fr": "Familles",
+      "emoji": "👨‍👩‍👧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p34_consigne",
+      "texte_ar": "لوّن الحرف سـ / س بالألوان في كل كلمة",
+      "voix_m": "livre_3_5ans_tome2_p34_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سرور",
+      "voix_m": "livre_3_5ans_tome2_p34_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سيير",
+      "voix_m": "livre_3_5ans_tome2_p34_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سمر",
+      "voix_m": "livre_3_5ans_tome2_p34_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "رسم",
+      "voix_m": "livre_3_5ans_tome2_p34_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "شمس",
+      "voix_m": "livre_3_5ans_tome2_p34_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سر",
+      "voix_m": "livre_3_5ans_tome2_p34_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فأس",
+      "voix_m": "livre_3_5ans_tome2_p34_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سار",
+      "voix_m": "livre_3_5ans_tome2_p34_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أسر",
+      "voix_m": "livre_3_5ans_tome2_p34_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p34_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:01:08.607893",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

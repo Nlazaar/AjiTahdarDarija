@@ -1,0 +1,90 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque ligne, trouve et barre l'élément qui est différent des autres.",
+    "ar": "فِي كُلِّ سَطْرٍ، ابْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ."
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "مجموعة الكمثرى",
+      "fr": "Ligne de poires : une poire de forme différente est l'intrus",
+      "emoji": "🍐"
+    },
+    {
+      "id": "ligne2",
+      "ar": "مجموعة القرود",
+      "fr": "Ligne de singes : un singe dans une position différente est l'intrus",
+      "emoji": "🐒"
+    },
+    {
+      "id": "ligne3",
+      "ar": "مجموعة حرف الجيم",
+      "fr": "Ligne de la lettre jim : une lettre de forme différente est l'intrus",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ligne4",
+      "ar": "مجموعة حرف الراء",
+      "fr": "Ligne de la lettre ra : une lettre de couleur/forme différente est l'intrus",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec06",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "فِي كُلِّ سَطْرٍ، ابْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ.",
+      "voix_m": "arabe_niveau3_lec06_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "مجموعة الكمثرى",
+      "voix_m": "arabe_niveau3_lec06_p9_ligne1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p9_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "مجموعة القرود",
+      "voix_m": "arabe_niveau3_lec06_p9_ligne2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p9_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "مجموعة حرف الجيم",
+      "voix_m": "arabe_niveau3_lec06_p9_ligne3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p9_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "مجموعة حرف الراء",
+      "voix_m": "arabe_niveau3_lec06_p9_ligne4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p9_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:33:54.978622",
+    "niveau": 3,
+    "lecon": 6,
+    "nom_pdf": "arabe_niveau3_lec06",
+    "bucket_audio": "audio-lessons/niveau3/lecon06/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Remet chaque lettre à sa place dans le mot",
+    "ar": "ألصق كلّ حرف في مكانه حسب ترتيبه في الكلمة"
+  },
+  "enonce": {
+    "fr": "Colle chaque lettre dans la bonne case pour former le mot 'autobus' (حافلة) dans le bon ordre",
+    "ar": "ألصق كلّ حرف في مكانه حسب ترتيبه في الكلمة حافلة"
+  },
+  "elements": [
+    {
+      "id": "lettre_1",
+      "ar": "ح",
+      "fr": "lettre ḥā (1ère position)",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "lettre_2",
+      "ar": "ا",
+      "fr": "lettre alif (2ème position)",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "lettre_3",
+      "ar": "ف",
+      "fr": "lettre fā (3ème position)",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "lettre_4",
+      "ar": "لـ",
+      "fr": "lettre lām (4ème position)",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "lettre_5",
+      "ar": "ـة",
+      "fr": "lettre tā marbūṭa (5ème position)",
+      "emoji": "5️⃣"
+    },
+    {
+      "id": "mot_cible",
+      "ar": "حافلة",
+      "fr": "autobus",
+      "emoji": "🚌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "ألصق كلّ حرف في مكانه حسب ترتيبه في الكلمة حافلة",
+      "voix_m": "arabe_niveau2_05_2_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_1",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_05_2_p4_lettre_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_lettre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_2",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_05_2_p4_lettre_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_lettre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_3",
+      "texte_ar": "ف",
+      "voix_m": "arabe_niveau2_05_2_p4_lettre_3_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_lettre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_4",
+      "texte_ar": "لـ",
+      "voix_m": "arabe_niveau2_05_2_p4_lettre_4_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_lettre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_5",
+      "texte_ar": "ـة",
+      "voix_m": "arabe_niveau2_05_2_p4_lettre_5_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_lettre_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_cible",
+      "texte_ar": "حافلة",
+      "voix_m": "arabe_niveau2_05_2_p4_mot_cible_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p4_mot_cible_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:46:49.784287",
+    "niveau": 2,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau2_05_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon16/",
+    "nb_audio_assets": 7
+  }
+}

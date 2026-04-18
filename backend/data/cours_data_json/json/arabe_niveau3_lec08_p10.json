@@ -1,0 +1,90 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque ligne, barre la forme qui est différente des autres",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "أوراق الشجر",
+      "fr": "Feuilles d'arbre - une feuille est différente (plus petite/différente forme)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "ligne2",
+      "ar": "عَ - حرف العين بكسرة",
+      "fr": "Lettre aïn avec kasra - une est en rouge (différente)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ligne3",
+      "ar": "عَ - حرف العين المتوسط",
+      "fr": "Lettre aïn forme médiane - une est en couleur verte (différente)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ligne4",
+      "ar": "أَ - حرف الألف مع همزة",
+      "fr": "Lettre alef avec hamza - une est en bleu (différente)",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec08",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "arabe_niveau3_lec08_p10_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "أوراق الشجر",
+      "voix_m": "arabe_niveau3_lec08_p10_ligne1_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p10_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "عَ - حرف العين بكسرة",
+      "voix_m": "arabe_niveau3_lec08_p10_ligne2_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p10_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "عَ - حرف العين المتوسط",
+      "voix_m": "arabe_niveau3_lec08_p10_ligne3_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p10_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "أَ - حرف الألف مع همزة",
+      "voix_m": "arabe_niveau3_lec08_p10_ligne4_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p10_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:37:46.248822",
+    "niveau": 3,
+    "lecon": 8,
+    "nom_pdf": "arabe_niveau3_lec08",
+    "bucket_audio": "audio-lessons/niveau3/lecon08/",
+    "nb_audio_assets": 5
+  }
+}

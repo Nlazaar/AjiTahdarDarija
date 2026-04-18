@@ -1,0 +1,207 @@
+{
+  "page_nb": 31,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à leur bon endroit",
+    "ar": "أَلصِقْ أَجْزَاءَ الصّورَةِ فِي مَكَانِها المُناسِب"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de chaque image pour reconstituer le mot correspondant",
+    "ar": "اِقطَع وأَلصِق أَجزاءَ كُلِّ صورةٍ في مَكانِها المُناسِب لِتُكوِّنَ الكَلِمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حوت",
+      "fr": "baleine",
+      "emoji": "🐳"
+    },
+    {
+      "id": "2",
+      "ar": "أخطبوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "3",
+      "ar": "طريق",
+      "fr": "route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "4",
+      "ar": "تمر",
+      "fr": "dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "5",
+      "ar": "حمامة",
+      "fr": "pigeon",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "6",
+      "ar": "ذيل",
+      "fr": "queue",
+      "emoji": "🦎"
+    },
+    {
+      "id": "7",
+      "ar": "سمكة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "8",
+      "ar": "ليل",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "9",
+      "ar": "عين",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "10",
+      "ar": "هدية",
+      "fr": "cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "11",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "12",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "13",
+      "ar": "مسطر",
+      "fr": "règle",
+      "emoji": "📏"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p31_consigne",
+      "texte_ar": "اِقطَع وأَلصِق أَجزاءَ كُلِّ صورةٍ في مَكانِها المُناسِب لِتُكوِّنَ الكَلِمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حوت",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أخطبوط",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طريق",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تمر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "حمامة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ذيل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سمكة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ليل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "عين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "هدية",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "فيل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "مسطر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p31_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p31_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:23:59.239569",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 14
+  }
+}

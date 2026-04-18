@@ -1,0 +1,272 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "J'entoure les mots identiques au modèle",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الكَلِمَاتِ المُشَابِهَةَ لِلنَّمُوذَجِ"
+  },
+  "enonce": {
+    "fr": "Entoure avec un trait fermé les mots identiques au mot modèle illustré par l'image",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الكَلِمَاتِ المُشَابِهَةَ لِلنَّمُوذَجِ"
+  },
+  "elements": [
+    {
+      "id": "col1_modele",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "une orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "col2_modele",
+      "ar": "فِرَاشٌ",
+      "fr": "un lit",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "col3_modele",
+      "ar": "بَصَلٌ",
+      "fr": "un oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "col1_r1",
+      "ar": "نُرْتُقَالَةٌ",
+      "fr": "variante erronée orange",
+      "emoji": "❌"
+    },
+    {
+      "id": "col1_r2",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "orange (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_r3",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "orange (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_r4",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "orange (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_r5",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "orange (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_r1",
+      "ar": "فِرَاشٌ",
+      "fr": "lit (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_r2",
+      "ar": "فِرَاسٌ",
+      "fr": "variante erronée lit",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_r3",
+      "ar": "فِرَاشٌ",
+      "fr": "lit (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_r4",
+      "ar": "قِرَاشٌ",
+      "fr": "variante erronée lit",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_r5",
+      "ar": "فِرَاشٌ",
+      "fr": "lit (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col3_r1",
+      "ar": "بَصَلٌ",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col3_r2",
+      "ar": "يَصَلٌ",
+      "fr": "variante erronée oignon",
+      "emoji": "❌"
+    },
+    {
+      "id": "col3_r3",
+      "ar": "نَصَلٌ",
+      "fr": "variante erronée oignon",
+      "emoji": "❌"
+    },
+    {
+      "id": "col3_r4",
+      "ar": "بَصَلٌ",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col3_r5",
+      "ar": "بَصَلٌ",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الكَلِمَاتِ المُشَابِهَةَ لِلنَّمُوذَجِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_modele",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_modele_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_modele",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_modele_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_modele",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_modele_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_r1",
+      "texte_ar": "نُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_r1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_r1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_r2",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_r2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_r2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_r3",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_r3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_r3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_r4",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_r4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_r4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_r5",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col1_r5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col1_r5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_r1",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_r1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_r1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_r2",
+      "texte_ar": "فِرَاسٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_r2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_r2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_r3",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_r3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_r3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_r4",
+      "texte_ar": "قِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_r4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_r4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_r5",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col2_r5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col2_r5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_r1",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_r1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_r1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_r2",
+      "texte_ar": "يَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_r2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_r2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_r3",
+      "texte_ar": "نَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_r3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_r3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_r4",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_r4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_r4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_r5",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p5_col3_r5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p5_col3_r5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:23:17.006119",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 19
+  }
+}

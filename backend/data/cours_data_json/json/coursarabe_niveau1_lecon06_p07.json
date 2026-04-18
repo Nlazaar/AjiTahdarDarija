@@ -1,0 +1,142 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "Relier par un trait les cases de points bleus avec les cases de lapins ayant le même nombre d'éléments",
+  "titre": {
+    "fr": "Je relie les cases qui ont le même nombre",
+    "ar": "أربط بخطٍّ المجموعات الَّتي لها نفس عدد العناصر"
+  },
+  "enonce": {
+    "fr": "Relie par un trait les cases qui ont le même nombre d'éléments",
+    "ar": "أربط بخطٍّ المجموعات الَّتي لها نفس عدد العناصر"
+  },
+  "elements": [
+    {
+      "id": "dots_3",
+      "ar": "٣ نقاط",
+      "fr": "3 points",
+      "emoji": "🔵🔵🔵"
+    },
+    {
+      "id": "dots_4",
+      "ar": "٤ نقاط",
+      "fr": "4 points",
+      "emoji": "🔵🔵🔵🔵"
+    },
+    {
+      "id": "dots_1",
+      "ar": "١ نقطة",
+      "fr": "1 point",
+      "emoji": "🔵"
+    },
+    {
+      "id": "dots_2",
+      "ar": "٢ نقاط",
+      "fr": "2 points",
+      "emoji": "🔵🔵"
+    },
+    {
+      "id": "rabbits_4",
+      "ar": "٤ أرانب",
+      "fr": "4 lapins",
+      "emoji": "🐇🐇🐇🐇"
+    },
+    {
+      "id": "rabbits_2",
+      "ar": "٢ أرانب",
+      "fr": "2 lapins",
+      "emoji": "🐇🐇"
+    },
+    {
+      "id": "rabbits_3",
+      "ar": "٣ أرانب",
+      "fr": "3 lapins",
+      "emoji": "🐇🐇🐇"
+    },
+    {
+      "id": "rabbits_1",
+      "ar": "١ أرنب",
+      "fr": "1 lapin",
+      "emoji": "🐇"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon06",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أربط بخطٍّ المجموعات الَّتي لها نفس عدد العناصر",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dots_3",
+      "texte_ar": "٣ نقاط",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_dots_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_dots_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dots_4",
+      "texte_ar": "٤ نقاط",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_dots_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_dots_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dots_1",
+      "texte_ar": "١ نقطة",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_dots_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_dots_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dots_2",
+      "texte_ar": "٢ نقاط",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_dots_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_dots_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rabbits_4",
+      "texte_ar": "٤ أرانب",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_rabbits_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_rabbits_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rabbits_2",
+      "texte_ar": "٢ أرانب",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_rabbits_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_rabbits_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rabbits_3",
+      "texte_ar": "٣ أرانب",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_rabbits_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_rabbits_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rabbits_1",
+      "texte_ar": "١ أرنب",
+      "voix_m": "coursarabe_niveau1_lecon06_p7_rabbits_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p7_rabbits_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:52:01.023534",
+    "niveau": 1,
+    "lecon": 35,
+    "nom_pdf": "coursarabe_niveau1_lecon06",
+    "bucket_audio": "audio-lessons/niveau1/lecon35/",
+    "nb_audio_assets": 9
+  }
+}

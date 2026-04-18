@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useAudioCtx } from "@/contexts/AudioContext";
 
 type Word = { darija: string; latin?: string; fr?: string };
 
@@ -19,6 +20,7 @@ export default function NouveauMotDuolingo({
   onContinue?: () => void;
   onSkip?: () => void;
 }) {
+  const { speak } = useAudioCtx();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 p-6">
       <div className="w-full max-w-sm">
@@ -33,7 +35,7 @@ export default function NouveauMotDuolingo({
         <main className="bg-white rounded-[28px] shadow-[0_14px_40px_rgba(16,24,40,0.12)] p-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-4">
             <h2 className="text-xs font-bold text-[#23A455] uppercase tracking-wider">NOUVEAU MOT</h2>
-            <button aria-label="Écouter" onClick={() => { if (typeof window !== 'undefined') { const t = new SpeechSynthesisUtterance(word.latin || word.darija); t.lang = 'ar-SA'; window.speechSynthesis.cancel(); window.speechSynthesis.speak(t); } }} className="w-9 h-9 rounded-lg bg-[#EEF9EE] flex items-center justify-center text-[#2F8F2F] shadow-sm">🔊</button>
+            <button aria-label="Écouter" onClick={() => speak(word.darija, 'ar-MA')} className="w-9 h-9 rounded-lg bg-[#EEF9EE] flex items-center justify-center text-[#2F8F2F] shadow-sm">🔊</button>
           </div>
 
           <section className="bg-white rounded-2xl p-6 mb-4 border border-gray-50">

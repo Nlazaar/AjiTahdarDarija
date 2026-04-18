@@ -1,0 +1,142 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Écrire les chiffres manquants et compter les éléments",
+    "ar": "أكتب الأرقام الناقصة وعدد عناصر كل مجموعة"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Écris les chiffres manquants dans la suite. Exercice 8 : Écris le nombre d'éléments dans chaque ensemble.",
+    "ar": "تمرين ٧ : أكتب الأرقام الناقصة. تمرين ٨ : أكتب عدد عناصر كل مجموعة."
+  },
+  "elements": [
+    {
+      "id": "suite1",
+      "ar": "١ _ ٣ ٤ _ _",
+      "fr": "1 _ 3 4 _ _",
+      "emoji": "🔢"
+    },
+    {
+      "id": "suite2",
+      "ar": "٧ _ ٩ _ _",
+      "fr": "7 _ 9 _ _",
+      "emoji": "🔢"
+    },
+    {
+      "id": "groupe1",
+      "ar": "مثلثات : ٣",
+      "fr": "Triangles : 3",
+      "emoji": "🔺"
+    },
+    {
+      "id": "groupe2",
+      "ar": "نجوم : ٥",
+      "fr": "Étoiles : 5",
+      "emoji": "⭐"
+    },
+    {
+      "id": "groupe3",
+      "ar": "دوائر : ٩",
+      "fr": "Cercles : 9",
+      "emoji": "⭕"
+    },
+    {
+      "id": "groupe4",
+      "ar": "قلوب : ٦",
+      "fr": "Cœurs : 6",
+      "emoji": "❤️"
+    },
+    {
+      "id": "groupe5",
+      "ar": "أسهم : ٦",
+      "fr": "Flèches : 6",
+      "emoji": "➡️"
+    },
+    {
+      "id": "groupe6",
+      "ar": "غيوم : ٩",
+      "fr": "Nuages : 9",
+      "emoji": "☁️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_06_2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "تمرين ٧ : أكتب الأرقام الناقصة. تمرين ٨ : أكتب عدد عناصر كل مجموعة.",
+      "voix_m": "arabe_niveau2_06_2_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_suite1",
+      "texte_ar": "١ _ ٣ ٤ _ _",
+      "voix_m": "arabe_niveau2_06_2_p7_suite1_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_suite1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_suite2",
+      "texte_ar": "٧ _ ٩ _ _",
+      "voix_m": "arabe_niveau2_06_2_p7_suite2_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_suite2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1",
+      "texte_ar": "مثلثات : ٣",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe1_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2",
+      "texte_ar": "نجوم : ٥",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe2_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3",
+      "texte_ar": "دوائر : ٩",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe3_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4",
+      "texte_ar": "قلوب : ٦",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe4_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe5",
+      "texte_ar": "أسهم : ٦",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe5_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe6",
+      "texte_ar": "غيوم : ٩",
+      "voix_m": "arabe_niveau2_06_2_p7_groupe6_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p7_groupe6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:49:41.799595",
+    "niveau": 2,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau2_06_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon18/",
+    "nb_audio_assets": 9
+  }
+}

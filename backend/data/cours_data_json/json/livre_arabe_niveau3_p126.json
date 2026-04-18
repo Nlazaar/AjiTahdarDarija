@@ -1,0 +1,77 @@
+{
+  "page_nb": 126,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis puis je relie avec l'image qui correspond",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Lis chaque mot puis relie-le à l'image qui correspond",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "تَعِبَ",
+      "fr": "il est fatigué",
+      "emoji": "😴"
+    },
+    {
+      "id": "e2",
+      "ar": "غَضِبَ",
+      "fr": "il s'est mis en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "e3",
+      "ar": "فَهِمَ",
+      "fr": "il a compris",
+      "emoji": "💡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p126_consigne",
+      "texte_ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p126_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p126_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "تَعِبَ",
+      "voix_m": "livre_arabe_niveau3_p126_e1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p126_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "livre_arabe_niveau3_p126_e2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p126_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "livre_arabe_niveau3_p126_e3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p126_e3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:18:40.611523",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Relier des carrés de même couleur situés de chaque côté de la page, puis nommer la couleur en arabe",
+  "titre": {
+    "fr": "Je relie les carrés de même couleur et je les nomme",
+    "ar": "أَربِطُ كُلَّ مُرَبَّعٍ بِالمُرَبَّعِ الَّذي لَهُ نَفْسُ اللَّونِ وَ أُسَمِّيه"
+  },
+  "enonce": {
+    "fr": "Je relie chaque carré avec celui qui a la même couleur et je la nomme",
+    "ar": "أَربِطُ كُلَّ مُرَبَّعٍ بِالمُرَبَّعِ الَّذي لَهُ نَفْسُ اللَّونِ وَ أُسَمِّيه"
+  },
+  "elements": [
+    {
+      "id": "couleur_vert",
+      "ar": "أَخْضَر",
+      "fr": "vert",
+      "emoji": "🟩"
+    },
+    {
+      "id": "couleur_noir",
+      "ar": "أَسْوَد",
+      "fr": "noir",
+      "emoji": "⬛"
+    },
+    {
+      "id": "couleur_rouge",
+      "ar": "أَحْمَر",
+      "fr": "rouge",
+      "emoji": "🟥"
+    },
+    {
+      "id": "couleur_bleu",
+      "ar": "أَزْرَق",
+      "fr": "bleu",
+      "emoji": "🟦"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَربِطُ كُلَّ مُرَبَّعٍ بِالمُرَبَّعِ الَّذي لَهُ نَفْسُ اللَّونِ وَ أُسَمِّيه",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_vert",
+      "texte_ar": "أَخْضَر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p5_couleur_vert_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p5_couleur_vert_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_noir",
+      "texte_ar": "أَسْوَد",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p5_couleur_noir_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p5_couleur_noir_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_rouge",
+      "texte_ar": "أَحْمَر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p5_couleur_rouge_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p5_couleur_rouge_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_bleu",
+      "texte_ar": "أَزْرَق",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p5_couleur_bleu_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p5_couleur_bleu_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:35:41.900277",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 16,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète et je barre ce qui est faux",
+    "ar": "أَكمل و اشطُبُ الخَطَأ"
+  },
+  "enonce": {
+    "fr": "Complète les phrases avec ton prénom et les prénoms des membres de ta famille, puis barre ce qui est faux (fille ou garçon).",
+    "ar": "أَكمل الجمل باسمك وأسماء أفراد عائلتك، ثم اشطُب الخطأ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أنا اسمي .........",
+      "fr": "Je m'appelle .........",
+      "emoji": "🧒"
+    },
+    {
+      "id": "2",
+      "ar": "أنا بِنت",
+      "fr": "Je suis une fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "3",
+      "ar": "أنا وَلَد",
+      "fr": "Je suis un garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "4",
+      "ar": "أمّي اسمُهَا .........",
+      "fr": "Ma maman s'appelle .........",
+      "emoji": "👩"
+    },
+    {
+      "id": "5",
+      "ar": "أَبي اسمُهُ .........",
+      "fr": "Mon papa s'appelle .........",
+      "emoji": "👨"
+    },
+    {
+      "id": "6",
+      "ar": "أُختي اسمُها .........",
+      "fr": "Ma sœur s'appelle .........",
+      "emoji": "👧"
+    },
+    {
+      "id": "7",
+      "ar": "أَخِي اسمُهُ .........",
+      "fr": "Mon frère s'appelle .........",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p16_consigne",
+      "texte_ar": "أَكمل الجمل باسمك وأسماء أفراد عائلتك، ثم اشطُب الخطأ.",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أنا اسمي .........",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أنا بِنت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أنا وَلَد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أمّي اسمُهَا .........",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أَبي اسمُهُ .........",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أُختي اسمُها .........",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أَخِي اسمُهُ .........",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p16_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p16_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:30.639371",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

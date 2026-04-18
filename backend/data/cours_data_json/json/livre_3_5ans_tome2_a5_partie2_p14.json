@@ -1,0 +1,194 @@
+{
+  "page_nb": 14,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot cible parmi les autres mots et entoure-le à chaque fois que tu le vois",
+    "ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَحْن",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "2",
+      "ar": "سَحْن",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "ضَحْن",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "طَحْن",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "صَحين",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "صَحون",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "مَلعَقة",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "8",
+      "ar": "لَعقة",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "مَلاعق",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "مَلحَقة",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "11",
+      "ar": "لَعق",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "مَغلَقة",
+      "fr": "(mot similaire)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p14_consigne",
+      "texte_ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَحْن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَحْن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ضَحْن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "طَحْن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صَحين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "صَحون",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مَلعَقة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "لَعقة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَلاعق",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مَلحَقة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "لَعق",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَغلَقة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p14_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p14_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:21:05.599297",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 13
+  }
+}

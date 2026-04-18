@@ -1,0 +1,246 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Révision et évaluation : compléter la syllabe manquante avec د ou ذ, puis compléter des phrases avec le mot approprié",
+  "titre": {
+    "fr": "Révision et évaluation (3)",
+    "ar": "مُرَاجَعَة وَ تَقْيِيم (3)"
+  },
+  "enonce": {
+    "fr": "Exercice 1 et 2 : J'écris la syllabe manquante parmi (دَ دَا دُ دُو دِ دِي) et (ذَ ذَا ذُ ذُو ذِ ذِي). Exercice 3 : Je complète les phrases avec le mot qui convient parmi : الْخِزَانَة، الدُّب، الدَّرَّاجَة، الْوِسَادَة",
+    "ar": "أَكْتُبُ الْمَقْطَعَ النَّاقِصَ مِنْ بَيْنِ (دَ دَا دُ دُو دِ دِي) وَ (ذَ ذَا ذُ ذُو ذِ ذِي). ثُمَّ أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ: الْخِزَانَة، الدُّبُّ، الدَّرَّاجَة، الْوِسَادَة"
+  },
+  "elements": [
+    {
+      "id": "ex1_1",
+      "ar": "لُفِينُ .....",
+      "fr": "Dauphin (compléter avec دَ/دَا/دُ...)",
+      "emoji": "🐬"
+    },
+    {
+      "id": "ex1_2",
+      "ar": "ضِفْ..... عُ",
+      "fr": "Grenouille (compléter la syllabe)",
+      "emoji": "🐸"
+    },
+    {
+      "id": "ex1_3",
+      "ar": ".......لكُّ",
+      "fr": "Coq (compléter la syllabe)",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ex1_4",
+      "ar": "صُنْ..... قٌّ",
+      "fr": "Boîte/carton (compléter la syllabe)",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex1_5",
+      "ar": ".......يُرَةٌ",
+      "fr": "Cercle (compléter la syllabe)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "ex1_6",
+      "ar": "..... مُيَةُ",
+      "fr": "Poupée (compléter la syllabe)",
+      "emoji": "🪆"
+    },
+    {
+      "id": "ex2_1",
+      "ar": "بَابَةٌ .......",
+      "fr": "Mouche (compléter avec ذَ/ذَا...)",
+      "emoji": "🪰"
+    },
+    {
+      "id": "ex2_2",
+      "ar": "....... يْلٌ",
+      "fr": "Queue de baleine (compléter la syllabe)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "ex2_3",
+      "ar": "حِ..... ءٌ",
+      "fr": "Chaussure (compléter la syllabe)",
+      "emoji": "👟"
+    },
+    {
+      "id": "ex2_4",
+      "ar": "لَ.........ذُّ",
+      "fr": "Smiley souriant (compléter la syllabe)",
+      "emoji": "😊"
+    },
+    {
+      "id": "ex2_5",
+      "ar": "..... رَاعٌ",
+      "fr": "Bras (compléter la syllabe)",
+      "emoji": "💪"
+    },
+    {
+      "id": "ex2_6",
+      "ar": "جُ.........رُ",
+      "fr": "Arbre (compléter la syllabe)",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex3_1",
+      "ar": "الْقِطَّةُ فَوْقَ .................",
+      "fr": "Le chat est sur le/la ...",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "تُرَتِّبُ عَبِيرُ مَلَابِسَهَا فِي .................",
+      "fr": "Abir range ses vêtements dans ...",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "يَأْكُلُ ................. سَمَكَةً",
+      "fr": "... mange un poisson",
+      "emoji": "🐻"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "تَلْعَبُ أَسْمَاءُ بِ.................",
+      "fr": "Asmaa joue avec ...",
+      "emoji": "🚲"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "bilan03",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَكْتُبُ الْمَقْطَعَ النَّاقِصَ مِنْ بَيْنِ (دَ دَا دُ دُو دِ دِي) وَ (ذَ ذَا ذُ ذُو ذِ ذِي). ثُمَّ أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ: الْخِزَانَة، الدُّبُّ، الدَّرَّاجَة، الْوِسَادَة",
+      "voix_m": "bilan03_p3_consigne_m.mp3",
+      "voix_f": "bilan03_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_1",
+      "texte_ar": "لُفِينُ .....",
+      "voix_m": "bilan03_p3_ex1_1_m.mp3",
+      "voix_f": "bilan03_p3_ex1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_2",
+      "texte_ar": "ضِفْ..... عُ",
+      "voix_m": "bilan03_p3_ex1_2_m.mp3",
+      "voix_f": "bilan03_p3_ex1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_3",
+      "texte_ar": ".......لكُّ",
+      "voix_m": "bilan03_p3_ex1_3_m.mp3",
+      "voix_f": "bilan03_p3_ex1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_4",
+      "texte_ar": "صُنْ..... قٌّ",
+      "voix_m": "bilan03_p3_ex1_4_m.mp3",
+      "voix_f": "bilan03_p3_ex1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_5",
+      "texte_ar": ".......يُرَةٌ",
+      "voix_m": "bilan03_p3_ex1_5_m.mp3",
+      "voix_f": "bilan03_p3_ex1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_6",
+      "texte_ar": "..... مُيَةُ",
+      "voix_m": "bilan03_p3_ex1_6_m.mp3",
+      "voix_f": "bilan03_p3_ex1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_1",
+      "texte_ar": "بَابَةٌ .......",
+      "voix_m": "bilan03_p3_ex2_1_m.mp3",
+      "voix_f": "bilan03_p3_ex2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_2",
+      "texte_ar": "....... يْلٌ",
+      "voix_m": "bilan03_p3_ex2_2_m.mp3",
+      "voix_f": "bilan03_p3_ex2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_3",
+      "texte_ar": "حِ..... ءٌ",
+      "voix_m": "bilan03_p3_ex2_3_m.mp3",
+      "voix_f": "bilan03_p3_ex2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_4",
+      "texte_ar": "لَ.........ذُّ",
+      "voix_m": "bilan03_p3_ex2_4_m.mp3",
+      "voix_f": "bilan03_p3_ex2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_5",
+      "texte_ar": "..... رَاعٌ",
+      "voix_m": "bilan03_p3_ex2_5_m.mp3",
+      "voix_f": "bilan03_p3_ex2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_6",
+      "texte_ar": "جُ.........رُ",
+      "voix_m": "bilan03_p3_ex2_6_m.mp3",
+      "voix_f": "bilan03_p3_ex2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "الْقِطَّةُ فَوْقَ .................",
+      "voix_m": "bilan03_p3_ex3_1_m.mp3",
+      "voix_f": "bilan03_p3_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "تُرَتِّبُ عَبِيرُ مَلَابِسَهَا فِي .................",
+      "voix_m": "bilan03_p3_ex3_2_m.mp3",
+      "voix_f": "bilan03_p3_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "يَأْكُلُ ................. سَمَكَةً",
+      "voix_m": "bilan03_p3_ex3_3_m.mp3",
+      "voix_f": "bilan03_p3_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "تَلْعَبُ أَسْمَاءُ بِ.................",
+      "voix_m": "bilan03_p3_ex3_4_m.mp3",
+      "voix_f": "bilan03_p3_ex3_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:04:15.330698",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "bilan03",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 17
+  }
+}

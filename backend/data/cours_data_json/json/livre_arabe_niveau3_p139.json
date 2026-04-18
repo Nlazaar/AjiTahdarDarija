@@ -1,0 +1,155 @@
+{
+  "page_nb": 139,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Les jours de la semaine – Lire et relier à l'image",
+    "ar": "أيام الأسبوع – اقرأ ثم اربط بالصورة المناسبة"
+  },
+  "enonce": {
+    "fr": "Je lis ou j'écoute la phrase, puis je la relie à l'image qui correspond.",
+    "ar": "اقرأ/اسمع ثم ارْبِطْ بالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "fr": "Zaynab lit un livre avec son frère.",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَاجَةِ مَعَ أَخِيهَا",
+      "fr": "Zaynab joue à vélo avec son frère.",
+      "emoji": "🚲"
+    },
+    {
+      "id": "jours_lundi",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jours_mardi",
+      "ar": "الثُّلاثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jours_mercredi",
+      "ar": "الأرْبِعَاءُ",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jours_jeudi",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jours_vendredi",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "🕌"
+    },
+    {
+      "id": "jours_samedi",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jours_dimanche",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p139_consigne",
+      "texte_ar": "اقرأ/اسمع ثم ارْبِطْ بالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p139_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "voix_m": "livre_arabe_niveau3_p139_phrase_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَاجَةِ مَعَ أَخِيهَا",
+      "voix_m": "livre_arabe_niveau3_p139_phrase_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_lundi",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "livre_arabe_niveau3_p139_jours_lundi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_lundi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_mardi",
+      "texte_ar": "الثُّلاثَاءُ",
+      "voix_m": "livre_arabe_niveau3_p139_jours_mardi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_mardi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_mercredi",
+      "texte_ar": "الأرْبِعَاءُ",
+      "voix_m": "livre_arabe_niveau3_p139_jours_mercredi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_mercredi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_jeudi",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "livre_arabe_niveau3_p139_jours_jeudi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_jeudi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_vendredi",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "livre_arabe_niveau3_p139_jours_vendredi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_vendredi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_samedi",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "livre_arabe_niveau3_p139_jours_samedi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_samedi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_dimanche",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "livre_arabe_niveau3_p139_jours_dimanche_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p139_jours_dimanche_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:21:00.076590",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Lire et relier des mots à leurs images, écrire une lettre en cursive, compléter des mots avec la lettre هـ sous différentes formes",
+  "titre": {
+    "fr": "La lettre Hé (ه) - Lecture, écriture et complétion",
+    "ar": "حرف الهاء - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ه. Exercice 5 : Je complète avec la forme qui convient de la lettre ه",
+    "ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب الحرف ه. تمرين 5 : أُكْمِلُ بِمَا يُنَاسِبُ"
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "سَهْمٌ",
+      "fr": "Flèche",
+      "emoji": "➡️"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "أَهْدَابٌ",
+      "fr": "Cils",
+      "emoji": "👁️"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "فَهِمَ",
+      "fr": "Il a compris",
+      "emoji": "💡"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "هِرَّةٌ",
+      "fr": "Chatte",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "مِزْهَرِيَّةٌ",
+      "fr": "Vase",
+      "emoji": "🏺"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "سُهُولٌ",
+      "fr": "Plaines",
+      "emoji": "🌿"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "نَهَارٌ",
+      "fr": "Jour",
+      "emoji": "☀️"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "مَهْدٌ",
+      "fr": "Lit de bébé",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "نَهْرٌ",
+      "fr": "Fleuve",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "شَهْرٌ",
+      "fr": "Un mois",
+      "emoji": "📅"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "ذَهَبٌ",
+      "fr": "Or",
+      "emoji": "🪙"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "مُهَرِّجٌ",
+      "fr": "Clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "هَدِيَّةٌ",
+      "fr": "Un cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "فَهْدٌ",
+      "fr": "Panthère",
+      "emoji": "🐆"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "ظَهْرٌ",
+      "fr": "Dos",
+      "emoji": "🧍"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_01_hee",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب الحرف ه. تمرين 5 : أُكْمِلُ بِمَا يُنَاسِبُ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "سَهْمٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "أَهْدَابٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "هِرَّةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "مِزْهَرِيَّةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "سُهُولٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "نَهَارٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "مَهْدٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "نَهْرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "شَهْرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "ذَهَبٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "مُهَرِّجٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "هَدِيَّةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "فَهْدٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "ظَهْرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:13:40.857815",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_01_hee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 16
+  }
+}

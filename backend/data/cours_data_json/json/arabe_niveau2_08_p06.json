@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte",
+    "ar": "أَعُدُّ"
+  },
+  "enonce": {
+    "fr": "Combien y en a-t-il ? Je compte puis j'entoure le nombre.",
+    "ar": "كَمْ هُنَاكَ ؟ أَعُدُّ ثُمَّ أُحِيطُ الْعَدَدَ"
+  },
+  "elements": [
+    {
+      "id": "coq",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "nombre_coq",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "ours",
+      "ar": "دُبٌّ",
+      "fr": "ours",
+      "emoji": "🐻"
+    },
+    {
+      "id": "nombre_ours",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_08",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "كَمْ هُنَاكَ ؟ أَعُدُّ ثُمَّ أُحِيطُ الْعَدَدَ",
+      "voix_m": "arabe_niveau2_08_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_08_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_coq",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "arabe_niveau2_08_p6_coq_m.mp3",
+      "voix_f": "arabe_niveau2_08_p6_coq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_coq",
+      "texte_ar": "٣",
+      "voix_m": "arabe_niveau2_08_p6_nombre_coq_m.mp3",
+      "voix_f": "arabe_niveau2_08_p6_nombre_coq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ours",
+      "texte_ar": "دُبٌّ",
+      "voix_m": "arabe_niveau2_08_p6_ours_m.mp3",
+      "voix_f": "arabe_niveau2_08_p6_ours_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_ours",
+      "texte_ar": "٤",
+      "voix_m": "arabe_niveau2_08_p6_nombre_ours_m.mp3",
+      "voix_f": "arabe_niveau2_08_p6_nombre_ours_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:52:21.668313",
+    "niveau": 2,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau2_08",
+    "bucket_audio": "audio-lessons/niveau2/lecon20/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer les objets de couleur jaune parmi une série d'images",
+  "titre": {
+    "fr": "J'entoure ce qui est jaune",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ مَا هُوَ أَصْفَرُ"
+  },
+  "enonce": {
+    "fr": "Entoure d'un trait fermé ce qui est jaune",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ مَا هُوَ أَصْفَرُ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَوْزَة",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "2",
+      "ar": "سَيَّارَة",
+      "fr": "voiture (bleue)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "3",
+      "ar": "إِجَّاصَة",
+      "fr": "poire (jaune)",
+      "emoji": "🍐"
+    },
+    {
+      "id": "4",
+      "ar": "تُفَّاحَة حَمْرَاء",
+      "fr": "pomme rouge",
+      "emoji": "🍎"
+    },
+    {
+      "id": "5",
+      "ar": "نَجْمَة صَفْرَاء",
+      "fr": "étoile jaune",
+      "emoji": "⭐"
+    },
+    {
+      "id": "6",
+      "ar": "تُفَّاحَة خَضْرَاء",
+      "fr": "pomme verte",
+      "emoji": "🍏"
+    },
+    {
+      "id": "7",
+      "ar": "شَمْس",
+      "fr": "soleil (jaune)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "8",
+      "ar": "بُرْتُقَال",
+      "fr": "oranges",
+      "emoji": "🍊"
+    },
+    {
+      "id": "9",
+      "ar": "كُرَة خُيُوط",
+      "fr": "pelote de laine (rose)",
+      "emoji": "🧶"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ مَا هُوَ أَصْفَرُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَوْزَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "إِجَّاصَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تُفَّاحَة حَمْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَجْمَة صَفْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تُفَّاحَة خَضْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "شَمْس",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بُرْتُقَال",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "كُرَة خُيُوط",
+      "voix_m": "coursarabe_niveau1_lecon02_p8_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p8_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:42:04.184202",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 10
+  }
+}

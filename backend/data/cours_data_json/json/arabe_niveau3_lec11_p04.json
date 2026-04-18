@@ -1,0 +1,103 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre ص dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّلَ أَو وَسَطَ أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image selon que j'entends la lettre ص au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُ الصُّورَةَ بِمَوْضِعِ حَرْفِ الصَّادِ : أَوَّلًا أَو وَسَطًا أَو آخِرًا"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "صِنَارَة",
+      "fr": "canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "e2",
+      "ar": "عُصْفُور",
+      "fr": "oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "e3",
+      "ar": "صَحْن",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e4",
+      "ar": "بَصَل",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "e5",
+      "ar": "عَصِير",
+      "fr": "jus",
+      "emoji": "🥤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec11",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُ الصُّورَةَ بِمَوْضِعِ حَرْفِ الصَّادِ : أَوَّلًا أَو وَسَطًا أَو آخِرًا",
+      "voix_m": "arabe_niveau3_lec11_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "صِنَارَة",
+      "voix_m": "arabe_niveau3_lec11_p4_e1_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "عُصْفُور",
+      "voix_m": "arabe_niveau3_lec11_p4_e2_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "صَحْن",
+      "voix_m": "arabe_niveau3_lec11_p4_e3_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "بَصَل",
+      "voix_m": "arabe_niveau3_lec11_p4_e4_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "عَصِير",
+      "voix_m": "arabe_niveau3_lec11_p4_e5_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p4_e5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:41:16.990618",
+    "niveau": 3,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau3_lec11",
+    "bucket_audio": "audio-lessons/niveau3/lecon11/",
+    "nb_audio_assets": 6
+  }
+}

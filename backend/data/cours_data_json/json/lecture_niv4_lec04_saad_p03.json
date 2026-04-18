@@ -1,0 +1,207 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des mots avec la lettre ص puis relier à l'image; compléter des phrases avec des mots donnés",
+  "titre": {
+    "fr": "Exercices sur la lettre Sad (ص)",
+    "ar": "تمارين على حرف الصاد"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Je complète puis je relie à l'image. Exercice 8 : Je complète avec le mot qui convient (poisson, crocodile, filet). Exercice 9 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex7_doigt",
+      "ar": "أُصْبُعٌ",
+      "fr": "doigt",
+      "emoji": "👆"
+    },
+    {
+      "id": "ex7_tornade",
+      "ar": "إِعْصَارٌ",
+      "fr": "tornade",
+      "emoji": "🌪️"
+    },
+    {
+      "id": "ex7_dents",
+      "ar": "أَسْنَانٌ / فَحَاتٌ",
+      "fr": "dents",
+      "emoji": "🦷"
+    },
+    {
+      "id": "ex7_crocodile",
+      "ar": "تِمْسَاحٌ",
+      "fr": "crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "ex7_ciel",
+      "ar": "صَحْرَاءُ / سَمَاءٌ",
+      "fr": "ciel / désert",
+      "emoji": "🌅"
+    },
+    {
+      "id": "ex7_livre",
+      "ar": "مُصْحَفٌ / كِتَابٌ",
+      "fr": "livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex8_poisson",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "ex8_crocodile",
+      "ar": "الصِّنَّارَةُ",
+      "fr": "canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "ex8_filet",
+      "ar": "الشَّبَكَةُ",
+      "fr": "filet",
+      "emoji": "🕸️"
+    },
+    {
+      "id": "ex9_pecheur",
+      "ar": "الصَّيَّادُ",
+      "fr": "le pêcheur",
+      "emoji": "🎣"
+    },
+    {
+      "id": "ex9_grande",
+      "ar": "كَبِيرَةٌ",
+      "fr": "grande",
+      "emoji": "🔝"
+    },
+    {
+      "id": "ex9_cannepêche",
+      "ar": "صِنَّارَتِهِ",
+      "fr": "sa canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "ex9_chassa",
+      "ar": "صَادَ",
+      "fr": "a pêché / a chassé",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec04_saad",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_doigt",
+      "texte_ar": "أُصْبُعٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_doigt_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_doigt_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_tornade",
+      "texte_ar": "إِعْصَارٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_tornade_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_tornade_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_dents",
+      "texte_ar": "أَسْنَانٌ / فَحَاتٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_dents_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_dents_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_crocodile",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_crocodile_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_crocodile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_ciel",
+      "texte_ar": "صَحْرَاءُ / سَمَاءٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_ciel_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_ciel_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_livre",
+      "texte_ar": "مُصْحَفٌ / كِتَابٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex7_livre_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex7_livre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_poisson",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex8_poisson_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex8_poisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_crocodile",
+      "texte_ar": "الصِّنَّارَةُ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex8_crocodile_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex8_crocodile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_filet",
+      "texte_ar": "الشَّبَكَةُ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex8_filet_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex8_filet_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_pecheur",
+      "texte_ar": "الصَّيَّادُ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex9_pecheur_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex9_pecheur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_grande",
+      "texte_ar": "كَبِيرَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex9_grande_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex9_grande_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_cannepêche",
+      "texte_ar": "صِنَّارَتِهِ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex9_cannepêche_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex9_cannepêche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_chassa",
+      "texte_ar": "صَادَ",
+      "voix_m": "lecture_niv4_lec04_saad_p3_ex9_chassa_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p3_ex9_chassa_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:46:48.387958",
+    "niveau": 4,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv4_lec04_saad",
+    "bucket_audio": "audio-lessons/niveau4/lecon04/",
+    "nb_audio_assets": 14
+  }
+}

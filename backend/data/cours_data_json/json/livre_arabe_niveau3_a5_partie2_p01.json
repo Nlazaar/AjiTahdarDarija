@@ -1,0 +1,402 @@
+{
+  "page_nb": 85,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "La prolongation du kasra",
+    "ar": "إِشْبَاعُ الْكَسْرِ"
+  },
+  "enonce": {
+    "fr": "Lis les syllabes avec la prolongation du kasra (kasra + ya)",
+    "ar": "اقرأ المقاطع التي تحتوي على إشباع الكسر"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "إِي",
+      "fr": "ii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "بِي",
+      "fr": "bii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "تِي",
+      "fr": "tii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ثِي",
+      "fr": "thii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "جِي",
+      "fr": "jii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "حِي",
+      "fr": "hii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "خِي",
+      "fr": "khii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "دِي",
+      "fr": "dii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ذِي",
+      "fr": "dhii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "رِي",
+      "fr": "rii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "زِي",
+      "fr": "zii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "سِي",
+      "fr": "sii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "شِي",
+      "fr": "shii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "صِي",
+      "fr": "sii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "15",
+      "ar": "ضِي",
+      "fr": "dhii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "16",
+      "ar": "طِي",
+      "fr": "tii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "17",
+      "ar": "ظِي",
+      "fr": "zhii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "18",
+      "ar": "عِي",
+      "fr": "'ii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "19",
+      "ar": "غِي",
+      "fr": "ghii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "20",
+      "ar": "فِي",
+      "fr": "fii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "21",
+      "ar": "قِي",
+      "fr": "qii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "22",
+      "ar": "كِي",
+      "fr": "kii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "23",
+      "ar": "لِي",
+      "fr": "lii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "24",
+      "ar": "مِي",
+      "fr": "mii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "25",
+      "ar": "نِي",
+      "fr": "nii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "26",
+      "ar": "هِي",
+      "fr": "hii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "27",
+      "ar": "وِي",
+      "fr": "wii",
+      "emoji": "🔤"
+    },
+    {
+      "id": "28",
+      "ar": "يِي",
+      "fr": "yii",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p85_consigne",
+      "texte_ar": "اقرأ المقاطع التي تحتوي على إشباع الكسر",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "إِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "رِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "زِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "صِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ضِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "طِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_16_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "ظِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_17_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "عِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_18_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "غِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_19_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "فِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_20_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "قِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_21_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "كِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_22_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_23",
+      "texte_ar": "لِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_23_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_24",
+      "texte_ar": "مِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_24_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_24_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_25",
+      "texte_ar": "نِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_25_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_25_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_26",
+      "texte_ar": "هِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_26_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_26_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_27",
+      "texte_ar": "وِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_27_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_27_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_28",
+      "texte_ar": "يِي",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p85_28_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p85_28_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:30:51.889841",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 29
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 118,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Le jour - Relier le mot à l'image",
+    "ar": "اليَوْمُ هُوَ يَوْمٌ - أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis puis je relie avec l'image qui correspond",
+    "ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "marid",
+      "ar": "مَرِضَ",
+      "fr": "Il est malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "hazin",
+      "ar": "حَزِنَ",
+      "fr": "Il est triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "fariha",
+      "ar": "فَرِحَ",
+      "fr": "Il est joyeux",
+      "emoji": "😄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p118_consigne",
+      "texte_ar": "أَقْرَأُ ثُمَّ أَرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p118_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p118_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_marid",
+      "texte_ar": "مَرِضَ",
+      "voix_m": "livre_arabe_niveau3_p118_marid_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p118_marid_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hazin",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "livre_arabe_niveau3_p118_hazin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p118_hazin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fariha",
+      "texte_ar": "فَرِحَ",
+      "voix_m": "livre_arabe_niveau3_p118_fariha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p118_fariha_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:17:18.193901",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

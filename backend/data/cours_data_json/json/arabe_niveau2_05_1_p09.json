@@ -1,0 +1,77 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque image au mot qui lui correspond",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "elements": [
+    {
+      "id": "train",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "avion",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "voiture",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 3,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أربط بين الكلمة و صورتها",
+      "voix_m": "arabe_niveau2_05_1_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_1_p9_train_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p9_train_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "arabe_niveau2_05_1_p9_avion_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p9_avion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p9_voiture_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p9_voiture_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:45:25.778294",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 15,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je dessine les lignes / Je trace les formes",
+    "ar": "أرسم الخطوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes pointillées en suivant le modèle : courbes, arcs et la lettre نون",
+    "ar": "اِرْسُمِ الخُطُوطَ بِاتِّبَاعِ النَّمُوذَج: المنحنيات والأقواس وحرف النون"
+  },
+  "elements": [
+    {
+      "id": "arc_haut",
+      "ar": "قوس للأعلى",
+      "fr": "Arc vers le haut",
+      "emoji": "🌙"
+    },
+    {
+      "id": "arc_bas",
+      "ar": "قوس للأسفل",
+      "fr": "Arc vers le bas",
+      "emoji": "⌣"
+    },
+    {
+      "id": "courbe_ouverte",
+      "ar": "منحنى مفتوح",
+      "fr": "Courbe ouverte",
+      "emoji": "〰️"
+    },
+    {
+      "id": "lettre_noun",
+      "ar": "نون",
+      "fr": "Lettre Noun (ن)",
+      "emoji": "✍️"
+    },
+    {
+      "id": "etoile",
+      "ar": "نجمة",
+      "fr": "Étoile en pointillés",
+      "emoji": "⭐"
+    },
+    {
+      "id": "parapluie",
+      "ar": "مظلة",
+      "fr": "Parapluie en pointillés",
+      "emoji": "☂️"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شوكة",
+      "fr": "Fourchette en pointillés",
+      "emoji": "🍴"
+    },
+    {
+      "id": "couteau",
+      "ar": "سكين",
+      "fr": "Couteau en pointillés",
+      "emoji": "🔪"
+    },
+    {
+      "id": "cuillere",
+      "ar": "ملعقة",
+      "fr": "Cuillère en pointillés",
+      "emoji": "🥄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p15_consigne",
+      "texte_ar": "اِرْسُمِ الخُطُوطَ بِاتِّبَاعِ النَّمُوذَج: المنحنيات والأقواس وحرف النون",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_haut",
+      "texte_ar": "قوس للأعلى",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_arc_haut_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_arc_haut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_bas",
+      "texte_ar": "قوس للأسفل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_arc_bas_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_arc_bas_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe_ouverte",
+      "texte_ar": "منحنى مفتوح",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_courbe_ouverte_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_courbe_ouverte_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_noun",
+      "texte_ar": "نون",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_lettre_noun_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_lettre_noun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile",
+      "texte_ar": "نجمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_etoile_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_etoile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_parapluie",
+      "texte_ar": "مظلة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_parapluie_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_parapluie_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شوكة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_fourchette_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_couteau_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_couteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cuillere",
+      "texte_ar": "ملعقة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p15_cuillere_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p15_cuillere_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:21:16.792942",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Mon corps",
+    "ar": "جسمي"
+  },
+  "enonce": {
+    "fr": "Je relie chaque partie du corps avec ce qu'elle peut faire",
+    "ar": "أرْبِطُ كُلَّ جُزْءٍ مِنْ جِسْمِي بِمَا يَقُومُ بِهِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "يَد",
+      "fr": "main",
+      "emoji": "✋"
+    },
+    {
+      "id": "2",
+      "ar": "أُذُن",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "3",
+      "ar": "عَيْن",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "4",
+      "ar": "فَم",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "5",
+      "ar": "لِسَان",
+      "fr": "langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "6",
+      "ar": "رَأْس",
+      "fr": "tête",
+      "emoji": "🗣️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "أرْبِطُ كُلَّ جُزْءٍ مِنْ جِسْمِي بِمَا يَقُومُ بِهِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "يَد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أُذُن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عَيْن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَم",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "لِسَان",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَأْس",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p11_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p11_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:30:08.319793",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 7
+  }
+}

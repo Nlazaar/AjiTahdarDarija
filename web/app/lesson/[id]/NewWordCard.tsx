@@ -2,19 +2,17 @@
 
 import React from 'react'
 import { useLanguage } from '@/context/LanguageContext'
+import { useAudioCtx } from '@/contexts/AudioContext'
 
 type Word = { darija: string; latin?: string; fr?: string }
 
 export default function NewWordCard({ word = { darija: 'ا', latin: 'a', fr: 'a' } }: { word?: Word }) {
   const { selectedLang } = useLanguage()
+  const { speak: speakCtx } = useAudioCtx()
 
   const speak = () => {
-    if (typeof window === 'undefined') return
-    const utter = new SpeechSynthesisUtterance(word.latin || word.darija)
-    // prefer Arabic voice when available for darija; fallback to selectedLang
-    utter.lang = selectedLang === 'fr' ? 'ar-SA' : selectedLang || 'ar-SA'
-    window.speechSynthesis.cancel()
-    window.speechSynthesis.speak(utter)
+    const lang = selectedLang === 'fr' ? 'ar-MA' : selectedLang || 'ar-MA'
+    speakCtx(word.darija, lang)
   }
 
   const meaning = selectedLang === 'fr' ? (word.fr || word.latin) : (word.latin || word.fr)

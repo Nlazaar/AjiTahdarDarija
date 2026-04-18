@@ -1,0 +1,207 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure le mot",
+    "ar": "أَحِيطُ الكَلِمَة بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement le mot 'أسد' (lion) parmi tous les mots proposés",
+    "ar": "أَحِط كلمة 'أسد' فقط من بين جميع الكلمات المكتوبة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "2",
+      "ar": "غزال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "3",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "4",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "5",
+      "ar": "أحد",
+      "fr": "un/quelqu'un",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "سد",
+      "fr": "barrage",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "8",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "9",
+      "ar": "أد",
+      "fr": "(non-mot)",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "11",
+      "ar": "أشد",
+      "fr": "plus fort",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "13",
+      "ar": "شد",
+      "fr": "tire/attache",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَحِط كلمة 'أسد' فقط من بين جميع الكلمات المكتوبة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غزال",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أحد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "أشد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p3_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p3_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:29:05.158275",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 14
+  }
+}

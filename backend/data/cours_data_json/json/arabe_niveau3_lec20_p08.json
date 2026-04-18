@@ -1,0 +1,220 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Leçon 20 – Reconstituer des mots arabes",
+    "ar": "الدَّرْسُ 20 – رَكِّبِ الْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Remets les syllabes dans le bon ordre pour former des mots arabes corrects.",
+    "ar": "رَتِّبِ الْمَقَاطِعَ لِتُكَوِّنَ كَلِمَاتٍ صَحِيحَةً."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "زَيْنَبُ تَلْعَبُ بِالدَّرَاجَةِ مَعَ أَخِيهَا",
+      "fr": "Zaynab joue à vélo avec son frère",
+      "emoji": "🚲"
+    },
+    {
+      "id": "2",
+      "ar": "مَعَ أَخِيهَا زَيْنَبُ تَقْرَأُ كِتَابًا",
+      "fr": "Zaynab lit un livre avec son frère",
+      "emoji": "📖"
+    },
+    {
+      "id": "3",
+      "ar": "زُرُونُ",
+      "fr": "(mot à reconstituer : syllabe 1)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "جَةُ شَةُ نُ تُونُ",
+      "fr": "(syllabes à assembler)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "بَانُ بُ دَةُ ـةُ",
+      "fr": "(syllabes à assembler)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "مَوْزُ",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "7",
+      "ar": "زَيْتُ",
+      "fr": "huile",
+      "emoji": "🫙"
+    },
+    {
+      "id": "8",
+      "ar": "أَسَدُ",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "9",
+      "ar": "حُوتُ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "10",
+      "ar": "عِنَبُ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "11",
+      "ar": "خُبْزُ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "12",
+      "ar": "أَرْنَبُ",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "13",
+      "ar": "ثُومُ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "14",
+      "ar": "صَحْنُ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec20",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "رَتِّبِ الْمَقَاطِعَ لِتُكَوِّنَ كَلِمَاتٍ صَحِيحَةً.",
+      "voix_m": "arabe_niveau3_lec20_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "زَيْنَبُ تَلْعَبُ بِالدَّرَاجَةِ مَعَ أَخِيهَا",
+      "voix_m": "arabe_niveau3_lec20_p8_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَعَ أَخِيهَا زَيْنَبُ تَقْرَأُ كِتَابًا",
+      "voix_m": "arabe_niveau3_lec20_p8_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "زُرُونُ",
+      "voix_m": "arabe_niveau3_lec20_p8_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "جَةُ شَةُ نُ تُونُ",
+      "voix_m": "arabe_niveau3_lec20_p8_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بَانُ بُ دَةُ ـةُ",
+      "voix_m": "arabe_niveau3_lec20_p8_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مَوْزُ",
+      "voix_m": "arabe_niveau3_lec20_p8_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "زَيْتُ",
+      "voix_m": "arabe_niveau3_lec20_p8_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "أَسَدُ",
+      "voix_m": "arabe_niveau3_lec20_p8_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "حُوتُ",
+      "voix_m": "arabe_niveau3_lec20_p8_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "عِنَبُ",
+      "voix_m": "arabe_niveau3_lec20_p8_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "خُبْزُ",
+      "voix_m": "arabe_niveau3_lec20_p8_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "أَرْنَبُ",
+      "voix_m": "arabe_niveau3_lec20_p8_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ثُومُ",
+      "voix_m": "arabe_niveau3_lec20_p8_13_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "صَحْنُ",
+      "voix_m": "arabe_niveau3_lec20_p8_14_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p8_14_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:53:44.928768",
+    "niveau": 3,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau3_lec20",
+    "bucket_audio": "audio-lessons/niveau3/lecon20/",
+    "nb_audio_assets": 15
+  }
+}

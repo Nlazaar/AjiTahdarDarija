@@ -1,0 +1,168 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je cherche la lettre et je l'entoure",
+    "ar": "أَبْحَثُ عَنْ حَرْفِ التَّاء وَ أَلَوِّنُهُ"
+  },
+  "enonce": {
+    "fr": "Cherche la lettre ت parmi toutes les lettres et entoure-la en la coloriant",
+    "ar": "أَبْحَثُ عَنْ حَرْفِ التَّاء وَ أَلَوِّنُهُ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ت",
+      "fr": "ta (lettre cible)",
+      "emoji": "🎯"
+    },
+    {
+      "id": "2",
+      "ar": "ي",
+      "fr": "ya",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "د",
+      "fr": "dal",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": "✏️"
+    },
+    {
+      "id": "5",
+      "ar": "ن",
+      "fr": "nun",
+      "emoji": "✏️"
+    },
+    {
+      "id": "6",
+      "ar": "ح",
+      "fr": "ha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "7",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "8",
+      "ar": "ش",
+      "fr": "shin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "9",
+      "ar": "ج",
+      "fr": "jim",
+      "emoji": "✏️"
+    },
+    {
+      "id": "10",
+      "ar": "ق",
+      "fr": "qaf",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَبْحَثُ عَنْ حَرْفِ التَّاء وَ أَلَوِّنُهُ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p7_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p7_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:48.540507",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 11
+  }
+}

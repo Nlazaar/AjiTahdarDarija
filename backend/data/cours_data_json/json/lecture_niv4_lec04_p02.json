@@ -1,0 +1,129 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Leçon 4 - Exercices de compréhension et de texte",
+    "ar": "الدَّرْسُ 4 - تمارين الفهم والنص"
+  },
+  "enonce": {
+    "fr": "Complete les phrases en t'aidant du texte, relie les éléments pour former une phrase, et retrouve dans le texte trois mots contenant les lettres ح et م",
+    "ar": "أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ، وَأُكْمِلُ بِمَا يُنَاسِبُ حَسَبَ النَّصِّ، وَأَسْتَخْرِجُ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex1_phrase1",
+      "ar": "أَدْعُو اللَّهَ فِيهَا",
+      "fr": "Je prie Allah en elle",
+      "emoji": "🙏"
+    },
+    {
+      "id": "ex1_phrase2",
+      "ar": "يُعَلِّمُنِي اللُّغَةَ الْعَرَبِيَّةَ",
+      "fr": "Il m'apprend la langue arabe",
+      "emoji": "📚"
+    },
+    {
+      "id": "ex1_phrase3",
+      "ar": "تُعَلِّمُنِي الْقُرْآنَ",
+      "fr": "Elle m'apprend le Coran",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex2_blank1",
+      "ar": "يَدْعُو مُعْتَزٌّ بِكُلِّ مَا يُرِيدُ أَنْ ... اللهُ لَهُ",
+      "fr": "Muatazz prie pour tout ce qu'il veut qu'Allah lui accorde",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex2_blank2",
+      "ar": "يَحْفَظُ الْقُرْآنَ لِيَتْلُوَهُ فِي ... وَ فِي كُلِّ وَقْتٍ",
+      "fr": "Il mémorise le Coran pour le réciter en ... et à tout moment",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_ha",
+      "ar": "ح",
+      "fr": "Lettre Ha - trouver 3 mots du texte",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_mim",
+      "ar": "م",
+      "fr": "Lettre Mim - trouver 3 mots du texte",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec04",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ، وَأُكْمِلُ بِمَا يُنَاسِبُ حَسَبَ النَّصِّ، وَأَسْتَخْرِجُ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ",
+      "voix_m": "lecture_niv4_lec04_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_phrase1",
+      "texte_ar": "أَدْعُو اللَّهَ فِيهَا",
+      "voix_m": "lecture_niv4_lec04_p2_ex1_phrase1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_ex1_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_phrase2",
+      "texte_ar": "يُعَلِّمُنِي اللُّغَةَ الْعَرَبِيَّةَ",
+      "voix_m": "lecture_niv4_lec04_p2_ex1_phrase2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_ex1_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_phrase3",
+      "texte_ar": "تُعَلِّمُنِي الْقُرْآنَ",
+      "voix_m": "lecture_niv4_lec04_p2_ex1_phrase3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_ex1_phrase3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_blank1",
+      "texte_ar": "يَدْعُو مُعْتَزٌّ بِكُلِّ مَا يُرِيدُ أَنْ ... اللهُ لَهُ",
+      "voix_m": "lecture_niv4_lec04_p2_ex2_blank1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_ex2_blank1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_blank2",
+      "texte_ar": "يَحْفَظُ الْقُرْآنَ لِيَتْلُوَهُ فِي ... وَ فِي كُلِّ وَقْتٍ",
+      "voix_m": "lecture_niv4_lec04_p2_ex2_blank2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_ex2_blank2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ha",
+      "texte_ar": "ح",
+      "voix_m": "lecture_niv4_lec04_p2_lettre_ha_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_lettre_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_mim",
+      "texte_ar": "م",
+      "voix_m": "lecture_niv4_lec04_p2_lettre_mim_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p2_lettre_mim_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:39:10.584940",
+    "niveau": 4,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv4_lec04",
+    "bucket_audio": "audio-lessons/niveau4/lecon04/",
+    "nb_audio_assets": 8
+  }
+}

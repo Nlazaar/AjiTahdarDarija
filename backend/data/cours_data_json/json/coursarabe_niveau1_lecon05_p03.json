@@ -1,0 +1,77 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Découper et coller les images dans l'ordre chronologique correspondant à la comptine de l'araignée",
+  "titre": {
+    "fr": "Je remets les images dans l'ordre selon la comptine de l'araignée",
+    "ar": "أُرَتِّبُ اللَّقَطَاتِ حَسَبَ تَسَلْسُلِهَا فِي الْأُنْشُودَةِ"
+  },
+  "enonce": {
+    "fr": "Découpe les trois images et colle-les dans les cases numérotées 1, 2 et 3 selon l'ordre de la comptine",
+    "ar": "رتّب الصور حسب تسلسلها في الأنشودة"
+  },
+  "elements": [
+    {
+      "id": "img1",
+      "ar": "العنكبوت في البركة",
+      "fr": "L'araignée dans la flaque d'eau",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "img2",
+      "ar": "العنكبوت والبيت مع المطر",
+      "fr": "L'araignée près de la maison sous la pluie",
+      "emoji": "🏠"
+    },
+    {
+      "id": "img3",
+      "ar": "الشمس والسماء الصافية",
+      "fr": "Le soleil et le ciel dégagé",
+      "emoji": "☀️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "رتّب الصور حسب تسلسلها في الأنشودة",
+      "voix_m": "coursarabe_niveau1_lecon05_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img1",
+      "texte_ar": "العنكبوت في البركة",
+      "voix_m": "coursarabe_niveau1_lecon05_p3_img1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p3_img1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img2",
+      "texte_ar": "العنكبوت والبيت مع المطر",
+      "voix_m": "coursarabe_niveau1_lecon05_p3_img2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p3_img2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img3",
+      "texte_ar": "الشمس والسماء الصافية",
+      "voix_m": "coursarabe_niveau1_lecon05_p3_img3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p3_img3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:47:12.128089",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 4
+  }
+}

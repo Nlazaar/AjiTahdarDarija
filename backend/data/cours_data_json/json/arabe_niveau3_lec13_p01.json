@@ -1,0 +1,77 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Les jours de la semaine - Je lis et je relie",
+    "ar": "أَيَّامُ الأُسْبُوعِ - اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis la phrase puis je la relie avec l'image qui correspond",
+    "ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "لَعِبَ الْوَلَدُ",
+      "fr": "Le garçon a joué",
+      "emoji": "👦"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "يَلْبَسُ أَخِي مَلابِسَهُ",
+      "fr": "Mon frère met ses vêtements",
+      "emoji": "👗"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "تَكْتُبُ أُخْتِي",
+      "fr": "Ma sœur écrit",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec13",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "arabe_niveau3_lec13_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "لَعِبَ الْوَلَدُ",
+      "voix_m": "arabe_niveau3_lec13_p1_phrase_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p1_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "يَلْبَسُ أَخِي مَلابِسَهُ",
+      "voix_m": "arabe_niveau3_lec13_p1_phrase_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p1_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "تَكْتُبُ أُخْتِي",
+      "voix_m": "arabe_niveau3_lec13_p1_phrase_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p1_phrase_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:43:06.605340",
+    "niveau": 3,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau3_lec13",
+    "bucket_audio": "audio-lessons/niveau3/lecon13/",
+    "nb_audio_assets": 4
+  }
+}

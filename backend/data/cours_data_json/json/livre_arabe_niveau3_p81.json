@@ -1,0 +1,142 @@
+{
+  "page_nb": 81,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "Je relie selon que j'entends la lettre ص : au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ كُلَّ صُورَة بِالْمَكَان الْمُنَاسِب حَسَب مَوْقِع حَرْف الصَّاد فِي الْكَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "debut",
+      "ar": "أَوَّل",
+      "fr": "Début du mot",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "milieu",
+      "ar": "وَسَط",
+      "fr": "Milieu du mot",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "fin",
+      "ar": "آخِر",
+      "fr": "Fin du mot",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "canne_peche",
+      "ar": "صِنَّارَة",
+      "fr": "Canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "oiseau",
+      "ar": "عُصْفُور",
+      "fr": "Oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "assiette",
+      "ar": "صَحْن",
+      "fr": "Assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "oignon",
+      "ar": "بَصَل",
+      "fr": "Oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "jus",
+      "ar": "عَصِير",
+      "fr": "Jus",
+      "emoji": "🧃"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p81_consigne",
+      "texte_ar": "أَرْبِطُ كُلَّ صُورَة بِالْمَكَان الْمُنَاسِب حَسَب مَوْقِع حَرْف الصَّاد فِي الْكَلِمَة",
+      "voix_m": "livre_arabe_niveau3_p81_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_debut",
+      "texte_ar": "أَوَّل",
+      "voix_m": "livre_arabe_niveau3_p81_debut_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_debut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_milieu",
+      "texte_ar": "وَسَط",
+      "voix_m": "livre_arabe_niveau3_p81_milieu_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_milieu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fin",
+      "texte_ar": "آخِر",
+      "voix_m": "livre_arabe_niveau3_p81_fin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_fin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canne_peche",
+      "texte_ar": "صِنَّارَة",
+      "voix_m": "livre_arabe_niveau3_p81_canne_peche_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_canne_peche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oiseau",
+      "texte_ar": "عُصْفُور",
+      "voix_m": "livre_arabe_niveau3_p81_oiseau_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_oiseau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_assiette",
+      "texte_ar": "صَحْن",
+      "voix_m": "livre_arabe_niveau3_p81_assiette_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_assiette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oignon",
+      "texte_ar": "بَصَل",
+      "voix_m": "livre_arabe_niveau3_p81_oignon_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_oignon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jus",
+      "texte_ar": "عَصِير",
+      "voix_m": "livre_arabe_niveau3_p81_jus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p81_jus_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:10:47.654419",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 9
+  }
+}

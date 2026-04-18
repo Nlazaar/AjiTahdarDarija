@@ -1,0 +1,155 @@
+{
+  "page_nb": 6,
+  "type": "cours",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis les verbes arabes",
+    "ar": "أَقْرَأُ الأَفْعَال"
+  },
+  "enonce": {
+    "fr": "Lis chaque mot arabe et associe-le à l'image correspondante",
+    "ar": "اِقْرَأْ كُلَّ كَلِمَةٍ وَاِرْبُطْهَا بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَتَحَ",
+      "fr": "il a ouvert",
+      "emoji": "🚪"
+    },
+    {
+      "id": "2",
+      "ar": "كَتَبَ",
+      "fr": "il a écrit",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "أَكَلَ",
+      "fr": "il a mangé",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "4",
+      "ar": "قَفَزَ",
+      "fr": "il a sauté",
+      "emoji": "🤸"
+    },
+    {
+      "id": "5",
+      "ar": "قَرَأَ",
+      "fr": "il a lu",
+      "emoji": "📖"
+    },
+    {
+      "id": "6",
+      "ar": "رَسَمَ",
+      "fr": "il a dessiné",
+      "emoji": "🎨"
+    },
+    {
+      "id": "7",
+      "ar": "طَرَقَ",
+      "fr": "il a frappé",
+      "emoji": "✊"
+    },
+    {
+      "id": "8",
+      "ar": "دَخَلَ",
+      "fr": "il est entré",
+      "emoji": "🚶"
+    },
+    {
+      "id": "9",
+      "ar": "طَبَخَ",
+      "fr": "il a cuisiné",
+      "emoji": "👨‍🍳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اِقْرَأْ كُلَّ كَلِمَةٍ وَاِرْبُطْهَا بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَتَحَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كَتَبَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أَكَلَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قَفَزَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قَرَأَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَسَمَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "طَرَقَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دَخَلَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "طَبَخَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:22:48.749425",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

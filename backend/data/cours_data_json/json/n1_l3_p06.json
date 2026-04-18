@@ -1,0 +1,112 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Coloriage sélectif d'animaux selon des critères donnés : identifier et colorier les canards en jaune, puis colorier chaque escargot librement",
+  "titre": {
+    "fr": "Exercices de coloriage - Identifier et colorier des animaux",
+    "ar": "تمارين التلوين - تعرف على الحيوانات ولوّنها"
+  },
+  "enonce": {
+    "fr": "Exercice 5 : Je colorie les canards en jaune. Exercice 6 : Je colorie chaque escargot d'une couleur de mon choix.",
+    "ar": "تمرين 5 : أَلوِّن الْبَطَّاتِ بِالأصْفَر. تمرين 6 : أَلوِّن كُلَّ حَلَزُونٍ بِلَوْنٍ أَخْتَارُهُ."
+  },
+  "elements": [
+    {
+      "id": "canard",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "lapin",
+      "ar": "أَرْنَب",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "escargot",
+      "ar": "حَلَزُون",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "poisson",
+      "ar": "سَمَكَة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "ver",
+      "ar": "دُودَة",
+      "fr": "ver",
+      "emoji": "🐛"
+    },
+    {
+      "id": "jaune",
+      "ar": "أَصْفَر",
+      "fr": "jaune",
+      "emoji": "🟡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "تمرين 5 : أَلوِّن الْبَطَّاتِ بِالأصْفَر. تمرين 6 : أَلوِّن كُلَّ حَلَزُونٍ بِلَوْنٍ أَخْتَارُهُ.",
+      "voix_m": "v1_l3_p6_consigne_m.mp3",
+      "voix_f": "v1_l3_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canard",
+      "texte_ar": "بَطَّة",
+      "voix_m": "v1_l3_p6_canard_m.mp3",
+      "voix_f": "v1_l3_p6_canard_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lapin",
+      "texte_ar": "أَرْنَب",
+      "voix_m": "v1_l3_p6_lapin_m.mp3",
+      "voix_f": "v1_l3_p6_lapin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_escargot",
+      "texte_ar": "حَلَزُون",
+      "voix_m": "v1_l3_p6_escargot_m.mp3",
+      "voix_f": "v1_l3_p6_escargot_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poisson",
+      "texte_ar": "سَمَكَة",
+      "voix_m": "v1_l3_p6_poisson_m.mp3",
+      "voix_f": "v1_l3_p6_poisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ver",
+      "texte_ar": "دُودَة",
+      "voix_m": "v1_l3_p6_ver_m.mp3",
+      "voix_f": "v1_l3_p6_ver_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jaune",
+      "texte_ar": "أَصْفَر",
+      "voix_m": "v1_l3_p6_jaune_m.mp3",
+      "voix_f": "v1_l3_p6_jaune_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:53:16.880963",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 7
+  }
+}

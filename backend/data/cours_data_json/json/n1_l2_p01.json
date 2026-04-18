@@ -1,0 +1,229 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Association lettre de l'alphabet arabe - image - mot illustré avec harakat",
+  "titre": {
+    "fr": "L'alphabet arabe en images",
+    "ar": "الحروف العربية بالصور"
+  },
+  "enonce": {
+    "fr": "Apprends les lettres de l'alphabet arabe en associant chaque lettre à une image et un mot",
+    "ar": "تعلم حروف الهجاء العربية من خلال ربط كل حرف بصورة وكلمة"
+  },
+  "elements": [
+    {
+      "id": "alif",
+      "ar": "أَسَدٌ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "ba",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "ta",
+      "ar": "تَمْرٌ",
+      "fr": "Dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "tha",
+      "ar": "ثَلْجٌ",
+      "fr": "Neige",
+      "emoji": "🌨️"
+    },
+    {
+      "id": "jim",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ha",
+      "ar": "حَمَامَةٌ",
+      "fr": "Colombe",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "kha",
+      "ar": "خَوْخٌ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "dal",
+      "ar": "دَارٌ",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "dhal",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐍"
+    },
+    {
+      "id": "ra",
+      "ar": "رِيشَةٌ",
+      "fr": "Plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "zay",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "sin",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "shin",
+      "ar": "شَمْعَةٌ",
+      "fr": "Bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "sad",
+      "ar": "صَبَاحٌ",
+      "fr": "Matin",
+      "emoji": "🌅"
+    },
+    {
+      "id": "dad",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تعلم حروف الهجاء العربية من خلال ربط كل حرف بصورة وكلمة",
+      "voix_m": "v1_l2_p1_consigne_m.mp3",
+      "voix_f": "v1_l2_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_alif",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "v1_l2_p1_alif_m.mp3",
+      "voix_f": "v1_l2_p1_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ba",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "v1_l2_p1_ba_m.mp3",
+      "voix_f": "v1_l2_p1_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta",
+      "texte_ar": "تَمْرٌ",
+      "voix_m": "v1_l2_p1_ta_m.mp3",
+      "voix_f": "v1_l2_p1_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tha",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "v1_l2_p1_tha_m.mp3",
+      "voix_f": "v1_l2_p1_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jim",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "v1_l2_p1_jim_m.mp3",
+      "voix_f": "v1_l2_p1_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha",
+      "texte_ar": "حَمَامَةٌ",
+      "voix_m": "v1_l2_p1_ha_m.mp3",
+      "voix_f": "v1_l2_p1_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kha",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "v1_l2_p1_kha_m.mp3",
+      "voix_f": "v1_l2_p1_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dal",
+      "texte_ar": "دَارٌ",
+      "voix_m": "v1_l2_p1_dal_m.mp3",
+      "voix_f": "v1_l2_p1_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dhal",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "v1_l2_p1_dhal_m.mp3",
+      "voix_f": "v1_l2_p1_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ra",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "v1_l2_p1_ra_m.mp3",
+      "voix_f": "v1_l2_p1_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zay",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "v1_l2_p1_zay_m.mp3",
+      "voix_f": "v1_l2_p1_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "v1_l2_p1_sin_m.mp3",
+      "voix_f": "v1_l2_p1_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shin",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "v1_l2_p1_shin_m.mp3",
+      "voix_f": "v1_l2_p1_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sad",
+      "texte_ar": "صَبَاحٌ",
+      "voix_m": "v1_l2_p1_sad_m.mp3",
+      "voix_f": "v1_l2_p1_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dad",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "v1_l2_p1_dad_m.mp3",
+      "voix_f": "v1_l2_p1_dad_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:50:36.026882",
+    "niveau": 1,
+    "lecon": 2,
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 16
+  }
+}

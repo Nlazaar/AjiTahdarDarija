@@ -1,0 +1,64 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Reconstituer une image coupée en deux parties en collant chaque moitié à sa place correcte",
+  "titre": {
+    "fr": "Je colle les parties de chaque image à leur place",
+    "ar": "أَلصِق أجزاء كلّ صورة في مكانها المناسب"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque image à leur place correcte en suivant la ligne pointillée.",
+    "ar": "أَلصِق أجزاء كلّ صورة في مكانها المناسب على طول الخط المنقط."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دجاجة",
+      "fr": "poule",
+      "emoji": "🐔"
+    },
+    {
+      "id": "2",
+      "ar": "بقرة",
+      "fr": "vache",
+      "emoji": "🐄"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أَلصِق أجزاء كلّ صورة في مكانها المناسب على طول الخط المنقط.",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دجاجة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p8_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بقرة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p8_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p8_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:58:10.091822",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 3
+  }
+}

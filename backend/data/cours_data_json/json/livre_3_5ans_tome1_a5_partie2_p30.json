@@ -1,0 +1,181 @@
+{
+  "page_nb": 30,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Reconstitue le mot : la poule",
+    "ar": "رَكِّب الكَلِمة : دَجَاجَة"
+  },
+  "enonce": {
+    "fr": "Découpe et remets les syllabes dans le bon ordre pour former le mot 'poule' en arabe.",
+    "ar": "قصّ المقاطع وأعِد ترتيبها لتكوين كلمة دَجَاجَة"
+  },
+  "elements": [
+    {
+      "id": "syl1",
+      "ar": "دجا",
+      "fr": "dja",
+      "emoji": "🐔"
+    },
+    {
+      "id": "syl2",
+      "ar": "ـرة",
+      "fr": "ra",
+      "emoji": "🐄"
+    },
+    {
+      "id": "syl3",
+      "ar": "ـجة",
+      "fr": "ja",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ani1",
+      "ar": "نحلة",
+      "fr": "abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ani2",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "ani3",
+      "ar": "أرنب",
+      "fr": "lapin",
+      "emoji": "🐇"
+    },
+    {
+      "id": "ani4",
+      "ar": "جمل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ani5",
+      "ar": "دعسوقة",
+      "fr": "coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "ani6",
+      "ar": "عصفور",
+      "fr": "oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "ani7",
+      "ar": "بقرة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "ani8",
+      "ar": "دجاجة",
+      "fr": "poule",
+      "emoji": "🐓"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p30_consigne",
+      "texte_ar": "قصّ المقاطع وأعِد ترتيبها لتكوين كلمة دَجَاجَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl1",
+      "texte_ar": "دجا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_syl1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_syl1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl2",
+      "texte_ar": "ـرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_syl2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_syl2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl3",
+      "texte_ar": "ـجة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_syl3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_syl3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani1",
+      "texte_ar": "نحلة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani2",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani3",
+      "texte_ar": "أرنب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani4",
+      "texte_ar": "جمل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani5",
+      "texte_ar": "دعسوقة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani6",
+      "texte_ar": "عصفور",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani7",
+      "texte_ar": "بقرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ani8",
+      "texte_ar": "دجاجة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p30_ani8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p30_ani8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:33:01.782813",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 12
+  }
+}

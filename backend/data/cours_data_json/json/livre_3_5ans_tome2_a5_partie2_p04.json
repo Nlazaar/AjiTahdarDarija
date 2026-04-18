@@ -1,0 +1,194 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve l'erreur",
+    "ar": "اشْطُبُ الخَطَأ"
+  },
+  "enonce": {
+    "fr": "Barre le mot incorrect parmi les propositions sous chaque image",
+    "ar": "اشْطُبُ الكَلِمَةَ الخَاطِئَةَ مِمَّا يَلِي كُلَّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "voiture_correct",
+      "ar": "سيَّارة",
+      "fr": "voiture (correct)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_sare",
+      "ar": "سارة",
+      "fr": "Sara (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "voiture_sayyara2",
+      "ar": "سيَّارة",
+      "fr": "voiture (correct)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_sarat",
+      "ar": "سارت",
+      "fr": "elle a conduit (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "voiture_sayyara3",
+      "ar": "سيَّارة",
+      "fr": "voiture (correct)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_sayyara4",
+      "ar": "سيَّارة",
+      "fr": "voiture (correct)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "train_correct",
+      "ar": "قطار",
+      "fr": "train (correct)",
+      "emoji": "🚆"
+    },
+    {
+      "id": "train_qatar",
+      "ar": "قطر",
+      "fr": "Qatar (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "train_qitar2",
+      "ar": "قطار",
+      "fr": "train (correct)",
+      "emoji": "🚆"
+    },
+    {
+      "id": "train_tair",
+      "ar": "فطائر",
+      "fr": "crêpes (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "train_qitar3",
+      "ar": "قطار",
+      "fr": "train (correct)",
+      "emoji": "🚆"
+    },
+    {
+      "id": "train_qantara",
+      "ar": "قنطرة",
+      "fr": "pont (erreur)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اشْطُبُ الكَلِمَةَ الخَاطِئَةَ مِمَّا يَلِي كُلَّ صُورَةٍ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_correct",
+      "texte_ar": "سيَّارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_correct_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_sare",
+      "texte_ar": "سارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sare_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sare_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_sayyara2",
+      "texte_ar": "سيَّارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_sarat",
+      "texte_ar": "سارت",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sarat_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sarat_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_sayyara3",
+      "texte_ar": "سيَّارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_sayyara4",
+      "texte_ar": "سيَّارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_voiture_sayyara4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_correct",
+      "texte_ar": "قطار",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_correct_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_qatar",
+      "texte_ar": "قطر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_qatar_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_qatar_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_qitar2",
+      "texte_ar": "قطار",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_qitar2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_qitar2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_tair",
+      "texte_ar": "فطائر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_tair_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_tair_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_qitar3",
+      "texte_ar": "قطار",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_qitar3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_qitar3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_qantara",
+      "texte_ar": "قنطرة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p4_train_qantara_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p4_train_qantara_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:19:21.393827",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 13
+  }
+}

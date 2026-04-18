@@ -1,0 +1,77 @@
+{
+  "page_nb": 104,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَات لأَحْصُلَ عَلَى كَلِمَة ثمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie le mot à l'image correspondante.",
+    "ar": "اِرْبِطِ الْبِطَاقَتَيْنِ لِتُكَوِّنَ كَلِمَةً ثُمَّ اِرْبِطْهَا بِصُورَتِهَا."
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "غُرَازُونْ → غُرَازُونْ",
+      "fr": "غُرَا + زُونْ = غُرَازُونْ (canard)",
+      "emoji": "🦆"
+    },
+    {
+      "id": "mot2",
+      "ar": "بَطٌّ + بٌّ = بَطٌّ (escargot non, canard/limace)",
+      "fr": "بَطَّ + بٌّ = بَطٌّ (escargot)",
+      "emoji": "🐌"
+    },
+    {
+      "id": "mot3",
+      "ar": "حَلَ + ـةٌ = حَلَّةٌ (corbeau)",
+      "fr": "حَلَ + ـةٌ = حَلَّةٌ (corbeau)",
+      "emoji": "🐦‍⬛"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p104_consigne",
+      "texte_ar": "اِرْبِطِ الْبِطَاقَتَيْنِ لِتُكَوِّنَ كَلِمَةً ثُمَّ اِرْبِطْهَا بِصُورَتِهَا.",
+      "voix_m": "livre_arabe_niveau3_p104_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p104_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "غُرَازُونْ → غُرَازُونْ",
+      "voix_m": "livre_arabe_niveau3_p104_mot1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p104_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "بَطٌّ + بٌّ = بَطٌّ (escargot non, canard/limace)",
+      "voix_m": "livre_arabe_niveau3_p104_mot2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p104_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "حَلَ + ـةٌ = حَلَّةٌ (corbeau)",
+      "voix_m": "livre_arabe_niveau3_p104_mot3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p104_mot3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:15:01.208868",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des séquences par analogie, compléter des phrases avec le mot approprié, et remettre des mots dans l'ordre pour former une phrase",
+  "titre": {
+    "fr": "Je complète et j'ordonne",
+    "ar": "أُكْمِلُ بِمَا يُنَاسِبُ وَأُرَتِّبُ"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Je complète la séquence logique. Exercice 8 : Je complète les phrases avec le mot qui convient parmi : Le boucher, La cartable, L'obscurité, Le sport. Exercice 9 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الكلمات: الجَرَّار، الْمِحْفَظَة، الظَّلام، الرِّيَاضَة. تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex7_seq1",
+      "ar": "بُلٌّ ← لَلالٌ",
+      "fr": "Séquence hiboux : 1 hibou → plusieurs hiboux",
+      "emoji": "🦉"
+    },
+    {
+      "id": "ex7_seq2",
+      "ar": "ظَرْفٌ ← رُوفٌ",
+      "fr": "Séquence enveloppes : 1 enveloppe → plusieurs enveloppes",
+      "emoji": "✉️"
+    },
+    {
+      "id": "ex8_phrase1",
+      "ar": "يَخَافُ الْوَلَدُ مِنَ الظَّلَام",
+      "fr": "L'enfant a peur de l'obscurité",
+      "emoji": "😨"
+    },
+    {
+      "id": "ex8_phrase2",
+      "ar": "يَجْمَعُ أَدَوَاتَهُ فِي الْمِحْفَظَة",
+      "fr": "Il range ses affaires dans le cartable",
+      "emoji": "🎒"
+    },
+    {
+      "id": "ex8_phrase3",
+      "ar": "يَقُودُ الْفَلَّاحُ الجَرَّار",
+      "fr": "Le paysan conduit le tracteur",
+      "emoji": "🚜"
+    },
+    {
+      "id": "ex8_phrase4",
+      "ar": "يُمَارِسُ بِلَال الرِّيَاضَة",
+      "fr": "Bilal pratique le sport",
+      "emoji": "🤸"
+    },
+    {
+      "id": "ex9_phrase",
+      "ar": "الرِّيَاضِيَات تُسَاعِدُنِي في تَمَارِينٍ أُمِّي",
+      "fr": "Les mathématiques m'aident dans les exercices de ma maman",
+      "emoji": "📝"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec05_dhaa",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الكلمات: الجَرَّار، الْمِحْفَظَة، الظَّلام، الرِّيَاضَة. تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_seq1",
+      "texte_ar": "بُلٌّ ← لَلالٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex7_seq1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex7_seq1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_seq2",
+      "texte_ar": "ظَرْفٌ ← رُوفٌ",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex7_seq2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex7_seq2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase1",
+      "texte_ar": "يَخَافُ الْوَلَدُ مِنَ الظَّلَام",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex8_phrase1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex8_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase2",
+      "texte_ar": "يَجْمَعُ أَدَوَاتَهُ فِي الْمِحْفَظَة",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex8_phrase2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex8_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase3",
+      "texte_ar": "يَقُودُ الْفَلَّاحُ الجَرَّار",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex8_phrase3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex8_phrase3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase4",
+      "texte_ar": "يُمَارِسُ بِلَال الرِّيَاضَة",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex8_phrase4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex8_phrase4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_phrase",
+      "texte_ar": "الرِّيَاضِيَات تُسَاعِدُنِي في تَمَارِينٍ أُمِّي",
+      "voix_m": "lecture_niv5_lec05_dhaa_p3_ex9_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhaa_p3_ex9_phrase_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:25:37.498084",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv5_lec05_dhaa",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

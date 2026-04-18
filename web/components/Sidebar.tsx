@@ -82,14 +82,16 @@ export default function Sidebar() {
   const isCours = pathname === '/cours' || pathname === '/progress' || pathname?.startsWith('/progress/');
 
   const items = [
-    { href: '/cours',       label: 'Mon Cours',    icon: '🏠',  id: 'home',     active: isCours },
-    { href: '/review',      label: 'Lettres',      icon: 'أ',   id: 'letters',  active: pathname === '/review' },
-    { href: '/practice',    label: 'Entraînement', icon: '🏋️',  id: 'practice', active: pathname === '/practice', badge: hasPracticeDot },
-    { href: '/leaderboard', label: 'Ligues',       icon: '🛡️',  id: 'league',   active: pathname === '/leaderboard' },
-    { href: '/quests',      label: 'Quêtes',       icon: '🎁',  id: 'quests',   active: pathname === '/quests', badge: hasQuestDot },
-    { href: '/shop',        label: 'Boutique',     icon: '🏪',  id: 'shop',     active: pathname === '/shop' },
-    { href: '/profile',     label: 'Profil',       icon: '👤',  id: 'profile',  active: pathname === '/profile' },
-    { href: '/settings',    label: 'Plus',         icon: '⋯',   id: 'more',     active: pathname === '/settings' },
+    { href: '/cours',        label: 'Mon Cours',    icon: '🏠',  id: 'home',         active: isCours },
+    { href: '/review',       label: 'Lettres',      icon: 'أ',   id: 'letters',      active: pathname === '/review' },
+    { href: '/practice',     label: 'Entraînement', icon: '🏋️',  id: 'practice',     active: pathname === '/practice', badge: hasPracticeDot },
+    { href: '/conversation', label: 'Conversation', icon: '💬',  id: 'conversation', active: pathname === '/conversation' },
+    { href: '/leaderboard',  label: 'Ligues',       icon: '🛡️',  id: 'league',       active: pathname === '/leaderboard' },
+    { href: '/quests',       label: 'Quêtes',       icon: '🎁',  id: 'quests',       active: pathname === '/quests', badge: hasQuestDot },
+    { href: '/shop',         label: 'Boutique',     icon: '🏪',  id: 'shop',         active: pathname === '/shop' },
+    { href: '/profile',      label: 'Profil',       icon: '👤',  id: 'profile',      active: pathname === '/profile' },
+    { href: '/settings',     label: 'Plus',         icon: '⋯',   id: 'more',         active: pathname === '/settings' },
+    { href: '/admin',        label: 'Admin',        icon: '🛠️',  id: 'admin',        active: pathname === '/admin' },
   ];
 
   return (

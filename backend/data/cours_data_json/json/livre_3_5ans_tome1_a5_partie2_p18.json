@@ -1,0 +1,129 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أَلْوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres ش parmi toutes les lettres proposées",
+    "ar": "لَوِّنْ حَرْفَ الشِّينِ فَقَطْ مِنْ بَيْنِ الْحُرُوفِ الْمَعْرُوضَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ش",
+      "fr": "shin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "س",
+      "fr": "sin",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "ت",
+      "fr": "ta",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "ق",
+      "fr": "qaf",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ي",
+      "fr": "ya",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "ض",
+      "fr": "dad",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الشِّينِ فَقَطْ مِنْ بَيْنِ الْحُرُوفِ الْمَعْرُوضَةِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ض",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p18_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p18_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:31:13.325010",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 8
+  }
+}

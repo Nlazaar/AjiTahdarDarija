@@ -1,8 +1,0 @@
-PHASE 14 — Connecter le front au backend
-Maintenant que tout existe, il faut :
-connecter la page progression → /modules
-connecter la page leçon → /lessons/:id
-connecter les exercices → /lessons/:id/exercises
-connecter la soumission → /lessons/:id/submit
-connecter le profil → /gamification/*
-Je vais te donner les prompts exacts pour ça.

@@ -1,0 +1,259 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : remise en ordre de lettres pour former des mots, complétion de mots à trous avec images, et complétion de phrase avec mots de la liste",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de complétion",
+    "ar": "تَدْرِيبَاتٌ عَلَى الْمُفْرَدَاتِ وَالْإِكْمَالِ"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex.7 : Je complète les mots. Ex.8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "وَاسِدَة ← وِسَادَة",
+      "fr": "oreiller (lettres mélangées : و ا س د ة)",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "رِيسَر ← سَرِير",
+      "fr": "lit (lettres mélangées : ر ي س ر)",
+      "emoji": "🛌"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "اءحس ← صَحْن",
+      "fr": "bol/assiette (lettres mélangées : ا ء ح س)",
+      "emoji": "🥣"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "رجس ← جَرَس",
+      "fr": "cloche (lettres mélangées : ر ج س)",
+      "emoji": "🔔"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "......نٌّ ← سِنٌّ",
+      "fr": "dent (compléter le mot)",
+      "emoji": "🦷"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "أَ......نَانٌ ← أَسْنَانٌ",
+      "fr": "dents (compléter le mot)",
+      "emoji": "🦷"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "تِمْ......احُ ← تِمْسَاحُ",
+      "fr": "crocodile (compléter le mot)",
+      "emoji": "🐊"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "تَمَا......يِحُ ← تَمَاسِيحُ",
+      "fr": "crocodiles (compléter le mot)",
+      "emoji": "🐊"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "......مَكَةٌ ← سَمَكَةٌ",
+      "fr": "poisson (compléter le mot)",
+      "emoji": "🐟"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "أَ......مَالِكُ ← أَسْمَالِكُ",
+      "fr": "poissons (compléter le mot)",
+      "emoji": "🐠"
+    },
+    {
+      "id": "ex7_7",
+      "ar": "كَأْ...... ← كَأْسٌ",
+      "fr": "verre (compléter le mot)",
+      "emoji": "🥤"
+    },
+    {
+      "id": "ex7_8",
+      "ar": "كُؤُو...... ← كُؤُوسٌ",
+      "fr": "verres (compléter le mot)",
+      "emoji": "🥤"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "سَامِي",
+      "fr": "Sami (prénom)",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "يَغْسِلُ",
+      "fr": "il lave",
+      "emoji": "🧼"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "أُمِّهِ",
+      "fr": "sa mère",
+      "emoji": "👩"
+    },
+    {
+      "id": "ex8_4",
+      "ar": "الْأَوَانِيَ",
+      "fr": "la vaisselle",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex8_5",
+      "ar": "مَعَ",
+      "fr": "avec",
+      "emoji": "🤝"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec01_siine",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv4_lec01_siine_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "وَاسِدَة ← وِسَادَة",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "رِيسَر ← سَرِير",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "اءحس ← صَحْن",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "رجس ← جَرَس",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "......نٌّ ← سِنٌّ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "أَ......نَانٌ ← أَسْنَانٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "تِمْ......احُ ← تِمْسَاحُ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "تَمَا......يِحُ ← تَمَاسِيحُ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "......مَكَةٌ ← سَمَكَةٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_5_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "أَ......مَالِكُ ← أَسْمَالِكُ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_6_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_7",
+      "texte_ar": "كَأْ...... ← كَأْسٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_7_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_8",
+      "texte_ar": "كُؤُو...... ← كُؤُوسٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex7_8_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex7_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "سَامِي",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "يَغْسِلُ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "أُمِّهِ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_4",
+      "texte_ar": "الْأَوَانِيَ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex8_4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_5",
+      "texte_ar": "مَعَ",
+      "voix_m": "lecture_niv4_lec01_siine_p3_ex8_5_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p3_ex8_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:40:33.227753",
+    "niveau": 4,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv4_lec01_siine",
+    "bucket_audio": "audio-lessons/niveau4/lecon01/",
+    "nb_audio_assets": 18
+  }
+}

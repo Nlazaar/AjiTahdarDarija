@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète les lignes",
+    "ar": "أَكَمِّلُ الخُطُوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés en suivant le modèle : flèches horizontales, petits cercles, demi-cercles et le mot فيل (éléphant).",
+    "ar": "أكمل رسم الخطوط المنقطة على غرار النموذج: سهام أفقية، دوائر صغيرة، أنصاف دوائر، وكلمة فيل."
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "سهم أفقي",
+      "fr": "Flèche horizontale vers la gauche",
+      "emoji": "➡️"
+    },
+    {
+      "id": "ligne2",
+      "ar": "دوائر صغيرة",
+      "fr": "Petits cercles",
+      "emoji": "⭕"
+    },
+    {
+      "id": "ligne3",
+      "ar": "أنصاف دوائر",
+      "fr": "Demi-cercles",
+      "emoji": "🔵"
+    },
+    {
+      "id": "ligne4",
+      "ar": "فيل",
+      "fr": "Éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_01",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أكمل رسم الخطوط المنقطة على غرار النموذج: سهام أفقية، دوائر صغيرة، أنصاف دوائر، وكلمة فيل.",
+      "voix_m": "arabe_niveau2_01_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_01_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "سهم أفقي",
+      "voix_m": "arabe_niveau2_01_p7_ligne1_m.mp3",
+      "voix_f": "arabe_niveau2_01_p7_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "دوائر صغيرة",
+      "voix_m": "arabe_niveau2_01_p7_ligne2_m.mp3",
+      "voix_f": "arabe_niveau2_01_p7_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "أنصاف دوائر",
+      "voix_m": "arabe_niveau2_01_p7_ligne3_m.mp3",
+      "voix_f": "arabe_niveau2_01_p7_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p7_ligne4_m.mp3",
+      "voix_f": "arabe_niveau2_01_p7_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:34:17.405715",
+    "niveau": 2,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau2_01",
+    "bucket_audio": "audio-lessons/niveau2/lecon07/",
+    "nb_audio_assets": 5
+  }
+}

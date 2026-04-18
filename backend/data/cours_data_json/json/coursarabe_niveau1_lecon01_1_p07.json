@@ -1,0 +1,116 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer les voitures rouges parmi un ensemble de voitures de différentes couleurs",
+  "titre": {
+    "fr": "J'entoure les voitures rouges",
+    "ar": "أَضَعُ السَّيَّاراتِ الحَمْرَاءَ فِي دائِرَة"
+  },
+  "enonce": {
+    "fr": "Entoure les voitures rouges dans un cercle",
+    "ar": "أَضَعُ السَّيَّاراتِ الحَمْرَاءَ فِي دائِرَة"
+  },
+  "elements": [
+    {
+      "id": "voiture_1",
+      "ar": "سَيَّارَة حَمْرَاء",
+      "fr": "Voiture rouge (berline)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_2",
+      "ar": "سَيَّارَة حَمْرَاء",
+      "fr": "Voiture rouge (compacte)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_3",
+      "ar": "سَيَّارَة زَرْقَاء",
+      "fr": "Voiture bleue (monospace)",
+      "emoji": "🚙"
+    },
+    {
+      "id": "voiture_4",
+      "ar": "سَيَّارَة صَفْرَاء",
+      "fr": "Voiture jaune (taxi)",
+      "emoji": "🚕"
+    },
+    {
+      "id": "voiture_5",
+      "ar": "سَيَّارَة حَمْرَاء",
+      "fr": "Voiture rouge (classique)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "voiture_6",
+      "ar": "سَيَّارَة زَرْقَاء",
+      "fr": "Voiture bleue (mini)",
+      "emoji": "🚙"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَضَعُ السَّيَّاراتِ الحَمْرَاءَ فِي دائِرَة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_1",
+      "texte_ar": "سَيَّارَة حَمْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_2",
+      "texte_ar": "سَيَّارَة حَمْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_3",
+      "texte_ar": "سَيَّارَة زَرْقَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_4",
+      "texte_ar": "سَيَّارَة صَفْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_5",
+      "texte_ar": "سَيَّارَة حَمْرَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture_6",
+      "texte_ar": "سَيَّارَة زَرْقَاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_voiture_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_voiture_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:36:14.710313",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 7
+  }
+}

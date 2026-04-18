@@ -1,0 +1,298 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Regroupe les baleines par 3",
+    "ar": "أضع كلّ ثلاثة حيتان في مجموعة"
+  },
+  "enonce": {
+    "fr": "Mets chaque groupe de 3 baleines ensemble. Combien de groupes peux-tu former ?",
+    "ar": "أضع كلّ ثلاثة حيتان في مجموعة. كم مجموعة يمكنك تكوين؟"
+  },
+  "elements": [
+    {
+      "id": "baleine_1",
+      "ar": "حوت",
+      "fr": "baleine 1",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_2",
+      "ar": "حوت",
+      "fr": "baleine 2",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_3",
+      "ar": "حوت",
+      "fr": "baleine 3",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_4",
+      "ar": "حوت",
+      "fr": "baleine 4",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_5",
+      "ar": "حوت",
+      "fr": "baleine 5",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_6",
+      "ar": "حوت",
+      "fr": "baleine 6",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_7",
+      "ar": "حوت",
+      "fr": "baleine 7",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_8",
+      "ar": "حوت",
+      "fr": "baleine 8",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_9",
+      "ar": "حوت",
+      "fr": "baleine 9",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_10",
+      "ar": "حوت",
+      "fr": "baleine 10",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_11",
+      "ar": "حوت",
+      "fr": "baleine 11",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_12",
+      "ar": "حوت",
+      "fr": "baleine 12",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_13",
+      "ar": "حوت",
+      "fr": "baleine 13",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_14",
+      "ar": "حوت",
+      "fr": "baleine 14",
+      "emoji": "🐳"
+    },
+    {
+      "id": "baleine_15",
+      "ar": "حوت",
+      "fr": "baleine 15",
+      "emoji": "🐳"
+    },
+    {
+      "id": "groupe_1",
+      "ar": "مجموعة ١",
+      "fr": "groupe 1",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "groupe_2",
+      "ar": "مجموعة ٢",
+      "fr": "groupe 2",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "groupe_3",
+      "ar": "مجموعة ٣",
+      "fr": "groupe 3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "groupe_4",
+      "ar": "مجموعة ٤",
+      "fr": "groupe 4",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "groupe_5",
+      "ar": "مجموعة ٥",
+      "fr": "groupe 5",
+      "emoji": "3️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_2 (1)",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أضع كلّ ثلاثة حيتان في مجموعة. كم مجموعة يمكنك تكوين؟",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_1",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_2",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_3",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_4",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_4_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_5",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_5_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_6",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_6_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_7",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_7_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_8",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_8_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_9",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_9_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_10",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_10_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_11",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_11_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_12",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_12_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_13",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_13_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_14",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_14_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine_15",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_baleine_15_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_baleine_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_1",
+      "texte_ar": "مجموعة ١",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_groupe_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_groupe_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_2",
+      "texte_ar": "مجموعة ٢",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_groupe_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_groupe_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_3",
+      "texte_ar": "مجموعة ٣",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_groupe_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_groupe_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_4",
+      "texte_ar": "مجموعة ٤",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_groupe_4_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_groupe_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_5",
+      "texte_ar": "مجموعة ٥",
+      "voix_m": "arabe_niveau2_02_2 (1)_p8_groupe_5_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p8_groupe_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:37:01.827774",
+    "niveau": 2,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau2_02_2 (1)",
+    "bucket_audio": "audio-lessons/niveau2/lecon09/",
+    "nb_audio_assets": 21
+  }
+}

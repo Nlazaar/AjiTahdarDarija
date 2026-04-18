@@ -15,6 +15,74 @@ export class LessonsService {
     return this.prisma.lesson.findMany();
   }
 
+  async listLanguages() {
+    return this.prisma.language.findMany({ orderBy: { code: 'asc' } })
+  }
+
+  async listModulesForAdmin() {
+    return this.prisma.module.findMany({
+      orderBy: [{ level: 'asc' }, { title: 'asc' }],
+      select: { id: true, slug: true, title: true, level: true, isPublished: true },
+    })
+  }
+
+  async create(data: {
+    title: string
+    languageId: string
+    moduleId?: string
+    slug?: string
+    subtitle?: string
+    description?: string
+    content?: any
+    order?: number
+    duration?: number
+    level?: number
+    videoUrl?: string
+    videoPoster?: string
+    isPublished?: boolean
+  }) {
+    if (!data.title?.trim()) throw new BadRequestException('title is required')
+    if (!data.languageId?.trim()) throw new BadRequestException('languageId is required')
+    return this.prisma.lesson.create({ data })
+  }
+
+  async update(id: string, data: Partial<{
+    title: string
+    moduleId: string | null
+    slug: string | null
+    subtitle: string | null
+    description: string | null
+    content: any
+    order: number
+    duration: number | null
+    level: number
+    videoUrl: string | null
+    videoPoster: string | null
+    isPublished: boolean
+    languageId: string
+  }>) {
+    const existing = await this.prisma.lesson.findUnique({ where: { id } })
+    if (!existing) throw new BadRequestException('Lesson not found')
+    return this.prisma.lesson.update({ where: { id }, data })
+  }
+
+  async softDelete(id: string) {
+    const existing = await this.prisma.lesson.findUnique({ where: { id } })
+    if (!existing) throw new BadRequestException('Lesson not found')
+    return this.prisma.lesson.update({
+      where: { id },
+      data: { isDeleted: true, isPublished: false },
+    })
+  }
+
+  async hardDelete(id: string) {
+    const existing = await this.prisma.lesson.findUnique({ where: { id } })
+    if (!existing) throw new BadRequestException('Lesson not found')
+    await this.prisma.userProgress.deleteMany({ where: { lessonId: id } })
+    await this.prisma.exercise.deleteMany({ where: { lessonId: id } })
+    return this.prisma.lesson.delete({ where: { id } })
+  }
+
   async findBySlug(slug: string) {
     if (!slug) return null;
     return this.prisma.lesson.findUnique({ where: { slug } });
@@ -28,7 +96,10 @@ export class LessonsService {
   }
 
   async getExercises(lessonId: string) {
-    return this.prisma.exercise.findMany({ where: { lessonId } });
+    return this.prisma.exercise.findMany({
+      where: { lessonId },
+      orderBy: { createdAt: 'asc' },
+    });
   }
 
   async getVocabulary(lessonId: string) {

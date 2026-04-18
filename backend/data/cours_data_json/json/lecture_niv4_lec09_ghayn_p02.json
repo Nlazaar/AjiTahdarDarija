@@ -1,0 +1,233 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écrire la lettre غ, compléter des mots avec غ, reconstituer des mots",
+  "titre": {
+    "fr": "La lettre Ghayn (غ) - Exercices",
+    "ar": "حرف الغين - تمارين"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre غ. 3) Je complète avec la forme qui convient. 4) Je reconstitue le mot à partir des lettres et je l'écris.",
+    "ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف الغين. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "غُرْفَةٌ",
+      "fr": "Chambre",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "يَغْرِسُ",
+      "fr": "Il plante",
+      "emoji": "🌱"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "غَابَةٌ",
+      "fr": "Forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "يَغْمِزُ",
+      "fr": "Il cligne de l'œil",
+      "emoji": "😉"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "غَسَّالَةٌ",
+      "fr": "Machine à laver",
+      "emoji": "🌀"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "كَنْغَرٌ",
+      "fr": "Kangourou",
+      "emoji": "🦘"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "مُغْلَقٌ",
+      "fr": "Fermé",
+      "emoji": "🔒"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "غَوَّاصَةٌ",
+      "fr": "Sous-marin",
+      "emoji": "🤿"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "اِغْتَاظَ / غَضِبَ",
+      "fr": "Il s'est mis en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "أَغْمَضَ عَيْنَيْهِ",
+      "fr": "Il a fermé ses yeux",
+      "emoji": "😌"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "غَدِيرٌ",
+      "fr": "Flaque / Mare",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "فَارِغٌ",
+      "fr": "Vide",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex6_1",
+      "ar": "غُصْنٌ",
+      "fr": "Branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "غُرَابٌ",
+      "fr": "Corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "يَغْسِلُ",
+      "fr": "Il lave",
+      "emoji": "🚿"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec09_ghayn",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف الغين. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها.",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "غُرْفَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "يَغْرِسُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "غَابَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "يَغْمِزُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "غَسَّالَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "كَنْغَرٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "مُغْلَقٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "غَوَّاصَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "اِغْتَاظَ / غَضِبَ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "أَغْمَضَ عَيْنَيْهِ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "غَدِيرٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "فَارِغٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "غُصْنٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "يَغْسِلُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p2_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p2_ex6_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:06:12.581285",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_ghayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 16
+  }
+}

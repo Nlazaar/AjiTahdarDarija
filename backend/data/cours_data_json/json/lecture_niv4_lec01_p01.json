@@ -1,0 +1,194 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Je me présente",
+    "ar": "أُعَرِّفُ بِنَفْسِي"
+  },
+  "enonce": {
+    "fr": "Lis le texte de présentation de Salma, puis coche les bonnes cases pour répondre aux questions.",
+    "ar": "أَضَعُ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "question_1",
+      "ar": "كَمْ عُمُرُ سَلْمَى؟",
+      "fr": "Quel âge a Salma ?",
+      "emoji": "🎂"
+    },
+    {
+      "id": "reponse_1a",
+      "ar": "خَمْسُ سَنَوَاتٍ",
+      "fr": "Cinq ans",
+      "emoji": "5️⃣"
+    },
+    {
+      "id": "reponse_1b",
+      "ar": "سِتُّ سَنَوَاتٍ",
+      "fr": "Six ans",
+      "emoji": "6️⃣"
+    },
+    {
+      "id": "reponse_1c",
+      "ar": "سَبْعُ سَنَوَاتٍ",
+      "fr": "Sept ans",
+      "emoji": "7️⃣"
+    },
+    {
+      "id": "question_2",
+      "ar": "أَيْنَ وُلِدَتْ سَلْمَى؟",
+      "fr": "Où est née Salma ?",
+      "emoji": "🌍"
+    },
+    {
+      "id": "reponse_2a",
+      "ar": "فِي الْمَغْرِبِ",
+      "fr": "Au Maroc",
+      "emoji": "🇲🇦"
+    },
+    {
+      "id": "reponse_2b",
+      "ar": "فِي فَرَنْسَا",
+      "fr": "En France",
+      "emoji": "🇫🇷"
+    },
+    {
+      "id": "reponse_2c",
+      "ar": "فِي كَنَدَا",
+      "fr": "Au Canada",
+      "emoji": "🇨🇦"
+    },
+    {
+      "id": "question_3",
+      "ar": "أَيْنَ تَسْكُنُ سَلْمَى؟",
+      "fr": "Où habite Salma ?",
+      "emoji": "🏠"
+    },
+    {
+      "id": "reponse_3a",
+      "ar": "فِي الْمَغْرِبِ",
+      "fr": "Au Maroc",
+      "emoji": "🇲🇦"
+    },
+    {
+      "id": "reponse_3b",
+      "ar": "فِي فَرَنْسَا",
+      "fr": "En France",
+      "emoji": "🇫🇷"
+    },
+    {
+      "id": "reponse_3c",
+      "ar": "فِي كَنَدَا",
+      "fr": "Au Canada",
+      "emoji": "🇨🇦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec01",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَضَعُ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv4_lec01_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_1",
+      "texte_ar": "كَمْ عُمُرُ سَلْمَى؟",
+      "voix_m": "lecture_niv4_lec01_p1_question_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_question_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1a",
+      "texte_ar": "خَمْسُ سَنَوَاتٍ",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_1a_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1b",
+      "texte_ar": "سِتُّ سَنَوَاتٍ",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_1b_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1c",
+      "texte_ar": "سَبْعُ سَنَوَاتٍ",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_1c_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_2",
+      "texte_ar": "أَيْنَ وُلِدَتْ سَلْمَى؟",
+      "voix_m": "lecture_niv4_lec01_p1_question_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_question_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2a",
+      "texte_ar": "فِي الْمَغْرِبِ",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_2a_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2b",
+      "texte_ar": "فِي فَرَنْسَا",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_2b_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2c",
+      "texte_ar": "فِي كَنَدَا",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_2c_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_2c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_3",
+      "texte_ar": "أَيْنَ تَسْكُنُ سَلْمَى؟",
+      "voix_m": "lecture_niv4_lec01_p1_question_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_question_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_3a",
+      "texte_ar": "فِي الْمَغْرِبِ",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_3a_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_3b",
+      "texte_ar": "فِي فَرَنْسَا",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_3b_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_3c",
+      "texte_ar": "فِي كَنَدَا",
+      "voix_m": "lecture_niv4_lec01_p1_reponse_3c_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p1_reponse_3c_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:36:09.723456",
+    "niveau": 4,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv4_lec01",
+    "bucket_audio": "audio-lessons/niveau4/lecon01/",
+    "nb_audio_assets": 13
+  }
+}

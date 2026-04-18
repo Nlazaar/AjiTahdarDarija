@@ -1,0 +1,90 @@
+{
+  "page_nb": 53,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque rangée, trouve et barre l'élément qui est différent des autres.",
+    "ar": "فِي كُلِّ صَفٍّ، اِبْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ."
+  },
+  "elements": [
+    {
+      "id": "rangee_1",
+      "ar": "الدُّودَة",
+      "fr": "Les chenilles (rangée 1 - trouver l'intrus parmi les serpents/chenilles)",
+      "emoji": "🐛"
+    },
+    {
+      "id": "rangee_2",
+      "ar": "النَّحْلَة",
+      "fr": "Les abeilles (rangée 2 - trouver l'intrus parmi les abeilles)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "rangee_3",
+      "ar": "حَرْفُ خ",
+      "fr": "La lettre خ (rangée 3 - trouver l'intrus parmi les lettres خ/ذ)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "rangee_4",
+      "ar": "حَرْفُ د",
+      "fr": "La lettre د (rangée 4 - trouver l'intrus parmi les lettres د/ح)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p53_consigne",
+      "texte_ar": "فِي كُلِّ صَفٍّ، اِبْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ.",
+      "voix_m": "livre_arabe_niveau3_p53_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p53_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rangee_1",
+      "texte_ar": "الدُّودَة",
+      "voix_m": "livre_arabe_niveau3_p53_rangee_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p53_rangee_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rangee_2",
+      "texte_ar": "النَّحْلَة",
+      "voix_m": "livre_arabe_niveau3_p53_rangee_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p53_rangee_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rangee_3",
+      "texte_ar": "حَرْفُ خ",
+      "voix_m": "livre_arabe_niveau3_p53_rangee_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p53_rangee_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rangee_4",
+      "texte_ar": "حَرْفُ د",
+      "voix_m": "livre_arabe_niveau3_p53_rangee_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p53_rangee_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:05:06.904234",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot illustré par l'image",
+    "ar": "أَلَوِّنُ الحُرُوفَ الَّتِي تُكَوِّنُ الكَلِمَةَ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "ثَعلَب",
+      "fr": "renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "lettre1_1",
+      "ar": "ث",
+      "fr": "lettre th",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_2",
+      "ar": "ع",
+      "fr": "lettre ain",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_3",
+      "ar": "ل",
+      "fr": "lettre lam",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_4",
+      "ar": "ب",
+      "fr": "lettre ba",
+      "emoji": ""
+    },
+    {
+      "id": "intrus1_1",
+      "ar": "ت",
+      "fr": "lettre ta (intrus)",
+      "emoji": ""
+    },
+    {
+      "id": "intrus1_2",
+      "ar": "غ",
+      "fr": "lettre ghayn (intrus)",
+      "emoji": ""
+    },
+    {
+      "id": "intrus1_3",
+      "ar": "ا",
+      "fr": "lettre alif (intrus)",
+      "emoji": ""
+    },
+    {
+      "id": "mot2",
+      "ar": "دُودَة",
+      "fr": "ver",
+      "emoji": "🐛"
+    },
+    {
+      "id": "lettre2_1",
+      "ar": "د",
+      "fr": "lettre dal",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_2",
+      "ar": "و",
+      "fr": "lettre waw",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_3",
+      "ar": "د",
+      "fr": "lettre dal",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_4",
+      "ar": "ة",
+      "fr": "lettre ta marbuta",
+      "emoji": ""
+    },
+    {
+      "id": "intrus2_1",
+      "ar": "ر",
+      "fr": "lettre ra (intrus)",
+      "emoji": ""
+    },
+    {
+      "id": "intrus2_2",
+      "ar": "ذ",
+      "fr": "lettre dhal (intrus)",
+      "emoji": ""
+    },
+    {
+      "id": "intrus2_3",
+      "ar": "ر",
+      "fr": "lettre ra (intrus)",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_10",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَلَوِّنُ الحُرُوفَ الَّتِي تُكَوِّنُ الكَلِمَةَ",
+      "voix_m": "arabe_niveau2_10_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "ثَعلَب",
+      "voix_m": "arabe_niveau2_10_p5_mot1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_1",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau2_10_p5_lettre1_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_2",
+      "texte_ar": "ع",
+      "voix_m": "arabe_niveau2_10_p5_lettre1_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_3",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_10_p5_lettre1_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_4",
+      "texte_ar": "ب",
+      "voix_m": "arabe_niveau2_10_p5_lettre1_4_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus1_1",
+      "texte_ar": "ت",
+      "voix_m": "arabe_niveau2_10_p5_intrus1_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus1_2",
+      "texte_ar": "غ",
+      "voix_m": "arabe_niveau2_10_p5_intrus1_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus1_3",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_10_p5_intrus1_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "دُودَة",
+      "voix_m": "arabe_niveau2_10_p5_mot2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_1",
+      "texte_ar": "د",
+      "voix_m": "arabe_niveau2_10_p5_lettre2_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_2",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_10_p5_lettre2_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_3",
+      "texte_ar": "د",
+      "voix_m": "arabe_niveau2_10_p5_lettre2_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_4",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_10_p5_lettre2_4_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_lettre2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus2_1",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_10_p5_intrus2_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus2_2",
+      "texte_ar": "ذ",
+      "voix_m": "arabe_niveau2_10_p5_intrus2_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus2_3",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_10_p5_intrus2_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p5_intrus2_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:54:43.896526",
+    "niveau": 2,
+    "lecon": 22,
+    "nom_pdf": "arabe_niveau2_10",
+    "bucket_audio": "audio-lessons/niveau2/lecon22/",
+    "nb_audio_assets": 17
+  }
+}

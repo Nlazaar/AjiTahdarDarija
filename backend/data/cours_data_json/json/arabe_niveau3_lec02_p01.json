@@ -1,0 +1,493 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les jours de la semaine et les lettres avec Fatha",
+    "ar": "أيام الأسبوع والحروف بالفتحة"
+  },
+  "enonce": {
+    "fr": "Lis à voix haute les jours de la semaine puis les lettres de l'alphabet avec la voyelle Fatha",
+    "ar": "اقرأ أيام الأسبوع ثم اقرأ حروف الأبجدية بالفتحة"
+  },
+  "elements": [
+    {
+      "id": "jour1",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour2",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour3",
+      "ar": "الأرْبَعَاء",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour4",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour5",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour6",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour7",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "lettre1",
+      "ar": "أَ",
+      "fr": "Alif avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre2",
+      "ar": "بَ",
+      "fr": "Ba avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre3",
+      "ar": "تَ",
+      "fr": "Ta avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre4",
+      "ar": "ثَ",
+      "fr": "Tha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre5",
+      "ar": "جَ",
+      "fr": "Jim avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre6",
+      "ar": "حَ",
+      "fr": "Ha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre7",
+      "ar": "خَ",
+      "fr": "Kha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre8",
+      "ar": "دَ",
+      "fr": "Dal avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre9",
+      "ar": "ذَ",
+      "fr": "Dhal avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre10",
+      "ar": "رَ",
+      "fr": "Ra avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre11",
+      "ar": "زَ",
+      "fr": "Zay avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre12",
+      "ar": "سَ",
+      "fr": "Sin avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre13",
+      "ar": "شَ",
+      "fr": "Shin avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre14",
+      "ar": "صَ",
+      "fr": "Sad avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre15",
+      "ar": "ضَ",
+      "fr": "Dad avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre16",
+      "ar": "طَ",
+      "fr": "Ta emphatic avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre17",
+      "ar": "ظَ",
+      "fr": "Dha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre18",
+      "ar": "عَ",
+      "fr": "Ain avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre19",
+      "ar": "غَ",
+      "fr": "Ghain avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre20",
+      "ar": "فَ",
+      "fr": "Fa avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre21",
+      "ar": "قَ",
+      "fr": "Qaf avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre22",
+      "ar": "كَ",
+      "fr": "Kaf avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre23",
+      "ar": "لَ",
+      "fr": "Lam avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre24",
+      "ar": "مَ",
+      "fr": "Mim avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre25",
+      "ar": "نَ",
+      "fr": "Nun avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre26",
+      "ar": "هَ",
+      "fr": "Ha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre27",
+      "ar": "وَ",
+      "fr": "Waw avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre28",
+      "ar": "يَ",
+      "fr": "Ya avec fatha",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اقرأ أيام الأسبوع ثم اقرأ حروف الأبجدية بالفتحة",
+      "voix_m": "arabe_niveau3_lec02_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour1",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "arabe_niveau3_lec02_p1_jour1_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour2",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "arabe_niveau3_lec02_p1_jour2_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour3",
+      "texte_ar": "الأرْبَعَاء",
+      "voix_m": "arabe_niveau3_lec02_p1_jour3_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour4",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "arabe_niveau3_lec02_p1_jour4_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour5",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "arabe_niveau3_lec02_p1_jour5_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "arabe_niveau3_lec02_p1_jour6_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour7",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "arabe_niveau3_lec02_p1_jour7_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_jour7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1",
+      "texte_ar": "أَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre1_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2",
+      "texte_ar": "بَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre2_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre3",
+      "texte_ar": "تَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre3_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre4",
+      "texte_ar": "ثَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre4_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre5",
+      "texte_ar": "جَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre5_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre6",
+      "texte_ar": "حَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre6_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre7",
+      "texte_ar": "خَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre7_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre8",
+      "texte_ar": "دَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre8_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre9",
+      "texte_ar": "ذَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre9_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre10",
+      "texte_ar": "رَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre10_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre11",
+      "texte_ar": "زَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre11_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre12",
+      "texte_ar": "سَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre12_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre13",
+      "texte_ar": "شَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre13_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre14",
+      "texte_ar": "صَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre14_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre15",
+      "texte_ar": "ضَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre15_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre16",
+      "texte_ar": "طَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre16_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre17",
+      "texte_ar": "ظَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre17_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre18",
+      "texte_ar": "عَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre18_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre19",
+      "texte_ar": "غَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre19_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre20",
+      "texte_ar": "فَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre20_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre21",
+      "texte_ar": "قَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre21_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre22",
+      "texte_ar": "كَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre22_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre23",
+      "texte_ar": "لَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre23_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre24",
+      "texte_ar": "مَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre24_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre24_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre25",
+      "texte_ar": "نَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre25_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre25_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre26",
+      "texte_ar": "هَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre26_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre26_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre27",
+      "texte_ar": "وَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre27_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre27_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre28",
+      "texte_ar": "يَ",
+      "voix_m": "arabe_niveau3_lec02_p1_lettre28_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p1_lettre28_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:25:38.529866",
+    "niveau": 3,
+    "lecon": 2,
+    "nom_pdf": "arabe_niveau3_lec02",
+    "bucket_audio": "audio-lessons/niveau3/lecon02/",
+    "nb_audio_assets": 36
+  }
+}

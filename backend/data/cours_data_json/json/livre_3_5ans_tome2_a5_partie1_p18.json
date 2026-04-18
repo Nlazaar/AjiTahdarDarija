@@ -1,0 +1,142 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلْوِّنُ حُرُوفَ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'soleil' (شمس)",
+    "ar": "أَلْوِّنُ حُرُوفَ الْكَلِمَةِ شَـمـس"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شـ",
+      "fr": "sh (début)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "2",
+      "ar": "ـمـ",
+      "fr": "m (milieu)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "3",
+      "ar": "ـس",
+      "fr": "s (fin)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "4",
+      "ar": "و",
+      "fr": "w",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "خ",
+      "fr": "kh",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ل",
+      "fr": "l",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "بـ",
+      "fr": "b",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "سـ",
+      "fr": "s (début)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "أَلْوِّنُ حُرُوفَ الْكَلِمَةِ شَـمـس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ـمـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p18_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p18_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:17:53.901239",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 9
+  }
+}

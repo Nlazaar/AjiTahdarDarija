@@ -1,0 +1,272 @@
+{
+  "page_nb": 26,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "J'entoure les mots identiques au modèle",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَق الكلمات المشابِهَة للنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Entoure dans chaque colonne les mots identiques au mot modèle (en rouge)",
+    "ar": "أَحِيطُ في كل عمود الكلمات المشابهة للنموذج المكتوب بالأحمر"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚆"
+    },
+    {
+      "id": "var_1a",
+      "ar": "تِطَارٌ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_1b",
+      "ar": "قِصَارٌ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_1c",
+      "ar": "قِطَارٌ",
+      "fr": "train (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_1d",
+      "ar": "قِطَارٌ",
+      "fr": "train (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_1e",
+      "ar": "قِطَارٌ",
+      "fr": "train (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "modele_2",
+      "ar": "قِرْدٌ",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "var_2a",
+      "ar": "تِرْدُ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_2b",
+      "ar": "قِرْدُ",
+      "fr": "variante (correcte)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_2c",
+      "ar": "وِرْدُ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_2d",
+      "ar": "فِرْدُ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_2e",
+      "ar": "قِرْدُ",
+      "fr": "singe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "modele_3",
+      "ar": "قِدْرٌ",
+      "fr": "marmite",
+      "emoji": "🍲"
+    },
+    {
+      "id": "var_3a",
+      "ar": "قِدْرٌ",
+      "fr": "marmite (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_3b",
+      "ar": "فِدْرٌ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    },
+    {
+      "id": "var_3c",
+      "ar": "قِدْرٌ",
+      "fr": "marmite (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_3d",
+      "ar": "قِدْرٌ",
+      "fr": "marmite (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "var_3e",
+      "ar": "قِدْوٌ",
+      "fr": "variante (incorrecte)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p26_consigne",
+      "texte_ar": "أَحِيطُ في كل عمود الكلمات المشابهة للنموذج المكتوب بالأحمر",
+      "voix_m": "livre_arabe_niveau3_p26_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_modele_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_1a",
+      "texte_ar": "تِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_1a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_1b",
+      "texte_ar": "قِصَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_1b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_1c",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_1c_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_1d",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_1d_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_1d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_1e",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_1e_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_1e_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "livre_arabe_niveau3_p26_modele_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_2a",
+      "texte_ar": "تِرْدُ",
+      "voix_m": "livre_arabe_niveau3_p26_var_2a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_2b",
+      "texte_ar": "قِرْدُ",
+      "voix_m": "livre_arabe_niveau3_p26_var_2b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_2c",
+      "texte_ar": "وِرْدُ",
+      "voix_m": "livre_arabe_niveau3_p26_var_2c_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_2c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_2d",
+      "texte_ar": "فِرْدُ",
+      "voix_m": "livre_arabe_niveau3_p26_var_2d_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_2d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_2e",
+      "texte_ar": "قِرْدُ",
+      "voix_m": "livre_arabe_niveau3_p26_var_2e_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_2e_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_3",
+      "texte_ar": "قِدْرٌ",
+      "voix_m": "livre_arabe_niveau3_p26_modele_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_modele_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_3a",
+      "texte_ar": "قِدْرٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_3a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_3b",
+      "texte_ar": "فِدْرٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_3b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_3c",
+      "texte_ar": "قِدْرٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_3c_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_3c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_3d",
+      "texte_ar": "قِدْرٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_3d_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_3d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_var_3e",
+      "texte_ar": "قِدْوٌ",
+      "voix_m": "livre_arabe_niveau3_p26_var_3e_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p26_var_3e_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:59:30.164994",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 19
+  }
+}

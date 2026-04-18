@@ -1,0 +1,116 @@
+{
+  "page_nb": 38,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Compte puis relie par un trait",
+    "ar": "أَعُدُّ ثُمَّ أَرْبِطُ بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Compte les objets dans chaque rangée puis relie le groupe qui contient 5 éléments à la main (chiffre 5)",
+    "ar": "أَعُدُّ الأشياء في كل صف ثم أربط المجموعة التي تحتوي على 5 عناصر باليد"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أهلة (7)",
+      "fr": "7 croissants",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "موز (1)",
+      "fr": "1 régime de bananes",
+      "emoji": "🍌"
+    },
+    {
+      "id": "3",
+      "ar": "كرات (4)",
+      "fr": "4 balles de tennis",
+      "emoji": "🎾"
+    },
+    {
+      "id": "4",
+      "ar": "تفاحات (5)",
+      "fr": "5 pommes",
+      "emoji": "🍎"
+    },
+    {
+      "id": "5",
+      "ar": "نجوم (5)",
+      "fr": "5 étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "6",
+      "ar": "يد - العدد 5",
+      "fr": "Main - chiffre 5",
+      "emoji": "✋"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p38_consigne",
+      "texte_ar": "أَعُدُّ الأشياء في كل صف ثم أربط المجموعة التي تحتوي على 5 عناصر باليد",
+      "voix_m": "livre_3_5ans_tome2_p38_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أهلة (7)",
+      "voix_m": "livre_3_5ans_tome2_p38_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "موز (1)",
+      "voix_m": "livre_3_5ans_tome2_p38_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "كرات (4)",
+      "voix_m": "livre_3_5ans_tome2_p38_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تفاحات (5)",
+      "voix_m": "livre_3_5ans_tome2_p38_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نجوم (5)",
+      "voix_m": "livre_3_5ans_tome2_p38_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "يد - العدد 5",
+      "voix_m": "livre_3_5ans_tome2_p38_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p38_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:01:47.435917",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

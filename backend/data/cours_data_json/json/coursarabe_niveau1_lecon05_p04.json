@@ -1,0 +1,194 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Identifier et colorier le bon élément parmi trois images proposées selon la consigne en arabe",
+  "titre": {
+    "fr": "Je colorie le bon dessin",
+    "ar": "أُلَوِّن الصَّحِيح"
+  },
+  "enonce": {
+    "fr": "Colorie l'araignée, puis le soleil, puis la maison parmi les images proposées",
+    "ar": "أُلَوِّن الْعَنْكَبُوتَ، أُلَوِّن الشَّمْسَ، أُلَوِّن الدَّارَ"
+  },
+  "elements": [
+    {
+      "id": "exercice_2",
+      "ar": "أُلَوِّن الْعَنْكَبُوتَ",
+      "fr": "Je colorie l'araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "ver",
+      "ar": "دُودَة",
+      "fr": "ver",
+      "emoji": "🪱"
+    },
+    {
+      "id": "araignee",
+      "ar": "عَنْكَبُوت",
+      "fr": "araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "papillon",
+      "ar": "فَرَاشَة",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "exercice_3",
+      "ar": "أُلَوِّن الشَّمْسَ",
+      "fr": "Je colorie le soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "soleil",
+      "ar": "شَمْس",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "lune",
+      "ar": "قَمَر",
+      "fr": "lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "nuage",
+      "ar": "سَحَابَة",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "exercice_4",
+      "ar": "أُلَوِّن الدَّارَ",
+      "fr": "Je colorie la maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ballon",
+      "ar": "كُرَة",
+      "fr": "ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "chaise",
+      "ar": "كُرْسِي",
+      "fr": "chaise",
+      "emoji": "🪑"
+    },
+    {
+      "id": "maison",
+      "ar": "دَار",
+      "fr": "maison",
+      "emoji": "🏠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أُلَوِّن الْعَنْكَبُوتَ، أُلَوِّن الشَّمْسَ، أُلَوِّن الدَّارَ",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_2",
+      "texte_ar": "أُلَوِّن الْعَنْكَبُوتَ",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_exercice_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_exercice_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ver",
+      "texte_ar": "دُودَة",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_ver_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_ver_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_araignee",
+      "texte_ar": "عَنْكَبُوت",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_araignee_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_araignee_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_papillon",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_papillon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_papillon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_3",
+      "texte_ar": "أُلَوِّن الشَّمْسَ",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_exercice_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_exercice_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil",
+      "texte_ar": "شَمْس",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_soleil_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_soleil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lune",
+      "texte_ar": "قَمَر",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_lune_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_lune_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage",
+      "texte_ar": "سَحَابَة",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_nuage_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_nuage_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_4",
+      "texte_ar": "أُلَوِّن الدَّارَ",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_exercice_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_exercice_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon",
+      "texte_ar": "كُرَة",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_ballon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_ballon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaise",
+      "texte_ar": "كُرْسِي",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_chaise_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_chaise_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_maison",
+      "texte_ar": "دَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p4_maison_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p4_maison_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:47:30.467153",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 13
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Colle les enfants en dehors du bus",
+    "ar": "ألصق الأطفال خارج الحافلة"
+  },
+  "enonce": {
+    "fr": "Colle les autocollants des enfants à l'extérieur du bus, pas à l'intérieur.",
+    "ar": "ألصق صور الأطفال خارج الحافلة، وليس داخلها."
+  },
+  "elements": [
+    {
+      "id": "enfant_1",
+      "ar": "طفل",
+      "fr": "enfant (garçon)",
+      "emoji": "👦"
+    },
+    {
+      "id": "enfant_2",
+      "ar": "طفلة",
+      "fr": "enfant (fille)",
+      "emoji": "👧"
+    },
+    {
+      "id": "bus",
+      "ar": "الحافلة",
+      "fr": "le bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "chauffeur",
+      "ar": "السائق",
+      "fr": "le chauffeur",
+      "emoji": "👨‍✈️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "ألصق صور الأطفال خارج الحافلة، وليس داخلها.",
+      "voix_m": "arabe_niveau2_05_2_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_enfant_1",
+      "texte_ar": "طفل",
+      "voix_m": "arabe_niveau2_05_2_p5_enfant_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p5_enfant_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_enfant_2",
+      "texte_ar": "طفلة",
+      "voix_m": "arabe_niveau2_05_2_p5_enfant_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p5_enfant_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "الحافلة",
+      "voix_m": "arabe_niveau2_05_2_p5_bus_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p5_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chauffeur",
+      "texte_ar": "السائق",
+      "voix_m": "arabe_niveau2_05_2_p5_chauffeur_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p5_chauffeur_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:46:56.492510",
+    "niveau": 2,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau2_05_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon16/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond",
+    "ar": "أربط كل كلمة بالصورة المناسبة لها"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سيّارة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "2",
+      "ar": "طائرة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "3",
+      "ar": "قطار",
+      "fr": "train",
+      "emoji": "🚆"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أربط كل كلمة بالصورة المناسبة لها",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p5_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سيّارة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p5_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طائرة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p5_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "قطار",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p5_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p5_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:19:26.563027",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Le jour de la semaine – Leçon 20",
+    "ar": "اليَوْمُ هُوَ يَوْمٌ"
+  },
+  "enonce": {
+    "fr": "Je lis/J'écoute puis je relie avec l'image qui correspond",
+    "ar": "أقْرَأ/أسْمَعُ ثُمَّ أرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "fr": "Zaynab lit un livre avec son frère",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَّاجَةِ مَعَ أَخِيهَا",
+      "fr": "Zaynab joue à vélo avec son frère",
+      "emoji": "🚲"
+    },
+    {
+      "id": "jour_1",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_2",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_3",
+      "ar": "الأرْبَعَاءُ",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_4",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_5",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_6",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_7",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec20",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أقْرَأ/أسْمَعُ ثُمَّ أرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ",
+      "voix_m": "arabe_niveau3_lec20_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "voix_m": "arabe_niveau3_lec20_p1_phrase_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَّاجَةِ مَعَ أَخِيهَا",
+      "voix_m": "arabe_niveau3_lec20_p1_phrase_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_1",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_2",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_3",
+      "texte_ar": "الأرْبَعَاءُ",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_4",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_5",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_7",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "arabe_niveau3_lec20_p1_jour_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p1_jour_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:52:26.091294",
+    "niveau": 3,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau3_lec20",
+    "bucket_audio": "audio-lessons/niveau3/lecon20/",
+    "nb_audio_assets": 10
+  }
+}

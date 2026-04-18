@@ -1,0 +1,116 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie le clown à ce qu'il utilise dans ses jeux",
+    "ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ"
+  },
+  "enonce": {
+    "fr": "Relie le clown uniquement aux objets qu'il utilise dans ses jeux",
+    "ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ"
+  },
+  "elements": [
+    {
+      "id": "clown",
+      "ar": "الْمُهَرِّج",
+      "fr": "le clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "ballons",
+      "ar": "بَالُونَات",
+      "fr": "des ballons",
+      "emoji": "🎈"
+    },
+    {
+      "id": "chapeau",
+      "ar": "قُبَّعَة",
+      "fr": "chapeau de fête",
+      "emoji": "🎉"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شَوْكَة",
+      "fr": "une fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "ballon_jeu",
+      "ar": "كُرَة",
+      "fr": "un ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "couteau",
+      "ar": "سِكِّين",
+      "fr": "un couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown",
+      "texte_ar": "الْمُهَرِّج",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_clown_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_clown_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballons",
+      "texte_ar": "بَالُونَات",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_ballons_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_ballons_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chapeau",
+      "texte_ar": "قُبَّعَة",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_chapeau_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_chapeau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_fourchette_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon_jeu",
+      "texte_ar": "كُرَة",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_ballon_jeu_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_ballon_jeu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سِكِّين",
+      "voix_m": "coursarabe_niveau1_lecon09_p2_couteau_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p2_couteau_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:20:42.120258",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les animaux",
+    "ar": "حَيَوَانَاتٌ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque carte pour écouter le nom de l'animal en arabe",
+    "ar": "اِنْقُرْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ اسْمَ الْحَيَوَانِ بِالْعَرَبِيَّةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُدُ",
+      "fr": "Huppe fasciée",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "ظَبْيٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "3",
+      "ar": "تِمْسَاحٌ",
+      "fr": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "4",
+      "ar": "دِيكٌ",
+      "fr": "Coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "5",
+      "ar": "دُبٌّ",
+      "fr": "Ours",
+      "emoji": "🐻"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_08",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ اسْمَ الْحَيَوَانِ بِالْعَرَبِيَّةِ",
+      "voix_m": "arabe_niveau2_08_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُدُ",
+      "voix_m": "arabe_niveau2_08_p1_1_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ظَبْيٌ",
+      "voix_m": "arabe_niveau2_08_p1_2_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "arabe_niveau2_08_p1_3_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "arabe_niveau2_08_p1_4_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "دُبٌّ",
+      "voix_m": "arabe_niveau2_08_p1_5_m.mp3",
+      "voix_f": "arabe_niveau2_08_p1_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:51:38.494571",
+    "niveau": 2,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau2_08",
+    "bucket_audio": "audio-lessons/niveau2/lecon20/",
+    "nb_audio_assets": 6
+  }
+}

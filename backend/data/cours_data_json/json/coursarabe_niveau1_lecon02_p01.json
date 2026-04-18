@@ -1,0 +1,90 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte du vocabulaire de la famille avec illustrations en cœurs et étiquettes en arabe",
+  "titre": {
+    "fr": "La famille",
+    "ar": "الْعَائِلَةُ"
+  },
+  "enonce": {
+    "fr": "Ma famille",
+    "ar": "عَائِلَتِي"
+  },
+  "elements": [
+    {
+      "id": "pere",
+      "ar": "أَبِي",
+      "fr": "Mon père",
+      "emoji": "👨"
+    },
+    {
+      "id": "mere",
+      "ar": "أُمِّي",
+      "fr": "Ma mère",
+      "emoji": "👩"
+    },
+    {
+      "id": "soeur",
+      "ar": "أُخْتِي",
+      "fr": "Ma sœur",
+      "emoji": "👧"
+    },
+    {
+      "id": "frere",
+      "ar": "أَخِي",
+      "fr": "Mon frère",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "عَائِلَتِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pere",
+      "texte_ar": "أَبِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p1_pere_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p1_pere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mere",
+      "texte_ar": "أُمِّي",
+      "voix_m": "coursarabe_niveau1_lecon02_p1_mere_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p1_mere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soeur",
+      "texte_ar": "أُخْتِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p1_soeur_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p1_soeur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_frere",
+      "texte_ar": "أَخِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p1_frere_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p1_frere_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:39:42.422594",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 5
+  }
+}

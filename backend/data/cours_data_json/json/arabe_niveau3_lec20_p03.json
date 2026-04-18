@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je colle la deuxième moitié de chaque mot",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِلْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colle la deuxième moitié manquante pour compléter chaque mot illustré",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِإِتْمَامِ كُلِّ كَلِمَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَرَا",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "2",
+      "ar": "ثُعْ",
+      "fr": "serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "3",
+      "ar": "غُرَا",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "4",
+      "ar": "رُمَّا",
+      "fr": "grenade",
+      "emoji": "🍎"
+    },
+    {
+      "id": "5",
+      "ar": "دَرَّا",
+      "fr": "vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "6",
+      "ar": "بَطَّ",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "7",
+      "ar": "دُو",
+      "fr": "ver de terre",
+      "emoji": "🪱"
+    },
+    {
+      "id": "8",
+      "ar": "زَيْ",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "9",
+      "ar": "حَلَ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec20",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِإِتْمَامِ كُلِّ كَلِمَةٍ",
+      "voix_m": "arabe_niveau3_lec20_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَرَا",
+      "voix_m": "arabe_niveau3_lec20_p3_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثُعْ",
+      "voix_m": "arabe_niveau3_lec20_p3_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غُرَا",
+      "voix_m": "arabe_niveau3_lec20_p3_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "رُمَّا",
+      "voix_m": "arabe_niveau3_lec20_p3_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "دَرَّا",
+      "voix_m": "arabe_niveau3_lec20_p3_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَطَّ",
+      "voix_m": "arabe_niveau3_lec20_p3_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "دُو",
+      "voix_m": "arabe_niveau3_lec20_p3_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "زَيْ",
+      "voix_m": "arabe_niveau3_lec20_p3_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "حَلَ",
+      "voix_m": "arabe_niveau3_lec20_p3_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:52:46.251528",
+    "niveau": 3,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau3_lec20",
+    "bucket_audio": "audio-lessons/niveau3/lecon20/",
+    "nb_audio_assets": 10
+  }
+}

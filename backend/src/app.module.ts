@@ -1,4 +1,6 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
@@ -18,6 +20,10 @@ import { I18nModule } from './modules/i18n/i18n.module';
 
 @Module({
   imports: [
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'public'),
+      serveRoot: '/',
+    }),
     PrismaModule,
     TasksModule,
     AuthModule,
@@ -44,6 +50,8 @@ import { I18nModule } from './modules/i18n/i18n.module';
     require('./modules/signalement/signalement.module').SignalementModule,
     require('./audio/audio.module').AudioModule,
     require('./modules/modules/modules.module').ModulesModule,
+    require('./modules/duels/duels.module').DuelsModule,
+    require('./modules/cultural/cultural.module').CulturalModule,
   ],
   controllers: [AppController],
   providers: [AppService],

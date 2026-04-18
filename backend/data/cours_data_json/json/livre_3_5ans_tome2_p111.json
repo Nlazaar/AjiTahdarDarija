@@ -1,0 +1,90 @@
+{
+  "page_nb": 111,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Les moyens de transport - Reconstituer les mots",
+    "ar": "وسائل النقل - رتّب الكلمات"
+  },
+  "enonce": {
+    "fr": "Associe chaque image à sa partie de mot manquante, puis reconstitue le mot entier",
+    "ar": "صِل كل صورة بجزء الكلمة المناسب ثم رتّب حروف الكلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حَافِلَةٌ",
+      "fr": "bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "2",
+      "ar": "سَيَّارَةٌ",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "3",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚆"
+    },
+    {
+      "id": "4",
+      "ar": "ح - ف - ا - ة - ل",
+      "fr": "lettres mélangées de حافلة",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p111_consigne",
+      "texte_ar": "صِل كل صورة بجزء الكلمة المناسب ثم رتّب حروف الكلمة",
+      "voix_m": "livre_3_5ans_tome2_p111_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p111_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حَافِلَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p111_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p111_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p111_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p111_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_3_5ans_tome2_p111_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p111_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ح - ف - ا - ة - ل",
+      "voix_m": "livre_3_5ans_tome2_p111_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p111_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:14:42.820708",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

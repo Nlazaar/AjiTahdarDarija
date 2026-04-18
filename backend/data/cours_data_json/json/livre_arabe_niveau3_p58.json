@@ -1,0 +1,233 @@
+{
+  "page_nb": 58,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ فِي الْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre 'aïn (ع) dans chacun des mots suivants, sous toutes ses formes (initiale, médiane, finale)",
+    "ar": "أَحُطْ بِخَطٍّ مُغْلَقٍ حَرْفَ العَيْنِ فِي كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ الآتِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عِنَبٌ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "2",
+      "ar": "بَعِيدٌ",
+      "fr": "loin",
+      "emoji": "↔️"
+    },
+    {
+      "id": "3",
+      "ar": "سَاعَةٌ",
+      "fr": "montre / heure",
+      "emoji": "⌚"
+    },
+    {
+      "id": "4",
+      "ar": "رَائِعٌ",
+      "fr": "magnifique",
+      "emoji": "✨"
+    },
+    {
+      "id": "5",
+      "ar": "بَاعَ",
+      "fr": "il a vendu",
+      "emoji": "🛒"
+    },
+    {
+      "id": "6",
+      "ar": "وَاسِعٌ",
+      "fr": "large / spacieux",
+      "emoji": "🌅"
+    },
+    {
+      "id": "7",
+      "ar": "رَاعِي",
+      "fr": "berger",
+      "emoji": "🐑"
+    },
+    {
+      "id": "8",
+      "ar": "ضَيْعَةٌ",
+      "fr": "ferme / village",
+      "emoji": "🏡"
+    },
+    {
+      "id": "9",
+      "ar": "مَعَ",
+      "fr": "avec",
+      "emoji": "🤝"
+    },
+    {
+      "id": "10",
+      "ar": "عَادَ",
+      "fr": "il est revenu",
+      "emoji": "🔄"
+    },
+    {
+      "id": "11",
+      "ar": "عَيْنٌ",
+      "fr": "œil / source",
+      "emoji": "👁️"
+    },
+    {
+      "id": "12",
+      "ar": "عُلْبَةٌ",
+      "fr": "boîte",
+      "emoji": "📦"
+    },
+    {
+      "id": "13",
+      "ar": "بَاغَ",
+      "fr": "il a surpris",
+      "emoji": "😮"
+    },
+    {
+      "id": "14",
+      "ar": "أَفْعَى",
+      "fr": "serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "15",
+      "ar": "عَلَى",
+      "fr": "sur",
+      "emoji": "⬆️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p58_consigne",
+      "texte_ar": "أَحُطْ بِخَطٍّ مُغْلَقٍ حَرْفَ العَيْنِ فِي كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ الآتِيَةِ",
+      "voix_m": "livre_arabe_niveau3_p58_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "livre_arabe_niveau3_p58_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَعِيدٌ",
+      "voix_m": "livre_arabe_niveau3_p58_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سَاعَةٌ",
+      "voix_m": "livre_arabe_niveau3_p58_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "رَائِعٌ",
+      "voix_m": "livre_arabe_niveau3_p58_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بَاعَ",
+      "voix_m": "livre_arabe_niveau3_p58_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "وَاسِعٌ",
+      "voix_m": "livre_arabe_niveau3_p58_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "رَاعِي",
+      "voix_m": "livre_arabe_niveau3_p58_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ضَيْعَةٌ",
+      "voix_m": "livre_arabe_niveau3_p58_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَعَ",
+      "voix_m": "livre_arabe_niveau3_p58_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "عَادَ",
+      "voix_m": "livre_arabe_niveau3_p58_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "عَيْنٌ",
+      "voix_m": "livre_arabe_niveau3_p58_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "عُلْبَةٌ",
+      "voix_m": "livre_arabe_niveau3_p58_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "بَاغَ",
+      "voix_m": "livre_arabe_niveau3_p58_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "أَفْعَى",
+      "voix_m": "livre_arabe_niveau3_p58_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "عَلَى",
+      "voix_m": "livre_arabe_niveau3_p58_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p58_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:06:14.821307",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 16
+  }
+}

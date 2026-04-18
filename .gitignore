@@ -30,3 +30,6 @@ Thumbs.db
 
 # Audit logs (contiennent des IPs et actions utilisateurs)
 backend/logs/
+
+# Archive locale (fichiers inutiles conservés hors git)
+_archive/

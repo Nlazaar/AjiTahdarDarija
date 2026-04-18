@@ -1,0 +1,181 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ل dans chaque mot avec la bonne couleur selon sa position (début, milieu ou fin)",
+    "ar": "لَوِّنْ حرف اللام في كل كلمة حسب موقعه"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "لَيْل",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "لَمَس",
+      "fr": "toucher",
+      "emoji": "✋"
+    },
+    {
+      "id": "3",
+      "ar": "لَبِس",
+      "fr": "s'habiller",
+      "emoji": "👕"
+    },
+    {
+      "id": "4",
+      "ar": "ظِل",
+      "fr": "ombre",
+      "emoji": "🌑"
+    },
+    {
+      "id": "5",
+      "ar": "قَال",
+      "fr": "il a dit",
+      "emoji": "💬"
+    },
+    {
+      "id": "6",
+      "ar": "غِلال",
+      "fr": "céréales",
+      "emoji": "🌾"
+    },
+    {
+      "id": "7",
+      "ar": "سَأَل",
+      "fr": "il a demandé",
+      "emoji": "❓"
+    },
+    {
+      "id": "8",
+      "ar": "يَلْبَس",
+      "fr": "il s'habille",
+      "emoji": "👗"
+    },
+    {
+      "id": "9",
+      "ar": "كَل",
+      "fr": "tout",
+      "emoji": "🔢"
+    },
+    {
+      "id": "10",
+      "ar": "حَلَف",
+      "fr": "il a juré",
+      "emoji": "🤝"
+    },
+    {
+      "id": "11",
+      "ar": "غَلَب",
+      "fr": "il a vaincu",
+      "emoji": "🏆"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_10",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "لَوِّنْ حرف اللام في كل كلمة حسب موقعه",
+      "voix_m": "arabe_niveau2_10_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "لَيْل",
+      "voix_m": "arabe_niveau2_10_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "لَمَس",
+      "voix_m": "arabe_niveau2_10_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "لَبِس",
+      "voix_m": "arabe_niveau2_10_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ظِل",
+      "voix_m": "arabe_niveau2_10_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قَال",
+      "voix_m": "arabe_niveau2_10_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غِلال",
+      "voix_m": "arabe_niveau2_10_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَأَل",
+      "voix_m": "arabe_niveau2_10_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "يَلْبَس",
+      "voix_m": "arabe_niveau2_10_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "كَل",
+      "voix_m": "arabe_niveau2_10_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "حَلَف",
+      "voix_m": "arabe_niveau2_10_p3_10_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "غَلَب",
+      "voix_m": "arabe_niveau2_10_p3_11_m.mp3",
+      "voix_f": "arabe_niveau2_10_p3_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:54:23.028879",
+    "niveau": 2,
+    "lecon": 22,
+    "nom_pdf": "arabe_niveau2_10",
+    "bucket_audio": "audio-lessons/niveau2/lecon22/",
+    "nb_audio_assets": 12
+  }
+}

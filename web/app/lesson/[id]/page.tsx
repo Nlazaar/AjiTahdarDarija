@@ -41,7 +41,7 @@ export default async function LessonPage({ params, searchParams }: { params: { i
     const MinimalProgress = (await import('./MinimalProgress')).default;
     return <MinimalProgress value={25} />;
   }
-  let lesson, exercises, vocabulary;
+  let lesson: any, exercises: any[] = [], vocabulary: any[] = [];
 
   let nextLessonId: string | null = null
 

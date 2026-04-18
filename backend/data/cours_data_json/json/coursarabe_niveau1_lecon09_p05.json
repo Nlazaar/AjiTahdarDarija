@@ -1,0 +1,155 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie tous les mots identiques au mot modèle شَعْر (cheveux) illustré par l'image",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَجِ شَعْر"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "شَعْر",
+      "fr": "cheveux (modèle)",
+      "emoji": "💇"
+    },
+    {
+      "id": "mot1",
+      "ar": "شعر",
+      "fr": "cheveux - correct",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot2",
+      "ar": "سعر",
+      "fr": "prix - incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot3",
+      "ar": "شعر",
+      "fr": "cheveux - correct",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot4",
+      "ar": "سحر",
+      "fr": "magie - incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot5",
+      "ar": "ثعر",
+      "fr": "incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot6",
+      "ar": "شجر",
+      "fr": "arbre - incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot7",
+      "ar": "شعر",
+      "fr": "cheveux - correct",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot8",
+      "ar": "شعر",
+      "fr": "cheveux - correct",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَجِ شَعْر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "شَعْر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_modele_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "شعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "سعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "شعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "سحر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "ثعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "شجر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot7",
+      "texte_ar": "شعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot8",
+      "texte_ar": "شعر",
+      "voix_m": "coursarabe_niveau1_lecon09_p5_mot8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p5_mot8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:21:08.043225",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 10
+  }
+}

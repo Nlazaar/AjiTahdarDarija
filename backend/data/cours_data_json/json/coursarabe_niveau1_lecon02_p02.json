@@ -1,0 +1,129 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Compléter les phrases à trous avec son prénom et les prénoms des membres de la famille, puis barrer ce qui est faux (fille ou garçon)",
+  "titre": {
+    "fr": "Je complète et je barre ce qui est faux",
+    "ar": "أكمل و أشْطُبُ الْخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Complète les phrases avec ton prénom et les prénoms de ta famille, puis barre ce qui est faux (fille ou garçon)",
+    "ar": "أكمل الجمل باسمك واسم أفراد عائلتك، ثم اشطب الخطأ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "أنا اسمي ........،",
+      "fr": "Je m'appelle ........,",
+      "emoji": "🧒"
+    },
+    {
+      "id": "phrase_2_fille",
+      "ar": "أنا بِنت",
+      "fr": "Je suis une fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "phrase_3_garcon",
+      "ar": "أنا ولد",
+      "fr": "Je suis un garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "phrase_4",
+      "ar": "أمّي اسمُهَا ........",
+      "fr": "Ma maman s'appelle ........",
+      "emoji": "👩"
+    },
+    {
+      "id": "phrase_5",
+      "ar": "أبي اسمُهُ ........",
+      "fr": "Mon papa s'appelle ........",
+      "emoji": "👨"
+    },
+    {
+      "id": "phrase_6",
+      "ar": "أختي اسمُها ........",
+      "fr": "Ma sœur s'appelle ........",
+      "emoji": "👧"
+    },
+    {
+      "id": "phrase_7",
+      "ar": "أخِي اسْمُهُ ........",
+      "fr": "Mon frère s'appelle ........",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أكمل الجمل باسمك واسم أفراد عائلتك، ثم اشطب الخطأ",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "أنا اسمي ........،",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2_fille",
+      "texte_ar": "أنا بِنت",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_2_fille_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_2_fille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3_garcon",
+      "texte_ar": "أنا ولد",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_3_garcon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_3_garcon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_4",
+      "texte_ar": "أمّي اسمُهَا ........",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_5",
+      "texte_ar": "أبي اسمُهُ ........",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_6",
+      "texte_ar": "أختي اسمُها ........",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_7",
+      "texte_ar": "أخِي اسْمُهُ ........",
+      "voix_m": "coursarabe_niveau1_lecon02_p2_phrase_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p2_phrase_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:40:02.329104",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 8
+  }
+}

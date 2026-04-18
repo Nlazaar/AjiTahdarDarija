@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre quand je n'entends pas la lettre dans le mot",
+    "ar": "أَشْطُبُ عِنْدَمَا لا أَسْمَعُ الحَرْفَ فِي الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Observe chaque image. Barre les images dont le nom ne contient pas le son de la lettre سـ",
+    "ar": "انظر إلى كل صورة. اشطب الصور التي لا تسمع فيها حرف السين"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَحْن",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "2",
+      "ar": "قَمِيص",
+      "fr": "chemise",
+      "emoji": "👔"
+    },
+    {
+      "id": "3",
+      "ar": "أَسَد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "4",
+      "ar": "بَنْطَلُون",
+      "fr": "pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "5",
+      "ar": "بَصَل",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "6",
+      "ar": "شَمْس",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "7",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "8",
+      "ar": "فُسْتَان",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "9",
+      "ar": "مِكْنَسَة",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "10",
+      "ar": "سِنْجَاب",
+      "fr": "écureuil",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "11",
+      "ar": "كَأْس",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "12",
+      "ar": "مِشْمِش",
+      "fr": "abricot",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "انظر إلى كل صورة. اشطب الصور التي لا تسمع فيها حرف السين",
+      "voix_m": "arabe_niveau3_lec03_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَحْن",
+      "voix_m": "arabe_niveau3_lec03_p3_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "قَمِيص",
+      "voix_m": "arabe_niveau3_lec03_p3_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أَسَد",
+      "voix_m": "arabe_niveau3_lec03_p3_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَنْطَلُون",
+      "voix_m": "arabe_niveau3_lec03_p3_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بَصَل",
+      "voix_m": "arabe_niveau3_lec03_p3_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "شَمْس",
+      "voix_m": "arabe_niveau3_lec03_p3_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau3_lec03_p3_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "arabe_niveau3_lec03_p3_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِكْنَسَة",
+      "voix_m": "arabe_niveau3_lec03_p3_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "سِنْجَاب",
+      "voix_m": "arabe_niveau3_lec03_p3_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "كَأْس",
+      "voix_m": "arabe_niveau3_lec03_p3_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مِشْمِش",
+      "voix_m": "arabe_niveau3_lec03_p3_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p3_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:27:24.466992",
+    "niveau": 3,
+    "lecon": 3,
+    "nom_pdf": "arabe_niveau3_lec03",
+    "bucket_audio": "audio-lessons/niveau3/lecon03/",
+    "nb_audio_assets": 13
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 66,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ الحَرْفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre ك (kaf) chaque fois qu'elle apparaît dans les mots suivants",
+    "ar": "أَحِطْ بِالحَرْفِ ك فِي كُلِّ كَلِمَةٍ تَجِدُهُ فِيهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَكَر",
+      "fr": "penser / réfléchir",
+      "emoji": "💭"
+    },
+    {
+      "id": "2",
+      "ar": "شَوْكَة",
+      "fr": "fourchette / épine",
+      "emoji": "🍴"
+    },
+    {
+      "id": "3",
+      "ar": "كُوخ",
+      "fr": "cabane",
+      "emoji": "🛖"
+    },
+    {
+      "id": "4",
+      "ar": "كَان",
+      "fr": "il était",
+      "emoji": "⏳"
+    },
+    {
+      "id": "5",
+      "ar": "إِكْرَام",
+      "fr": "honneur / respect",
+      "emoji": "🌟"
+    },
+    {
+      "id": "6",
+      "ar": "كَوْكَب",
+      "fr": "planète / étoile",
+      "emoji": "🪐"
+    },
+    {
+      "id": "7",
+      "ar": "مَاكِر",
+      "fr": "rusé / malin",
+      "emoji": "🦊"
+    },
+    {
+      "id": "8",
+      "ar": "بَرَك",
+      "fr": "il s'est agenouillé",
+      "emoji": "🐪"
+    },
+    {
+      "id": "9",
+      "ar": "مَكَث",
+      "fr": "il est resté",
+      "emoji": "🏠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p66_consigne",
+      "texte_ar": "أَحِطْ بِالحَرْفِ ك فِي كُلِّ كَلِمَةٍ تَجِدُهُ فِيهَا",
+      "voix_m": "livre_3_5ans_tome2_p66_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَكَر",
+      "voix_m": "livre_3_5ans_tome2_p66_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "livre_3_5ans_tome2_p66_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "كُوخ",
+      "voix_m": "livre_3_5ans_tome2_p66_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كَان",
+      "voix_m": "livre_3_5ans_tome2_p66_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "إِكْرَام",
+      "voix_m": "livre_3_5ans_tome2_p66_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "كَوْكَب",
+      "voix_m": "livre_3_5ans_tome2_p66_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مَاكِر",
+      "voix_m": "livre_3_5ans_tome2_p66_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بَرَك",
+      "voix_m": "livre_3_5ans_tome2_p66_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَكَث",
+      "voix_m": "livre_3_5ans_tome2_p66_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p66_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:06:41.563085",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

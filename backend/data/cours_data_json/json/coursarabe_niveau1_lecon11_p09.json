@@ -1,0 +1,77 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés en suivant le modèle : lignes diagonales, lignes en zigzag et lignes verticales.",
+    "ar": "أَرْسُمُ الْخُطُوطَ الْمَنْقُوطَةَ مُتَّبِعًا النَّمُوذَجَ : خُطُوطٌ مَائِلَةٌ وَمُتَعَرِّجَةٌ وَعَمُودِيَّةٌ."
+  },
+  "elements": [
+    {
+      "id": "ligne_diagonale",
+      "ar": "خُطُوطٌ مَائِلَةٌ",
+      "fr": "Lignes diagonales",
+      "emoji": "↗️"
+    },
+    {
+      "id": "ligne_zigzag",
+      "ar": "خُطُوطٌ مُتَعَرِّجَةٌ",
+      "fr": "Lignes en zigzag",
+      "emoji": "〰️"
+    },
+    {
+      "id": "ligne_verticale",
+      "ar": "خُطُوطٌ عَمُودِيَّةٌ",
+      "fr": "Lignes verticales",
+      "emoji": "⬇️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَرْسُمُ الْخُطُوطَ الْمَنْقُوطَةَ مُتَّبِعًا النَّمُوذَجَ : خُطُوطٌ مَائِلَةٌ وَمُتَعَرِّجَةٌ وَعَمُودِيَّةٌ.",
+      "voix_m": "coursarabe_niveau1_lecon11_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_diagonale",
+      "texte_ar": "خُطُوطٌ مَائِلَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon11_p9_ligne_diagonale_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p9_ligne_diagonale_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_zigzag",
+      "texte_ar": "خُطُوطٌ مُتَعَرِّجَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon11_p9_ligne_zigzag_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p9_ligne_zigzag_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_verticale",
+      "texte_ar": "خُطُوطٌ عَمُودِيَّةٌ",
+      "voix_m": "coursarabe_niveau1_lecon11_p9_ligne_verticale_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p9_ligne_verticale_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:24:22.602689",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 42,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'قمر' (lune) parmi tous les mots et entoure-le chaque fois que tu le trouves",
+    "ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قمر",
+      "fr": "lune (cible)",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "قمل",
+      "fr": "poux (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "فمر",
+      "fr": "mot incorrect (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "قمد",
+      "fr": "mot incorrect (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "قبر",
+      "fr": "tombe (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "قمو",
+      "fr": "mot incorrect (intrus)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p42_consigne",
+      "texte_ar": "أبحثُ عَنِ الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "livre_3_5ans_tome2_p42_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قمر",
+      "voix_m": "livre_3_5ans_tome2_p42_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "قمل",
+      "voix_m": "livre_3_5ans_tome2_p42_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فمر",
+      "voix_m": "livre_3_5ans_tome2_p42_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قمد",
+      "voix_m": "livre_3_5ans_tome2_p42_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قبر",
+      "voix_m": "livre_3_5ans_tome2_p42_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قمو",
+      "voix_m": "livre_3_5ans_tome2_p42_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p42_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:02:32.833057",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

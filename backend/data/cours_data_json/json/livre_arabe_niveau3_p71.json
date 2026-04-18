@@ -1,0 +1,376 @@
+{
+  "page_nb": 71,
+  "type": "exercice",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Leçon 9 - Lecture de mots et syllabes arabes",
+    "ar": "الدرس 9 - قراءة الكلمات والمقاطع"
+  },
+  "enonce": {
+    "fr": "Lis chaque carte à voix haute en arabe",
+    "ar": "اقرأ كل بطاقة بصوت عالٍ"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "اَلْوَلَدُ",
+      "fr": "le garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "e2",
+      "ar": "اَلْبِنْتُ",
+      "fr": "la fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "e3",
+      "ar": "رَسَمَتْ",
+      "fr": "elle a dessiné",
+      "emoji": "🎨"
+    },
+    {
+      "id": "e4",
+      "ar": "خُبْزًا",
+      "fr": "du pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "e5",
+      "ar": "قَرَأَ",
+      "fr": "il a lu",
+      "emoji": "📖"
+    },
+    {
+      "id": "e6",
+      "ar": "زَيْنَبُ",
+      "fr": "Zaynab (prénom)",
+      "emoji": "👩"
+    },
+    {
+      "id": "e7",
+      "ar": "أَكَلَتْ",
+      "fr": "elle a mangé",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "e8",
+      "ar": "شَمْسًا",
+      "fr": "un soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "e9",
+      "ar": "سْ",
+      "fr": "syllabe س",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e10",
+      "ar": "دَعْ",
+      "fr": "syllabe دع",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e11",
+      "ar": "لَبْ",
+      "fr": "syllabe لب",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e12",
+      "ar": "عَقَةْ",
+      "fr": "syllabe عقة",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e13",
+      "ar": "نْ",
+      "fr": "syllabe ن",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e14",
+      "ar": "رَةْ",
+      "fr": "syllabe رة",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e15",
+      "ar": "رَةْ",
+      "fr": "syllabe رة",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e16",
+      "ar": "مِشْ",
+      "fr": "syllabe مش",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e17",
+      "ar": "نَسَةْ",
+      "fr": "syllabe نسة",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e18",
+      "ar": "كَلْبٌ",
+      "fr": "un chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "e19",
+      "ar": "قَمَرٌ",
+      "fr": "une lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "e20",
+      "ar": "مِلْحٌ",
+      "fr": "du sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "e21",
+      "ar": "كَأْسٌ",
+      "fr": "un verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "e22",
+      "ar": "سَجَدَ",
+      "fr": "il s'est prosterné",
+      "emoji": "🙏"
+    },
+    {
+      "id": "e23",
+      "ar": "قِرْدٌ",
+      "fr": "un singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "e24",
+      "ar": "جَمَلٌ",
+      "fr": "un chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "e25",
+      "ar": "بَصَلٌ",
+      "fr": "un oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "e26",
+      "ar": "جَزَرٌ",
+      "fr": "une carotte",
+      "emoji": "🥕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p71_consigne",
+      "texte_ar": "اقرأ كل بطاقة بصوت عالٍ",
+      "voix_m": "livre_arabe_niveau3_p71_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "اَلْوَلَدُ",
+      "voix_m": "livre_arabe_niveau3_p71_e1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "اَلْبِنْتُ",
+      "voix_m": "livre_arabe_niveau3_p71_e2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "رَسَمَتْ",
+      "voix_m": "livre_arabe_niveau3_p71_e3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "خُبْزًا",
+      "voix_m": "livre_arabe_niveau3_p71_e4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "قَرَأَ",
+      "voix_m": "livre_arabe_niveau3_p71_e5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e6",
+      "texte_ar": "زَيْنَبُ",
+      "voix_m": "livre_arabe_niveau3_p71_e6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e7",
+      "texte_ar": "أَكَلَتْ",
+      "voix_m": "livre_arabe_niveau3_p71_e7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e8",
+      "texte_ar": "شَمْسًا",
+      "voix_m": "livre_arabe_niveau3_p71_e8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e9",
+      "texte_ar": "سْ",
+      "voix_m": "livre_arabe_niveau3_p71_e9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e10",
+      "texte_ar": "دَعْ",
+      "voix_m": "livre_arabe_niveau3_p71_e10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e11",
+      "texte_ar": "لَبْ",
+      "voix_m": "livre_arabe_niveau3_p71_e11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e12",
+      "texte_ar": "عَقَةْ",
+      "voix_m": "livre_arabe_niveau3_p71_e12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e13",
+      "texte_ar": "نْ",
+      "voix_m": "livre_arabe_niveau3_p71_e13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e14",
+      "texte_ar": "رَةْ",
+      "voix_m": "livre_arabe_niveau3_p71_e14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e15",
+      "texte_ar": "رَةْ",
+      "voix_m": "livre_arabe_niveau3_p71_e15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e16",
+      "texte_ar": "مِشْ",
+      "voix_m": "livre_arabe_niveau3_p71_e16_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e17",
+      "texte_ar": "نَسَةْ",
+      "voix_m": "livre_arabe_niveau3_p71_e17_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e18",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e18_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e19",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e19_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e20",
+      "texte_ar": "مِلْحٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e20_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e21",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e21_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e22",
+      "texte_ar": "سَجَدَ",
+      "voix_m": "livre_arabe_niveau3_p71_e22_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e23",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e23_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e24",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e24_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e24_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e25",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e25_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e25_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e26",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "livre_arabe_niveau3_p71_e26_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p71_e26_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:08:40.213170",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 27
+  }
+}

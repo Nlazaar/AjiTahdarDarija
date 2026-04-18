@@ -1,0 +1,77 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je colle les parties de l'image du clown à leur place",
+    "ar": "أَلْصِقُ أَجْزَاءَ صُورَةِ الْمُهَرِّج فِي مَكَانِهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les parties de l'image du clown et colle-les à la bonne place dans le cadre.",
+    "ar": "اِقْطَعْ أَجْزَاءَ صُورَةِ الْمُهَرِّج وَأَلْصِقْهَا فِي مَكَانِهَا الصَّحِيح."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مُهَرِّج",
+      "fr": "clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "2",
+      "ar": "الجزء العلوي",
+      "fr": "partie supérieure du clown",
+      "emoji": "✂️"
+    },
+    {
+      "id": "3",
+      "ar": "الجزء السفلي",
+      "fr": "partie inférieure du clown",
+      "emoji": "✂️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "اِقْطَعْ أَجْزَاءَ صُورَةِ الْمُهَرِّج وَأَلْصِقْهَا فِي مَكَانِهَا الصَّحِيح.",
+      "voix_m": "coursarabe_niveau1_lecon09_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مُهَرِّج",
+      "voix_m": "coursarabe_niveau1_lecon09_p3_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "الجزء العلوي",
+      "voix_m": "coursarabe_niveau1_lecon09_p3_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "الجزء السفلي",
+      "voix_m": "coursarabe_niveau1_lecon09_p3_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p3_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:20:50.369661",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 4
+  }
+}

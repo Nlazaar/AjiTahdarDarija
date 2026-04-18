@@ -1,0 +1,90 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "Puzzle de cartes à découper et assembler : relier la moitié gauche (animal) avec la moitié droite (fin du mot arabe) pour reconstituer le mot complet",
+  "titre": {
+    "fr": "Associe les moitiés de cartes",
+    "ar": "رَكِّب البطاقات"
+  },
+  "enonce": {
+    "fr": "Découpe les cartes et associe chaque animal avec la bonne moitié du mot arabe pour former le mot complet.",
+    "ar": "اقطع البطاقات وركّب كل حيوان مع النصف الصحيح من الكلمة العربية."
+  },
+  "elements": [
+    {
+      "id": "kalb",
+      "ar": "كَلْب",
+      "fr": "chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "jamal",
+      "ar": "جَمَل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "nimr",
+      "ar": "نَمِر",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "dudah",
+      "ar": "دُودَة",
+      "fr": "ver de terre",
+      "emoji": "🐛"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "اقطع البطاقات وركّب كل حيوان مع النصف الصحيح من الكلمة العربية.",
+      "voix_m": "coursarabe_niveau1_lecon04_p10_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kalb",
+      "texte_ar": "كَلْب",
+      "voix_m": "coursarabe_niveau1_lecon04_p10_kalb_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p10_kalb_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jamal",
+      "texte_ar": "جَمَل",
+      "voix_m": "coursarabe_niveau1_lecon04_p10_jamal_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p10_jamal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nimr",
+      "texte_ar": "نَمِر",
+      "voix_m": "coursarabe_niveau1_lecon04_p10_nimr_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p10_nimr_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dudah",
+      "texte_ar": "دُودَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p10_dudah_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p10_dudah_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:46:01.620942",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 5
+  }
+}

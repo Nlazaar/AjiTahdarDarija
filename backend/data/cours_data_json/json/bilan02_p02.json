@@ -1,0 +1,194 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Révision et évaluation : barrer les mauvaises orthographes, relier les syllabes pour former des mots et les associer à leur image, compléter des phrases avec داخِلَ ou خَارِجَ",
+  "titre": {
+    "fr": "Révision et évaluation (2)",
+    "ar": "مُرَاجَعَة وَ تَقْيِيم (2)"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je barre quand ce n'est pas la bonne orthographe. Exercice 4 : Je relie pour constituer le mot puis je le relie à son image. Exercice 5 : Je complète avec داخِلَ ou خَارِجَ.",
+    "ar": "3: أَشْطُبُ الْكِتَابَات الْخَاطِئَة. 4: أَرْبِطُ لِأُكَوِّنَ الْكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. 5: أُكْمِلُ بِمَا يُنَاسِبُ."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "نَخْلَةٌ",
+      "fr": "palmier (bonne orthographe)",
+      "emoji": "🌴"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "حِمَارٌ",
+      "fr": "âne (bonne orthographe)",
+      "emoji": "🫏"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "أَحْمَرٌ",
+      "fr": "rouge (bonne orthographe)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "أَخْضَرٌ",
+      "fr": "vert (bonne orthographe)",
+      "emoji": "🟢"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "حَيْطٌ",
+      "fr": "fil (bonne orthographe)",
+      "emoji": "🧵"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "نَحْلَةٌ",
+      "fr": "abeille (bonne orthographe)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ex4_1",
+      "ar": "حَاةٌ / سُلَ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "ex4_2",
+      "ar": "حُفَاةٌ / خُذْ",
+      "fr": "tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex4_3",
+      "ar": "فُسَاءٌ / أَحْ",
+      "fr": "gomme/ardoise",
+      "emoji": "📏"
+    },
+    {
+      "id": "ex4_4",
+      "ar": "جَارٌّ / مِمْ",
+      "fr": "coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "خَارِجَ",
+      "fr": "à l'extérieur",
+      "emoji": "🌳"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "bilan02",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "3: أَشْطُبُ الْكِتَابَات الْخَاطِئَة. 4: أَرْبِطُ لِأُكَوِّنَ الْكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. 5: أُكْمِلُ بِمَا يُنَاسِبُ.",
+      "voix_m": "bilan02_p2_consigne_m.mp3",
+      "voix_f": "bilan02_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "نَخْلَةٌ",
+      "voix_m": "bilan02_p2_ex3_1_m.mp3",
+      "voix_f": "bilan02_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "حِمَارٌ",
+      "voix_m": "bilan02_p2_ex3_2_m.mp3",
+      "voix_f": "bilan02_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "أَحْمَرٌ",
+      "voix_m": "bilan02_p2_ex3_3_m.mp3",
+      "voix_f": "bilan02_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "أَخْضَرٌ",
+      "voix_m": "bilan02_p2_ex3_4_m.mp3",
+      "voix_f": "bilan02_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "حَيْطٌ",
+      "voix_m": "bilan02_p2_ex3_5_m.mp3",
+      "voix_f": "bilan02_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "نَحْلَةٌ",
+      "voix_m": "bilan02_p2_ex3_6_m.mp3",
+      "voix_f": "bilan02_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_1",
+      "texte_ar": "حَاةٌ / سُلَ",
+      "voix_m": "bilan02_p2_ex4_1_m.mp3",
+      "voix_f": "bilan02_p2_ex4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_2",
+      "texte_ar": "حُفَاةٌ / خُذْ",
+      "voix_m": "bilan02_p2_ex4_2_m.mp3",
+      "voix_f": "bilan02_p2_ex4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_3",
+      "texte_ar": "فُسَاءٌ / أَحْ",
+      "voix_m": "bilan02_p2_ex4_3_m.mp3",
+      "voix_f": "bilan02_p2_ex4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_4",
+      "texte_ar": "جَارٌّ / مِمْ",
+      "voix_m": "bilan02_p2_ex4_4_m.mp3",
+      "voix_f": "bilan02_p2_ex4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "bilan02_p2_ex5_1_m.mp3",
+      "voix_f": "bilan02_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "خَارِجَ",
+      "voix_m": "bilan02_p2_ex5_2_m.mp3",
+      "voix_f": "bilan02_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:00:15.326153",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "bilan02",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 13
+  }
+}

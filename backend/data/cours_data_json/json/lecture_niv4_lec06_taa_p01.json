@@ -1,0 +1,259 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ط avec vocabulaire illustré, lecture d'une phrase, puis deux exercices : identifier si on entend la lettre dans un mot et entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Tâ (ط)",
+    "ar": "حَرْفُ الطَّاء"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ط à travers des images, lis la phrase, puis : 1) J'entends ou je n'entends pas la lettre | 2) J'entoure la lettre dans les mots",
+    "ar": "تَعَرَّفْ عَلى حَرْفِ الطَّاء مِنْ خِلالِ الصُّوَرِ، اقْرَأِ الجُمْلَةَ، ثُمَّ: ١) أَسْمَعُ أَوْ لا أَسْمَعُ الحَرْفَ | ٢) أَرْسُمُ دَائِرَةً حَوْلَ الحَرْفِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شُرْطِيٌّ",
+      "fr": "policier",
+      "emoji": "👮"
+    },
+    {
+      "id": "2",
+      "ar": "طُيُورٌ",
+      "fr": "oiseaux",
+      "emoji": "🦅"
+    },
+    {
+      "id": "3",
+      "ar": "طَبَقٌ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "4",
+      "ar": "بَطِيئَةٌ",
+      "fr": "lente",
+      "emoji": "🐢"
+    },
+    {
+      "id": "5",
+      "ar": "عُطُورٌ",
+      "fr": "parfums",
+      "emoji": "🧴"
+    },
+    {
+      "id": "6",
+      "ar": "طَائِرَةٌ",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "7",
+      "ar": "طَبَخَ الطَّبَّاخُ طَعَامًا لَذِيذًا",
+      "fr": "Le cuisinier a préparé un repas délicieux",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "id": "8",
+      "ar": "مُطِيعٌ",
+      "fr": "obéissant",
+      "emoji": "😇"
+    },
+    {
+      "id": "9",
+      "ar": "بَطِيءٌ",
+      "fr": "lent",
+      "emoji": "🐌"
+    },
+    {
+      "id": "10",
+      "ar": "يَطِيرُ",
+      "fr": "il vole",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "11",
+      "ar": "طَوِيلٌ",
+      "fr": "long/grand",
+      "emoji": "📏"
+    },
+    {
+      "id": "12",
+      "ar": "ظَهْرٌ",
+      "fr": "dos",
+      "emoji": "🔙"
+    },
+    {
+      "id": "13",
+      "ar": "صُورٌ",
+      "fr": "images",
+      "emoji": "🖼️"
+    },
+    {
+      "id": "14",
+      "ar": "عُطُورٌ",
+      "fr": "parfums",
+      "emoji": "🧴"
+    },
+    {
+      "id": "15",
+      "ar": "خَطِيرٌ",
+      "fr": "dangereux",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "16",
+      "ar": "طَائِرٌ",
+      "fr": "oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "17",
+      "ar": "عَصِيرٌ",
+      "fr": "jus",
+      "emoji": "🥤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec06_taa",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَرَّفْ عَلى حَرْفِ الطَّاء مِنْ خِلالِ الصُّوَرِ، اقْرَأِ الجُمْلَةَ، ثُمَّ: ١) أَسْمَعُ أَوْ لا أَسْمَعُ الحَرْفَ | ٢) أَرْسُمُ دَائِرَةً حَوْلَ الحَرْفِ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شُرْطِيٌّ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طُيُورٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَبَقٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَطِيئَةٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "عُطُورٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "طَائِرَةٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "طَبَخَ الطَّبَّاخُ طَعَامًا لَذِيذًا",
+      "voix_m": "lecture_niv4_lec06_taa_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مُطِيعٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_8_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "بَطِيءٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_9_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "يَطِيرُ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_10_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "طَوِيلٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_11_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ظَهْرٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_12_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "صُورٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_13_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "عُطُورٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_14_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "خَطِيرٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_15_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "طَائِرٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_16_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p1_17_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p1_17_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:51:24.122592",
+    "niveau": 4,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv4_lec06_taa",
+    "bucket_audio": "audio-lessons/niveau4/lecon06/",
+    "nb_audio_assets": 18
+  }
+}

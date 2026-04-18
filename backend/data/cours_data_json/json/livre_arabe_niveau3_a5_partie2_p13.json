@@ -1,0 +1,103 @@
+{
+  "page_nb": 13,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon que j'entends la lettre au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Je relie chaque image à la position de la lettre ظ dans le mot (début, milieu ou fin)",
+    "ar": "أَرْبِطُ كُلَّ صُورَةٍ بِمَوْضِعِ حَرْفِ الظَّاءِ فِي الْكَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "ongle",
+      "ar": "ظُفْر",
+      "fr": "ongle",
+      "emoji": "💅"
+    },
+    {
+      "id": "os",
+      "ar": "عَظْم",
+      "fr": "os",
+      "emoji": "🦴"
+    },
+    {
+      "id": "gazelle",
+      "ar": "غَزَال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "ombre",
+      "ar": "ظِلّ",
+      "fr": "ombre/silhouette",
+      "emoji": "🕴️"
+    },
+    {
+      "id": "enveloppe",
+      "ar": "مَظْرُوف",
+      "fr": "enveloppe",
+      "emoji": "✉️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p13_consigne",
+      "texte_ar": "أَرْبِطُ كُلَّ صُورَةٍ بِمَوْضِعِ حَرْفِ الظَّاءِ فِي الْكَلِمَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ongle",
+      "texte_ar": "ظُفْر",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_ongle_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_ongle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_os",
+      "texte_ar": "عَظْم",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_os_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_os_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_gazelle",
+      "texte_ar": "غَزَال",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_gazelle_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_gazelle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ombre",
+      "texte_ar": "ظِلّ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_ombre_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_ombre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_enveloppe",
+      "texte_ar": "مَظْرُوف",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p13_enveloppe_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p13_enveloppe_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:32:55.890514",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 6
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "page_nb": 25,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أَلْوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres ص parmi toutes les lettres présentées",
+    "ar": "لَوِّنْ حَرْفَ الصَّادِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ الْمَعْرُوضَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ص",
+      "fr": "Sad (isolée)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "صـ",
+      "fr": "Sad (initiale)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "ـصـ",
+      "fr": "Sad (médiane)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "ض",
+      "fr": "Dad (isolée)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "ر",
+      "fr": "Ra",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "س",
+      "fr": "Sin",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "ي",
+      "fr": "Ya",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "ن",
+      "fr": "Nun",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "ب",
+      "fr": "Ba",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p25_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الصَّادِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ الْمَعْرُوضَةِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ص",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "صـ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـصـ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ض",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p25_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p25_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:32:14.895198",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 11
+  }
+}

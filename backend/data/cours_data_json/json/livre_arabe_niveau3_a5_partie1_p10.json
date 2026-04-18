@@ -1,0 +1,155 @@
+{
+  "page_nb": 20,
+  "type": "cours",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis - Les émotions et les états",
+    "ar": "أَقْرَأُ - المشاعر والأحوال"
+  },
+  "enonce": {
+    "fr": "Associe chaque image au mot arabe qui correspond à l'état ou l'émotion représentée.",
+    "ar": "اِرْبِطْ كُلَّ صُورَةٍ بِالْكَلِمَةِ الْعَرَبِيَّةِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سَمِعَ",
+      "fr": "il a entendu",
+      "emoji": "👂"
+    },
+    {
+      "id": "2",
+      "ar": "مَرِضَ",
+      "fr": "il est tombé malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "3",
+      "ar": "تَعِبَ",
+      "fr": "il est fatigué",
+      "emoji": "😓"
+    },
+    {
+      "id": "4",
+      "ar": "فَرِحَ",
+      "fr": "il est joyeux",
+      "emoji": "😄"
+    },
+    {
+      "id": "5",
+      "ar": "فَهِمَ",
+      "fr": "il a compris",
+      "emoji": "💡"
+    },
+    {
+      "id": "6",
+      "ar": "لَعِبَ",
+      "fr": "il a joué",
+      "emoji": "🎮"
+    },
+    {
+      "id": "7",
+      "ar": "حَزِنَ",
+      "fr": "il est triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "8",
+      "ar": "لَقِيَ",
+      "fr": "il a rencontré",
+      "emoji": "🤝"
+    },
+    {
+      "id": "9",
+      "ar": "غَضِبَ",
+      "fr": "il est en colère",
+      "emoji": "😠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p20_consigne",
+      "texte_ar": "اِرْبِطْ كُلَّ صُورَةٍ بِالْكَلِمَةِ الْعَرَبِيَّةِ الْمُنَاسِبَةِ.",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سَمِعَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَرِضَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تَعِبَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَرِحَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "لَعِبَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "لَقِيَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p20_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p20_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:24:20.507812",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

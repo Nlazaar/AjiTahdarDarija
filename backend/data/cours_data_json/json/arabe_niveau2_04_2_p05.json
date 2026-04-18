@@ -1,0 +1,129 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'نجوم' (étoiles) parmi tous les mots et entoure-le à chaque fois que tu le trouves",
+    "ar": "أبحثُ عَن كَلِمَة نجوم وَ أحيطُهَا بِخَطٍّ في كُلِّ مَرَّة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نجوم",
+      "fr": "étoiles (mot cible)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "2",
+      "ar": "نعوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "تجوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "نخوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "جوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "يجوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "نحوم",
+      "fr": "mot différent",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أبحثُ عَن كَلِمَة نجوم وَ أحيطُهَا بِخَطٍّ في كُلِّ مَرَّة",
+      "voix_m": "arabe_niveau2_04_2_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نجوم",
+      "voix_m": "arabe_niveau2_04_2_p5_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نعوم",
+      "voix_m": "arabe_niveau2_04_2_p5_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تجوم",
+      "voix_m": "arabe_niveau2_04_2_p5_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نخوم",
+      "voix_m": "arabe_niveau2_04_2_p5_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جوم",
+      "voix_m": "arabe_niveau2_04_2_p5_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "يجوم",
+      "voix_m": "arabe_niveau2_04_2_p5_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "نحوم",
+      "voix_m": "arabe_niveau2_04_2_p5_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p5_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:43:27.263992",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 8
+  }
+}

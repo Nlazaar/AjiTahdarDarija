@@ -1,0 +1,168 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "J'écris les lettres manquantes",
+    "ar": "أَكْتُبُ الحُرُوفَ النَّاقِصَةَ"
+  },
+  "enonce": {
+    "fr": "Écris les lettres manquantes dans le tableau de l'alphabet arabe",
+    "ar": "أَكْتُبُ الحُرُوفَ النَّاقِصَةَ فِي الجَدْوَلِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ح",
+      "fr": "ḥā",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "ث",
+      "fr": "thā",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "ر",
+      "fr": "rā",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ن",
+      "fr": "nūn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "ع",
+      "fr": "'ayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ز",
+      "fr": "zayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "ن",
+      "fr": "nūn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "ع",
+      "fr": "'ayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "غ",
+      "fr": "ghayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "ه",
+      "fr": "hā",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَكْتُبُ الحُرُوفَ النَّاقِصَةَ فِي الجَدْوَلِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ح",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ث",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ر",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ن",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ع",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ز",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ن",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ع",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "غ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ه",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p1_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p1_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:22:32.371374",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 11
+  }
+}

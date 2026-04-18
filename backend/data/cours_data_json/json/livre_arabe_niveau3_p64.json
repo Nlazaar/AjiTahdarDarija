@@ -1,0 +1,90 @@
+{
+  "page_nb": 64,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Les jours de la semaine - Je lis",
+    "ar": "أيام الأسبوع - أقرأ/أسمع"
+  },
+  "enonce": {
+    "fr": "Lis chaque phrase à voix haute en regardant l'image",
+    "ar": "اِقْرَأْ كُلَّ جُمْلَةٍ بِصَوْتٍ عَالٍ مَعَ النَّظَرِ إِلَى الصُّورَةِ"
+  },
+  "elements": [
+    {
+      "id": "jours_semaine",
+      "ar": "الاِثْنَيْنُ - الثُّلاَثَاءُ - الأَرْبِعَاءُ - الخَمِيسُ - الجُمُعَةُ - السَّبْتُ - الأَحَدُ",
+      "fr": "Lundi - Mardi - Mercredi - Jeudi - Vendredi - Samedi - Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "phrase_1",
+      "ar": "قَرَأَ الْوَلَدُ",
+      "fr": "Le garçon a lu",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "fr": "La fille a mangé du pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "fr": "Zainab a dessiné un soleil",
+      "emoji": "☀️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p64_consigne",
+      "texte_ar": "اِقْرَأْ كُلَّ جُمْلَةٍ بِصَوْتٍ عَالٍ مَعَ النَّظَرِ إِلَى الصُّورَةِ",
+      "voix_m": "livre_arabe_niveau3_p64_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p64_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jours_semaine",
+      "texte_ar": "الاِثْنَيْنُ - الثُّلاَثَاءُ - الأَرْبِعَاءُ - الخَمِيسُ - الجُمُعَةُ - السَّبْتُ - الأَحَدُ",
+      "voix_m": "livre_arabe_niveau3_p64_jours_semaine_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p64_jours_semaine_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "قَرَأَ الْوَلَدُ",
+      "voix_m": "livre_arabe_niveau3_p64_phrase_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p64_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "voix_m": "livre_arabe_niveau3_p64_phrase_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p64_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "voix_m": "livre_arabe_niveau3_p64_phrase_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p64_phrase_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:07:20.562439",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

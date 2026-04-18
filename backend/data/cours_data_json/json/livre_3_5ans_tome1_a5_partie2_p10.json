@@ -1,0 +1,64 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète le dessin de la toile d'araignée",
+    "ar": "أكمل رسم خيوط العنكبوت"
+  },
+  "enonce": {
+    "fr": "Trace les fils de la toile d'araignée en suivant les pointillés",
+    "ar": "أكمل رسم خيوط العنكبوت باتباع النقاط المتقطعة"
+  },
+  "elements": [
+    {
+      "id": "toile",
+      "ar": "خيوط العنكبوت",
+      "fr": "toile d'araignée",
+      "emoji": "🕸️"
+    },
+    {
+      "id": "araignee",
+      "ar": "عنكبوت",
+      "fr": "araignée",
+      "emoji": "🕷️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أكمل رسم خيوط العنكبوت باتباع النقاط المتقطعة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p8_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_toile",
+      "texte_ar": "خيوط العنكبوت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p8_toile_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p8_toile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_araignee",
+      "texte_ar": "عنكبوت",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p8_araignee_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p8_araignee_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:30:00.604793",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 3
+  }
+}

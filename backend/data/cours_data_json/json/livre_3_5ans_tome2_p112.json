@@ -1,0 +1,64 @@
+{
+  "page_nb": 112,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Découpe les images - Exercice 3",
+    "ar": "أقصّ الصّور للتمرين رقم 3"
+  },
+  "enonce": {
+    "fr": "Découpe les images et reconstitue chaque mot avec son image en assemblant les pièces dans le bon ordre.",
+    "ar": "أقصّ الصّور وأعد تركيب كل كلمة مع صورتها بوضع القطع في الترتيب الصحيح."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِكْنَسَة",
+      "fr": "balai / aspirateur",
+      "emoji": "🧹"
+    },
+    {
+      "id": "2",
+      "ar": "مِكْوَاة",
+      "fr": "fer à repasser",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p112_consigne",
+      "texte_ar": "أقصّ الصّور وأعد تركيب كل كلمة مع صورتها بوضع القطع في الترتيب الصحيح.",
+      "voix_m": "livre_3_5ans_tome2_p112_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p112_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِكْنَسَة",
+      "voix_m": "livre_3_5ans_tome2_p112_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p112_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِكْوَاة",
+      "voix_m": "livre_3_5ans_tome2_p112_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p112_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:14:51.915196",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 3
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Quatre exercices : remettre des lettres dans l'ordre pour former un mot, compléter avec le mot contraire, compléter des mots à trous et relier à l'image, compléter une phrase avec des mots d'une liste",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de grammaire arabe",
+    "ar": "تمارين في المفردات والقواعد"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je remets les lettres dans l'ordre pour obtenir le mot | Ex.7 : Je complète avec le contraire | Ex.8 : Je complète puis je relie à l'image | Ex.9 : Je complète la phrase par des mots de la liste",
+    "ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ | ٧- أُكْمِلُ بِمَا يُنَاسِبُ | ٨- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ | ٩- أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "ج ل م",
+      "fr": "chameau (lettres mélangées)",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "ث ل م ث",
+      "fr": "triangle (lettres mélangées)",
+      "emoji": "🔺"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "ة ل ح ن",
+      "fr": "abeille (lettres mélangées)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "خَارِجَ ≠ دَاخِ......",
+      "fr": "extérieur ≠ intérieur",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "مُمْتَ....ئٌ ≠ فَارِغٌ",
+      "fr": "plein ≠ vide",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "مُبْتَ...... ≠ جَافٌّ",
+      "fr": "mouillé ≠ sec",
+      "emoji": "🌧️"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "نَ......رٌ",
+      "fr": "feu",
+      "emoji": "🔥"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "حَسَ....ئٌ",
+      "fr": "soupe",
+      "emoji": "🍲"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "....حُمٌّ",
+      "fr": "viande",
+      "emoji": "🥩"
+    },
+    {
+      "id": "ex8_4",
+      "ar": "دِ....فِينٌ",
+      "fr": "dauphin",
+      "emoji": "🐬"
+    },
+    {
+      "id": "ex8_5",
+      "ar": "ذُبَ... بَةٌ",
+      "fr": "mouche",
+      "emoji": "🪰"
+    },
+    {
+      "id": "ex8_6",
+      "ar": "أَ......عَابٌ",
+      "fr": "jouets",
+      "emoji": "🎁"
+    },
+    {
+      "id": "ex9_1",
+      "ar": "الْوَلَدُ يُلْقِي الْقُمَامَةَ فِي سَلَّةِ الْمُهْمَلَاتِ",
+      "fr": "Le garçon jette les ordures dans la poubelle",
+      "emoji": "🗑️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec07_leem",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ | ٧- أُكْمِلُ بِمَا يُنَاسِبُ | ٨- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ | ٩- أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "ج ل م",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "ث ل م ث",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "ة ل ح ن",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "خَارِجَ ≠ دَاخِ......",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "مُمْتَ....ئٌ ≠ فَارِغٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "مُبْتَ...... ≠ جَافٌّ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "نَ......رٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "حَسَ....ئٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "....حُمٌّ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_4",
+      "texte_ar": "دِ....فِينٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_5",
+      "texte_ar": "ذُبَ... بَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_6",
+      "texte_ar": "أَ......عَابٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex8_6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex8_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_1",
+      "texte_ar": "الْوَلَدُ يُلْقِي الْقُمَامَةَ فِي سَلَّةِ الْمُهْمَلَاتِ",
+      "voix_m": "lecture_niv4_lec07_leem_p3_ex9_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p3_ex9_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:56:47.544722",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_leem",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 14
+  }
+}

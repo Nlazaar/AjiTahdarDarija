@@ -1,0 +1,194 @@
+{
+  "page_nb": 53,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Barre les erreurs",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Barre les mots qui ne correspondent pas à l'image. Trouve les intrus parmi les mots de chaque colonne.",
+    "ar": "أَشْطُبُ الكَلِمَاتِ الخَاطِئَةَ فِي كُلِّ عَمُودٍ."
+  },
+  "elements": [
+    {
+      "id": "col1_ref",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "col1_1",
+      "ar": "سَارَة",
+      "fr": "Sara (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "col1_2",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_3",
+      "ar": "سَارَت",
+      "fr": "elle a roulé (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "col1_4",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_5",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_ref",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "col2_1",
+      "ar": "قِطَر",
+      "fr": "Qatar (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_2",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_3",
+      "ar": "فَطَائِر",
+      "fr": "galettes (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_4",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_5",
+      "ar": "قَنْطَرَة",
+      "fr": "pont (intrus)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p53_consigne",
+      "texte_ar": "أَشْطُبُ الكَلِمَاتِ الخَاطِئَةَ فِي كُلِّ عَمُودٍ.",
+      "voix_m": "livre_3_5ans_tome2_p53_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_ref",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_ref_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_ref_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_1",
+      "texte_ar": "سَارَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_2",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_3",
+      "texte_ar": "سَارَت",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_4",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_5",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col1_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_ref",
+      "texte_ar": "قِطَار",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_ref_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_ref_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_1",
+      "texte_ar": "قِطَر",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_2",
+      "texte_ar": "قِطَار",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_3",
+      "texte_ar": "فَطَائِر",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_4",
+      "texte_ar": "قِطَار",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_5",
+      "texte_ar": "قَنْطَرَة",
+      "voix_m": "livre_3_5ans_tome2_p53_col2_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p53_col2_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:04:36.032588",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 13
+  }
+}

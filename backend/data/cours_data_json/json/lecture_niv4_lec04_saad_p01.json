@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ص avec ses formes vocaliques, identification auditive et visuelle dans des mots illustrés, puis entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Sad (ص)",
+    "ar": "حَرْفُ الصَّاد"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ص avec ses différentes voyelles. Exercice 1 : J'entends ou je n'entends pas la lettre dans le mot. Exercice 2 : J'entoure la lettre ص dans les mots.",
+    "ar": "تَعَلَّمِ الصَّادَ مَعَ حَرَكَاتِهَا. تَمْرِين 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ فِي الْكَلِمَةِ. تَمْرِين 2: أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صِنَّارَةٌ",
+      "fr": "canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "2",
+      "ar": "صُنْدُوقٌ",
+      "fr": "boîte / carton",
+      "emoji": "📦"
+    },
+    {
+      "id": "3",
+      "ar": "صَلَاةٌ",
+      "fr": "prière",
+      "emoji": "🕌"
+    },
+    {
+      "id": "4",
+      "ar": "عَصِيرٌ",
+      "fr": "jus",
+      "emoji": "🥤"
+    },
+    {
+      "id": "5",
+      "ar": "صُورَةٌ",
+      "fr": "photo / image",
+      "emoji": "📷"
+    },
+    {
+      "id": "6",
+      "ar": "صَارُوخٌ",
+      "fr": "fusée",
+      "emoji": "🚀"
+    },
+    {
+      "id": "7",
+      "ar": "صَلَّيْتُ صَلَاةَ الصُّبْح",
+      "fr": "J'ai prié la prière du matin",
+      "emoji": "🧎"
+    },
+    {
+      "id": "ex1_oignon",
+      "ar": "بَصَلٌ",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "ex1_marteau",
+      "ar": "مِطْرَقَةٌ",
+      "fr": "marteau",
+      "emoji": "🔨"
+    },
+    {
+      "id": "ex1_poisson",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "ex1_mosquee",
+      "ar": "مَسْجِدٌ",
+      "fr": "mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "ex1_poire",
+      "ar": "إِجَّاصٌ",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "ex2_1",
+      "ar": "صَلْبٌ",
+      "fr": "dur / solide",
+      "emoji": "💪"
+    },
+    {
+      "id": "ex2_2",
+      "ar": "قِصَّةٌ",
+      "fr": "histoire",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex2_3",
+      "ar": "صَفْحَةٌ",
+      "fr": "page",
+      "emoji": "📄"
+    },
+    {
+      "id": "ex2_4",
+      "ar": "رَصِيفٌ",
+      "fr": "trottoir",
+      "emoji": "🛤️"
+    },
+    {
+      "id": "ex2_5",
+      "ar": "رَصَاصٌ",
+      "fr": "plomb / crayon",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex2_6",
+      "ar": "لِصٌّ",
+      "fr": "voleur",
+      "emoji": "🦹"
+    },
+    {
+      "id": "ex2_7",
+      "ar": "فَرَضَ",
+      "fr": "il a imposé",
+      "emoji": "📋"
+    },
+    {
+      "id": "ex2_8",
+      "ar": "صَارَ",
+      "fr": "il est devenu",
+      "emoji": "🔄"
+    },
+    {
+      "id": "ex2_9",
+      "ar": "طَارَ",
+      "fr": "il a volé",
+      "emoji": "✈️"
+    },
+    {
+      "id": "ex2_10",
+      "ar": "أُلْصِقُ",
+      "fr": "je colle",
+      "emoji": "🖇️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec04_saad",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلَّمِ الصَّادَ مَعَ حَرَكَاتِهَا. تَمْرِين 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ فِي الْكَلِمَةِ. تَمْرِين 2: أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ.",
+      "voix_m": "lecture_niv4_lec04_saad_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صِنَّارَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "صُنْدُوقٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "صَلَاةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صُورَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "صَارُوخٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "صَلَّيْتُ صَلَاةَ الصُّبْح",
+      "voix_m": "lecture_niv4_lec04_saad_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_oignon",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex1_oignon_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex1_oignon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_marteau",
+      "texte_ar": "مِطْرَقَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex1_marteau_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex1_marteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_poisson",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex1_poisson_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex1_poisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_mosquee",
+      "texte_ar": "مَسْجِدٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex1_mosquee_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex1_mosquee_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_poire",
+      "texte_ar": "إِجَّاصٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex1_poire_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex1_poire_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_1",
+      "texte_ar": "صَلْبٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_2",
+      "texte_ar": "قِصَّةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_3",
+      "texte_ar": "صَفْحَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_4",
+      "texte_ar": "رَصِيفٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_4_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_5",
+      "texte_ar": "رَصَاصٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_5_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_6",
+      "texte_ar": "لِصٌّ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_6_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_7",
+      "texte_ar": "فَرَضَ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_7_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_8",
+      "texte_ar": "صَارَ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_8_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_9",
+      "texte_ar": "طَارَ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_9_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_10",
+      "texte_ar": "أُلْصِقُ",
+      "voix_m": "lecture_niv4_lec04_saad_p1_ex2_10_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p1_ex2_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:45:25.312625",
+    "niveau": 4,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv4_lec04_saad",
+    "bucket_audio": "audio-lessons/niveau4/lecon04/",
+    "nb_audio_assets": 23
+  }
+}

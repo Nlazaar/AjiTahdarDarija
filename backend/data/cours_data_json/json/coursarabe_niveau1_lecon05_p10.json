@@ -1,0 +1,90 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "Tracer des formes géométriques en repassant sur des pointillés : cercles, carrés, demi-cercles ouverts vers le bas et demi-cercles ouverts vers le haut",
+  "titre": {
+    "fr": "Je repasse les lignes",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Je repasse les formes géométriques en suivant les pointillés",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "elements": [
+    {
+      "id": "forme_1",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "forme_2",
+      "ar": "مربع",
+      "fr": "carré",
+      "emoji": "⬜"
+    },
+    {
+      "id": "forme_3",
+      "ar": "نصف دائرة للأعلى",
+      "fr": "demi-cercle ouvert vers le bas",
+      "emoji": "◠"
+    },
+    {
+      "id": "forme_4",
+      "ar": "نصف دائرة للأسفل",
+      "fr": "demi-cercle ouvert vers le haut",
+      "emoji": "◡"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "أَرْسُمُ الْخُطُوطَ",
+      "voix_m": "coursarabe_niveau1_lecon05_p10_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_1",
+      "texte_ar": "دائرة",
+      "voix_m": "coursarabe_niveau1_lecon05_p10_forme_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p10_forme_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_2",
+      "texte_ar": "مربع",
+      "voix_m": "coursarabe_niveau1_lecon05_p10_forme_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p10_forme_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_3",
+      "texte_ar": "نصف دائرة للأعلى",
+      "voix_m": "coursarabe_niveau1_lecon05_p10_forme_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p10_forme_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_4",
+      "texte_ar": "نصف دائرة للأسفل",
+      "voix_m": "coursarabe_niveau1_lecon05_p10_forme_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p10_forme_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:49:33.934250",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 5
+  }
+}

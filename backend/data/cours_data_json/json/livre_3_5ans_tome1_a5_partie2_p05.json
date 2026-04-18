@@ -1,0 +1,142 @@
+{
+  "page_nb": 65,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte et j'entoure le nombre",
+    "ar": "أَعُدُّ الأَشْكَالَ وَ أُحِيطُ الرَّقْمَ المُنَاسِب"
+  },
+  "enonce": {
+    "fr": "Compte les images dans chaque case et entoure le bon nombre parmi 1, 2, 3 ou 4",
+    "ar": "عُدَّ الأشكال في كل مربع وأحِط الرقم المناسب من بين 1 و 2 و 3 و 4"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "كُرَة السَّلَّة",
+      "fr": "ballon de basket (1)",
+      "emoji": "🏀"
+    },
+    {
+      "id": "e2",
+      "ar": "نَحْلَة",
+      "fr": "abeilles (3)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "e3",
+      "ar": "زَهْرَة",
+      "fr": "fleurs (4)",
+      "emoji": "🌸"
+    },
+    {
+      "id": "e4",
+      "ar": "غَزَال",
+      "fr": "faon (2)",
+      "emoji": "🦌"
+    },
+    {
+      "id": "e5",
+      "ar": "تُفَّاحَة",
+      "fr": "pommes (3)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "e6",
+      "ar": "قِطَّة",
+      "fr": "chat (1)",
+      "emoji": "🐱"
+    },
+    {
+      "id": "e7",
+      "ar": "شَمْس",
+      "fr": "soleils (2)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "e8",
+      "ar": "خَرُوف",
+      "fr": "moutons (4)",
+      "emoji": "🐑"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p65_consigne",
+      "texte_ar": "عُدَّ الأشكال في كل مربع وأحِط الرقم المناسب من بين 1 و 2 و 3 و 4",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "كُرَة السَّلَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "نَحْلَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "زَهْرَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "غَزَال",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e6",
+      "texte_ar": "قِطَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e7",
+      "texte_ar": "شَمْس",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e8",
+      "texte_ar": "خَرُوف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p65_e8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p65_e8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:29:22.007325",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 9
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Page de titre présentant le thème du cours sur les lettres arabes et les voyelles",
+  "titre": {
+    "fr": "L'histoire des lettres et des voyelles",
+    "ar": "قِصَّةُ الْحُرُوفِ وَ الْحَرَكَاتِ"
+  },
+  "enonce": {
+    "fr": "Découverte des lettres de l'alphabet arabe et de leurs voyelles à travers une histoire",
+    "ar": "اكتشاف حروف الأبجدية العربية وحركاتها من خلال قصة"
+  },
+  "elements": [
+    {
+      "id": "lettre_dal",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_lam",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_noun",
+      "ar": "ن",
+      "fr": "Noun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_seen",
+      "ar": "س",
+      "fr": "Seen",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_meem",
+      "ar": "م",
+      "fr": "Meem",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ya",
+      "ar": "ي",
+      "fr": "Ya",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_tha",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ghain",
+      "ar": "غ",
+      "fr": "Ghain",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_waw",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ba",
+      "ar": "ب",
+      "fr": "Ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_sad",
+      "ar": "ص",
+      "fr": "Sad",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_qaf",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_fa",
+      "ar": "ف",
+      "fr": "Fa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_zay",
+      "ar": "ز",
+      "fr": "Zay",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_kaf",
+      "ar": "ك",
+      "fr": "Kaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ta",
+      "ar": "ط",
+      "fr": "Ta (emphatic)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "histoire_hourouf_harakete",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اكتشاف حروف الأبجدية العربية وحركاتها من خلال قصة",
+      "voix_m": "histoire_hourouf_harakete_p1_consigne_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_dal",
+      "texte_ar": "د",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_dal_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_lam",
+      "texte_ar": "ل",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_lam_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_noun",
+      "texte_ar": "ن",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_noun_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_noun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_seen",
+      "texte_ar": "س",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_seen_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_seen_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_meem",
+      "texte_ar": "م",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_meem_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_meem_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ya",
+      "texte_ar": "ي",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_ya_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_ya_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_tha",
+      "texte_ar": "ث",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_tha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ghain",
+      "texte_ar": "غ",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_ghain_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_ghain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_waw",
+      "texte_ar": "و",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_waw_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ba",
+      "texte_ar": "ب",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_ba_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_sad",
+      "texte_ar": "ص",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_sad_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_qaf",
+      "texte_ar": "ق",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_qaf_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_fa",
+      "texte_ar": "ف",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_fa_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_zay",
+      "texte_ar": "ز",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_zay_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_kaf",
+      "texte_ar": "ك",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_kaf_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ta",
+      "texte_ar": "ط",
+      "voix_m": "histoire_hourouf_harakete_p1_lettre_ta_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lettre_ta_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:05:04.955881",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "histoire_hourouf_harakete",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 17
+  }
+}

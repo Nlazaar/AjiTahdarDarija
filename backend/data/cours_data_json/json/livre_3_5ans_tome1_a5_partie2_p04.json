@@ -1,0 +1,77 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط الكلمة بصورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond",
+    "ar": "أربط كل كلمة بالصورة المناسبة لها"
+  },
+  "elements": [
+    {
+      "id": "lion",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "abeille",
+      "ar": "نحلة",
+      "fr": "abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "elephant",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 3,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أربط كل كلمة بالصورة المناسبة لها",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p4_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lion",
+      "texte_ar": "أسد",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p4_lion_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p4_lion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_abeille",
+      "texte_ar": "نحلة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p4_abeille_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p4_abeille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_elephant",
+      "texte_ar": "فيل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p4_elephant_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p4_elephant_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:29:10.616561",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

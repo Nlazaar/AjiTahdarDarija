@@ -1,0 +1,64 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أرسم الخطوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en zigzag et les formes en suivant le modèle pointillé, en respectant l'ordre des flèches.",
+    "ar": "ارسم الخطوط المتعرجة والأشكال باتباع النموذج المنقط مع احترام ترتيب الأسهم."
+  },
+  "elements": [
+    {
+      "id": "zigzag_pointille",
+      "ar": "خط متعرج منقط",
+      "fr": "Ligne en zigzag pointillée",
+      "emoji": "〰️"
+    },
+    {
+      "id": "forme_sin",
+      "ar": "شكل السين",
+      "fr": "Forme de la lettre Sin",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_06_1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "ارسم الخطوط المتعرجة والأشكال باتباع النموذج المنقط مع احترام ترتيب الأسهم.",
+      "voix_m": "arabe_niveau2_06_1_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zigzag_pointille",
+      "texte_ar": "خط متعرج منقط",
+      "voix_m": "arabe_niveau2_06_1_p8_zigzag_pointille_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p8_zigzag_pointille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_sin",
+      "texte_ar": "شكل السين",
+      "voix_m": "arabe_niveau2_06_1_p8_forme_sin_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p8_forme_sin_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:48:28.855179",
+    "niveau": 2,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau2_06_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon17/",
+    "nb_audio_assets": 3
+  }
+}

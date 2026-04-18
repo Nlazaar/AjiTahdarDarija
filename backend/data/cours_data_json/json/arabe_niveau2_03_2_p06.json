@@ -1,0 +1,103 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Relier les groupes qui ont 4 éléments au chiffre 4",
+    "ar": "أربط بخطٍّ المجموعات الَّتي بها أربعة عناصر بالرَّقم 4"
+  },
+  "enonce": {
+    "fr": "Relie par un trait les groupes qui contiennent exactement 4 éléments au chiffre 4",
+    "ar": "أربط بخطٍّ المجموعات الَّتي بها أربعة عناصر بالرَّقم 4"
+  },
+  "elements": [
+    {
+      "id": "chaussures",
+      "ar": "أحذية",
+      "fr": "chaussures (3 éléments)",
+      "emoji": "👟"
+    },
+    {
+      "id": "basketballs",
+      "ar": "كرات السلة",
+      "fr": "ballons de basket (4 éléments)",
+      "emoji": "🏀"
+    },
+    {
+      "id": "footballs",
+      "ar": "كرات القدم",
+      "fr": "ballons de foot (5 éléments)",
+      "emoji": "⚽"
+    },
+    {
+      "id": "voitures",
+      "ar": "سيارات",
+      "fr": "voitures (4 éléments)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "oranges",
+      "ar": "برتقال",
+      "fr": "oranges (4 éléments)",
+      "emoji": "🍊"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أربط بخطٍّ المجموعات الَّتي بها أربعة عناصر بالرَّقم 4",
+      "voix_m": "arabe_niveau2_03_2_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussures",
+      "texte_ar": "أحذية",
+      "voix_m": "arabe_niveau2_03_2_p6_chaussures_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_chaussures_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_basketballs",
+      "texte_ar": "كرات السلة",
+      "voix_m": "arabe_niveau2_03_2_p6_basketballs_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_basketballs_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_footballs",
+      "texte_ar": "كرات القدم",
+      "voix_m": "arabe_niveau2_03_2_p6_footballs_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_footballs_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voitures",
+      "texte_ar": "سيارات",
+      "voix_m": "arabe_niveau2_03_2_p6_voitures_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_voitures_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oranges",
+      "texte_ar": "برتقال",
+      "voix_m": "arabe_niveau2_03_2_p6_oranges_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p6_oranges_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:41:06.724266",
+    "niveau": 2,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau2_03_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon12/",
+    "nb_audio_assets": 6
+  }
+}

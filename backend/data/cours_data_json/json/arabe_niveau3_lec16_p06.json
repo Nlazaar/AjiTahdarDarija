@@ -1,0 +1,116 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot en ajoutant la lettre خ qui manque",
+    "ar": "أكمِّل كل كلمة بالحرف الناقص خ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خَوْخ",
+      "fr": "pêche/prune",
+      "emoji": "🍑"
+    },
+    {
+      "id": "2",
+      "ar": "خَرُوفٌ",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "3",
+      "ar": "خَيْمَةٌ",
+      "fr": "tente",
+      "emoji": "⛺"
+    },
+    {
+      "id": "4",
+      "ar": "مَطْبَخ",
+      "fr": "cuisine",
+      "emoji": "🍳"
+    },
+    {
+      "id": "5",
+      "ar": "نَخْلَةٌ",
+      "fr": "palmier",
+      "emoji": "🌴"
+    },
+    {
+      "id": "6",
+      "ar": "خُبْزٌ",
+      "fr": "pain",
+      "emoji": "🍞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec16",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أكمِّل كل كلمة بالحرف الناقص خ",
+      "voix_m": "arabe_niveau3_lec16_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خَوْخ",
+      "voix_m": "arabe_niveau3_lec16_p6_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خَرُوفٌ",
+      "voix_m": "arabe_niveau3_lec16_p6_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خَيْمَةٌ",
+      "voix_m": "arabe_niveau3_lec16_p6_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مَطْبَخ",
+      "voix_m": "arabe_niveau3_lec16_p6_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَخْلَةٌ",
+      "voix_m": "arabe_niveau3_lec16_p6_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "خُبْزٌ",
+      "voix_m": "arabe_niveau3_lec16_p6_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p6_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:48:11.269253",
+    "niveau": 3,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau3_lec16",
+    "bucket_audio": "audio-lessons/niveau3/lecon16/",
+    "nb_audio_assets": 7
+  }
+}

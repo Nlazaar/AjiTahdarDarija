@@ -1,0 +1,125 @@
+{
+  "page_nb": 3,
+  "type": "cours",
+  "mecanique": "Présentation de la voyelle Fatha sur les lettres de l'alphabet arabe, avec des enfants tenant des pancartes montrant les lettres vocalisées",
+  "titre": {
+    "fr": "La Fatha - La meilleure voyelle",
+    "ar": "أَنَا الْفَتْحَة، أَنَا الْأَفْضَل"
+  },
+  "enonce": {
+    "fr": "Je suis la Fatha, je suis la meilleure. Sur les lettres je ne suis pas avare. Avec moi la lettre sera ouverte. Ouvre ta bouche pour bien la prononcer.",
+    "ar": "أَنَا الْفَتْحَة، أَنَا الْأَفْضَل. عَلَى الْحُرُوفِ لا أَبْخَل. بِيَ الْحَرْفُ يَكُونُ مَفْتُوحًا. إِفْتَحْ فَمَكَ لِتَنْطِقَهُ صَحِيحًا."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَ بَ تَ ثَ",
+      "fr": "A - Ba - Ta - Tha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "جَ حَ خَ",
+      "fr": "Ja - Ha - Kha avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "دَ ذَ رَ زَ",
+      "fr": "Da - Dha - Ra - Za avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "سَ شَ صَ ضَ",
+      "fr": "Sa - Sha - Sad - Dad avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "طَ ظَ عَ غَ",
+      "fr": "Ta - Dha - Ain - Ghain avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "فَ قَ كَ لَ مَ",
+      "fr": "Fa - Qa - Ka - La - Ma avec fatha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "نَ هَ وَ يَ",
+      "fr": "Na - Ha - Wa - Ya avec fatha",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَنَا الْفَتْحَة، أَنَا الْأَفْضَل. عَلَى الْحُرُوفِ لا أَبْخَل. بِيَ الْحَرْفُ يَكُونُ مَفْتُوحًا. إِفْتَحْ فَمَكَ لِتَنْطِقَهُ صَحِيحًا.",
+      "voix_m": "v1_l1_p3_consigne_m.mp3",
+      "voix_f": "v1_l1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَ بَ تَ ثَ",
+      "voix_m": "v1_l1_p3_1_m.mp3",
+      "voix_f": "v1_l1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "جَ حَ خَ",
+      "voix_m": "v1_l1_p3_2_m.mp3",
+      "voix_f": "v1_l1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "دَ ذَ رَ زَ",
+      "voix_m": "v1_l1_p3_3_m.mp3",
+      "voix_f": "v1_l1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَ شَ صَ ضَ",
+      "voix_m": "v1_l1_p3_4_m.mp3",
+      "voix_f": "v1_l1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَ ظَ عَ غَ",
+      "voix_m": "v1_l1_p3_5_m.mp3",
+      "voix_f": "v1_l1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فَ قَ كَ لَ مَ",
+      "voix_m": "v1_l1_p3_6_m.mp3",
+      "voix_f": "v1_l1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "نَ هَ وَ يَ",
+      "voix_m": "v1_l1_p3_7_m.mp3",
+      "voix_f": "v1_l1_p3_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:10:36.440017",
+    "niveau": 1,
+    "lecon": 1,
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 8
+  }
+}

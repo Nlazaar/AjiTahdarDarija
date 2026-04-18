@@ -1,0 +1,116 @@
+{
+  "page_nb": 26,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète ce qui manque au mot",
+    "ar": "أكمَل مَا يَنْقُصُ الْكَلِمَةَ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot en ajoutant la partie manquante sous chaque image",
+    "ar": "أكمل الكلمة الناقصة تحت كل صورة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُدْ",
+      "fr": "Huppe (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "خَوْخُ",
+      "fr": "Pêche (fruit)",
+      "emoji": "🍑"
+    },
+    {
+      "id": "3",
+      "ar": "خُبْزُ",
+      "fr": "Pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "4",
+      "ar": "ضِفْدَعْ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "5",
+      "ar": "مَدْرَسَةُ",
+      "fr": "École",
+      "emoji": "🏫"
+    },
+    {
+      "id": "6",
+      "ar": "خَيْطُ",
+      "fr": "Fil",
+      "emoji": "🧶"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p26_consigne",
+      "texte_ar": "أكمل الكلمة الناقصة تحت كل صورة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُدْ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خَوْخُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خُبْزُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ضِفْدَعْ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَدْرَسَةُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "خَيْطُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p26_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p26_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:27:37.934060",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 32,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "La nuit et le jour",
+    "ar": "اللَّيْلُ وَ النَّهَارُ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour écouter et répéter le mot en arabe",
+    "ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ وَتُكَرِّرَهَا"
+  },
+  "elements": [
+    {
+      "id": "shams",
+      "ar": "شَمْسٌ",
+      "fr": "Soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "nujum",
+      "ar": "نُجُومٌ",
+      "fr": "Étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "sahab",
+      "ar": "سَحَابٌ",
+      "fr": "Nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "qamar",
+      "ar": "قَمَرٌ",
+      "fr": "Lune",
+      "emoji": "🌕"
+    },
+    {
+      "id": "qaws_quzah",
+      "ar": "قَوْسُ قُزَحَ",
+      "fr": "Arc-en-ciel",
+      "emoji": "🌈"
+    },
+    {
+      "id": "hilal",
+      "ar": "هِلالٌ",
+      "fr": "Croissant de lune",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p32_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ وَتُكَرِّرَهَا",
+      "voix_m": "livre_3_5ans_tome2_p32_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shams",
+      "texte_ar": "شَمْسٌ",
+      "voix_m": "livre_3_5ans_tome2_p32_shams_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_shams_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nujum",
+      "texte_ar": "نُجُومٌ",
+      "voix_m": "livre_3_5ans_tome2_p32_nujum_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_nujum_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sahab",
+      "texte_ar": "سَحَابٌ",
+      "voix_m": "livre_3_5ans_tome2_p32_sahab_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_sahab_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qamar",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_3_5ans_tome2_p32_qamar_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_qamar_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qaws_quzah",
+      "texte_ar": "قَوْسُ قُزَحَ",
+      "voix_m": "livre_3_5ans_tome2_p32_qaws_quzah_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_qaws_quzah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hilal",
+      "texte_ar": "هِلالٌ",
+      "voix_m": "livre_3_5ans_tome2_p32_hilal_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p32_hilal_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:48.205782",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

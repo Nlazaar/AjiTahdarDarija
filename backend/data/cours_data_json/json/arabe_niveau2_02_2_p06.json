@@ -1,0 +1,246 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'baleine' (حوت : ح - و - ت)",
+    "ar": "لوّن الحروف التي تتكون منها كلمة حوت فقط"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ح",
+      "fr": "lettre haa",
+      "emoji": "🔵"
+    },
+    {
+      "id": "2",
+      "ar": "و",
+      "fr": "lettre waw",
+      "emoji": "🟠"
+    },
+    {
+      "id": "3",
+      "ar": "ت",
+      "fr": "lettre taa",
+      "emoji": "🟠"
+    },
+    {
+      "id": "4",
+      "ar": "ث",
+      "fr": "lettre thaa (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "5",
+      "ar": "س",
+      "fr": "lettre seen (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "6",
+      "ar": "ه",
+      "fr": "lettre haa (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "7",
+      "ar": "ض",
+      "fr": "lettre daad (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "8",
+      "ar": "ل",
+      "fr": "lettre lam (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "9",
+      "ar": "ا",
+      "fr": "lettre alif (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "10",
+      "ar": "ص",
+      "fr": "lettre saad (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "11",
+      "ar": "ر",
+      "fr": "lettre raa (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "12",
+      "ar": "ن",
+      "fr": "lettre noon (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "13",
+      "ar": "ب",
+      "fr": "lettre baa (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "14",
+      "ar": "ة",
+      "fr": "lettre taa marbouta (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "15",
+      "ar": "ح",
+      "fr": "lettre haa (distracteur)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "16",
+      "ar": "ة",
+      "fr": "lettre taa marbouta (distracteur)",
+      "emoji": "⬜"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "لوّن الحروف التي تتكون منها كلمة حوت فقط",
+      "voix_m": "arabe_niveau2_02_2_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_02_2_p6_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_02_2_p6_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ت",
+      "voix_m": "arabe_niveau2_02_2_p6_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau2_02_2_p6_4_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "س",
+      "voix_m": "arabe_niveau2_02_2_p6_5_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ه",
+      "voix_m": "arabe_niveau2_02_2_p6_6_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ض",
+      "voix_m": "arabe_niveau2_02_2_p6_7_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_02_2_p6_8_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_02_2_p6_9_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ص",
+      "voix_m": "arabe_niveau2_02_2_p6_10_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_02_2_p6_11_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ن",
+      "voix_m": "arabe_niveau2_02_2_p6_12_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ب",
+      "voix_m": "arabe_niveau2_02_2_p6_13_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_02_2_p6_14_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_02_2_p6_15_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_02_2_p6_16_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p6_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:38:21.755129",
+    "niveau": 2,
+    "lecon": 10,
+    "nom_pdf": "arabe_niveau2_02_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon10/",
+    "nb_audio_assets": 17
+  }
+}

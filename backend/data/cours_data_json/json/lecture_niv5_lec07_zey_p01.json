@@ -1,0 +1,350 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ز avec vocabulaire illustré, lecture d'une phrase, identification auditive de la lettre dans des mots, et repérage visuel de la lettre dans une liste de mots",
+  "titre": {
+    "fr": "La lettre Zay (ز)",
+    "ar": "حَرْفُ الزَّاي (ز)"
+  },
+  "enonce": {
+    "fr": "Découvrons la lettre ز à travers des mots illustrés, une phrase de lecture, puis deux exercices : j'entends ou je n'entends pas la lettre, et j'entoure la lettre dans les mots.",
+    "ar": "نَتَعَلَّمُ حَرْفَ الزَّاي مِنْ خِلَالِ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةِ قِرَاءَةٍ، ثُمَّ تَمْرِينَيْنِ: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ."
+  },
+  "elements": [
+    {
+      "id": "zirr",
+      "ar": "زِرٌّ",
+      "fr": "bouton (couture)",
+      "emoji": "🔵"
+    },
+    {
+      "id": "zubda",
+      "ar": "زُبْدَةٌ",
+      "fr": "beurre",
+      "emoji": "🧈"
+    },
+    {
+      "id": "zahra",
+      "ar": "زَهْرَةٌ",
+      "fr": "fleur",
+      "emoji": "🌸"
+    },
+    {
+      "id": "hazin",
+      "ar": "حَزِينٌ",
+      "fr": "triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "halazoun",
+      "ar": "حَلَزُونٌ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "mizan",
+      "ar": "مِيزَانٌ",
+      "fr": "balance",
+      "emoji": "⚖️"
+    },
+    {
+      "id": "phrase",
+      "ar": "زَيَّنَتْ زِينَةُ غُرْفَتَهَا بِالْأَزْهَارِ",
+      "fr": "Zina a décoré sa chambre avec des fleurs",
+      "emoji": "🌺"
+    },
+    {
+      "id": "ex1_herisson",
+      "ar": "قُنْفُذٌ",
+      "fr": "hérisson",
+      "emoji": "🦔"
+    },
+    {
+      "id": "ex1_olive",
+      "ar": "زَيْتُونٌ",
+      "fr": "olive / huile d'olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "ex1_cochon",
+      "ar": "خِنْزِيرٌ",
+      "fr": "cochon",
+      "emoji": "🐷"
+    },
+    {
+      "id": "ex1_panier",
+      "ar": "سَلَّةٌ",
+      "fr": "panier de pain",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex1_loup",
+      "ar": "ذِئْبٌ",
+      "fr": "loup",
+      "emoji": "🐺"
+    },
+    {
+      "id": "ex2_ziyara",
+      "ar": "زِيَارَةٌ",
+      "fr": "visite",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ex2_mazala",
+      "ar": "مَازَالَ",
+      "fr": "il est encore / toujours",
+      "emoji": "⏳"
+    },
+    {
+      "id": "ex2_rama",
+      "ar": "رَمَى",
+      "fr": "il a lancé",
+      "emoji": "🎯"
+    },
+    {
+      "id": "ex2_mazad",
+      "ar": "مَزَادٌ",
+      "fr": "enchère / vente aux enchères",
+      "emoji": "🔨"
+    },
+    {
+      "id": "ex2_zawiya",
+      "ar": "زَاوِيَةٌ",
+      "fr": "angle / coin",
+      "emoji": "📐"
+    },
+    {
+      "id": "ex2_zibaniya",
+      "ar": "زَبَانِيَةٌ",
+      "fr": "gardiens de l'enfer (anges)",
+      "emoji": "👼"
+    },
+    {
+      "id": "ex2_hara",
+      "ar": "حَارَ",
+      "fr": "il était perplexe",
+      "emoji": "🤔"
+    },
+    {
+      "id": "ex2_haza",
+      "ar": "حَازَ",
+      "fr": "il a obtenu / remporté",
+      "emoji": "🏆"
+    },
+    {
+      "id": "ex2_azaha",
+      "ar": "أَزَاحَ",
+      "fr": "il a écarté / déplacé",
+      "emoji": "↔️"
+    },
+    {
+      "id": "ex2_muzah",
+      "ar": "مُزَاحٌ",
+      "fr": "plaisanterie",
+      "emoji": "😄"
+    },
+    {
+      "id": "ex2_muzari",
+      "ar": "مُزَارِعٌ",
+      "fr": "agriculteur / fermier",
+      "emoji": "👨‍🌾"
+    },
+    {
+      "id": "ex2_zara3",
+      "ar": "زَرَعَ",
+      "fr": "il a semé / planté",
+      "emoji": "🌱"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec07_zey",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَتَعَلَّمُ حَرْفَ الزَّاي مِنْ خِلَالِ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةِ قِرَاءَةٍ، ثُمَّ تَمْرِينَيْنِ: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ.",
+      "voix_m": "lecture_niv5_lec07_zey_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zirr",
+      "texte_ar": "زِرٌّ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_zirr_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_zirr_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zubda",
+      "texte_ar": "زُبْدَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_zubda_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_zubda_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zahra",
+      "texte_ar": "زَهْرَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_zahra_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_zahra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hazin",
+      "texte_ar": "حَزِينٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_hazin_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_hazin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_halazoun",
+      "texte_ar": "حَلَزُونٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_halazoun_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_halazoun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mizan",
+      "texte_ar": "مِيزَانٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_mizan_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_mizan_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "زَيَّنَتْ زِينَةُ غُرْفَتَهَا بِالْأَزْهَارِ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_herisson",
+      "texte_ar": "قُنْفُذٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex1_herisson_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex1_herisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_olive",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex1_olive_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex1_olive_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_cochon",
+      "texte_ar": "خِنْزِيرٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex1_cochon_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex1_cochon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_panier",
+      "texte_ar": "سَلَّةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex1_panier_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex1_panier_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_loup",
+      "texte_ar": "ذِئْبٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex1_loup_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex1_loup_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_ziyara",
+      "texte_ar": "زِيَارَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_ziyara_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_ziyara_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mazala",
+      "texte_ar": "مَازَالَ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_mazala_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_mazala_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_rama",
+      "texte_ar": "رَمَى",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_rama_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_rama_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mazad",
+      "texte_ar": "مَزَادٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_mazad_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_mazad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_zawiya",
+      "texte_ar": "زَاوِيَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_zawiya_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_zawiya_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_zibaniya",
+      "texte_ar": "زَبَانِيَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_zibaniya_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_zibaniya_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_hara",
+      "texte_ar": "حَارَ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_hara_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_hara_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_haza",
+      "texte_ar": "حَازَ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_haza_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_haza_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_azaha",
+      "texte_ar": "أَزَاحَ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_azaha_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_azaha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_muzah",
+      "texte_ar": "مُزَاحٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_muzah_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_muzah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_muzari",
+      "texte_ar": "مُزَارِعٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_muzari_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_muzari_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_zara3",
+      "texte_ar": "زَرَعَ",
+      "voix_m": "lecture_niv5_lec07_zey_p1_ex2_zara3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p1_ex2_zara3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:32:11.045035",
+    "niveau": 1,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv5_lec07_zey",
+    "bucket_audio": "audio-lessons/niveau1/lecon07/",
+    "nb_audio_assets": 25
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus",
+    "ar": "أَشْطُبُ الشَّيْءَ الدَّخِيلَ"
+  },
+  "enonce": {
+    "fr": "Barre l'intrus dans chaque groupe : 1) Mange-t-on … ? 2) Est-ce que … sont des fruits ?",
+    "ar": "اشطب الدخيل في كل مجموعة: ١) هَل نَأكُلُ ... ؟ ٢) هل الـ... فَوَاكِهِ ؟"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تُفَّاح",
+      "fr": "pommes",
+      "emoji": "🍏"
+    },
+    {
+      "id": "2",
+      "ar": "مِشْمِش",
+      "fr": "abricots",
+      "emoji": "🍑"
+    },
+    {
+      "id": "3",
+      "ar": "فَرَاوِلَة",
+      "fr": "fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "4",
+      "ar": "أَقْلَام",
+      "fr": "crayons (intrus)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "5",
+      "ar": "خَوْخ",
+      "fr": "pêche/prune",
+      "emoji": "🍑"
+    },
+    {
+      "id": "6",
+      "ar": "مَوْز",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "7",
+      "ar": "جُبْن",
+      "fr": "fromage (intrus)",
+      "emoji": "🧀"
+    },
+    {
+      "id": "8",
+      "ar": "أَنَانَاس",
+      "fr": "ananas",
+      "emoji": "🍍"
+    },
+    {
+      "id": "9",
+      "ar": "مِشْمِش",
+      "fr": "abricots",
+      "emoji": "🍑"
+    },
+    {
+      "id": "10",
+      "ar": "فَرَاوِلَة",
+      "fr": "fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "11",
+      "ar": "مَوْز",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "12",
+      "ar": "عِنَب",
+      "fr": "raisin",
+      "emoji": "🍇"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اشطب الدخيل في كل مجموعة: ١) هَل نَأكُلُ ... ؟ ٢) هل الـ... فَوَاكِهِ ؟",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تُفَّاح",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِشْمِش",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَرَاوِلَة",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَقْلَام",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خَوْخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مَوْز",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "جُبْن",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "أَنَانَاس",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِشْمِش",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "فَرَاوِلَة",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "مَوْز",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "عِنَب",
+      "voix_m": "coursarabe_niveau1_lecon10_p2_12_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p2_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:21:52.366641",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 13
+  }
+}

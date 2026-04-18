@@ -1,0 +1,155 @@
+{
+  "page_nb": 113,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux syllabes pour former un mot, puis relie le mot à l'image correspondante",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "دَرَّابَانُ",
+      "fr": "vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "syllabe1a",
+      "ar": "دَرَّا",
+      "fr": "syllabe 1a",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe1b",
+      "ar": "بَانُ",
+      "fr": "syllabe 1b",
+      "emoji": ""
+    },
+    {
+      "id": "mot2",
+      "ar": "زَيْتُونَةٌ",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "syllabe2a",
+      "ar": "زَيْـ",
+      "fr": "syllabe 2a",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe2b",
+      "ar": "ـتُونَةٌ",
+      "fr": "syllabe 2b",
+      "emoji": ""
+    },
+    {
+      "id": "mot3",
+      "ar": "ثُعْبَانٌ",
+      "fr": "serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "syllabe3a",
+      "ar": "ثُعْ",
+      "fr": "syllabe 3a",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe3b",
+      "ar": "بَانٌ",
+      "fr": "syllabe 3b",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p113_consigne",
+      "texte_ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_p113_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "دَرَّابَانُ",
+      "voix_m": "livre_arabe_niveau3_p113_mot1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1a",
+      "texte_ar": "دَرَّا",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe1a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1b",
+      "texte_ar": "بَانُ",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe1b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "زَيْتُونَةٌ",
+      "voix_m": "livre_arabe_niveau3_p113_mot2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2a",
+      "texte_ar": "زَيْـ",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe2a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2b",
+      "texte_ar": "ـتُونَةٌ",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe2b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "ثُعْبَانٌ",
+      "voix_m": "livre_arabe_niveau3_p113_mot3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3a",
+      "texte_ar": "ثُعْ",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe3a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3b",
+      "texte_ar": "بَانٌ",
+      "voix_m": "livre_arabe_niveau3_p113_syllabe3b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p113_syllabe3b_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:16:30.325530",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

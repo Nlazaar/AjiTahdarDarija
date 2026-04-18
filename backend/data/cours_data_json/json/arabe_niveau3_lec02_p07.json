@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque groupe, trouve et barre l'élément différent des autres",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "groupe1_images_nuages",
+      "ar": "سَحَابٌ (صور)",
+      "fr": "Groupe de nuages (images) – un nuage différent par sa taille ou forme",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe2_images_arbres",
+      "ar": "شَجَرَةٌ (صور)",
+      "fr": "Groupe d'arbres (images) – un arbre différent par sa taille ou couleur",
+      "emoji": "🌳"
+    },
+    {
+      "id": "groupe3_mots_nuages",
+      "ar": "سَحَابٌ / سِحَاتٌ",
+      "fr": "Groupe de mots nuage – l'intrus est سِحَاتٌ",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe4_mots_arbres",
+      "ar": "شَجَرَةٌ / سَجَرَةٌ",
+      "fr": "Groupe de mots arbre – l'intrus est سَجَرَةٌ (sans points)",
+      "emoji": "🌳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "arabe_niveau3_lec02_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images_nuages",
+      "texte_ar": "سَحَابٌ (صور)",
+      "voix_m": "arabe_niveau3_lec02_p7_groupe1_images_nuages_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p7_groupe1_images_nuages_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images_arbres",
+      "texte_ar": "شَجَرَةٌ (صور)",
+      "voix_m": "arabe_niveau3_lec02_p7_groupe2_images_arbres_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p7_groupe2_images_arbres_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3_mots_nuages",
+      "texte_ar": "سَحَابٌ / سِحَاتٌ",
+      "voix_m": "arabe_niveau3_lec02_p7_groupe3_mots_nuages_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p7_groupe3_mots_nuages_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4_mots_arbres",
+      "texte_ar": "شَجَرَةٌ / سَجَرَةٌ",
+      "voix_m": "arabe_niveau3_lec02_p7_groupe4_mots_arbres_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p7_groupe4_mots_arbres_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:26:46.245903",
+    "niveau": 3,
+    "lecon": 2,
+    "nom_pdf": "arabe_niveau3_lec02",
+    "bucket_audio": "audio-lessons/niveau3/lecon02/",
+    "nb_audio_assets": 5
+  }
+}

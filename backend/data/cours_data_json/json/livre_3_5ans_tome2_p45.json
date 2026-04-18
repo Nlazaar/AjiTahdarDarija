@@ -1,0 +1,77 @@
+{
+  "page_nb": 45,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète le dessin des étoiles",
+    "ar": "أكمّل رسم النّجوم"
+  },
+  "enonce": {
+    "fr": "Trace les étoiles en suivant les pointillés.",
+    "ar": "أكمّل رسم النّجوم بالاقتداء بالخطوط المنقّطة."
+  },
+  "elements": [
+    {
+      "id": "etoile_1",
+      "ar": "نجمة",
+      "fr": "étoile (petite)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_2",
+      "ar": "نجمة",
+      "fr": "étoile (moyenne)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_3",
+      "ar": "نجمة",
+      "fr": "étoile (grande)",
+      "emoji": "⭐"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p45_consigne",
+      "texte_ar": "أكمّل رسم النّجوم بالاقتداء بالخطوط المنقّطة.",
+      "voix_m": "livre_3_5ans_tome2_p45_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p45_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_1",
+      "texte_ar": "نجمة",
+      "voix_m": "livre_3_5ans_tome2_p45_etoile_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p45_etoile_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_2",
+      "texte_ar": "نجمة",
+      "voix_m": "livre_3_5ans_tome2_p45_etoile_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p45_etoile_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_3",
+      "texte_ar": "نجمة",
+      "voix_m": "livre_3_5ans_tome2_p45_etoile_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p45_etoile_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:03:03.756590",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 4
+  }
+}

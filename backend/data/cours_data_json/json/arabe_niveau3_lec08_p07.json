@@ -1,0 +1,103 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot correspondant à chaque image et je relie selon que j'entends la lettre Hamza/Alif au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُهَا بِمَوْقِعِ الْهَمْزَةِ : فِي أَوَّلِهَا أَوْ وَسَطِهَا أَوْ آخِرِهَا"
+  },
+  "elements": [
+    {
+      "id": "lion",
+      "ar": "أَسَد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "poire",
+      "ar": "إِجَّاص",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "oreille",
+      "ar": "أُذُن",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "souris",
+      "ar": "فَأْر",
+      "fr": "souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "pieuvre",
+      "ar": "أَخْطَبُوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "arabe_niveau3_lec08",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُهَا بِمَوْقِعِ الْهَمْزَةِ : فِي أَوَّلِهَا أَوْ وَسَطِهَا أَوْ آخِرِهَا",
+      "voix_m": "arabe_niveau3_lec08_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lion",
+      "texte_ar": "أَسَد",
+      "voix_m": "arabe_niveau3_lec08_p7_lion_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_lion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poire",
+      "texte_ar": "إِجَّاص",
+      "voix_m": "arabe_niveau3_lec08_p7_poire_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_poire_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oreille",
+      "texte_ar": "أُذُن",
+      "voix_m": "arabe_niveau3_lec08_p7_oreille_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_oreille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_souris",
+      "texte_ar": "فَأْر",
+      "voix_m": "arabe_niveau3_lec08_p7_souris_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_souris_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pieuvre",
+      "texte_ar": "أَخْطَبُوط",
+      "voix_m": "arabe_niveau3_lec08_p7_pieuvre_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p7_pieuvre_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:37:12.871771",
+    "niveau": 3,
+    "lecon": 8,
+    "nom_pdf": "arabe_niveau3_lec08",
+    "bucket_audio": "audio-lessons/niveau3/lecon08/",
+    "nb_audio_assets": 6
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Entourer le mot cible parmi des distracteurs visuellement proches",
+  "titre": {
+    "fr": "J'entoure le mot",
+    "ar": "أُحيطُ الكلمة بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure le mot 'mouton' (خروف) chaque fois que tu le vois parmi les autres mots",
+    "ar": "أَحِطْ بِكَلِمَة خروف في كُلِّ مَرَّة تَراها بَيْنَ الكَلِمات"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خروف",
+      "fr": "mouton (mot cible)",
+      "emoji": "🐑"
+    },
+    {
+      "id": "2",
+      "ar": "خريف",
+      "fr": "automne (distracteur)",
+      "emoji": "🍂"
+    },
+    {
+      "id": "3",
+      "ar": "حروف",
+      "fr": "lettres (distracteur)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "فيل",
+      "fr": "éléphant (distracteur)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "5",
+      "ar": "جروف",
+      "fr": "berges (distracteur)",
+      "emoji": "🏔️"
+    },
+    {
+      "id": "6",
+      "ar": "حزوف",
+      "fr": "mot inventé (distracteur)",
+      "emoji": "❓"
+    },
+    {
+      "id": "7",
+      "ar": "حروق",
+      "fr": "brûlures (distracteur)",
+      "emoji": "🔥"
+    },
+    {
+      "id": "8",
+      "ar": "بقرة",
+      "fr": "vache (distracteur)",
+      "emoji": "🐄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَحِطْ بِكَلِمَة خروف في كُلِّ مَرَّة تَراها بَيْنَ الكَلِمات",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خروف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خريف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حروف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جروف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حزوف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "حروق",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بقرة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p6_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p6_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:57:17.322069",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 9
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 34,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ فِي الْكَلِمَات"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre و dans chacun des mots suivants",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ حَرْفَ الوَاو فِي كُلِّ كَلِمَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "وَزِيرٌ",
+      "fr": "ministre",
+      "emoji": "👔"
+    },
+    {
+      "id": "2",
+      "ar": "دُودَةٌ",
+      "fr": "ver de terre",
+      "emoji": "🐛"
+    },
+    {
+      "id": "3",
+      "ar": "زَوْرَقٌ",
+      "fr": "barque",
+      "emoji": "🚣"
+    },
+    {
+      "id": "4",
+      "ar": "فَوْزٌ",
+      "fr": "victoire",
+      "emoji": "🏆"
+    },
+    {
+      "id": "5",
+      "ar": "صُفُوفٌ",
+      "fr": "rangées",
+      "emoji": "📋"
+    },
+    {
+      "id": "6",
+      "ar": "سُوقٌ",
+      "fr": "marché",
+      "emoji": "🛒"
+    },
+    {
+      "id": "7",
+      "ar": "رُفُوفٌ",
+      "fr": "étagères",
+      "emoji": "🗄️"
+    },
+    {
+      "id": "8",
+      "ar": "يَفُوزُ",
+      "fr": "il gagne",
+      "emoji": "🥇"
+    },
+    {
+      "id": "9",
+      "ar": "وَافَقَ",
+      "fr": "il a accepté",
+      "emoji": "✅"
+    },
+    {
+      "id": "10",
+      "ar": "وَفِيٌّ",
+      "fr": "fidèle",
+      "emoji": "🤝"
+    },
+    {
+      "id": "11",
+      "ar": "لَوْزٌ",
+      "fr": "amande",
+      "emoji": "🌰"
+    },
+    {
+      "id": "12",
+      "ar": "مَوْزٌ",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "13",
+      "ar": "خَوْخٌ",
+      "fr": "pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "14",
+      "ar": "فَوَاكِهُ",
+      "fr": "fruits",
+      "emoji": "🍎"
+    },
+    {
+      "id": "15",
+      "ar": "وَفِيٌّ",
+      "fr": "fidèle",
+      "emoji": "🤝"
+    },
+    {
+      "id": "16",
+      "ar": "حَلَزُونٌ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p34_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ حَرْفَ الوَاو فِي كُلِّ كَلِمَةٍ",
+      "voix_m": "livre_arabe_niveau3_p34_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "وَزِيرٌ",
+      "voix_m": "livre_arabe_niveau3_p34_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "livre_arabe_niveau3_p34_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "زَوْرَقٌ",
+      "voix_m": "livre_arabe_niveau3_p34_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَوْزٌ",
+      "voix_m": "livre_arabe_niveau3_p34_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صُفُوفٌ",
+      "voix_m": "livre_arabe_niveau3_p34_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سُوقٌ",
+      "voix_m": "livre_arabe_niveau3_p34_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "رُفُوفٌ",
+      "voix_m": "livre_arabe_niveau3_p34_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "يَفُوزُ",
+      "voix_m": "livre_arabe_niveau3_p34_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "وَافَقَ",
+      "voix_m": "livre_arabe_niveau3_p34_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "وَفِيٌّ",
+      "voix_m": "livre_arabe_niveau3_p34_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "لَوْزٌ",
+      "voix_m": "livre_arabe_niveau3_p34_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَوْزٌ",
+      "voix_m": "livre_arabe_niveau3_p34_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "livre_arabe_niveau3_p34_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "فَوَاكِهُ",
+      "voix_m": "livre_arabe_niveau3_p34_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "وَفِيٌّ",
+      "voix_m": "livre_arabe_niveau3_p34_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "حَلَزُونٌ",
+      "voix_m": "livre_arabe_niveau3_p34_16_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p34_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:01:08.319090",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 17
+  }
+}

@@ -1,14 +1,14 @@
-import { Controller, Get, Param, NotFoundException } from '@nestjs/common';
+import { Controller, Get, Param, Query, NotFoundException } from '@nestjs/common';
 import { CoursesService } from '../courses/courses.service';
 
 @Controller('modules')
 export class ModulesController {
   constructor(private readonly coursesService: CoursesService) {}
 
+  /** GET /modules?track=DARIJA|MSA|RELIGION */
   @Get()
-  async findAll() {
-    // reuse courses service to list modules
-    return this.coursesService.findAll();
+  async findAll(@Query('track') track?: string) {
+    return this.coursesService.findAll(track?.toUpperCase() as any);
   }
 
   @Get(':id/lessons')

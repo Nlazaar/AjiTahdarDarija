@@ -1,0 +1,142 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "Activité de découpage et association : reconstituer le mot arabe en assemblant des cartes syllabes illustrées d'animaux, puis associer des images d'animaux à leur étiquette mot",
+  "titre": {
+    "fr": "Les animaux - Leçon 7 (suite)",
+    "ar": "الحيوانات - الدرس السابع (تابع)"
+  },
+  "enonce": {
+    "fr": "Découpe les cartes et reconstitue les mots arabes en assemblant les syllabes dans le bon ordre. Associe ensuite chaque animal à son mot.",
+    "ar": "اقطع البطاقات وأعد تركيب الكلمات العربية بوضع المقاطع في الترتيب الصحيح. ثم طابق كل حيوان مع كلمته."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دجاجة",
+      "fr": "Poule / Poulet",
+      "emoji": "🐔"
+    },
+    {
+      "id": "2",
+      "ar": "بقرة",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "3",
+      "ar": "نحلة",
+      "fr": "Abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "4",
+      "ar": "أسد",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "5",
+      "ar": "أرنب",
+      "fr": "Lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "6",
+      "ar": "جمل",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "7",
+      "ar": "دعسوقة",
+      "fr": "Coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "8",
+      "ar": "عصفور",
+      "fr": "Oiseau / Moineau",
+      "emoji": "🐦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "اقطع البطاقات وأعد تركيب الكلمات العربية بوضع المقاطع في الترتيب الصحيح. ثم طابق كل حيوان مع كلمته.",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دجاجة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بقرة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "نحلة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أسد",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أرنب",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "جمل",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "دعسوقة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "عصفور",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p11_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p11_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:58:51.821286",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 9
+  }
+}

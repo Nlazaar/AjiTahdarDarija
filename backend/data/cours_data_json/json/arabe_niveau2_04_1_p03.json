@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie en vert la lettre سـ / س chaque fois qu'elle apparaît dans les mots suivants.",
+    "ar": "لَوِّنِ الحرفَ سـ / س بِاللَّوْنِ الأَخْضَرِ في كُلِّ كَلِمَةٍ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سُرُور",
+      "fr": "joie / bonheur",
+      "emoji": "😊"
+    },
+    {
+      "id": "2",
+      "ar": "سَيْر",
+      "fr": "marche / ceinture",
+      "emoji": "🚶"
+    },
+    {
+      "id": "3",
+      "ar": "رَسْم",
+      "fr": "dessin",
+      "emoji": "🎨"
+    },
+    {
+      "id": "4",
+      "ar": "سَمَر",
+      "fr": "prénom / veillée",
+      "emoji": "🌙"
+    },
+    {
+      "id": "5",
+      "ar": "شَمْس",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "سِر",
+      "fr": "secret",
+      "emoji": "🤫"
+    },
+    {
+      "id": "7",
+      "ar": "فَأْس",
+      "fr": "hache",
+      "emoji": "🪓"
+    },
+    {
+      "id": "8",
+      "ar": "سَار",
+      "fr": "il a marché / il a voyagé",
+      "emoji": "🚶"
+    },
+    {
+      "id": "9",
+      "ar": "أُسَر",
+      "fr": "familles",
+      "emoji": "👨‍👩‍👧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "لَوِّنِ الحرفَ سـ / س بِاللَّوْنِ الأَخْضَرِ في كُلِّ كَلِمَةٍ.",
+      "voix_m": "arabe_niveau2_04_1_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سُرُور",
+      "voix_m": "arabe_niveau2_04_1_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَيْر",
+      "voix_m": "arabe_niveau2_04_1_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رَسْم",
+      "voix_m": "arabe_niveau2_04_1_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَمَر",
+      "voix_m": "arabe_niveau2_04_1_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "شَمْس",
+      "voix_m": "arabe_niveau2_04_1_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سِر",
+      "voix_m": "arabe_niveau2_04_1_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فَأْس",
+      "voix_m": "arabe_niveau2_04_1_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سَار",
+      "voix_m": "arabe_niveau2_04_1_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أُسَر",
+      "voix_m": "arabe_niveau2_04_1_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:41:49.480303",
+    "niveau": 2,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau2_04_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon13/",
+    "nb_audio_assets": 10
+  }
+}

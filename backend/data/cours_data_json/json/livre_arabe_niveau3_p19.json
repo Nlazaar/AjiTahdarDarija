@@ -1,0 +1,493 @@
+{
+  "page_nb": 19,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "La Kasra - Les jours de la semaine",
+    "ar": "الْكَسْرَة - أيام الأسبوع"
+  },
+  "enonce": {
+    "fr": "Lis les lettres de l'alphabet avec la voyelle Kasra (i). Apprends aussi les jours de la semaine en arabe.",
+    "ar": "اقرأ حروف الهجاء مع حركة الكسرة. تعلّم أيضاً أيام الأسبوع بالعربية."
+  },
+  "elements": [
+    {
+      "id": "jour1",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour2",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour3",
+      "ar": "الأرْبَعَاء",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour4",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour5",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour6",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour7",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "kasra_alif",
+      "ar": "إِ",
+      "fr": "Alif avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ba",
+      "ar": "بِ",
+      "fr": "Ba avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ta",
+      "ar": "تِ",
+      "fr": "Ta avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_tha",
+      "ar": "ثِ",
+      "fr": "Tha avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_jim",
+      "ar": "جِ",
+      "fr": "Jim avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ha",
+      "ar": "حِ",
+      "fr": "Ha avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_kha",
+      "ar": "خِ",
+      "fr": "Kha avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dal",
+      "ar": "دِ",
+      "fr": "Dal avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dhal",
+      "ar": "ذِ",
+      "fr": "Dhal avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ra",
+      "ar": "رِ",
+      "fr": "Ra avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_zay",
+      "ar": "زِ",
+      "fr": "Zay avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_sin",
+      "ar": "سِ",
+      "fr": "Sin avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_shin",
+      "ar": "شِ",
+      "fr": "Shin avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_sad",
+      "ar": "صِ",
+      "fr": "Sad avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dad",
+      "ar": "ضِ",
+      "fr": "Dad avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_tah",
+      "ar": "طِ",
+      "fr": "Tah avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_zah",
+      "ar": "ظِ",
+      "fr": "Zah avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ain",
+      "ar": "عِ",
+      "fr": "Ain avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ghain",
+      "ar": "غِ",
+      "fr": "Ghain avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_fa",
+      "ar": "فِ",
+      "fr": "Fa avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_qaf",
+      "ar": "قِ",
+      "fr": "Qaf avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_kaf",
+      "ar": "كِ",
+      "fr": "Kaf avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_lam",
+      "ar": "لِ",
+      "fr": "Lam avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_mim",
+      "ar": "مِ",
+      "fr": "Mim avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_nun",
+      "ar": "نِ",
+      "fr": "Nun avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ha2",
+      "ar": "هِ",
+      "fr": "Ha (2) avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_waw",
+      "ar": "وِ",
+      "fr": "Waw avec kasra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ya",
+      "ar": "يِ",
+      "fr": "Ya avec kasra",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p19_consigne",
+      "texte_ar": "اقرأ حروف الهجاء مع حركة الكسرة. تعلّم أيضاً أيام الأسبوع بالعربية.",
+      "voix_m": "livre_arabe_niveau3_p19_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour1",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "livre_arabe_niveau3_p19_jour1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour2",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "livre_arabe_niveau3_p19_jour2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour3",
+      "texte_ar": "الأرْبَعَاء",
+      "voix_m": "livre_arabe_niveau3_p19_jour3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour4",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "livre_arabe_niveau3_p19_jour4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour5",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "livre_arabe_niveau3_p19_jour5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "livre_arabe_niveau3_p19_jour6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour7",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "livre_arabe_niveau3_p19_jour7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_jour7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_alif",
+      "texte_ar": "إِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_alif_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ba",
+      "texte_ar": "بِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ba_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ta",
+      "texte_ar": "تِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ta_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_tha",
+      "texte_ar": "ثِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_tha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_jim",
+      "texte_ar": "جِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_jim_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ha",
+      "texte_ar": "حِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_kha",
+      "texte_ar": "خِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_kha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dal",
+      "texte_ar": "دِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_dal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dhal",
+      "texte_ar": "ذِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_dhal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ra",
+      "texte_ar": "رِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ra_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_zay",
+      "texte_ar": "زِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_zay_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_sin",
+      "texte_ar": "سِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_sin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_shin",
+      "texte_ar": "شِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_shin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_sad",
+      "texte_ar": "صِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_sad_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dad",
+      "texte_ar": "ضِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_dad_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_tah",
+      "texte_ar": "طِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_tah_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_tah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_zah",
+      "texte_ar": "ظِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_zah_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_zah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ain",
+      "texte_ar": "عِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ain_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ghain",
+      "texte_ar": "غِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ghain_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ghain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_fa",
+      "texte_ar": "فِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_fa_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_qaf",
+      "texte_ar": "قِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_qaf_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_kaf",
+      "texte_ar": "كِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_kaf_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_lam",
+      "texte_ar": "لِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_lam_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_mim",
+      "texte_ar": "مِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_mim_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_nun",
+      "texte_ar": "نِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_nun_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ha2",
+      "texte_ar": "هِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ha2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ha2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_waw",
+      "texte_ar": "وِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_waw_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ya",
+      "texte_ar": "يِ",
+      "voix_m": "livre_arabe_niveau3_p19_kasra_ya_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p19_kasra_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:57:55.626071",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 36
+  }
+}

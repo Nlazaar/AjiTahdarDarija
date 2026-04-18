@@ -83,8 +83,5 @@ export const alphabetTheme: Theme = {
 // Compatibilité avec l'ancien import darijaAlphabet
 export const darijaAlphabet = alphabetTheme.lessons
   .flatMap((l) => l.items)
-  .map((item) => {
-    if (item.type !== 'letter') return null;
-    return { letter: item.arabic, latin: item.latin, fr: item.fr };
-  })
-  .filter(Boolean);
+  .filter((item): item is typeof item & { type: 'letter' } => item.type === 'letter')
+  .map((item) => ({ letter: item.arabic, latin: item.latin, fr: item.fr }));

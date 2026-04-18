@@ -1,0 +1,155 @@
+{
+  "page_nb": 13,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure les lettres avec une dhamma",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ الَّذِي لَهُ ضَمَّة (المَضْمُوم)"
+  },
+  "enonce": {
+    "fr": "J'entoure dans ces mots les lettres qui ont une dhamma (ُ)",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ الَّذِي لَهُ ضَمَّة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُد",
+      "fr": "Huppe (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "بُرْتُقَالَة",
+      "fr": "Orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "3",
+      "ar": "جُلْبَانَة",
+      "fr": "Petit pois",
+      "emoji": "🫛"
+    },
+    {
+      "id": "4",
+      "ar": "شُبَّاك",
+      "fr": "Fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "5",
+      "ar": "سُلَحْفَاة",
+      "fr": "Tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "6",
+      "ar": "تُعْبَان",
+      "fr": "Serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "7",
+      "ar": "فُسْتَان",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "8",
+      "ar": "نُجُوم",
+      "fr": "Étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "9",
+      "ar": "تُفَّاح",
+      "fr": "Pommes",
+      "emoji": "🍏"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p13_consigne",
+      "texte_ar": "أَحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ الَّذِي لَهُ ضَمَّة",
+      "voix_m": "livre_arabe_niveau3_p13_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُد",
+      "voix_m": "livre_arabe_niveau3_p13_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بُرْتُقَالَة",
+      "voix_m": "livre_arabe_niveau3_p13_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "جُلْبَانَة",
+      "voix_m": "livre_arabe_niveau3_p13_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شُبَّاك",
+      "voix_m": "livre_arabe_niveau3_p13_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سُلَحْفَاة",
+      "voix_m": "livre_arabe_niveau3_p13_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تُعْبَان",
+      "voix_m": "livre_arabe_niveau3_p13_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "livre_arabe_niveau3_p13_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "نُجُوم",
+      "voix_m": "livre_arabe_niveau3_p13_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "تُفَّاح",
+      "voix_m": "livre_arabe_niveau3_p13_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p13_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:56:39.598801",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

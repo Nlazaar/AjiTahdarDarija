@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec une chadda",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُشَدَّد"
+  },
+  "enonce": {
+    "fr": "Dans chaque mot, entoure la lettre qui porte une chadda (lettre doublée)",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُشَدَّدَ فِي كُلِّ كَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مُثَلَّجَاتٌ",
+      "fr": "Glaces",
+      "emoji": "🍦"
+    },
+    {
+      "id": "2",
+      "ar": "تُفَّاحَةٌ",
+      "fr": "Pomme",
+      "emoji": "🍎"
+    },
+    {
+      "id": "3",
+      "ar": "صِنَّارَةٌ",
+      "fr": "Canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "4",
+      "ar": "بَبَّغَاءُ",
+      "fr": "Perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "5",
+      "ar": "دَرَّاجَةٌ",
+      "fr": "Vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "6",
+      "ar": "دُبٌّ",
+      "fr": "Ours",
+      "emoji": "🐻"
+    },
+    {
+      "id": "7",
+      "ar": "رُمَّانٌ",
+      "fr": "Grenade",
+      "emoji": "🍎"
+    },
+    {
+      "id": "8",
+      "ar": "بَطَّةٌ",
+      "fr": "Canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "9",
+      "ar": "سَيَّارَةٌ",
+      "fr": "Voiture",
+      "emoji": "🚗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec14",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُشَدَّدَ فِي كُلِّ كَلِمَة",
+      "voix_m": "arabe_niveau3_lec14_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مُثَلَّجَاتٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "تُفَّاحَةٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "صِنَّارَةٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَبَّغَاءُ",
+      "voix_m": "arabe_niveau3_lec14_p2_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "دَرَّاجَةٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "دُبٌّ",
+      "voix_m": "arabe_niveau3_lec14_p2_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "رُمَّانٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بَطَّةٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "arabe_niveau3_lec14_p2_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p2_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:44:31.025574",
+    "niveau": 3,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau3_lec14",
+    "bucket_audio": "audio-lessons/niveau3/lecon14/",
+    "nb_audio_assets": 10
+  }
+}

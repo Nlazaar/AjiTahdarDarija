@@ -1,0 +1,259 @@
+{
+  "page_nb": 20,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'pieuvre' (أخطبوط) parmi toutes les lettres proposées.",
+    "ar": "لَوِّنْ حُرُوفَ كَلِمَةِ أَخْطَبُوطَ فَقَطْ مِنْ بَيْنِ الْحُرُوفِ الْمَعْرُوضَةِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "خ",
+      "fr": "kha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "ط",
+      "fr": "ta (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ب",
+      "fr": "ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ط",
+      "fr": "ta (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "ن",
+      "fr": "nun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ظ",
+      "fr": "dha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "ج",
+      "fr": "jim",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "بـ",
+      "fr": "ba (mediale)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "ر",
+      "fr": "ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "ح",
+      "fr": "ha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "15",
+      "ar": "سـ",
+      "fr": "sin (initiale)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "16",
+      "ar": "ة",
+      "fr": "ta marbuta",
+      "emoji": "🔤"
+    },
+    {
+      "id": "target",
+      "ar": "أَخْطَبُوطَ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p20_consigne",
+      "texte_ar": "لَوِّنْ حُرُوفَ كَلِمَةِ أَخْطَبُوطَ فَقَطْ مِنْ بَيْنِ الْحُرُوفِ الْمَعْرُوضَةِ.",
+      "voix_m": "livre_3_5ans_tome2_p20_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome2_p20_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_p20_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ط",
+      "voix_m": "livre_3_5ans_tome2_p20_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ب",
+      "voix_m": "livre_3_5ans_tome2_p20_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_p20_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ط",
+      "voix_m": "livre_3_5ans_tome2_p20_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome2_p20_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome2_p20_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ظ",
+      "voix_m": "livre_3_5ans_tome2_p20_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p20_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_p20_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "بـ",
+      "voix_m": "livre_3_5ans_tome2_p20_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_p20_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p20_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "سـ",
+      "voix_m": "livre_3_5ans_tome2_p20_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_p20_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_target",
+      "texte_ar": "أَخْطَبُوطَ",
+      "voix_m": "livre_3_5ans_tome2_p20_target_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p20_target_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:58:44.222318",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 18
+  }
+}

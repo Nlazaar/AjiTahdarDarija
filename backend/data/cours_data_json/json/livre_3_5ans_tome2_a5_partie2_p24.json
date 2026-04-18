@@ -1,0 +1,103 @@
+{
+  "page_nb": 24,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Les animaux - Reconstituer les mots",
+    "ar": "حَيَوَانَاتٌ - أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque image pour reconstituer le mot correspondant à l'animal",
+    "ar": "أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غُرَابٌ",
+      "fr": "Corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "2",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "3",
+      "ar": "حَمَامَةٌ",
+      "fr": "Pigeon",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "4",
+      "ar": "سُلَحْفَاةٌ",
+      "fr": "Tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "5",
+      "ar": "سِنْجَابٌ",
+      "fr": "Écureuil",
+      "emoji": "🐿️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p24_consigne",
+      "texte_ar": "أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حَمَامَةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سُلَحْفَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سِنْجَابٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p24_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p24_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:22:45.260504",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 6
+  }
+}

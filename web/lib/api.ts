@@ -75,7 +75,7 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   return JSON.parse(text) as T;
 }
 
-export const getModules            = ()                 => request<Module[]>('/modules');
+export const getModules            = (track?: string)   => request<Module[]>(track ? `/modules?track=${encodeURIComponent(track)}` : '/modules');
 export const getLessonsByModule    = (moduleId: string) => request<Lesson[]>(`/modules/${moduleId}/lessons`);
 export const getLesson             = (lessonId: string) => request<Lesson>(`/lessons/${lessonId}`);
 export const getExercises          = (lessonId: string) => request<Exercise[]>(`/lessons/${lessonId}/exercises`);
@@ -118,6 +118,22 @@ export const updateHearts = (delta: number) =>
 export const getShopItems   = ()             => request<any[]>('/shop');
 export const getMyInventory = ()             => request<any[]>('/shop/inventory');
 export const buyShopItem    = (key: string)  => request<any>(`/shop/buy/${key}`, { method: 'POST' });
+
+// Cultural collection
+export const getCulturalItems   = (category?: string) => request<any[]>(category ? `/cultural?category=${encodeURIComponent(category)}` : '/cultural');
+export const getMyCultural      = ()            => request<any[]>('/cultural/mine');
+export const unlockCulturalItem = (key: string) => request<any>(`/cultural/unlock/${key}`, { method: 'POST' });
+
+// Duels
+export const createDuel   = (body: { lessonId?: string; rounds?: number } = {}) =>
+  request<any>('/duels', { method: 'POST', body: JSON.stringify(body) });
+export const listOpenDuels = () => request<any[]>('/duels/open');
+export const listMyDuels   = () => request<any[]>('/duels/mine');
+export const getDuel       = (id: string) => request<any>(`/duels/${id}`);
+export const joinDuel      = (id: string) => request<any>(`/duels/${id}/join`, { method: 'POST' });
+export const submitDuelRound = (id: string, body: { score: number; correct: boolean }) =>
+  request<any>(`/duels/${id}/round`, { method: 'POST', body: JSON.stringify(body) });
+export const cancelDuel    = (id: string) => request<any>(`/duels/${id}/cancel`, { method: 'POST' });
 
 // Quests
 export const getQuestState   = ()            => request<any>('/quests');

@@ -1,0 +1,207 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre و en rouge dans chacun des mots suivants.",
+    "ar": "لَوِّنِ الحرفَ (و) بالأحمر في كلِّ كلمةٍ من الكلمات التالية."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مرور",
+      "fr": "passage",
+      "emoji": "🚶"
+    },
+    {
+      "id": "2",
+      "ar": "صور",
+      "fr": "images",
+      "emoji": "🖼️"
+    },
+    {
+      "id": "3",
+      "ar": "روى",
+      "fr": "il a raconté",
+      "emoji": "📖"
+    },
+    {
+      "id": "4",
+      "ar": "سرور",
+      "fr": "joie",
+      "emoji": "😊"
+    },
+    {
+      "id": "5",
+      "ar": "حلو",
+      "fr": "doux/sucré",
+      "emoji": "🍬"
+    },
+    {
+      "id": "6",
+      "ar": "وصف",
+      "fr": "description",
+      "emoji": "📝"
+    },
+    {
+      "id": "7",
+      "ar": "صفوف",
+      "fr": "rangées",
+      "emoji": "📏"
+    },
+    {
+      "id": "8",
+      "ar": "خوف",
+      "fr": "peur",
+      "emoji": "😨"
+    },
+    {
+      "id": "9",
+      "ar": "وقف",
+      "fr": "arrêt",
+      "emoji": "🛑"
+    },
+    {
+      "id": "10",
+      "ar": "سورة",
+      "fr": "sourate",
+      "emoji": "📿"
+    },
+    {
+      "id": "11",
+      "ar": "حوت",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "12",
+      "ar": "دودة",
+      "fr": "ver",
+      "emoji": "🐛"
+    },
+    {
+      "id": "13",
+      "ar": "أيوب",
+      "fr": "Ayyoub (prénom)",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "لَوِّنِ الحرفَ (و) بالأحمر في كلِّ كلمةٍ من الكلمات التالية.",
+      "voix_m": "arabe_niveau2_04_2_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مرور",
+      "voix_m": "arabe_niveau2_04_2_p2_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "صور",
+      "voix_m": "arabe_niveau2_04_2_p2_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "روى",
+      "voix_m": "arabe_niveau2_04_2_p2_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سرور",
+      "voix_m": "arabe_niveau2_04_2_p2_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "حلو",
+      "voix_m": "arabe_niveau2_04_2_p2_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "وصف",
+      "voix_m": "arabe_niveau2_04_2_p2_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "صفوف",
+      "voix_m": "arabe_niveau2_04_2_p2_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خوف",
+      "voix_m": "arabe_niveau2_04_2_p2_8_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "وقف",
+      "voix_m": "arabe_niveau2_04_2_p2_9_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "سورة",
+      "voix_m": "arabe_niveau2_04_2_p2_10_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_04_2_p2_11_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "دودة",
+      "voix_m": "arabe_niveau2_04_2_p2_12_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "أيوب",
+      "voix_m": "arabe_niveau2_04_2_p2_13_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p2_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:42:55.081641",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 14
+  }
+}

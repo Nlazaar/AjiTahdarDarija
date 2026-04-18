@@ -1,0 +1,246 @@
+{
+  "page_nb": 27,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre",
+    "ar": "أَلوِّنُ الحرف"
+  },
+  "enonce": {
+    "fr": "Entoure toutes les lettres أ parmi les autres lettres",
+    "ar": "أَحِط بِدائرة جميع حروف الألف بين الحروف الأخرى"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أ",
+      "fr": "alif (rouge - modèle)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "2",
+      "ar": "س",
+      "fr": "sin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "ب",
+      "fr": "ba",
+      "emoji": "✏️"
+    },
+    {
+      "id": "5",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "✏️"
+    },
+    {
+      "id": "6",
+      "ar": "ر",
+      "fr": "ra",
+      "emoji": "✏️"
+    },
+    {
+      "id": "7",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "✏️"
+    },
+    {
+      "id": "8",
+      "ar": "س",
+      "fr": "sin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "9",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": "✏️"
+    },
+    {
+      "id": "10",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "✏️"
+    },
+    {
+      "id": "11",
+      "ar": "غ",
+      "fr": "ghayn",
+      "emoji": "✏️"
+    },
+    {
+      "id": "12",
+      "ar": "ع",
+      "fr": "ayn",
+      "emoji": "✏️"
+    },
+    {
+      "id": "13",
+      "ar": "ق",
+      "fr": "qaf",
+      "emoji": "✏️"
+    },
+    {
+      "id": "14",
+      "ar": "ي",
+      "fr": "ya",
+      "emoji": "✏️"
+    },
+    {
+      "id": "15",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "✏️"
+    },
+    {
+      "id": "16",
+      "ar": "ز",
+      "fr": "zayn",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p27_consigne",
+      "texte_ar": "أَحِط بِدائرة جميع حروف الألف بين الحروف الأخرى",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "غ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "أ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ز",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p27_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p27_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:28:24.964637",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 17
+  }
+}

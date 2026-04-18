@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Les animaux de la chanson",
+    "ar": "أَلْصَق الحَيَوانات"
+  },
+  "enonce": {
+    "fr": "Je colle les animaux de la chanson à l'intérieur du carré et les autres à l'extérieur",
+    "ar": "أَلْصَق الحَيَوانات الّتي في الأغنية داخل المُرَبَّع و أَلْصَق الحَيَوانات الّتي ليست في الأغنية خارج المُرَبَّع"
+  },
+  "elements": [
+    {
+      "id": "kharouf",
+      "ar": "خَرُوفٌ",
+      "fr": "Mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "baqara",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "khanzir",
+      "ar": "خِنْزِيرٌ",
+      "fr": "Cochon",
+      "emoji": "🐷"
+    },
+    {
+      "id": "dajaja",
+      "ar": "دَجَاجَةٌ",
+      "fr": "Poule",
+      "emoji": "🐔"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَلْصَق الحَيَوانات الّتي في الأغنية داخل المُرَبَّع و أَلْصَق الحَيَوانات الّتي ليست في الأغنية خارج المُرَبَّع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p6_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kharouf",
+      "texte_ar": "خَرُوفٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p6_kharouf_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p6_kharouf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baqara",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p6_baqara_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p6_baqara_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_khanzir",
+      "texte_ar": "خِنْزِيرٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p6_khanzir_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p6_khanzir_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dajaja",
+      "texte_ar": "دَجَاجَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p6_dajaja_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p6_dajaja_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:29:29.858705",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 5
+  }
+}

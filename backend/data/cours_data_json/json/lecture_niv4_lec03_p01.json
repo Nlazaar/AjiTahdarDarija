@@ -1,0 +1,116 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Qui suis-je ? Le clown",
+    "ar": "مَنْ أَنَا ؟"
+  },
+  "enonce": {
+    "fr": "Lis le texte puis mets une croix dans les bonnes cases : Qui parle dans le texte ? Qui aime-t-il ?",
+    "ar": "أَضَعُ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَة - مَنِ الَّذِي يَتَكَلَّمُ فِي النَّصِّ ؟ مَنْ يُحِبُّ ؟"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "الطَّبِيبُ",
+      "fr": "Le médecin",
+      "emoji": "🩺"
+    },
+    {
+      "id": "2",
+      "ar": "الْمُهَرِّجُ",
+      "fr": "Le clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "3",
+      "ar": "الْمُعَلِّمُ",
+      "fr": "Le professeur",
+      "emoji": "👨‍🏫"
+    },
+    {
+      "id": "4",
+      "ar": "الْكِبَارَ",
+      "fr": "Les grands",
+      "emoji": "🧑"
+    },
+    {
+      "id": "5",
+      "ar": "الْحَيَوَانَاتِ",
+      "fr": "Les animaux",
+      "emoji": "🐾"
+    },
+    {
+      "id": "6",
+      "ar": "الْأَطْفَالَ",
+      "fr": "Les enfants",
+      "emoji": "👧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَضَعُ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَة - مَنِ الَّذِي يَتَكَلَّمُ فِي النَّصِّ ؟ مَنْ يُحِبُّ ؟",
+      "voix_m": "lecture_niv4_lec03_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "الطَّبِيبُ",
+      "voix_m": "lecture_niv4_lec03_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "الْمُهَرِّجُ",
+      "voix_m": "lecture_niv4_lec03_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "الْمُعَلِّمُ",
+      "voix_m": "lecture_niv4_lec03_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "الْكِبَارَ",
+      "voix_m": "lecture_niv4_lec03_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "الْحَيَوَانَاتِ",
+      "voix_m": "lecture_niv4_lec03_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "الْأَطْفَالَ",
+      "voix_m": "lecture_niv4_lec03_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p1_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:38:05.949914",
+    "niveau": 4,
+    "lecon": 3,
+    "nom_pdf": "lecture_niv4_lec03",
+    "bucket_audio": "audio-lessons/niveau4/lecon03/",
+    "nb_audio_assets": 7
+  }
+}

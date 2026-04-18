@@ -1,0 +1,77 @@
+{
+  "page_nb": 38,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec tanwine fatHa",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ المُنَوَّن بِالْفَتْح"
+  },
+  "enonce": {
+    "fr": "Entoure dans ces mots les lettres qui ont le tanwine avec fatHa (ً)",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُنَوَّنَ بِالْفَتْحِ فِي هَذِهِ الْكَلِمَاتِ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "تَقْرَأُ زَيْنَبُ كِتَابًا",
+      "fr": "Zaynab lit un livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "يَصْرُخُ الْوَلَدُ صُرَاخًا شَدِيدًا",
+      "fr": "Le garçon crie très fort",
+      "emoji": "😱"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "تَأْكُلُ مَرْيَمُ طَعَامًا لَذِيذًا",
+      "fr": "Maryam mange un repas délicieux",
+      "emoji": "🍜"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p38_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُنَوَّنَ بِالْفَتْحِ فِي هَذِهِ الْكَلِمَاتِ",
+      "voix_m": "livre_arabe_niveau3_p38_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p38_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "تَقْرَأُ زَيْنَبُ كِتَابًا",
+      "voix_m": "livre_arabe_niveau3_p38_phrase_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p38_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "يَصْرُخُ الْوَلَدُ صُرَاخًا شَدِيدًا",
+      "voix_m": "livre_arabe_niveau3_p38_phrase_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p38_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "تَأْكُلُ مَرْيَمُ طَعَامًا لَذِيذًا",
+      "voix_m": "livre_arabe_niveau3_p38_phrase_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p38_phrase_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:02:00.897710",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

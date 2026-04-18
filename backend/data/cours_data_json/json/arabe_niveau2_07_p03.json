@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحَرْفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ب (ba) dans chacun des mots ci-dessous",
+    "ar": "لَوِّنِ الحَرْفَ بَاء فِي كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ التَّالِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بُلْبُل",
+      "fr": "rossignol",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "بَطَل",
+      "fr": "héros",
+      "emoji": "🦸"
+    },
+    {
+      "id": "3",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "4",
+      "ar": "بَاب",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "5",
+      "ar": "سَبِيل",
+      "fr": "chemin/fontaine",
+      "emoji": "🛤️"
+    },
+    {
+      "id": "6",
+      "ar": "تَاب",
+      "fr": "il s'est repenti",
+      "emoji": "🤲"
+    },
+    {
+      "id": "7",
+      "ar": "بَقَرَة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "8",
+      "ar": "بِئْر",
+      "fr": "puits",
+      "emoji": "🪣"
+    },
+    {
+      "id": "9",
+      "ar": "بِسَاط",
+      "fr": "tapis",
+      "emoji": "🪄"
+    },
+    {
+      "id": "10",
+      "ar": "بَيْت",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "11",
+      "ar": "ثَعْلَب",
+      "fr": "renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "12",
+      "ar": "إِبْرَة",
+      "fr": "aiguille",
+      "emoji": "🪡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "لَوِّنِ الحَرْفَ بَاء فِي كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ التَّالِيَةِ",
+      "voix_m": "arabe_niveau2_07_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بُلْبُل",
+      "voix_m": "arabe_niveau2_07_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَطَل",
+      "voix_m": "arabe_niveau2_07_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بَطَّة",
+      "voix_m": "arabe_niveau2_07_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَاب",
+      "voix_m": "arabe_niveau2_07_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سَبِيل",
+      "voix_m": "arabe_niveau2_07_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تَاب",
+      "voix_m": "arabe_niveau2_07_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَقَرَة",
+      "voix_m": "arabe_niveau2_07_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بِئْر",
+      "voix_m": "arabe_niveau2_07_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "بِسَاط",
+      "voix_m": "arabe_niveau2_07_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "بَيْت",
+      "voix_m": "arabe_niveau2_07_p3_10_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ثَعْلَب",
+      "voix_m": "arabe_niveau2_07_p3_11_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "إِبْرَة",
+      "voix_m": "arabe_niveau2_07_p3_12_m.mp3",
+      "voix_f": "arabe_niveau2_07_p3_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:50:14.910208",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 13
+  }
+}

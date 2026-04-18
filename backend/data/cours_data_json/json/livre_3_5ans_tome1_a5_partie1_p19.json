@@ -1,0 +1,90 @@
+{
+  "page_nb": 19,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure en rouge le tigre le plus grand et en jaune le plus petit",
+    "ar": "أُحيطُ بِخَطٍّ مُغْلَقٍ النَّمِرَ الأكْبَرَ بِالأحْمَرِ وَ الأصْغَرَ بِالأصْفَرِ"
+  },
+  "enonce": {
+    "fr": "Entoure en rouge le tigre le plus grand et en jaune le tigre le plus petit",
+    "ar": "أُحيطُ بِخَطٍّ مُغْلَقٍ النَّمِرَ الأكْبَرَ بِالأحْمَرِ وَ الأصْغَرَ بِالأصْفَرِ"
+  },
+  "elements": [
+    {
+      "id": "tigre_petit_1",
+      "ar": "نَمِرٌ صَغِيرٌ",
+      "fr": "petit tigre (en haut)",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_moyen",
+      "ar": "نَمِرٌ مُتَوَسِّطٌ",
+      "fr": "tigre moyen",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_grand",
+      "ar": "نَمِرٌ كَبِيرٌ",
+      "fr": "grand tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_petit_2",
+      "ar": "نَمِرٌ صَغِيرٌ جِدًّا",
+      "fr": "très petit tigre (en bas)",
+      "emoji": "🐯"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p19_consigne",
+      "texte_ar": "أُحيطُ بِخَطٍّ مُغْلَقٍ النَّمِرَ الأكْبَرَ بِالأحْمَرِ وَ الأصْغَرَ بِالأصْفَرِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p19_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p19_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_petit_1",
+      "texte_ar": "نَمِرٌ صَغِيرٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p19_tigre_petit_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p19_tigre_petit_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_moyen",
+      "texte_ar": "نَمِرٌ مُتَوَسِّطٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p19_tigre_moyen_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p19_tigre_moyen_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_grand",
+      "texte_ar": "نَمِرٌ كَبِيرٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p19_tigre_grand_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p19_tigre_grand_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_petit_2",
+      "texte_ar": "نَمِرٌ صَغِيرٌ جِدًّا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p19_tigre_petit_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p19_tigre_petit_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:13.027870",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure les lettres du mot",
+    "ar": "أُحِيطُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Entoure les lettres qui composent le mot 'سروال' (pantalon) parmi toutes les lettres proposées",
+    "ar": "أُحِيطُ الحروف التي تُكوِّن كلمة سروال من بين الحروف المعروضة"
+  },
+  "elements": [
+    {
+      "id": "mot",
+      "ar": "سروال",
+      "fr": "pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "lettre_س",
+      "ar": "سـ",
+      "fr": "lettre س",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ر",
+      "ar": "ر",
+      "fr": "lettre ر",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_و",
+      "ar": "و",
+      "fr": "lettre و",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ا",
+      "ar": "ا",
+      "fr": "lettre ا",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ل",
+      "ar": "ل",
+      "fr": "lettre ل",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ش",
+      "ar": "شـ",
+      "fr": "lettre ش (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ص",
+      "ar": "صـ",
+      "fr": "lettre ص (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ز",
+      "ar": "ز",
+      "fr": "lettre ز (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_د",
+      "ar": "د",
+      "fr": "lettre د (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ب",
+      "ar": "بـ",
+      "fr": "lettre ب (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ن",
+      "ar": "ن",
+      "fr": "lettre ن (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ت",
+      "ar": "تـ",
+      "fr": "lettre ت (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ى",
+      "ar": "ى",
+      "fr": "lettre ى (distraction)",
+      "emoji": ""
+    },
+    {
+      "id": "lettre_ح",
+      "ar": "حـ",
+      "fr": "lettre ح (distraction)",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أُحِيطُ الحروف التي تُكوِّن كلمة سروال من بين الحروف المعروضة",
+      "voix_m": "arabe_niveau2_03_2_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot",
+      "texte_ar": "سروال",
+      "voix_m": "arabe_niveau2_03_2_p5_mot_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_mot_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_س",
+      "texte_ar": "سـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_س_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_س_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ر",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ر_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ر_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_و",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_و_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_و_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ا",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ا_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ا_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ل",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ل_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ل_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ش",
+      "texte_ar": "شـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ش_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ش_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ص",
+      "texte_ar": "صـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ص_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ص_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ز",
+      "texte_ar": "ز",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ز_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ز_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_د",
+      "texte_ar": "د",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_د_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_د_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ب",
+      "texte_ar": "بـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ب_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ب_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ن",
+      "texte_ar": "ن",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ن_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ن_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ت",
+      "texte_ar": "تـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ت_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ت_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ى",
+      "texte_ar": "ى",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ى_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ى_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ح",
+      "texte_ar": "حـ",
+      "voix_m": "arabe_niveau2_03_2_p5_lettre_ح_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p5_lettre_ح_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:40:58.745864",
+    "niveau": 2,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau2_03_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon12/",
+    "nb_audio_assets": 16
+  }
+}

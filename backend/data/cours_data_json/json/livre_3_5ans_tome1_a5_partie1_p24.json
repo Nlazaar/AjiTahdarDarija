@@ -1,0 +1,155 @@
+{
+  "page_nb": 24,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je cherche la lettre Raa et je l'entoure",
+    "ar": "أَبْحَثُ عَنْ حَرْفِ الرَّاءِ وَ أَلْوِّنُهُ"
+  },
+  "enonce": {
+    "fr": "Cherche la lettre ر parmi toutes les lettres et entoure-la",
+    "ar": "ابحث عن حرف الراء بين الحروف وأحط به دائرة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ر",
+      "fr": "Raa",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "ا",
+      "fr": "Alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "ز",
+      "fr": "Zayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ح",
+      "fr": "Haa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "ع",
+      "fr": "Ayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ى",
+      "fr": "Yaa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "ن",
+      "fr": "Noun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p24_consigne",
+      "texte_ar": "ابحث عن حرف الراء بين الحروف وأحط به دائرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ز",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ى",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p24_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p24_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:57.141161",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 10
+  }
+}

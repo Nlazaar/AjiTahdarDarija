@@ -1,0 +1,129 @@
+{
+  "page_nb": 27,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Compter jusqu'à 5",
+    "ar": "أكمّل العناصر للحصول على خمسة"
+  },
+  "enonce": {
+    "fr": "Complète les éléments ou barre-en pour obtenir cinq éléments dans chaque groupe, puis écris le chiffre 5",
+    "ar": "أكمّل العناصر أو أشطب منها لأحصل على خمسة عناصر في كلّ مجموعة"
+  },
+  "elements": [
+    {
+      "id": "groupe1",
+      "ar": "سهمان (٢)",
+      "fr": "2 flèches → compléter jusqu'à 5",
+      "emoji": "➡️"
+    },
+    {
+      "id": "groupe2",
+      "ar": "علامتا خطأ (٢)",
+      "fr": "2 croix X → compléter jusqu'à 5",
+      "emoji": "❌"
+    },
+    {
+      "id": "groupe3",
+      "ar": "دوائر (٧)",
+      "fr": "7 cercles → barrer pour obtenir 5",
+      "emoji": "⭕"
+    },
+    {
+      "id": "groupe4",
+      "ar": "مثلثات (٣)",
+      "fr": "3 triangles → compléter jusqu'à 5",
+      "emoji": "🔺"
+    },
+    {
+      "id": "groupe5",
+      "ar": "وجوه مبتسمة (١١)",
+      "fr": "11 smileys → barrer pour obtenir 5",
+      "emoji": "😊"
+    },
+    {
+      "id": "groupe6",
+      "ar": "أهلّة (٧)",
+      "fr": "7 croissants → barrer pour obtenir 5",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ecriture",
+      "ar": "٥",
+      "fr": "Écrire le chiffre 5 en suivant le modèle",
+      "emoji": "5️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p27_consigne",
+      "texte_ar": "أكمّل العناصر أو أشطب منها لأحصل على خمسة عناصر في كلّ مجموعة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1",
+      "texte_ar": "سهمان (٢)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2",
+      "texte_ar": "علامتا خطأ (٢)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3",
+      "texte_ar": "دوائر (٧)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4",
+      "texte_ar": "مثلثات (٣)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe5",
+      "texte_ar": "وجوه مبتسمة (١١)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe6",
+      "texte_ar": "أهلّة (٧)",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_groupe6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_groupe6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ecriture",
+      "texte_ar": "٥",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p27_ecriture_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p27_ecriture_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:23:20.237268",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 8
+  }
+}

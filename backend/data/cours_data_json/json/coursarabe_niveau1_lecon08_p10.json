@@ -1,0 +1,103 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie : J'ai combien de ...",
+    "ar": "أَرْبِطُ : كَم عِندي مِن ... ؟"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image correspondante et indique combien tu en as (1 ou 2).",
+    "ar": "اِرْبِطْ كُلَّ كَلِمَةٍ بِالصُّورَةِ المُنَاسِبَةِ وَحَدِّدْ كَم عِندَكَ مِنْهَا."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَم",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "2",
+      "ar": "عَيْن",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "3",
+      "ar": "رَأْس",
+      "fr": "tête",
+      "emoji": "🗣️"
+    },
+    {
+      "id": "4",
+      "ar": "يَد",
+      "fr": "main",
+      "emoji": "✋"
+    },
+    {
+      "id": "5",
+      "ar": "أُنْف",
+      "fr": "nez",
+      "emoji": "👃"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon08",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "اِرْبِطْ كُلَّ كَلِمَةٍ بِالصُّورَةِ المُنَاسِبَةِ وَحَدِّدْ كَم عِندَكَ مِنْهَا.",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَم",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "عَيْن",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رَأْس",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "يَد",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُنْف",
+      "voix_m": "coursarabe_niveau1_lecon08_p10_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p10_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:20:20.236381",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "coursarabe_niveau1_lecon08",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 6
+  }
+}

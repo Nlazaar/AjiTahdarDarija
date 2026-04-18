@@ -1,6 +1,7 @@
-import { Controller, Get, Post, Body, Param, Request, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Delete, Body, Param, Query, Request, UseGuards } from '@nestjs/common';
 import { LessonsService } from './lessons.service';
 import { JwtGuard } from '../auth/guards/jwt.guard';
+import { AdminGuard } from '../../common/guards/admin.guard';
 
 @Controller('lessons')
 export class LessonsController {
@@ -9,6 +10,16 @@ export class LessonsController {
   @Get()
   findAll() {
     return this.lessonsService.findAll();
+  }
+
+  @Get('meta/languages')
+  listLanguages() {
+    return this.lessonsService.listLanguages();
+  }
+
+  @Get('meta/modules')
+  listModulesForAdmin() {
+    return this.lessonsService.listModulesForAdmin();
   }
 
   @Get('slug/:slug')
@@ -35,5 +46,27 @@ export class LessonsController {
   @Post(':id/submit')
   submit(@Param('id') id: string, @Request() req: any, @Body() body: any) {
     return this.lessonsService.submit(id, req.user.id, body.answers ?? []);
+  }
+
+  // ── Admin CRUD (header X-Admin-Token requis) ─────────────────────────────
+
+  @UseGuards(AdminGuard)
+  @Post()
+  create(@Body() body: any) {
+    return this.lessonsService.create(body);
+  }
+
+  @UseGuards(AdminGuard)
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() body: any) {
+    return this.lessonsService.update(id, body);
+  }
+
+  @UseGuards(AdminGuard)
+  @Delete(':id')
+  remove(@Param('id') id: string, @Query('hard') hard?: string) {
+    return hard === 'true'
+      ? this.lessonsService.hardDelete(id)
+      : this.lessonsService.softDelete(id);
   }
 }

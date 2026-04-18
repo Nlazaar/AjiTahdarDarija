@@ -1,0 +1,233 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ فِي الْكَلِمَات"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre ج (jim) chaque fois qu'elle apparaît dans les mots suivants",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق حَرْفَ الجِيمِ فِي الْكَلِمَات التَّالِيَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَاجُ",
+      "fr": "couronne",
+      "emoji": "👑"
+    },
+    {
+      "id": "2",
+      "ar": "نُجُومُ",
+      "fr": "étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "3",
+      "ar": "تَاجِرُ",
+      "fr": "marchand",
+      "emoji": "🏪"
+    },
+    {
+      "id": "4",
+      "ar": "جَمْرُ",
+      "fr": "braise",
+      "emoji": "🔥"
+    },
+    {
+      "id": "5",
+      "ar": "سِنْجَابُ",
+      "fr": "écureuil",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "6",
+      "ar": "حَجُّ",
+      "fr": "pèlerinage",
+      "emoji": "🕋"
+    },
+    {
+      "id": "7",
+      "ar": "رَجَاء",
+      "fr": "espoir",
+      "emoji": "🌟"
+    },
+    {
+      "id": "8",
+      "ar": "جَاءَ",
+      "fr": "il est venu",
+      "emoji": "🚶"
+    },
+    {
+      "id": "9",
+      "ar": "نَجَاةٌ",
+      "fr": "salut/sauvetage",
+      "emoji": "🛟"
+    },
+    {
+      "id": "10",
+      "ar": "خَرَجَ",
+      "fr": "il est sorti",
+      "emoji": "🚪"
+    },
+    {
+      "id": "11",
+      "ar": "جَمَلٌ",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "12",
+      "ar": "ثَلْجُ",
+      "fr": "neige",
+      "emoji": "❄️"
+    },
+    {
+      "id": "13",
+      "ar": "مُثَلَّجَاتٌ",
+      "fr": "glaces/sorbets",
+      "emoji": "🍦"
+    },
+    {
+      "id": "14",
+      "ar": "جَمِيلٌ",
+      "fr": "beau",
+      "emoji": "😍"
+    },
+    {
+      "id": "15",
+      "ar": "هَاجَ",
+      "fr": "il s'est agité",
+      "emoji": "😤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec06",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغْلَق حَرْفَ الجِيمِ فِي الْكَلِمَات التَّالِيَة",
+      "voix_m": "arabe_niveau3_lec06_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَاجُ",
+      "voix_m": "arabe_niveau3_lec06_p5_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نُجُومُ",
+      "voix_m": "arabe_niveau3_lec06_p5_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تَاجِرُ",
+      "voix_m": "arabe_niveau3_lec06_p5_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "جَمْرُ",
+      "voix_m": "arabe_niveau3_lec06_p5_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سِنْجَابُ",
+      "voix_m": "arabe_niveau3_lec06_p5_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حَجُّ",
+      "voix_m": "arabe_niveau3_lec06_p5_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "رَجَاء",
+      "voix_m": "arabe_niveau3_lec06_p5_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "جَاءَ",
+      "voix_m": "arabe_niveau3_lec06_p5_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "نَجَاةٌ",
+      "voix_m": "arabe_niveau3_lec06_p5_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "خَرَجَ",
+      "voix_m": "arabe_niveau3_lec06_p5_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "arabe_niveau3_lec06_p5_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ثَلْجُ",
+      "voix_m": "arabe_niveau3_lec06_p5_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "مُثَلَّجَاتٌ",
+      "voix_m": "arabe_niveau3_lec06_p5_13_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "جَمِيلٌ",
+      "voix_m": "arabe_niveau3_lec06_p5_14_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "هَاجَ",
+      "voix_m": "arabe_niveau3_lec06_p5_15_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p5_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:33:04.354055",
+    "niveau": 3,
+    "lecon": 6,
+    "nom_pdf": "arabe_niveau3_lec06",
+    "bucket_audio": "audio-lessons/niveau3/lecon06/",
+    "nb_audio_assets": 16
+  }
+}

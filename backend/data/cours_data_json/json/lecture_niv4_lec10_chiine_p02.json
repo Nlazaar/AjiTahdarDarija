@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de la lettre شين, et compléter les mots avec la bonne forme de شين",
+  "titre": {
+    "fr": "La lettre Shîn (ش) - Lecture, écriture et complétion",
+    "ar": "حرف الشين - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre شين. Exercice 5 : Je complète avec la forme qui convient de شين.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الشين. تمرين 5: أكملُ بما يُناسب."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "شَايٌ",
+      "fr": "Thé",
+      "emoji": "🍵"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "شُبَّاكٌ",
+      "fr": "Fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "مِشْمِشٌ",
+      "fr": "Abricot",
+      "emoji": "🍑"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "خَشَبَةٌ",
+      "fr": "Planche en bois",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "مِنْشَفَةٌ",
+      "fr": "Serviette",
+      "emoji": "🧣"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "مُشْطٌ",
+      "fr": "Peigne",
+      "emoji": "🪮"
+    },
+    {
+      "id": "ex4_lettre",
+      "ar": "شـ / ـشـ / ـش",
+      "fr": "Lettre Shîn et ses formes",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "شَهِيقٌ",
+      "fr": "Inspiration",
+      "emoji": "💨"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "شَعْرٌ",
+      "fr": "Cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "شَاحِنَةٌ",
+      "fr": "Camion",
+      "emoji": "🚛"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "كَبْشٌ",
+      "fr": "Mouton",
+      "emoji": "🐏"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "شَبَكَةٌ",
+      "fr": "Filet",
+      "emoji": "🕸️"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "مِنْشَارٌ",
+      "fr": "Scie",
+      "emoji": "🪚"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "عُشٌّ",
+      "fr": "Nid",
+      "emoji": "🪹"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "قِرْشٌ",
+      "fr": "Requin",
+      "emoji": "🦈"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "شَوْكَةٌ",
+      "fr": "Fourchette",
+      "emoji": "🍴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec10_chiine",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الشين. تمرين 5: أكملُ بما يُناسب.",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "شَايٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "شُبَّاكٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "مِشْمِشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "خَشَبَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "مِنْشَفَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "مُشْطٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_lettre",
+      "texte_ar": "شـ / ـشـ / ـش",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex4_lettre_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex4_lettre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "شَهِيقٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "شَاحِنَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "كَبْشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "شَبَكَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "مِنْشَارٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "عُشٌّ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "قِرْشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "شَوْكَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:08:11.531674",
+    "niveau": 4,
+    "lecon": 10,
+    "nom_pdf": "lecture_niv4_lec10_chiine",
+    "bucket_audio": "audio-lessons/niveau4/lecon10/",
+    "nb_audio_assets": 17
+  }
+}

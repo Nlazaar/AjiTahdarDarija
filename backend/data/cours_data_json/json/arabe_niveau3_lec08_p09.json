@@ -1,0 +1,116 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète ce qui manque au mot",
+    "ar": "أكمِّل مَا يَنْقُصُ الْكَلِمَةَ"
+  },
+  "enonce": {
+    "fr": "Regarde l'image et complète le mot en choisissant la bonne forme parmi les propositions",
+    "ar": "اُنْظُرْ إلى الصورة وأكمِّل الكلمة باختيار الشكل الصحيح"
+  },
+  "elements": [
+    {
+      "id": "souris",
+      "ar": "فَأْرٌ",
+      "fr": "souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "oreille",
+      "ar": "أُذُنٌ",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "lion",
+      "ar": "أَسَدٌ",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "confiture",
+      "ar": "مَعْجُونٌ",
+      "fr": "confiture/pâte",
+      "emoji": "🫙"
+    },
+    {
+      "id": "autruche",
+      "ar": "نَعَامَةٌ",
+      "fr": "autruche",
+      "emoji": "🦤"
+    },
+    {
+      "id": "raisin",
+      "ar": "عِنَبٌ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec08",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اُنْظُرْ إلى الصورة وأكمِّل الكلمة باختيار الشكل الصحيح",
+      "voix_m": "arabe_niveau3_lec08_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_souris",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_souris_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_souris_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oreille",
+      "texte_ar": "أُذُنٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_oreille_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_oreille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lion",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_lion_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_lion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_confiture",
+      "texte_ar": "مَعْجُونٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_confiture_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_confiture_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_autruche",
+      "texte_ar": "نَعَامَةٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_autruche_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_autruche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_raisin",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "arabe_niveau3_lec08_p9_raisin_m.mp3",
+      "voix_f": "arabe_niveau3_lec08_p9_raisin_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:37:36.168919",
+    "niveau": 3,
+    "lecon": 8,
+    "nom_pdf": "arabe_niveau3_lec08",
+    "bucket_audio": "audio-lessons/niveau3/lecon08/",
+    "nb_audio_assets": 7
+  }
+}

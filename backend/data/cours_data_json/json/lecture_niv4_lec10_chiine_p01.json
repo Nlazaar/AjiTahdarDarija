@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ش avec vocabulaire illustré, phrase exemple, exercice d'écoute et exercice d'identification visuelle de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Shin (ش)",
+    "ar": "حَرْفُ الشِّين"
+  },
+  "enonce": {
+    "fr": "Découvrons la lettre Shin (ش) avec ses différentes voyelles, des mots illustrés, puis : 1) J'entends ou je n'entends pas la lettre, 2) J'entoure la lettre dans les mots",
+    "ar": "نَتَعَلَّمُ حَرْفَ الشِّين مَعَ حَرَكَاتِهِ وَكَلِمَاتٍ مُصَوَّرَةٍ، ثُمَّ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "شِرَاعٌ",
+      "fr": "voile (de bateau)",
+      "emoji": "⛵"
+    },
+    {
+      "id": "mot_2",
+      "ar": "شُمُوعٌ",
+      "fr": "bougies",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "mot_3",
+      "ar": "شَمْعَةٌ",
+      "fr": "bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "mot_4",
+      "ar": "طَبَاشِيرٌ",
+      "fr": "craies",
+      "emoji": "🖍️"
+    },
+    {
+      "id": "mot_5",
+      "ar": "خُشُوعٌ",
+      "fr": "recueillement",
+      "emoji": "🤲"
+    },
+    {
+      "id": "mot_6",
+      "ar": "فُرْشَاةُ أَسْنَانٍ",
+      "fr": "brosse à dents",
+      "emoji": "🪥"
+    },
+    {
+      "id": "phrase",
+      "ar": "تَشْرَبُ شَيْمَاءُ عَصِيرًا",
+      "fr": "Chaïmaa boit un jus",
+      "emoji": "🧃"
+    },
+    {
+      "id": "ex1_img1",
+      "ar": "شَجَرَةٌ",
+      "fr": "arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex1_img2",
+      "ar": "قِرْشٌ",
+      "fr": "requin",
+      "emoji": "🦈"
+    },
+    {
+      "id": "ex1_img3",
+      "ar": "سِنْجَابٌ",
+      "fr": "écureuil",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "ex1_img4",
+      "ar": "شَمْسٌ",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "ex1_img5",
+      "ar": "جِسْرٌ",
+      "fr": "pont",
+      "emoji": "🌉"
+    },
+    {
+      "id": "ex2_mot1",
+      "ar": "فِرَاشٌ",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "ex2_mot2",
+      "ar": "خَيْشُومٌ",
+      "fr": "narine",
+      "emoji": "👃"
+    },
+    {
+      "id": "ex2_mot3",
+      "ar": "يَنْسَى",
+      "fr": "il oublie",
+      "emoji": "🤔"
+    },
+    {
+      "id": "ex2_mot4",
+      "ar": "يَمْشِي",
+      "fr": "il marche",
+      "emoji": "🚶"
+    },
+    {
+      "id": "ex2_mot5",
+      "ar": "يَخْشَى",
+      "fr": "il craint",
+      "emoji": "😨"
+    },
+    {
+      "id": "ex2_mot6",
+      "ar": "رَشَّ",
+      "fr": "il a arrosé",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex2_mot7",
+      "ar": "سَأَلَ",
+      "fr": "il a demandé",
+      "emoji": "❓"
+    },
+    {
+      "id": "ex2_mot8",
+      "ar": "يَرْثِي",
+      "fr": "il compatit",
+      "emoji": "💙"
+    },
+    {
+      "id": "ex2_mot9",
+      "ar": "بُشْرَى",
+      "fr": "bonne nouvelle",
+      "emoji": "🎉"
+    },
+    {
+      "id": "ex2_mot10",
+      "ar": "شَيْخٌ",
+      "fr": "cheikh",
+      "emoji": "👴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec10_chiine",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَتَعَلَّمُ حَرْفَ الشِّين مَعَ حَرَكَاتِهِ وَكَلِمَاتٍ مُصَوَّرَةٍ، ثُمَّ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "شِرَاعٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "شُمُوعٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "طَبَاشِيرٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "خُشُوعٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "فُرْشَاةُ أَسْنَانٍ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "تَشْرَبُ شَيْمَاءُ عَصِيرًا",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img1",
+      "texte_ar": "شَجَرَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex1_img1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex1_img1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img2",
+      "texte_ar": "قِرْشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex1_img2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex1_img2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img3",
+      "texte_ar": "سِنْجَابٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex1_img3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex1_img3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img4",
+      "texte_ar": "شَمْسٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex1_img4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex1_img4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img5",
+      "texte_ar": "جِسْرٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex1_img5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex1_img5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot1",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot2",
+      "texte_ar": "خَيْشُومٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot3",
+      "texte_ar": "يَنْسَى",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot4",
+      "texte_ar": "يَمْشِي",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot5",
+      "texte_ar": "يَخْشَى",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot6",
+      "texte_ar": "رَشَّ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot7",
+      "texte_ar": "سَأَلَ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot7_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot8",
+      "texte_ar": "يَرْثِي",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot8_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot9",
+      "texte_ar": "بُشْرَى",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot9_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot10",
+      "texte_ar": "شَيْخٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p1_ex2_mot10_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p1_ex2_mot10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:07:29.015367",
+    "niveau": 4,
+    "lecon": 10,
+    "nom_pdf": "lecture_niv4_lec10_chiine",
+    "bucket_audio": "audio-lessons/niveau4/lecon10/",
+    "nb_audio_assets": 23
+  }
+}

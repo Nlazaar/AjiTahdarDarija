@@ -1,0 +1,194 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Barre les erreurs",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Barre les mots qui sont écrits différemment du mot modèle encadré",
+    "ar": "أَشْطُبُ الكَلِمَاتِ المَكْتُوبَةَ بِشَكْلٍ مُخْتَلِفٍ عَنِ النَّمُوذَجِ"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (modèle)",
+      "emoji": "👗"
+    },
+    {
+      "id": "variante_1a",
+      "ar": "بُسْتَانٌ",
+      "fr": "jardin (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_1b",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "variante_1c",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "variante_1d",
+      "ar": "بُهْتَانٌ",
+      "fr": "mensonge (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_1e",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "modele_2",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (modèle)",
+      "emoji": "👟"
+    },
+    {
+      "id": "variante_2a",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "variante_2b",
+      "ar": "غِذَاءٌ",
+      "fr": "nourriture (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_2c",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "variante_2d",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "variante_2e",
+      "ar": "غَذَاءٌ",
+      "fr": "alimentation (erreur)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَشْطُبُ الكَلِمَاتِ المَكْتُوبَةَ بِشَكْلٍ مُخْتَلِفٍ عَنِ النَّمُوذَجِ",
+      "voix_m": "arabe_niveau2_03_1_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_modele_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1a",
+      "texte_ar": "بُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_1a_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1b",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_1b_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1c",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_1c_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1d",
+      "texte_ar": "بُهْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_1d_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_1d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1e",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_1e_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_1e_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_modele_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2a",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_2a_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2b",
+      "texte_ar": "غِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_2b_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2c",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_2c_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_2c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2d",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_2d_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_2d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2e",
+      "texte_ar": "غَذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p5_variante_2e_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p5_variante_2e_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:39:38.191786",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 13
+  }
+}

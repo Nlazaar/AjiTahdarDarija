@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Observe chaque groupe d'images ou de mots et barre celui qui est différent des autres.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ."
+  },
+  "elements": [
+    {
+      "id": "groupe1_images",
+      "ar": "دَجَاجَة",
+      "fr": "Poule (groupe d'images)",
+      "emoji": "🐔"
+    },
+    {
+      "id": "groupe2_images",
+      "ar": "سَيَّارَة",
+      "fr": "Voiture (groupe d'images)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "groupe1_mots_intrus",
+      "ar": "دَجَاحَة",
+      "fr": "Mot intrus (mal écrit) dans le groupe poule",
+      "emoji": "❌"
+    },
+    {
+      "id": "groupe2_mots_intrus",
+      "ar": "سَيَّازَة",
+      "fr": "Mot intrus (mal écrit) dans le groupe voiture",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec01",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ.",
+      "voix_m": "arabe_niveau3_lec01_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images",
+      "texte_ar": "دَجَاجَة",
+      "voix_m": "arabe_niveau3_lec01_p4_groupe1_images_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p4_groupe1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau3_lec01_p4_groupe2_images_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p4_groupe2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_mots_intrus",
+      "texte_ar": "دَجَاحَة",
+      "voix_m": "arabe_niveau3_lec01_p4_groupe1_mots_intrus_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p4_groupe1_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_mots_intrus",
+      "texte_ar": "سَيَّازَة",
+      "voix_m": "arabe_niveau3_lec01_p4_groupe2_mots_intrus_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p4_groupe2_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:25:16.779715",
+    "niveau": 3,
+    "lecon": 1,
+    "nom_pdf": "arabe_niveau3_lec01",
+    "bucket_audio": "audio-lessons/niveau3/lecon01/",
+    "nb_audio_assets": 5
+  }
+}

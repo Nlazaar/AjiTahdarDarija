@@ -1,0 +1,220 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Remise en ordre de lettres, complétion de mots avec images, complétion de phrases avec mots donnés",
+  "titre": {
+    "fr": "Exercices sur les lettres ش et س",
+    "ar": "تمارين على حرفَي الشين والسين"
+  },
+  "enonce": {
+    "fr": "1) Je remets les lettres dans l'ordre pour obtenir le mot. 2) Je complète puis je relie à l'image. 3) Je complète avec le mot qui convient. 4) Je complète la phrase par des mots de la liste.",
+    "ar": "١) أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٢) أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ. ٤) أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_mot1",
+      "ar": "خَشَب",
+      "fr": "bois",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "قِرْش",
+      "fr": "requin",
+      "emoji": "🦈"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "شَجَرَة",
+      "fr": "arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "رِيشَةٌ",
+      "fr": "plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "خُفَّاشٌ",
+      "fr": "chauve-souris",
+      "emoji": "🦇"
+    },
+    {
+      "id": "ex7_mot5",
+      "ar": "فَرَاشَةٌ",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "فُرْشَاةُ الْأَسْنَانِ",
+      "fr": "brosse à dents",
+      "emoji": "🪥"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "الْمُشْطُ",
+      "fr": "peigne",
+      "emoji": "💈"
+    },
+    {
+      "id": "ex9_mot1",
+      "ar": "أُخْتُهُ",
+      "fr": "sa sœur",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex9_mot2",
+      "ar": "كَسَرَ",
+      "fr": "a cassé",
+      "emoji": "💥"
+    },
+    {
+      "id": "ex9_mot3",
+      "ar": "الشُّبَّاكَ",
+      "fr": "la fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "ex9_mot4",
+      "ar": "غَضِبَتْ",
+      "fr": "s'est mise en colère",
+      "emoji": "😠"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec10_chiine",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "١) أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٢) أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ. ٤) أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "خَشَب",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "قِرْش",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "شَجَرَة",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "خُفَّاشٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot5",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex7_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex7_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "فُرْشَاةُ الْأَسْنَانِ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "الْمُشْطُ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_mot1",
+      "texte_ar": "أُخْتُهُ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex9_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex9_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_mot2",
+      "texte_ar": "كَسَرَ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex9_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex9_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_mot3",
+      "texte_ar": "الشُّبَّاكَ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex9_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex9_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_mot4",
+      "texte_ar": "غَضِبَتْ",
+      "voix_m": "lecture_niv4_lec10_chiine_p3_ex9_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_chiine_p3_ex9_mot4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:08:48.768253",
+    "niveau": 4,
+    "lecon": 10,
+    "nom_pdf": "lecture_niv4_lec10_chiine",
+    "bucket_audio": "audio-lessons/niveau4/lecon10/",
+    "nb_audio_assets": 15
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 85,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec prolongation kasra",
+    "ar": "أُحِيطُ بِخَطٍّ مُغَلَّق الحَرْفَ المَمْدُودَ بِالْكَسْر"
+  },
+  "enonce": {
+    "fr": "Dans chaque mot, entoure la lettre qui a une prolongation avec « kasra » (ي de prolongation)",
+    "ar": "أُحِيطُ بِخَطٍّ مُغَلَّق الحَرْفَ المَمْدُودَ بِالْكَسْرِ فِي هَذِهِ الْكَلِمَات"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "2",
+      "ar": "سَرِيرٌ",
+      "fr": "lit",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "3",
+      "ar": "حَدِيقَةٌ",
+      "fr": "jardin",
+      "emoji": "🌳"
+    },
+    {
+      "id": "4",
+      "ar": "دِلْفِينٌ",
+      "fr": "dauphin",
+      "emoji": "🐬"
+    },
+    {
+      "id": "5",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise",
+      "emoji": "👔"
+    },
+    {
+      "id": "6",
+      "ar": "رَضِيعٌ",
+      "fr": "bébé",
+      "emoji": "👶"
+    },
+    {
+      "id": "7",
+      "ar": "تَمْشِي",
+      "fr": "elle marche",
+      "emoji": "🚶‍♀️"
+    },
+    {
+      "id": "8",
+      "ar": "عَصِيرٌ",
+      "fr": "jus",
+      "emoji": "🧃"
+    },
+    {
+      "id": "9",
+      "ar": "يَجْرِي",
+      "fr": "il court",
+      "emoji": "🏃"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p85_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغَلَّق الحَرْفَ المَمْدُودَ بِالْكَسْرِ فِي هَذِهِ الْكَلِمَات",
+      "voix_m": "livre_arabe_niveau3_p85_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "livre_arabe_niveau3_p85_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَرِيرٌ",
+      "voix_m": "livre_arabe_niveau3_p85_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حَدِيقَةٌ",
+      "voix_m": "livre_arabe_niveau3_p85_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دِلْفِينٌ",
+      "voix_m": "livre_arabe_niveau3_p85_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "livre_arabe_niveau3_p85_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَضِيعٌ",
+      "voix_m": "livre_arabe_niveau3_p85_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "تَمْشِي",
+      "voix_m": "livre_arabe_niveau3_p85_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "livre_arabe_niveau3_p85_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "يَجْرِي",
+      "voix_m": "livre_arabe_niveau3_p85_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p85_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:11:36.060016",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

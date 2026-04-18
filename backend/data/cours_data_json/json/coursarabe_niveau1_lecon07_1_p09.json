@@ -1,0 +1,142 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Compter les images dans chaque case et entourer le chiffre correspondant parmi 4 propositions (1, 2, 3, 4)",
+  "titre": {
+    "fr": "Je compte et j'entoure le nombre",
+    "ar": "أَعُدُّ الأَشْكَالَ وَ أُحِيطُ الرَّقَمَ الْمُنَاسِب"
+  },
+  "enonce": {
+    "fr": "Compte les formes dans chaque case et entoure le bon nombre parmi les choix proposés.",
+    "ar": "أَعُدُّ الأَشْكَالَ فِي كُلِّ خَانَةٍ وَأُحِيطُ الرَّقَمَ الْمُنَاسِبَ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "كُرَة (١)",
+      "fr": "1 ballon de basket",
+      "emoji": "🏀"
+    },
+    {
+      "id": "2",
+      "ar": "نَحْلَة (٣)",
+      "fr": "3 abeilles",
+      "emoji": "🐝"
+    },
+    {
+      "id": "3",
+      "ar": "زَهْرَة (٤)",
+      "fr": "4 fleurs",
+      "emoji": "🌻"
+    },
+    {
+      "id": "4",
+      "ar": "غَزَال (٢)",
+      "fr": "2 biches",
+      "emoji": "🦌"
+    },
+    {
+      "id": "5",
+      "ar": "تُفَّاحَة (٣)",
+      "fr": "3 pommes",
+      "emoji": "🍎"
+    },
+    {
+      "id": "6",
+      "ar": "أَسَد (١)",
+      "fr": "1 lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "7",
+      "ar": "شَمْس (٢)",
+      "fr": "2 soleils",
+      "emoji": "☀️"
+    },
+    {
+      "id": "8",
+      "ar": "خَرُوف (٤)",
+      "fr": "4 moutons",
+      "emoji": "🐑"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَعُدُّ الأَشْكَالَ فِي كُلِّ خَانَةٍ وَأُحِيطُ الرَّقَمَ الْمُنَاسِبَ.",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "كُرَة (١)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نَحْلَة (٣)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "زَهْرَة (٤)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "غَزَال (٢)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "تُفَّاحَة (٣)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَسَد (١)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "شَمْس (٢)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خَرُوف (٤)",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p9_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p9_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:55:22.423762",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 9
+  }
+}

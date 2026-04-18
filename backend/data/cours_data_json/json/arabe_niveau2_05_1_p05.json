@@ -1,0 +1,155 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'طَائِرَة' (avion) parmi toutes les lettres proposées.",
+    "ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ كَلِمَةَ طَائِرَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ط",
+      "fr": "ط (lettre du mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "2",
+      "ar": "ا",
+      "fr": "ا (lettre du mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "3",
+      "ar": "ئ",
+      "fr": "ئ (lettre du mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "4",
+      "ar": "ر",
+      "fr": "ر (lettre du mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "5",
+      "ar": "ة",
+      "fr": "ة (lettre du mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "6",
+      "ar": "ظ",
+      "fr": "ظ (lettre intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "د",
+      "fr": "د (lettre intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "ل",
+      "fr": "ل (lettre intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "ت",
+      "fr": "ت (lettre intrus)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ كَلِمَةَ طَائِرَة",
+      "voix_m": "arabe_niveau2_05_1_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ط",
+      "voix_m": "arabe_niveau2_05_1_p5_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_05_1_p5_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ئ",
+      "voix_m": "arabe_niveau2_05_1_p5_3_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_05_1_p5_4_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_05_1_p5_5_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ظ",
+      "voix_m": "arabe_niveau2_05_1_p5_6_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "د",
+      "voix_m": "arabe_niveau2_05_1_p5_7_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_05_1_p5_8_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ت",
+      "voix_m": "arabe_niveau2_05_1_p5_9_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:44:53.645164",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 10
+  }
+}

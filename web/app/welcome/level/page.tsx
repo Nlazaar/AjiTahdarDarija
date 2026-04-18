@@ -182,7 +182,7 @@ export default function LevelSelectionPage() {
           display: 'flex',
           justifyContent: 'flex-end'
         }}>
-          <Link href="/register" style={{ textDecoration: 'none', width: '100%', maxWidth: '280px' }}>
+          <Link href="/welcome/track" style={{ textDecoration: 'none', width: '100%', maxWidth: '280px' }}>
             <button 
               disabled={selectedLevel === null}
               style={{

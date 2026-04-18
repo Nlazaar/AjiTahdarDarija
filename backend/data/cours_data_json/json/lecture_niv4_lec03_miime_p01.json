@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre م avec ses formes vocaliques, mots illustrés, phrase exemple, puis exercices d'écoute et d'identification de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Mim (م)",
+    "ar": "حَرْفُ الْمِيم"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre Mim sous ses différentes formes, écoute les mots et entoure la lettre dans les mots",
+    "ar": "تَعَلَّمْ حَرْفَ الْمِيم بِأَشْكَالِهِ الْمُخْتَلِفَةِ، ثُمَّ اسْمَعِ الْكَلِمَاتِ وَأَرْسُمْ دَائِرَةً حَوْلَ الْحَرْفِ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "مِزْهَرِيَّة",
+      "fr": "vase",
+      "emoji": "🏺"
+    },
+    {
+      "id": "mot_2",
+      "ar": "مُمَرِّضَة",
+      "fr": "infirmière",
+      "emoji": "👩‍⚕️"
+    },
+    {
+      "id": "mot_3",
+      "ar": "مَوْز",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "mot_4",
+      "ar": "قَمِيص",
+      "fr": "chemise",
+      "emoji": "👕"
+    },
+    {
+      "id": "mot_5",
+      "ar": "شُمُوع",
+      "fr": "bougies",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "mot_6",
+      "ar": "مَاء",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "phrase",
+      "ar": "مَرِضَ مَاجِدٌ بِالزُّكَام",
+      "fr": "Majid est malade du rhume",
+      "emoji": "🤒"
+    },
+    {
+      "id": "ex1_nuage",
+      "ar": "سَحَابَة",
+      "fr": "nuage",
+      "emoji": "🌧️"
+    },
+    {
+      "id": "ex1_parapluie",
+      "ar": "مِظَلَّة",
+      "fr": "parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "ex1_tomate",
+      "ar": "طَمَاطِم",
+      "fr": "tomate",
+      "emoji": "🍅"
+    },
+    {
+      "id": "ex1_olive",
+      "ar": "زَيْتُون",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "ex1_marteau",
+      "ar": "مِطْرَقَة",
+      "fr": "marteau",
+      "emoji": "🔨"
+    },
+    {
+      "id": "ex2_mot1",
+      "ar": "رَسَّام",
+      "fr": "dessinateur",
+      "emoji": "🎨"
+    },
+    {
+      "id": "ex2_mot2",
+      "ar": "يَنَامُونَ",
+      "fr": "ils dorment",
+      "emoji": "😴"
+    },
+    {
+      "id": "ex2_mot3",
+      "ar": "مَاهِر",
+      "fr": "habile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "ex2_mot4",
+      "ar": "وَسَطَ",
+      "fr": "au milieu",
+      "emoji": "↔️"
+    },
+    {
+      "id": "ex2_mot5",
+      "ar": "تَمْرِين",
+      "fr": "exercice",
+      "emoji": "📝"
+    },
+    {
+      "id": "ex2_mot6",
+      "ar": "أَهَانَ",
+      "fr": "il a insulté",
+      "emoji": "😠"
+    },
+    {
+      "id": "ex2_mot7",
+      "ar": "مِسْمَار",
+      "fr": "clou",
+      "emoji": "🔩"
+    },
+    {
+      "id": "ex2_mot8",
+      "ar": "مُسِيء",
+      "fr": "celui qui fait du mal",
+      "emoji": "😤"
+    },
+    {
+      "id": "ex2_mot9",
+      "ar": "نَامَ",
+      "fr": "il a dormi",
+      "emoji": "🛌"
+    },
+    {
+      "id": "ex2_mot10",
+      "ar": "مَأْوَى",
+      "fr": "refuge/abri",
+      "emoji": "🏠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec03_miime",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلَّمْ حَرْفَ الْمِيم بِأَشْكَالِهِ الْمُخْتَلِفَةِ، ثُمَّ اسْمَعِ الْكَلِمَاتِ وَأَرْسُمْ دَائِرَةً حَوْلَ الْحَرْفِ",
+      "voix_m": "lecture_niv4_lec03_miime_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "مِزْهَرِيَّة",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "مُمَرِّضَة",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "مَوْز",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "قَمِيص",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "شُمُوع",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "مَاء",
+      "voix_m": "lecture_niv4_lec03_miime_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "مَرِضَ مَاجِدٌ بِالزُّكَام",
+      "voix_m": "lecture_niv4_lec03_miime_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_nuage",
+      "texte_ar": "سَحَابَة",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex1_nuage_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex1_nuage_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_parapluie",
+      "texte_ar": "مِظَلَّة",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex1_parapluie_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex1_parapluie_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_tomate",
+      "texte_ar": "طَمَاطِم",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex1_tomate_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex1_tomate_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_olive",
+      "texte_ar": "زَيْتُون",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex1_olive_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex1_olive_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_marteau",
+      "texte_ar": "مِطْرَقَة",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex1_marteau_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex1_marteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot1",
+      "texte_ar": "رَسَّام",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot2",
+      "texte_ar": "يَنَامُونَ",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot3",
+      "texte_ar": "مَاهِر",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot4",
+      "texte_ar": "وَسَطَ",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot5",
+      "texte_ar": "تَمْرِين",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot6",
+      "texte_ar": "أَهَانَ",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot7",
+      "texte_ar": "مِسْمَار",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot7_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot8",
+      "texte_ar": "مُسِيء",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot8_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot9",
+      "texte_ar": "نَامَ",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot9_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot10",
+      "texte_ar": "مَأْوَى",
+      "voix_m": "lecture_niv4_lec03_miime_p1_ex2_mot10_m.mp3",
+      "voix_f": "lecture_niv4_lec03_miime_p1_ex2_mot10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:43:14.321265",
+    "niveau": 4,
+    "lecon": 3,
+    "nom_pdf": "lecture_niv4_lec03_miime",
+    "bucket_audio": "audio-lessons/niveau4/lecon03/",
+    "nb_audio_assets": 23
+  }
+}

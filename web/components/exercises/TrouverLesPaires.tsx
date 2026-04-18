@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { getSettings } from "@/hooks/useSettings";
+import { useAudioCtx } from "@/contexts/AudioContext";
 
 interface TrouverLesPairesProps {
   pairs: Array<{
@@ -14,17 +15,14 @@ interface TrouverLesPairesProps {
   mode?: 'lettre' | 'mot';
 }
 
-function playLetter(letter: string) {
-  if (typeof window === "undefined") return;
-  if (!getSettings().soundEffects) return;
-  const t = new SpeechSynthesisUtterance(letter);
-  t.lang = "ar-MA";
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(t);
-}
-
 export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange, mode = 'lettre' }: TrouverLesPairesProps) {
   const isVocab = mode === 'mot';
+  const { speak } = useAudioCtx();
+
+  const playLetter = (letter: string) => {
+    if (!getSettings().soundEffects) return;
+    speak(letter, "ar-MA");
+  };
   const [selectedLeft,  setSelectedLeft]  = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matchedIds,    setMatchedIds]    = useState<Set<string>>(new Set());

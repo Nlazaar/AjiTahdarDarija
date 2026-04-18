@@ -1,0 +1,155 @@
+{
+  "page_nb": 79,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec prolongation Dhamma",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المَمْدُودَ بِالضَّمِّ"
+  },
+  "enonce": {
+    "fr": "Dans chaque mot, entoure la lettre qui a une prolongation avec Dhamma (و مدية)",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المَمْدُودَ بِالضَّمِّ في هذه الكلمات"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حَلَزُونٌ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "2",
+      "ar": "أُرْجُوحَةٌ",
+      "fr": "balançoire",
+      "emoji": "🎠"
+    },
+    {
+      "id": "3",
+      "ar": "خَرُوفٌ",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "4",
+      "ar": "دُودَةٌ",
+      "fr": "ver de terre",
+      "emoji": "🪱"
+    },
+    {
+      "id": "5",
+      "ar": "أُخْطُبُوطٌ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "6",
+      "ar": "حُوتٌ",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "7",
+      "ar": "زَيْتُونٌ",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "8",
+      "ar": "سُجُودٌ",
+      "fr": "prosternation",
+      "emoji": "🙏"
+    },
+    {
+      "id": "9",
+      "ar": "صَابُونٌ",
+      "fr": "savon",
+      "emoji": "🧼"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p79_consigne",
+      "texte_ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المَمْدُودَ بِالضَّمِّ في هذه الكلمات",
+      "voix_m": "livre_arabe_niveau3_p79_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حَلَزُونٌ",
+      "voix_m": "livre_arabe_niveau3_p79_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أُرْجُوحَةٌ",
+      "voix_m": "livre_arabe_niveau3_p79_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خَرُوفٌ",
+      "voix_m": "livre_arabe_niveau3_p79_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "livre_arabe_niveau3_p79_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُخْطُبُوطٌ",
+      "voix_m": "livre_arabe_niveau3_p79_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "livre_arabe_niveau3_p79_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "livre_arabe_niveau3_p79_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سُجُودٌ",
+      "voix_m": "livre_arabe_niveau3_p79_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "صَابُونٌ",
+      "voix_m": "livre_arabe_niveau3_p79_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p79_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:10:22.051946",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

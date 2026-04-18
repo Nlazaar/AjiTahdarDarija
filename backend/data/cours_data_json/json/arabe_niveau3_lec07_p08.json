@@ -1,0 +1,90 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque ligne, trouve et barre la forme qui est différente des autres.",
+    "ar": "في كل سطر، ابحث عن الشكل المختلف وأشطب عليه."
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "مجموعة الأفاعي",
+      "fr": "Ligne de serpents - trouver le serpent différent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "ligne2",
+      "ar": "مجموعة النحلات",
+      "fr": "Ligne d'abeilles - trouver l'abeille différente",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ligne3",
+      "ar": "مجموعة حرف خ/ذ",
+      "fr": "Ligne de lettres خ et ذ - trouver la lettre différente (خ en rouge)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ligne4",
+      "ar": "مجموعة حرف د/ح",
+      "fr": "Ligne de lettres د et ح - trouver la lettre différente (د en vert)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec07",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "في كل سطر، ابحث عن الشكل المختلف وأشطب عليه.",
+      "voix_m": "arabe_niveau3_lec07_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "مجموعة الأفاعي",
+      "voix_m": "arabe_niveau3_lec07_p8_ligne1_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p8_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "مجموعة النحلات",
+      "voix_m": "arabe_niveau3_lec07_p8_ligne2_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p8_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "مجموعة حرف خ/ذ",
+      "voix_m": "arabe_niveau3_lec07_p8_ligne3_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p8_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "مجموعة حرف د/ح",
+      "voix_m": "arabe_niveau3_lec07_p8_ligne4_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p8_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:35:42.933404",
+    "niveau": 3,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau3_lec07",
+    "bucket_audio": "audio-lessons/niveau3/lecon07/",
+    "nb_audio_assets": 5
+  }
+}

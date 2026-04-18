@@ -1,0 +1,259 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ع avec ses voyelles, mots illustrés, puis deux exercices : identifier auditivement la lettre dans un mot et entourer la lettre dans des mots écrits",
+  "titre": {
+    "fr": "La lettre Aïn (ع)",
+    "ar": "حَرْفُ الْعَيْن"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ع avec ses différentes voyelles et les mots qui la contiennent. Exercice 1 : J'entends ou je n'entends pas la lettre. Exercice 2 : J'entoure la lettre dans les mots.",
+    "ar": "تَعَرَّفْ عَلَى حَرْفِ الْعَيْنِ مَعَ حَرَكَاتِهِ وَالْكَلِمَاتِ الَّتِي تَحْتَوِيهِ. تَمْرِينٌ 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ. تَمْرِينٌ 2: أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عِنَبٌ",
+      "fr": "Raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "2",
+      "ar": "عُشْبٌ",
+      "fr": "Herbe",
+      "emoji": "🌿"
+    },
+    {
+      "id": "3",
+      "ar": "عَيْنٌ",
+      "fr": "Œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "4",
+      "ar": "عِيدٌ",
+      "fr": "Fête",
+      "emoji": "🎉"
+    },
+    {
+      "id": "5",
+      "ar": "نَاعُورَةٌ",
+      "fr": "Moulin à vent",
+      "emoji": "🏗️"
+    },
+    {
+      "id": "6",
+      "ar": "نَعَامَةٌ",
+      "fr": "Autruche",
+      "emoji": "🦤"
+    },
+    {
+      "id": "7",
+      "ar": "شَعْرٌ عَبِيرٍ نَاعِمٌ",
+      "fr": "Les cheveux d'Abir sont doux",
+      "emoji": "💇"
+    },
+    {
+      "id": "8",
+      "ar": "غَارٌ",
+      "fr": "Grotte / Laurier",
+      "emoji": "🌿"
+    },
+    {
+      "id": "9",
+      "ar": "بَعِيرٌ",
+      "fr": "Chameau",
+      "emoji": "🐫"
+    },
+    {
+      "id": "10",
+      "ar": "مُطِيعٌ",
+      "fr": "Obéissant",
+      "emoji": "✅"
+    },
+    {
+      "id": "11",
+      "ar": "يَسْعَى",
+      "fr": "Il court / Il s'efforce",
+      "emoji": "🏃"
+    },
+    {
+      "id": "12",
+      "ar": "غَبِيٌّ",
+      "fr": "Stupide",
+      "emoji": "😶"
+    },
+    {
+      "id": "13",
+      "ar": "نَعِيمٌ",
+      "fr": "Bien-être / Paradis",
+      "emoji": "😇"
+    },
+    {
+      "id": "14",
+      "ar": "بَاعَ",
+      "fr": "Il a vendu",
+      "emoji": "🛒"
+    },
+    {
+      "id": "15",
+      "ar": "عَبَقٌ",
+      "fr": "Parfum",
+      "emoji": "🌸"
+    },
+    {
+      "id": "16",
+      "ar": "يُعَبِّرُ",
+      "fr": "Il exprime",
+      "emoji": "💬"
+    },
+    {
+      "id": "17",
+      "ar": "عَامٌ",
+      "fr": "Année / Général",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec09_3ayn",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَرَّفْ عَلَى حَرْفِ الْعَيْنِ مَعَ حَرَكَاتِهِ وَالْكَلِمَاتِ الَّتِي تَحْتَوِيهِ. تَمْرِينٌ 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ. تَمْرِينٌ 2: أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ.",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "عُشْبٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عَيْنٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "عِيدٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَاعُورَةٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "نَعَامَةٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "شَعْرٌ عَبِيرٍ نَاعِمٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "غَارٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_8_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "بَعِيرٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_9_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مُطِيعٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_10_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "يَسْعَى",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_11_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "غَبِيٌّ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_12_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "نَعِيمٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_13_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "بَاعَ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_14_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "عَبَقٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_15_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "يُعَبِّرُ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_16_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "عَامٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p1_17_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p1_17_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:03:34.802108",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_3ayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 18
+  }
+}

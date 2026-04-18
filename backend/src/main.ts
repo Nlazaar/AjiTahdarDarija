@@ -7,7 +7,7 @@ import { createRateLimiter } from './common/middleware/rate-limiter.middleware'
 import helmet from 'helmet'
 import { bruteforceGuard } from './common/middleware/bruteforce.guard'
 import { auditLogger } from './common/middleware/audit.middleware'
-import compression from 'compression'
+import * as compression from 'compression'
 
 const logger = new Logger('Bootstrap')
 
@@ -41,6 +41,7 @@ async function bootstrap() {
         },
       },
       crossOriginEmbedderPolicy: false,
+      crossOriginResourcePolicy: { policy: 'cross-origin' },
     }),
   )
 
@@ -66,8 +67,9 @@ async function bootstrap() {
   // ── Global exception filter
   app.useGlobalFilters(new HttpExceptionFilter())
 
-  // ── Rate limiting global (100 req/min par IP)
-  const globalLimiter = createRateLimiter({ windowMs: 60 * 1000, max: 100 })
+  // ── Rate limiting global (1000 req/min par IP — élevé car /modules + /modules/:id/lessons
+  //    déclenchent 30+ requêtes par chargement de la page cours)
+  const globalLimiter = createRateLimiter({ windowMs: 60 * 1000, max: 1000 })
   app.use(globalLimiter)
 
   // ── Rate limiting strict sur /auth (10 req/min par IP)

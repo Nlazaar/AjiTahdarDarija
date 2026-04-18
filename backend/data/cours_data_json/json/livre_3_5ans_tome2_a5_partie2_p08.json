@@ -1,0 +1,129 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte",
+    "ar": "أَعُدُّ"
+  },
+  "enonce": {
+    "fr": "Combien y a-t-il de voitures ? Je compte puis j'entoure le nombre. Combien y a-t-il d'avions ?",
+    "ar": "كَمْ هُنَاكَ مِنْ سَيَّارَةٍ ؟ أَعُدُّ ثُمَّ أُحِيطُ العَدَد. كَمْ هُنَاكَ مِنْ طَائِرَةٍ ؟"
+  },
+  "elements": [
+    {
+      "id": "voiture",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "avion",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "nombre_1",
+      "ar": "١",
+      "fr": "1",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "nombre_2",
+      "ar": "٢",
+      "fr": "2",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "nombre_3",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "nombre_4",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "nombre_5",
+      "ar": "٥",
+      "fr": "5",
+      "emoji": "5️⃣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "كَمْ هُنَاكَ مِنْ سَيَّارَةٍ ؟ أَعُدُّ ثُمَّ أُحِيطُ العَدَد. كَمْ هُنَاكَ مِنْ طَائِرَةٍ ؟",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_voiture_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_voiture_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_avion_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_avion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_1",
+      "texte_ar": "١",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_nombre_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_nombre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_2",
+      "texte_ar": "٢",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_nombre_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_nombre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_3",
+      "texte_ar": "٣",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_nombre_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_nombre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_4",
+      "texte_ar": "٤",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_nombre_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_nombre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_5",
+      "texte_ar": "٥",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p8_nombre_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p8_nombre_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:19:57.212001",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 8
+  }
+}

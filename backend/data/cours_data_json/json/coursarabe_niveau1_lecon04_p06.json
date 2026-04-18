@@ -1,0 +1,129 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Coloriage sélectif : identifier et colorier uniquement les éléments ciblés (vers de terre puis papillons) parmi des distracteurs animaux",
+  "titre": {
+    "fr": "Je colorie les vers de terre et les papillons",
+    "ar": "أُلَوِّن الدُّودَة وَالفَرَاشَة"
+  },
+  "enonce": {
+    "fr": "Exercice 4 : Je colorie chaque ver de terre de la couleur de mon choix. Exercice 5 : Je colorie chaque papillon de la couleur de mon choix.",
+    "ar": "تمرين 4 : أُلَوِّن كُلَّ دُودَةٍ بِلَوْنٍ أَخْتَارُهُ. تمرين 5 : أُلَوِّن كُلَّ فَرَاشَةٍ بِلَوْنٍ أَخْتَارُهُ."
+  },
+  "elements": [
+    {
+      "id": "ver_de_terre",
+      "ar": "دُودَة",
+      "fr": "ver de terre",
+      "emoji": "🪱"
+    },
+    {
+      "id": "mouton",
+      "ar": "خَرُوف",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "grenouille",
+      "ar": "ضِفْدَع",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "canard",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "papillon",
+      "ar": "فَرَاشَة",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "singe",
+      "ar": "قِرْد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "vache",
+      "ar": "بَقَرَة",
+      "fr": "vache",
+      "emoji": "🐄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "تمرين 4 : أُلَوِّن كُلَّ دُودَةٍ بِلَوْنٍ أَخْتَارُهُ. تمرين 5 : أُلَوِّن كُلَّ فَرَاشَةٍ بِلَوْنٍ أَخْتَارُهُ.",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ver_de_terre",
+      "texte_ar": "دُودَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_ver_de_terre_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_ver_de_terre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mouton",
+      "texte_ar": "خَرُوف",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_mouton_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_mouton_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_grenouille",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_grenouille_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_grenouille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canard",
+      "texte_ar": "بَطَّة",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_canard_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_canard_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_papillon",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_papillon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_papillon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_singe",
+      "texte_ar": "قِرْد",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_singe_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_singe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vache",
+      "texte_ar": "بَقَرَة",
+      "voix_m": "coursarabe_niveau1_lecon04_p6_vache_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p6_vache_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:44:40.248663",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 8
+  }
+}

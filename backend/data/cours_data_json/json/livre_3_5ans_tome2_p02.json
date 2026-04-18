@@ -1,0 +1,129 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Cherche la lettre et colorie-la",
+    "ar": "أبحثُ عن الحرف و ألوِّنُهُ"
+  },
+  "enonce": {
+    "fr": "Exercice 2 : Trouve toutes les formes de la lettre Sîn (س) et colorie-les. Exercice 3 : Trouve toutes les formes de la lettre Yâ (ي) et colorie-les.",
+    "ar": "أبحثُ عن حرف السين بأشكاله المختلفة وألوِّنُهُ. ثم أبحثُ عن حرف الياء بأشكاله المختلفة وألوِّنُهُ."
+  },
+  "elements": [
+    {
+      "id": "sin_isole",
+      "ar": "س",
+      "fr": "Sîn isolé",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sin_debut",
+      "ar": "سـ",
+      "fr": "Sîn en début de mot",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sin_milieu",
+      "ar": "ـسـ",
+      "fr": "Sîn au milieu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ya_isole",
+      "ar": "ي",
+      "fr": "Yâ isolé",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ya_debut",
+      "ar": "يـ",
+      "fr": "Yâ en début de mot",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ya_milieu",
+      "ar": "ـيـ",
+      "fr": "Yâ au milieu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ya_fin",
+      "ar": "ـي",
+      "fr": "Yâ en fin de mot",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أبحثُ عن حرف السين بأشكاله المختلفة وألوِّنُهُ. ثم أبحثُ عن حرف الياء بأشكاله المختلفة وألوِّنُهُ.",
+      "voix_m": "livre_3_5ans_tome2_p2_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin_isole",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome2_p2_sin_isole_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_sin_isole_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin_debut",
+      "texte_ar": "سـ",
+      "voix_m": "livre_3_5ans_tome2_p2_sin_debut_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_sin_debut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin_milieu",
+      "texte_ar": "ـسـ",
+      "voix_m": "livre_3_5ans_tome2_p2_sin_milieu_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_sin_milieu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya_isole",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome2_p2_ya_isole_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_ya_isole_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya_debut",
+      "texte_ar": "يـ",
+      "voix_m": "livre_3_5ans_tome2_p2_ya_debut_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_ya_debut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya_milieu",
+      "texte_ar": "ـيـ",
+      "voix_m": "livre_3_5ans_tome2_p2_ya_milieu_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_ya_milieu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya_fin",
+      "texte_ar": "ـي",
+      "voix_m": "livre_3_5ans_tome2_p2_ya_fin_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p2_ya_fin_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:55:45.056698",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 8
+  }
+}

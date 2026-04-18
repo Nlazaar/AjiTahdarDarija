@@ -1,0 +1,246 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَات لأكوِّن كلمة ثمَّ أَرْبِطُهَا بصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les syllabes dans le bon ordre pour former un mot, puis relie ce mot à l'image correspondante",
+    "ar": "اِرْبِطْ الْبِطَاقَات لِتُكَوِّن كَلِمَة ثُمَّ اِرْبِطْهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "img1",
+      "ar": "يَقْفِزُ",
+      "fr": "il saute",
+      "emoji": "🧒"
+    },
+    {
+      "id": "img2",
+      "ar": "يَكْتُبُ",
+      "fr": "il écrit",
+      "emoji": "✏️"
+    },
+    {
+      "id": "img3",
+      "ar": "يَقْرَأُ",
+      "fr": "il lit",
+      "emoji": "📖"
+    },
+    {
+      "id": "img4",
+      "ar": "يَدْخُلُ",
+      "fr": "il entre",
+      "emoji": "🚪"
+    },
+    {
+      "id": "syl1",
+      "ar": "بَ",
+      "fr": "ba",
+      "emoji": ""
+    },
+    {
+      "id": "syl2",
+      "ar": "نَزَ",
+      "fr": "naza",
+      "emoji": ""
+    },
+    {
+      "id": "syl3",
+      "ar": "فَ",
+      "fr": "fa",
+      "emoji": ""
+    },
+    {
+      "id": "syl4",
+      "ar": "تَّ",
+      "fr": "tta",
+      "emoji": ""
+    },
+    {
+      "id": "syl5",
+      "ar": "كَ",
+      "fr": "ka",
+      "emoji": ""
+    },
+    {
+      "id": "syl6",
+      "ar": "قَ",
+      "fr": "qa",
+      "emoji": ""
+    },
+    {
+      "id": "syl7",
+      "ar": "قَّ",
+      "fr": "qqa",
+      "emoji": ""
+    },
+    {
+      "id": "syl8",
+      "ar": "رَ",
+      "fr": "ra",
+      "emoji": ""
+    },
+    {
+      "id": "syl9",
+      "ar": "أَ",
+      "fr": "a",
+      "emoji": ""
+    },
+    {
+      "id": "syl10",
+      "ar": "خَ",
+      "fr": "kha",
+      "emoji": ""
+    },
+    {
+      "id": "syl11",
+      "ar": "لَ",
+      "fr": "la",
+      "emoji": ""
+    },
+    {
+      "id": "syl12",
+      "ar": "دَ",
+      "fr": "da",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "arabe_niveau3_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "اِرْبِطْ الْبِطَاقَات لِتُكَوِّن كَلِمَة ثُمَّ اِرْبِطْهَا بِصُورَتِهَا",
+      "voix_m": "arabe_niveau3_lec02_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img1",
+      "texte_ar": "يَقْفِزُ",
+      "voix_m": "arabe_niveau3_lec02_p3_img1_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_img1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img2",
+      "texte_ar": "يَكْتُبُ",
+      "voix_m": "arabe_niveau3_lec02_p3_img2_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_img2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img3",
+      "texte_ar": "يَقْرَأُ",
+      "voix_m": "arabe_niveau3_lec02_p3_img3_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_img3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img4",
+      "texte_ar": "يَدْخُلُ",
+      "voix_m": "arabe_niveau3_lec02_p3_img4_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_img4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl1",
+      "texte_ar": "بَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl1_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl2",
+      "texte_ar": "نَزَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl2_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl3",
+      "texte_ar": "فَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl3_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl4",
+      "texte_ar": "تَّ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl4_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl5",
+      "texte_ar": "كَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl5_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl6",
+      "texte_ar": "قَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl6_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl7",
+      "texte_ar": "قَّ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl7_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl8",
+      "texte_ar": "رَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl8_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl9",
+      "texte_ar": "أَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl9_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl10",
+      "texte_ar": "خَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl10_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl11",
+      "texte_ar": "لَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl11_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl12",
+      "texte_ar": "دَ",
+      "voix_m": "arabe_niveau3_lec02_p3_syl12_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p3_syl12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:25:59.918877",
+    "niveau": 3,
+    "lecon": 2,
+    "nom_pdf": "arabe_niveau3_lec02",
+    "bucket_audio": "audio-lessons/niveau3/lecon02/",
+    "nb_audio_assets": 17
+  }
+}

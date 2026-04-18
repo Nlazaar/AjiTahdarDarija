@@ -1,0 +1,116 @@
+{
+  "page_nb": 65,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je colle les mots selon le modèle puis je relie à l'image",
+    "ar": "أَلْصِقُ الْكَلِمَات حَسَبَ النَّمُوذَج ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَة"
+  },
+  "enonce": {
+    "fr": "Colle les mots à leurs places en suivant le modèle puis relie chaque phrase à l'image correspondante",
+    "ar": "أَلْصِقُ الْكَلِمَات حَسَبَ النَّمُوذَج ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَة"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "قَرَأَ الْوَلَدُ",
+      "fr": "Le garçon a lu",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "fr": "La fille a mangé du pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "fr": "Zaynab a dessiné un soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "image_1",
+      "ar": "بِنْت تَحْمِل خُبْزًا",
+      "fr": "Une fille portant du pain",
+      "emoji": "👧"
+    },
+    {
+      "id": "image_2",
+      "ar": "بِنْت تَرْسُم",
+      "fr": "Une fille qui dessine",
+      "emoji": "🎨"
+    },
+    {
+      "id": "image_3",
+      "ar": "وَلَد يَقْرَأ",
+      "fr": "Un garçon qui lit",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p65_consigne",
+      "texte_ar": "أَلْصِقُ الْكَلِمَات حَسَبَ النَّمُوذَج ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَة",
+      "voix_m": "livre_arabe_niveau3_p65_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "قَرَأَ الْوَلَدُ",
+      "voix_m": "livre_arabe_niveau3_p65_phrase_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "voix_m": "livre_arabe_niveau3_p65_phrase_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "voix_m": "livre_arabe_niveau3_p65_phrase_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_phrase_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_1",
+      "texte_ar": "بِنْت تَحْمِل خُبْزًا",
+      "voix_m": "livre_arabe_niveau3_p65_image_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_image_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_2",
+      "texte_ar": "بِنْت تَرْسُم",
+      "voix_m": "livre_arabe_niveau3_p65_image_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_image_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_3",
+      "texte_ar": "وَلَد يَقْرَأ",
+      "voix_m": "livre_arabe_niveau3_p65_image_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p65_image_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:07:31.891153",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

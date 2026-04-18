@@ -1,0 +1,90 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Observe chaque groupe d'images et de mots, puis barre l'élément qui est différent des autres.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ مِنَ الصُّوَرِ وَالْكَلِمَاتِ، ثُمَّ اشْطُبِ الشَّكْلَ الْمُخْتَلِفَ."
+  },
+  "elements": [
+    {
+      "id": "groupe1_images",
+      "ar": "وَرَقَة",
+      "fr": "feuilles (groupe d'images)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "groupe2_images",
+      "ar": "فَأْر",
+      "fr": "souris (groupe d'images)",
+      "emoji": "🐭"
+    },
+    {
+      "id": "groupe1_mots",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille (groupe de mots)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "groupe2_mots",
+      "ar": "فَأْرٌ",
+      "fr": "souris (groupe de mots)",
+      "emoji": "🐭"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec04",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ مِنَ الصُّوَرِ وَالْكَلِمَاتِ، ثُمَّ اشْطُبِ الشَّكْلَ الْمُخْتَلِفَ.",
+      "voix_m": "arabe_niveau3_lec04_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images",
+      "texte_ar": "وَرَقَة",
+      "voix_m": "arabe_niveau3_lec04_p9_groupe1_images_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p9_groupe1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images",
+      "texte_ar": "فَأْر",
+      "voix_m": "arabe_niveau3_lec04_p9_groupe2_images_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p9_groupe2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_mots",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "arabe_niveau3_lec04_p9_groupe1_mots_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p9_groupe1_mots_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_mots",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "arabe_niveau3_lec04_p9_groupe2_mots_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p9_groupe2_mots_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:30:09.846517",
+    "niveau": 3,
+    "lecon": 4,
+    "nom_pdf": "arabe_niveau3_lec04",
+    "bucket_audio": "audio-lessons/niveau3/lecon04/",
+    "nb_audio_assets": 5
+  }
+}

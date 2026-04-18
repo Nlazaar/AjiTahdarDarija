@@ -1,7 +1,0 @@
-PHASE 15 — Ajouter l’authentification réelle
-Tu vas activer :
-inscription
-connexion
-JWT
-récupération du userId automatiquement
-Je te donnerai les prompts.

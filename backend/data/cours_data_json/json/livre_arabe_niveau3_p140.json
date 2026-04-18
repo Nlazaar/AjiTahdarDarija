@@ -1,0 +1,90 @@
+{
+  "page_nb": 140,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je colle les mots et je relie à l'image",
+    "ar": "أَلْصِقُ الْكَلِمَاتِ حَسَبَ النَّمُوذَجِ ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je colle les mots à leurs places en suivant le modèle puis je relie à l'image correspondante",
+    "ar": "أَلْصِقُ الْكَلِمَاتِ حَسَبَ النَّمُوذَجِ ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَّاجَةِ مَعَ أَخِيهَا",
+      "fr": "Zainab joue à vélo avec son frère",
+      "emoji": "🚲"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "fr": "Zainab lit un livre avec son frère",
+      "emoji": "📖"
+    },
+    {
+      "id": "image_velo",
+      "ar": "صُورَةُ الدَّرَّاجَةِ",
+      "fr": "Image du vélo (frère et sœur à vélo)",
+      "emoji": "🚴"
+    },
+    {
+      "id": "image_lecture",
+      "ar": "صُورَةُ الْقِرَاءَةِ",
+      "fr": "Image de la lecture (frère et sœur lisant ensemble)",
+      "emoji": "📚"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p140_consigne",
+      "texte_ar": "أَلْصِقُ الْكَلِمَاتِ حَسَبَ النَّمُوذَجِ ثُمَّ أَرْبِطُهَا بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p140_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p140_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "تَلْعَبُ زَيْنَبُ بِالدَّرَّاجَةِ مَعَ أَخِيهَا",
+      "voix_m": "livre_arabe_niveau3_p140_phrase_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p140_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "تَقْرَأُ زَيْنَبُ كِتَابًا مَعَ أَخِيهَا",
+      "voix_m": "livre_arabe_niveau3_p140_phrase_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p140_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_velo",
+      "texte_ar": "صُورَةُ الدَّرَّاجَةِ",
+      "voix_m": "livre_arabe_niveau3_p140_image_velo_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p140_image_velo_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_lecture",
+      "texte_ar": "صُورَةُ الْقِرَاءَةِ",
+      "voix_m": "livre_arabe_niveau3_p140_image_lecture_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p140_image_lecture_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:21:11.213738",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

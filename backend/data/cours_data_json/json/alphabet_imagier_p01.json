@@ -1,0 +1,233 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Apprentissage de l'alphabet arabe avec illustration visuelle : chaque lettre est associée à un mot et une image correspondante",
+  "titre": {
+    "fr": "L'alphabet arabe illustré",
+    "ar": "الحروف العربية بالصور"
+  },
+  "enonce": {
+    "fr": "Découvre les lettres de l'alphabet arabe avec des images et des mots simples",
+    "ar": "تعلّم حروف الهجاء العربية مع صور وكلمات بسيطة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَسَدٌ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "2",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "3",
+      "ar": "تَمْرٌ",
+      "fr": "Dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "4",
+      "ar": "ثَلْجٌ",
+      "fr": "Neige",
+      "emoji": "🌨️"
+    },
+    {
+      "id": "5",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "6",
+      "ar": "حَمَامَةٌ",
+      "fr": "Pigeon",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "7",
+      "ar": "خَوْخٌ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "8",
+      "ar": "دَارٌ",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "9",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐍"
+    },
+    {
+      "id": "10",
+      "ar": "رِيشَةٌ",
+      "fr": "Plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "11",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "12",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "13",
+      "ar": "شَمْعَةٌ",
+      "fr": "Bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "14",
+      "ar": "صَبَاحٌ",
+      "fr": "Matin",
+      "emoji": "🌅"
+    },
+    {
+      "id": "15",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 15,
+  "nom_pdf": "alphabet_imagier",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تعلّم حروف الهجاء العربية مع صور وكلمات بسيطة",
+      "voix_m": "alphabet_imagier_p1_consigne_m.mp3",
+      "voix_f": "alphabet_imagier_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "alphabet_imagier_p1_1_m.mp3",
+      "voix_f": "alphabet_imagier_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "alphabet_imagier_p1_2_m.mp3",
+      "voix_f": "alphabet_imagier_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تَمْرٌ",
+      "voix_m": "alphabet_imagier_p1_3_m.mp3",
+      "voix_f": "alphabet_imagier_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "alphabet_imagier_p1_4_m.mp3",
+      "voix_f": "alphabet_imagier_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "alphabet_imagier_p1_5_m.mp3",
+      "voix_f": "alphabet_imagier_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حَمَامَةٌ",
+      "voix_m": "alphabet_imagier_p1_6_m.mp3",
+      "voix_f": "alphabet_imagier_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "alphabet_imagier_p1_7_m.mp3",
+      "voix_f": "alphabet_imagier_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دَارٌ",
+      "voix_m": "alphabet_imagier_p1_8_m.mp3",
+      "voix_f": "alphabet_imagier_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "alphabet_imagier_p1_9_m.mp3",
+      "voix_f": "alphabet_imagier_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "alphabet_imagier_p1_10_m.mp3",
+      "voix_f": "alphabet_imagier_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "alphabet_imagier_p1_11_m.mp3",
+      "voix_f": "alphabet_imagier_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "alphabet_imagier_p1_12_m.mp3",
+      "voix_f": "alphabet_imagier_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "alphabet_imagier_p1_13_m.mp3",
+      "voix_f": "alphabet_imagier_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "صَبَاحٌ",
+      "voix_m": "alphabet_imagier_p1_14_m.mp3",
+      "voix_f": "alphabet_imagier_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "alphabet_imagier_p1_15_m.mp3",
+      "voix_f": "alphabet_imagier_p1_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:54:34.818286",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "alphabet_imagier",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 16
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 130,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ف qui manque, en observant l'image.",
+    "ar": "أكمِّل كل كلمة بالحرف الناقص ف مستعيناً بالصورة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فُلْفُلٌ",
+      "fr": "poivron / piment",
+      "emoji": "🌶️"
+    },
+    {
+      "id": "2",
+      "ar": "فِيلٌ",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "3",
+      "ar": "فَمٌّ",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "4",
+      "ar": "تُفَّاحَةٌ",
+      "fr": "pomme",
+      "emoji": "🍎"
+    },
+    {
+      "id": "5",
+      "ar": "سُلَحْفَاةٌ",
+      "fr": "tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "6",
+      "ar": "أَنْفٌ",
+      "fr": "nez",
+      "emoji": "👃"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p130_consigne",
+      "texte_ar": "أكمِّل كل كلمة بالحرف الناقص ف مستعيناً بالصورة.",
+      "voix_m": "livre_arabe_niveau3_p130_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فُلْفُلٌ",
+      "voix_m": "livre_arabe_niveau3_p130_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فِيلٌ",
+      "voix_m": "livre_arabe_niveau3_p130_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَمٌّ",
+      "voix_m": "livre_arabe_niveau3_p130_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تُفَّاحَةٌ",
+      "voix_m": "livre_arabe_niveau3_p130_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سُلَحْفَاةٌ",
+      "voix_m": "livre_arabe_niveau3_p130_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَنْفٌ",
+      "voix_m": "livre_arabe_niveau3_p130_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p130_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:19:23.520659",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

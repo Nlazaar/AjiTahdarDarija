@@ -1,0 +1,116 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Mon corps",
+    "ar": "جسمي"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour entendre le mot en arabe",
+    "ar": "اِنقر على كل صورة لتسمع الكلمة بالعربية"
+  },
+  "elements": [
+    {
+      "id": "udhun",
+      "ar": "أُذُن",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "yad",
+      "ar": "يَد",
+      "fr": "main",
+      "emoji": "✋"
+    },
+    {
+      "id": "fam",
+      "ar": "فَم",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "ayn",
+      "ar": "عَيْن",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "ras",
+      "ar": "رَأْس",
+      "fr": "tête",
+      "emoji": "🗣️"
+    },
+    {
+      "id": "lisan",
+      "ar": "لِسَان",
+      "fr": "langue",
+      "emoji": "👅"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon08",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اِنقر على كل صورة لتسمع الكلمة بالعربية",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_udhun",
+      "texte_ar": "أُذُن",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_udhun_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_udhun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_yad",
+      "texte_ar": "يَد",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_yad_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_yad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fam",
+      "texte_ar": "فَم",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_fam_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_fam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ayn",
+      "texte_ar": "عَيْن",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_ayn_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_ayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ras",
+      "texte_ar": "رَأْس",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_ras_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_ras_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lisan",
+      "texte_ar": "لِسَان",
+      "voix_m": "coursarabe_niveau1_lecon08_p2_lisan_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p2_lisan_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:19:07.936263",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "coursarabe_niveau1_lecon08",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 7
+  }
+}

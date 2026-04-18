@@ -1,0 +1,259 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer la lettre cible (dal د) parmi un ensemble de lettres arabes similaires",
+  "titre": {
+    "fr": "J'entoure la lettre",
+    "ar": "أَلَوِّنُ الحَرْف"
+  },
+  "enonce": {
+    "fr": "Entoure toutes les lettres Dal (د) que tu trouves parmi les autres lettres",
+    "ar": "أَلَوِّنُ الحَرْف د في كل مرة تجده"
+  },
+  "elements": [
+    {
+      "id": "lettre_cible",
+      "ar": "د",
+      "fr": "Dal (lettre cible en rouge)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "l1",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l2",
+      "ar": "ذ",
+      "fr": "Dhal (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l3",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l4",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l5",
+      "ar": "س",
+      "fr": "Sin (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l6",
+      "ar": "ر",
+      "fr": "Ra (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l7",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l8",
+      "ar": "و",
+      "fr": "Waw (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l9",
+      "ar": "ز",
+      "fr": "Zayn (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l10",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l11",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l12",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    },
+    {
+      "id": "l13",
+      "ar": "ص",
+      "fr": "Sad (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l14",
+      "ar": "ن",
+      "fr": "Nun (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l15",
+      "ar": "أ",
+      "fr": "Alif (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "l16",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَلَوِّنُ الحَرْف د في كل مرة تجده",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_cible",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_lettre_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_lettre_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l1",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l2",
+      "texte_ar": "ذ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l3",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l4",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l5",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l6",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l7",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l8",
+      "texte_ar": "و",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l9",
+      "texte_ar": "ز",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l10",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l11",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l12",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l12_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l13",
+      "texte_ar": "ص",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l13_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l14",
+      "texte_ar": "ن",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l14_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l15",
+      "texte_ar": "أ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l15_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l16",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p6_l16_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p6_l16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:54:30.938796",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 18
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "page_nb": 36,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Lecture de phrases et de mots arabes",
+    "ar": "قراءة الجمل والكلمات العربية"
+  },
+  "enonce": {
+    "fr": "Lis à voix haute les phrases et les mots suivants",
+    "ar": "اقرأ بصوت عالٍ الجمل والكلمات التالية"
+  },
+  "elements": [
+    {
+      "id": "phrase1",
+      "ar": "الْوَلَدُ الْبِنْتُ رَسَمَتْ خُبْزًا",
+      "fr": "Le garçon, la fille a dessiné du pain",
+      "emoji": "🖍️"
+    },
+    {
+      "id": "phrase2",
+      "ar": "قَرَأَ زَيْنَبُ أَكَلَتْ شَمْسًا",
+      "fr": "Il a lu, Zainab a mangé un soleil",
+      "emoji": "📖"
+    },
+    {
+      "id": "serie3a",
+      "ar": "سُنٌّ لَدَغُ لَبٌّ عَقَبَةٌ",
+      "fr": "Dent, piqûre, amande, obstacle",
+      "emoji": "🦷"
+    },
+    {
+      "id": "serie3b",
+      "ar": "نُنٌّ رَوَّةٌ رَوَّةٌ هِمِشٌّ نَسَسَةٌ",
+      "fr": "Syllabes et mots à lire",
+      "emoji": "📝"
+    },
+    {
+      "id": "mot1",
+      "ar": "كَلْبٌ",
+      "fr": "Chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "mot2",
+      "ar": "قَمَرٌ",
+      "fr": "Lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "mot3",
+      "ar": "مِلْخٌ",
+      "fr": "Sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "mot4",
+      "ar": "كَأْسٌ",
+      "fr": "Verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "mot5",
+      "ar": "سَجَدَ",
+      "fr": "Il s'est prosterné",
+      "emoji": "🙏"
+    },
+    {
+      "id": "mot6",
+      "ar": "قِرْدٌ",
+      "fr": "Singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "mot7",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "mot8",
+      "ar": "بَصَلٌ",
+      "fr": "Oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "mot9",
+      "ar": "جَزَرٌ",
+      "fr": "Carotte",
+      "emoji": "🥕"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p36_consigne",
+      "texte_ar": "اقرأ بصوت عالٍ الجمل والكلمات التالية",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase1",
+      "texte_ar": "الْوَلَدُ الْبِنْتُ رَسَمَتْ خُبْزًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_phrase1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase2",
+      "texte_ar": "قَرَأَ زَيْنَبُ أَكَلَتْ شَمْسًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_phrase2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_serie3a",
+      "texte_ar": "سُنٌّ لَدَغُ لَبٌّ عَقَبَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_serie3a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_serie3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_serie3b",
+      "texte_ar": "نُنٌّ رَوَّةٌ رَوَّةٌ هِمِشٌّ نَسَسَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_serie3b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_serie3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "مِلْخٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "سَجَدَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot7",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot8",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot9",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p36_mot9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p36_mot9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:29:31.510821",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 14
+  }
+}

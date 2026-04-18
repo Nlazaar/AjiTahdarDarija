@@ -1,0 +1,116 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Lecture d'une comptine / chanson en arabe avec illustrations pour faciliter la compréhension",
+  "titre": {
+    "fr": "La chanson de la gazelle et du lapin",
+    "ar": "أغنية الغَزَال وَ الأرنَب"
+  },
+  "enonce": {
+    "fr": "Vers la forêt de la gazelle / Vient le lapin des collines / Il court vers le chemin / Il pose la question / Allez, ouvre ô gazelle / Je crains le chasseur des montagnes / Entre, lui dit la gazelle / Je te protège immédiatement",
+    "ar": "نَحْوَ غَابَةِ الغَزَال / يَأتي أرْنَبُ التِّلال / يَجْري يَقْصِدُ السَّبِيل / يَسْأَلُ السُّؤَال / هَيَّا اِفْتَحْ يا غَزَال / أخْشَى صَيَّادَ الجِبَال / أُدْخُلْ قَال لَهُ الغَزَال / أَحْمِيكَ فِي الْحَال"
+  },
+  "elements": [
+    {
+      "id": "gazelle",
+      "ar": "الغَزَال",
+      "fr": "la gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "lapin",
+      "ar": "الأرنَب",
+      "fr": "le lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "foret",
+      "ar": "الغَابَة",
+      "fr": "la forêt",
+      "emoji": "🌳"
+    },
+    {
+      "id": "chasseur",
+      "ar": "الصَيَّاد",
+      "fr": "le chasseur",
+      "emoji": "🏹"
+    },
+    {
+      "id": "montagnes",
+      "ar": "الجِبَال",
+      "fr": "les montagnes",
+      "emoji": "⛰️"
+    },
+    {
+      "id": "collines",
+      "ar": "التِّلال",
+      "fr": "les collines",
+      "emoji": "🏔️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon06",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَحْوَ غَابَةِ الغَزَال / يَأتي أرْنَبُ التِّلال / يَجْري يَقْصِدُ السَّبِيل / يَسْأَلُ السُّؤَال / هَيَّا اِفْتَحْ يا غَزَال / أخْشَى صَيَّادَ الجِبَال / أُدْخُلْ قَال لَهُ الغَزَال / أَحْمِيكَ فِي الْحَال",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_gazelle",
+      "texte_ar": "الغَزَال",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_gazelle_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_gazelle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lapin",
+      "texte_ar": "الأرنَب",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_lapin_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_lapin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_foret",
+      "texte_ar": "الغَابَة",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_foret_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_foret_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chasseur",
+      "texte_ar": "الصَيَّاد",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_chasseur_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_chasseur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_montagnes",
+      "texte_ar": "الجِبَال",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_montagnes_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_montagnes_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_collines",
+      "texte_ar": "التِّلال",
+      "voix_m": "coursarabe_niveau1_lecon06_p1_collines_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p1_collines_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:49:58.265597",
+    "niveau": 1,
+    "lecon": 35,
+    "nom_pdf": "coursarabe_niveau1_lecon06",
+    "bucket_audio": "audio-lessons/niveau1/lecon35/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 80,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure les lettres avec prolongation Dhamma",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الْحَرْفَ الْمَمْدُودَ بِالضَّمِّ"
+  },
+  "enonce": {
+    "fr": "J'entoure dans ces mots les lettres qui ont une prolongation avec Dhamma",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الْحَرْفَ الْمَمْدُودَ بِالضَّمِّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حَلَزُونٌ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "2",
+      "ar": "أُرْجُوحَةٌ",
+      "fr": "balançoire",
+      "emoji": "🎠"
+    },
+    {
+      "id": "3",
+      "ar": "خَرُوفٌ",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "4",
+      "ar": "دُودَةٌ",
+      "fr": "ver",
+      "emoji": "🐛"
+    },
+    {
+      "id": "5",
+      "ar": "أُخْطُبُوطٌ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "6",
+      "ar": "حُوتٌ",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "7",
+      "ar": "زَيْتُونٌ",
+      "fr": "olives",
+      "emoji": "🫒"
+    },
+    {
+      "id": "8",
+      "ar": "سُجُودٌ",
+      "fr": "prosternation",
+      "emoji": "🙏"
+    },
+    {
+      "id": "9",
+      "ar": "صَابُونٌ",
+      "fr": "savon",
+      "emoji": "🧼"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p80_consigne",
+      "texte_ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الْحَرْفَ الْمَمْدُودَ بِالضَّمِّ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حَلَزُونٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أُرْجُوحَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خَرُوفٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُخْطُبُوطٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سُجُودٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "صَابُونٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p80_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p80_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:30:15.571950",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

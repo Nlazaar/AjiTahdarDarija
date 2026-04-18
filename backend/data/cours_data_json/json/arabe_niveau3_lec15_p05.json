@@ -1,0 +1,116 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ط qui manque",
+    "ar": "أكمِّل كل كلمة بحرف الطاء الناقص"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قِطَارٌ",
+      "fr": "Train",
+      "emoji": "🚆"
+    },
+    {
+      "id": "2",
+      "ar": "طَاوُوسٌ",
+      "fr": "Paon",
+      "emoji": "🦚"
+    },
+    {
+      "id": "3",
+      "ar": "طَرِيقٌ",
+      "fr": "Route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "4",
+      "ar": "طَيْطٌ",
+      "fr": "Pelote de laine",
+      "emoji": "🧶"
+    },
+    {
+      "id": "5",
+      "ar": "أُخْطُبُوطٌ",
+      "fr": "Pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "6",
+      "ar": "بَطْرِيقٌ",
+      "fr": "Pingouin",
+      "emoji": "🐧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec15",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أكمِّل كل كلمة بحرف الطاء الناقص",
+      "voix_m": "arabe_niveau3_lec15_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طَاوُوسٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَرِيقٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "طَيْطٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُخْطُبُوطٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَطْرِيقٌ",
+      "voix_m": "arabe_niveau3_lec15_p5_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p5_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:46:27.453986",
+    "niveau": 3,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau3_lec15",
+    "bucket_audio": "audio-lessons/niveau3/lecon15/",
+    "nb_audio_assets": 7
+  }
+}

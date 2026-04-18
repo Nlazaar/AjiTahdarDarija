@@ -1,0 +1,350 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ن avec vocabulaire illustré, phrase modèle, exercice d'écoute et exercice d'identification de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Noun (ن)",
+    "ar": "حَرْفُ النُّون"
+  },
+  "enonce": {
+    "fr": "Découvrons la lettre ن à travers des mots illustrés, une phrase à lire, puis : 1) J'entends ou je n'entends pas la lettre, 2) J'entoure la lettre dans les mots",
+    "ar": "نَتَعَلَّمُ حَرْفَ النُّون مَعَ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةٍ لِلْقِرَاءَةِ، ثُمَّ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "نَجْمٌ",
+      "fr": "étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "mot_2",
+      "ar": "نُجُومٌ",
+      "fr": "étoiles",
+      "emoji": "✨"
+    },
+    {
+      "id": "mot_3",
+      "ar": "نِسْرٌ",
+      "fr": "aigle",
+      "emoji": "🦅"
+    },
+    {
+      "id": "mot_4",
+      "ar": "فَوَانِيسُ",
+      "fr": "lanternes",
+      "emoji": "🏮"
+    },
+    {
+      "id": "mot_5",
+      "ar": "كُنُوزٌ",
+      "fr": "trésors",
+      "emoji": "💰"
+    },
+    {
+      "id": "mot_6",
+      "ar": "نَامَ",
+      "fr": "il a dormi",
+      "emoji": "😴"
+    },
+    {
+      "id": "phrase",
+      "ar": "نَامَ مُنِيرٌ نَوْمًا عَمِيقًا",
+      "fr": "Mounir a dormi d'un sommeil profond",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ex1_balai",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "ex1_table",
+      "ar": "طَاوِلَةٌ",
+      "fr": "table",
+      "emoji": "🪑"
+    },
+    {
+      "id": "ex1_brosse",
+      "ar": "فُرْشَاةٌ",
+      "fr": "brosse à dents",
+      "emoji": "🪥"
+    },
+    {
+      "id": "ex1_peigne",
+      "ar": "مُشْطٌ",
+      "fr": "peigne",
+      "emoji": "🪮"
+    },
+    {
+      "id": "ex1_serviette",
+      "ar": "مَنْشَفَةٌ",
+      "fr": "serviette",
+      "emoji": "🏳️"
+    },
+    {
+      "id": "ex2_mot1",
+      "ar": "نِعْمَةٌ",
+      "fr": "bienfait",
+      "emoji": "🌟"
+    },
+    {
+      "id": "ex2_mot2",
+      "ar": "نَبْلٌ",
+      "fr": "flèches",
+      "emoji": "🏹"
+    },
+    {
+      "id": "ex2_mot3",
+      "ar": "نَعْلٌ",
+      "fr": "sandale",
+      "emoji": "👡"
+    },
+    {
+      "id": "ex2_mot4",
+      "ar": "بَانَ",
+      "fr": "il est apparu",
+      "emoji": "✅"
+    },
+    {
+      "id": "ex2_mot5",
+      "ar": "حَزِنَ",
+      "fr": "il a été triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "ex2_mot6",
+      "ar": "لَيِّنٌ",
+      "fr": "doux/souple",
+      "emoji": "🌸"
+    },
+    {
+      "id": "ex2_mot7",
+      "ar": "نِزَاعٌ",
+      "fr": "dispute",
+      "emoji": "⚡"
+    },
+    {
+      "id": "ex2_mot8",
+      "ar": "نِيَامٌ",
+      "fr": "dormeurs",
+      "emoji": "😴"
+    },
+    {
+      "id": "ex2_mot9",
+      "ar": "نِقْمَةٌ",
+      "fr": "punition",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "ex2_mot10",
+      "ar": "مَنْبَعٌ",
+      "fr": "source",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex2_mot11",
+      "ar": "بَاتَ",
+      "fr": "il a passé la nuit",
+      "emoji": "🌃"
+    },
+    {
+      "id": "ex2_mot12",
+      "ar": "نَالَ",
+      "fr": "il a obtenu",
+      "emoji": "🏆"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec04_noune",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَتَعَلَّمُ حَرْفَ النُّون مَعَ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةٍ لِلْقِرَاءَةِ، ثُمَّ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "نَجْمٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "نُجُومٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "نِسْرٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "فَوَانِيسُ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "كُنُوزٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "نَامَ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "نَامَ مُنِيرٌ نَوْمًا عَمِيقًا",
+      "voix_m": "lecture_niv5_lec04_noune_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_balai",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex1_balai_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex1_balai_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_table",
+      "texte_ar": "طَاوِلَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex1_table_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex1_table_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_brosse",
+      "texte_ar": "فُرْشَاةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex1_brosse_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex1_brosse_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_peigne",
+      "texte_ar": "مُشْطٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex1_peigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex1_peigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_serviette",
+      "texte_ar": "مَنْشَفَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex1_serviette_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex1_serviette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot1",
+      "texte_ar": "نِعْمَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot2",
+      "texte_ar": "نَبْلٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot3",
+      "texte_ar": "نَعْلٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot4",
+      "texte_ar": "بَانَ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot5",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot6",
+      "texte_ar": "لَيِّنٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot7",
+      "texte_ar": "نِزَاعٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot7_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot8",
+      "texte_ar": "نِيَامٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot8_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot9",
+      "texte_ar": "نِقْمَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot9_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot10",
+      "texte_ar": "مَنْبَعٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot10_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot11",
+      "texte_ar": "بَاتَ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot11_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot12",
+      "texte_ar": "نَالَ",
+      "voix_m": "lecture_niv5_lec04_noune_p1_ex2_mot12_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p1_ex2_mot12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:22:18.247876",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv5_lec04_noune",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 25
+  }
+}

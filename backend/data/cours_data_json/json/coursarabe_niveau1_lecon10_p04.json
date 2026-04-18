@@ -1,0 +1,142 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie toutes les écritures identiques au mot modèle 'موز' (banane) représenté au centre.",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "مَوز",
+      "fr": "banane (modèle)",
+      "emoji": "🍌"
+    },
+    {
+      "id": "mot1",
+      "ar": "مَوز",
+      "fr": "banane (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot2",
+      "ar": "فَوز",
+      "fr": "victoire (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot3",
+      "ar": "مَوز",
+      "fr": "banane (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot4",
+      "ar": "مَوز",
+      "fr": "banane (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot5",
+      "ar": "مَوز",
+      "fr": "banane (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot6",
+      "ar": "لَوز",
+      "fr": "amande (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot7",
+      "ar": "كُوز",
+      "fr": "cône/épi (intrus)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "مَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_modele_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "فَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "مَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "مَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "مَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "لَوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot7",
+      "texte_ar": "كُوز",
+      "voix_m": "coursarabe_niveau1_lecon10_p4_mot7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p4_mot7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:10.090636",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 9
+  }
+}

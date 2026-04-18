@@ -1,0 +1,90 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les vêtements",
+    "ar": "المَلابِس"
+  },
+  "enonce": {
+    "fr": "Appuie sur chaque carte pour écouter et apprendre le nom du vêtement en arabe",
+    "ar": "اضغط على كل بطاقة لتسمع وتتعلم اسم الملبس بالعربية"
+  },
+  "elements": [
+    {
+      "id": "sirwal",
+      "ar": "سِرْوَالٌ",
+      "fr": "Pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "fustan",
+      "ar": "فُسْتَانٌ",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "hida",
+      "ar": "حِذَاءٌ",
+      "fr": "Chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "qamis",
+      "ar": "قَمِيصٌ",
+      "fr": "Chemise",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اضغط على كل بطاقة لتسمع وتتعلم اسم الملبس بالعربية",
+      "voix_m": "arabe_niveau2_03_1_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sirwal",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_1_p1_sirwal_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p1_sirwal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fustan",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p1_fustan_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p1_fustan_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hida",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p1_hida_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p1_hida_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qamis",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "arabe_niveau2_03_1_p1_qamis_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p1_qamis_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:38:55.754860",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 5
+  }
+}

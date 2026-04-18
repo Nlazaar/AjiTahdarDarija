@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "La prière - Leçon 4",
+    "ar": "الصَّلَاةُ - الدَّرْسُ 4"
+  },
+  "enonce": {
+    "fr": "Lis le texte sur la prière, puis coche les bonnes cases pour répondre aux questions.",
+    "ar": "اِقْرَأِ النَّصَّ عَنِ الصَّلَاةِ، ثُمَّ ضَعْ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "q1_choix1",
+      "ar": "الصَّلَاة",
+      "fr": "La prière",
+      "emoji": "🕌"
+    },
+    {
+      "id": "q1_choix2",
+      "ar": "الْقُرْآن",
+      "fr": "Le Coran",
+      "emoji": "📖"
+    },
+    {
+      "id": "q1_choix3",
+      "ar": "الْحَلْوَى",
+      "fr": "Les bonbons",
+      "emoji": "🍬"
+    },
+    {
+      "id": "q2_choix1",
+      "ar": "فِي الصَّلَاةِ فَقَطْ",
+      "fr": "Pendant la prière seulement",
+      "emoji": "🕐"
+    },
+    {
+      "id": "q2_choix2",
+      "ar": "فِي الصَّلَاةِ وَ فِي كُلِّ وَقْتٍ",
+      "fr": "Pendant la prière et à tout moment",
+      "emoji": "⏰"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec04",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِقْرَأِ النَّصَّ عَنِ الصَّلَاةِ، ثُمَّ ضَعْ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv4_lec04_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q1_choix1",
+      "texte_ar": "الصَّلَاة",
+      "voix_m": "lecture_niv4_lec04_p1_q1_choix1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_q1_choix1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q1_choix2",
+      "texte_ar": "الْقُرْآن",
+      "voix_m": "lecture_niv4_lec04_p1_q1_choix2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_q1_choix2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q1_choix3",
+      "texte_ar": "الْحَلْوَى",
+      "voix_m": "lecture_niv4_lec04_p1_q1_choix3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_q1_choix3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q2_choix1",
+      "texte_ar": "فِي الصَّلَاةِ فَقَطْ",
+      "voix_m": "lecture_niv4_lec04_p1_q2_choix1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_q2_choix1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q2_choix2",
+      "texte_ar": "فِي الصَّلَاةِ وَ فِي كُلِّ وَقْتٍ",
+      "voix_m": "lecture_niv4_lec04_p1_q2_choix2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_p1_q2_choix2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:38:54.753631",
+    "niveau": 4,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv4_lec04",
+    "bucket_audio": "audio-lessons/niveau4/lecon04/",
+    "nb_audio_assets": 6
+  }
+}

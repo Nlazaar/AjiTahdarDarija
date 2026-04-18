@@ -374,7 +374,7 @@ export default function LettresPage() {
   const [knownLetters, setKnownLetters] = useState<Set<string>>(new Set());
   const [selectedIdx,  setSelectedIdx]  = useState<number>(0);
 
-  const speakAr = useCallback((text: string) => speak(text, 'ar-MA'), [speak]);
+  const speakAr = useCallback((text: string) => speak(text), [speak]);
   const speakLetter = (arabic: string) => {
     speakAr(arabic);
     setKnownLetters(prev => new Set(prev).add(arabic));

@@ -1,0 +1,77 @@
+{
+  "page_nb": 25,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Relie les étiquettes pour former un mot puis relie-le à son image",
+    "ar": "ارْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ ارْبِطْهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "ارْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ ارْبِطْهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِلْح",
+      "fr": "sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "2",
+      "ar": "مِلْعَقَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "3",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "🧲"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p25_consigne",
+      "texte_ar": "ارْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ ارْبِطْهَا بِصُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p25_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p25_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِلْح",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p25_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p25_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِلْعَقَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p25_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p25_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p25_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p25_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:34:42.831128",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 4
+  }
+}

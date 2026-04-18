@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Entourer le mot cible parmi des distracteurs similaires",
+  "titre": {
+    "fr": "J'entoure le mot",
+    "ar": "أُحيطُ الكلمة بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement le mot 'vache' (بقرة) parmi tous les mots proposés",
+    "ar": "أُحيطُ كلمة بقرة فقط من بين الكلمات المقترحة"
+  },
+  "elements": [
+    {
+      "id": "cible",
+      "ar": "بقرة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "distracteur_1",
+      "ar": "نحلة",
+      "fr": "abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "distracteur_2",
+      "ar": "بقرات",
+      "fr": "vaches (pluriel)",
+      "emoji": "🐄"
+    },
+    {
+      "id": "distracteur_3",
+      "ar": "بقر",
+      "fr": "vaches (sans ta marbuta)",
+      "emoji": "🐄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أُحيطُ كلمة بقرة فقط من بين الكلمات المقترحة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cible",
+      "texte_ar": "بقرة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p4_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p4_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_1",
+      "texte_ar": "نحلة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p4_distracteur_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p4_distracteur_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_2",
+      "texte_ar": "بقرات",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p4_distracteur_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p4_distracteur_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_3",
+      "texte_ar": "بقر",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p4_distracteur_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p4_distracteur_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:56:46.356989",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 5
+  }
+}

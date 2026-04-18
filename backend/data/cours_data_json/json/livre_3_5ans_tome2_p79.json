@@ -1,0 +1,155 @@
+{
+  "page_nb": 79,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Les outils de la maison",
+    "ar": "أدوات المنزل"
+  },
+  "enonce": {
+    "fr": "Relie à la maison les outils que l'on peut trouver à l'intérieur",
+    "ar": "أربط بالمنزل الأدوات الّتي يمكن أن توجد داخله"
+  },
+  "elements": [
+    {
+      "id": "fer_repasser",
+      "ar": "مكواة",
+      "fr": "Fer à repasser",
+      "emoji": "🧺"
+    },
+    {
+      "id": "seche_cheveux",
+      "ar": "مجفف الشعر",
+      "fr": "Sèche-cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "chariot_courses",
+      "ar": "عربة التسوق",
+      "fr": "Chariot de courses",
+      "emoji": "🛒"
+    },
+    {
+      "id": "bus",
+      "ar": "حافلة",
+      "fr": "Bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "maison",
+      "ar": "منزل",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "table",
+      "ar": "طاولة",
+      "fr": "Table",
+      "emoji": "🪑"
+    },
+    {
+      "id": "balai",
+      "ar": "مكنسة",
+      "fr": "Balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "panneau_signalisation",
+      "ar": "لافتة تحذيرية",
+      "fr": "Panneau de signalisation",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "aspirateur",
+      "ar": "مكنسة كهربائية",
+      "fr": "Aspirateur",
+      "emoji": "🌀"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p79_consigne",
+      "texte_ar": "أربط بالمنزل الأدوات الّتي يمكن أن توجد داخله",
+      "voix_m": "livre_3_5ans_tome2_p79_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fer_repasser",
+      "texte_ar": "مكواة",
+      "voix_m": "livre_3_5ans_tome2_p79_fer_repasser_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_fer_repasser_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_seche_cheveux",
+      "texte_ar": "مجفف الشعر",
+      "voix_m": "livre_3_5ans_tome2_p79_seche_cheveux_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_seche_cheveux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chariot_courses",
+      "texte_ar": "عربة التسوق",
+      "voix_m": "livre_3_5ans_tome2_p79_chariot_courses_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_chariot_courses_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "حافلة",
+      "voix_m": "livre_3_5ans_tome2_p79_bus_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_maison",
+      "texte_ar": "منزل",
+      "voix_m": "livre_3_5ans_tome2_p79_maison_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_maison_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_table",
+      "texte_ar": "طاولة",
+      "voix_m": "livre_3_5ans_tome2_p79_table_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_table_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balai",
+      "texte_ar": "مكنسة",
+      "voix_m": "livre_3_5ans_tome2_p79_balai_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_balai_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_panneau_signalisation",
+      "texte_ar": "لافتة تحذيرية",
+      "voix_m": "livre_3_5ans_tome2_p79_panneau_signalisation_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_panneau_signalisation_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_aspirateur",
+      "texte_ar": "مكنسة كهربائية",
+      "voix_m": "livre_3_5ans_tome2_p79_aspirateur_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p79_aspirateur_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:08:50.361207",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

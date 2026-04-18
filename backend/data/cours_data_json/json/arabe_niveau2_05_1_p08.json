@@ -1,0 +1,64 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les parties de chaque image",
+    "ar": "أَلْصِقْ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque mot pour reconstituer l'image complète",
+    "ar": "أَلْصِقْ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "mot2",
+      "ar": "طَائِرَةٌ",
+      "fr": "avion",
+      "emoji": "✈️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أَلْصِقْ أَجْزَاءَ كُلَّ صُورَةٍ",
+      "voix_m": "arabe_niveau2_05_1_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "arabe_niveau2_05_1_p8_mot1_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "طَائِرَةٌ",
+      "voix_m": "arabe_niveau2_05_1_p8_mot2_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p8_mot2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:45:19.715271",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 3
+  }
+}

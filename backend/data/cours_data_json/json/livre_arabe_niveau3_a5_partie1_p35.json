@@ -1,0 +1,90 @@
+{
+  "page_nb": 35,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "J'entoure les lettres du mot",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ حُرُوفَ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Entoure les lettres qui composent chaque mot illustré",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الْحُرُوفَ الَّتِي تُكَوِّنُ كُلَّ كَلِمَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَرَاشَةٌ",
+      "fr": "Papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "2",
+      "ar": "حَافِلَةٌ",
+      "fr": "Bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "3",
+      "ar": "تِمْسَاحٌ",
+      "fr": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "4",
+      "ar": "تَاجٌ",
+      "fr": "Couronne",
+      "emoji": "👑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p35_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الْحُرُوفَ الَّتِي تُكَوِّنُ كُلَّ كَلِمَةٍ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p35_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p35_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p35_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p35_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَافِلَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p35_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p35_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p35_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p35_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p35_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p35_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:29:14.459240",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

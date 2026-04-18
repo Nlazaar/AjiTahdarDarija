@@ -1,0 +1,246 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : écriture de mots sous images, complétion de phrases avec le bon verbe conjugué selon le genre, et construction de phrase avec mots donnés",
+  "titre": {
+    "fr": "J'écris, je complète et je construis des phrases",
+    "ar": "أَكْتُبُ وَأُكْمِلُ وَأَبْنِي جُمَلاً"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot sous chaque image. Exercice 7 : Je complète avec ce qui convient parmi les verbes proposés. Exercice 8 : Je complète la phrase en utilisant les mots suivants.",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تحت كل صورة. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ من الأفعال المقترحة. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "جَزَرَة",
+      "fr": "carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "mot_2",
+      "ar": "يَجْرِي",
+      "fr": "il court (renard)",
+      "emoji": "🦊"
+    },
+    {
+      "id": "mot_3",
+      "ar": "إِجَاصَة",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "verbe_1",
+      "ar": "جَاعَتْ",
+      "fr": "elle a eu faim",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "verbe_2",
+      "ar": "جَاعَ",
+      "fr": "il a eu faim",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "verbe_3",
+      "ar": "جَلَسَ",
+      "fr": "il s'est assis",
+      "emoji": "🪑"
+    },
+    {
+      "id": "verbe_4",
+      "ar": "جَاءَتْ",
+      "fr": "elle est venue",
+      "emoji": "🚶‍♀️"
+    },
+    {
+      "id": "verbe_5",
+      "ar": "جَلَسَتْ",
+      "fr": "elle s'est assise",
+      "emoji": "🪑"
+    },
+    {
+      "id": "verbe_6",
+      "ar": "جَاءَ",
+      "fr": "il est venu",
+      "emoji": "🚶"
+    },
+    {
+      "id": "prenom_1",
+      "ar": "عُمَرُ",
+      "fr": "Omar",
+      "emoji": "👦"
+    },
+    {
+      "id": "prenom_2",
+      "ar": "أَسْمَاءُ",
+      "fr": "Asma",
+      "emoji": "👧"
+    },
+    {
+      "id": "prenom_3",
+      "ar": "بِلَالٌ",
+      "fr": "Bilal",
+      "emoji": "👦"
+    },
+    {
+      "id": "prenom_4",
+      "ar": "سَامِي",
+      "fr": "Sami",
+      "emoji": "👦"
+    },
+    {
+      "id": "mot_phrase_1",
+      "ar": "الْجَمَل",
+      "fr": "le chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "mot_phrase_2",
+      "ar": "يَرْكَبُ",
+      "fr": "il monte",
+      "emoji": "🏇"
+    },
+    {
+      "id": "mot_phrase_3",
+      "ar": "ظَهْر",
+      "fr": "dos",
+      "emoji": "🔝"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_02_jime",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تحت كل صورة. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ من الأفعال المقترحة. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "جَزَرَة",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "يَجْرِي",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "إِجَاصَة",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_1",
+      "texte_ar": "جَاعَتْ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_2",
+      "texte_ar": "جَاعَ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_3",
+      "texte_ar": "جَلَسَ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_4",
+      "texte_ar": "جَاءَتْ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_5",
+      "texte_ar": "جَلَسَتْ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_6",
+      "texte_ar": "جَاءَ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_verbe_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_verbe_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_prenom_1",
+      "texte_ar": "عُمَرُ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_prenom_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_prenom_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_prenom_2",
+      "texte_ar": "أَسْمَاءُ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_prenom_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_prenom_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_prenom_3",
+      "texte_ar": "بِلَالٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_prenom_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_prenom_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_prenom_4",
+      "texte_ar": "سَامِي",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_prenom_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_prenom_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_phrase_1",
+      "texte_ar": "الْجَمَل",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_phrase_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_phrase_2",
+      "texte_ar": "يَرْكَبُ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_phrase_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_phrase_3",
+      "texte_ar": "ظَهْر",
+      "voix_m": "lecture_niv5_lec01_02_jime_p3_mot_phrase_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p3_mot_phrase_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:15:53.117386",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_02_jime",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 17
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 136,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète par la lettre qui manque au mot",
+    "ar": "أكمّل الكلمة بالحرف الناقص"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre manquante (م) en choisissant la bonne forme selon sa position dans le mot",
+    "ar": "أكمل كل كلمة بالحرف الناقص م في مكانه الصحيح"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِحَاةٌ",
+      "fr": "gomme",
+      "emoji": "🧱"
+    },
+    {
+      "id": "2",
+      "ar": "مِسْطَرَةٌ",
+      "fr": "règle",
+      "emoji": "📏"
+    },
+    {
+      "id": "3",
+      "ar": "مَعْجُونٌ",
+      "fr": "pâte (dentifrice/confiture)",
+      "emoji": "🫙"
+    },
+    {
+      "id": "4",
+      "ar": "شَفَةٌ / فَمٌ",
+      "fr": "bouche/lèvres",
+      "emoji": "👄"
+    },
+    {
+      "id": "5",
+      "ar": "نَعَامَةٌ",
+      "fr": "autruche",
+      "emoji": "🦤"
+    },
+    {
+      "id": "6",
+      "ar": "رُمَّانٌ",
+      "fr": "grenade (fruit)",
+      "emoji": "🍎"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p136_consigne",
+      "texte_ar": "أكمل كل كلمة بالحرف الناقص م في مكانه الصحيح",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِحَاةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِسْطَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مَعْجُونٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شَفَةٌ / فَمٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَعَامَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رُمَّانٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p136_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p136_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:34:52.436602",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

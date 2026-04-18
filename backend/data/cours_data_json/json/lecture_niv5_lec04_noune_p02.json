@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier des mots à leurs images, tracer des lettres, et compléter des mots avec la lettre ن",
+  "titre": {
+    "fr": "La lettre Noun (ن) - Lecture, écriture et complétion",
+    "ar": "حرف النون - القراءة والكتابة والإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ن dans ses différentes formes. Exercice 5 : Je complète les mots avec la forme appropriée de ن.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف النون. تمرين 5: أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "لِسَانٌ",
+      "fr": "Une langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "mot_2",
+      "ar": "نَعَامَةٌ",
+      "fr": "Une autruche",
+      "emoji": "🦚"
+    },
+    {
+      "id": "mot_3",
+      "ar": "شَاحِنَةٌ",
+      "fr": "Un camion",
+      "emoji": "🚛"
+    },
+    {
+      "id": "mot_4",
+      "ar": "نَظَّارَةٌ",
+      "fr": "Des lunettes",
+      "emoji": "👓"
+    },
+    {
+      "id": "mot_5",
+      "ar": "مَعْجُونٌ",
+      "fr": "Une araignée (toile)",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "mot_6",
+      "ar": "عَنْكَبُوتٌ",
+      "fr": "Une araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "ecriture_noun",
+      "ar": "ن - ند - نـ",
+      "fr": "Lettre Noun dans ses différentes positions",
+      "emoji": "✏️"
+    },
+    {
+      "id": "complete_1",
+      "ar": "أَنْفٌ",
+      "fr": "Un nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "complete_2",
+      "ar": "كَنْزٌ",
+      "fr": "Un trésor",
+      "emoji": "💰"
+    },
+    {
+      "id": "complete_3",
+      "ar": "نَخِيلٌ",
+      "fr": "Des palmiers",
+      "emoji": "🌴"
+    },
+    {
+      "id": "complete_4",
+      "ar": "تِينٌ",
+      "fr": "Figue",
+      "emoji": "🍈"
+    },
+    {
+      "id": "complete_5",
+      "ar": "فُرْشَاةُ أَسْنَانٍ",
+      "fr": "Brosse à dents",
+      "emoji": "🪥"
+    },
+    {
+      "id": "complete_6",
+      "ar": "نُقُودٌ",
+      "fr": "Argent",
+      "emoji": "💵"
+    },
+    {
+      "id": "complete_7",
+      "ar": "أَوَانِي نَظِيفَةٌ",
+      "fr": "Vaisselle propre",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "complete_8",
+      "ar": "نَبْتَةٌ",
+      "fr": "Une plante",
+      "emoji": "🌱"
+    },
+    {
+      "id": "complete_9",
+      "ar": "نَاعُورَةٌ",
+      "fr": "Un moulin",
+      "emoji": "🏠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec04_noune",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف النون. تمرين 5: أكمل بما يناسب.",
+      "voix_m": "lecture_niv5_lec04_noune_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "لِسَانٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "نَعَامَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "شَاحِنَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "نَظَّارَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "مَعْجُونٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "عَنْكَبُوتٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_mot_6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ecriture_noun",
+      "texte_ar": "ن - ند - نـ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_ecriture_noun_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_ecriture_noun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_1",
+      "texte_ar": "أَنْفٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_2",
+      "texte_ar": "كَنْزٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_3",
+      "texte_ar": "نَخِيلٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_4",
+      "texte_ar": "تِينٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_5",
+      "texte_ar": "فُرْشَاةُ أَسْنَانٍ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_6",
+      "texte_ar": "نُقُودٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_7",
+      "texte_ar": "أَوَانِي نَظِيفَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_7_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_8",
+      "texte_ar": "نَبْتَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_8_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_complete_9",
+      "texte_ar": "نَاعُورَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p2_complete_9_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p2_complete_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:23:02.944905",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv5_lec04_noune",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 17
+  }
+}

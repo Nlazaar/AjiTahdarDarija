@@ -1,0 +1,103 @@
+{
+  "page_nb": 121,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre ث dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وسط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image à la bonne position de la lettre ث : au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَة بِمَوْقِعِ حَرْفِ الثَّاء : فِي أَوَّلِ الْكَلِمَة أَو وَسَطِهَا أَو آخِرِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثَلَّاجَة",
+      "fr": "Réfrigérateur (ث au début)",
+      "emoji": "🧊"
+    },
+    {
+      "id": "2",
+      "ar": "مُثَلَّث",
+      "fr": "Triangle (ث au milieu)",
+      "emoji": "🔺"
+    },
+    {
+      "id": "3",
+      "ar": "آيس كريم / مُثَلَّجَات",
+      "fr": "Glace (ث au milieu)",
+      "emoji": "🍦"
+    },
+    {
+      "id": "4",
+      "ar": "ثَلْج",
+      "fr": "Glaçons (ث au début)",
+      "emoji": "🧊"
+    },
+    {
+      "id": "5",
+      "ar": "ثُوم",
+      "fr": "Ail (ث au début)",
+      "emoji": "🧄"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p121_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَة بِمَوْقِعِ حَرْفِ الثَّاء : فِي أَوَّلِ الْكَلِمَة أَو وَسَطِهَا أَو آخِرِهَا",
+      "voix_m": "livre_arabe_niveau3_p121_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثَلَّاجَة",
+      "voix_m": "livre_arabe_niveau3_p121_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مُثَلَّث",
+      "voix_m": "livre_arabe_niveau3_p121_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "آيس كريم / مُثَلَّجَات",
+      "voix_m": "livre_arabe_niveau3_p121_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثَلْج",
+      "voix_m": "livre_arabe_niveau3_p121_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ثُوم",
+      "voix_m": "livre_arabe_niveau3_p121_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p121_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:17:50.662305",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Apprentissage des chiffres de 1 à 5 en arabe associés à des illustrations de mains montrant le nombre de doigts correspondant",
+  "titre": {
+    "fr": "Les chiffres",
+    "ar": "الأعداد"
+  },
+  "enonce": {
+    "fr": "Apprends les chiffres de 1 à 5 en arabe",
+    "ar": "تَعَلَّمِ الأعداد من 1 إلى 5"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "وَاحِد",
+      "fr": "un",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "2",
+      "ar": "اثْنَان",
+      "fr": "deux",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "3",
+      "ar": "ثَلَاثَة",
+      "fr": "trois",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "4",
+      "ar": "أَرْبَعَة",
+      "fr": "quatre",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "5",
+      "ar": "خَمْسَة",
+      "fr": "cinq",
+      "emoji": "5️⃣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلَّمِ الأعداد من 1 إلى 5",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "وَاحِد",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "اثْنَان",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ثَلَاثَة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَرْبَعَة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خَمْسَة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p1_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p1_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:34:43.655234",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 6
+  }
+}

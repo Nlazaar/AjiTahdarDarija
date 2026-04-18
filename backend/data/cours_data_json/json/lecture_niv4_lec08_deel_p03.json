@@ -1,0 +1,298 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices combinés : écriture de mots à partir de lettres éparpillées sous des images, identification et barrage de la phrase incorrecte parmi deux propositions pour chaque image, et complétion de phrase avec des mots de la liste",
+  "titre": {
+    "fr": "J'écris le mot / Je barre la phrase incorrecte / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أَشْطُبُ الْجُمْلَةَ / أُكْمِلُ الْجُمْلَةَ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot. Exercice 7 : Je barre la phrase qui ne décrit pas l'image. Exercice 8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ. تمرين 7: أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "م د ر س ة",
+      "fr": "École",
+      "emoji": "🏫"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "م س ج د",
+      "fr": "Mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "أ س د",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "د ب",
+      "fr": "Ours",
+      "emoji": "🐻"
+    },
+    {
+      "id": "ex7_1_correct",
+      "ar": "الْكَلْبُ أَمَامَ الْبَيْتِ",
+      "fr": "Le chien est devant la maison",
+      "emoji": "🐕"
+    },
+    {
+      "id": "ex7_1_incorrect",
+      "ar": "الْكَلْبُ وَرَاءَ الْبَيْتِ",
+      "fr": "Le chien est derrière la maison",
+      "emoji": "🐕"
+    },
+    {
+      "id": "ex7_2_correct",
+      "ar": "الْقِطَّةُ أَمَامَ الصُّنْدُوق",
+      "fr": "Le chat est devant la boîte",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_2_incorrect",
+      "ar": "الْقِطَّةُ وَرَاءَ الصُّنْدُوق",
+      "fr": "Le chat est derrière la boîte",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_3_correct",
+      "ar": "الْقِطَّةُ وَرَاءَ الصُّنْدُوق",
+      "fr": "Le chat est derrière la boîte",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex7_3_incorrect",
+      "ar": "الْقِطَّةُ أَمَامَ الصُّنْدُوق",
+      "fr": "Le chat est devant la boîte",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex7_4_correct",
+      "ar": "الْحَلَزُونُ أَمَامَ الْوَلَدِ",
+      "fr": "L'escargot est devant le garçon",
+      "emoji": "🐌"
+    },
+    {
+      "id": "ex7_4_incorrect",
+      "ar": "الْحَلَزُونُ وَرَاءَ الْوَلَدِ",
+      "fr": "L'escargot est derrière le garçon",
+      "emoji": "🐌"
+    },
+    {
+      "id": "ex7_5_correct",
+      "ar": "الدِّيكُ وَرَاءَ السَّيَّارَةِ",
+      "fr": "Le coq est derrière la voiture",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ex7_5_incorrect",
+      "ar": "الدِّيكُ أَمَامَ السَّيَّارَةِ",
+      "fr": "Le coq est devant la voiture",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ex7_6_correct",
+      "ar": "الْفَأْرُ وَرَاءَ السَّيَّارَةِ",
+      "fr": "La souris est derrière la voiture",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex7_6_incorrect",
+      "ar": "الْفَأْرُ أَمَامَ السَّيَّارَةِ",
+      "fr": "La souris est devant la voiture",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur de",
+      "emoji": "📥"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "الصُّنْدُوق",
+      "fr": "la boîte",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "الْقِطَّةُ",
+      "fr": "le chat",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex8_phrase",
+      "ar": "نَامَتِ الصَّغِيرَةُ دَاخِلَ الصُّنْدُوق",
+      "fr": "La petite chatte a dormi à l'intérieur de la boîte",
+      "emoji": "🐱📦"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec08_deel",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ. تمرين 7: أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv4_lec08_deel_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "م د ر س ة",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "م س ج د",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "أ س د",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "د ب",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1_correct",
+      "texte_ar": "الْكَلْبُ أَمَامَ الْبَيْتِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_1_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_1_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1_incorrect",
+      "texte_ar": "الْكَلْبُ وَرَاءَ الْبَيْتِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_1_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_1_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2_correct",
+      "texte_ar": "الْقِطَّةُ أَمَامَ الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_2_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_2_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2_incorrect",
+      "texte_ar": "الْقِطَّةُ وَرَاءَ الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_2_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_2_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3_correct",
+      "texte_ar": "الْقِطَّةُ وَرَاءَ الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_3_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_3_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3_incorrect",
+      "texte_ar": "الْقِطَّةُ أَمَامَ الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_3_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_3_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4_correct",
+      "texte_ar": "الْحَلَزُونُ أَمَامَ الْوَلَدِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_4_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_4_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4_incorrect",
+      "texte_ar": "الْحَلَزُونُ وَرَاءَ الْوَلَدِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_4_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_4_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5_correct",
+      "texte_ar": "الدِّيكُ وَرَاءَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_5_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_5_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5_incorrect",
+      "texte_ar": "الدِّيكُ أَمَامَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_5_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_5_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6_correct",
+      "texte_ar": "الْفَأْرُ وَرَاءَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_6_correct_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_6_correct_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6_incorrect",
+      "texte_ar": "الْفَأْرُ أَمَامَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex7_6_incorrect_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex7_6_incorrect_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "الْقِطَّةُ",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase",
+      "texte_ar": "نَامَتِ الصَّغِيرَةُ دَاخِلَ الصُّنْدُوق",
+      "voix_m": "lecture_niv4_lec08_deel_p3_ex8_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec08_deel_p3_ex8_phrase_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:01:00.676911",
+    "niveau": 4,
+    "lecon": 8,
+    "nom_pdf": "lecture_niv4_lec08_deel",
+    "bucket_audio": "audio-lessons/niveau4/lecon08/",
+    "nb_audio_assets": 21
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je complète les lignes",
+    "ar": "أَكَمِّلُ الخُطُوط"
+  },
+  "enonce": {
+    "fr": "Complète les lignes en suivant le modèle, puis trace le mot 'éléphant' en suivant les pointillés",
+    "ar": "أَكَمِّلُ الخُطُوط باتباع النموذج، ثم أتتبع كتابة كلمة فِيل"
+  },
+  "elements": [
+    {
+      "id": "ligne_1",
+      "ar": "← ← ← ←",
+      "fr": "Lignes horizontales avec flèches vers la gauche",
+      "emoji": "➡️"
+    },
+    {
+      "id": "ligne_2",
+      "ar": "نقاط دائرية",
+      "fr": "Points circulaires à compléter",
+      "emoji": "⭕"
+    },
+    {
+      "id": "ligne_3",
+      "ar": "أقواس",
+      "fr": "Arceaux à compléter",
+      "emoji": "🌙"
+    },
+    {
+      "id": "mot_fiel",
+      "ar": "فِيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَكَمِّلُ الخُطُوط باتباع النموذج، ثم أتتبع كتابة كلمة فِيل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p4_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_1",
+      "texte_ar": "← ← ← ←",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p4_ligne_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p4_ligne_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_2",
+      "texte_ar": "نقاط دائرية",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p4_ligne_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p4_ligne_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_3",
+      "texte_ar": "أقواس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p4_ligne_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p4_ligne_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_fiel",
+      "texte_ar": "فِيل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p4_mot_fiel_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p4_mot_fiel_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:15:48.900285",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 5
+  }
+}

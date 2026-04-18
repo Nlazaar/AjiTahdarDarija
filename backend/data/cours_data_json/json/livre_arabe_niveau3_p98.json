@@ -1,0 +1,194 @@
+{
+  "page_nb": 98,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je barre quand je n'entends pas la lettre dans le mot",
+    "ar": "أَشْطُبُ عِنْدَمَا لَا أَسْمَعُ الْحَرْفَ فِي الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Barre les images dont le mot ne contient pas le son de la lettre ل",
+    "ar": "أَشْطُبُ الصُّوَرَ الَّتِي لَا تَحْتَوِي كَلِمَتُهَا عَلَى حَرْفِ اللَّامِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "آيس كريم",
+      "fr": "glace",
+      "emoji": "🍦"
+    },
+    {
+      "id": "2",
+      "ar": "طِفْل",
+      "fr": "bébé",
+      "emoji": "👶"
+    },
+    {
+      "id": "3",
+      "ar": "عَسَل",
+      "fr": "miel",
+      "emoji": "🍯"
+    },
+    {
+      "id": "4",
+      "ar": "لَيْل وَنَهَار",
+      "fr": "nuit et jour",
+      "emoji": "🌗"
+    },
+    {
+      "id": "5",
+      "ar": "بُرْتُقَال",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "6",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "7",
+      "ar": "حَلَزُون",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "8",
+      "ar": "بَنْطَلُون",
+      "fr": "pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "9",
+      "ar": "مِلْح",
+      "fr": "sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "10",
+      "ar": "جَمَل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "11",
+      "ar": "مِسْطَرَة",
+      "fr": "règle",
+      "emoji": "📏"
+    },
+    {
+      "id": "12",
+      "ar": "سُلَحْفَاة",
+      "fr": "tortue",
+      "emoji": "🐢"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p98_consigne",
+      "texte_ar": "أَشْطُبُ الصُّوَرَ الَّتِي لَا تَحْتَوِي كَلِمَتُهَا عَلَى حَرْفِ اللَّامِ",
+      "voix_m": "livre_arabe_niveau3_p98_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "آيس كريم",
+      "voix_m": "livre_arabe_niveau3_p98_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طِفْل",
+      "voix_m": "livre_arabe_niveau3_p98_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عَسَل",
+      "voix_m": "livre_arabe_niveau3_p98_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "لَيْل وَنَهَار",
+      "voix_m": "livre_arabe_niveau3_p98_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بُرْتُقَال",
+      "voix_m": "livre_arabe_niveau3_p98_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_arabe_niveau3_p98_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "حَلَزُون",
+      "voix_m": "livre_arabe_niveau3_p98_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بَنْطَلُون",
+      "voix_m": "livre_arabe_niveau3_p98_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِلْح",
+      "voix_m": "livre_arabe_niveau3_p98_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "جَمَل",
+      "voix_m": "livre_arabe_niveau3_p98_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "مِسْطَرَة",
+      "voix_m": "livre_arabe_niveau3_p98_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سُلَحْفَاة",
+      "voix_m": "livre_arabe_niveau3_p98_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p98_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:13:55.052643",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 13
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 145,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je colle le mot en dessous de son image",
+    "ar": "أُلْصِقُ الْكَلِمَةَ تَحْتَ صُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Colle chaque mot arabe sous l'image qui lui correspond",
+    "ar": "أُلْصِقُ الْكَلِمَةَ تَحْتَ صُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَوْزٌ",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "2",
+      "ar": "ثُومٌ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "3",
+      "ar": "عِنَبٌ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "4",
+      "ar": "حُوتٌ",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "5",
+      "ar": "أَرْنَبٌ",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "6",
+      "ar": "أَسَدٌ",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "7",
+      "ar": "طَبَقٌ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "8",
+      "ar": "خُبْزٌ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "9",
+      "ar": "زَيْتُونٌ",
+      "fr": "huile d'olive",
+      "emoji": "🫒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p145_consigne",
+      "texte_ar": "أُلْصِقُ الْكَلِمَةَ تَحْتَ صُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_p145_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَوْزٌ",
+      "voix_m": "livre_arabe_niveau3_p145_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثُومٌ",
+      "voix_m": "livre_arabe_niveau3_p145_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "livre_arabe_niveau3_p145_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "livre_arabe_niveau3_p145_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أَرْنَبٌ",
+      "voix_m": "livre_arabe_niveau3_p145_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "livre_arabe_niveau3_p145_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "طَبَقٌ",
+      "voix_m": "livre_arabe_niveau3_p145_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خُبْزٌ",
+      "voix_m": "livre_arabe_niveau3_p145_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "livre_arabe_niveau3_p145_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p145_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:22:04.804407",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

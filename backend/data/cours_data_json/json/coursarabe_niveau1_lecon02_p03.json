@@ -1,0 +1,90 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Coller les parties de chaque mot dans le bon cœur (assemblage de syllabes)",
+  "titre": {
+    "fr": "Je colle les parties de chaque mot",
+    "ar": "أَلصِقِ الْكَلِمَاتِ فِي مَكَانِهَا الْمُنَاسِبِ"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque mot à la bonne place dans le cœur correspondant",
+    "ar": "أَلصِقِ الْكَلِمَاتِ فِي مَكَانِهَا الْمُنَاسِبِ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "أُمِّي",
+      "fr": "ma maman",
+      "emoji": "❤️"
+    },
+    {
+      "id": "mot_2",
+      "ar": "أَبِي",
+      "fr": "mon papa",
+      "emoji": "❤️"
+    },
+    {
+      "id": "verbe_1",
+      "ar": "أُحِبُّ",
+      "fr": "j'aime (féminin/neutre)",
+      "emoji": "💗"
+    },
+    {
+      "id": "verbe_2",
+      "ar": "أُحِبُّ",
+      "fr": "j'aime (masculin)",
+      "emoji": "💗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَلصِقِ الْكَلِمَاتِ فِي مَكَانِهَا الْمُنَاسِبِ",
+      "voix_m": "coursarabe_niveau1_lecon02_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "أُمِّي",
+      "voix_m": "coursarabe_niveau1_lecon02_p3_mot_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p3_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "أَبِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p3_mot_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p3_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_1",
+      "texte_ar": "أُحِبُّ",
+      "voix_m": "coursarabe_niveau1_lecon02_p3_verbe_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p3_verbe_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verbe_2",
+      "texte_ar": "أُحِبُّ",
+      "voix_m": "coursarabe_niveau1_lecon02_p3_verbe_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p3_verbe_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:40:23.304717",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 44,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نُجُومٌ",
+      "fr": "étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "2",
+      "ar": "سَحَابٌ",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "3",
+      "ar": "قَمَرٌ",
+      "fr": "lune",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 3,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p44_consigne",
+      "texte_ar": "أربط بين الكلمة و صورتها",
+      "voix_m": "livre_3_5ans_tome2_p44_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p44_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نُجُومٌ",
+      "voix_m": "livre_3_5ans_tome2_p44_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p44_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَحَابٌ",
+      "voix_m": "livre_3_5ans_tome2_p44_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p44_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_3_5ans_tome2_p44_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p44_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:02:56.445686",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 4
+  }
+}

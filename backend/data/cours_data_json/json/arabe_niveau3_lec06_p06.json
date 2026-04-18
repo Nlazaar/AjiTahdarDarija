@@ -1,0 +1,194 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je barre quand je n'entends pas la lettre dans le mot",
+    "ar": "أَشْطُبُ عِنْدَمَا لَا أَسْمَعُ الْحَرْفَ فِي الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Barre les images dont le mot arabe ne contient pas le son de la lettre ر",
+    "ar": "اشطب الصور التي لا تحتوي كلماتها على حرف الراء"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شَجَرَة",
+      "fr": "arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "2",
+      "ar": "لِسَان",
+      "fr": "langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "3",
+      "ar": "شِطْرَنْج",
+      "fr": "échecs",
+      "emoji": "♟️"
+    },
+    {
+      "id": "4",
+      "ar": "غُرَاب",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "5",
+      "ar": "زَرَافَة",
+      "fr": "girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "6",
+      "ar": "قِرْد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "7",
+      "ar": "أُرْجُوحَة",
+      "fr": "balançoire",
+      "emoji": "🎠"
+    },
+    {
+      "id": "8",
+      "ar": "نَهَار وَلَيْل",
+      "fr": "jour et nuit",
+      "emoji": "🌗"
+    },
+    {
+      "id": "9",
+      "ar": "بِنْت",
+      "fr": "fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "10",
+      "ar": "نَمِر",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "11",
+      "ar": "شَعْر",
+      "fr": "cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "12",
+      "ar": "نَمْلَة",
+      "fr": "fourmi",
+      "emoji": "🐜"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "arabe_niveau3_lec06",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اشطب الصور التي لا تحتوي كلماتها على حرف الراء",
+      "voix_m": "arabe_niveau3_lec06_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شَجَرَة",
+      "voix_m": "arabe_niveau3_lec06_p6_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "لِسَان",
+      "voix_m": "arabe_niveau3_lec06_p6_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شِطْرَنْج",
+      "voix_m": "arabe_niveau3_lec06_p6_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "غُرَاب",
+      "voix_m": "arabe_niveau3_lec06_p6_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "زَرَافَة",
+      "voix_m": "arabe_niveau3_lec06_p6_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قِرْد",
+      "voix_m": "arabe_niveau3_lec06_p6_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أُرْجُوحَة",
+      "voix_m": "arabe_niveau3_lec06_p6_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "نَهَار وَلَيْل",
+      "voix_m": "arabe_niveau3_lec06_p6_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "بِنْت",
+      "voix_m": "arabe_niveau3_lec06_p6_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "نَمِر",
+      "voix_m": "arabe_niveau3_lec06_p6_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "شَعْر",
+      "voix_m": "arabe_niveau3_lec06_p6_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "نَمْلَة",
+      "voix_m": "arabe_niveau3_lec06_p6_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p6_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:33:19.465456",
+    "niveau": 3,
+    "lecon": 6,
+    "nom_pdf": "arabe_niveau3_lec06",
+    "bucket_audio": "audio-lessons/niveau3/lecon06/",
+    "nb_audio_assets": 13
+  }
+}

@@ -7,13 +7,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// Enum definitions
+/// ──────────── Enums ────────────
 enum ExerciseType {
   MULTIPLE_CHOICE
   FILL_BLANK
   LISTENING
   TRANSLATION
   REORDER
+  ARABIC_KEYBOARD // saisie arabe (clavier QWERTY phonétique ou layout AR)
+  DRAWING // coloriage / collage / tracé libre
+  MATCHING // appariement (relier audio ↔ réponse, image ↔ mot)
+  DUEL // exercice utilisé en mode duel synchrone
 }
 
 enum PartOfSpeech {
@@ -27,7 +31,27 @@ enum PartOfSpeech {
   INTERJECTION
 }
 
-/// Primary models
+enum LangTrack {
+  DARIJA
+  MSA
+  BOTH
+}
+
+/// Track de navigation top-level (3 onglets côté UI : Darija / MSA / Religion).
+enum ModuleTrack {
+  DARIJA
+  MSA
+  RELIGION
+}
+
+enum DuelStatus {
+  WAITING // en attente d'un adversaire
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+/// ──────────── Core ────────────
 model User {
   id           String   @id @default(cuid())
   email        String   @unique
@@ -39,7 +63,7 @@ model User {
   updatedAt    DateTime @updatedAt
   isDeleted    Boolean  @default(false)
 
-  // Gamification fields
+  // Gamification
   xp           Int       @default(0)
   level        Int       @default(1)
   streak       Int       @default(0)
@@ -47,24 +71,38 @@ model User {
   hearts       Int       @default(5)
   gemmes       Int       @default(0)
 
-  // Subscription fields
+  // Préférence de track linguistique (UI)
+  langTrack LangTrack @default(DARIJA)
+
+  // Souscription
   subscriptionStatus    String?   @default("free")
   subscriptionExpiresAt DateTime?
 
-  // relations
-  lessonsAuthored      Lesson[]              @relation("AuthorLessons")
+  // Relations (toutes les FK déclarées explicitement pour intégrité référentielle)
+  lessonsAuthored      Lesson[]               @relation("AuthorLessons")
   progress             UserProgress[]
   vocabularies         UserVocabulary[]
   badges               UserBadge[]
   conversationMessages ConversationMessage[]
   inventory            UserInventory[]
+  friendRequestsSent   FriendRequest[]        @relation("FriendRequestFrom")
+  friendRequestsRecv   FriendRequest[]        @relation("FriendRequestTo")
+  leagueMembership     LeagueMembership?
+  analyticsEvents      AnalyticsEvent[]
+  dailyQuests          DailyQuestProgress[]
+  monthlyQuests        MonthlyQuestProgress[]
+  duelsAsP1            Duel[]                 @relation("DuelP1")
+  duelsAsP2            Duel[]                 @relation("DuelP2")
+  duelsWon             Duel[]                 @relation("DuelWinner")
+  culturalUnlocks      UserCulturalUnlock[]
 
   @@index([email])
+  @@index([xp])
 }
 
 model Language {
   id        String   @id @default(cuid())
-  code      String   @unique // e.g. 'ar-MA', 'fr', 'en'
+  code      String   @unique // 'ar-MA', 'ar-SA', 'fr', 'en'
   name      String
   createdAt DateTime @default(now())
 
@@ -73,22 +111,28 @@ model Language {
 }
 
 model Module {
-  id          String   @id @default(cuid())
-  title       String
-  subtitle    String?
-  description String?
-  level       Int      @default(1)
-  slug        String   @unique
-  colorA      String?
-  colorB      String?
-  shadowColor String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  isPublished Boolean  @default(false)
+  id             String      @id @default(cuid())
+  title          String
+  subtitle       String?
+  description    String?
+  level          Int         @default(1)
+  slug           String      @unique
+  /// Track de navigation top-level (DARIJA / MSA / RELIGION).
+  track          ModuleTrack @default(MSA)
+  /// Position canonique du module dans son track (0-based, ordre pédagogique).
+  /// Permet l'alignement Darija ↔ MSA (même `canonicalOrder` = même thème).
+  canonicalOrder Int         @default(0)
+  colorA         String?
+  colorB         String?
+  shadowColor    String?
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  isPublished    Boolean     @default(false)
 
   lessons Lesson[]
 
   @@index([slug])
+  @@index([track, canonicalOrder])
   @@index([level, createdAt])
 }
 
@@ -98,38 +142,42 @@ model Lesson {
   slug        String?  @unique
   subtitle    String?
   description String?
-  content     Json? // structured content (blocks, steps, hints)
+  content     Json?
   order       Int      @default(0)
-  duration    Int? // seconds estimated
+  duration    Int?
   level       Int      @default(1)
+  videoUrl    String?
+  videoPoster String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   isPublished Boolean  @default(false)
   isDeleted   Boolean  @default(false)
 
-  // relations
-  module     Module?  @relation(fields: [moduleId], references: [id])
+  module     Module?  @relation(fields: [moduleId], references: [id], onDelete: SetNull)
   moduleId   String?
-  author     User?    @relation("AuthorLessons", fields: [authorId], references: [id])
+  author     User?    @relation("AuthorLessons", fields: [authorId], references: [id], onDelete: SetNull)
   authorId   String?
   language   Language @relation(fields: [languageId], references: [id])
   languageId String
 
   exercises    Exercise[]
   userProgress UserProgress[]
+  duels        Duel[]
 
   @@index([moduleId, order])
   @@index([languageId, level])
+  @@index([isPublished, isDeleted])
 }
 
 model Vocabulary {
   id              String        @id @default(cuid())
   word            String
   transliteration String?
-  translation     Json? // supports multiple translations per language
-  audioUrl        String?       // URL relative vers le fichier MP3 généré par Habibi-TTS
+  translation     Json?
+  audioUrl        String?
+  imageUrl        String?
   partOfSpeech    PartOfSpeech?
-  examples        Json? // array of example objects
+  examples        Json?
   tags            String[]      @default([])
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
@@ -148,40 +196,40 @@ model Exercise {
   id        String       @id @default(cuid())
   type      ExerciseType
   prompt    String?
-  data      Json? // question options, audio ref, etc.
-  answer    Json? // canonical answer structure
+  data      Json?
+  answer    Json?
   points    Int          @default(10)
   createdAt DateTime     @default(now())
   updatedAt DateTime     @updatedAt
 
-  // relations
-  lesson       Lesson?     @relation(fields: [lessonId], references: [id])
+  lesson       Lesson?     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   lessonId     String?
-  vocabulary   Vocabulary? @relation(fields: [vocabularyId], references: [id])
+  vocabulary   Vocabulary? @relation(fields: [vocabularyId], references: [id], onDelete: SetNull)
   vocabularyId String?
 
   @@index([lessonId])
+  @@index([vocabularyId])
   @@index([type])
 }
 
 model Badge {
   id          String   @id @default(cuid())
-  key         String   @unique // e.g. 'first_lesson', 'streak_7'
+  key         String   @unique
   title       String
   description String?
-  icon        String? // url or asset key
+  icon        String?
   points      Int      @default(0)
   createdAt   DateTime @default(now())
 
   userBadges UserBadge[]
 }
 
-/// Join / pivot models and progress tracking
+/// ──────────── Progression ────────────
 model UserBadge {
   id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  badge     Badge    @relation(fields: [badgeId], references: [id])
+  badge     Badge    @relation(fields: [badgeId], references: [id], onDelete: Cascade)
   badgeId   String
   awardedAt DateTime @default(now())
 
@@ -191,11 +239,11 @@ model UserBadge {
 
 model UserVocabulary {
   id           String     @id @default(cuid())
-  user         User       @relation(fields: [userId], references: [id])
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId       String
-  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id])
+  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
   vocabularyId String
-  mastery      Int        @default(0) // 0-100
+  mastery      Int        @default(0)
   lastSeenAt   DateTime?
   nextReviewAt DateTime?
   createdAt    DateTime   @default(now())
@@ -207,12 +255,12 @@ model UserVocabulary {
 
 model UserProgress {
   id         String    @id @default(cuid())
-  user       User      @relation(fields: [userId], references: [id])
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId     String
-  lesson     Lesson    @relation(fields: [lessonId], references: [id])
+  lesson     Lesson    @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   lessonId   String
   completed  Boolean   @default(false)
-  progress   Int       @default(0) // 0-100 percent
+  progress   Int       @default(0)
   xpEarned   Int       @default(0)
   startedAt  DateTime  @default(now())
   finishedAt DateTime?
@@ -224,6 +272,7 @@ model UserProgress {
 
 model AnalyticsEvent {
   id        String   @id @default(cuid())
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
   userId    String?
   type      String
   payload   Json?
@@ -231,35 +280,68 @@ model AnalyticsEvent {
 
   @@index([userId])
   @@index([type])
+  @@index([createdAt])
 }
 
+/// ──────────── Social ────────────
 model FriendRequest {
   id        String   @id @default(cuid())
+  from      User     @relation("FriendRequestFrom", fields: [fromId], references: [id], onDelete: Cascade)
   fromId    String
+  to        User     @relation("FriendRequestTo", fields: [toId], references: [id], onDelete: Cascade)
   toId      String
-  status    String   @default("pending") // pending, accepted, rejected
+  status    String   @default("pending") // pending | accepted | rejected
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
+  @@unique([fromId, toId])
   @@index([fromId])
   @@index([toId])
+  @@index([status])
 }
 
 model LeagueMembership {
   id        String   @id @default(cuid())
-  userId    String
-  league    String // Bronze, Silver, Gold, Diamond, Master
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String   @unique
+  league    String // Bronze | Silver | Gold | Diamond | Master
   points    Int      @default(0)
   updatedAt DateTime @updatedAt
 
-  @@index([userId])
-  @@index([league])
+  @@index([league, points(sort: Desc)])
 }
 
+/// ──────────── Duels temps réel ────────────
+model Duel {
+  id         String     @id @default(cuid())
+  p1         User       @relation("DuelP1", fields: [p1Id], references: [id], onDelete: Cascade)
+  p1Id       String
+  p2         User?      @relation("DuelP2", fields: [p2Id], references: [id], onDelete: SetNull)
+  p2Id       String?
+  winner     User?      @relation("DuelWinner", fields: [winnerId], references: [id], onDelete: SetNull)
+  winnerId   String?
+  lesson     Lesson?    @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+  lessonId   String?
+  status     DuelStatus @default(WAITING)
+  scoreP1    Int        @default(0)
+  scoreP2    Int        @default(0)
+  rounds     Int        @default(5)
+  data       Json? // questions snapshot, timing, etc.
+  createdAt  DateTime   @default(now())
+  startedAt  DateTime?
+  finishedAt DateTime?
+
+  @@index([status, createdAt])
+  @@index([p1Id])
+  @@index([p2Id])
+}
+
+/// ──────────── Boutique culturelle ────────────
 model VocabularyPack {
   id          String   @id @default(cuid())
   title       String
   description String?
-  difficulty  String? // e.g. easy/medium/hard
+  difficulty  String?
   category    String?
   premiumOnly Boolean  @default(false)
   createdAt   DateTime @default(now())
@@ -272,9 +354,9 @@ model VocabularyPack {
 
 model PackWord {
   id           String         @id @default(cuid())
-  pack         VocabularyPack @relation(fields: [packId], references: [id])
+  pack         VocabularyPack @relation(fields: [packId], references: [id], onDelete: Cascade)
   packId       String
-  vocabulary   Vocabulary     @relation(fields: [vocabularyId], references: [id])
+  vocabulary   Vocabulary     @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
   vocabularyId String
 
   @@index([packId])
@@ -283,7 +365,7 @@ model PackWord {
 
 model ConversationMessage {
   id        String   @id @default(cuid())
-  user      User?    @relation(fields: [userId], references: [id])
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String?
   role      String // 'user' | 'bot'
   text      String
@@ -300,7 +382,7 @@ model ShopItem {
   name        String
   description String
   icon        String
-  category    String          // 'consumable' | 'cosmetic' | 'pack'
+  category    String // 'consumable' | 'cosmetic' | 'pack' | 'cultural'
   price       Int
   effect      Json?
   isAvailable Boolean         @default(true)
@@ -316,17 +398,55 @@ model UserInventory {
   isActive  Boolean   @default(false)
   expiresAt DateTime?
   createdAt DateTime  @default(now())
-  user      User      @relation(fields: [userId], references: [id])
-  item      ShopItem  @relation(fields: [itemKey], references: [key])
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item      ShopItem  @relation(fields: [itemKey], references: [key], onDelete: Cascade)
 
+  @@index([userId])
+  @@index([itemKey])
+}
+
+/// Collection culturelle marocaine (plats, musique, lieux, monuments).
+/// Débloquée par achat boutique, complétion de cours, ou récompenses streak.
+model CulturalItem {
+  id          String   @id @default(cuid())
+  key         String   @unique // 'tajine', 'gnawa-music', 'jamaa-el-fna', etc.
+  category    String // 'food' | 'music' | 'place' | 'monument' | 'tradition'
+  name        String
+  nameAr      String?
+  description String?
+  imageUrl    String?
+  audioUrl    String?
+  region      String? // Casablanca, Marrakech, Fès, etc.
+  rarity      String   @default("common") // common | rare | epic | legendary
+  unlockHint  String? // ex. "Termine le module Nourriture"
+  createdAt   DateTime @default(now())
+
+  unlocks UserCulturalUnlock[]
+
+  @@index([category])
+  @@index([rarity])
+}
+
+model UserCulturalUnlock {
+  id         String       @id @default(cuid())
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId     String
+  item       CulturalItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  itemId     String
+  unlockedAt DateTime     @default(now())
+  source     String? // 'shop' | 'lesson' | 'streak' | 'duel'
+
+  @@unique([userId, itemId])
   @@index([userId])
 }
 
+/// ──────────── Quêtes ────────────
 model DailyQuestProgress {
   id        String    @id @default(cuid())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  date      String    // YYYY-MM-DD
-  questKey  String    // 'xp_50' | 'lessons_2' | 'streak' | 'score_90'
+  date      String // YYYY-MM-DD
+  questKey  String // 'xp_50' | 'lessons_2' | 'streak' | 'score_90'
   current   Int       @default(0)
   completed Boolean   @default(false)
   claimedAt DateTime?
@@ -338,8 +458,9 @@ model DailyQuestProgress {
 
 model MonthlyQuestProgress {
   id           String    @id @default(cuid())
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId       String
-  yearMonth    String    // YYYY-MM
+  yearMonth    String // YYYY-MM
   questsDone   Int       @default(0)
   questsTarget Int       @default(30)
   completed    Boolean   @default(false)
@@ -349,6 +470,3 @@ model MonthlyQuestProgress {
   @@unique([userId, yearMonth])
   @@index([userId])
 }
-
-// Additional indexes or extensions can be added using raw SQL migrations
-// for advanced Postgres features (GIN, full-text search, partial indexes).

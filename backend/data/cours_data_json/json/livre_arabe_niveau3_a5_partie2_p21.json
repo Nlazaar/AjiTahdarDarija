@@ -1,0 +1,116 @@
+{
+  "page_nb": 21,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمَل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ذ qui manque, en observant l'image",
+    "ar": "أكمَل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ : ذ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ذِئْبٌ",
+      "fr": "loup",
+      "emoji": "🐺"
+    },
+    {
+      "id": "2",
+      "ar": "ذُبَابَةٌ",
+      "fr": "mouche",
+      "emoji": "🪰"
+    },
+    {
+      "id": "3",
+      "ar": "ذَيْلٌ",
+      "fr": "queue",
+      "emoji": "🦎"
+    },
+    {
+      "id": "4",
+      "ar": "قُنْفُذٌ",
+      "fr": "hérisson",
+      "emoji": "🦔"
+    },
+    {
+      "id": "5",
+      "ar": "جِذْعٌ",
+      "fr": "tronc d'arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "6",
+      "ar": "أُذُنٌ",
+      "fr": "oreille",
+      "emoji": "👂"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p21_consigne",
+      "texte_ar": "أكمَل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ : ذ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ذِئْبٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ذُبَابَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قُنْفُذٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جِذْعٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أُذُنٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p21_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p21_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:34:07.806610",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

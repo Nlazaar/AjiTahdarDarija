@@ -1,0 +1,220 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحث عن الكلمة و أحيطها بخط"
+  },
+  "enonce": {
+    "fr": "Trouve et entoure tous les mots identiques à 'فيل' (éléphant) parmi les mots proposés",
+    "ar": "أبحث عن كلمة فيل و أحيطها بخط بين الكلمات المقترحة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "2",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "3",
+      "ar": "قيل",
+      "fr": "intrus",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "5",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "6",
+      "ar": "فول",
+      "fr": "intrus",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "8",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "9",
+      "ar": "ويل",
+      "fr": "intrus",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "فيلة",
+      "fr": "intrus",
+      "emoji": "❌"
+    },
+    {
+      "id": "11",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "12",
+      "ar": "فيل",
+      "fr": "éléphant (correct)",
+      "emoji": "🐘"
+    },
+    {
+      "id": "13",
+      "ar": "فيلق",
+      "fr": "intrus",
+      "emoji": "❌"
+    },
+    {
+      "id": "14",
+      "ar": "نيل",
+      "fr": "intrus",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_01",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أبحث عن كلمة فيل و أحيطها بخط بين الكلمات المقترحة",
+      "voix_m": "arabe_niveau2_01_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_1_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_2_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "قيل",
+      "voix_m": "arabe_niveau2_01_p5_3_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_4_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_5_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فول",
+      "voix_m": "arabe_niveau2_01_p5_6_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_7_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_8_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ويل",
+      "voix_m": "arabe_niveau2_01_p5_9_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "فيلة",
+      "voix_m": "arabe_niveau2_01_p5_10_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_11_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "فيل",
+      "voix_m": "arabe_niveau2_01_p5_12_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "فيلق",
+      "voix_m": "arabe_niveau2_01_p5_13_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "نيل",
+      "voix_m": "arabe_niveau2_01_p5_14_m.mp3",
+      "voix_f": "arabe_niveau2_01_p5_14_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:34:01.308389",
+    "niveau": 2,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau2_01",
+    "bucket_audio": "audio-lessons/niveau2/lecon07/",
+    "nb_audio_assets": 15
+  }
+}

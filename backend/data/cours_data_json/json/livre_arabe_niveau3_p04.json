@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque groupe, barre la forme différente des autres : trouve l'intrus parmi les images et parmi les mots.",
+    "ar": "فِي كُلِّ مَجْمُوعَةٍ، اشْطُبِ الشَّكْلَ الْمُخْتَلِفَ عَنِ الْبَاقِينَ."
+  },
+  "elements": [
+    {
+      "id": "groupe_1_images",
+      "ar": "دَجَاجَة",
+      "fr": "Groupe de poulets (une image différente à trouver)",
+      "emoji": "🐔"
+    },
+    {
+      "id": "groupe_2_images",
+      "ar": "سَيَّارَة",
+      "fr": "Groupe de voitures (une image différente à trouver)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "groupe_3_mots_intrus",
+      "ar": "دَجَاحَة",
+      "fr": "Intrus dans le groupe de mots poulet (دَجَاحَة au lieu de دَجَاجَة)",
+      "emoji": "❌"
+    },
+    {
+      "id": "groupe_4_mots_intrus",
+      "ar": "سَيَّازَة",
+      "fr": "Intrus dans le groupe de mots voiture (سَيَّازَة au lieu de سَيَّارَة)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "فِي كُلِّ مَجْمُوعَةٍ، اشْطُبِ الشَّكْلَ الْمُخْتَلِفَ عَنِ الْبَاقِينَ.",
+      "voix_m": "livre_arabe_niveau3_p4_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_1_images",
+      "texte_ar": "دَجَاجَة",
+      "voix_m": "livre_arabe_niveau3_p4_groupe_1_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p4_groupe_1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_2_images",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_arabe_niveau3_p4_groupe_2_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p4_groupe_2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_3_mots_intrus",
+      "texte_ar": "دَجَاحَة",
+      "voix_m": "livre_arabe_niveau3_p4_groupe_3_mots_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p4_groupe_3_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_4_mots_intrus",
+      "texte_ar": "سَيَّازَة",
+      "voix_m": "livre_arabe_niveau3_p4_groupe_4_mots_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p4_groupe_4_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:54:42.488868",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

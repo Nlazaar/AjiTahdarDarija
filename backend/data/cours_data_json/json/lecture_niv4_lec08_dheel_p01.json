@@ -1,0 +1,285 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ذ avec vocabulaire illustré, formes de la lettre selon la voyelle, phrase exemple, exercice d'écoute et exercice d'identification visuelle",
+  "titre": {
+    "fr": "La lettre Dhal (ذ)",
+    "ar": "حَرْفُ الذَّال"
+  },
+  "enonce": {
+    "fr": "Découverte de la lettre ذ : vocabulaire illustré avec les trois formes vocaliques, phrase modèle, puis deux exercices : 1) J'entends ou je n'entends pas la lettre dans le mot, 2) J'entoure la lettre dans les mots.",
+    "ar": "تَعَلُّمُ حَرْفِ الذَّال: مُفْرَدَاتٌ مُصَوَّرَةٌ مَعَ الْحَرَكَاتِ الثَّلَاثِ، جُمْلَةٌ نَمُوذَجِيَّةٌ، ثُمَّ تَمْرِينَانِ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ذِرَاعٌ",
+      "fr": "bras",
+      "emoji": "💪"
+    },
+    {
+      "id": "2",
+      "ar": "ذُبَابَةٌ",
+      "fr": "mouche",
+      "emoji": "🪰"
+    },
+    {
+      "id": "3",
+      "ar": "نَافِذَةٌ",
+      "fr": "fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "4",
+      "ar": "يُؤْذِي",
+      "fr": "faire du mal",
+      "emoji": "😢"
+    },
+    {
+      "id": "5",
+      "ar": "بُذُورٌ",
+      "fr": "graines",
+      "emoji": "🌱"
+    },
+    {
+      "id": "6",
+      "ar": "أَذَانٌ",
+      "fr": "appel à la prière",
+      "emoji": "🕌"
+    },
+    {
+      "id": "7",
+      "ar": "هَذَا تِلْمِيذٌ ذَكِيٌّ",
+      "fr": "Cet élève est intelligent",
+      "emoji": "🧒"
+    },
+    {
+      "id": "8",
+      "ar": "رَذَاذٌ",
+      "fr": "bruine",
+      "emoji": "🌧️"
+    },
+    {
+      "id": "9",
+      "ar": "إِنْذَارٌ",
+      "fr": "avertissement",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "10",
+      "ar": "مَاذَا",
+      "fr": "quoi / que",
+      "emoji": "❓"
+    },
+    {
+      "id": "11",
+      "ar": "تَحْذِيرٌ",
+      "fr": "mise en garde",
+      "emoji": "🚨"
+    },
+    {
+      "id": "12",
+      "ar": "زَارَ",
+      "fr": "visiter",
+      "emoji": "🏠"
+    },
+    {
+      "id": "13",
+      "ar": "دَارَ",
+      "fr": "tourner / maison",
+      "emoji": "🏡"
+    },
+    {
+      "id": "14",
+      "ar": "بَذْرٌ",
+      "fr": "graine",
+      "emoji": "🌾"
+    },
+    {
+      "id": "15",
+      "ar": "بَذِيءٌ",
+      "fr": "grossier",
+      "emoji": "🤐"
+    },
+    {
+      "id": "16",
+      "ar": "ذَلِكَ",
+      "fr": "cela",
+      "emoji": "👉"
+    },
+    {
+      "id": "17",
+      "ar": "ذَبُلَ",
+      "fr": "se faner",
+      "emoji": "🥀"
+    },
+    {
+      "id": "18",
+      "ar": "دَأَبَ",
+      "fr": "persévérer",
+      "emoji": "💪"
+    },
+    {
+      "id": "19",
+      "ar": "حَذَّرَ",
+      "fr": "avertir",
+      "emoji": "⚠️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec08_dheel",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلُّمُ حَرْفِ الذَّال: مُفْرَدَاتٌ مُصَوَّرَةٌ مَعَ الْحَرَكَاتِ الثَّلَاثِ، جُمْلَةٌ نَمُوذَجِيَّةٌ، ثُمَّ تَمْرِينَانِ: ١) أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، ٢) أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ.",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ذِرَاعٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ذُبَابَةٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "نَافِذَةٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "يُؤْذِي",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بُذُورٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَذَانٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "هَذَا تِلْمِيذٌ ذَكِيٌّ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "رَذَاذٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_8_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "إِنْذَارٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_9_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مَاذَا",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_10_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "تَحْذِيرٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_11_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "زَارَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_12_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "دَارَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_13_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "بَذْرٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_14_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "بَذِيءٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_15_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ذَلِكَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_16_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "ذَبُلَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_17_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "دَأَبَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_18_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "حَذَّرَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p1_19_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p1_19_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:01:48.748560",
+    "niveau": 4,
+    "lecon": 8,
+    "nom_pdf": "lecture_niv4_lec08_dheel",
+    "bucket_audio": "audio-lessons/niveau4/lecon08/",
+    "nb_audio_assets": 20
+  }
+}

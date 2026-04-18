@@ -1,0 +1,164 @@
+{
+  "page_nb": 3,
+  "type": "cours",
+  "mecanique": "Présentation de lettres arabes isolées avec leur translittération phonétique",
+  "titre": {
+    "fr": "Les lettres arabes - Partie 3",
+    "ar": "الحروف العربية - الجزء الثالث"
+  },
+  "enonce": {
+    "fr": "Découvre et apprends ces lettres de l'alphabet arabe",
+    "ar": "اكتشف وتعلم هذه الحروف من الأبجدية العربية"
+  },
+  "elements": [
+    {
+      "id": "qaf",
+      "ar": "ق",
+      "fr": "qâf",
+      "emoji": "🔵"
+    },
+    {
+      "id": "fa",
+      "ar": "ف",
+      "fr": "fê",
+      "emoji": "🟣"
+    },
+    {
+      "id": "ghayn",
+      "ar": "غ",
+      "fr": "ghayn",
+      "emoji": "🪻"
+    },
+    {
+      "id": "mim",
+      "ar": "م",
+      "fr": "mîm",
+      "emoji": "🟠"
+    },
+    {
+      "id": "lam",
+      "ar": "ل",
+      "fr": "lêm",
+      "emoji": "🟤"
+    },
+    {
+      "id": "kaf",
+      "ar": "ك",
+      "fr": "kêf",
+      "emoji": "🫒"
+    },
+    {
+      "id": "waw",
+      "ar": "و",
+      "fr": "wouâw",
+      "emoji": "🌿"
+    },
+    {
+      "id": "ha",
+      "ar": "ه",
+      "fr": "hê",
+      "emoji": "🩵"
+    },
+    {
+      "id": "nun",
+      "ar": "ن",
+      "fr": "noûn",
+      "emoji": "🟫"
+    },
+    {
+      "id": "ya",
+      "ar": "ي",
+      "fr": "yê",
+      "emoji": "🔷"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "اكتشف وتعلم هذه الحروف من الأبجدية العربية",
+      "voix_m": "v1_l1_p3_consigne_m.mp3",
+      "voix_f": "v1_l1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qaf",
+      "texte_ar": "ق",
+      "voix_m": "v1_l1_p3_qaf_m.mp3",
+      "voix_f": "v1_l1_p3_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fa",
+      "texte_ar": "ف",
+      "voix_m": "v1_l1_p3_fa_m.mp3",
+      "voix_f": "v1_l1_p3_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ghayn",
+      "texte_ar": "غ",
+      "voix_m": "v1_l1_p3_ghayn_m.mp3",
+      "voix_f": "v1_l1_p3_ghayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mim",
+      "texte_ar": "م",
+      "voix_m": "v1_l1_p3_mim_m.mp3",
+      "voix_f": "v1_l1_p3_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lam",
+      "texte_ar": "ل",
+      "voix_m": "v1_l1_p3_lam_m.mp3",
+      "voix_f": "v1_l1_p3_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kaf",
+      "texte_ar": "ك",
+      "voix_m": "v1_l1_p3_kaf_m.mp3",
+      "voix_f": "v1_l1_p3_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_waw",
+      "texte_ar": "و",
+      "voix_m": "v1_l1_p3_waw_m.mp3",
+      "voix_f": "v1_l1_p3_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha",
+      "texte_ar": "ه",
+      "voix_m": "v1_l1_p3_ha_m.mp3",
+      "voix_f": "v1_l1_p3_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nun",
+      "texte_ar": "ن",
+      "voix_m": "v1_l1_p3_nun_m.mp3",
+      "voix_f": "v1_l1_p3_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya",
+      "texte_ar": "ي",
+      "voix_m": "v1_l1_p3_ya_m.mp3",
+      "voix_f": "v1_l1_p3_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:49:53.173741",
+    "niveau": 1,
+    "lecon": 1,
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 11
+  }
+}

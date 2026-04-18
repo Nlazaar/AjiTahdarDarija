@@ -1,0 +1,77 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'image qui n'est pas identique au modèle",
+    "ar": "أَشْطُبُ الْخَانَةَ غَيْرَ الْمُطَابِقَةِ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Barre la case qui ne correspond pas au modèle (encadré en orange) dans chaque ligne de fruits",
+    "ar": "اشطب الخانة التي لا تطابق النموذج في كل صف من الفواكه"
+  },
+  "elements": [
+    {
+      "id": "row1",
+      "ar": "أناناس",
+      "fr": "Ananas",
+      "emoji": "🍍"
+    },
+    {
+      "id": "row2",
+      "ar": "فراولة",
+      "fr": "Fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "row3",
+      "ar": "عنب",
+      "fr": "Raisin",
+      "emoji": "🍇"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "اشطب الخانة التي لا تطابق النموذج في كل صف من الفواكه",
+      "voix_m": "coursarabe_niveau1_lecon10_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row1",
+      "texte_ar": "أناناس",
+      "voix_m": "coursarabe_niveau1_lecon10_p3_row1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p3_row1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row2",
+      "texte_ar": "فراولة",
+      "voix_m": "coursarabe_niveau1_lecon10_p3_row2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p3_row2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row3",
+      "texte_ar": "عنب",
+      "voix_m": "coursarabe_niveau1_lecon10_p3_row3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p3_row3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:00.314829",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 4
+  }
+}

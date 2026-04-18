@@ -1,0 +1,142 @@
+{
+  "page_nb": 77,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Écrire les chiffres manquants et compter les éléments",
+    "ar": "أكتب الأرقام الناقصة وعدد عناصر كل مجموعة"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Écris les chiffres manquants dans la suite. Exercice 8 : Écris le nombre d'éléments dans chaque groupe.",
+    "ar": "تمرين 7: أكتب الأرقام الناقصة. تمرين 8: أكتب عدد عناصر كل مجموعة."
+  },
+  "elements": [
+    {
+      "id": "seq1",
+      "ar": "١، .، ٣، ٤، .، .",
+      "fr": "1, _, 3, 4, _, _",
+      "emoji": "🔢"
+    },
+    {
+      "id": "seq2",
+      "ar": "٧، .، ٩، ..",
+      "fr": "7, _, 9, _, _",
+      "emoji": "🔢"
+    },
+    {
+      "id": "group1",
+      "ar": "مثلثات",
+      "fr": "3 triangles",
+      "emoji": "🔺"
+    },
+    {
+      "id": "group2",
+      "ar": "نجوم",
+      "fr": "5 étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "group3",
+      "ar": "دوائر",
+      "fr": "9 cercles",
+      "emoji": "⭕"
+    },
+    {
+      "id": "group4",
+      "ar": "قلوب",
+      "fr": "6 cœurs",
+      "emoji": "❤️"
+    },
+    {
+      "id": "group5",
+      "ar": "أسهم",
+      "fr": "6 flèches",
+      "emoji": "➡️"
+    },
+    {
+      "id": "group6",
+      "ar": "غيوم",
+      "fr": "8 nuages",
+      "emoji": "☁️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p77_consigne",
+      "texte_ar": "تمرين 7: أكتب الأرقام الناقصة. تمرين 8: أكتب عدد عناصر كل مجموعة.",
+      "voix_m": "livre_3_5ans_tome2_p77_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_seq1",
+      "texte_ar": "١، .، ٣، ٤، .، .",
+      "voix_m": "livre_3_5ans_tome2_p77_seq1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_seq1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_seq2",
+      "texte_ar": "٧، .، ٩، ..",
+      "voix_m": "livre_3_5ans_tome2_p77_seq2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_seq2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group1",
+      "texte_ar": "مثلثات",
+      "voix_m": "livre_3_5ans_tome2_p77_group1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group2",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p77_group2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group3",
+      "texte_ar": "دوائر",
+      "voix_m": "livre_3_5ans_tome2_p77_group3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group4",
+      "texte_ar": "قلوب",
+      "voix_m": "livre_3_5ans_tome2_p77_group4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group5",
+      "texte_ar": "أسهم",
+      "voix_m": "livre_3_5ans_tome2_p77_group5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group6",
+      "texte_ar": "غيوم",
+      "voix_m": "livre_3_5ans_tome2_p77_group6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p77_group6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:08:30.072367",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 9
+  }
+}

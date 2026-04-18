@@ -1,0 +1,142 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "J'entoure les mots identiques au modèle",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق الكَلِمَات المُشَابِهَة لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement les mots qui sont identiques au mot modèle (en rouge) dans chaque colonne.",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَق الكَلِمَات المُشَابِهَة لِلنَّمُوذَج فِي كُلِّ عَمُود"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "بُرْتُقَالَةُ",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "modele_2",
+      "ar": "فِرَاشٌ",
+      "fr": "lit",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "modele_3",
+      "ar": "بَصَلٌ",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "variante_1a",
+      "ar": "نُرْتُقَالَةُ",
+      "fr": "variante incorrecte de orange",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_2a",
+      "ar": "فِرَاسٌ",
+      "fr": "variante incorrecte de lit",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_3a",
+      "ar": "يَصَلٌ",
+      "fr": "variante incorrecte de oignon",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_3b",
+      "ar": "نَصَلٌ",
+      "fr": "variante incorrecte de oignon",
+      "emoji": "❌"
+    },
+    {
+      "id": "variante_2b",
+      "ar": "قِرَاشٌ",
+      "fr": "variante incorrecte de lit",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَق الكَلِمَات المُشَابِهَة لِلنَّمُوذَج فِي كُلِّ عَمُود",
+      "voix_m": "arabe_niveau3_lec02_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "بُرْتُقَالَةُ",
+      "voix_m": "arabe_niveau3_lec02_p6_modele_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_modele_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_3",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_modele_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_modele_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1a",
+      "texte_ar": "نُرْتُقَالَةُ",
+      "voix_m": "arabe_niveau3_lec02_p6_variante_1a_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_variante_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2a",
+      "texte_ar": "فِرَاسٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_variante_2a_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_variante_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_3a",
+      "texte_ar": "يَصَلٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_variante_3a_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_variante_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_3b",
+      "texte_ar": "نَصَلٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_variante_3b_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_variante_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2b",
+      "texte_ar": "قِرَاشٌ",
+      "voix_m": "arabe_niveau3_lec02_p6_variante_2b_m.mp3",
+      "voix_f": "arabe_niveau3_lec02_p6_variante_2b_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:26:35.301841",
+    "niveau": 3,
+    "lecon": 2,
+    "nom_pdf": "arabe_niveau3_lec02",
+    "bucket_audio": "audio-lessons/niveau3/lecon02/",
+    "nb_audio_assets": 9
+  }
+}

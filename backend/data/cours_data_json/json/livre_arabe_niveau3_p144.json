@@ -1,0 +1,116 @@
+{
+  "page_nb": 144,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la forme correcte de la lettre هـ",
+    "ar": "أكمِّل كلَّ كلمة بالحرف الناقص هـ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نَهَارٌ",
+      "fr": "le jour",
+      "emoji": "🌗"
+    },
+    {
+      "id": "2",
+      "ar": "هِلَالٌ",
+      "fr": "le croissant de lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "3",
+      "ar": "هَدِيَّةٌ",
+      "fr": "le cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "4",
+      "ar": "سَهْمٌ",
+      "fr": "la flèche",
+      "emoji": "➡️"
+    },
+    {
+      "id": "5",
+      "ar": "فَهْدٌ",
+      "fr": "le guépard",
+      "emoji": "🐆"
+    },
+    {
+      "id": "6",
+      "ar": "هَاتِفٌ",
+      "fr": "le téléphone",
+      "emoji": "📞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p144_consigne",
+      "texte_ar": "أكمِّل كلَّ كلمة بالحرف الناقص هـ",
+      "voix_m": "livre_arabe_niveau3_p144_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نَهَارٌ",
+      "voix_m": "livre_arabe_niveau3_p144_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "هِلَالٌ",
+      "voix_m": "livre_arabe_niveau3_p144_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هَدِيَّةٌ",
+      "voix_m": "livre_arabe_niveau3_p144_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَهْمٌ",
+      "voix_m": "livre_arabe_niveau3_p144_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَهْدٌ",
+      "voix_m": "livre_arabe_niveau3_p144_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "هَاتِفٌ",
+      "voix_m": "livre_arabe_niveau3_p144_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p144_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:21:54.771016",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

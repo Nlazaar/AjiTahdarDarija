@@ -1,0 +1,285 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre هـ avec ses formes vocaliques, des mots illustrés, puis deux exercices : identifier si on entend la lettre dans un mot, et entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Hé (ه)",
+    "ar": "حَرْفُ الهَاء"
+  },
+  "enonce": {
+    "fr": "Découvrons la lettre ه à travers des images et des mots, puis : 1) J'entends ou je n'entends pas la lettre, 2) J'entoure la lettre dans les mots",
+    "ar": "نَتَعَلَّمُ حَرْفَ الهَاء مَعَ صُوَرٍ وَكَلِمَاتٍ، ثُمَّ: ١) أَسْمَعُ أَوْ لا أَسْمَعُ الْحَرْفَ، ٢) أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هِلَالٌ",
+      "fr": "Croissant de lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "هُدْهُدٌ",
+      "fr": "Huppe fasciée (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "3",
+      "ar": "هَرَمٌ",
+      "fr": "Pyramide",
+      "emoji": "🔺"
+    },
+    {
+      "id": "4",
+      "ar": "شَهِيقٌ",
+      "fr": "Soupir / souffle",
+      "emoji": "💨"
+    },
+    {
+      "id": "5",
+      "ar": "زُهُورٌ",
+      "fr": "Fleurs",
+      "emoji": "🌸"
+    },
+    {
+      "id": "6",
+      "ar": "هَاتِفٌ",
+      "fr": "Téléphone",
+      "emoji": "📱"
+    },
+    {
+      "id": "7",
+      "ar": "هَنَّأَتْ هَنَاءُ عَمَّتَهَا",
+      "fr": "Hanaa a félicité sa tante",
+      "emoji": "🎉"
+    },
+    {
+      "id": "8",
+      "ar": "مَهْرٌ",
+      "fr": "Poulain",
+      "emoji": "🐴"
+    },
+    {
+      "id": "9",
+      "ar": "ذَهَبٌ",
+      "fr": "Or",
+      "emoji": "✨"
+    },
+    {
+      "id": "10",
+      "ar": "زُهُورٌ",
+      "fr": "Fleurs",
+      "emoji": "🌺"
+    },
+    {
+      "id": "11",
+      "ar": "أَهْرَامٌ",
+      "fr": "Pyramides",
+      "emoji": "🔺"
+    },
+    {
+      "id": "12",
+      "ar": "مَهِيبٌ",
+      "fr": "Imposant / majestueux",
+      "emoji": "👑"
+    },
+    {
+      "id": "13",
+      "ar": "أَنْهَارٌ",
+      "fr": "Rivières",
+      "emoji": "🏞️"
+    },
+    {
+      "id": "14",
+      "ar": "مَاهِرٌ",
+      "fr": "Habile / talentueux",
+      "emoji": "⭐"
+    },
+    {
+      "id": "15",
+      "ar": "سَهَرٌ",
+      "fr": "Veillée",
+      "emoji": "🌙"
+    },
+    {
+      "id": "16",
+      "ar": "رَفَاهِيَةٌ",
+      "fr": "Luxe / bien-être",
+      "emoji": "💎"
+    },
+    {
+      "id": "17",
+      "ar": "تَاهَ",
+      "fr": "Il s'est perdu",
+      "emoji": "❓"
+    },
+    {
+      "id": "18",
+      "ar": "هُدُوءٌ",
+      "fr": "Calme / tranquillité",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "19",
+      "ar": "هَاجَ",
+      "fr": "Il s'est agité",
+      "emoji": "😤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec01_01_hee",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَتَعَلَّمُ حَرْفَ الهَاء مَعَ صُوَرٍ وَكَلِمَاتٍ، ثُمَّ: ١) أَسْمَعُ أَوْ لا أَسْمَعُ الْحَرْفَ، ٢) أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هِلَالٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "هُدْهُدٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هَرَمٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شَهِيقٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "زُهُورٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "هَاتِفٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "هَنَّأَتْ هَنَاءُ عَمَّتَهَا",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مَهْرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذَهَبٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "زُهُورٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_10_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "أَهْرَامٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_11_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَهِيبٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_12_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "أَنْهَارٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_13_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "مَاهِرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_14_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "سَهَرٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_15_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "رَفَاهِيَةٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_16_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "تَاهَ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_17_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "هُدُوءٌ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_18_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "هَاجَ",
+      "voix_m": "lecture_niv5_lec01_01_hee_p1_19_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_hee_p1_19_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:13:04.049281",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_01_hee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 20
+  }
+}

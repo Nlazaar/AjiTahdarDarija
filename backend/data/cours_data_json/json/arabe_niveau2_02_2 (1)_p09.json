@@ -1,0 +1,116 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à la bonne place",
+    "ar": "أَلصِقُ أَجْزَاءَ الصَّورَةِ في مَكَانها المناسِب"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de l'image dans le bon ordre pour reconstituer le mot illustré",
+    "ar": "اِقطع وألصق أجزاء الصورة في المكان المناسب لتكوين الكلمة الصحيحة"
+  },
+  "elements": [
+    {
+      "id": "puzzle_3a",
+      "ar": "حـ",
+      "fr": "syllabe ḥ (début)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "puzzle_3b",
+      "ar": "ـتـ",
+      "fr": "syllabe t (milieu)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "puzzle_3c",
+      "ar": "ـو",
+      "fr": "syllabe w (fin)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "puzzle_4a",
+      "ar": "أَخْـ",
+      "fr": "syllabe akh (début)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "puzzle_4b",
+      "ar": "ـوطَـ",
+      "fr": "syllabe wṭ (milieu)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "puzzle_4c",
+      "ar": "ـبُ",
+      "fr": "syllabe b (fin)",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_02_2 (1)",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اِقطع وألصق أجزاء الصورة في المكان المناسب لتكوين الكلمة الصحيحة",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_3a",
+      "texte_ar": "حـ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_3a_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_3b",
+      "texte_ar": "ـتـ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_3b_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_3c",
+      "texte_ar": "ـو",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_3c_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_3c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_4a",
+      "texte_ar": "أَخْـ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_4a_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_4a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_4b",
+      "texte_ar": "ـوطَـ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_4b_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_4b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_puzzle_4c",
+      "texte_ar": "ـبُ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p9_puzzle_4c_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p9_puzzle_4c_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:37:12.389639",
+    "niveau": 2,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau2_02_2 (1)",
+    "bucket_audio": "audio-lessons/niveau2/lecon09/",
+    "nb_audio_assets": 7
+  }
+}

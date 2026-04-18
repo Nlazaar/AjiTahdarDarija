@@ -1,0 +1,60 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Reconstituer une image coupée en deux parties en collant les morceaux ensemble, avec le mot arabe correspondant en fond",
+  "titre": {
+    "fr": "Je colle les parties de chaque image",
+    "ar": "أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Colle les deux parties de chaque image pour reconstituer l'illustration complète",
+    "ar": "أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قِرْدٌ",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "2",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَلْصِقْ أَجْزَاءَ كُلِّ صُورَةٍ",
+      "voix_m": "v1_l3_p4_consigne_m.mp3",
+      "voix_f": "v1_l3_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "v1_l3_p4_1_m.mp3",
+      "voix_f": "v1_l3_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "v1_l3_p4_2_m.mp3",
+      "voix_f": "v1_l3_p4_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:52:32.813804",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 3
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 32,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Barre l'élément différent dans chaque groupe de lettres ou d'images",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مجموعة الأوراق",
+      "fr": "Groupe de feuilles vertes (une feuille différente)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "2",
+      "ar": "مجموعة حرف الألف",
+      "fr": "Groupe de la lettre Alif avec hamza (un intrus en rouge)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "مجموعة حرف العين",
+      "fr": "Groupe de la lettre Aïn (une lettre différente - Za)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "مجموعة حرف الألف مع مدة",
+      "fr": "Groupe de la lettre Alif avec madda (un intrus en rouge)",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p32_consigne",
+      "texte_ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p32_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p32_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مجموعة الأوراق",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p32_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p32_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مجموعة حرف الألف",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p32_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p32_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مجموعة حرف العين",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p32_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p32_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مجموعة حرف الألف مع مدة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p32_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p32_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:28:47.419897",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

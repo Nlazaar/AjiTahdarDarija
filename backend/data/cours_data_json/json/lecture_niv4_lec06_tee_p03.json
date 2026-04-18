@@ -1,0 +1,285 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : reconstitution de mots à partir de lettres mélangées, complétion de phrases avec le bon nom, et construction de phrase complète avec des mots donnés",
+  "titre": {
+    "fr": "J'écris le mot / Je complète / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أُكْمِلُ بِمَا يُنَاسِبُ / أُكْمِلُ كِتَابَةَ الْجُمْلَةِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : Reconstitue les mots à partir des lettres mélangées. Exercice 7 : Complète chaque phrase avec le mot qui convient parmi la liste. Exercice 8 : Complète la phrase en utilisant les mots suivants.",
+    "ar": "تمرين 6: أعد ترتيب الحروف لتكوين الكلمة الصحيحة. تمرين 7: أكمل كل جملة بالكلمة المناسبة من القائمة. تمرين 8: أكمل كتابة الجملة باستعمال الكلمات التالية."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "عَنْكَبُوت",
+      "fr": "araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "الْكِتَابَ",
+      "fr": "le livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "الْحَسَاء",
+      "fr": "la soupe",
+      "emoji": "🍲"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "الْحَلِيبَ",
+      "fr": "le lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "الْجُبْنَ",
+      "fr": "le fromage",
+      "emoji": "🧀"
+    },
+    {
+      "id": "ex7_mot5",
+      "ar": "الْجَزَرَةَ",
+      "fr": "la carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "ex7_mot6",
+      "ar": "الْكُرَةَ",
+      "fr": "le ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "ex7_phrase1",
+      "ar": "تَأْكُلُ الْبِنْتُ ...",
+      "fr": "La fille mange ...",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex7_phrase2",
+      "ar": "يَرْمِي الْوَلَدُ ...",
+      "fr": "Le garçon lance ...",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex7_phrase3",
+      "ar": "تَشْرَبُ أُخْتِي ...",
+      "fr": "Ma sœur boit ...",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex7_phrase4",
+      "ar": "يَحْمِلُ الْفَأْرُ ...",
+      "fr": "La souris porte ...",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex7_phrase5",
+      "ar": "يَقْرَأُ بِلَالٌ ...",
+      "fr": "Bilal lit ...",
+      "emoji": "📚"
+    },
+    {
+      "id": "ex7_phrase6",
+      "ar": "يَأْكُلُ الْأَرْنَبُ ...",
+      "fr": "Le lapin mange ...",
+      "emoji": "🐇"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "الْكُرَةِ",
+      "fr": "la balle",
+      "emoji": "⚽"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "الْقِطَّةِ",
+      "fr": "le chat",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "تَلْعَبُ",
+      "fr": "joue",
+      "emoji": "🎮"
+    },
+    {
+      "id": "ex8_phrase",
+      "ar": "الْبِنْتُ تَلْعَبُ مَعَ الْقِطَّةِ بِالْكُرَةِ",
+      "fr": "La fille joue avec le chat avec la balle",
+      "emoji": "👧🐱⚽"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec06_tee",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أعد ترتيب الحروف لتكوين الكلمة الصحيحة. تمرين 7: أكمل كل جملة بالكلمة المناسبة من القائمة. تمرين 8: أكمل كتابة الجملة باستعمال الكلمات التالية.",
+      "voix_m": "lecture_niv4_lec06_tee_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "بَطَّة",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "عَنْكَبُوت",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "الْكِتَابَ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "الْحَسَاء",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "الْحَلِيبَ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "الْجُبْنَ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot5",
+      "texte_ar": "الْجَزَرَةَ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot6",
+      "texte_ar": "الْكُرَةَ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase1",
+      "texte_ar": "تَأْكُلُ الْبِنْتُ ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase2",
+      "texte_ar": "يَرْمِي الْوَلَدُ ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase3",
+      "texte_ar": "تَشْرَبُ أُخْتِي ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase4",
+      "texte_ar": "يَحْمِلُ الْفَأْرُ ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase4_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase5",
+      "texte_ar": "يَقْرَأُ بِلَالٌ ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase5_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase6",
+      "texte_ar": "يَأْكُلُ الْأَرْنَبُ ...",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex7_phrase6_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex7_phrase6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "الْكُرَةِ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "الْقِطَّةِ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "تَلْعَبُ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase",
+      "texte_ar": "الْبِنْتُ تَلْعَبُ مَعَ الْقِطَّةِ بِالْكُرَةِ",
+      "voix_m": "lecture_niv4_lec06_tee_p3_ex8_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec06_tee_p3_ex8_phrase_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:54:39.503171",
+    "niveau": 4,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv4_lec06_tee",
+    "bucket_audio": "audio-lessons/niveau4/lecon06/",
+    "nb_audio_assets": 20
+  }
+}

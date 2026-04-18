@@ -1,0 +1,64 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Cherche la lettre et colorie-la",
+    "ar": "أبْحَثُ عَن الحرف و أُلَوِّنُهُ"
+  },
+  "enonce": {
+    "fr": "Trouve toutes les formes de la lettre cible parmi les autres lettres et colorie-les",
+    "ar": "ابحث عن جميع أشكال الحرف المستهدف بين الحروف الأخرى ولوّنها"
+  },
+  "elements": [
+    {
+      "id": "exercice_2",
+      "ar": "سـ / س",
+      "fr": "Lettre Sîn (س) sous toutes ses formes",
+      "emoji": "🔍"
+    },
+    {
+      "id": "exercice_3",
+      "ar": "يـ / ـيـ / ي",
+      "fr": "Lettre Yâ (ي) sous toutes ses formes",
+      "emoji": "🔍"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_01",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "ابحث عن جميع أشكال الحرف المستهدف بين الحروف الأخرى ولوّنها",
+      "voix_m": "arabe_niveau2_01_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_01_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_2",
+      "texte_ar": "سـ / س",
+      "voix_m": "arabe_niveau2_01_p2_exercice_2_m.mp3",
+      "voix_f": "arabe_niveau2_01_p2_exercice_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_3",
+      "texte_ar": "يـ / ـيـ / ي",
+      "voix_m": "arabe_niveau2_01_p2_exercice_3_m.mp3",
+      "voix_f": "arabe_niveau2_01_p2_exercice_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:33:30.585229",
+    "niveau": 2,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau2_01",
+    "bucket_audio": "audio-lessons/niveau2/lecon07/",
+    "nb_audio_assets": 3
+  }
+}

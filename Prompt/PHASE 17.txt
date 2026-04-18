@@ -1,7 +1,0 @@
-PHASE 17 — Ajouter la révision intelligente
-Basée sur :
-UserVocabulary.strength
-erreurs
-fréquence d’apparition
-spaced repetition
-Je te donnerai les prompts.

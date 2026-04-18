@@ -1,0 +1,181 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Réponds aux questions de Salma",
+    "ar": "سَلْمَى تَسْأَلُ وَ أَنْتَ تُجِيبُ"
+  },
+  "enonce": {
+    "fr": "Réponds aux questions de Salma en complétant les phrases, puis coche les bons jours de la semaine",
+    "ar": "أَجِبْ عَنْ أَسْئِلَةِ سَلْمَى بِإِكْمَالِ الْجُمَلِ، ثُمَّ ضَعْ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "q1",
+      "ar": "مَا اسْمُكَ؟ أَنَا اسْمِي ...",
+      "fr": "Comment tu t'appelles ? Je m'appelle ...",
+      "emoji": "👤"
+    },
+    {
+      "id": "q2",
+      "ar": "كَمْ عُمْرُكَ؟ عُمْرِي ...",
+      "fr": "Quel âge as-tu ? J'ai ... ans",
+      "emoji": "🎂"
+    },
+    {
+      "id": "q3",
+      "ar": "أَيْنَ تَسْكُنُ؟ أَسْكُنُ فِي ...",
+      "fr": "Où habites-tu ? J'habite à ...",
+      "emoji": "🌍"
+    },
+    {
+      "id": "q4",
+      "ar": "أَيْنَ وُلِدْتَ؟ وُلِدْتُ فِي ...",
+      "fr": "Où es-tu né(e) ? Je suis né(e) à ...",
+      "emoji": "📍"
+    },
+    {
+      "id": "j1",
+      "ar": "الْإِثْنَيْن",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j2",
+      "ar": "الثُّلَاثَاء",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j3",
+      "ar": "الْأَرْبَعَاء",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j4",
+      "ar": "الْخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j5",
+      "ar": "الْجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j6",
+      "ar": "السَّبْت",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "j7",
+      "ar": "الْأَحَد",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec01",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَجِبْ عَنْ أَسْئِلَةِ سَلْمَى بِإِكْمَالِ الْجُمَلِ، ثُمَّ ضَعْ عَلَامَةً فِي الْخَانَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv4_lec01_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q1",
+      "texte_ar": "مَا اسْمُكَ؟ أَنَا اسْمِي ...",
+      "voix_m": "lecture_niv4_lec01_p2_q1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_q1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q2",
+      "texte_ar": "كَمْ عُمْرُكَ؟ عُمْرِي ...",
+      "voix_m": "lecture_niv4_lec01_p2_q2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_q2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q3",
+      "texte_ar": "أَيْنَ تَسْكُنُ؟ أَسْكُنُ فِي ...",
+      "voix_m": "lecture_niv4_lec01_p2_q3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_q3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q4",
+      "texte_ar": "أَيْنَ وُلِدْتَ؟ وُلِدْتُ فِي ...",
+      "voix_m": "lecture_niv4_lec01_p2_q4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_q4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j1",
+      "texte_ar": "الْإِثْنَيْن",
+      "voix_m": "lecture_niv4_lec01_p2_j1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j2",
+      "texte_ar": "الثُّلَاثَاء",
+      "voix_m": "lecture_niv4_lec01_p2_j2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j3",
+      "texte_ar": "الْأَرْبَعَاء",
+      "voix_m": "lecture_niv4_lec01_p2_j3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j4",
+      "texte_ar": "الْخَمِيس",
+      "voix_m": "lecture_niv4_lec01_p2_j4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j5",
+      "texte_ar": "الْجُمُعَة",
+      "voix_m": "lecture_niv4_lec01_p2_j5_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j6",
+      "texte_ar": "السَّبْت",
+      "voix_m": "lecture_niv4_lec01_p2_j6_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j7",
+      "texte_ar": "الْأَحَد",
+      "voix_m": "lecture_niv4_lec01_p2_j7_m.mp3",
+      "voix_f": "lecture_niv4_lec01_p2_j7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:36:23.958154",
+    "niveau": 4,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv4_lec01",
+    "bucket_audio": "audio-lessons/niveau4/lecon01/",
+    "nb_audio_assets": 12
+  }
+}

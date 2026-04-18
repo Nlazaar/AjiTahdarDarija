@@ -1,0 +1,194 @@
+{
+  "page_nb": 43,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je cherche le mot et je l'entoure",
+    "ar": "أَبحثُ عَن الكَلِمَةِ وَ أَحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'نجوم' (étoiles) parmi les mots proposés et entoure-le à chaque fois que tu le trouves.",
+    "ar": "أَبحثُ عَن كَلِمَة نجوم وَ أَحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "2",
+      "ar": "نعوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "4",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "5",
+      "ar": "تجوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "نخوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "جوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "يجوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "10",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    },
+    {
+      "id": "11",
+      "ar": "نحوم",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "نجوم",
+      "fr": "étoiles (correct)",
+      "emoji": "⭐"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p43_consigne",
+      "texte_ar": "أَبحثُ عَن كَلِمَة نجوم وَ أَحيطُهَا بِخَطٍّ",
+      "voix_m": "livre_3_5ans_tome2_p43_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نعوم",
+      "voix_m": "livre_3_5ans_tome2_p43_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "تجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "نخوم",
+      "voix_m": "livre_3_5ans_tome2_p43_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "جوم",
+      "voix_m": "livre_3_5ans_tome2_p43_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "يجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "نحوم",
+      "voix_m": "livre_3_5ans_tome2_p43_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_p43_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p43_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:02:44.318428",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 13
+  }
+}

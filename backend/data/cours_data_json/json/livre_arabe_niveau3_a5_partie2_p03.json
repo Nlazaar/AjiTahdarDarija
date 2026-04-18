@@ -1,0 +1,116 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمَلِ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Je complète par la lettre ن qui manque au mot",
+    "ar": "أكمِلِ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ : ن"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَحْـ_",
+      "fr": "assiette (sahن)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "2",
+      "ar": "حِصَا_",
+      "fr": "cheval (hisaن)",
+      "emoji": "🐴"
+    },
+    {
+      "id": "3",
+      "ar": "_زَيْتُو",
+      "fr": "olive (نzaytou)",
+      "emoji": "🫒"
+    },
+    {
+      "id": "4",
+      "ar": "سِـ_جَابٌ",
+      "fr": "écureuil (sinجاب)",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "5",
+      "ar": "_حْلَةٌ",
+      "fr": "abeille (نحلة)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "6",
+      "ar": "_عَامَةٌ",
+      "fr": "autruche (نعامة)",
+      "emoji": "🦤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أكمِلِ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ : ن",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَحْـ_",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حِصَا_",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "_زَيْتُو",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سِـ_جَابٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "_حْلَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "_عَامَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p5_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p5_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:31:13.544593",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Reconstitue chaque image",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Colle les morceaux de chaque image pour reconstituer le mot illustré.",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "mot2",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ",
+      "voix_m": "arabe_niveau2_07_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "arabe_niveau2_07_p5_mot1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p5_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "arabe_niveau2_07_p5_mot2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p5_mot2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:50:42.333521",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 3
+  }
+}

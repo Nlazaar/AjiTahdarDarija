@@ -1,0 +1,103 @@
+{
+  "page_nb": 9,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Dans la mer",
+    "ar": "فِي البَحْرِ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque carte pour écouter et apprendre le vocabulaire de la mer",
+    "ar": "اِنْقُرْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ وَتَتَعَلَّمَ مُفْرَدَاتِ البَحْرِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "2",
+      "ar": "حُوتٌ",
+      "fr": "Baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "3",
+      "ar": "شَبَكَةٌ",
+      "fr": "Filet",
+      "emoji": "🕸️"
+    },
+    {
+      "id": "4",
+      "ar": "أَخْطَبُوط",
+      "fr": "Pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "5",
+      "ar": "صِنَّارَةٌ",
+      "fr": "Canne à pêche",
+      "emoji": "🎣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ وَتَتَعَلَّمَ مُفْرَدَاتِ البَحْرِ",
+      "voix_m": "livre_3_5ans_tome2_p9_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p9_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "livre_3_5ans_tome2_p9_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَبَكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p9_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَخْطَبُوط",
+      "voix_m": "livre_3_5ans_tome2_p9_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صِنَّارَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p9_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:56:54.363631",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 6
+  }
+}

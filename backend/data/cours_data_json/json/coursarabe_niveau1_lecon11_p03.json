@@ -1,0 +1,142 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie les mots identiques au mot modèle (بَصَل - oignon) encadré au centre",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج بَصَل"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "بَصَل",
+      "fr": "oignon (modèle)",
+      "emoji": "🧅"
+    },
+    {
+      "id": "mot_1",
+      "ar": "بَطَل",
+      "fr": "héros (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot_2",
+      "ar": "بَصَل",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot_3",
+      "ar": "بَصَل",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot_4",
+      "ar": "بَضَل",
+      "fr": "mot inexistant (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot_5",
+      "ar": "بَسَل",
+      "fr": "mot inexistant (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot_6",
+      "ar": "نَصَل",
+      "fr": "lame (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot_7",
+      "ar": "بَصَل",
+      "fr": "oignon (correct)",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_modele_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "بَطَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "بَضَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "بَسَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "نَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_7",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p3_mot_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p3_mot_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:23:20.993895",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 9
+  }
+}

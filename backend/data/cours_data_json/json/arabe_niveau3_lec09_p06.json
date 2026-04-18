@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres du mot",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ حُرُوفَ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement les lettres qui composent le mot illustré par l'image",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الْحُرُوفَ الَّتِي تُكَوِّنُ الْكَلِمَةَ الْمُصَوَّرَةَ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَرَاشَةٌ",
+      "fr": "Papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "2",
+      "ar": "حَافِلَةٌ",
+      "fr": "Bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "3",
+      "ar": "تِمْسَاحٌ",
+      "fr": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "4",
+      "ar": "تَاجٌ",
+      "fr": "Couronne",
+      "emoji": "👑"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec09",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ الْحُرُوفَ الَّتِي تُكَوِّنُ الْكَلِمَةَ الْمُصَوَّرَةَ",
+      "voix_m": "arabe_niveau3_lec09_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "arabe_niveau3_lec09_p6_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَافِلَةٌ",
+      "voix_m": "arabe_niveau3_lec09_p6_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "arabe_niveau3_lec09_p6_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "arabe_niveau3_lec09_p6_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p6_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:38:47.098577",
+    "niveau": 3,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau3_lec09",
+    "bucket_audio": "audio-lessons/niveau3/lecon09/",
+    "nb_audio_assets": 5
+  }
+}

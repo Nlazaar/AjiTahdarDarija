@@ -1,0 +1,129 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Mots croisés",
+    "ar": "كَلِمَات مُتَقَاطِعَة"
+  },
+  "enonce": {
+    "fr": "Complète la grille de mots croisés en écrivant le nom de chaque image dans les cases correspondantes.",
+    "ar": "أَكْمِلْ شَبَكَةَ الكَلِمَات المُتَقَاطِعَة بِكِتَابَةِ اسْمِ كُلِّ صُورَة فِي المَرْبَعَات المُنَاسِبَة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فُسْتَان",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "2",
+      "ar": "عُصْفُور",
+      "fr": "Oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "3",
+      "ar": "رُمَّان",
+      "fr": "Grenade",
+      "emoji": "🍎"
+    },
+    {
+      "id": "4",
+      "ar": "سُنْبُلَة",
+      "fr": "Épi de blé",
+      "emoji": "🌾"
+    },
+    {
+      "id": "5",
+      "ar": "حِصَان",
+      "fr": "Cheval",
+      "emoji": "🐎"
+    },
+    {
+      "id": "6",
+      "ar": "صَحْن",
+      "fr": "Assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "7",
+      "ar": "نَمِر",
+      "fr": "Tigre",
+      "emoji": "🐯"
+    }
+  ],
+  "difficulte": 4,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec14",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَكْمِلْ شَبَكَةَ الكَلِمَات المُتَقَاطِعَة بِكِتَابَةِ اسْمِ كُلِّ صُورَة فِي المَرْبَعَات المُنَاسِبَة.",
+      "voix_m": "arabe_niveau3_lec14_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "arabe_niveau3_lec14_p7_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "عُصْفُور",
+      "voix_m": "arabe_niveau3_lec14_p7_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رُمَّان",
+      "voix_m": "arabe_niveau3_lec14_p7_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سُنْبُلَة",
+      "voix_m": "arabe_niveau3_lec14_p7_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "حِصَان",
+      "voix_m": "arabe_niveau3_lec14_p7_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "صَحْن",
+      "voix_m": "arabe_niveau3_lec14_p7_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "نَمِر",
+      "voix_m": "arabe_niveau3_lec14_p7_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec14_p7_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 40,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:45:29.147589",
+    "niveau": 3,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau3_lec14",
+    "bucket_audio": "audio-lessons/niveau3/lecon14/",
+    "nb_audio_assets": 8
+  }
+}

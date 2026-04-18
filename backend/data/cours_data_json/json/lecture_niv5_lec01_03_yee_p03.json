@@ -1,0 +1,207 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices combinés : compléter des mots avec une lettre puis relier à l'image, écrire la syllabe manquante, compléter une phrase avec des mots d'une liste",
+  "titre": {
+    "fr": "Je complète, je relie, j'écris la syllabe manquante et je complète la phrase",
+    "ar": "أُكْمِلُ وَ أَرْبِطُ بِالصُّورَةِ / أَكْتُبُ الْمَقْطَعَ النَّاقِصَ / أُكْمِلُ الْجُمْلَةَ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : Je complète puis je relie à l'image (lettres يَ et تَ). Exercice 7 : J'écris la syllabe manquante. Exercice 8 : Je complète la phrase par des mots de la liste.",
+    "ar": "٦- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٧- أَكْتُبُ الْمَقْطَعَ النَّاقِصَ. ٨- أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_mot1",
+      "ar": "قُفِزُ / يَقْفِزُ",
+      "fr": "Il saute",
+      "emoji": "🤸"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "كُنُسُ / يَكْنُسُ",
+      "fr": "Il balaie",
+      "emoji": "🧹"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "لْعَبُ / يَلْعَبُ",
+      "fr": "Il joue",
+      "emoji": "🎮"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "بَيْتٌ",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "خَيْطٌ",
+      "fr": "Fil",
+      "emoji": "🧵"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "غَيْمَةٌ",
+      "fr": "Nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "طَائِرٌ",
+      "fr": "Oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "غَضِبَ",
+      "fr": "Il s'est mis en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "أَعْوَادٍ",
+      "fr": "Des bâtons",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "لَعِبَ",
+      "fr": "Il a joué",
+      "emoji": "🎲"
+    },
+    {
+      "id": "ex8_mot4",
+      "ar": "وَبَّخَهُ",
+      "fr": "Il l'a grondé",
+      "emoji": "👆"
+    },
+    {
+      "id": "ex8_mot5",
+      "ar": "الْكَبْرِيتِ",
+      "fr": "Des allumettes",
+      "emoji": "🔥"
+    },
+    {
+      "id": "ex8_mot6",
+      "ar": "أُخْتِهِ",
+      "fr": "Sa sœur",
+      "emoji": "👧"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_03_yee",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "٦- أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. ٧- أَكْتُبُ الْمَقْطَعَ النَّاقِصَ. ٨- أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "قُفِزُ / يَقْفِزُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "كُنُسُ / يَكْنُسُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "لْعَبُ / يَلْعَبُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "بَيْتٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "خَيْطٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "غَيْمَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "طَائِرٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "أَعْوَادٍ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "لَعِبَ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot4",
+      "texte_ar": "وَبَّخَهُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot5",
+      "texte_ar": "الْكَبْرِيتِ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot6",
+      "texte_ar": "أُخْتِهِ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p3_ex8_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p3_ex8_mot6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:19:45.628703",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_03_yee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 14
+  }
+}

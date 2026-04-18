@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Reconnaître et entourer le mot cible parmi des mots distracteurs similaires",
+  "titre": {
+    "fr": "J'entoure le mot",
+    "ar": "أَحِيطُ الكَلِمَةَ بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement le mot 'éléphant' (فيل) parmi tous les mots proposés",
+    "ar": "أَحِيطُ كَلِمَةَ فِيل فَقَط مِنْ بَيْنِ الكَلِمَاتِ الْمَكْتُوبَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قيل",
+      "fr": "qîl (distractor)",
+      "emoji": "❌"
+    },
+    {
+      "id": "2",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "3",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "4",
+      "ar": "قِيل",
+      "fr": "qîl (distractor)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "ويل",
+      "fr": "wayl (distractor)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "7",
+      "ar": "قيل",
+      "fr": "qîl (distractor)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "9",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَحِيطُ كَلِمَةَ فِيل فَقَط مِنْ بَيْنِ الكَلِمَاتِ الْمَكْتُوبَة",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قِيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ويل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "قيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p3_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:53:09.922527",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 10
+  }
+}

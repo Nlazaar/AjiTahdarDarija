@@ -1,0 +1,90 @@
+{
+  "page_nb": 27,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque groupe d'images ou de mots, barre celui qui est différent des autres.",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "groupe1_images",
+      "ar": "وَرَقَة",
+      "fr": "Feuilles (groupe images)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "groupe2_images",
+      "ar": "فَأْر",
+      "fr": "Souris (groupe images)",
+      "emoji": "🐭"
+    },
+    {
+      "id": "groupe1_mots_intrus",
+      "ar": "وَرَقَـةُ",
+      "fr": "Mot intrus parmi les feuilles (écriture différente)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "groupe2_mots_intrus",
+      "ar": "قَأْرٌ",
+      "fr": "Mot intrus parmi les souris (écriture différente)",
+      "emoji": "🐭"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p27_consigne",
+      "texte_ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "livre_arabe_niveau3_p27_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p27_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images",
+      "texte_ar": "وَرَقَة",
+      "voix_m": "livre_arabe_niveau3_p27_groupe1_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p27_groupe1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images",
+      "texte_ar": "فَأْر",
+      "voix_m": "livre_arabe_niveau3_p27_groupe2_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p27_groupe2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_mots_intrus",
+      "texte_ar": "وَرَقَـةُ",
+      "voix_m": "livre_arabe_niveau3_p27_groupe1_mots_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p27_groupe1_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_mots_intrus",
+      "texte_ar": "قَأْرٌ",
+      "voix_m": "livre_arabe_niveau3_p27_groupe2_mots_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p27_groupe2_mots_intrus_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:59:40.415066",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

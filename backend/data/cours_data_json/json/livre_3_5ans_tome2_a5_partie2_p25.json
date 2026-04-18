@@ -1,0 +1,90 @@
+{
+  "page_nb": 25,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Compléter les lettres manquantes",
+    "ar": "أَكْمَلُ الحُرُوفَ النَّاقِصَة"
+  },
+  "enonce": {
+    "fr": "Complète les lettres manquantes pour former le mot correct sous chaque image",
+    "ar": "أَكْمِلِ الحُرُوفَ النَّاقِصَةَ لِتَكْوِينِ الكَلِمَةِ الصَّحِيحَةِ تَحْتَ كُلِّ صُورَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "2",
+      "ar": "ضِفْدَعٌ",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "3",
+      "ar": "سُلَحْفَاةٌ",
+      "fr": "tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "4",
+      "ar": "سِنْجَابٌ",
+      "fr": "écureuil",
+      "emoji": "🐿️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p25_consigne",
+      "texte_ar": "أَكْمِلِ الحُرُوفَ النَّاقِصَةَ لِتَكْوِينِ الكَلِمَةِ الصَّحِيحَةِ تَحْتَ كُلِّ صُورَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p25_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p25_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p25_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p25_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p25_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p25_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سُلَحْفَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p25_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p25_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سِنْجَابٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p25_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p25_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:22:54.094012",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 5
+  }
+}

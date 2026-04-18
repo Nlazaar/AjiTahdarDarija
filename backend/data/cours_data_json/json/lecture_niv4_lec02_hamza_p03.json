@@ -1,0 +1,259 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "3 exercices combinés : écriture de mots sous images, relier singulier-pluriel-image, compléter des phrases",
+  "titre": {
+    "fr": "J'écris le mot / Je relie / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أَرْبِطُ الْمُفْرَدَ بِالْجَمْعِ / أُكْمِلُ كِتَابَةَ الْجُمْلَةِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot sous chaque image. Exercice 7 : Je relie chaque mot par son pluriel puis par l'image. Exercice 8 : Je complète la phrase par les mots suivants.",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ. تمرين 7: أَرْبِطُ الْمُفْرَدَ بِالْجَمْعِ ثُمَّ بِصُورَتِهِ. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_dents",
+      "ar": "أَسْنَانٌ",
+      "fr": "dents",
+      "emoji": "🦷"
+    },
+    {
+      "id": "ex6_verre",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex6_bol",
+      "ar": "وِعَاءٌ",
+      "fr": "bol de riz",
+      "emoji": "🍚"
+    },
+    {
+      "id": "ex6_oreille",
+      "ar": "أُذُنٌ",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "ex7_waraqa",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille (singulier)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "ex7_awraq",
+      "ar": "أَوْرَاقٌ",
+      "fr": "feuilles (pluriel)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "ex7_zufr",
+      "ar": "ظُفْرٌ",
+      "fr": "ongle (singulier)",
+      "emoji": "💅"
+    },
+    {
+      "id": "ex7_azafir",
+      "ar": "أَظَافِرٌ",
+      "fr": "ongles (pluriel)",
+      "emoji": "💅"
+    },
+    {
+      "id": "ex7_ud",
+      "ar": "عُودٌ",
+      "fr": "bâtonnet (singulier)",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex7_awwad",
+      "ar": "أَعْوَادٌ",
+      "fr": "bâtonnets (pluriel)",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex7_lubba",
+      "ar": "لُعْبَةٌ",
+      "fr": "jouet (singulier)",
+      "emoji": "🧸"
+    },
+    {
+      "id": "ex7_alab",
+      "ar": "أَلْعَابٌ",
+      "fr": "jouets (pluriel)",
+      "emoji": "🧸"
+    },
+    {
+      "id": "ex7_isba",
+      "ar": "إِصْبَعٌ",
+      "fr": "doigt (singulier)",
+      "emoji": "☝️"
+    },
+    {
+      "id": "ex7_asabi",
+      "ar": "أَصَابِعُ",
+      "fr": "doigts (pluriel)",
+      "emoji": "🖐️"
+    },
+    {
+      "id": "ex8_sundouq",
+      "ar": "الصُّنْدُوقِ",
+      "fr": "la boîte",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex8_tajma",
+      "ar": "تَجْمَعُ",
+      "fr": "elle rassemble",
+      "emoji": "🤲"
+    },
+    {
+      "id": "ex8_alabaha",
+      "ar": "أَلْعَابَهَا",
+      "fr": "ses jouets",
+      "emoji": "🎮"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec02_hamza",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ. تمرين 7: أَرْبِطُ الْمُفْرَدَ بِالْجَمْعِ ثُمَّ بِصُورَتِهِ. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_dents",
+      "texte_ar": "أَسْنَانٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex6_dents_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex6_dents_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_verre",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex6_verre_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex6_verre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_bol",
+      "texte_ar": "وِعَاءٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex6_bol_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex6_bol_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_oreille",
+      "texte_ar": "أُذُنٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex6_oreille_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex6_oreille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_waraqa",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_waraqa_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_waraqa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_awraq",
+      "texte_ar": "أَوْرَاقٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_awraq_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_awraq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_zufr",
+      "texte_ar": "ظُفْرٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_zufr_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_zufr_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_azafir",
+      "texte_ar": "أَظَافِرٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_azafir_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_azafir_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_ud",
+      "texte_ar": "عُودٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_ud_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_ud_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_awwad",
+      "texte_ar": "أَعْوَادٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_awwad_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_awwad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_lubba",
+      "texte_ar": "لُعْبَةٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_lubba_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_lubba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_alab",
+      "texte_ar": "أَلْعَابٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_alab_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_alab_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_isba",
+      "texte_ar": "إِصْبَعٌ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_isba_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_isba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_asabi",
+      "texte_ar": "أَصَابِعُ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex7_asabi_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex7_asabi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_sundouq",
+      "texte_ar": "الصُّنْدُوقِ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex8_sundouq_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex8_sundouq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_tajma",
+      "texte_ar": "تَجْمَعُ",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex8_tajma_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex8_tajma_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_alabaha",
+      "texte_ar": "أَلْعَابَهَا",
+      "voix_m": "lecture_niv4_lec02_hamza_p3_ex8_alabaha_m.mp3",
+      "voix_f": "lecture_niv4_lec02_hamza_p3_ex8_alabaha_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:42:28.025726",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02_hamza",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 18
+  }
+}

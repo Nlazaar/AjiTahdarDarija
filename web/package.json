@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 7000",
     "test": "jest",
     "build": "next build",
     "start": "next start",
@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
+    "@sentry/nextjs": "^10.47.0",
     "clsx": "^1.2.1",
+    "groq-sdk": "^1.1.2",
     "lucide-react": "^0.264.0",
     "next": "^14.0.0",
+    "openai": "^6.33.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

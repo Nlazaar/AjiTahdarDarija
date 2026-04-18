@@ -1,0 +1,129 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Identifier et colorier les carrés parmi plusieurs formes géométriques selon la couleur indiquée",
+  "titre": {
+    "fr": "Je colorie les carrés",
+    "ar": "ألوّن المربّع"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les carrés dans la bonne couleur indiquée (rouge, vert, bleu)",
+    "ar": "لوّن المربّعات فقط باللون المحدد (الأحمر، الأخضر، الأزرق)"
+  },
+  "elements": [
+    {
+      "id": "consigne_1",
+      "ar": "ألوّن المربّع بالأحمر",
+      "fr": "Je colorie le carré en rouge",
+      "emoji": "🟥"
+    },
+    {
+      "id": "consigne_2",
+      "ar": "ألوّن المربّع بالأخضر",
+      "fr": "Je colorie le carré en vert",
+      "emoji": "🟩"
+    },
+    {
+      "id": "consigne_3",
+      "ar": "ألوّن المربّع بالأزرق",
+      "fr": "Je colorie le carré en bleu",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_carre",
+      "ar": "المربّع",
+      "fr": "le carré",
+      "emoji": "⬜"
+    },
+    {
+      "id": "forme_cercle",
+      "ar": "الدائرة",
+      "fr": "le cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "forme_triangle",
+      "ar": "المثلث",
+      "fr": "le triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_croissant",
+      "ar": "الهلال",
+      "fr": "le croissant",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "لوّن المربّعات فقط باللون المحدد (الأحمر، الأخضر، الأزرق)",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_1",
+      "texte_ar": "ألوّن المربّع بالأحمر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_consigne_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_consigne_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_2",
+      "texte_ar": "ألوّن المربّع بالأخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_consigne_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_consigne_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_3",
+      "texte_ar": "ألوّن المربّع بالأزرق",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_consigne_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_consigne_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_carre",
+      "texte_ar": "المربّع",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_forme_carre_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_forme_carre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_cercle",
+      "texte_ar": "الدائرة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_forme_cercle_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_forme_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_triangle",
+      "texte_ar": "المثلث",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_forme_triangle_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_forme_triangle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_croissant",
+      "texte_ar": "الهلال",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p8_forme_croissant_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p8_forme_croissant_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:36:34.739032",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 8
+  }
+}

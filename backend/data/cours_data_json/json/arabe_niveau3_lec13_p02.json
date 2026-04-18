@@ -1,0 +1,103 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec prolongation kasra",
+    "ar": "أحيطُ بِخَطٍّ مُغْلَق الحَرْفَ المَمْدُودَ بِالْكَسْرِ"
+  },
+  "enonce": {
+    "fr": "Entoure dans ces mots les lettres qui ont une prolongation avec « kasra »",
+    "ar": "أحيطُ بِخَطٍّ مُغْلَق الحَرْفَ المَمْدُودَ بِالْكَسْرِ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "يَجْرِي",
+      "fr": "il court",
+      "emoji": "🏃"
+    },
+    {
+      "id": "mot2",
+      "ar": "كَتَبَ",
+      "fr": "il a écrit",
+      "emoji": "✍️"
+    },
+    {
+      "id": "mot3",
+      "ar": "سَمِعَ",
+      "fr": "il a entendu",
+      "emoji": "👂"
+    },
+    {
+      "id": "mot4",
+      "ar": "فُسْتَانٌ",
+      "fr": "une robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "mot5",
+      "ar": "عَصِيرٌ",
+      "fr": "un jus",
+      "emoji": "🧃"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec13",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أحيطُ بِخَطٍّ مُغْلَق الحَرْفَ المَمْدُودَ بِالْكَسْرِ",
+      "voix_m": "arabe_niveau3_lec13_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "يَجْرِي",
+      "voix_m": "arabe_niveau3_lec13_p2_mot1_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "كَتَبَ",
+      "voix_m": "arabe_niveau3_lec13_p2_mot2_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "سَمِعَ",
+      "voix_m": "arabe_niveau3_lec13_p2_mot3_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau3_lec13_p2_mot4_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "arabe_niveau3_lec13_p2_mot5_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:43:17.172415",
+    "niveau": 3,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau3_lec13",
+    "bucket_audio": "audio-lessons/niveau3/lecon13/",
+    "nb_audio_assets": 6
+  }
+}

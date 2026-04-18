@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de lettre, compléter des mots, reconstituer des mots à partir de lettres mélangées",
+  "titre": {
+    "fr": "Exercices sur la lettre Sad (ص)",
+    "ar": "تمارين على حرف الصاد"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre ص. 3) Je complète avec la forme qui convient. 4) Je reconstitue le mot à partir des lettres et je l'écris.",
+    "ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف ص. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها."
+  },
+  "elements": [
+    {
+      "id": "ex3_mot1",
+      "ar": "صَفَّارَةٌ",
+      "fr": "Sifflet",
+      "emoji": "🎵"
+    },
+    {
+      "id": "ex3_mot2",
+      "ar": "غُصْنٌ",
+      "fr": "Branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "ex3_mot3",
+      "ar": "مِقَصٌّ",
+      "fr": "Ciseaux",
+      "emoji": "✂️"
+    },
+    {
+      "id": "ex3_mot4",
+      "ar": "بَصَلٌ",
+      "fr": "Oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "ex3_mot5",
+      "ar": "حِصَانٌ",
+      "fr": "Cheval",
+      "emoji": "🐴"
+    },
+    {
+      "id": "ex3_mot6",
+      "ar": "عُصْفُورٌ",
+      "fr": "Moineau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "ex4_lettre",
+      "ar": "ص",
+      "fr": "Lettre Sad",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex5_mot1",
+      "ar": "صَدِيقٌ",
+      "fr": "Ami",
+      "emoji": "👫"
+    },
+    {
+      "id": "ex5_mot2",
+      "ar": "يَصْرُخُ",
+      "fr": "Il crie",
+      "emoji": "😤"
+    },
+    {
+      "id": "ex5_mot3",
+      "ar": "صَغِيرٌ",
+      "fr": "Petit",
+      "emoji": "🐻"
+    },
+    {
+      "id": "ex5_mot4",
+      "ar": "قَفَصٌ",
+      "fr": "Cage",
+      "emoji": "🪤"
+    },
+    {
+      "id": "ex5_mot5",
+      "ar": "مُصْحَفٌ",
+      "fr": "Livre de Coran",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex5_mot6",
+      "ar": "قَصَّ",
+      "fr": "Il a découpé",
+      "emoji": "✂️"
+    },
+    {
+      "id": "ex6_mot1",
+      "ar": "صَوَانِب",
+      "fr": "Savon (lettres: ب ن ص و ا)",
+      "emoji": "🧼"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "صَخْرَة",
+      "fr": "Pierre (lettres: ر خ ة ص)",
+      "emoji": "🪨"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "صَيَّاد",
+      "fr": "Chasseur (lettres: د ا ي ص)",
+      "emoji": "👷"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec04_saad",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف ص. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها.",
+      "voix_m": "lecture_niv4_lec04_saad_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot1",
+      "texte_ar": "صَفَّارَةٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot2",
+      "texte_ar": "غُصْنٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot3",
+      "texte_ar": "مِقَصٌّ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot4",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot5",
+      "texte_ar": "حِصَانٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_mot6",
+      "texte_ar": "عُصْفُورٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex3_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex3_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_lettre",
+      "texte_ar": "ص",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex4_lettre_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex4_lettre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot1",
+      "texte_ar": "صَدِيقٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot2",
+      "texte_ar": "يَصْرُخُ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot3",
+      "texte_ar": "صَغِيرٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot4",
+      "texte_ar": "قَفَصٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot5",
+      "texte_ar": "مُصْحَفٌ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot6",
+      "texte_ar": "قَصَّ",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex5_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex5_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "صَوَانِب",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "صَخْرَة",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "صَيَّاد",
+      "voix_m": "lecture_niv4_lec04_saad_p2_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec04_saad_p2_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:46:09.044004",
+    "niveau": 4,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv4_lec04_saad",
+    "bucket_audio": "audio-lessons/niveau4/lecon04/",
+    "nb_audio_assets": 17
+  }
+}

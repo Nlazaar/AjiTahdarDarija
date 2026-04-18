@@ -1,0 +1,129 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أُلَوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement la lettre Kha (خ) parmi toutes les lettres",
+    "ar": "لَوِّنْ حَرْفَ الخَاءِ (خ) فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خ",
+      "fr": "Kha (à colorier)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "ح",
+      "fr": "Ha (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "ج",
+      "fr": "Jim (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "ل",
+      "fr": "Lam (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "ر",
+      "fr": "Ra (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "د",
+      "fr": "Dal (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "خوخ",
+      "fr": "pêche",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الخَاءِ (خ) فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خ",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ح",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ج",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "د",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p7_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p7_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:36.510640",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 8
+  }
+}

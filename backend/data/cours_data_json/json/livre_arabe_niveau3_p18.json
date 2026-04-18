@@ -1,0 +1,90 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque groupe, observe les éléments et barre celui qui est différent des autres.",
+    "ar": "فِي كُلِّ مَجْمُوعَةٍ، انْظُرْ إِلَى الْعَنَاصِرِ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ."
+  },
+  "elements": [
+    {
+      "id": "groupe1_pommes",
+      "ar": "تُفَّاحَة",
+      "fr": "pommes (groupe image) - une pomme est différente des autres",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe2_couronnes",
+      "ar": "تَاج",
+      "fr": "couronnes (groupe image) - une couronne est différente des autres",
+      "emoji": "👑"
+    },
+    {
+      "id": "groupe3_mots_pomme",
+      "ar": "تُفَّاحَة",
+      "fr": "mots pomme (groupe texte) - un mot est écrit différemment",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe4_mots_couronne",
+      "ar": "تَاج",
+      "fr": "mots couronne (groupe texte) - un mot est écrit différemment",
+      "emoji": "👑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "فِي كُلِّ مَجْمُوعَةٍ، انْظُرْ إِلَى الْعَنَاصِرِ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ.",
+      "voix_m": "livre_arabe_niveau3_p18_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_pommes",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "livre_arabe_niveau3_p18_groupe1_pommes_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p18_groupe1_pommes_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_couronnes",
+      "texte_ar": "تَاج",
+      "voix_m": "livre_arabe_niveau3_p18_groupe2_couronnes_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p18_groupe2_couronnes_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3_mots_pomme",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "livre_arabe_niveau3_p18_groupe3_mots_pomme_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p18_groupe3_mots_pomme_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4_mots_couronne",
+      "texte_ar": "تَاج",
+      "voix_m": "livre_arabe_niveau3_p18_groupe4_mots_couronne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p18_groupe4_mots_couronne_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:57:39.399707",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

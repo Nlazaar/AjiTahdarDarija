@@ -1,0 +1,77 @@
+{
+  "page_nb": 23,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie chaque mot avec son image",
+    "ar": "أرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond",
+    "ar": "أرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَوْز",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "2",
+      "ar": "خَوْخ",
+      "fr": "pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "3",
+      "ar": "فَرَاوِلَة",
+      "fr": "fraise",
+      "emoji": "🍓"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p23_consigne",
+      "texte_ar": "أرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p23_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p23_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَوْز",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p23_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p23_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خَوْخ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p23_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p23_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَرَاوِلَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p23_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p23_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:31:56.578025",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

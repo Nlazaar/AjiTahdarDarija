@@ -1,0 +1,51 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à leur bonne place",
+    "ar": "أَلْصِقُ أَجْزَاءَ الصّورةَ في مَكَانِها المناسب"
+  },
+  "enonce": {
+    "fr": "Colle les morceaux de l'image de la baleine à leur bonne place dans le cadre vide.",
+    "ar": "أَلْصِقُ أَجْزَاءَ صورةَ الحوتِ في مَكَانِها المناسبِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حُوتٌ",
+      "fr": "baleine",
+      "emoji": "🐋"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ صورةَ الحوتِ في مَكَانِها المناسبِ",
+      "voix_m": "arabe_niveau2_02_2_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "arabe_niveau2_02_2_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p3_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:37:52.202559",
+    "niveau": 2,
+    "lecon": 10,
+    "nom_pdf": "arabe_niveau2_02_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon10/",
+    "nb_audio_assets": 2
+  }
+}

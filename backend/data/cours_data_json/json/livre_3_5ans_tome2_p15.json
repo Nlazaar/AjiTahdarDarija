@@ -1,0 +1,90 @@
+{
+  "page_nb": 15,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Complète les parties manquantes du dessin",
+    "ar": "أكمل الأجزاء الناقصة من الرسم"
+  },
+  "enonce": {
+    "fr": "Observe les images de poissons et complète les mots manquants en ajoutant les lettres absentes",
+    "ar": "انظر إلى صور الأسماك وأكمل الكلمات الناقصة بإضافة الحروف المفقودة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سمكة",
+      "fr": "poisson (complet)",
+      "emoji": "🐟"
+    },
+    {
+      "id": "2",
+      "ar": "سمكة",
+      "fr": "poisson (complet)",
+      "emoji": "🐠"
+    },
+    {
+      "id": "3",
+      "ar": "مكه",
+      "fr": "poisson (incomplet - lettres manquantes)",
+      "emoji": "🐡"
+    },
+    {
+      "id": "4",
+      "ar": "سمكه",
+      "fr": "poisson (incomplet - lettre manquante)",
+      "emoji": "🐟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p15_consigne",
+      "texte_ar": "انظر إلى صور الأسماك وأكمل الكلمات الناقصة بإضافة الحروف المفقودة",
+      "voix_m": "livre_3_5ans_tome2_p15_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p15_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سمكة",
+      "voix_m": "livre_3_5ans_tome2_p15_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p15_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سمكة",
+      "voix_m": "livre_3_5ans_tome2_p15_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p15_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مكه",
+      "voix_m": "livre_3_5ans_tome2_p15_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p15_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سمكه",
+      "voix_m": "livre_3_5ans_tome2_p15_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p15_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:57:52.976710",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

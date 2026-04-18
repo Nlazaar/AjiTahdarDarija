@@ -1,0 +1,129 @@
+{
+  "page_nb": 102,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Mots croisés",
+    "ar": "كَلِمَات مُتَقَاطِعَة"
+  },
+  "enonce": {
+    "fr": "Complète la grille de mots croisés en écrivant le nom de chaque image dans les cases correspondantes.",
+    "ar": "أَكْمِلْ كَلِمَات مُتَقَاطِعَة بِكِتَابَةِ اسْمِ كُلِّ صُورَةٍ فِي الْخَانَات الْمُنَاسِبَة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فُسْتَان",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "2",
+      "ar": "عُصْفُور",
+      "fr": "oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "3",
+      "ar": "رُمَّان",
+      "fr": "grenade",
+      "emoji": "🍎"
+    },
+    {
+      "id": "4",
+      "ar": "حَصَان",
+      "fr": "cheval",
+      "emoji": "🐴"
+    },
+    {
+      "id": "5",
+      "ar": "طَبَق",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "6",
+      "ar": "نَمِر",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "7",
+      "ar": "سَنَابِل",
+      "fr": "épis de blé",
+      "emoji": "🌾"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p102_consigne",
+      "texte_ar": "أَكْمِلْ كَلِمَات مُتَقَاطِعَة بِكِتَابَةِ اسْمِ كُلِّ صُورَةٍ فِي الْخَانَات الْمُنَاسِبَة.",
+      "voix_m": "livre_arabe_niveau3_p102_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "livre_arabe_niveau3_p102_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "عُصْفُور",
+      "voix_m": "livre_arabe_niveau3_p102_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رُمَّان",
+      "voix_m": "livre_arabe_niveau3_p102_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "حَصَان",
+      "voix_m": "livre_arabe_niveau3_p102_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَبَق",
+      "voix_m": "livre_arabe_niveau3_p102_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "نَمِر",
+      "voix_m": "livre_arabe_niveau3_p102_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَنَابِل",
+      "voix_m": "livre_arabe_niveau3_p102_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p102_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:14:41.034490",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 8
+  }
+}

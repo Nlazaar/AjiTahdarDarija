@@ -1,0 +1,194 @@
+{
+  "page_nb": 127,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie le mot à l'image correspondante",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "مَسْجِدٌ",
+      "fr": "mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "syllabe1a",
+      "ar": "مَسْ",
+      "fr": "mas",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe1b",
+      "ar": "جِدٌ",
+      "fr": "jid",
+      "emoji": ""
+    },
+    {
+      "id": "image1",
+      "ar": "صورة مسجد",
+      "fr": "image mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "mot2",
+      "ar": "قَمَرٌ",
+      "fr": "lune",
+      "emoji": "🌑"
+    },
+    {
+      "id": "syllabe2a",
+      "ar": "قَمَ",
+      "fr": "qa-ma",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe2b",
+      "ar": "رٌ",
+      "fr": "r",
+      "emoji": ""
+    },
+    {
+      "id": "image2",
+      "ar": "صورة قمر",
+      "fr": "image lune",
+      "emoji": "🌑"
+    },
+    {
+      "id": "mot3",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "syllabe3a",
+      "ar": "كَأْ",
+      "fr": "ka",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe3b",
+      "ar": "سٌ",
+      "fr": "s",
+      "emoji": ""
+    },
+    {
+      "id": "image3",
+      "ar": "صورة كأس",
+      "fr": "image verre",
+      "emoji": "🥛"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p127_consigne",
+      "texte_ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_p127_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مَسْجِدٌ",
+      "voix_m": "livre_arabe_niveau3_p127_mot1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1a",
+      "texte_ar": "مَسْ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe1a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1b",
+      "texte_ar": "جِدٌ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe1b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image1",
+      "texte_ar": "صورة مسجد",
+      "voix_m": "livre_arabe_niveau3_p127_image1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_image1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_arabe_niveau3_p127_mot2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2a",
+      "texte_ar": "قَمَ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe2a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2b",
+      "texte_ar": "رٌ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe2b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image2",
+      "texte_ar": "صورة قمر",
+      "voix_m": "livre_arabe_niveau3_p127_image2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_image2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "livre_arabe_niveau3_p127_mot3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3a",
+      "texte_ar": "كَأْ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe3a_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3b",
+      "texte_ar": "سٌ",
+      "voix_m": "livre_arabe_niveau3_p127_syllabe3b_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_syllabe3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image3",
+      "texte_ar": "صورة كأس",
+      "voix_m": "livre_arabe_niveau3_p127_image3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p127_image3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:18:52.747249",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 13
+  }
+}

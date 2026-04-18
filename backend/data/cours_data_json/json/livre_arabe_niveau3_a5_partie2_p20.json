@@ -1,0 +1,116 @@
+{
+  "page_nb": 123,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمل الكلمة بالحرف الناقص"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre qui manque parmi : ث ثـ ـثـ",
+    "ar": "أكمل كل كلمة بالحرف الناقص من بين : ث ثـ ـثـ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثَوْرٌ",
+      "fr": "taureau",
+      "emoji": "🐂"
+    },
+    {
+      "id": "2",
+      "ar": "ثَلَّاجَةٌ",
+      "fr": "réfrigérateur",
+      "emoji": "🧊"
+    },
+    {
+      "id": "3",
+      "ar": "ثَلَجٌ",
+      "fr": "glace",
+      "emoji": "🧊"
+    },
+    {
+      "id": "4",
+      "ar": "وَمٌّ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "5",
+      "ar": "مُثَلَّجَاتٌ",
+      "fr": "glaces/crèmes glacées",
+      "emoji": "🍦"
+    },
+    {
+      "id": "6",
+      "ar": "مُثَلَّثٌ",
+      "fr": "triangle",
+      "emoji": "🔺"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p123_consigne",
+      "texte_ar": "أكمل كل كلمة بالحرف الناقص من بين : ث ثـ ـثـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثَوْرٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثَلَّاجَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ثَلَجٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "وَمٌّ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مُثَلَّجَاتٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مُثَلَّثٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p123_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p123_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:33:55.272482",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

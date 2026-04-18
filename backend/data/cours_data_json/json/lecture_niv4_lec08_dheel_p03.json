@@ -1,0 +1,168 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : écriture de mots illustrés, barrer la phrase incorrecte selon l'image, compléter une phrase avec des mots donnés",
+  "titre": {
+    "fr": "J'écris le mot / Je barre la phrase / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أَشْطُبُ الْجُمْلَةَ / أُكْمِلُ الْجُمْلَةَ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot sous chaque image. Exercice 7 : Je barre la phrase qui ne décrit pas l'image (il/elle aime - il/elle n'aime pas). Exercice 8 : Je complète la phrase avec les mots donnés.",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تَحْتَ كُلِّ صُورَةٍ. تمرين 7: أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ (يُحِبُّ - لَا يُحِبُّ / تُحِبُّ - لَا تُحِبُّ). تمرين 8: أُكْمِلُ الْجُمْلَةَ بِالْكَلِمَاتِ الْمُعْطَاةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "جَذَع",
+      "fr": "tronc (d'arbre)",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "أُذُن",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "حِذَاء",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "السَّلَطَة",
+      "fr": "la salade",
+      "emoji": "🥗"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "الْبُرْتُقَال",
+      "fr": "l'orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "الْجَزَر",
+      "fr": "la carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "الْجُبْن",
+      "fr": "le fromage",
+      "emoji": "🧀"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "يَرْجِعَ",
+      "fr": "revenir",
+      "emoji": "🔄"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "السَّجَّادَةُ",
+      "fr": "le tapis de prière",
+      "emoji": "🕌"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "الْمَسْجِد",
+      "fr": "la mosquée",
+      "emoji": "🕌"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec08_dheel",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تَحْتَ كُلِّ صُورَةٍ. تمرين 7: أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ (يُحِبُّ - لَا يُحِبُّ / تُحِبُّ - لَا تُحِبُّ). تمرين 8: أُكْمِلُ الْجُمْلَةَ بِالْكَلِمَاتِ الْمُعْطَاةِ.",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "جَذَع",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "أُذُن",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "حِذَاء",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "السَّلَطَة",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "الْبُرْتُقَال",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "الْجَزَر",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "الْجُبْن",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "يَرْجِعَ",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "السَّجَّادَةُ",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "الْمَسْجِد",
+      "voix_m": "lecture_niv4_lec08_dheel_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:03:01.910962",
+    "niveau": 4,
+    "lecon": 8,
+    "nom_pdf": "lecture_niv4_lec08_dheel",
+    "bucket_audio": "audio-lessons/niveau4/lecon08/",
+    "nb_audio_assets": 11
+  }
+}

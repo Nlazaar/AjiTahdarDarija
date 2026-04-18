@@ -1,0 +1,90 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Je classe les actions après le retour de l'école",
+    "ar": "أرتّب الأعمال الّتي أقوم بها بعد العودة من المدرسة"
+  },
+  "enonce": {
+    "fr": "Range dans l'ordre les actions que tu fais après l'école en associant chaque action à sa case numérotée",
+    "ar": "رتّب الأعمال التي تقوم بها بعد العودة من المدرسة وضعها في المربع المناسب"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أغْسِلُ يَدَيَّ",
+      "fr": "Je me lave les mains",
+      "emoji": "🙌"
+    },
+    {
+      "id": "2",
+      "ar": "أتَنَاوَلُ العَشَاءَ",
+      "fr": "Je prends le dîner",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "3",
+      "ar": "أُنَظِّفُ أسْنَانِي",
+      "fr": "Je me brosse les dents",
+      "emoji": "🦷"
+    },
+    {
+      "id": "4",
+      "ar": "أَنَامُ",
+      "fr": "Je dors",
+      "emoji": "😴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "رتّب الأعمال التي تقوم بها بعد العودة من المدرسة وضعها في المربع المناسب",
+      "voix_m": "livre_3_5ans_tome2_p9_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أغْسِلُ يَدَيَّ",
+      "voix_m": "livre_3_5ans_tome2_p9_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أتَنَاوَلُ العَشَاءَ",
+      "voix_m": "livre_3_5ans_tome2_p9_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أُنَظِّفُ أسْنَانِي",
+      "voix_m": "livre_3_5ans_tome2_p9_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَنَامُ",
+      "voix_m": "livre_3_5ans_tome2_p9_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p9_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:56:44.040985",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

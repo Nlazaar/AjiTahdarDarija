@@ -1,0 +1,116 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les légumes",
+    "ar": "الخُضَر"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque carte pour apprendre le nom des légumes en arabe",
+    "ar": "اضغط على كل بطاقة لتتعلم أسماء الخضروات بالعربية"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثَوْم",
+      "fr": "Ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "2",
+      "ar": "بَصَل",
+      "fr": "Oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "3",
+      "ar": "جَزَر",
+      "fr": "Carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "4",
+      "ar": "فُلْفُل",
+      "fr": "Poivron / Piment",
+      "emoji": "🌶️"
+    },
+    {
+      "id": "5",
+      "ar": "طَمَاطِم",
+      "fr": "Tomate",
+      "emoji": "🍅"
+    },
+    {
+      "id": "6",
+      "ar": "جُلْبَانَة",
+      "fr": "Petits pois",
+      "emoji": "🫛"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اضغط على كل بطاقة لتتعلم أسماء الخضروات بالعربية",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثَوْم",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "جَزَر",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فُلْفُل",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَمَاطِم",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "جُلْبَانَة",
+      "voix_m": "coursarabe_niveau1_lecon11_p1_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p1_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:23:01.628357",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 7
+  }
+}

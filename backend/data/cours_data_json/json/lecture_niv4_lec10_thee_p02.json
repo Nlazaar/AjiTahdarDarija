@@ -1,0 +1,194 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Lecture et association mot-image, écriture de lettres, complétion de mots avec la lettre ث",
+  "titre": {
+    "fr": "La lettre Tha (ث) - Exercices",
+    "ar": "حرف الثاء - تدريبات"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ث. Exercice 5 : Je complète avec la forme qui convient de la lettre ث.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف ث. تمرين 5: أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "ثَوْرٌ",
+      "fr": "taureau",
+      "emoji": "🐂"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "ثَلاجَةٌ",
+      "fr": "réfrigérateur",
+      "emoji": "🧊"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "مُثَلَّثٌ",
+      "fr": "triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "ثَوْمٌ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "مُثَلَّجاتٌ",
+      "fr": "glaces / crèmes glacées",
+      "emoji": "🍦"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "ثِمارٌ",
+      "fr": "fruits",
+      "emoji": "🍎"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "ثَعْلَبٌ",
+      "fr": "renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "ثَلْجٌ",
+      "fr": "glace",
+      "emoji": "🧊"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "يَحْرُثُ",
+      "fr": "il laboure",
+      "emoji": "🌾"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "أَثاثٌ",
+      "fr": "meubles",
+      "emoji": "🪑"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "الثُّلاثاءُ",
+      "fr": "mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "ثَقْبٌ",
+      "fr": "trou",
+      "emoji": "🕳️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec10_thee",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف ث. تمرين 5: أكمل بما يناسب.",
+      "voix_m": "lecture_niv4_lec10_thee_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "ثَوْرٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "ثَلاجَةٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "مُثَلَّثٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "ثَوْمٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "مُثَلَّجاتٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "ثِمارٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "ثَعْلَبٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "يَحْرُثُ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "أَثاثٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "الثُّلاثاءُ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "ثَقْبٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:09:59.666799",
+    "niveau": 4,
+    "lecon": 10,
+    "nom_pdf": "lecture_niv4_lec10_thee",
+    "bucket_audio": "audio-lessons/niveau4/lecon10/",
+    "nb_audio_assets": 13
+  }
+}

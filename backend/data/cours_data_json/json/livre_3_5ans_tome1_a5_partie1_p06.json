@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les cercles jaunes",
+    "ar": "أُحيطُ الدَّوائِرَ الصَّفراءَ بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement les cercles (ronds) jaunes avec un trait fermé",
+    "ar": "أُحيطُ الدَّوائِرَ الصَّفراءَ بِخَطٍّ مُغْلَق"
+  },
+  "elements": [
+    {
+      "id": "cercle_jaune_1",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_jaune_2",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_jaune_3",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_jaune_4",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_bleu_1",
+      "ar": "دائرة زرقاء",
+      "fr": "cercle bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "cercle_bleu_2",
+      "ar": "دائرة زرقاء",
+      "fr": "cercle bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "cercle_vert_1",
+      "ar": "دائرة خضراء",
+      "fr": "cercle vert",
+      "emoji": "🟢"
+    },
+    {
+      "id": "cercle_vert_2",
+      "ar": "دائرة خضراء",
+      "fr": "cercle vert",
+      "emoji": "🟢"
+    },
+    {
+      "id": "cercle_rouge",
+      "ar": "دائرة حمراء",
+      "fr": "cercle rouge",
+      "emoji": "🔴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُحيطُ الدَّوائِرَ الصَّفراءَ بِخَطٍّ مُغْلَق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_jaune_1",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_jaune_2",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_jaune_3",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_jaune_4",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_jaune_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_bleu_1",
+      "texte_ar": "دائرة زرقاء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_bleu_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_bleu_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_bleu_2",
+      "texte_ar": "دائرة زرقاء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_bleu_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_bleu_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_vert_1",
+      "texte_ar": "دائرة خضراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_vert_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_vert_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_vert_2",
+      "texte_ar": "دائرة خضراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_vert_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_vert_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_rouge",
+      "texte_ar": "دائرة حمراء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p3_cercle_rouge_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p3_cercle_rouge_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:14.844134",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 10
+  }
+}

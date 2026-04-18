@@ -1,0 +1,77 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Les jours de la semaine – Relier le mot à l'image",
+    "ar": "اليَوْم هُوَ يَوْمٌ – اِرْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis / J'écoute puis je relie chaque mot avec l'image qui correspond",
+    "ar": "أَقْرَأُ / أَسْمَعُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "يَصْرُخُ",
+      "fr": "il crie",
+      "emoji": "😱"
+    },
+    {
+      "id": "e2",
+      "ar": "تَأْكُلُ",
+      "fr": "elle mange",
+      "emoji": "🍜"
+    },
+    {
+      "id": "e3",
+      "ar": "تَسْمَعُ",
+      "fr": "elle écoute",
+      "emoji": "👂"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec16",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَقْرَأُ / أَسْمَعُ ثُمَّ أَرْبِطُ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "arabe_niveau3_lec16_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "يَصْرُخُ",
+      "voix_m": "arabe_niveau3_lec16_p1_e1_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p1_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "تَأْكُلُ",
+      "voix_m": "arabe_niveau3_lec16_p1_e2_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p1_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "تَسْمَعُ",
+      "voix_m": "arabe_niveau3_lec16_p1_e3_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p1_e3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:47:19.251069",
+    "niveau": 3,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau3_lec16",
+    "bucket_audio": "audio-lessons/niveau3/lecon16/",
+    "nb_audio_assets": 4
+  }
+}

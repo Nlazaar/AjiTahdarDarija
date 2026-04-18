@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Complète les lettres manquantes",
+    "ar": "أَكَمِّلُ الحُرُوفَ النَّاقِصَة"
+  },
+  "enonce": {
+    "fr": "Observe chaque image et complète le mot en ajoutant les lettres manquantes.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ صُورَةٍ وَأَكْمِلِ الكَلِمَةَ بِإِضَافَةِ الحُرُوفِ النَّاقِصَة."
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "غُرَابٌ",
+      "fr": "Corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "e2",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "e3",
+      "ar": "سُلَحْفَاةٌ",
+      "fr": "Tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "e4",
+      "ar": "سِنْجَابٌ",
+      "fr": "Écureuil",
+      "emoji": "🐿️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_09",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ صُورَةٍ وَأَكْمِلِ الكَلِمَةَ بِإِضَافَةِ الحُرُوفِ النَّاقِصَة.",
+      "voix_m": "arabe_niveau2_09_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_09_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "arabe_niveau2_09_p4_e1_m.mp3",
+      "voix_f": "arabe_niveau2_09_p4_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "arabe_niveau2_09_p4_e2_m.mp3",
+      "voix_f": "arabe_niveau2_09_p4_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "سُلَحْفَاةٌ",
+      "voix_m": "arabe_niveau2_09_p4_e3_m.mp3",
+      "voix_f": "arabe_niveau2_09_p4_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "سِنْجَابٌ",
+      "voix_m": "arabe_niveau2_09_p4_e4_m.mp3",
+      "voix_f": "arabe_niveau2_09_p4_e4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:53:01.670456",
+    "niveau": 2,
+    "lecon": 21,
+    "nom_pdf": "arabe_niveau2_09",
+    "bucket_audio": "audio-lessons/niveau2/lecon21/",
+    "nb_audio_assets": 5
+  }
+}

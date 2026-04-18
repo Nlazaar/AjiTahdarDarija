@@ -1,0 +1,155 @@
+{
+  "page_nb": 51,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'طَائِرَة' (avion) parmi toutes les lettres proposées.",
+    "ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ كَلِمَةَ طَائِرَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ط",
+      "fr": "lettre ṭā (dans طائرة)",
+      "emoji": "✅"
+    },
+    {
+      "id": "2",
+      "ar": "ا",
+      "fr": "lettre alif (dans طائرة)",
+      "emoji": "✅"
+    },
+    {
+      "id": "3",
+      "ar": "ئ",
+      "fr": "lettre hamza sur yā (dans طائرة)",
+      "emoji": "✅"
+    },
+    {
+      "id": "4",
+      "ar": "ر",
+      "fr": "lettre rā (dans طائرة)",
+      "emoji": "✅"
+    },
+    {
+      "id": "5",
+      "ar": "ة",
+      "fr": "lettre tā marbūṭa (dans طائرة)",
+      "emoji": "✅"
+    },
+    {
+      "id": "6",
+      "ar": "ظ",
+      "fr": "lettre ẓā (pas dans طائرة)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "د",
+      "fr": "lettre dāl (pas dans طائرة)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "ل",
+      "fr": "lettre lām (pas dans طائرة)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "ت",
+      "fr": "lettre tā (pas dans طائرة)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p51_consigne",
+      "texte_ar": "لَوِّنْ فَقَطِ الحُرُوفَ الَّتِي تُكَوِّنُ كَلِمَةَ طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p51_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ط",
+      "voix_m": "livre_3_5ans_tome2_p51_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_p51_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ئ",
+      "voix_m": "livre_3_5ans_tome2_p51_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_p51_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_p51_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ظ",
+      "voix_m": "livre_3_5ans_tome2_p51_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome2_p51_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_p51_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ت",
+      "voix_m": "livre_3_5ans_tome2_p51_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p51_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:04:12.684304",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

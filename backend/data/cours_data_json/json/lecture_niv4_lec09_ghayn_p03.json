@@ -1,0 +1,142 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des mots/phrases avec le vocabulaire approprié, associer des images à des phrases, et remettre des mots dans l'ordre pour former une phrase",
+  "titre": {
+    "fr": "Exercices de complètement et de construction de phrases",
+    "ar": "أُكْمِلُ وَ أُرَتِّبُ الْجُمَلَ"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Je complète et je lis les antonymes. Exercice 8 : Je complète avec le mot qui convient. Exercice 9 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَقْرَأُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُرَتِّبُ الْكَلِمَاتَ لِأَحْصُلَ عَلَى جُمْلَةٍ"
+  },
+  "elements": [
+    {
+      "id": "ex7_1",
+      "ar": "يُ........لِقُ ≠ يَفْتَحُ",
+      "fr": "Il ferme ≠ Il ouvre",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "........نِيٌّ ≠ فَقِيرٌ",
+      "fr": "Riche ≠ Pauvre",
+      "emoji": "💰"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "تَغْرِسُ الْبِنْتُ ............",
+      "fr": "La fille plante ...............",
+      "emoji": "🌱"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "يَلْعَبُونَ لُعْبَةَ ............",
+      "fr": "Ils jouent à un jeu de ...............",
+      "emoji": "⚽"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "يَلْعَبُ فِي ............",
+      "fr": "Il joue dans ...............",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex8_4",
+      "ar": "يَضَعُ الْمَلَابِسَ الْمُتَّسِخَةَ فِي ............",
+      "fr": "Il met les vêtements sales dans ...............",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex8_words",
+      "ar": "الْغُمَيْضَةِ - الْغَسَّالَةِ - نَبْتَةً - الْغَدِيرِ",
+      "fr": "Cache-cache - Machine à laver - Plante - Mare",
+      "emoji": "📝"
+    },
+    {
+      "id": "ex9_1",
+      "ar": "أُغْنِيَةً - الْبِنْتُ - غَنَّت - جَمِيلَةً",
+      "fr": "Une chanson - La fille - a chanté - belle",
+      "emoji": "🎵"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec09_ghayn",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَقْرَأُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُرَتِّبُ الْكَلِمَاتَ لِأَحْصُلَ عَلَى جُمْلَةٍ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "يُ........لِقُ ≠ يَفْتَحُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "........نِيٌّ ≠ فَقِيرٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "تَغْرِسُ الْبِنْتُ ............",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "يَلْعَبُونَ لُعْبَةَ ............",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "يَلْعَبُ فِي ............",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_4",
+      "texte_ar": "يَضَعُ الْمَلَابِسَ الْمُتَّسِخَةَ فِي ............",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex8_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_words",
+      "texte_ar": "الْغُمَيْضَةِ - الْغَسَّالَةِ - نَبْتَةً - الْغَدِيرِ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex8_words_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex8_words_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_1",
+      "texte_ar": "أُغْنِيَةً - الْبِنْتُ - غَنَّت - جَمِيلَةً",
+      "voix_m": "lecture_niv4_lec09_ghayn_p3_ex9_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p3_ex9_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:06:49.927660",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_ghayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 9
+  }
+}

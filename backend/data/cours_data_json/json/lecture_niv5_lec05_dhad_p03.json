@@ -1,0 +1,207 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des antonymes avec la lettre ض, compléter des phrases avec le bon outil, compléter une phrase avec des mots d'une liste",
+  "titre": {
+    "fr": "Je complète avec ce qui convient - Niveau 5",
+    "ar": "أُكْمِلُ بِمَا يُنَاسِبُ - مستوى 5"
+  },
+  "enonce": {
+    "fr": "Exercice 7: Compléter les antonymes en utilisant la lettre ض dans ses différentes formes. Exercice 8: Compléter les phrases avec le bon outil (ciseaux, charrue, scie). Exercice 9: Compléter la phrase avec les mots appropriés de la liste.",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ مستعملاً حرف الضاد. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْمِقَصَّ - الْمِحْرَاثَ - الْمِنْشَارَ). تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex7_pair1",
+      "ar": "عَيِفٌ .......... ≠ قَوِيٌّ",
+      "fr": "Faible .......... ≠ Fort",
+      "emoji": "💪"
+    },
+    {
+      "id": "ex7_pair2",
+      "ar": "مُ..........يءٌ ≠ مُظْلِمٌ",
+      "fr": "Lumineux .......... ≠ Sombre",
+      "emoji": "💡"
+    },
+    {
+      "id": "ex7_pair3",
+      "ar": "بَاهِ.......... ≠ رَخِيصٌ",
+      "fr": "Cher .......... ≠ Bon marché",
+      "emoji": "💰"
+    },
+    {
+      "id": "ex7_pair4",
+      "ar": "..........يِّقٌ ≠ وَاسِعٌ",
+      "fr": "Étroit .......... ≠ Large",
+      "emoji": "👖"
+    },
+    {
+      "id": "ex8_tool1",
+      "ar": "الْمِقَصَّ",
+      "fr": "Les ciseaux",
+      "emoji": "✂️"
+    },
+    {
+      "id": "ex8_tool2",
+      "ar": "الْمِحْرَاثَ",
+      "fr": "La charrue",
+      "emoji": "🚜"
+    },
+    {
+      "id": "ex8_tool3",
+      "ar": "الْمِنْشَارَ",
+      "fr": "La scie",
+      "emoji": "🪚"
+    },
+    {
+      "id": "ex8_sentence1",
+      "ar": "يَقْطَعُ النَّجَّارُ الْخَشَبَ بِ..........",
+      "fr": "Le charpentier coupe le bois avec ...........",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex8_sentence2",
+      "ar": "يَحْرُثُ الْفَلَّاحُ الْأَرْضَ بِ..........",
+      "fr": "Le paysan laboure la terre avec ...........",
+      "emoji": "🌾"
+    },
+    {
+      "id": "ex9_word1",
+      "ar": "الرِّيَاضِيَاتِ",
+      "fr": "Les mathématiques",
+      "emoji": "➕"
+    },
+    {
+      "id": "ex9_word2",
+      "ar": "تَشْرَحُ",
+      "fr": "Elle explique",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex9_word3",
+      "ar": "صَدِيقَتُهُمَا",
+      "fr": "Leur amie",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex9_sentence",
+      "ar": "لَهُمَا .......... تَمْرِينَ .......... ..........",
+      "fr": "Elles ont .......... un exercice .......... leur amie ..........",
+      "emoji": "🏫"
+    }
+  ],
+  "difficulte": 4,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec05_dhad",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ مستعملاً حرف الضاد. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْمِقَصَّ - الْمِحْرَاثَ - الْمِنْشَارَ). تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair1",
+      "texte_ar": "عَيِفٌ .......... ≠ قَوِيٌّ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex7_pair1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex7_pair1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair2",
+      "texte_ar": "مُ..........يءٌ ≠ مُظْلِمٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex7_pair2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex7_pair2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair3",
+      "texte_ar": "بَاهِ.......... ≠ رَخِيصٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex7_pair3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex7_pair3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair4",
+      "texte_ar": "..........يِّقٌ ≠ وَاسِعٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex7_pair4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex7_pair4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_tool1",
+      "texte_ar": "الْمِقَصَّ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex8_tool1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex8_tool1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_tool2",
+      "texte_ar": "الْمِحْرَاثَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex8_tool2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex8_tool2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_tool3",
+      "texte_ar": "الْمِنْشَارَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex8_tool3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex8_tool3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_sentence1",
+      "texte_ar": "يَقْطَعُ النَّجَّارُ الْخَشَبَ بِ..........",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex8_sentence1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex8_sentence1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_sentence2",
+      "texte_ar": "يَحْرُثُ الْفَلَّاحُ الْأَرْضَ بِ..........",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex8_sentence2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex8_sentence2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_word1",
+      "texte_ar": "الرِّيَاضِيَاتِ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex9_word1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex9_word1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_word2",
+      "texte_ar": "تَشْرَحُ",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex9_word2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex9_word2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_word3",
+      "texte_ar": "صَدِيقَتُهُمَا",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex9_word3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex9_word3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_sentence",
+      "texte_ar": "لَهُمَا .......... تَمْرِينَ .......... ..........",
+      "voix_m": "lecture_niv5_lec05_dhad_p3_ex9_sentence_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p3_ex9_sentence_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 40,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:27:26.066201",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv5_lec05_dhad",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 14
+  }
+}

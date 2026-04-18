@@ -1,0 +1,142 @@
+{
+  "page_nb": 22,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أَلْوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres خ parmi toutes les lettres mélangées",
+    "ar": "لَوِّنِ الْحَرْفَ خ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ الْمُخْتَلِطَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خ",
+      "fr": "lettre kha (à colorier)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "ح",
+      "fr": "lettre ha (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "ج",
+      "fr": "lettre jim (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "ر",
+      "fr": "lettre ra (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "د",
+      "fr": "lettre dal (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ن",
+      "fr": "lettre noun (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "و",
+      "fr": "lettre waw (ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "خوخ",
+      "fr": "pêche (mot modèle)",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p22_consigne",
+      "texte_ar": "لَوِّنِ الْحَرْفَ خ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ الْمُخْتَلِطَةِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خوخ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p22_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p22_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:31:50.559001",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 9
+  }
+}

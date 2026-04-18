@@ -1,0 +1,90 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أرسم الخطوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés en suivant les modèles, puis écris la lettre Noun (ن) en suivant les flèches rouges.",
+    "ar": "ارسم الخطوط المتقطعة مع اتباع النماذج، ثم اكتب حرف النون (ن) باتباع الأسهم الحمراء."
+  },
+  "elements": [
+    {
+      "id": "courbe_grande",
+      "ar": "قوس كبير",
+      "fr": "Grand arc en pointillés",
+      "emoji": "🔵"
+    },
+    {
+      "id": "courbe_moyenne",
+      "ar": "قوس متوسط",
+      "fr": "Arc moyen en pointillés",
+      "emoji": "⭕"
+    },
+    {
+      "id": "courbe_petite",
+      "ar": "قوس صغير",
+      "fr": "Petit arc en pointillés",
+      "emoji": "🔘"
+    },
+    {
+      "id": "lettre_noun",
+      "ar": "ن",
+      "fr": "Lettre Noun",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_06_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "ارسم الخطوط المتقطعة مع اتباع النماذج، ثم اكتب حرف النون (ن) باتباع الأسهم الحمراء.",
+      "voix_m": "arabe_niveau2_06_2_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe_grande",
+      "texte_ar": "قوس كبير",
+      "voix_m": "arabe_niveau2_06_2_p5_courbe_grande_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p5_courbe_grande_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe_moyenne",
+      "texte_ar": "قوس متوسط",
+      "voix_m": "arabe_niveau2_06_2_p5_courbe_moyenne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p5_courbe_moyenne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe_petite",
+      "texte_ar": "قوس صغير",
+      "voix_m": "arabe_niveau2_06_2_p5_courbe_petite_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p5_courbe_petite_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_noun",
+      "texte_ar": "ن",
+      "voix_m": "arabe_niveau2_06_2_p5_lettre_noun_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p5_lettre_noun_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:49:23.273305",
+    "niveau": 2,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau2_06_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon18/",
+    "nb_audio_assets": 5
+  }
+}

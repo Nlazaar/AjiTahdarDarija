@@ -1,0 +1,116 @@
+{
+  "page_nb": 83,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Je dessine une balle sous la table et un livre dessus",
+    "ar": "أَرْسُمُ كُرَةً تَحْتَ الطَّاوِلَةِ وَ كِتَابًا فَوْقَهَا"
+  },
+  "enonce": {
+    "fr": "Lis les phrases et réponds aux questions : où est le chat ? où est la balle ? où est le livre ?",
+    "ar": "اِقْرَأِ الْجُمَلَ وَأَجِبْ عَنِ الْأَسْئِلَةِ: أَيْنَ الْقِطَّةُ؟ أَيْنَ الْكُرَةُ؟ أَيْنَ الْكِتَابُ؟"
+  },
+  "elements": [
+    {
+      "id": "question_1",
+      "ar": "أَيْنَ الْقِطَّةُ ؟",
+      "fr": "Où est le chat ?",
+      "emoji": "🐱"
+    },
+    {
+      "id": "reponse_1",
+      "ar": "الْقِطَّةُ فَوْقَ الْكُرْسِيّ",
+      "fr": "Le chat est sur la chaise",
+      "emoji": "🪑"
+    },
+    {
+      "id": "question_2",
+      "ar": "أَيْنَ الْكُرَةُ ؟",
+      "fr": "Où est la balle ?",
+      "emoji": "⚽"
+    },
+    {
+      "id": "question_3",
+      "ar": "أَيْنَ الْكِتَابُ ؟",
+      "fr": "Où est le livre ?",
+      "emoji": "📖"
+    },
+    {
+      "id": "objet_table",
+      "ar": "الطَّاوِلَة",
+      "fr": "la table",
+      "emoji": "🪵"
+    },
+    {
+      "id": "objet_chaise",
+      "ar": "الْكُرْسِيّ",
+      "fr": "la chaise",
+      "emoji": "🪑"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p83_consigne",
+      "texte_ar": "اِقْرَأِ الْجُمَلَ وَأَجِبْ عَنِ الْأَسْئِلَةِ: أَيْنَ الْقِطَّةُ؟ أَيْنَ الْكُرَةُ؟ أَيْنَ الْكِتَابُ؟",
+      "voix_m": "livre_arabe_niveau3_p83_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_1",
+      "texte_ar": "أَيْنَ الْقِطَّةُ ؟",
+      "voix_m": "livre_arabe_niveau3_p83_question_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_question_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1",
+      "texte_ar": "الْقِطَّةُ فَوْقَ الْكُرْسِيّ",
+      "voix_m": "livre_arabe_niveau3_p83_reponse_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_reponse_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_2",
+      "texte_ar": "أَيْنَ الْكُرَةُ ؟",
+      "voix_m": "livre_arabe_niveau3_p83_question_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_question_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_3",
+      "texte_ar": "أَيْنَ الْكِتَابُ ؟",
+      "voix_m": "livre_arabe_niveau3_p83_question_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_question_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_objet_table",
+      "texte_ar": "الطَّاوِلَة",
+      "voix_m": "livre_arabe_niveau3_p83_objet_table_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_objet_table_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_objet_chaise",
+      "texte_ar": "الْكُرْسِيّ",
+      "voix_m": "livre_arabe_niveau3_p83_objet_chaise_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p83_objet_chaise_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:11:08.404498",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

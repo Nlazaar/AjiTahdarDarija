@@ -1,0 +1,77 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Relier chaque image à son mot arabe correspondant",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط الكلمة بصورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque animal à son nom en arabe",
+    "ar": "أربط كل حيوان باسمه"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دجاجة",
+      "fr": "poule",
+      "emoji": "🐔"
+    },
+    {
+      "id": "2",
+      "ar": "بقرة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "3",
+      "ar": "خروف",
+      "fr": "mouton",
+      "emoji": "🐑"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أربط كل حيوان باسمه",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دجاجة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p9_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بقرة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p9_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خروف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p9_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p9_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:58:20.853129",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 4
+  }
+}

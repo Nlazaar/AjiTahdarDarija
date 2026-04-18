@@ -1,0 +1,207 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Je remets les mots dans l'ordre pour construire une phrase",
+    "ar": "أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ"
+  },
+  "enonce": {
+    "fr": "Remets les mots dans l'ordre pour construire une phrase correcte, puis réponds à la question : Qui raconte l'histoire ?",
+    "ar": "رَتِّبِ الْكَلِمَاتِ لِتُكَوِّنَ جُمْلَةً صَحِيحَةً، ثُمَّ أَجِبْ عَنِ السُّؤَالِ: مَنِ الَّذِي يَرْوِي الْحِكَايَةَ؟"
+  },
+  "elements": [
+    {
+      "id": "phrase1_mot1",
+      "ar": "أُخْتِي",
+      "fr": "ma sœur",
+      "emoji": "👧"
+    },
+    {
+      "id": "phrase1_mot2",
+      "ar": "جَدِّي",
+      "fr": "mon grand-père",
+      "emoji": "👴"
+    },
+    {
+      "id": "phrase1_mot3",
+      "ar": "تُوَاسِي",
+      "fr": "console/réconforte",
+      "emoji": "🤝"
+    },
+    {
+      "id": "phrase2_mot1",
+      "ar": "جَدَّتِي",
+      "fr": "ma grand-mère",
+      "emoji": "👵"
+    },
+    {
+      "id": "phrase2_mot2",
+      "ar": "أُمِّي",
+      "fr": "ma maman",
+      "emoji": "👩"
+    },
+    {
+      "id": "phrase2_mot3",
+      "ar": "تُعَانِقُ",
+      "fr": "embrasse",
+      "emoji": "🤗"
+    },
+    {
+      "id": "phrase3_mot1",
+      "ar": "تُقَدِّمُ",
+      "fr": "présente/offre",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "phrase3_mot2",
+      "ar": "أُخْتِي",
+      "fr": "ma sœur",
+      "emoji": "👧"
+    },
+    {
+      "id": "phrase3_mot3",
+      "ar": "لِجَدِّي",
+      "fr": "à mon grand-père",
+      "emoji": "👴"
+    },
+    {
+      "id": "phrase3_mot4",
+      "ar": "الطَّعَامَ",
+      "fr": "la nourriture",
+      "emoji": "🥗"
+    },
+    {
+      "id": "question_image1",
+      "ar": "الْأَبُ",
+      "fr": "le père",
+      "emoji": "👨‍👧‍👦"
+    },
+    {
+      "id": "question_image2",
+      "ar": "الْجَدَّةُ",
+      "fr": "la grand-mère",
+      "emoji": "👵"
+    },
+    {
+      "id": "question_image3",
+      "ar": "الْأُمُّ",
+      "fr": "la maman",
+      "emoji": "👩‍👧"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "رَتِّبِ الْكَلِمَاتِ لِتُكَوِّنَ جُمْلَةً صَحِيحَةً، ثُمَّ أَجِبْ عَنِ السُّؤَالِ: مَنِ الَّذِي يَرْوِي الْحِكَايَةَ؟",
+      "voix_m": "lecture_niv4_lec02_p4_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase1_mot1",
+      "texte_ar": "أُخْتِي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase1_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase1_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase1_mot2",
+      "texte_ar": "جَدِّي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase1_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase1_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase1_mot3",
+      "texte_ar": "تُوَاسِي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase1_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase1_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase2_mot1",
+      "texte_ar": "جَدَّتِي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase2_mot2",
+      "texte_ar": "أُمِّي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase2_mot3",
+      "texte_ar": "تُعَانِقُ",
+      "voix_m": "lecture_niv4_lec02_p4_phrase2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase3_mot1",
+      "texte_ar": "تُقَدِّمُ",
+      "voix_m": "lecture_niv4_lec02_p4_phrase3_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase3_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase3_mot2",
+      "texte_ar": "أُخْتِي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase3_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase3_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase3_mot3",
+      "texte_ar": "لِجَدِّي",
+      "voix_m": "lecture_niv4_lec02_p4_phrase3_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase3_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase3_mot4",
+      "texte_ar": "الطَّعَامَ",
+      "voix_m": "lecture_niv4_lec02_p4_phrase3_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_phrase3_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_image1",
+      "texte_ar": "الْأَبُ",
+      "voix_m": "lecture_niv4_lec02_p4_question_image1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_question_image1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_image2",
+      "texte_ar": "الْجَدَّةُ",
+      "voix_m": "lecture_niv4_lec02_p4_question_image2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_question_image2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_image3",
+      "texte_ar": "الْأُمُّ",
+      "voix_m": "lecture_niv4_lec02_p4_question_image3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p4_question_image3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:37:54.397132",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 14
+  }
+}

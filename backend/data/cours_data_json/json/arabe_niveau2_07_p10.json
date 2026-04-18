@@ -1,0 +1,77 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Découpe les images pour l'exercice 3",
+    "ar": "أقصّ الصّور للتمرين رقم 3"
+  },
+  "enonce": {
+    "fr": "Découpe les cartes et associe chaque image avec la partie du mot qui lui correspond pour former des mots complets.",
+    "ar": "اقصّ البطاقات وطابق كل صورة مع جزء الكلمة المناسب لتكوين كلمات كاملة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نَسَّة",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "2",
+      "ar": "مِكْنَسَة",
+      "fr": "aspirateur / balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "3",
+      "ar": "مِكْوَاة",
+      "fr": "fer à repasser",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "اقصّ البطاقات وطابق كل صورة مع جزء الكلمة المناسب لتكوين كلمات كاملة.",
+      "voix_m": "arabe_niveau2_07_p10_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نَسَّة",
+      "voix_m": "arabe_niveau2_07_p10_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p10_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِكْنَسَة",
+      "voix_m": "arabe_niveau2_07_p10_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p10_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِكْوَاة",
+      "voix_m": "arabe_niveau2_07_p10_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p10_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:51:26.732044",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 4
+  }
+}

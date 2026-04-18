@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer le plus grand et le plus petit tigre parmi 4 images de tailles différentes, en utilisant deux couleurs distinctes (rouge et jaune)",
+  "titre": {
+    "fr": "Entoure le plus grand et le plus petit tigre",
+    "ar": "أحيطُ بخطٍّ مُغْلَق النَّمِرَ الأكْبرَ بالأحمرِ و الأصغرَ بالأصفرِ"
+  },
+  "enonce": {
+    "fr": "J'entoure en rouge le tigre le plus grand et en jaune le plus petit",
+    "ar": "أحيطُ بخطٍّ مُغْلَق النَّمِرَ الأكْبرَ بالأحمرِ و الأصغرَ بالأصفرِ"
+  },
+  "elements": [
+    {
+      "id": "tigre_1",
+      "ar": "نَمِر صغير",
+      "fr": "Petit tigre (taille 2)",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_2",
+      "ar": "نَمِر متوسط",
+      "fr": "Tigre moyen (taille 3)",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_3",
+      "ar": "النَّمِر الأكبر",
+      "fr": "Tigre le plus grand (taille 4)",
+      "emoji": "🐯"
+    },
+    {
+      "id": "tigre_4",
+      "ar": "النَّمِر الأصغر",
+      "fr": "Tigre le plus petit (taille 1)",
+      "emoji": "🐯"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أحيطُ بخطٍّ مُغْلَق النَّمِرَ الأكْبرَ بالأحمرِ و الأصغرَ بالأصفرِ",
+      "voix_m": "coursarabe_niveau1_lecon04_p7_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_1",
+      "texte_ar": "نَمِر صغير",
+      "voix_m": "coursarabe_niveau1_lecon04_p7_tigre_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p7_tigre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_2",
+      "texte_ar": "نَمِر متوسط",
+      "voix_m": "coursarabe_niveau1_lecon04_p7_tigre_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p7_tigre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_3",
+      "texte_ar": "النَّمِر الأكبر",
+      "voix_m": "coursarabe_niveau1_lecon04_p7_tigre_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p7_tigre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre_4",
+      "texte_ar": "النَّمِر الأصغر",
+      "voix_m": "coursarabe_niveau1_lecon04_p7_tigre_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p7_tigre_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:45:02.877685",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 5
+  }
+}

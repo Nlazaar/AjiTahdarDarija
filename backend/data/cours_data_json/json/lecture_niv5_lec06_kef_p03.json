@@ -1,0 +1,233 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois activités : remettre des lettres en ordre pour former un mot, compléter des phrases avec les mots proposés, remettre des mots en ordre pour construire une phrase",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de construction de phrases",
+    "ar": "تدريبات على المفردات وبناء الجمل"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex.7 : Je complète avec ce qui convient. Ex.8 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "ك ز ن",
+      "fr": "كَنْز (trésor) - lettres à remettre en ordre",
+      "emoji": "🪙"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "ي ك د",
+      "fr": "ديك (coq) - lettres à remettre en ordre",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "ا ب ك ش",
+      "fr": "شباك (fenêtre) - lettres à remettre en ordre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "و ك س ؤ",
+      "fr": "كؤوس (verres) - lettres à remettre en ordre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "الثُّقْبِ",
+      "fr": "du trou",
+      "emoji": "🕳️"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "السَّوْدَاءُ",
+      "fr": "noire",
+      "emoji": "🖤"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "الْأَرِيكَةِ",
+      "fr": "du canapé",
+      "emoji": "🛋️"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "الْمِكْوَاةِ",
+      "fr": "du fer à repasser",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex7_mot5",
+      "ar": "الْقِطَّةُ",
+      "fr": "la chatte",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_mot6",
+      "ar": "يَكْوِي",
+      "fr": "repasse",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex7_mot7",
+      "ar": "كِيسَ",
+      "fr": "sac",
+      "emoji": "🛍️"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "الْأُمُّ",
+      "fr": "la maman",
+      "emoji": "👩"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "تَكْوِي",
+      "fr": "repasse",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "بِالْمِكْوَاةِ",
+      "fr": "avec le fer à repasser",
+      "emoji": "🪜"
+    },
+    {
+      "id": "ex8_mot4",
+      "ar": "الثِّيَابَ",
+      "fr": "les vêtements",
+      "emoji": "👗"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec06_kef",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv5_lec06_kef_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "ك ز ن",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "ي ك د",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "ا ب ك ش",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "و ك س ؤ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "الثُّقْبِ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "السَّوْدَاءُ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "الْأَرِيكَةِ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "الْمِكْوَاةِ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot5",
+      "texte_ar": "الْقِطَّةُ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot6",
+      "texte_ar": "يَكْوِي",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot7",
+      "texte_ar": "كِيسَ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex7_mot7_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex7_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "الْأُمُّ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "تَكْوِي",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "بِالْمِكْوَاةِ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot4",
+      "texte_ar": "الثِّيَابَ",
+      "voix_m": "lecture_niv5_lec06_kef_p3_ex8_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p3_ex8_mot4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:29:20.960615",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv5_lec06_kef",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 16
+  }
+}

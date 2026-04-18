@@ -1,0 +1,207 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "Révision et évaluation : relier des mots à leur image et barrer les mots incorrects parmi une liste",
+  "titre": {
+    "fr": "Révision et évaluation (1)",
+    "ar": "مُرَاجَعَة وَ تَقْيِيم (1)"
+  },
+  "enonce": {
+    "fr": "Exercice 1 : Je relie chaque mot à son image. Exercice 2 : Je barre ce qui est faux.",
+    "ar": "تمرين 1 : أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا. تمرين 2 : أَشْطُبُ الْخَطَأَ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حَلِيبٌ",
+      "fr": "lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "2",
+      "ar": "ذِنْبٌ",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "3",
+      "ar": "ثِمَارٌ",
+      "fr": "fruits (panier)",
+      "emoji": "🧺"
+    },
+    {
+      "id": "4",
+      "ar": "جَوَارِبُ",
+      "fr": "chaussettes",
+      "emoji": "🧦"
+    },
+    {
+      "id": "5",
+      "ar": "إِجَّاصَةٌ",
+      "fr": "loup",
+      "emoji": "🐺"
+    },
+    {
+      "id": "6",
+      "ar": "أَثَابٌ",
+      "fr": "meubles",
+      "emoji": "🪑"
+    },
+    {
+      "id": "7",
+      "ar": "بَوْرٌ",
+      "fr": "taureau",
+      "emoji": "🐂"
+    },
+    {
+      "id": "8",
+      "ar": "ثَلْجٌ",
+      "fr": "neige",
+      "emoji": "❄️"
+    },
+    {
+      "id": "9",
+      "ar": "تَلَّاجَةٌ",
+      "fr": "réfrigérateur",
+      "emoji": "🧊"
+    },
+    {
+      "id": "10",
+      "ar": "مَكْتَبٌ",
+      "fr": "bureau",
+      "emoji": "🪑"
+    },
+    {
+      "id": "11",
+      "ar": "نَمْرٌ",
+      "fr": "dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "12",
+      "ar": "بَقَرَةٌ",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "13",
+      "ar": "ذُبٌّ",
+      "fr": "ours",
+      "emoji": "🐻"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "bilan01",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تمرين 1 : أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا. تمرين 2 : أَشْطُبُ الْخَطَأَ",
+      "voix_m": "bilan01_p1_consigne_m.mp3",
+      "voix_f": "bilan01_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حَلِيبٌ",
+      "voix_m": "bilan01_p1_1_m.mp3",
+      "voix_f": "bilan01_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ذِنْبٌ",
+      "voix_m": "bilan01_p1_2_m.mp3",
+      "voix_f": "bilan01_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ثِمَارٌ",
+      "voix_m": "bilan01_p1_3_m.mp3",
+      "voix_f": "bilan01_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "جَوَارِبُ",
+      "voix_m": "bilan01_p1_4_m.mp3",
+      "voix_f": "bilan01_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "إِجَّاصَةٌ",
+      "voix_m": "bilan01_p1_5_m.mp3",
+      "voix_f": "bilan01_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَثَابٌ",
+      "voix_m": "bilan01_p1_6_m.mp3",
+      "voix_f": "bilan01_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَوْرٌ",
+      "voix_m": "bilan01_p1_7_m.mp3",
+      "voix_f": "bilan01_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "bilan01_p1_8_m.mp3",
+      "voix_f": "bilan01_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "تَلَّاجَةٌ",
+      "voix_m": "bilan01_p1_9_m.mp3",
+      "voix_f": "bilan01_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مَكْتَبٌ",
+      "voix_m": "bilan01_p1_10_m.mp3",
+      "voix_f": "bilan01_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "نَمْرٌ",
+      "voix_m": "bilan01_p1_11_m.mp3",
+      "voix_f": "bilan01_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "bilan01_p1_12_m.mp3",
+      "voix_f": "bilan01_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ذُبٌّ",
+      "voix_m": "bilan01_p1_13_m.mp3",
+      "voix_f": "bilan01_p1_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:56:16.447542",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "bilan01",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 14
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Compléter le dessin de bulles en traçant les bulles en pointillés puis colorier toutes les bulles en jaune",
+  "titre": {
+    "fr": "Je continue à dessiner les bulles puis je les colorie en jaune",
+    "ar": "أكمِلُ رسْمَ الفقَّاقيع حتَّى تَمْلأَ الصَّفحة و ألوِّنها بالأصفر"
+  },
+  "enonce": {
+    "fr": "Je continue à dessiner les bulles pour remplir la page, puis je les colorie en jaune",
+    "ar": "أكمِلُ رسْمَ الفقَّاقيع حتَّى تَمْلأَ الصَّفحة و ألوِّنها بالأصفر"
+  },
+  "elements": [
+    {
+      "id": "bulle_pleine_1",
+      "ar": "فقاعة كبيرة",
+      "fr": "Grande bulle (tracée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "bulle_pleine_2",
+      "ar": "فقاعة متوسطة",
+      "fr": "Bulle moyenne (tracée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "bulle_pleine_3",
+      "ar": "فقاعة كبيرة",
+      "fr": "Grande bulle (tracée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "bulle_pleine_4",
+      "ar": "فقاعة كبيرة",
+      "fr": "Grande bulle (tracée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "bulle_pointillee_1",
+      "ar": "فقاعة بالنقاط",
+      "fr": "Bulle en pointillés à compléter",
+      "emoji": "🔵"
+    },
+    {
+      "id": "bulle_pointillee_2",
+      "ar": "فقاعة بالنقاط",
+      "fr": "Bulle en pointillés à compléter",
+      "emoji": "🔵"
+    },
+    {
+      "id": "couleur_jaune",
+      "ar": "اللون الأصفر",
+      "fr": "Jaune",
+      "emoji": "🟡"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_2",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أكمِلُ رسْمَ الفقَّاقيع حتَّى تَمْلأَ الصَّفحة و ألوِّنها بالأصفر",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pleine_1",
+      "texte_ar": "فقاعة كبيرة",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pleine_2",
+      "texte_ar": "فقاعة متوسطة",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pleine_3",
+      "texte_ar": "فقاعة كبيرة",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pleine_4",
+      "texte_ar": "فقاعة كبيرة",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pleine_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pointillee_1",
+      "texte_ar": "فقاعة بالنقاط",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pointillee_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pointillee_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bulle_pointillee_2",
+      "texte_ar": "فقاعة بالنقاط",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_bulle_pointillee_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_bulle_pointillee_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_jaune",
+      "texte_ar": "اللون الأصفر",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p2_couleur_jaune_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p2_couleur_jaune_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:38:11.497625",
+    "niveau": 1,
+    "lecon": 31,
+    "nom_pdf": "coursarabe_niveau1_lecon01_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon31/",
+    "nb_audio_assets": 8
+  }
+}

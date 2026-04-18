@@ -1,0 +1,90 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "Découpage et assemblage de cartes lettres à découper en deux couleurs (orange et rouge) représentant les lettres أب et يّ avec leurs variantes",
+  "titre": {
+    "fr": "Cartes à découper - Les lettres",
+    "ar": "بطاقات للقص - الحروف"
+  },
+  "enonce": {
+    "fr": "Découpe les cartes le long des pointillés. Associe les cartes de même lettre selon leur couleur.",
+    "ar": "اقطع البطاقات على طول الخطوط المنقطة. طابق بطاقات الحرف نفسه حسب لونها."
+  },
+  "elements": [
+    {
+      "id": "carte_1",
+      "ar": "أب",
+      "fr": "Alif Ba (orange)",
+      "emoji": "🟠"
+    },
+    {
+      "id": "carte_2",
+      "ar": "يّ",
+      "fr": "Ya (rouge)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "carte_3",
+      "ar": "أم",
+      "fr": "Alif Mim (rouge)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "carte_4",
+      "ar": "يّ",
+      "fr": "Ya (orange)",
+      "emoji": "🟠"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "اقطع البطاقات على طول الخطوط المنقطة. طابق بطاقات الحرف نفسه حسب لونها.",
+      "voix_m": "coursarabe_niveau1_lecon02_p10_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_1",
+      "texte_ar": "أب",
+      "voix_m": "coursarabe_niveau1_lecon02_p10_carte_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p10_carte_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_2",
+      "texte_ar": "يّ",
+      "voix_m": "coursarabe_niveau1_lecon02_p10_carte_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p10_carte_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_3",
+      "texte_ar": "أم",
+      "voix_m": "coursarabe_niveau1_lecon02_p10_carte_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p10_carte_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carte_4",
+      "texte_ar": "يّ",
+      "voix_m": "coursarabe_niveau1_lecon02_p10_carte_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p10_carte_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:42:57.024674",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 5
+  }
+}

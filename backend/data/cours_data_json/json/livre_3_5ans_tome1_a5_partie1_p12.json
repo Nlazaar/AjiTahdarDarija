@@ -1,0 +1,129 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte les enfants dans les cases",
+    "ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ هَذِهِ الْمَجْمُوعَات"
+  },
+  "enonce": {
+    "fr": "Compte les enfants dans chaque case, puis colorie le chiffre 2 en jaune",
+    "ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ كُلِّ مَجْمُوعَةٍ وَأُلَوِّنُ الرَّقْمَ 2 بِالْأَصْفَرِ"
+  },
+  "elements": [
+    {
+      "id": "group1",
+      "ar": "مَجْمُوعَة 1",
+      "fr": "Groupe 1 : 2 enfants",
+      "emoji": "👦👧"
+    },
+    {
+      "id": "group2",
+      "ar": "مَجْمُوعَة 2",
+      "fr": "Groupe 2 : 3 enfants",
+      "emoji": "👦👧👦"
+    },
+    {
+      "id": "group3",
+      "ar": "مَجْمُوعَة 3",
+      "fr": "Groupe 3 : 2 enfants (lisant)",
+      "emoji": "👧👦"
+    },
+    {
+      "id": "group4",
+      "ar": "مَجْمُوعَة 4",
+      "fr": "Groupe 4 : 2 personnes",
+      "emoji": "👦👩"
+    },
+    {
+      "id": "group5",
+      "ar": "مَجْمُوعَة 5",
+      "fr": "Groupe 5 : 2 filles",
+      "emoji": "👧👧"
+    },
+    {
+      "id": "group6",
+      "ar": "مَجْمُوعَة 6",
+      "fr": "Groupe 6 : 2 enfants",
+      "emoji": "👧👧"
+    },
+    {
+      "id": "number",
+      "ar": "2",
+      "fr": "le chiffre 2",
+      "emoji": "2️⃣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ كُلِّ مَجْمُوعَةٍ وَأُلَوِّنُ الرَّقْمَ 2 بِالْأَصْفَرِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group1",
+      "texte_ar": "مَجْمُوعَة 1",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group2",
+      "texte_ar": "مَجْمُوعَة 2",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group3",
+      "texte_ar": "مَجْمُوعَة 3",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group4",
+      "texte_ar": "مَجْمُوعَة 4",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group5",
+      "texte_ar": "مَجْمُوعَة 5",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_group6",
+      "texte_ar": "مَجْمُوعَة 6",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_group6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_group6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_number",
+      "texte_ar": "2",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p8_number_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p8_number_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:10.481148",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, tracer une lettre, compléter des mots avec la lettre س",
+  "titre": {
+    "fr": "La lettre Sîn (س) - Lecture, écriture et complétion",
+    "ar": "حرف السين - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre س. Exercice 5 : Je complète avec ce qui convient parmi les formes de la lettre س.",
+    "ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب حرف السين. تمرين 5 : أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "e3_1",
+      "ar": "سِرْوَالٌ",
+      "fr": "pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "e3_2",
+      "ar": "خُنْفُسَاءٌ",
+      "fr": "coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "e3_3",
+      "ar": "تِمْسَاحٌ",
+      "fr": "crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "e3_4",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "e3_5",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "e3_6",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "e4_1",
+      "ar": "س",
+      "fr": "lettre Sîn à tracer",
+      "emoji": "✏️"
+    },
+    {
+      "id": "e5_1",
+      "ar": "تَرْ....مُ",
+      "fr": "Elle dessine (تَرْسُمُ)",
+      "emoji": "🎨"
+    },
+    {
+      "id": "e5_2",
+      "ar": "يَغْ....لُ",
+      "fr": "Il lave (يَغْسِلُ)",
+      "emoji": "🚿"
+    },
+    {
+      "id": "e5_3",
+      "ar": "تَكْنُ......",
+      "fr": "Elle balaie (تَكْنُسُ)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "e5_4",
+      "ar": "......يَّارَةٌ",
+      "fr": "voiture (سَيَّارَةٌ)",
+      "emoji": "🚗"
+    },
+    {
+      "id": "e5_5",
+      "ar": "أَ.......نَانٌ",
+      "fr": "dents (أَسْنَانٌ)",
+      "emoji": "🦷"
+    },
+    {
+      "id": "e5_6",
+      "ar": "شَمْ......",
+      "fr": "soleil (شَمْسٌ)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "e5_7",
+      "ar": "طَاوُو ........",
+      "fr": "paon (طَاوُوسٌ)",
+      "emoji": "🦚"
+    },
+    {
+      "id": "e5_8",
+      "ar": "........مَاءٌ",
+      "fr": "ciel (سَمَاءٌ)",
+      "emoji": "🌤️"
+    },
+    {
+      "id": "e5_9",
+      "ar": "يَـ.....رِقُ",
+      "fr": "Il vole (يَسْرِقُ)",
+      "emoji": "🦹"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec01_siine",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب حرف السين. تمرين 5 : أكمل بما يناسب.",
+      "voix_m": "lecture_niv4_lec01_siine_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_1",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_2",
+      "texte_ar": "خُنْفُسَاءٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_3",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_4",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_5",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3_6",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4_1",
+      "texte_ar": "س",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e4_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_1",
+      "texte_ar": "تَرْ....مُ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_2",
+      "texte_ar": "يَغْ....لُ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_3",
+      "texte_ar": "تَكْنُ......",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_4",
+      "texte_ar": "......يَّارَةٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_5",
+      "texte_ar": "أَ.......نَانٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_6",
+      "texte_ar": "شَمْ......",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_7",
+      "texte_ar": "طَاوُو ........",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_7_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_8",
+      "texte_ar": "........مَاءٌ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_8_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5_9",
+      "texte_ar": "يَـ.....رِقُ",
+      "voix_m": "lecture_niv4_lec01_siine_p2_e5_9_m.mp3",
+      "voix_f": "lecture_niv4_lec01_siine_p2_e5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:39:53.612453",
+    "niveau": 4,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv4_lec01_siine",
+    "bucket_audio": "audio-lessons/niveau4/lecon01/",
+    "nb_audio_assets": 17
+  }
+}

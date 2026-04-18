@@ -1,0 +1,103 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre ذ dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image selon que j'entends la lettre ذ au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَةَ بِمَوْضِعِ حَرْفِ ذ : أَوَّل أَو وَسَط أَو آخِر"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قُنْفُذ",
+      "fr": "hérisson (ذ à la fin)",
+      "emoji": "🦔"
+    },
+    {
+      "id": "2",
+      "ar": "حِذَاء",
+      "fr": "chaussure (ذ au milieu)",
+      "emoji": "👟"
+    },
+    {
+      "id": "3",
+      "ar": "ذِئْب",
+      "fr": "loup (ذ au début)",
+      "emoji": "🐺"
+    },
+    {
+      "id": "4",
+      "ar": "ذَيْل",
+      "fr": "queue (ذ au début)",
+      "emoji": "🐆"
+    },
+    {
+      "id": "5",
+      "ar": "أُذُن",
+      "fr": "oreille (ذ au milieu)",
+      "emoji": "👂"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "arabe_niveau3_lec17",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَةَ بِمَوْضِعِ حَرْفِ ذ : أَوَّل أَو وَسَط أَو آخِر",
+      "voix_m": "arabe_niveau3_lec17_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قُنْفُذ",
+      "voix_m": "arabe_niveau3_lec17_p7_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حِذَاء",
+      "voix_m": "arabe_niveau3_lec17_p7_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ذِئْب",
+      "voix_m": "arabe_niveau3_lec17_p7_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ذَيْل",
+      "voix_m": "arabe_niveau3_lec17_p7_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُذُن",
+      "voix_m": "arabe_niveau3_lec17_p7_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p7_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:49:29.014556",
+    "niveau": 3,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau3_lec17",
+    "bucket_audio": "audio-lessons/niveau3/lecon17/",
+    "nb_audio_assets": 6
+  }
+}

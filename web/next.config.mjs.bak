@@ -1,7 +1,0 @@
-import { withNx } from '@nrwl/next/plugins/with-nx';
-
-export default withNx({
-  experimental: {
-    appDir: true
-  }
-});

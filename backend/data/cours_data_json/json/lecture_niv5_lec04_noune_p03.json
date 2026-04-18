@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des mots à trous et relier à l'image, compléter des antonymes, compléter des phrases, remettre des mots dans l'ordre",
+  "titre": {
+    "fr": "Exercices de complétion et de construction de phrases",
+    "ar": "تمارين الإكمال وبناء الجملة"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : Je complète puis je relie à l'image. Exercice 7 : Je complète par ce qui manque (antonymes). Exercice 8 : Je complète ce qui convient. Exercice 9 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "تمرين 6: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ (المضاد). تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُرَتِّبُ الْكَلِمَاتَ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "سِرٌّ",
+      "fr": "Secret / puits",
+      "emoji": "🪣"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "حَلْقَةٌ",
+      "fr": "Anneau / cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "نُسْرٌ",
+      "fr": "Aigle",
+      "emoji": "🦅"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "دُودَةٌ",
+      "fr": "Coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "ex6_5",
+      "ar": "خُضَّمَاءٌ",
+      "fr": "Œufs au plat",
+      "emoji": "🍳"
+    },
+    {
+      "id": "ex6_6",
+      "ar": "يُضَجَّةٌ",
+      "fr": "Abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "حَزِينٌ",
+      "fr": "Triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "سَعِيدٌ",
+      "fr": "Heureux",
+      "emoji": "😊"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "بَدِينٌ",
+      "fr": "Gros",
+      "emoji": "🧒"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "نَحِيفٌ",
+      "fr": "Mince",
+      "emoji": "🧒"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "يَنْفُضُ النَّبْتَةَ تَكْنُسُ",
+      "fr": "Il secoue la plante / elle balaie",
+      "emoji": "🌱"
+    },
+    {
+      "id": "ex9_1",
+      "ar": "الْبِنْتُ تَنْفُضُ الْأَثَاثَ عَنِ الْغُبَارِ",
+      "fr": "La fille secoue les meubles de la poussière",
+      "emoji": "🧹"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec04_noune",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ (المضاد). تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 9: أُرَتِّبُ الْكَلِمَاتَ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv5_lec04_noune_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "سِرٌّ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "حَلْقَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "نُسْرٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_5",
+      "texte_ar": "خُضَّمَاءٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_6",
+      "texte_ar": "يُضَجَّةٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex6_6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "حَزِينٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "سَعِيدٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "بَدِينٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "نَحِيفٌ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "يَنْفُضُ النَّبْتَةَ تَكْنُسُ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_1",
+      "texte_ar": "الْبِنْتُ تَنْفُضُ الْأَثَاثَ عَنِ الْغُبَارِ",
+      "voix_m": "lecture_niv5_lec04_noune_p3_ex9_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_noune_p3_ex9_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:23:44.017364",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv5_lec04_noune",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 13
+  }
+}

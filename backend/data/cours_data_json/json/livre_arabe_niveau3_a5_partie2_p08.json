@@ -1,0 +1,103 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon que j'entends la lettre : au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : اسْمَعُ الْحَرْفَ فِي أَوَّلٍ أَوْ وَسَطٍ أَوْ آخِرِ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Relie chaque image à la position de la lettre ل dans le mot (début, milieu ou fin)",
+    "ar": "اربط كل صورة بموضع حرف اللام في الكلمة (أول أو وسط أو آخر)"
+  },
+  "elements": [
+    {
+      "id": "ice_cream",
+      "ar": "آيس كريم",
+      "fr": "glace",
+      "emoji": "🍦"
+    },
+    {
+      "id": "day_night",
+      "ar": "لَيْل / نَهَار",
+      "fr": "jour/nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "jeans",
+      "ar": "بَنْطَلُون",
+      "fr": "pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "honey",
+      "ar": "عَسَل",
+      "fr": "miel",
+      "emoji": "🍯"
+    },
+    {
+      "id": "salt",
+      "ar": "مِلْح",
+      "fr": "sel",
+      "emoji": "🧂"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "اربط كل صورة بموضع حرف اللام في الكلمة (أول أو وسط أو آخر)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ice_cream",
+      "texte_ar": "آيس كريم",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_ice_cream_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_ice_cream_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_day_night",
+      "texte_ar": "لَيْل / نَهَار",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_day_night_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_day_night_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jeans",
+      "texte_ar": "بَنْطَلُون",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_jeans_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_jeans_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_honey",
+      "texte_ar": "عَسَل",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_honey_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_honey_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_salt",
+      "texte_ar": "مِلْح",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p8_salt_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p8_salt_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:32:09.858811",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 6
+  }
+}

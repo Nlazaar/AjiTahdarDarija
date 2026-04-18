@@ -1,0 +1,142 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie tous les mots identiques au modèle 'خوخ' (pêche) au centre",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج خوخ"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "خوخ",
+      "fr": "pêche (modèle)",
+      "emoji": "🍑"
+    },
+    {
+      "id": "mot1",
+      "ar": "حوخ",
+      "fr": "haukhh (différent)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot2",
+      "ar": "خوخ",
+      "fr": "pêche (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot3",
+      "ar": "خوج",
+      "fr": "khawj (différent)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot4",
+      "ar": "خوخ",
+      "fr": "pêche (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot5",
+      "ar": "حوج",
+      "fr": "hawj (différent)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot6",
+      "ar": "حوح",
+      "fr": "hawh (différent)",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot7",
+      "ar": "خوخ",
+      "fr": "pêche (identique)",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_modele_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "حوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "خوج",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "حوج",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "حوح",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot7",
+      "texte_ar": "خوخ",
+      "voix_m": "coursarabe_niveau1_lecon10_p6_mot7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p6_mot7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:28.643724",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 9
+  }
+}

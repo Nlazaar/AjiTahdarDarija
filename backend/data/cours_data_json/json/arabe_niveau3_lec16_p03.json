@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je barre quand je n'entends pas la lettre dans le mot",
+    "ar": "أَشْطُبُ عِنْدَمَا لَا أَسْمَعُ الحَرْفَ فِي الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Barre les images dont le mot ne contient pas le son de la lettre غ",
+    "ar": "أَشْطُبُ الصُّورَةَ عِنْدَمَا لَا أَسْمَعُ حَرْفَ الغَيْن فِي الْكَلِمَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غَزَال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "2",
+      "ar": "بَقَرَة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "3",
+      "ar": "غُصْن",
+      "fr": "branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "4",
+      "ar": "أَخْطَبُوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "5",
+      "ar": "غُرَاب",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "6",
+      "ar": "بَبَّغَاء",
+      "fr": "perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "7",
+      "ar": "كَنْغَر",
+      "fr": "kangourou",
+      "emoji": "🦘"
+    },
+    {
+      "id": "8",
+      "ar": "غَيْمَة",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "9",
+      "ar": "غَابَة",
+      "fr": "forêt",
+      "emoji": "🌳"
+    },
+    {
+      "id": "10",
+      "ar": "وَرَقَة",
+      "fr": "feuille",
+      "emoji": "🍃"
+    },
+    {
+      "id": "11",
+      "ar": "غَسَّالَة",
+      "fr": "machine à laver",
+      "emoji": "🫧"
+    },
+    {
+      "id": "12",
+      "ar": "خَيْط",
+      "fr": "pelote de laine",
+      "emoji": "🧶"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "arabe_niveau3_lec16",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَشْطُبُ الصُّورَةَ عِنْدَمَا لَا أَسْمَعُ حَرْفَ الغَيْن فِي الْكَلِمَةِ",
+      "voix_m": "arabe_niveau3_lec16_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غَزَال",
+      "voix_m": "arabe_niveau3_lec16_p3_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَقَرَة",
+      "voix_m": "arabe_niveau3_lec16_p3_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غُصْن",
+      "voix_m": "arabe_niveau3_lec16_p3_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَخْطَبُوط",
+      "voix_m": "arabe_niveau3_lec16_p3_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "غُرَاب",
+      "voix_m": "arabe_niveau3_lec16_p3_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَبَّغَاء",
+      "voix_m": "arabe_niveau3_lec16_p3_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "كَنْغَر",
+      "voix_m": "arabe_niveau3_lec16_p3_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "غَيْمَة",
+      "voix_m": "arabe_niveau3_lec16_p3_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "غَابَة",
+      "voix_m": "arabe_niveau3_lec16_p3_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "وَرَقَة",
+      "voix_m": "arabe_niveau3_lec16_p3_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "غَسَّالَة",
+      "voix_m": "arabe_niveau3_lec16_p3_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "خَيْط",
+      "voix_m": "arabe_niveau3_lec16_p3_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p3_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:47:39.776058",
+    "niveau": 3,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau3_lec16",
+    "bucket_audio": "audio-lessons/niveau3/lecon16/",
+    "nb_audio_assets": 13
+  }
+}

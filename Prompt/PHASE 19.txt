@@ -1,5 +1,0 @@
-PHASE 19 — Déploiement
-Backend → Railway
-Web → Vercel
-Mobile → Expo EAS
-Je te donnerai les prompts.

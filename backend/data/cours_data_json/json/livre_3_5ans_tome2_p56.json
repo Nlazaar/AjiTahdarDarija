@@ -1,0 +1,155 @@
+{
+  "page_nb": 56,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Compte les formes et relie au bon chiffre",
+    "ar": "أعدّ الأشكال و أربط بالرّقم المناسب"
+  },
+  "enonce": {
+    "fr": "Compte les éléments dans chaque image et relie-les au chiffre correspondant (1, 3 ou 4)",
+    "ar": "أعدّ الأشكال في كل صورة و أربطها بالرّقم المناسب"
+  },
+  "elements": [
+    {
+      "id": "watermelon",
+      "ar": "بطيخة واحدة",
+      "fr": "1 pastèque",
+      "emoji": "🍉"
+    },
+    {
+      "id": "balls",
+      "ar": "أربع كرات",
+      "fr": "4 ballons",
+      "emoji": "⚽"
+    },
+    {
+      "id": "orange",
+      "ar": "برتقالة واحدة",
+      "fr": "1 orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "bananas",
+      "ar": "ثلاث موزات",
+      "fr": "3 bananes",
+      "emoji": "🍌"
+    },
+    {
+      "id": "cherries",
+      "ar": "ثلاث كرزات",
+      "fr": "3 cerises",
+      "emoji": "🍒"
+    },
+    {
+      "id": "carrots",
+      "ar": "أربع جزرات",
+      "fr": "4 carottes",
+      "emoji": "🥕"
+    },
+    {
+      "id": "number_1",
+      "ar": "١",
+      "fr": "1",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "number_3",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "number_4",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p56_consigne",
+      "texte_ar": "أعدّ الأشكال في كل صورة و أربطها بالرّقم المناسب",
+      "voix_m": "livre_3_5ans_tome2_p56_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_watermelon",
+      "texte_ar": "بطيخة واحدة",
+      "voix_m": "livre_3_5ans_tome2_p56_watermelon_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_watermelon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balls",
+      "texte_ar": "أربع كرات",
+      "voix_m": "livre_3_5ans_tome2_p56_balls_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_balls_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_orange",
+      "texte_ar": "برتقالة واحدة",
+      "voix_m": "livre_3_5ans_tome2_p56_orange_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_orange_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bananas",
+      "texte_ar": "ثلاث موزات",
+      "voix_m": "livre_3_5ans_tome2_p56_bananas_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_bananas_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cherries",
+      "texte_ar": "ثلاث كرزات",
+      "voix_m": "livre_3_5ans_tome2_p56_cherries_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_cherries_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carrots",
+      "texte_ar": "أربع جزرات",
+      "voix_m": "livre_3_5ans_tome2_p56_carrots_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_carrots_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_number_1",
+      "texte_ar": "١",
+      "voix_m": "livre_3_5ans_tome2_p56_number_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_number_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_number_3",
+      "texte_ar": "٣",
+      "voix_m": "livre_3_5ans_tome2_p56_number_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_number_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_number_4",
+      "texte_ar": "٤",
+      "voix_m": "livre_3_5ans_tome2_p56_number_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p56_number_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:04:59.621644",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

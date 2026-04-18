@@ -1,0 +1,402 @@
+{
+  "page_nb": 54,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "La tanwîn avec kasra (double kasra)",
+    "ar": "التَّنوينُ بِالْكَسْرِ"
+  },
+  "enonce": {
+    "fr": "Lis chaque lettre avec la tanwîn kasra (son -in). Tape sur chaque lettre pour l'entendre.",
+    "ar": "اقرأ كل حرف مع التنوين بالكسر. اضغط على كل حرف لتسمعه."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "إٍ",
+      "fr": "alif - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "بٍ",
+      "fr": "ba - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "تٍ",
+      "fr": "ta - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ثٍ",
+      "fr": "tha - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "جٍ",
+      "fr": "jim - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "حٍ",
+      "fr": "ha - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "خٍ",
+      "fr": "kha - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "دٍ",
+      "fr": "dal - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ذٍ",
+      "fr": "dhal - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "رٍ",
+      "fr": "ra - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "زٍ",
+      "fr": "zay - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "سٍ",
+      "fr": "sin - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "شٍ",
+      "fr": "shin - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "صٍ",
+      "fr": "sad - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "15",
+      "ar": "ضٍ",
+      "fr": "dad - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "16",
+      "ar": "طٍ",
+      "fr": "ta - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "17",
+      "ar": "ظٍ",
+      "fr": "dha - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "18",
+      "ar": "عٍ",
+      "fr": "ayn - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "19",
+      "ar": "غٍ",
+      "fr": "ghayn - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "20",
+      "ar": "فٍ",
+      "fr": "fa - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "21",
+      "ar": "قٍ",
+      "fr": "qaf - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "22",
+      "ar": "كٍ",
+      "fr": "kaf - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "23",
+      "ar": "لٍ",
+      "fr": "lam - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "24",
+      "ar": "مٍ",
+      "fr": "mim - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "25",
+      "ar": "نٍ",
+      "fr": "nun - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "26",
+      "ar": "هٍ",
+      "fr": "ha - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "27",
+      "ar": "وٍ",
+      "fr": "waw - in",
+      "emoji": "🔤"
+    },
+    {
+      "id": "28",
+      "ar": "يٍ",
+      "fr": "ya - in",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p54_consigne",
+      "texte_ar": "اقرأ كل حرف مع التنوين بالكسر. اضغط على كل حرف لتسمعه.",
+      "voix_m": "livre_arabe_niveau3_p54_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "إٍ",
+      "voix_m": "livre_arabe_niveau3_p54_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بٍ",
+      "voix_m": "livre_arabe_niveau3_p54_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تٍ",
+      "voix_m": "livre_arabe_niveau3_p54_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثٍ",
+      "voix_m": "livre_arabe_niveau3_p54_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جٍ",
+      "voix_m": "livre_arabe_niveau3_p54_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حٍ",
+      "voix_m": "livre_arabe_niveau3_p54_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خٍ",
+      "voix_m": "livre_arabe_niveau3_p54_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دٍ",
+      "voix_m": "livre_arabe_niveau3_p54_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذٍ",
+      "voix_m": "livre_arabe_niveau3_p54_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "رٍ",
+      "voix_m": "livre_arabe_niveau3_p54_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "زٍ",
+      "voix_m": "livre_arabe_niveau3_p54_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سٍ",
+      "voix_m": "livre_arabe_niveau3_p54_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شٍ",
+      "voix_m": "livre_arabe_niveau3_p54_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "صٍ",
+      "voix_m": "livre_arabe_niveau3_p54_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ضٍ",
+      "voix_m": "livre_arabe_niveau3_p54_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "طٍ",
+      "voix_m": "livre_arabe_niveau3_p54_16_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "ظٍ",
+      "voix_m": "livre_arabe_niveau3_p54_17_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "عٍ",
+      "voix_m": "livre_arabe_niveau3_p54_18_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "غٍ",
+      "voix_m": "livre_arabe_niveau3_p54_19_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "فٍ",
+      "voix_m": "livre_arabe_niveau3_p54_20_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "قٍ",
+      "voix_m": "livre_arabe_niveau3_p54_21_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "كٍ",
+      "voix_m": "livre_arabe_niveau3_p54_22_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_23",
+      "texte_ar": "لٍ",
+      "voix_m": "livre_arabe_niveau3_p54_23_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_24",
+      "texte_ar": "مٍ",
+      "voix_m": "livre_arabe_niveau3_p54_24_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_24_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_25",
+      "texte_ar": "نٍ",
+      "voix_m": "livre_arabe_niveau3_p54_25_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_25_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_26",
+      "texte_ar": "هٍ",
+      "voix_m": "livre_arabe_niveau3_p54_26_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_26_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_27",
+      "texte_ar": "وٍ",
+      "voix_m": "livre_arabe_niveau3_p54_27_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_27_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_28",
+      "texte_ar": "يٍ",
+      "voix_m": "livre_arabe_niveau3_p54_28_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p54_28_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:05:21.545554",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 29
+  }
+}

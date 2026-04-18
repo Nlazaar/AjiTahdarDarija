@@ -1,0 +1,168 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie chaque partie du corps avec ce qu'elle peut faire",
+    "ar": "أَرْبِطُ كُلَّ جُزْءٍ مِنْ جِسْمِي بِمَا يَقُومُ بِهِ"
+  },
+  "enonce": {
+    "fr": "Relie chaque objet à la partie du corps qui lui correspond",
+    "ar": "اِرْبِطْ كُلَّ صُورَةٍ بِالْجُزْءِ الْمُنَاسِبِ مِنَ الْجِسْمِ"
+  },
+  "elements": [
+    {
+      "id": "soleil",
+      "ar": "شَمْسٌ (رَائِحَة)",
+      "fr": "Soleil (odeur) → nez",
+      "emoji": "☀️"
+    },
+    {
+      "id": "carnet",
+      "ar": "دَفْتَرٌ (كِتَابَة)",
+      "fr": "Carnet (écriture) → main",
+      "emoji": "📓"
+    },
+    {
+      "id": "glace",
+      "ar": "آيسكريم (طَعْم)",
+      "fr": "Glace (goût) → langue",
+      "emoji": "🍦"
+    },
+    {
+      "id": "television",
+      "ar": "تِلْفَاز (رُؤْيَة)",
+      "fr": "Télévision (vue) → œil",
+      "emoji": "📺"
+    },
+    {
+      "id": "ballon",
+      "ar": "كُرَة (رَكْض)",
+      "fr": "Ballon (courir) → jambe",
+      "emoji": "⚽"
+    },
+    {
+      "id": "main",
+      "ar": "يَد",
+      "fr": "Main",
+      "emoji": "✋"
+    },
+    {
+      "id": "jambe",
+      "ar": "رِجْل",
+      "fr": "Jambe",
+      "emoji": "🦵"
+    },
+    {
+      "id": "oeil",
+      "ar": "عَيْن",
+      "fr": "Œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "langue",
+      "ar": "لِسَان",
+      "fr": "Langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "nez",
+      "ar": "أَنْف",
+      "fr": "Nez",
+      "emoji": "👃"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon08",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "اِرْبِطْ كُلَّ صُورَةٍ بِالْجُزْءِ الْمُنَاسِبِ مِنَ الْجِسْمِ",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil",
+      "texte_ar": "شَمْسٌ (رَائِحَة)",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_soleil_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_soleil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carnet",
+      "texte_ar": "دَفْتَرٌ (كِتَابَة)",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_carnet_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_carnet_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_glace",
+      "texte_ar": "آيسكريم (طَعْم)",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_glace_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_glace_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_television",
+      "texte_ar": "تِلْفَاز (رُؤْيَة)",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_television_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_television_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon",
+      "texte_ar": "كُرَة (رَكْض)",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_ballon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_ballon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_main",
+      "texte_ar": "يَد",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_main_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_main_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jambe",
+      "texte_ar": "رِجْل",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_jambe_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_jambe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oeil",
+      "texte_ar": "عَيْن",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_oeil_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_oeil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_langue",
+      "texte_ar": "لِسَان",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_langue_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_langue_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nez",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon08_p3_nez_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p3_nez_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:19:20.023229",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "coursarabe_niveau1_lecon08",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 11
+  }
+}

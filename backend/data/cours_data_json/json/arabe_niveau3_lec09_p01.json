@@ -1,0 +1,168 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Les jours de la semaine et les phrases à lire",
+    "ar": "اليوم هُوَ يَوْمُ"
+  },
+  "enonce": {
+    "fr": "Lis les phrases suivantes à voix haute",
+    "ar": "أَقْرَأُ/أَسْمَعُ"
+  },
+  "elements": [
+    {
+      "id": "jour1",
+      "ar": "الاِثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour2",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour3",
+      "ar": "الأَرْبَعَاءُ",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour4",
+      "ar": "الخَمِيس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour5",
+      "ar": "الجُمُعَة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour6",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour7",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "phrase1",
+      "ar": "قَرَأَ الْوَلَدُ",
+      "fr": "Le garçon a lu",
+      "emoji": "📖"
+    },
+    {
+      "id": "phrase2",
+      "ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "fr": "La fille a mangé du pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "phrase3",
+      "ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "fr": "Zaynab a dessiné un soleil",
+      "emoji": "☀️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec09",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أَقْرَأُ/أَسْمَعُ",
+      "voix_m": "arabe_niveau3_lec09_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour1",
+      "texte_ar": "الاِثْنَيْنُ",
+      "voix_m": "arabe_niveau3_lec09_p1_jour1_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour2",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "arabe_niveau3_lec09_p1_jour2_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour3",
+      "texte_ar": "الأَرْبَعَاءُ",
+      "voix_m": "arabe_niveau3_lec09_p1_jour3_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour4",
+      "texte_ar": "الخَمِيس",
+      "voix_m": "arabe_niveau3_lec09_p1_jour4_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour5",
+      "texte_ar": "الجُمُعَة",
+      "voix_m": "arabe_niveau3_lec09_p1_jour5_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "arabe_niveau3_lec09_p1_jour6_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour7",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "arabe_niveau3_lec09_p1_jour7_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_jour7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase1",
+      "texte_ar": "قَرَأَ الْوَلَدُ",
+      "voix_m": "arabe_niveau3_lec09_p1_phrase1_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase2",
+      "texte_ar": "أَكَلَتِ الْبِنْتُ خُبْزًا",
+      "voix_m": "arabe_niveau3_lec09_p1_phrase2_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase3",
+      "texte_ar": "رَسَمَتْ زَيْنَبُ شَمْسًا",
+      "voix_m": "arabe_niveau3_lec09_p1_phrase3_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p1_phrase3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:37:59.517200",
+    "niveau": 3,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau3_lec09",
+    "bucket_audio": "audio-lessons/niveau3/lecon09/",
+    "nb_audio_assets": 11
+  }
+}

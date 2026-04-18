@@ -1,0 +1,90 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les animaux",
+    "ar": "حَيَوَانَاتٌ"
+  },
+  "enonce": {
+    "fr": "Appuie sur chaque carte pour écouter le nom de l'animal en arabe",
+    "ar": "اِضْغَطْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ اسْمَ الْحَيَوَانِ بِالْعَرَبِيَّةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دُودَةٌ",
+      "fr": "Ver de terre",
+      "emoji": "🐛"
+    },
+    {
+      "id": "2",
+      "ar": "ثَعْلَبٌ",
+      "fr": "Renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "3",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "4",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_10",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِضْغَطْ عَلَى كُلِّ بِطَاقَةٍ لِتَسْمَعَ اسْمَ الْحَيَوَانِ بِالْعَرَبِيَّةِ",
+      "voix_m": "arabe_niveau2_10_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_10_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "arabe_niveau2_10_p1_1_m.mp3",
+      "voix_f": "arabe_niveau2_10_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثَعْلَبٌ",
+      "voix_m": "arabe_niveau2_10_p1_2_m.mp3",
+      "voix_f": "arabe_niveau2_10_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "arabe_niveau2_10_p1_3_m.mp3",
+      "voix_f": "arabe_niveau2_10_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "arabe_niveau2_10_p1_4_m.mp3",
+      "voix_f": "arabe_niveau2_10_p1_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:54:02.289580",
+    "niveau": 2,
+    "lecon": 22,
+    "nom_pdf": "arabe_niveau2_10",
+    "bucket_audio": "audio-lessons/niveau2/lecon22/",
+    "nb_audio_assets": 5
+  }
+}

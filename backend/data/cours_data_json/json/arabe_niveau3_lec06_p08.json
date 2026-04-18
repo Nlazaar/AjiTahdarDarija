@@ -1,0 +1,246 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "J'entoure les mots identiques au modèle",
+    "ar": "أحيطُ بِخَطٍّ مُغلَق الكلمات المشابِهَة للنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement les mots qui sont identiques au modèle en rouge (en haut de chaque colonne)",
+    "ar": "أحِط بخط مغلق الكلمات المشابهة للنموذج المكتوب بالأحمر في كل عمود"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "سَجَدَ",
+      "fr": "il s'est prosterné (modèle)",
+      "emoji": "🧎"
+    },
+    {
+      "id": "modele_2",
+      "ar": "شَعْرٌ",
+      "fr": "cheveux (modèle)",
+      "emoji": "💇"
+    },
+    {
+      "id": "modele_3",
+      "ar": "جَزَرٌ",
+      "fr": "carotte (modèle)",
+      "emoji": "🥕"
+    },
+    {
+      "id": "col1_v1",
+      "ar": "سَجَدَ",
+      "fr": "il s'est prosterné (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_v2",
+      "ar": "سَجدَ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    },
+    {
+      "id": "col1_v3",
+      "ar": "جَسَدَ",
+      "fr": "corps (différent)",
+      "emoji": "❌"
+    },
+    {
+      "id": "col1_v4",
+      "ar": "سَجَدَ",
+      "fr": "il s'est prosterné (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col1_v5",
+      "ar": "سَبجَدَ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_v1",
+      "ar": "شَعْرٌ",
+      "fr": "cheveux (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_v2",
+      "ar": "شَغْرٌ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    },
+    {
+      "id": "col2_v3",
+      "ar": "شَعْرٌ",
+      "fr": "cheveux (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col2_v4",
+      "ar": "شُغْرٌ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    },
+    {
+      "id": "col3_v1",
+      "ar": "جَزَرٌ",
+      "fr": "carotte (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col3_v2",
+      "ar": "خَزَرٌ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    },
+    {
+      "id": "col3_v3",
+      "ar": "جَزَرٌ",
+      "fr": "carotte (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "col3_v4",
+      "ar": "جَزَزٌ",
+      "fr": "variante différente",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec06",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أحِط بخط مغلق الكلمات المشابهة للنموذج المكتوب بالأحمر في كل عمود",
+      "voix_m": "arabe_niveau3_lec06_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "سَجَدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_modele_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_modele_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_3",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_modele_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_modele_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_v1",
+      "texte_ar": "سَجَدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_col1_v1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col1_v1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_v2",
+      "texte_ar": "سَجدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_col1_v2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col1_v2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_v3",
+      "texte_ar": "جَسَدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_col1_v3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col1_v3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_v4",
+      "texte_ar": "سَجَدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_col1_v4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col1_v4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col1_v5",
+      "texte_ar": "سَبجَدَ",
+      "voix_m": "arabe_niveau3_lec06_p8_col1_v5_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col1_v5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_v1",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col2_v1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col2_v1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_v2",
+      "texte_ar": "شَغْرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col2_v2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col2_v2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_v3",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col2_v3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col2_v3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col2_v4",
+      "texte_ar": "شُغْرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col2_v4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col2_v4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_v1",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col3_v1_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col3_v1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_v2",
+      "texte_ar": "خَزَرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col3_v2_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col3_v2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_v3",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col3_v3_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col3_v3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_col3_v4",
+      "texte_ar": "جَزَزٌ",
+      "voix_m": "arabe_niveau3_lec06_p8_col3_v4_m.mp3",
+      "voix_f": "arabe_niveau3_lec06_p8_col3_v4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:33:46.008164",
+    "niveau": 3,
+    "lecon": 6,
+    "nom_pdf": "arabe_niveau3_lec06",
+    "bucket_audio": "audio-lessons/niveau3/lecon06/",
+    "nb_audio_assets": 17
+  }
+}

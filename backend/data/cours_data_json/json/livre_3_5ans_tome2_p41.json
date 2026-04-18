@@ -1,0 +1,220 @@
+{
+  "page_nb": 41,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أُلَوِّنُ الحرفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres Jim (ج) comme le modèle en rouge",
+    "ar": "لَوِّنْ حرف الجيم (ج) فقط مثل النموذج باللون الأحمر"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ج",
+      "fr": "Jim (isolé)",
+      "emoji": "✅"
+    },
+    {
+      "id": "2",
+      "ar": "خ",
+      "fr": "Kha (isolé)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "ج",
+      "fr": "Jim (avec point bas)",
+      "emoji": "✅"
+    },
+    {
+      "id": "4",
+      "ar": "ج",
+      "fr": "Jim (fin de mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "5",
+      "ar": "ح",
+      "fr": "Ha (isolé)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ج",
+      "fr": "Jim (début de mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "7",
+      "ar": "ح",
+      "fr": "Ha (milieu de mot)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "خ",
+      "fr": "Kha (milieu de mot)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "ج",
+      "fr": "Jim (fin de mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "10",
+      "ar": "ج",
+      "fr": "Jim (milieu de mot)",
+      "emoji": "✅"
+    },
+    {
+      "id": "11",
+      "ar": "ح",
+      "fr": "Ha (fin de mot)",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "ح",
+      "fr": "Ha (isolé)",
+      "emoji": "❌"
+    },
+    {
+      "id": "13",
+      "ar": "خ",
+      "fr": "Kha (isolé)",
+      "emoji": "❌"
+    },
+    {
+      "id": "14",
+      "ar": "ج",
+      "fr": "Jim (isolé)",
+      "emoji": "✅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p41_consigne",
+      "texte_ar": "لَوِّنْ حرف الجيم (ج) فقط مثل النموذج باللون الأحمر",
+      "voix_m": "livre_3_5ans_tome2_p41_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_p41_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p41_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p41_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_p41_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p41_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p41_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_p41_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome2_p41_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p41_14_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:02:24.798464",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 15
+  }
+}

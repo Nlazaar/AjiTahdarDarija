@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, tracer une lettre, compléter des mots avec la lettre ل",
+  "titre": {
+    "fr": "Je lis, j'écris et je complète avec la lettre Lam (ل)",
+    "ar": "أقرأ وأكتب وأكمل بحرف اللام"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ل. Exercice 5 : Je complète les mots avec la forme correcte de ل.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف ل. تمرين 5: أكمل بما يناسب"
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "دَلْوٌ",
+      "fr": "Seau",
+      "emoji": "🪣"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "عَسَلٌ",
+      "fr": "Miel",
+      "emoji": "🍯"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "سُلَحْفَاةٌ",
+      "fr": "Tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "سَلَطَةٌ",
+      "fr": "Salade",
+      "emoji": "🥗"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "طَاوِلَةٌ",
+      "fr": "Table",
+      "emoji": "🪑"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "حَلْوَى",
+      "fr": "Bonbons",
+      "emoji": "🍬"
+    },
+    {
+      "id": "ex4_1",
+      "ar": "ل",
+      "fr": "Lettre Lam (à tracer)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "غَزَالٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "ثَلْجٌ",
+      "fr": "Neige",
+      "emoji": "❄️"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐋"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "لَيْلٌ",
+      "fr": "Nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "لَيْمُونٌ",
+      "fr": "Citron",
+      "emoji": "🍋"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "جُلْبَانَةٌ",
+      "fr": "Petits pois",
+      "emoji": "🫛"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "رَجُلٌ آلِيٌّ",
+      "fr": "Robot",
+      "emoji": "🤖"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "شَلَّالٌ",
+      "fr": "Chute",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "قَلْبٌ",
+      "fr": "Cœur",
+      "emoji": "❤️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec07_leem",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف ل. تمرين 5: أكمل بما يناسب",
+      "voix_m": "lecture_niv4_lec07_leem_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "دَلْوٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "عَسَلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "سُلَحْفَاةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "سَلَطَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "طَاوِلَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "حَلْوَى",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_1",
+      "texte_ar": "ل",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex4_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "غَزَالٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "لَيْلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "لَيْمُونٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "جُلْبَانَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "رَجُلٌ آلِيٌّ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "شَلَّالٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "قَلْبٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:56:08.491896",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_leem",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 17
+  }
+}

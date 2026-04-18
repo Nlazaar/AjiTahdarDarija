@@ -1,0 +1,90 @@
+{
+  "page_nb": 37,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je dessine",
+    "ar": "أرْسُمُ"
+  },
+  "enonce": {
+    "fr": "Trace les nuages en suivant les pointillés",
+    "ar": "ارسم السحاب باتباع الخطوط المتقطعة"
+  },
+  "elements": [
+    {
+      "id": "nuage_1",
+      "ar": "سَحابَة كَبيرة",
+      "fr": "Grand nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "nuage_2",
+      "ar": "سَحابَة مُتَوَسِّطَة",
+      "fr": "Nuage moyen",
+      "emoji": "☁️"
+    },
+    {
+      "id": "nuage_3",
+      "ar": "سَحابَة صَغيرة",
+      "fr": "Petit nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "mot",
+      "ar": "سحاب",
+      "fr": "nuages",
+      "emoji": "🌥️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p37_consigne",
+      "texte_ar": "ارسم السحاب باتباع الخطوط المتقطعة",
+      "voix_m": "livre_3_5ans_tome2_p37_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p37_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_1",
+      "texte_ar": "سَحابَة كَبيرة",
+      "voix_m": "livre_3_5ans_tome2_p37_nuage_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p37_nuage_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_2",
+      "texte_ar": "سَحابَة مُتَوَسِّطَة",
+      "voix_m": "livre_3_5ans_tome2_p37_nuage_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p37_nuage_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_3",
+      "texte_ar": "سَحابَة صَغيرة",
+      "voix_m": "livre_3_5ans_tome2_p37_nuage_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p37_nuage_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot",
+      "texte_ar": "سحاب",
+      "voix_m": "livre_3_5ans_tome2_p37_mot_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p37_mot_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:01:35.775634",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

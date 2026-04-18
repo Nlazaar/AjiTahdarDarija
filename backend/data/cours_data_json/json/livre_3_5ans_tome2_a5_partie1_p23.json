@@ -1,0 +1,103 @@
+{
+  "page_nb": 23,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Lignes et traçage - Compléter les étoiles",
+    "ar": "خطوط - أكمّل رسم النّجوم"
+  },
+  "enonce": {
+    "fr": "Trace les lettres et les formes en suivant les pointillés : les cercles, la lettre ر, la lettre ق, le mot قمر, puis complète le dessin des étoiles en suivant les pointillés.",
+    "ar": "اتبع النقاط لرسم الأشكال والحروف: الدوائر، حرف ر، حرف ق، كلمة قمر، ثم أكمّل رسم النجوم باتباع النقاط."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دوائر",
+      "fr": "Cercles",
+      "emoji": "⭕"
+    },
+    {
+      "id": "2",
+      "ar": "ر",
+      "fr": "Lettre Ra",
+      "emoji": "✍️"
+    },
+    {
+      "id": "3",
+      "ar": "ق",
+      "fr": "Lettre Qaf",
+      "emoji": "✍️"
+    },
+    {
+      "id": "4",
+      "ar": "قمر",
+      "fr": "Lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "5",
+      "ar": "نجوم",
+      "fr": "Étoiles",
+      "emoji": "⭐"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p23_consigne",
+      "texte_ar": "اتبع النقاط لرسم الأشكال والحروف: الدوائر، حرف ر، حرف ق، كلمة قمر، ثم أكمّل رسم النجوم باتباع النقاط.",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دوائر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قمر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نجوم",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p23_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p23_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:18:41.459332",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 6
+  }
+}

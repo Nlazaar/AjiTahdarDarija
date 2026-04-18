@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Chanson sur les animaux avec des couplets décrivant chaque animal à lire et chanter",
+  "titre": {
+    "fr": "La chanson des animaux",
+    "ar": "أغنية الحيوانات"
+  },
+  "enonce": {
+    "fr": "Lis et chante la chanson des animaux. Chaque animal se présente et décrit sa vie.",
+    "ar": "اقرأ وغنِّ أغنية الحيوانات. كل حيوان يقدم نفسه ويصف حياته."
+  },
+  "elements": [
+    {
+      "id": "animal_1",
+      "ar": "أنا بقرٌّ أكول / أعيش في المَرَاعي / ما لِحَليبي بَديل / أعيش في الحُقول",
+      "fr": "Je suis une vache gourmande / Je vis dans les prairies / Rien n'égale mon lait / Je vis dans les champs",
+      "emoji": "🐄"
+    },
+    {
+      "id": "animal_2",
+      "ar": "أنا خروف العيد / أخشى من الجَزَّار / لِلَّحم و القدِّيد / و رَنَّة الحَديد",
+      "fr": "Je suis le mouton de l'Aïd / Je crains le boucher / Pour la viande et le séché / Et le tintement du métal",
+      "emoji": "🐑"
+    },
+    {
+      "id": "animal_3",
+      "ar": "أنا الدَّجَاجُ الرَّاقي / أقُومُ في الصَّبَاح / تَحْلَى بِيَ الأطْبَاق / أقُولُ قَاقِ قَاق",
+      "fr": "Je suis la noble poule / Je me lève le matin / Les plats s'embellissent grâce à moi / Je dis cot cot",
+      "emoji": "🐔"
+    },
+    {
+      "id": "animal_4",
+      "ar": "أنا هُوَ الخِنْزير / أعيشُ في الأطْيَان / لَحْمي لَيْسَ حَلال / أعيش في الأوحال",
+      "fr": "Je suis le cochon / Je vis dans les terres / Ma viande n'est pas halal / Je vis dans la boue",
+      "emoji": "🐷"
+    },
+    {
+      "id": "conclusion",
+      "ar": "نحن الحيوانات / نَعيشُ فَوقَ الأرْض / كُلٌّ لَهُ صِفَات / نُكَمِّلُ الحَيَاة",
+      "fr": "Nous sommes les animaux / Nous vivons sur la terre / Chacun a ses caractéristiques / Nous complétons la vie",
+      "emoji": "🌍"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اقرأ وغنِّ أغنية الحيوانات. كل حيوان يقدم نفسه ويصف حياته.",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_1",
+      "texte_ar": "أنا بقرٌّ أكول / أعيش في المَرَاعي / ما لِحَليبي بَديل / أعيش في الحُقول",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_animal_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_animal_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_2",
+      "texte_ar": "أنا خروف العيد / أخشى من الجَزَّار / لِلَّحم و القدِّيد / و رَنَّة الحَديد",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_animal_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_animal_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_3",
+      "texte_ar": "أنا الدَّجَاجُ الرَّاقي / أقُومُ في الصَّبَاح / تَحْلَى بِيَ الأطْبَاق / أقُولُ قَاقِ قَاق",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_animal_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_animal_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_4",
+      "texte_ar": "أنا هُوَ الخِنْزير / أعيشُ في الأطْيَان / لَحْمي لَيْسَ حَلال / أعيش في الأوحال",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_animal_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_animal_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_conclusion",
+      "texte_ar": "نحن الحيوانات / نَعيشُ فَوقَ الأرْض / كُلٌّ لَهُ صِفَات / نُكَمِّلُ الحَيَاة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p1_conclusion_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p1_conclusion_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:55:58.434587",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 6
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "page_nb": 13,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorier la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre cible (ع ou ن) chaque fois qu'elle apparaît dans les mots",
+    "ar": "لَوِّنِ الحرفَ المستهدف في كل كلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عبير",
+      "fr": "Abir (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "2",
+      "ar": "بعير",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "3",
+      "ar": "باع",
+      "fr": "il a vendu",
+      "emoji": "🛒"
+    },
+    {
+      "id": "4",
+      "ar": "راعي",
+      "fr": "berger",
+      "emoji": "👨‍🌾"
+    },
+    {
+      "id": "5",
+      "ar": "سعيد",
+      "fr": "heureux / Saïd",
+      "emoji": "😊"
+    },
+    {
+      "id": "6",
+      "ar": "نعم",
+      "fr": "oui",
+      "emoji": "✅"
+    },
+    {
+      "id": "7",
+      "ar": "ناعم",
+      "fr": "doux",
+      "emoji": "🤲"
+    },
+    {
+      "id": "8",
+      "ar": "بلع",
+      "fr": "il a avalé",
+      "emoji": "😮"
+    },
+    {
+      "id": "9",
+      "ar": "ساعي",
+      "fr": "facteur",
+      "emoji": "📬"
+    },
+    {
+      "id": "10",
+      "ar": "بعيد",
+      "fr": "loin",
+      "emoji": "🔭"
+    },
+    {
+      "id": "11",
+      "ar": "مع",
+      "fr": "avec",
+      "emoji": "🤝"
+    },
+    {
+      "id": "12",
+      "ar": "سمع",
+      "fr": "il a entendu",
+      "emoji": "👂"
+    },
+    {
+      "id": "13",
+      "ar": "نعم",
+      "fr": "oui",
+      "emoji": "✅"
+    },
+    {
+      "id": "14",
+      "ar": "نور",
+      "fr": "lumière",
+      "emoji": "💡"
+    },
+    {
+      "id": "15",
+      "ar": "من",
+      "fr": "de / qui",
+      "emoji": "❓"
+    },
+    {
+      "id": "16",
+      "ar": "بنى",
+      "fr": "il a construit",
+      "emoji": "🏗️"
+    },
+    {
+      "id": "17",
+      "ar": "نساء",
+      "fr": "femmes",
+      "emoji": "👩"
+    },
+    {
+      "id": "18",
+      "ar": "كنز",
+      "fr": "trésor",
+      "emoji": "💎"
+    },
+    {
+      "id": "19",
+      "ar": "ناعم",
+      "fr": "doux",
+      "emoji": "🤲"
+    },
+    {
+      "id": "20",
+      "ar": "منير",
+      "fr": "lumineux",
+      "emoji": "✨"
+    },
+    {
+      "id": "21",
+      "ar": "كان",
+      "fr": "il était",
+      "emoji": "⏳"
+    },
+    {
+      "id": "22",
+      "ar": "عندليب",
+      "fr": "rossignol",
+      "emoji": "🐦"
+    },
+    {
+      "id": "23",
+      "ar": "منديل",
+      "fr": "mouchoir",
+      "emoji": "🧻"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p13_consigne",
+      "texte_ar": "لَوِّنِ الحرفَ المستهدف في كل كلمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عبير",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بعير",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "باع",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "راعي",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سعيد",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "نعم",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ناعم",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بلع",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ساعي",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "بعيد",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "مع",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سمع",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "نعم",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "نور",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "من",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "بنى",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "نساء",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_17_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "كنز",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_18_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "ناعم",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_19_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "منير",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_20_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "كان",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_21_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "عندليب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_22_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_23",
+      "texte_ar": "منديل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p13_23_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p13_23_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:20:56.259901",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 24
+  }
+}

@@ -1,1 +1,0 @@
-{"kind":"FETCH","data":{"headers":{"connection":"keep-alive","content-length":"0","date":"Mon, 23 Mar 2026 21:28:59 GMT","keep-alive":"timeout=5","x-powered-by":"Express"},"body":"","status":200,"url":"http://localhost:3001/lessons/l1"},"revalidate":31536000,"tags":[]}

@@ -1,0 +1,220 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Page multi-exercices : écriture de mots sous images, identification de phrases incorrectes, et complétion de phrase avec liste de mots",
+  "titre": {
+    "fr": "J'écris le mot / Je barre la phrase incorrecte / Je complète la phrase",
+    "ar": "أكتبُ الكَلِمَةَ / أشطبُ الجُملةَ / أُكمِلُ الجُملةَ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot sous chaque image. Exercice 7 : Je barre la phrase qui ne décrit pas l'image. Exercice 8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6 : أكتبُ الكَلِمَةَ تحت كل صورة. تمرين 7 : أشطبُ الجُملةَ الَّتي لا تُعبِّرُ عن الصُّورةِ. تمرين 8 : أُكمِلُ الجُملةَ باستِعمالِ الكَلِماتِ المُناسِبةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "حليب",
+      "fr": "lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "تمساح",
+      "fr": "crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "حوت",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "أحمر",
+      "fr": "rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "القِطَّةُ فَوْقَ الكُرْسِيّ",
+      "fr": "Le chat est sur la chaise",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "القِطَّةُ تَحْتَ الكُرْسِيّ",
+      "fr": "Le chat est sous la chaise",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "الْمِحْفَظَةُ فَوْقَ الْمَكْتَبِ",
+      "fr": "Le cartable est sur le bureau",
+      "emoji": "🎒"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "الْمِحْفَظَةُ تَحْتَ الْمَكْتَبِ",
+      "fr": "Le cartable est sous le bureau",
+      "emoji": "🎒"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "القِطَّةُ فَوْقَ الصُّنْدُوق",
+      "fr": "Le chat est sur la boîte",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "الكَلْبُ فَوْقَ السَّرير",
+      "fr": "Le chien est sur le lit",
+      "emoji": "🐶"
+    },
+    {
+      "id": "ex7_7",
+      "ar": "السُّلَحْفَاةُ فَوْقَ السَّرير",
+      "fr": "La tortue est sur le lit",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "الشَّجَرَة",
+      "fr": "l'arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "تُفَّاحَة",
+      "fr": "pomme",
+      "emoji": "🍎"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "يَقْطِفُ",
+      "fr": "cueille",
+      "emoji": "🤲"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_01_haa",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6 : أكتبُ الكَلِمَةَ تحت كل صورة. تمرين 7 : أشطبُ الجُملةَ الَّتي لا تُعبِّرُ عن الصُّورةِ. تمرين 8 : أُكمِلُ الجُملةَ باستِعمالِ الكَلِماتِ المُناسِبةِ.",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "حليب",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "تمساح",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "حوت",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "أحمر",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "القِطَّةُ فَوْقَ الكُرْسِيّ",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "القِطَّةُ تَحْتَ الكُرْسِيّ",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "الْمِحْفَظَةُ فَوْقَ الْمَكْتَبِ",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "الْمِحْفَظَةُ تَحْتَ الْمَكْتَبِ",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "القِطَّةُ فَوْقَ الصُّنْدُوق",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "الكَلْبُ فَوْقَ السَّرير",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_7",
+      "texte_ar": "السُّلَحْفَاةُ فَوْقَ السَّرير",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex7_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex7_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "الشَّجَرَة",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "يَقْطِفُ",
+      "voix_m": "lecture_niv5_lec01_01_haa_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_01_haa_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:12:26.267947",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_01_haa",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 15
+  }
+}

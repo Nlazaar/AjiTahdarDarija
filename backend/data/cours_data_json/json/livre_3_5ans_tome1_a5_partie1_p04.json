@@ -1,0 +1,129 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les carrés selon la couleur indiquée",
+    "ar": "لوِّن المربَّع بالألوان المحددة"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les carrés avec la couleur indiquée : rouge, vert ou bleu. Laisse les autres formes sans couleur.",
+    "ar": "لوِّن المربَّعات فقط بالألوان المحددة: الأحمر، الأخضر، والأزرق. اترك الأشكال الأخرى بدون لون."
+  },
+  "elements": [
+    {
+      "id": "consigne_1",
+      "ar": "لوِّن المربَّع بالأحمر",
+      "fr": "Je colorie le carré en rouge",
+      "emoji": "🟥"
+    },
+    {
+      "id": "consigne_2",
+      "ar": "لوِّن المربَّع بالأخضر",
+      "fr": "Je colorie le carré en vert",
+      "emoji": "🟩"
+    },
+    {
+      "id": "consigne_3",
+      "ar": "لوِّن المربَّع بالأزرق",
+      "fr": "Je colorie le carré en bleu",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_carre",
+      "ar": "مربَّع",
+      "fr": "carré",
+      "emoji": "⬜"
+    },
+    {
+      "id": "forme_cercle",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "forme_triangle",
+      "ar": "مثلث",
+      "fr": "triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_croissant",
+      "ar": "هلال",
+      "fr": "croissant",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "لوِّن المربَّعات فقط بالألوان المحددة: الأحمر، الأخضر، والأزرق. اترك الأشكال الأخرى بدون لون.",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_1",
+      "texte_ar": "لوِّن المربَّع بالأحمر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_consigne_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_consigne_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_2",
+      "texte_ar": "لوِّن المربَّع بالأخضر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_consigne_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_consigne_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_consigne_3",
+      "texte_ar": "لوِّن المربَّع بالأزرق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_consigne_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_consigne_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_carre",
+      "texte_ar": "مربَّع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_forme_carre_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_forme_carre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_cercle",
+      "texte_ar": "دائرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_forme_cercle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_forme_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_triangle",
+      "texte_ar": "مثلث",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_forme_triangle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_forme_triangle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_croissant",
+      "texte_ar": "هلال",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_forme_croissant_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_forme_croissant_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:00.320293",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

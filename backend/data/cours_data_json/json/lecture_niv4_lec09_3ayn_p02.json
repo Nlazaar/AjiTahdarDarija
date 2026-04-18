@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot-image, écriture de lettre, compléter avec la bonne forme de lettre, reconstituer des mots à partir de lettres mélangées",
+  "titre": {
+    "fr": "Exercices sur la lettre ع (Aïn)",
+    "ar": "تمارين على حرف العين"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre. 3) Je complète avec la forme qui convient. 4) Je reconstitue le mot à partir des lettres et je l'écris.",
+    "ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب الحرف. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "مِعْزَاةٌ",
+      "fr": "Chèvre",
+      "emoji": "🐐"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "الْكَعْبَةُ",
+      "fr": "La Kaaba",
+      "emoji": "🕋"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "عِطْرٌ",
+      "fr": "Parfum",
+      "emoji": "🧴"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "مِعْطَفٌ",
+      "fr": "Manteau",
+      "emoji": "🧥"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "عَقْرَبٌ",
+      "fr": "Scorpion",
+      "emoji": "🦂"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "رُكُوعٌ",
+      "fr": "Prosternation (Rukû)",
+      "emoji": "🙇"
+    },
+    {
+      "id": "ex4_lettre",
+      "ar": "ع",
+      "fr": "Lettre Aïn (écriture)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "مِذْيَا",
+      "fr": "Radio",
+      "emoji": "📻"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "ضِفْدَع",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "قُبَّعَةٌ",
+      "fr": "Chapeau",
+      "emoji": "🎩"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "عَاصِفَةٌ",
+      "fr": "Tempête",
+      "emoji": "🌪️"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "شَعْرٌ",
+      "fr": "Cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "إِعْصَارٌ",
+      "fr": "Tornade",
+      "emoji": "🌀"
+    },
+    {
+      "id": "ex6_1",
+      "ar": "ظ ع م",
+      "fr": "Os (à reconstituer)",
+      "emoji": "🦴"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "ل ب ع ث",
+      "fr": "Renard (à reconstituer)",
+      "emoji": "🦊"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "ر ا ع ش",
+      "fr": "Voilier (à reconstituer)",
+      "emoji": "⛵"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec09_3ayn",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب الحرف. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها.",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "مِعْزَاةٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "الْكَعْبَةُ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "عِطْرٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "مِعْطَفٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "عَقْرَبٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "رُكُوعٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_lettre",
+      "texte_ar": "ع",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex4_lettre_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex4_lettre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "مِذْيَا",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "قُبَّعَةٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "عَاصِفَةٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "إِعْصَارٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "ظ ع م",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex6_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "ل ب ع ث",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex6_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "ر ا ع ش",
+      "voix_m": "lecture_niv4_lec09_3ayn_p2_ex6_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p2_ex6_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:04:13.141708",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_3ayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 17
+  }
+}

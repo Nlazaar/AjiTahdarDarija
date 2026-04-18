@@ -1,0 +1,168 @@
+{
+  "page_nb": 83,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète selon le modèle",
+    "ar": "أُكَمِّلُ حَسَبَ المِثَالِ"
+  },
+  "enonce": {
+    "fr": "Observe le mot modèle avec son image et complète les mots incomplets de la même façon.",
+    "ar": "اُنْظُرْ إِلى المِثَالِ وَأَكْمِلِ الكَلِمَاتِ النَّاقِصَةَ عَلى نَفْسِ المِنْوَالِ."
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "incomplet_1a",
+      "ar": "مِكْ نَسَةٌ",
+      "fr": "balai (incomplet 1)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "incomplet_1b",
+      "ar": "مِكْنَسَـ",
+      "fr": "balai (incomplet 2)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "incomplet_1c",
+      "ar": "كْنَسَةٌ",
+      "fr": "balai (incomplet 3)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "incomplet_1d",
+      "ar": "مِكْنَـ ـةٌ",
+      "fr": "balai (incomplet 4)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "modele_2",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "👕"
+    },
+    {
+      "id": "incomplet_2a",
+      "ar": "مِـ وَاةٌ",
+      "fr": "fer à repasser (incomplet 1)",
+      "emoji": "👕"
+    },
+    {
+      "id": "incomplet_2b",
+      "ar": "مِكْ اةٌ",
+      "fr": "fer à repasser (incomplet 2)",
+      "emoji": "👕"
+    },
+    {
+      "id": "incomplet_2c",
+      "ar": "مِكْوَةٌ",
+      "fr": "fer à repasser (incomplet 3)",
+      "emoji": "👕"
+    },
+    {
+      "id": "incomplet_2d",
+      "ar": "مِكْوَا",
+      "fr": "fer à repasser (incomplet 4)",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p83_consigne",
+      "texte_ar": "اُنْظُرْ إِلى المِثَالِ وَأَكْمِلِ الكَلِمَاتِ النَّاقِصَةَ عَلى نَفْسِ المِنْوَالِ.",
+      "voix_m": "livre_3_5ans_tome2_p83_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_modele_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_1a",
+      "texte_ar": "مِكْ نَسَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_1a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_1b",
+      "texte_ar": "مِكْنَسَـ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_1b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_1c",
+      "texte_ar": "كْنَسَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_1c_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_1d",
+      "texte_ar": "مِكْنَـ ـةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_1d_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_1d_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_modele_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_2a",
+      "texte_ar": "مِـ وَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_2a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_2b",
+      "texte_ar": "مِكْ اةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_2b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_2c",
+      "texte_ar": "مِكْوَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_2c_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_2c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incomplet_2d",
+      "texte_ar": "مِكْوَا",
+      "voix_m": "livre_3_5ans_tome2_p83_incomplet_2d_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p83_incomplet_2d_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:09:33.044982",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 11
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 52,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Barre l'erreur",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Barre le mot qui n'appartient pas à la même famille que طائرة (avion)",
+    "ar": "أَشْطُبُ الخَطَأَ في كل سطر"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "طَائِر",
+      "fr": "oiseau (qui vole)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "طَارَت",
+      "fr": "elle a volé",
+      "emoji": "✈️"
+    },
+    {
+      "id": "3",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "4",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "5",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "6",
+      "ar": "طَائِرَات",
+      "fr": "avions (pluriel)",
+      "emoji": "✈️"
+    },
+    {
+      "id": "7",
+      "ar": "صَائِرَة",
+      "fr": "mot différent (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "سَائِرَة",
+      "fr": "mot différent (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p52_consigne",
+      "texte_ar": "أَشْطُبُ الخَطَأَ في كل سطر",
+      "voix_m": "livre_3_5ans_tome2_p52_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "طَائِر",
+      "voix_m": "livre_3_5ans_tome2_p52_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طَارَت",
+      "voix_m": "livre_3_5ans_tome2_p52_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "طَائِرَات",
+      "voix_m": "livre_3_5ans_tome2_p52_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "صَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "livre_3_5ans_tome2_p52_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p52_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:04:22.388498",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

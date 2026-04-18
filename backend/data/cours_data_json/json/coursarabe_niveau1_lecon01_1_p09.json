@@ -1,0 +1,285 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Identifier et coller des autocollants uniquement dans les carrés parmi un ensemble de formes géométriques variées (carrés, triangles, cercles)",
+  "titre": {
+    "fr": "Je colle des autocollants dans chaque carré",
+    "ar": "أَلْصِق مُلصَقاتٍ داخل كلّ مُرَبَّع"
+  },
+  "enonce": {
+    "fr": "Colle des autocollants à l'intérieur de chaque carré que tu vois sur la page.",
+    "ar": "أَلْصِق مُلصَقاتٍ داخل كلّ مُرَبَّع تراه في الصفحة."
+  },
+  "elements": [
+    {
+      "id": "forme_1",
+      "ar": "مُثَلَّث أخضر",
+      "fr": "triangle vert",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_2",
+      "ar": "دائرة زرقاء",
+      "fr": "cercle bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "forme_3",
+      "ar": "مُرَبَّع برتقالي كبير",
+      "fr": "grand carré orange",
+      "emoji": "🟧"
+    },
+    {
+      "id": "forme_4",
+      "ar": "مُرَبَّع برتقالي صغير",
+      "fr": "petit carré orange",
+      "emoji": "🟧"
+    },
+    {
+      "id": "forme_5",
+      "ar": "مُرَبَّع برتقالي",
+      "fr": "carré orange",
+      "emoji": "🟧"
+    },
+    {
+      "id": "forme_6",
+      "ar": "مُرَبَّع برتقالي",
+      "fr": "carré orange",
+      "emoji": "🟧"
+    },
+    {
+      "id": "forme_7",
+      "ar": "مُثَلَّث أحمر داكن",
+      "fr": "triangle rouge foncé",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_8",
+      "ar": "مُثَلَّث برتقالي",
+      "fr": "triangle orange",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_9",
+      "ar": "دائرة بنفسجية",
+      "fr": "cercle violet",
+      "emoji": "🟣"
+    },
+    {
+      "id": "forme_10",
+      "ar": "مُرَبَّع برتقالي",
+      "fr": "carré orange",
+      "emoji": "🟧"
+    },
+    {
+      "id": "forme_11",
+      "ar": "دائرة بنية",
+      "fr": "cercle marron",
+      "emoji": "🟤"
+    },
+    {
+      "id": "forme_12",
+      "ar": "مُثَلَّث أخضر",
+      "fr": "triangle vert",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_13",
+      "ar": "مُرَبَّع أزرق مخضر",
+      "fr": "carré bleu-vert",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_14",
+      "ar": "مُرَبَّع أزرق مخضر صغير",
+      "fr": "petit carré bleu-vert",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_15",
+      "ar": "مُرَبَّع أزرق مخضر كبير",
+      "fr": "grand carré bleu-vert",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_16",
+      "ar": "دائرة بنية",
+      "fr": "cercle marron",
+      "emoji": "🟤"
+    },
+    {
+      "id": "forme_17",
+      "ar": "مُرَبَّع أزرق مخضر",
+      "fr": "carré bleu-vert",
+      "emoji": "🟦"
+    },
+    {
+      "id": "forme_18",
+      "ar": "مُثَلَّث أخضر",
+      "fr": "triangle vert",
+      "emoji": "🔺"
+    },
+    {
+      "id": "forme_19",
+      "ar": "مُرَبَّع أزرق مخضر",
+      "fr": "carré bleu-vert",
+      "emoji": "🟦"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَلْصِق مُلصَقاتٍ داخل كلّ مُرَبَّع تراه في الصفحة.",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_1",
+      "texte_ar": "مُثَلَّث أخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_2",
+      "texte_ar": "دائرة زرقاء",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_3",
+      "texte_ar": "مُرَبَّع برتقالي كبير",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_4",
+      "texte_ar": "مُرَبَّع برتقالي صغير",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_5",
+      "texte_ar": "مُرَبَّع برتقالي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_6",
+      "texte_ar": "مُرَبَّع برتقالي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_7",
+      "texte_ar": "مُثَلَّث أحمر داكن",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_8",
+      "texte_ar": "مُثَلَّث برتقالي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_9",
+      "texte_ar": "دائرة بنفسجية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_10",
+      "texte_ar": "مُرَبَّع برتقالي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_11",
+      "texte_ar": "دائرة بنية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_12",
+      "texte_ar": "مُثَلَّث أخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_12_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_13",
+      "texte_ar": "مُرَبَّع أزرق مخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_13_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_14",
+      "texte_ar": "مُرَبَّع أزرق مخضر صغير",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_14_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_15",
+      "texte_ar": "مُرَبَّع أزرق مخضر كبير",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_15_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_16",
+      "texte_ar": "دائرة بنية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_16_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_17",
+      "texte_ar": "مُرَبَّع أزرق مخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_17_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_18",
+      "texte_ar": "مُثَلَّث أخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_18_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_19",
+      "texte_ar": "مُرَبَّع أزرق مخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p9_forme_19_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p9_forme_19_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:37:04.950308",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 20
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je repasse les lignes",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Repasse sur les lignes en pointillés en suivant le modèle : vagues, arceaux et traits verticaux.",
+    "ar": "أَرْسُمُ الْخُطُوطَ بِاتِّبَاعِ النَّمُوذَجِ"
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "خط متموج",
+      "fr": "Ligne de vagues (petits arceaux)",
+      "emoji": "〰️"
+    },
+    {
+      "id": "ligne2",
+      "ar": "خط أقواس",
+      "fr": "Ligne d'arceaux larges",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ligne3",
+      "ar": "خطوط عمودية",
+      "fr": "Traits verticaux",
+      "emoji": "⬇️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَرْسُمُ الْخُطُوطَ بِاتِّبَاعِ النَّمُوذَجِ",
+      "voix_m": "coursarabe_niveau1_lecon10_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "خط متموج",
+      "voix_m": "coursarabe_niveau1_lecon10_p9_ligne1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p9_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "خط أقواس",
+      "voix_m": "coursarabe_niveau1_lecon10_p9_ligne2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p9_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "خطوط عمودية",
+      "voix_m": "coursarabe_niveau1_lecon10_p9_ligne3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p9_ligne3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:49.905122",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 4
+  }
+}

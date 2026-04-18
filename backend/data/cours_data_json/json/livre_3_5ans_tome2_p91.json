@@ -1,0 +1,51 @@
+{
+  "page_nb": 91,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète les traits et colorie",
+    "ar": "أكمّل الخطوط و ألوّن"
+  },
+  "enonce": {
+    "fr": "Trace les pointillés pour compléter le dessin du coq, puis colorie-le.",
+    "ar": "أكمّل رسم الديك باتباع الخطوط المنقطة ثم لوّنه."
+  },
+  "elements": [
+    {
+      "id": "coq",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p91_consigne",
+      "texte_ar": "أكمّل رسم الديك باتباع الخطوط المنقطة ثم لوّنه.",
+      "voix_m": "livre_3_5ans_tome2_p91_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p91_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_coq",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "livre_3_5ans_tome2_p91_coq_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p91_coq_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:10:51.297292",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 2
+  }
+}

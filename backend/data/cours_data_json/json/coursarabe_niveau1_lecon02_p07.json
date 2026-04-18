@@ -1,0 +1,116 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer le plus grand et le plus petit soleil avec des couleurs différentes (rouge et jaune)",
+  "titre": {
+    "fr": "J'entoure le plus grand soleil en rouge et le plus petit en jaune",
+    "ar": "أُحِيطُ الشَّمْسَ الأَكْبَرَ بِالأَحْمَرِ وَ الأَصْغَرَ بِالأَصْفَرِ"
+  },
+  "enonce": {
+    "fr": "Entoure le plus grand soleil en rouge et le plus petit soleil en jaune parmi les quatre soleils dessinés",
+    "ar": "أُحِيطُ الشَّمْسَ الأَكْبَرَ بِالأَحْمَرِ وَ الأَصْغَرَ بِالأَصْفَرِ"
+  },
+  "elements": [
+    {
+      "id": "soleil_tres_petit",
+      "ar": "الشَّمْسُ الأَصْغَرُ",
+      "fr": "le plus petit soleil",
+      "emoji": "🌞"
+    },
+    {
+      "id": "soleil_petit",
+      "ar": "الشَّمْسُ الصَّغِيرَةُ",
+      "fr": "le petit soleil",
+      "emoji": "🌞"
+    },
+    {
+      "id": "soleil_moyen",
+      "ar": "الشَّمْسُ الوُسْطَى",
+      "fr": "le soleil moyen",
+      "emoji": "🌞"
+    },
+    {
+      "id": "soleil_grand",
+      "ar": "الشَّمْسُ الأَكْبَرُ",
+      "fr": "le plus grand soleil",
+      "emoji": "🌞"
+    },
+    {
+      "id": "couleur_rouge",
+      "ar": "الأَحْمَرُ",
+      "fr": "rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "couleur_jaune",
+      "ar": "الأَصْفَرُ",
+      "fr": "jaune",
+      "emoji": "🟡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أُحِيطُ الشَّمْسَ الأَكْبَرَ بِالأَحْمَرِ وَ الأَصْغَرَ بِالأَصْفَرِ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil_tres_petit",
+      "texte_ar": "الشَّمْسُ الأَصْغَرُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_soleil_tres_petit_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_soleil_tres_petit_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil_petit",
+      "texte_ar": "الشَّمْسُ الصَّغِيرَةُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_soleil_petit_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_soleil_petit_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil_moyen",
+      "texte_ar": "الشَّمْسُ الوُسْطَى",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_soleil_moyen_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_soleil_moyen_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil_grand",
+      "texte_ar": "الشَّمْسُ الأَكْبَرُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_soleil_grand_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_soleil_grand_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_rouge",
+      "texte_ar": "الأَحْمَرُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_couleur_rouge_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_couleur_rouge_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couleur_jaune",
+      "texte_ar": "الأَصْفَرُ",
+      "voix_m": "coursarabe_niveau1_lecon02_p7_couleur_jaune_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p7_couleur_jaune_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:41:41.085729",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 7
+  }
+}

@@ -96,7 +96,7 @@ export default function AlphabetLessonPage() {
   const [isAnswered, setIsAnswered] = useState(false);
 
   const onSpeak = useCallback((l: DarijaLetter) => {
-    audio.speak(l.letter, "ar-MA");
+    audio.speak(l.letter);
   }, [audio]);
 
   // ENGINE for Phase "choix"

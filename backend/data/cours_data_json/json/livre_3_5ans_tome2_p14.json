@@ -1,0 +1,77 @@
+{
+  "page_nb": 14,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relier le mot à l'image",
+    "ar": "أربط بين الكلمة و الصّورة"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot à l'image qui lui correspond",
+    "ar": "أربط بين الكلمة و الصّورة المناسبة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "2",
+      "ar": "حوت",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "3",
+      "ar": "شَبَكَةٌ",
+      "fr": "filet",
+      "emoji": "🕸️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 3,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p14_consigne",
+      "texte_ar": "أربط بين الكلمة و الصّورة المناسبة",
+      "voix_m": "livre_3_5ans_tome2_p14_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p14_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p14_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p14_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حوت",
+      "voix_m": "livre_3_5ans_tome2_p14_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p14_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَبَكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p14_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p14_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:57:44.279139",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 4
+  }
+}

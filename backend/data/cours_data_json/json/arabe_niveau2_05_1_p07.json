@@ -1,0 +1,194 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Biffe l'erreur",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Barre le mot qui est différent du mot modèle (l'intrus) dans chaque colonne",
+    "ar": "اشطب الكلمة المختلفة عن الكلمة النموذجية في كل عمود"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "intrus_1a",
+      "ar": "سارة",
+      "fr": "Sara (prénom)",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_1a",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "intrus_1b",
+      "ar": "سارت",
+      "fr": "elle a roulé",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_1b",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "correct_1c",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "modele_2",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "intrus_2a",
+      "ar": "قطر",
+      "fr": "Qatar",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_2a",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "intrus_2b",
+      "ar": "فَطَائِر",
+      "fr": "galettes",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_2b",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "intrus_2c",
+      "ar": "قَنْطَرَة",
+      "fr": "pont",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "اشطب الكلمة المختلفة عن الكلمة النموذجية في كل عمود",
+      "voix_m": "arabe_niveau2_05_1_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p7_modele_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_1a",
+      "texte_ar": "سارة",
+      "voix_m": "arabe_niveau2_05_1_p7_intrus_1a_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_intrus_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1a",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p7_correct_1a_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_correct_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_1b",
+      "texte_ar": "سارت",
+      "voix_m": "arabe_niveau2_05_1_p7_intrus_1b_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_intrus_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1b",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p7_correct_1b_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_correct_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1c",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p7_correct_1c_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_correct_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_1_p7_modele_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_2a",
+      "texte_ar": "قطر",
+      "voix_m": "arabe_niveau2_05_1_p7_intrus_2a_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_intrus_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_2a",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_1_p7_correct_2a_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_correct_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_2b",
+      "texte_ar": "فَطَائِر",
+      "voix_m": "arabe_niveau2_05_1_p7_intrus_2b_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_intrus_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_2b",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_1_p7_correct_2b_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_correct_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_2c",
+      "texte_ar": "قَنْطَرَة",
+      "voix_m": "arabe_niveau2_05_1_p7_intrus_2c_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p7_intrus_2c_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:45:11.721327",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 13
+  }
+}

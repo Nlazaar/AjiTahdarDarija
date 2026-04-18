@@ -1,0 +1,86 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Découper les lettres en bas de page et les coller dans l'ordre alphabétique dans les cases vides, puis mémoriser les lettres et les mots associés",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres dans le bas de la page, colle-les dans l'ordre dans les cases, puis apprends-les par cœur avec les mots illustrés.",
+    "ar": "اِقْطَعِ الْحُرُوفَ مِنْ أَسْفَلِ الصَّفْحَةِ وَأَلْصِقْهَا بِالتَّرْتِيبِ فِي الْخَانَاتِ ثُمَّ احْفَظْهَا."
+  },
+  "elements": [
+    {
+      "id": "lettre_dal",
+      "ar": "دَارٌ",
+      "fr": "Maison (Dâr) - lettre Dâl (د)",
+      "emoji": "🏠"
+    },
+    {
+      "id": "lettre_dhal",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue (Dhayl) - lettre Dhâl (ذ)",
+      "emoji": "🦎"
+    },
+    {
+      "id": "lettre_ra",
+      "ar": "رِيشَةٌ",
+      "fr": "Plume (Rîsha) - lettre Râ (ر)",
+      "emoji": "🪶"
+    },
+    {
+      "id": "lettre_zay",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe (Zarâfa) - lettre Zây (ز)",
+      "emoji": "🦒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "اِقْطَعِ الْحُرُوفَ مِنْ أَسْفَلِ الصَّفْحَةِ وَأَلْصِقْهَا بِالتَّرْتِيبِ فِي الْخَانَاتِ ثُمَّ احْفَظْهَا.",
+      "voix_m": "v1_l3_p5_consigne_m.mp3",
+      "voix_f": "v1_l3_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_dal",
+      "texte_ar": "دَارٌ",
+      "voix_m": "v1_l3_p5_lettre_dal_m.mp3",
+      "voix_f": "v1_l3_p5_lettre_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_dhal",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "v1_l3_p5_lettre_dhal_m.mp3",
+      "voix_f": "v1_l3_p5_lettre_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ra",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "v1_l3_p5_lettre_ra_m.mp3",
+      "voix_f": "v1_l3_p5_lettre_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_zay",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "v1_l3_p5_lettre_zay_m.mp3",
+      "voix_f": "v1_l3_p5_lettre_zay_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:52:51.609059",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 5
+  }
+}

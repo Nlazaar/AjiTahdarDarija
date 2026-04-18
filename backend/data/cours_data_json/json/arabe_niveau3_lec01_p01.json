@@ -1,0 +1,259 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Les jours de la semaine – Écrire les lettres manquantes",
+    "ar": "أيام الأسبوع – أكتُبُ الحُرُوفَ النَّاقِصَة"
+  },
+  "enonce": {
+    "fr": "Écris les lettres manquantes dans le tableau de l'alphabet arabe en utilisant les lettres proposées en bas.",
+    "ar": "أكتُبُ الحُرُوفَ النَّاقِصَةَ في الجدول باستخدام الحروف المقترحة في الأسفل."
+  },
+  "elements": [
+    {
+      "id": "lettre_tha",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ra",
+      "ar": "ر",
+      "fr": "ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_nun",
+      "ar": "ن",
+      "fr": "nun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ain",
+      "ar": "ع",
+      "fr": "aïn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ha",
+      "ar": "ح",
+      "fr": "ha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "case_vide_1",
+      "ar": "ث",
+      "fr": "case manquante (tha)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "case_vide_2",
+      "ar": "ح",
+      "fr": "case manquante (ha)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "case_vide_3",
+      "ar": "ر",
+      "fr": "case manquante (ra)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "case_vide_4",
+      "ar": "ع",
+      "fr": "case manquante (aïn)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "case_vide_5",
+      "ar": "ن",
+      "fr": "case manquante (nun)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "jour_1",
+      "ar": "الِاثْنَيْنُ",
+      "fr": "lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_2",
+      "ar": "الثُّلَاثَاءُ",
+      "fr": "mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_3",
+      "ar": "الْأَرْبَعَاء",
+      "fr": "mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_4",
+      "ar": "الْخَمِيس",
+      "fr": "jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_5",
+      "ar": "الْجُمُعَة",
+      "fr": "vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_6",
+      "ar": "السَّبْتُ",
+      "fr": "samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jour_7",
+      "ar": "الْأَحَدُ",
+      "fr": "dimanche",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec01",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "أكتُبُ الحُرُوفَ النَّاقِصَةَ في الجدول باستخدام الحروف المقترحة في الأسفل.",
+      "voix_m": "arabe_niveau3_lec01_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_tha",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau3_lec01_p1_lettre_tha_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_lettre_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ra",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau3_lec01_p1_lettre_ra_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_lettre_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_nun",
+      "texte_ar": "ن",
+      "voix_m": "arabe_niveau3_lec01_p1_lettre_nun_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_lettre_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ain",
+      "texte_ar": "ع",
+      "voix_m": "arabe_niveau3_lec01_p1_lettre_ain_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_lettre_ain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ha",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau3_lec01_p1_lettre_ha_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_lettre_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_vide_1",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau3_lec01_p1_case_vide_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_case_vide_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_vide_2",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau3_lec01_p1_case_vide_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_case_vide_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_vide_3",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau3_lec01_p1_case_vide_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_case_vide_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_vide_4",
+      "texte_ar": "ع",
+      "voix_m": "arabe_niveau3_lec01_p1_case_vide_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_case_vide_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_vide_5",
+      "texte_ar": "ن",
+      "voix_m": "arabe_niveau3_lec01_p1_case_vide_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_case_vide_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_1",
+      "texte_ar": "الِاثْنَيْنُ",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_2",
+      "texte_ar": "الثُّلَاثَاءُ",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_3",
+      "texte_ar": "الْأَرْبَعَاء",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_4",
+      "texte_ar": "الْخَمِيس",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_5",
+      "texte_ar": "الْجُمُعَة",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_6",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jour_7",
+      "texte_ar": "الْأَحَدُ",
+      "voix_m": "arabe_niveau3_lec01_p1_jour_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p1_jour_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:24:39.681971",
+    "niveau": 3,
+    "lecon": 1,
+    "nom_pdf": "arabe_niveau3_lec01",
+    "bucket_audio": "audio-lessons/niveau3/lecon01/",
+    "nb_audio_assets": 18
+  }
+}

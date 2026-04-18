@@ -1,0 +1,116 @@
+{
+  "page_nb": 19,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Les fruits",
+    "ar": "فَوَاكِهُ"
+  },
+  "enonce": {
+    "fr": "Relie chaque fruit à son nom en arabe",
+    "ar": "رَبِّطْ كُلَّ فَاكِهَةٍ بِاسْمِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خَوْخُ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "2",
+      "ar": "مَوْز",
+      "fr": "Banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "3",
+      "ar": "مِشمِش",
+      "fr": "Abricot",
+      "emoji": "🍊"
+    },
+    {
+      "id": "4",
+      "ar": "فَرَاوِلَة",
+      "fr": "Fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "5",
+      "ar": "عِنَب",
+      "fr": "Raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "6",
+      "ar": "تُفَّاح",
+      "fr": "Pomme",
+      "emoji": "🍎"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p19_consigne",
+      "texte_ar": "رَبِّطْ كُلَّ فَاكِهَةٍ بِاسْمِهَا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خَوْخُ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَوْز",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِشمِش",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَرَاوِلَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "عِنَب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تُفَّاح",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p19_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p19_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:31:21.804085",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 7
+  }
+}

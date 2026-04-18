@@ -1,0 +1,103 @@
+{
+  "page_nb": 129,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أسْمَعُ الْحَرْفَ في أوَّل أو وسط أو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image à la position de la lettre ف : au début, au milieu ou à la fin du mot",
+    "ar": "أسْمَعُ الْحَرْفَ في أوَّل أو وسط أو آخِرِ الْكَلِمَة وأرْبِطُ بِمَا يُنَاسِبُ"
+  },
+  "elements": [
+    {
+      "id": "debut",
+      "ar": "أوَّل",
+      "fr": "début du mot",
+      "emoji": "👄"
+    },
+    {
+      "id": "milieu",
+      "ar": "وسط",
+      "fr": "milieu du mot",
+      "emoji": "🌶️"
+    },
+    {
+      "id": "fin",
+      "ar": "آخِر",
+      "fr": "fin du mot",
+      "emoji": "🍎"
+    },
+    {
+      "id": "img_nez",
+      "ar": "أنف",
+      "fr": "nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "img_elephant",
+      "ar": "فيل",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p129_consigne",
+      "texte_ar": "أسْمَعُ الْحَرْفَ في أوَّل أو وسط أو آخِرِ الْكَلِمَة وأرْبِطُ بِمَا يُنَاسِبُ",
+      "voix_m": "livre_arabe_niveau3_p129_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_debut",
+      "texte_ar": "أوَّل",
+      "voix_m": "livre_arabe_niveau3_p129_debut_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_debut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_milieu",
+      "texte_ar": "وسط",
+      "voix_m": "livre_arabe_niveau3_p129_milieu_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_milieu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fin",
+      "texte_ar": "آخِر",
+      "voix_m": "livre_arabe_niveau3_p129_fin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_fin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img_nez",
+      "texte_ar": "أنف",
+      "voix_m": "livre_arabe_niveau3_p129_img_nez_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_img_nez_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_img_elephant",
+      "texte_ar": "فيل",
+      "voix_m": "livre_arabe_niveau3_p129_img_elephant_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p129_img_elephant_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:19:14.096655",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

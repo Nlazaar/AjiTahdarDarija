@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَات لِأَحْصُلَ عَلَى كَلِمَة ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie ce mot à l'image correspondante.",
+    "ar": "اِرْبِطْ بِطَاقَتَيِ الْمَقَاطِعِ لِتُكَوِّنَ كَلِمَةً، ثُمَّ اِرْبِطِ الْكَلِمَةَ بِصُورَتِهَا."
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "غُرَازُونٌ",
+      "fr": "canard (oie)",
+      "emoji": "🦆"
+    },
+    {
+      "id": "syllabe1a",
+      "ar": "غُرَا",
+      "fr": "ghu-rā (première syllabe)",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe1b",
+      "ar": "زُونٌ",
+      "fr": "zūn (deuxième syllabe)",
+      "emoji": ""
+    },
+    {
+      "id": "mot2",
+      "ar": "بَطٌّ",
+      "fr": "escargot / canard",
+      "emoji": "🐌"
+    },
+    {
+      "id": "syllabe2a",
+      "ar": "بَطَّ",
+      "fr": "baṭ (première syllabe)",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe2b",
+      "ar": "بٌ",
+      "fr": "bu (deuxième syllabe)",
+      "emoji": ""
+    },
+    {
+      "id": "mot3",
+      "ar": "حَدَّة",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "syllabe3a",
+      "ar": "حَدَ",
+      "fr": "ḥa-da (première syllabe)",
+      "emoji": ""
+    },
+    {
+      "id": "syllabe3b",
+      "ar": "ـَّة",
+      "fr": "tta (deuxième syllabe)",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec15",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اِرْبِطْ بِطَاقَتَيِ الْمَقَاطِعِ لِتُكَوِّنَ كَلِمَةً، ثُمَّ اِرْبِطِ الْكَلِمَةَ بِصُورَتِهَا.",
+      "voix_m": "arabe_niveau3_lec15_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "غُرَازُونٌ",
+      "voix_m": "arabe_niveau3_lec15_p2_mot1_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1a",
+      "texte_ar": "غُرَا",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe1a_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe1b",
+      "texte_ar": "زُونٌ",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe1b_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "بَطٌّ",
+      "voix_m": "arabe_niveau3_lec15_p2_mot2_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2a",
+      "texte_ar": "بَطَّ",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe2a_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe2b",
+      "texte_ar": "بٌ",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe2b_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "حَدَّة",
+      "voix_m": "arabe_niveau3_lec15_p2_mot3_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3a",
+      "texte_ar": "حَدَ",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe3a_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syllabe3b",
+      "texte_ar": "ـَّة",
+      "voix_m": "arabe_niveau3_lec15_p2_syllabe3b_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p2_syllabe3b_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:45:53.510494",
+    "niveau": 3,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau3_lec15",
+    "bucket_audio": "audio-lessons/niveau3/lecon15/",
+    "nb_audio_assets": 10
+  }
+}

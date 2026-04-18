@@ -171,6 +171,24 @@ export default function LeaderboardPage() {
         </div>
       </div>
 
+      {/* Duels CTA */}
+      <div style={{ padding: '0 16px', marginBottom: 12 }}>
+        <a href="/duels" style={{
+          display: 'flex', alignItems: 'center', gap: 12,
+          background: `linear-gradient(135deg, #1cb0f620, #1cb0f608)`,
+          border: `1px solid #1cb0f640`,
+          borderRadius: 16, padding: '12px 16px',
+          textDecoration: 'none', color: TEXT,
+        }}>
+          <span style={{ fontSize: 28 }}>⚔️</span>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 14, fontWeight: 900, color: '#1cb0f6' }}>Duels 1v1</div>
+            <div style={{ fontSize: 12, color: SUB }}>Affronte d'autres joueurs en temps réel</div>
+          </div>
+          <span style={{ fontSize: 20, color: '#1cb0f6' }}>›</span>
+        </a>
+      </div>
+
       {/* Tabs */}
       <div style={{ display: 'flex', gap: 8, padding: '0 16px', marginBottom: 16 }}>
         {([['global', '🌍 Global'], ['friends', '👥 Amis']] as const).map(([key, label]) => (

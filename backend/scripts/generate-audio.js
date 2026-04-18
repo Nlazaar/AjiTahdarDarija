@@ -34,7 +34,7 @@ const DRY_RUN = process.argv.includes('--dry-run');
 const FORCE   = process.argv.includes('--force');
 
 function slug(text) {
-  return crypto.createHash('md5').update(text.trim().toLowerCase()).digest('hex').slice(0, 16);
+  return crypto.createHash('sha256').update(text.trim().toLowerCase()).digest('hex').slice(0, 16);
 }
 
 async function callHabibi(text) {

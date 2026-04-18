@@ -1,0 +1,129 @@
+{
+  "page_nb": 3,
+  "type": "cours",
+  "mecanique": "Présentation de la voyelle Fatha (َ) appliquée sur les lettres de l'alphabet arabe, avec des enfants tenant des pancartes montrant les lettres vocalisées",
+  "titre": {
+    "fr": "La Fatha - La voyelle courte A",
+    "ar": "أَنَا الْفَتْحَة"
+  },
+  "enonce": {
+    "fr": "Je suis la Fatha, je suis la meilleure. Je ne suis pas avare avec les lettres. Avec moi, la lettre devient ouverte. Ouvre ta bouche pour bien la prononcer.",
+    "ar": "أَنَا الْفَتْحَة ، أَنَا الْأَفْضَل. عَلَى الْحُرُوفِ لا أَبْخَل. بِيَ الْحَرْفُ يَكُونُ مَفْتُوحًا. إِفْتَحْ فَمَكَ لِتَنْطِقَهُ صَحِيحًا."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَ بَ تَ ثَ",
+      "fr": "A - Ba - Ta - Tha (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "جَ حَ خَ",
+      "fr": "Ja - Ha - Kha (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "دَ ذَ رَ زَ",
+      "fr": "Da - Dha - Ra - Za (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "سَ شَ صَ ضَ",
+      "fr": "Sa - Sha - Sad - Dad (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "طَ ظَ عَ غَ",
+      "fr": "Ta - Dha - Ain - Ghain (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "فَ قَ كَ لَ مَ",
+      "fr": "Fa - Qa - Ka - La - Ma (avec fatha)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "نَ هَ وَ يَ",
+      "fr": "Na - Ha - Wa - Ya (avec fatha)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "histoire_hourouf_harakete",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَنَا الْفَتْحَة ، أَنَا الْأَفْضَل. عَلَى الْحُرُوفِ لا أَبْخَل. بِيَ الْحَرْفُ يَكُونُ مَفْتُوحًا. إِفْتَحْ فَمَكَ لِتَنْطِقَهُ صَحِيحًا.",
+      "voix_m": "histoire_hourouf_harakete_p3_consigne_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَ بَ تَ ثَ",
+      "voix_m": "histoire_hourouf_harakete_p3_1_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "جَ حَ خَ",
+      "voix_m": "histoire_hourouf_harakete_p3_2_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "دَ ذَ رَ زَ",
+      "voix_m": "histoire_hourouf_harakete_p3_3_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَ شَ صَ ضَ",
+      "voix_m": "histoire_hourouf_harakete_p3_4_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَ ظَ عَ غَ",
+      "voix_m": "histoire_hourouf_harakete_p3_5_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فَ قَ كَ لَ مَ",
+      "voix_m": "histoire_hourouf_harakete_p3_6_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "نَ هَ وَ يَ",
+      "voix_m": "histoire_hourouf_harakete_p3_7_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p3_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:07:05.039516",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "histoire_hourouf_harakete",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 8
+  }
+}

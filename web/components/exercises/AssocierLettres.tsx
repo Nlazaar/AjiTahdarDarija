@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { useAudioCtx } from '@/contexts/AudioContext';
 
 interface AssocierLettresProps {
   pairs: Array<{
@@ -24,6 +25,7 @@ function adaptiveFontSize(pairs: { letter: string }[]): number {
 export default function AssocierLettres({ pairs, onConfirm, onReadyChange, mode = 'lettre' }: AssocierLettresProps) {
   const isVocab = mode === 'mot';
   const arabicFontSize = adaptiveFontSize(pairs);
+  const { speak } = useAudioCtx();
   const [matchedIds, setMatchedIds] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
@@ -39,12 +41,7 @@ export default function AssocierLettres({ pairs, onConfirm, onReadyChange, mode 
     if (side === 'left') {
       // Prononcer la lettre arabe (pas la romanisation)
       const pair = pairs.find(p => p.latin === id);
-      if (pair && typeof window !== 'undefined') {
-        const t = new SpeechSynthesisUtterance(pair.letter);
-        t.lang = 'ar-MA';
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(t);
-      }
+      if (pair) speak(pair.letter, 'ar-MA');
       setSelectedLeft(id === selectedLeft ? null : id);
     } else {
       setSelectedRight(id === selectedRight ? null : id);

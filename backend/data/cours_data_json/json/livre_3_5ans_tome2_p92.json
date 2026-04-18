@@ -1,0 +1,64 @@
+{
+  "page_nb": 92,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte",
+    "ar": "أَعُدُّ"
+  },
+  "enonce": {
+    "fr": "Combien y en a-t-il ? Je compte puis j'entoure le nombre",
+    "ar": "كَمْ هُنَاكَ ؟ أَعُدُّ ثُمَّ أُحِيطُ الْعَدَدَ"
+  },
+  "elements": [
+    {
+      "id": "coq",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ours",
+      "ar": "دُبٌّ",
+      "fr": "ours",
+      "emoji": "🐻"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p92_consigne",
+      "texte_ar": "كَمْ هُنَاكَ ؟ أَعُدُّ ثُمَّ أُحِيطُ الْعَدَدَ",
+      "voix_m": "livre_3_5ans_tome2_p92_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p92_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_coq",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "livre_3_5ans_tome2_p92_coq_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p92_coq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ours",
+      "texte_ar": "دُبٌّ",
+      "voix_m": "livre_3_5ans_tome2_p92_ours_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p92_ours_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:10:58.804300",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 3
+  }
+}

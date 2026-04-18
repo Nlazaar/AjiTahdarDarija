@@ -1,0 +1,64 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Activité de découpage-collage : coller les animaux mentionnés dans une chanson à l'intérieur d'un carré, et les autres animaux à l'extérieur",
+  "titre": {
+    "fr": "Je colle les animaux de la chanson à l'intérieur ou à l'extérieur du carré",
+    "ar": "أَلصق الحَيَوانات الَّتي في الأغنية داخل المُرَبَّع و أَلصق الحَيَوانات الَّتي ليست في الأغنية خارج المُرَبَّع"
+  },
+  "enonce": {
+    "fr": "Je colle les animaux de la chanson à l'intérieur du carré et les autres à l'extérieur",
+    "ar": "أَلصق الحَيَوانات الَّتي في الأغنية داخل المُرَبَّع و أَلصق الحَيَوانات الَّتي ليست في الأغنية خارج المُرَبَّع"
+  },
+  "elements": [
+    {
+      "id": "interieur",
+      "ar": "داخل المُرَبَّع",
+      "fr": "À l'intérieur du carré",
+      "emoji": "🎵"
+    },
+    {
+      "id": "exterieur",
+      "ar": "خارج المُرَبَّع",
+      "fr": "À l'extérieur du carré",
+      "emoji": "🚫"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَلصق الحَيَوانات الَّتي في الأغنية داخل المُرَبَّع و أَلصق الحَيَوانات الَّتي ليست في الأغنية خارج المُرَبَّع",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_interieur",
+      "texte_ar": "داخل المُرَبَّع",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p3_interieur_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p3_interieur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exterieur",
+      "texte_ar": "خارج المُرَبَّع",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p3_exterieur_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p3_exterieur_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:56:33.103574",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 3
+  }
+}

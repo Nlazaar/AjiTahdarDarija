@@ -1,0 +1,77 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Décorer une robe en ajoutant des points jaunes avec un crayon jaune",
+  "titre": {
+    "fr": "Je décore la robe avec des points jaunes",
+    "ar": "أُتْرُكُ نِقَاطًا بِقَلمي الأَصفر في الفستان لأزيِّنه"
+  },
+  "enonce": {
+    "fr": "Je laisse décorer avec la robe avec des points jaunes",
+    "ar": "أُتْرُكُ نِقَاطًا بِقَلمي الأَصفر في الفستان لأزيِّنه"
+  },
+  "elements": [
+    {
+      "id": "robe",
+      "ar": "الفستان",
+      "fr": "la robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "points",
+      "ar": "نِقَاط",
+      "fr": "des points",
+      "emoji": "🟡"
+    },
+    {
+      "id": "crayon_jaune",
+      "ar": "القلم الأصفر",
+      "fr": "le crayon jaune",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أُتْرُكُ نِقَاطًا بِقَلمي الأَصفر في الفستان لأزيِّنه",
+      "voix_m": "coursarabe_niveau1_lecon02_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_robe",
+      "texte_ar": "الفستان",
+      "voix_m": "coursarabe_niveau1_lecon02_p5_robe_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p5_robe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_points",
+      "texte_ar": "نِقَاط",
+      "voix_m": "coursarabe_niveau1_lecon02_p5_points_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p5_points_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_crayon_jaune",
+      "texte_ar": "القلم الأصفر",
+      "voix_m": "coursarabe_niveau1_lecon02_p5_crayon_jaune_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p5_crayon_jaune_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:41:08.766927",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 4
+  }
+}

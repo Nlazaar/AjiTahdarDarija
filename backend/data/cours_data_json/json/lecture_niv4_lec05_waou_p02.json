@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Trois activités : relier des mots à leurs images, tracer la lettre واو, compléter des mots avec la syllabe manquante parmi وَ / وِ / وْ",
+  "titre": {
+    "fr": "La lettre Waw (و) - Lecture, écriture et complétion",
+    "ar": "حرف الواو - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre و. Exercice 5 : Je complète avec la syllabe qui convient parmi وَ / وِ / وْ",
+    "ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب حرف و. تمرين 5 : أكمل بما يناسب من بين وَ / وِ / وْ"
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "شَوْكَةٌ",
+      "fr": "Une fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "ثَوْمٌ",
+      "fr": "De l'ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "مَوْزٌ",
+      "fr": "Des bananes",
+      "emoji": "🍌"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "مِكْوَاةٌ",
+      "fr": "Un fer à repasser",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "أَبْوَابٌ",
+      "fr": "Des portes",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "مِرْوَحَةٌ",
+      "fr": "Un ventilateur",
+      "emoji": "🌀"
+    },
+    {
+      "id": "ex4_lettre",
+      "ar": "و",
+      "fr": "La lettre Waw",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "قَوْسُ قُزَحٍ",
+      "fr": "Arc-en-ciel",
+      "emoji": "🌈"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "أَعْوَادُ كِبْرِيتٍ",
+      "fr": "Allumettes",
+      "emoji": "🔥"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "طَاوِلَةٌ",
+      "fr": "Une table",
+      "emoji": "🪑"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "أَوَانِي",
+      "fr": "Vaisselle",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "وِسَادَةٌ",
+      "fr": "Un coussin",
+      "emoji": "🛋️"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "جَوَارِبُ",
+      "fr": "Des chaussettes",
+      "emoji": "🧦"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "مَوْجَةٌ",
+      "fr": "Une vague",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "خَوْخٌ",
+      "fr": "Pêches",
+      "emoji": "🍑"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "كَوَاكِبُ",
+      "fr": "Une planète",
+      "emoji": "🪐"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec05_waou",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3 : أقرأ الكلمة ثم أربطها بصورتها. تمرين 4 : أكتب حرف و. تمرين 5 : أكمل بما يناسب من بين وَ / وِ / وْ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "شَوْكَةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "ثَوْمٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "مَوْزٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "أَبْوَابٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "مِرْوَحَةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_lettre",
+      "texte_ar": "و",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex4_lettre_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex4_lettre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "قَوْسُ قُزَحٍ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "أَعْوَادُ كِبْرِيتٍ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "طَاوِلَةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "أَوَانِي",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "وِسَادَةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "جَوَارِبُ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "مَوْجَةٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "كَوَاكِبُ",
+      "voix_m": "lecture_niv4_lec05_waou_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:50:10.517039",
+    "niveau": 4,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv4_lec05_waou",
+    "bucket_audio": "audio-lessons/niveau4/lecon05/",
+    "nb_audio_assets": 17
+  }
+}

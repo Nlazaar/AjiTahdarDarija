@@ -1,0 +1,103 @@
+{
+  "page_nb": 63,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Sur la table",
+    "ar": "عَلَى الطَّاوِلَةِ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour entendre le mot en arabe",
+    "ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ"
+  },
+  "elements": [
+    {
+      "id": "kas",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "sahn",
+      "ar": "صَحْنٌ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "shawka",
+      "ar": "شَوْكَةٌ",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "milaaqa",
+      "ar": "مِلْعَقَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "sikkeen",
+      "ar": "سِكِّينٌ",
+      "fr": "couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p63_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ",
+      "voix_m": "livre_3_5ans_tome2_p63_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kas",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "livre_3_5ans_tome2_p63_kas_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_kas_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sahn",
+      "texte_ar": "صَحْنٌ",
+      "voix_m": "livre_3_5ans_tome2_p63_sahn_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_sahn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shawka",
+      "texte_ar": "شَوْكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p63_shawka_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_shawka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_milaaqa",
+      "texte_ar": "مِلْعَقَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p63_milaaqa_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_milaaqa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sikkeen",
+      "texte_ar": "سِكِّينٌ",
+      "voix_m": "livre_3_5ans_tome2_p63_sikkeen_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p63_sikkeen_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:06:07.708930",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 6
+  }
+}

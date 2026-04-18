@@ -67,8 +67,9 @@ export class AudioController {
    * Utilisé par le script de pré-génération.
    */
   @Get('vocab/:slug')
-  async serveVocab(@Param('slug') slug: string, @Res() res: Response) {
-    // Sécurité : empêcher path traversal
+  async serveVocab(@Param('slug') rawSlug: string, @Res() res: Response) {
+    // Accepter avec ou sans .mp3
+    const slug = rawSlug.replace(/\.mp3$/i, '')
     if (!/^[a-f0-9]{16}$/.test(slug)) {
       throw new HttpException('Invalid slug', HttpStatus.BAD_REQUEST)
     }
@@ -79,6 +80,39 @@ export class AudioController {
     res.setHeader('Cache-Control', 'public, max-age=2592000') // 30 jours
     res.setHeader('Content-Type', 'audio/mpeg')
     return res.sendFile(filePath)
+  }
+
+  /**
+   * POST /audio/vocab/upload
+   * Admin: uploader manuellement un MP3 pour un texte donné.
+   * Body multipart: { text: string, file: MP3 }
+   * Header: X-Admin-Token (comparé à process.env.ADMIN_TOKEN)
+   */
+  @Post('vocab/upload')
+  @UseInterceptors(FileInterceptor('file'))
+  async uploadVocabAudio(
+    @UploadedFile() file: Express.Multer.File,
+    @Body('text') text: string,
+    @Res() res: Response,
+  ) {
+    const adminToken = process.env.ADMIN_TOKEN
+    const provided = (res.req.headers['x-admin-token'] as string | undefined)?.trim()
+    if (!adminToken || provided !== adminToken) {
+      throw new HttpException('Unauthorized', HttpStatus.UNAUTHORIZED)
+    }
+    if (!file) throw new HttpException('file is required', HttpStatus.BAD_REQUEST)
+    if (!text?.trim()) throw new HttpException('text is required', HttpStatus.BAD_REQUEST)
+    if (!file.mimetype?.startsWith('audio/')) {
+      throw new HttpException('file must be audio/*', HttpStatus.BAD_REQUEST)
+    }
+
+    const slug = AudioService.slug(text)
+    const dir  = path.join(PUBLIC_AUDIO, 'vocab')
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
+    const dst = path.join(dir, `${slug}.mp3`)
+    fs.writeFileSync(dst, file.buffer)
+    this.logger.log(`[UPLOAD] vocab audio ${slug} (${file.size} bytes) — text="${text.slice(0, 40)}"`)
+    return res.json({ slug, url: `/audio/vocab/${slug}.mp3`, sizeBytes: file.size })
   }
 
   /**

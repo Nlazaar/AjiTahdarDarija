@@ -1,0 +1,155 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Relier chaque membre de la famille avec ses affaires personnelles",
+  "titre": {
+    "fr": "Je relie chacun avec ses affaires",
+    "ar": "أَرْبِطُ كُلَّ وَاحِدٍ بِالأَغْرَاضِ الخَاصَّةِ بِه"
+  },
+  "enonce": {
+    "fr": "Relie chaque membre de la famille à l'objet qui lui appartient",
+    "ar": "أَرْبِطُ كُلَّ وَاحِدٍ بِالأَغْرَاضِ الخَاصَّةِ بِه"
+  },
+  "elements": [
+    {
+      "id": "cravate",
+      "ar": "رَبْطَةُ العُنُق",
+      "fr": "Cravate",
+      "emoji": "👔"
+    },
+    {
+      "id": "jupe",
+      "ar": "تَنُّورَة",
+      "fr": "Jupe",
+      "emoji": "👗"
+    },
+    {
+      "id": "ballon",
+      "ar": "كُرَة",
+      "fr": "Ballon de football",
+      "emoji": "⚽"
+    },
+    {
+      "id": "boite_jouets",
+      "ar": "صُنْدُوق الأَلْعَاب",
+      "fr": "Boîte de jouets",
+      "emoji": "🧸"
+    },
+    {
+      "id": "baskets",
+      "ar": "حِذَاء رِيَاضِي",
+      "fr": "Baskets",
+      "emoji": "👟"
+    },
+    {
+      "id": "escarpin",
+      "ar": "حِذَاء بِكَعْب",
+      "fr": "Escarpin",
+      "emoji": "👠"
+    },
+    {
+      "id": "robe_fille",
+      "ar": "فُسْتَان",
+      "fr": "Robe de petite fille",
+      "emoji": "👗"
+    },
+    {
+      "id": "seche_cheveux",
+      "ar": "مُجَفِّف الشَّعْر",
+      "fr": "Sèche-cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "famille",
+      "ar": "العَائِلَة",
+      "fr": "Famille",
+      "emoji": "👨‍👩‍👧‍👦"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَرْبِطُ كُلَّ وَاحِدٍ بِالأَغْرَاضِ الخَاصَّةِ بِه",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cravate",
+      "texte_ar": "رَبْطَةُ العُنُق",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_cravate_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_cravate_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jupe",
+      "texte_ar": "تَنُّورَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_jupe_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_jupe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon",
+      "texte_ar": "كُرَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_ballon_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_ballon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_boite_jouets",
+      "texte_ar": "صُنْدُوق الأَلْعَاب",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_boite_jouets_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_boite_jouets_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baskets",
+      "texte_ar": "حِذَاء رِيَاضِي",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_baskets_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_baskets_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_escarpin",
+      "texte_ar": "حِذَاء بِكَعْب",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_escarpin_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_escarpin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_robe_fille",
+      "texte_ar": "فُسْتَان",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_robe_fille_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_robe_fille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_seche_cheveux",
+      "texte_ar": "مُجَفِّف الشَّعْر",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_seche_cheveux_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_seche_cheveux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_famille",
+      "texte_ar": "العَائِلَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p4_famille_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p4_famille_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:40:44.320350",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 10
+  }
+}

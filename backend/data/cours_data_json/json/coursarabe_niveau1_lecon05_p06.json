@@ -1,0 +1,116 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Reconnaissance de mot cible parmi des distracteurs : l'enfant doit retrouver et entourer le mot دار parmi une liste de mots arabes similaires",
+  "titre": {
+    "fr": "Je cherche le mot et je l'entoure",
+    "ar": "أَبْحَثُ عَنِ الكَلِمَةِ وَ أُحِيطُهَا بِخَطٍّ مُغْلَقٍ"
+  },
+  "enonce": {
+    "fr": "Trouve le mot 'maison' (دار) et entoure-le chaque fois que tu le vois.",
+    "ar": "أَبْحَثُ عَنِ الكَلِمَةِ دار وَ أُحِيطُهَا بِخَطٍّ مُغْلَقٍ"
+  },
+  "elements": [
+    {
+      "id": "mot_cible",
+      "ar": "دار",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "distracteur_1",
+      "ar": "جدار",
+      "fr": "mur",
+      "emoji": "🧱"
+    },
+    {
+      "id": "distracteur_2",
+      "ar": "نهار",
+      "fr": "jour",
+      "emoji": "☀️"
+    },
+    {
+      "id": "distracteur_3",
+      "ar": "ليل",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "distracteur_4",
+      "ar": "دوار",
+      "fr": "rond-point / vertige",
+      "emoji": "🔄"
+    },
+    {
+      "id": "distracteur_5",
+      "ar": "غدير",
+      "fr": "mare / ruisseau",
+      "emoji": "💧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَبْحَثُ عَنِ الكَلِمَةِ دار وَ أُحِيطُهَا بِخَطٍّ مُغْلَقٍ",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_cible",
+      "texte_ar": "دار",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_mot_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_mot_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_1",
+      "texte_ar": "جدار",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_distracteur_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_distracteur_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_2",
+      "texte_ar": "نهار",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_distracteur_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_distracteur_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_3",
+      "texte_ar": "ليل",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_distracteur_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_distracteur_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_4",
+      "texte_ar": "دوار",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_distracteur_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_distracteur_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_5",
+      "texte_ar": "غدير",
+      "voix_m": "coursarabe_niveau1_lecon05_p6_distracteur_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p6_distracteur_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:48:18.980619",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les formes géométriques",
+    "ar": "الأشكال الهندسيّة"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque forme pour entendre son nom en arabe",
+    "ar": "اضغط على كل شكل لتسمع اسمه بالعربية"
+  },
+  "elements": [
+    {
+      "id": "carre",
+      "ar": "مربّع",
+      "fr": "Carré",
+      "emoji": "🟥"
+    },
+    {
+      "id": "triangle",
+      "ar": "مثلّث",
+      "fr": "Triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "rectangle",
+      "ar": "مستطيل",
+      "fr": "Rectangle",
+      "emoji": "🔷"
+    },
+    {
+      "id": "cercle",
+      "ar": "دائرة",
+      "fr": "Cercle",
+      "emoji": "⭕"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اضغط على كل شكل لتسمع اسمه بالعربية",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carre",
+      "texte_ar": "مربّع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_carre_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_carre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_triangle",
+      "texte_ar": "مثلّث",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_triangle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_triangle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_rectangle",
+      "texte_ar": "مستطيل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_rectangle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_rectangle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle",
+      "texte_ar": "دائرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p4_cercle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p4_cercle_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:24:42.505305",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 5
+  }
+}

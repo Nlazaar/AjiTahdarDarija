@@ -1,0 +1,112 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Apprentissage du vocabulaire des animaux par association image-mot",
+  "titre": {
+    "fr": "Les animaux",
+    "ar": "الحَيَوَانَات"
+  },
+  "enonce": {
+    "fr": "Découvrez le vocabulaire des animaux en arabe",
+    "ar": "الحَيَوَانَات"
+  },
+  "elements": [
+    {
+      "id": "batata",
+      "ar": "بَطَّةٌ",
+      "fr": "Canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "halazoun",
+      "ar": "حَلَزُونٌ",
+      "fr": "Escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "qird",
+      "ar": "قِرْدٌ",
+      "fr": "Singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "zarafa",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "samaka",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "dalfin",
+      "ar": "دِلْفِينٌ",
+      "fr": "Dauphin",
+      "emoji": "🐬"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "الحَيَوَانَات",
+      "voix_m": "v1_l3_p1_consigne_m.mp3",
+      "voix_f": "v1_l3_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_batata",
+      "texte_ar": "بَطَّةٌ",
+      "voix_m": "v1_l3_p1_batata_m.mp3",
+      "voix_f": "v1_l3_p1_batata_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_halazoun",
+      "texte_ar": "حَلَزُونٌ",
+      "voix_m": "v1_l3_p1_halazoun_m.mp3",
+      "voix_f": "v1_l3_p1_halazoun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qird",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "v1_l3_p1_qird_m.mp3",
+      "voix_f": "v1_l3_p1_qird_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zarafa",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "v1_l3_p1_zarafa_m.mp3",
+      "voix_f": "v1_l3_p1_zarafa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_samaka",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "v1_l3_p1_samaka_m.mp3",
+      "voix_f": "v1_l3_p1_samaka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dalfin",
+      "texte_ar": "دِلْفِينٌ",
+      "voix_m": "v1_l3_p1_dalfin_m.mp3",
+      "voix_f": "v1_l3_p1_dalfin_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:51:14.787882",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 7
+  }
+}

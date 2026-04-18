@@ -1,0 +1,90 @@
+{
+  "page_nb": 45,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque ligne, trouve et barre l'élément qui est différent des autres.",
+    "ar": "فِي كُلِّ صَفٍّ، ابْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ."
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "صَفُّ الْكُمَّثْرَى",
+      "fr": "Ligne des poires (une poire de couleur différente est l'intrus)",
+      "emoji": "🍐"
+    },
+    {
+      "id": "ligne2",
+      "ar": "صَفُّ الْقِرَدَةِ",
+      "fr": "Ligne des singes (un singe dans une posture différente est l'intrus)",
+      "emoji": "🐒"
+    },
+    {
+      "id": "ligne3",
+      "ar": "صَفُّ حَرْفِ الْجِيمِ",
+      "fr": "Ligne de la lettre Jim (une lettre de forme différente est l'intrus)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ligne4",
+      "ar": "صَفُّ حَرْفِ الرَّاءِ",
+      "fr": "Ligne de la lettre Ra (une lettre de couleur/forme différente est l'intrus)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p45_consigne",
+      "texte_ar": "فِي كُلِّ صَفٍّ، ابْحَثْ عَنِ الشَّكْلِ الْمُخْتَلِفِ وَاشْطُبْهُ.",
+      "voix_m": "livre_arabe_niveau3_p45_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p45_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "صَفُّ الْكُمَّثْرَى",
+      "voix_m": "livre_arabe_niveau3_p45_ligne1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p45_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "صَفُّ الْقِرَدَةِ",
+      "voix_m": "livre_arabe_niveau3_p45_ligne2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p45_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "صَفُّ حَرْفِ الْجِيمِ",
+      "voix_m": "livre_arabe_niveau3_p45_ligne3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p45_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "صَفُّ حَرْفِ الرَّاءِ",
+      "voix_m": "livre_arabe_niveau3_p45_ligne4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p45_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:03:27.021842",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

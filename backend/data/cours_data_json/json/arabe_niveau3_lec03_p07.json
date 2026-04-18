@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Dans chaque groupe, barre la forme qui est différente des autres",
+    "ar": "اِشْطُبْ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "groupe_1",
+      "ar": "تُفَّاحَة",
+      "fr": "Pommes (groupe d'images)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe_2",
+      "ar": "تَاج",
+      "fr": "Couronnes (groupe d'images)",
+      "emoji": "👑"
+    },
+    {
+      "id": "groupe_3",
+      "ar": "تُفَّاحَة",
+      "fr": "Pommes (groupe de mots) - intrus: تُفَاحَهُ",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe_4",
+      "ar": "تَاجٌ",
+      "fr": "Couronnes (groupe de mots) - intrus: نَاجٌ",
+      "emoji": "👑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "اِشْطُبْ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "arabe_niveau3_lec03_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_1",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "arabe_niveau3_lec03_p7_groupe_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p7_groupe_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_2",
+      "texte_ar": "تَاج",
+      "voix_m": "arabe_niveau3_lec03_p7_groupe_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p7_groupe_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_3",
+      "texte_ar": "تُفَّاحَة",
+      "voix_m": "arabe_niveau3_lec03_p7_groupe_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p7_groupe_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe_4",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "arabe_niveau3_lec03_p7_groupe_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p7_groupe_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:28:16.702428",
+    "niveau": 3,
+    "lecon": 3,
+    "nom_pdf": "arabe_niveau3_lec03",
+    "bucket_audio": "audio-lessons/niveau3/lecon03/",
+    "nb_audio_assets": 5
+  }
+}

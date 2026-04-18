@@ -1,0 +1,151 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Identifier et barrer l'intrus parmi un groupe d'images (animaux vs non-animal)",
+  "titre": {
+    "fr": "Je barre l'intrus",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ"
+  },
+  "enonce": {
+    "fr": "Est-ce que ... est un animal ?",
+    "ar": "هَل الـ... حَيَوانٌ ؟"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سَمَكَة",
+      "fr": "poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "2",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "3",
+      "ar": "حَلَزُون",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "4",
+      "ar": "قِرْد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "5",
+      "ar": "دَلْفِين",
+      "fr": "dauphin",
+      "emoji": "🐬"
+    },
+    {
+      "id": "6",
+      "ar": "وَرْدَة",
+      "fr": "rose (intrus)",
+      "emoji": "🌹"
+    },
+    {
+      "id": "7",
+      "ar": "جَمَل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "8",
+      "ar": "دُعْسُوقَة",
+      "fr": "coccinelle",
+      "emoji": "🐞"
+    },
+    {
+      "id": "9",
+      "ar": "سِنْجَاب",
+      "fr": "écureuil",
+      "emoji": "🐿️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "هَل الـ... حَيَوانٌ ؟",
+      "voix_m": "v1_l3_p3_consigne_m.mp3",
+      "voix_f": "v1_l3_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سَمَكَة",
+      "voix_m": "v1_l3_p3_1_m.mp3",
+      "voix_f": "v1_l3_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَطَّة",
+      "voix_m": "v1_l3_p3_2_m.mp3",
+      "voix_f": "v1_l3_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حَلَزُون",
+      "voix_m": "v1_l3_p3_3_m.mp3",
+      "voix_f": "v1_l3_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قِرْد",
+      "voix_m": "v1_l3_p3_4_m.mp3",
+      "voix_f": "v1_l3_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "دَلْفِين",
+      "voix_m": "v1_l3_p3_5_m.mp3",
+      "voix_f": "v1_l3_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "وَرْدَة",
+      "voix_m": "v1_l3_p3_6_m.mp3",
+      "voix_f": "v1_l3_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "جَمَل",
+      "voix_m": "v1_l3_p3_7_m.mp3",
+      "voix_f": "v1_l3_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دُعْسُوقَة",
+      "voix_m": "v1_l3_p3_8_m.mp3",
+      "voix_f": "v1_l3_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "سِنْجَاب",
+      "voix_m": "v1_l3_p3_9_m.mp3",
+      "voix_f": "v1_l3_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:52:00.644415",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les parties de chaque image",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque image pour former le mot complet",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ لِتَكْوِينِ الْكَلِمَةِ الْكَامِلَةِ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "mot2",
+      "ar": "ضِفْدَعٌ",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_09",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ لِتَكْوِينِ الْكَلِمَةِ الْكَامِلَةِ",
+      "voix_m": "arabe_niveau2_09_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_09_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "arabe_niveau2_09_p2_mot1_m.mp3",
+      "voix_f": "arabe_niveau2_09_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "arabe_niveau2_09_p2_mot2_m.mp3",
+      "voix_f": "arabe_niveau2_09_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:52:41.453989",
+    "niveau": 2,
+    "lecon": 21,
+    "nom_pdf": "arabe_niveau2_09",
+    "bucket_audio": "audio-lessons/niveau2/lecon21/",
+    "nb_audio_assets": 3
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أُلَوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres identiques à la lettre modèle en rouge : ش",
+    "ar": "لَوِّنْ الْحُرُوفَ الْمُشَابِهَةَ لِلْحَرْفِ النَّمُوذَجِ بِاللَّوْنِ الْأَحْمَرِ : ش"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ش",
+      "fr": "shin (modèle en rouge)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "2",
+      "ar": "س",
+      "fr": "sin (à ne pas colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "3",
+      "ar": "ث",
+      "fr": "tha (à ne pas colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "4",
+      "ar": "ت",
+      "fr": "ta (à ne pas colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "5",
+      "ar": "ق",
+      "fr": "qaf (à ne pas colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "6",
+      "ar": "ي",
+      "fr": "ya (à ne pas colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "7",
+      "ar": "ض",
+      "fr": "dad (à ne pas colorier)",
+      "emoji": "⬜"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "لَوِّنْ الْحُرُوفَ الْمُشَابِهَةَ لِلْحَرْفِ النَّمُوذَجِ بِاللَّوْنِ الْأَحْمَرِ : ش",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ش",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ث",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ت",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ق",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ي",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ض",
+      "voix_m": "coursarabe_niveau1_lecon09_p6_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p6_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:21:16.008072",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 8
+  }
+}

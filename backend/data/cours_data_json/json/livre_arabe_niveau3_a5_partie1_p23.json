@@ -1,0 +1,90 @@
+{
+  "page_nb": 23,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Observe chaque ligne et barre l'élément qui est différent des autres.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ صَفٍّ وَاشْطُبِ الْعُنْصُرَ الْمُخْتَلِفَ عَنِ الْبَاقِينَ."
+  },
+  "elements": [
+    {
+      "id": "ligne_1",
+      "ar": "الكمثرى",
+      "fr": "Rangée de poires (une poire de forme différente est l'intrus)",
+      "emoji": "🍐"
+    },
+    {
+      "id": "ligne_2",
+      "ar": "القرود",
+      "fr": "Rangée de singes (un singe de posture différente est l'intrus)",
+      "emoji": "🐒"
+    },
+    {
+      "id": "ligne_3",
+      "ar": "حرف الجيم",
+      "fr": "Rangée de lettres Jim (une lettre de forme différente est l'intrus)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ligne_4",
+      "ar": "حرف الراء",
+      "fr": "Rangée de lettres Ra (une lettre de forme différente est l'intrus)",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p23_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ صَفٍّ وَاشْطُبِ الْعُنْصُرَ الْمُخْتَلِفَ عَنِ الْبَاقِينَ.",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p23_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p23_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_1",
+      "texte_ar": "الكمثرى",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p23_ligne_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p23_ligne_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_2",
+      "texte_ar": "القرود",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p23_ligne_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p23_ligne_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_3",
+      "texte_ar": "حرف الجيم",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p23_ligne_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p23_ligne_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_4",
+      "texte_ar": "حرف الراء",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p23_ligne_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p23_ligne_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:27:08.462071",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

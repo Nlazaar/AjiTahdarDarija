@@ -1,0 +1,194 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ي avec vocabulaire illustré, lecture d'une phrase exemple, puis deux exercices : identifier si on entend la lettre dans un mot et entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Yaa (ي)",
+    "ar": "حَرْفُ الْيَاء"
+  },
+  "enonce": {
+    "fr": "Découverte de la lettre ي dans différentes positions, lecture de mots illustrés, puis exercices d'écoute et d'identification de la lettre dans les mots",
+    "ar": "تَعَلُّمُ حَرْفِ الْيَاءِ فِي مَوَاضِعِهِ الْمُخْتَلِفَةِ مَعَ كَلِمَاتٍ مُصَوَّرَةٍ، ثُمَّ تَمَارِينُ الاسْتِمَاعِ وَتَحْدِيدِ الْحَرْفِ فِي الْكَلِمَاتِ"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "يَدٌ",
+      "fr": "une main",
+      "emoji": "✋"
+    },
+    {
+      "id": "mot_2",
+      "ar": "يُهْدِي",
+      "fr": "il offre",
+      "emoji": "🎁"
+    },
+    {
+      "id": "mot_3",
+      "ar": "أَيسَتْ",
+      "fr": "elle a désespéré",
+      "emoji": "😟"
+    },
+    {
+      "id": "mot_4",
+      "ar": "شَايِي",
+      "fr": "mon thé",
+      "emoji": "🍵"
+    },
+    {
+      "id": "mot_5",
+      "ar": "بُيُوتٌ",
+      "fr": "des maisons",
+      "emoji": "🏠"
+    },
+    {
+      "id": "mot_6",
+      "ar": "ثِيَابٌ",
+      "fr": "des vêtements",
+      "emoji": "👕"
+    },
+    {
+      "id": "phrase",
+      "ar": "يُهْدِي يُوسُفُ هَدِيَّةً لِأُخْتِهِ",
+      "fr": "Youssouf offre un cadeau à sa sœur",
+      "emoji": "🎁"
+    },
+    {
+      "id": "ex1_ail",
+      "ar": "ثُومٌ",
+      "fr": "de l'ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "ex1_citron",
+      "ar": "لَيْمُونٌ",
+      "fr": "un citron",
+      "emoji": "🍋"
+    },
+    {
+      "id": "ex1_voiture",
+      "ar": "سَيَّارَةٌ",
+      "fr": "une voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "ex1_coussin",
+      "ar": "وِسَادَةٌ",
+      "fr": "un coussin",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "ex1_fil",
+      "ar": "خُيُوطٌ",
+      "fr": "des fils",
+      "emoji": "🧵"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec01_03_yee",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلُّمُ حَرْفِ الْيَاءِ فِي مَوَاضِعِهِ الْمُخْتَلِفَةِ مَعَ كَلِمَاتٍ مُصَوَّرَةٍ، ثُمَّ تَمَارِينُ الاسْتِمَاعِ وَتَحْدِيدِ الْحَرْفِ فِي الْكَلِمَاتِ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "يَدٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "يُهْدِي",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "أَيسَتْ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "شَايِي",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "بُيُوتٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "ثِيَابٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "يُهْدِي يُوسُفُ هَدِيَّةً لِأُخْتِهِ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_ail",
+      "texte_ar": "ثُومٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_ex1_ail_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_ex1_ail_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_citron",
+      "texte_ar": "لَيْمُونٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_ex1_citron_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_ex1_citron_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_voiture",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_ex1_voiture_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_ex1_voiture_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_coussin",
+      "texte_ar": "وِسَادَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_ex1_coussin_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_ex1_coussin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_fil",
+      "texte_ar": "خُيُوطٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p1_ex1_fil_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p1_ex1_fil_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:18:40.993079",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_03_yee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 13
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ب avec ses formes vocaliques, reconnaissance auditive et visuelle dans des mots illustrés, puis encerclement de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Ba (ب)",
+    "ar": "حَرْفُ الْبَاء"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ب avec ses différentes voyelles à travers des images. Exercice 1 : J'entends ou je n'entends pas la lettre. Exercice 2 : J'entoure la lettre dans les mots.",
+    "ar": "تَعَلَّمْ حَرْفَ الْبَاءِ مَعَ حَرَكَاتِهِ مِنْ خِلَالِ الصُّوَرِ. تَمْرِينٌ 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ. تَمْرِينٌ 2: أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "بِئْرٌ",
+      "fr": "puits",
+      "emoji": "🪣"
+    },
+    {
+      "id": "mot_2",
+      "ar": "بُرْتُقَالَةٌ",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "mot_3",
+      "ar": "بَطَّةٌ",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "mot_4",
+      "ar": "كَبِيرٌ",
+      "fr": "grand (ours)",
+      "emoji": "🐻"
+    },
+    {
+      "id": "mot_5",
+      "ar": "صَابُونٌ",
+      "fr": "savon",
+      "emoji": "🧼"
+    },
+    {
+      "id": "mot_6",
+      "ar": "بَابٌ",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "phrase",
+      "ar": "يَلْبَسُ أَيُّوبُ مَلَابِسَهُ",
+      "fr": "Ayoub met ses vêtements",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex1_pois",
+      "ar": "بَازِلَّاءُ",
+      "fr": "petits pois",
+      "emoji": "🫛"
+    },
+    {
+      "id": "ex1_lapin",
+      "ar": "أَرْنَبٌ",
+      "fr": "lapin",
+      "emoji": "🐇"
+    },
+    {
+      "id": "ex1_poisson",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson clown",
+      "emoji": "🐠"
+    },
+    {
+      "id": "ex1_chien",
+      "ar": "كَلْبٌ",
+      "fr": "chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "ex1_oeuf",
+      "ar": "بَيْضٌ",
+      "fr": "œuf",
+      "emoji": "🥚"
+    },
+    {
+      "id": "ex2_mot1",
+      "ar": "بَرْقٌ",
+      "fr": "éclair",
+      "emoji": "⚡"
+    },
+    {
+      "id": "ex2_mot2",
+      "ar": "بُلْبُلٌ",
+      "fr": "rossignol",
+      "emoji": "🐦"
+    },
+    {
+      "id": "ex2_mot3",
+      "ar": "بَيْدَقٌ",
+      "fr": "pion",
+      "emoji": "♟️"
+    },
+    {
+      "id": "ex2_mot4",
+      "ar": "بُوقٌ",
+      "fr": "trompette",
+      "emoji": "🎺"
+    },
+    {
+      "id": "ex2_mot5",
+      "ar": "يَابِسٌ",
+      "fr": "sec",
+      "emoji": "🌵"
+    },
+    {
+      "id": "ex2_mot6",
+      "ar": "نَحِيفٌ",
+      "fr": "mince",
+      "emoji": "🪶"
+    },
+    {
+      "id": "ex2_mot7",
+      "ar": "بَرِيقٌ",
+      "fr": "brillance",
+      "emoji": "✨"
+    },
+    {
+      "id": "ex2_mot8",
+      "ar": "نَادِرٌ",
+      "fr": "rare",
+      "emoji": "💎"
+    },
+    {
+      "id": "ex2_mot9",
+      "ar": "خَابَ",
+      "fr": "il a échoué",
+      "emoji": "😔"
+    },
+    {
+      "id": "ex2_mot10",
+      "ar": "مَبِيتٌ",
+      "fr": "hébergement",
+      "emoji": "🏠"
+    },
+    {
+      "id": "ex2_mot11",
+      "ar": "يَخِيبُ",
+      "fr": "il échoue",
+      "emoji": "😞"
+    },
+    {
+      "id": "ex2_mot12",
+      "ar": "سَبِيلٌ",
+      "fr": "chemin",
+      "emoji": "🛤️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec04_ba",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلَّمْ حَرْفَ الْبَاءِ مَعَ حَرَكَاتِهِ مِنْ خِلَالِ الصُّوَرِ. تَمْرِينٌ 1: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ. تَمْرِينٌ 2: أُحِيطُ الْحَرْفَ فِي الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv5_lec04_ba_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "بِئْرٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "بُرْتُقَالَةٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "بَطَّةٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "كَبِيرٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "صَابُونٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "بَابٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "يَلْبَسُ أَيُّوبُ مَلَابِسَهُ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_pois",
+      "texte_ar": "بَازِلَّاءُ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex1_pois_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex1_pois_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_lapin",
+      "texte_ar": "أَرْنَبٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex1_lapin_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex1_lapin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_poisson",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex1_poisson_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex1_poisson_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_chien",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex1_chien_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex1_chien_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_oeuf",
+      "texte_ar": "بَيْضٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex1_oeuf_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex1_oeuf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot1",
+      "texte_ar": "بَرْقٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot2",
+      "texte_ar": "بُلْبُلٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot3",
+      "texte_ar": "بَيْدَقٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot4",
+      "texte_ar": "بُوقٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot5",
+      "texte_ar": "يَابِسٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot6",
+      "texte_ar": "نَحِيفٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot7",
+      "texte_ar": "بَرِيقٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot7_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot8",
+      "texte_ar": "نَادِرٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot8_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot9",
+      "texte_ar": "خَابَ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot9_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot10",
+      "texte_ar": "مَبِيتٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot10_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot11",
+      "texte_ar": "يَخِيبُ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot11_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot12",
+      "texte_ar": "سَبِيلٌ",
+      "voix_m": "lecture_niv5_lec04_ba_p1_ex2_mot12_m.mp3",
+      "voix_f": "lecture_niv5_lec04_ba_p1_ex2_mot12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:20:26.179858",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "lecture_niv5_lec04_ba",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 25
+  }
+}

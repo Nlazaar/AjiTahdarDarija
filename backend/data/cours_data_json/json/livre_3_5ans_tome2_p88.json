@@ -1,0 +1,194 @@
+{
+  "page_nb": 88,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ه dans chacun des mots selon sa forme (initiale, médiane ou finale)",
+    "ar": "لوّن حرف الهاء في كل كلمة حسب موضعه"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "نَهَر",
+      "fr": "rivière",
+      "emoji": "🌊"
+    },
+    {
+      "id": "2",
+      "ar": "مَهَل",
+      "fr": "doucement",
+      "emoji": "🐢"
+    },
+    {
+      "id": "3",
+      "ar": "هَرَم",
+      "fr": "pyramide",
+      "emoji": "🔺"
+    },
+    {
+      "id": "4",
+      "ar": "هَدِيَة",
+      "fr": "cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "5",
+      "ar": "نَهَار",
+      "fr": "jour",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "تَأَنَّه",
+      "fr": "prends ton temps",
+      "emoji": "⏳"
+    },
+    {
+      "id": "7",
+      "ar": "نُزْهَة",
+      "fr": "promenade",
+      "emoji": "🌳"
+    },
+    {
+      "id": "8",
+      "ar": "بُرْهَة",
+      "fr": "un moment",
+      "emoji": "⏱️"
+    },
+    {
+      "id": "9",
+      "ar": "تَأَه",
+      "fr": "il se prépara",
+      "emoji": "📝"
+    },
+    {
+      "id": "10",
+      "ar": "رَمَاه",
+      "fr": "il le lança",
+      "emoji": "🏹"
+    },
+    {
+      "id": "11",
+      "ar": "قَيَدَه",
+      "fr": "il l'attacha",
+      "emoji": "🔗"
+    },
+    {
+      "id": "12",
+      "ar": "سَهَم",
+      "fr": "flèche/action",
+      "emoji": "🏹"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p88_consigne",
+      "texte_ar": "لوّن حرف الهاء في كل كلمة حسب موضعه",
+      "voix_m": "livre_3_5ans_tome2_p88_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "نَهَر",
+      "voix_m": "livre_3_5ans_tome2_p88_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَهَل",
+      "voix_m": "livre_3_5ans_tome2_p88_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هَرَم",
+      "voix_m": "livre_3_5ans_tome2_p88_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "هَدِيَة",
+      "voix_m": "livre_3_5ans_tome2_p88_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَهَار",
+      "voix_m": "livre_3_5ans_tome2_p88_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تَأَنَّه",
+      "voix_m": "livre_3_5ans_tome2_p88_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "نُزْهَة",
+      "voix_m": "livre_3_5ans_tome2_p88_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بُرْهَة",
+      "voix_m": "livre_3_5ans_tome2_p88_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "تَأَه",
+      "voix_m": "livre_3_5ans_tome2_p88_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "رَمَاه",
+      "voix_m": "livre_3_5ans_tome2_p88_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "قَيَدَه",
+      "voix_m": "livre_3_5ans_tome2_p88_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سَهَم",
+      "voix_m": "livre_3_5ans_tome2_p88_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p88_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:10:20.319574",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 13
+  }
+}

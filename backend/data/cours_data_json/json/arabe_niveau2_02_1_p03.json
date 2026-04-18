@@ -1,0 +1,298 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure la lettre sous toutes ses formes",
+    "ar": "أحيط الحرف بمختلف أشكاله"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre Shin (ش) dans toutes ses formes parmi les autres lettres",
+    "ar": "أحيط حرف الشين (ش) بمختلف أشكاله من بين الحروف الأخرى"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ش",
+      "fr": "Shin (forme isolée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "2",
+      "ar": "شـ",
+      "fr": "Shin (forme initiale)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "3",
+      "ar": "ـشـ",
+      "fr": "Shin (forme médiane)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "4",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "5",
+      "ar": "سـ",
+      "fr": "Sin (forme initiale)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "6",
+      "ar": "شـ",
+      "fr": "Shin (forme initiale)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "7",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "8",
+      "ar": "ش",
+      "fr": "Shin (forme isolée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "9",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "✏️"
+    },
+    {
+      "id": "10",
+      "ar": "ت",
+      "fr": "Ta",
+      "emoji": "✏️"
+    },
+    {
+      "id": "11",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "12",
+      "ar": "س",
+      "fr": "Sin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "13",
+      "ar": "ـشـ",
+      "fr": "Shin (forme médiane)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "14",
+      "ar": "شـ",
+      "fr": "Shin (forme initiale)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "15",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "16",
+      "ar": "ش",
+      "fr": "Shin (forme isolée)",
+      "emoji": "⭕"
+    },
+    {
+      "id": "17",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "✏️"
+    },
+    {
+      "id": "18",
+      "ar": "ر",
+      "fr": "Ra",
+      "emoji": "✏️"
+    },
+    {
+      "id": "19",
+      "ar": "ت",
+      "fr": "Ta",
+      "emoji": "✏️"
+    },
+    {
+      "id": "20",
+      "ar": "ه",
+      "fr": "Ha",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أحيط حرف الشين (ش) بمختلف أشكاله من بين الحروف الأخرى",
+      "voix_m": "arabe_niveau2_02_1_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ش",
+      "voix_m": "arabe_niveau2_02_1_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شـ",
+      "voix_m": "arabe_niveau2_02_1_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـشـ",
+      "voix_m": "arabe_niveau2_02_1_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_02_1_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سـ",
+      "voix_m": "arabe_niveau2_02_1_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "شـ",
+      "voix_m": "arabe_niveau2_02_1_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau2_02_1_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ش",
+      "voix_m": "arabe_niveau2_02_1_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ق",
+      "voix_m": "arabe_niveau2_02_1_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ت",
+      "voix_m": "arabe_niveau2_02_1_p3_10_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau2_02_1_p3_11_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "س",
+      "voix_m": "arabe_niveau2_02_1_p3_12_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ـشـ",
+      "voix_m": "arabe_niveau2_02_1_p3_13_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "شـ",
+      "voix_m": "arabe_niveau2_02_1_p3_14_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_02_1_p3_15_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ش",
+      "voix_m": "arabe_niveau2_02_1_p3_16_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_02_1_p3_17_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "ر",
+      "voix_m": "arabe_niveau2_02_1_p3_18_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "ت",
+      "voix_m": "arabe_niveau2_02_1_p3_19_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "ه",
+      "voix_m": "arabe_niveau2_02_1_p3_20_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p3_20_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:35:09.882081",
+    "niveau": 2,
+    "lecon": 8,
+    "nom_pdf": "arabe_niveau2_02_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon08/",
+    "nb_audio_assets": 21
+  }
+}

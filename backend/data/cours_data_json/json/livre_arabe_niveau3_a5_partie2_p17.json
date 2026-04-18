@@ -1,0 +1,116 @@
+{
+  "page_nb": 117,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمَلَ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre غ qui manque, en t'aidant de l'image",
+    "ar": "أكمل كل كلمة بالحرف الناقص غ مستعيناً بالصورة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "يْمَةٌ (غ)",
+      "fr": "forêt / jungle",
+      "emoji": "🌲"
+    },
+    {
+      "id": "2",
+      "ar": "صْنٌ (غُ)",
+      "fr": "branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "3",
+      "ar": "ابَةٌ (غَ)",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "4",
+      "ar": "سَّالَةٌ (غَ)",
+      "fr": "machine à laver",
+      "emoji": "🫧"
+    },
+    {
+      "id": "5",
+      "ar": "كَنْـرُ (غَ)",
+      "fr": "kangourou",
+      "emoji": "🦘"
+    },
+    {
+      "id": "6",
+      "ar": "بَبَّـاءُ (غَ)",
+      "fr": "perroquet",
+      "emoji": "🦜"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p117_consigne",
+      "texte_ar": "أكمل كل كلمة بالحرف الناقص غ مستعيناً بالصورة",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "يْمَةٌ (غ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "صْنٌ (غُ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ابَةٌ (غَ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَّالَةٌ (غَ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "كَنْـرُ (غَ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَبَّـاءُ (غَ)",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p117_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p117_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:33:30.238800",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

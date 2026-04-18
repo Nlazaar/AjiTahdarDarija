@@ -1,7 +1,0 @@
-PHASE 18 — Ajouter la gamification côté front
-XP
-streak
-cœurs
-badges
-niveaux
-Je te donnerai les prompts.

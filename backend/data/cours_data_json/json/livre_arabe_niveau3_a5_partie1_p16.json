@@ -1,0 +1,103 @@
+{
+  "page_nb": 16,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon que j'entends la lettre : au début, au milieu ou à la fin du mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّلِ أَوْ وَسَطَ أَوْ آخِرِ الْكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Relie chaque image à la position où tu entends la lettre ح dans le mot (début, milieu ou fin)",
+    "ar": "اربط كل صورة بالموضع الذي تسمع فيه حرف الحاء في الكلمة (أول أو وسط أو آخر)"
+  },
+  "elements": [
+    {
+      "id": "nuage",
+      "ar": "سَحَابَة",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "baleine",
+      "ar": "حُوت",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "crocodile",
+      "ar": "تِمْسَاح",
+      "fr": "crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "tortue",
+      "ar": "سُلَحْفَاة",
+      "fr": "tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "arc_en_ciel",
+      "ar": "قَوْس قُزَح",
+      "fr": "arc-en-ciel",
+      "emoji": "🌈"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p16_consigne",
+      "texte_ar": "اربط كل صورة بالموضع الذي تسمع فيه حرف الحاء في الكلمة (أول أو وسط أو آخر)",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage",
+      "texte_ar": "سَحَابَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_nuage_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_nuage_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_baleine",
+      "texte_ar": "حُوت",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_baleine_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_baleine_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_crocodile",
+      "texte_ar": "تِمْسَاح",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_crocodile_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_crocodile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tortue",
+      "texte_ar": "سُلَحْفَاة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_tortue_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_tortue_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_en_ciel",
+      "texte_ar": "قَوْس قُزَح",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p16_arc_en_ciel_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p16_arc_en_ciel_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:25:39.349770",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 6
+  }
+}

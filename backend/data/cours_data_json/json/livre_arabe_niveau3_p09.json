@@ -1,0 +1,103 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre ب dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أوَّل أو وسط أوآخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image selon que j'entends la lettre ب au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُ الصُّورَةَ بِمَكَانِ الْحَرْفِ ب فِي أَوَّلِ الْكَلِمَةِ أَوْ وَسَطِهَا أَوْ آخِرِهَا"
+  },
+  "elements": [
+    {
+      "id": "oignon",
+      "ar": "بَصَل",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "fenetre",
+      "ar": "شُبَّاك",
+      "fr": "fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "porte",
+      "ar": "بَاب",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ballon",
+      "ar": "بَالُون",
+      "fr": "ballon",
+      "emoji": "🟠"
+    },
+    {
+      "id": "livre",
+      "ar": "كِتَاب",
+      "fr": "livre",
+      "emoji": "📖"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَةَ وَأَرْبِطُ الصُّورَةَ بِمَكَانِ الْحَرْفِ ب فِي أَوَّلِ الْكَلِمَةِ أَوْ وَسَطِهَا أَوْ آخِرِهَا",
+      "voix_m": "livre_arabe_niveau3_p9_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oignon",
+      "texte_ar": "بَصَل",
+      "voix_m": "livre_arabe_niveau3_p9_oignon_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_oignon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fenetre",
+      "texte_ar": "شُبَّاك",
+      "voix_m": "livre_arabe_niveau3_p9_fenetre_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_fenetre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_porte",
+      "texte_ar": "بَاب",
+      "voix_m": "livre_arabe_niveau3_p9_porte_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_porte_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon",
+      "texte_ar": "بَالُون",
+      "voix_m": "livre_arabe_niveau3_p9_ballon_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_ballon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_livre",
+      "texte_ar": "كِتَاب",
+      "voix_m": "livre_arabe_niveau3_p9_livre_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p9_livre_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:55:50.101243",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

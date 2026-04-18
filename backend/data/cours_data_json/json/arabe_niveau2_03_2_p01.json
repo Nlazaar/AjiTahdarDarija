@@ -1,0 +1,207 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ص chaque fois qu'elle apparaît dans les mots suivants",
+    "ar": "لَوِّنِ الحرفَ (ص) في كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ الآتِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَيَّاد",
+      "fr": "chasseur / pêcheur",
+      "emoji": "🎣"
+    },
+    {
+      "id": "2",
+      "ar": "صَبَاح",
+      "fr": "matin",
+      "emoji": "🌅"
+    },
+    {
+      "id": "3",
+      "ar": "صَار",
+      "fr": "il est devenu",
+      "emoji": "✨"
+    },
+    {
+      "id": "4",
+      "ar": "صَلاة",
+      "fr": "prière",
+      "emoji": "🕌"
+    },
+    {
+      "id": "5",
+      "ar": "مِصْبَاح",
+      "fr": "lampe",
+      "emoji": "💡"
+    },
+    {
+      "id": "6",
+      "ar": "رَصِيف",
+      "fr": "trottoir",
+      "emoji": "🚶"
+    },
+    {
+      "id": "7",
+      "ar": "رَصَاص",
+      "fr": "plomb / balles",
+      "emoji": "🔫"
+    },
+    {
+      "id": "8",
+      "ar": "مَصِير",
+      "fr": "destin",
+      "emoji": "🌟"
+    },
+    {
+      "id": "9",
+      "ar": "أَصْبَح",
+      "fr": "il est devenu",
+      "emoji": "🔄"
+    },
+    {
+      "id": "10",
+      "ar": "أَصَابِع",
+      "fr": "doigts",
+      "emoji": "🖐️"
+    },
+    {
+      "id": "11",
+      "ar": "رَصَد",
+      "fr": "surveiller / observer",
+      "emoji": "🔭"
+    },
+    {
+      "id": "12",
+      "ar": "صُبْح",
+      "fr": "aube",
+      "emoji": "🌄"
+    },
+    {
+      "id": "13",
+      "ar": "حِرْص",
+      "fr": "zèle / ardeur",
+      "emoji": "💪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_03_2",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "لَوِّنِ الحرفَ (ص) في كُلِّ كَلِمَةٍ مِنَ الكَلِمَاتِ الآتِيَةِ",
+      "voix_m": "arabe_niveau2_03_2_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَيَّاد",
+      "voix_m": "arabe_niveau2_03_2_p1_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "صَبَاح",
+      "voix_m": "arabe_niveau2_03_2_p1_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "صَار",
+      "voix_m": "arabe_niveau2_03_2_p1_3_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "صَلاة",
+      "voix_m": "arabe_niveau2_03_2_p1_4_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مِصْبَاح",
+      "voix_m": "arabe_niveau2_03_2_p1_5_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَصِيف",
+      "voix_m": "arabe_niveau2_03_2_p1_6_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "رَصَاص",
+      "voix_m": "arabe_niveau2_03_2_p1_7_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مَصِير",
+      "voix_m": "arabe_niveau2_03_2_p1_8_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أَصْبَح",
+      "voix_m": "arabe_niveau2_03_2_p1_9_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "أَصَابِع",
+      "voix_m": "arabe_niveau2_03_2_p1_10_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رَصَد",
+      "voix_m": "arabe_niveau2_03_2_p1_11_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "صُبْح",
+      "voix_m": "arabe_niveau2_03_2_p1_12_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "حِرْص",
+      "voix_m": "arabe_niveau2_03_2_p1_13_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p1_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:40:19.419131",
+    "niveau": 2,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau2_03_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon12/",
+    "nb_audio_assets": 14
+  }
+}

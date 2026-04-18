@@ -1,0 +1,73 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Coller chaque animal dans son habitat correspondant (forêt, mer, ferme)",
+  "titre": {
+    "fr": "Je colle chaque animal à l'endroit dans lequel il vit",
+    "ar": "أَلصِق كلَّ حيوان في المكان الَّذي يعيش فيه"
+  },
+  "enonce": {
+    "fr": "Colle chaque animal dans le bon habitat : la forêt, la mer ou la ferme.",
+    "ar": "أَلصِق كلَّ حيوان في المكان الَّذي يعيش فيه : في الغَابَةِ، في البَحْرِ، في الضَّيْعَةِ."
+  },
+  "elements": [
+    {
+      "id": "habitat_1",
+      "ar": "في الغَابَةِ",
+      "fr": "Dans la forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "habitat_2",
+      "ar": "في البَحْرِ",
+      "fr": "Dans la mer",
+      "emoji": "🌊"
+    },
+    {
+      "id": "habitat_3",
+      "ar": "في الضَّيْعَةِ",
+      "fr": "Dans la ferme",
+      "emoji": "🏡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَلصِق كلَّ حيوان في المكان الَّذي يعيش فيه : في الغَابَةِ، في البَحْرِ، في الضَّيْعَةِ.",
+      "voix_m": "v1_l3_p2_consigne_m.mp3",
+      "voix_f": "v1_l3_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_habitat_1",
+      "texte_ar": "في الغَابَةِ",
+      "voix_m": "v1_l3_p2_habitat_1_m.mp3",
+      "voix_f": "v1_l3_p2_habitat_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_habitat_2",
+      "texte_ar": "في البَحْرِ",
+      "voix_m": "v1_l3_p2_habitat_2_m.mp3",
+      "voix_f": "v1_l3_p2_habitat_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_habitat_3",
+      "texte_ar": "في الضَّيْعَةِ",
+      "voix_m": "v1_l3_p2_habitat_3_m.mp3",
+      "voix_f": "v1_l3_p2_habitat_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:51:40.419322",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 4
+  }
+}

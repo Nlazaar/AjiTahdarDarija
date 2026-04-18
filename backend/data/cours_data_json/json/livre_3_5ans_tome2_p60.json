@@ -1,0 +1,116 @@
+{
+  "page_nb": 60,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle chaque lettre à sa place selon son ordre dans le mot",
+    "ar": "ألصق كلّ حرف في مكانه حسب ترتيبه في الكلمة"
+  },
+  "enonce": {
+    "fr": "Regarde l'image du bus et colle chaque lettre dans la bonne case pour former le mot 'حافلة'",
+    "ar": "انظر إلى صورة الحافلة وألصق كل حرف في مكانه الصحيح لتكوين كلمة حافلة"
+  },
+  "elements": [
+    {
+      "id": "lettre_1",
+      "ar": "ح",
+      "fr": "h (ḥā)",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "lettre_2",
+      "ar": "ا",
+      "fr": "a (alif)",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "lettre_3",
+      "ar": "ف",
+      "fr": "f (fā)",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "lettre_4",
+      "ar": "لـ",
+      "fr": "l (lām)",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "lettre_5",
+      "ar": "ـة",
+      "fr": "a (tā marbūṭa)",
+      "emoji": "5️⃣"
+    },
+    {
+      "id": "mot_cible",
+      "ar": "حافلة",
+      "fr": "bus",
+      "emoji": "🚌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p60_consigne",
+      "texte_ar": "انظر إلى صورة الحافلة وألصق كل حرف في مكانه الصحيح لتكوين كلمة حافلة",
+      "voix_m": "livre_3_5ans_tome2_p60_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_1",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p60_lettre_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_lettre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_2",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_p60_lettre_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_lettre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_3",
+      "texte_ar": "ف",
+      "voix_m": "livre_3_5ans_tome2_p60_lettre_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_lettre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_4",
+      "texte_ar": "لـ",
+      "voix_m": "livre_3_5ans_tome2_p60_lettre_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_lettre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_5",
+      "texte_ar": "ـة",
+      "voix_m": "livre_3_5ans_tome2_p60_lettre_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_lettre_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_cible",
+      "texte_ar": "حافلة",
+      "voix_m": "livre_3_5ans_tome2_p60_mot_cible_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p60_mot_cible_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:05:42.900022",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

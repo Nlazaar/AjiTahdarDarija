@@ -1,0 +1,272 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : remettre des lettres dans l'ordre pour former un mot, compléter des phrases nominales avec l'adjectif de couleur manquant, et compléter une phrase avec des mots d'une liste",
+  "titre": {
+    "fr": "Exercices de vocabulaire arabe - Lettres, couleurs et phrases",
+    "ar": "تمارين المفردات العربية - الحروف والألوان والجمل"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex.7 : Je complète (les phrases avec l'adjectif manquant). Ex.8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "رجزة",
+      "fr": "carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "زيت",
+      "fr": "huile d'olive",
+      "emoji": "🫙"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "خبز",
+      "fr": "pain / corbeille de pain",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "فُلْفُلٌ أَحْمَرُ",
+      "fr": "poivron rouge",
+      "emoji": "🌶️"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "تُفَّاحَةٌ حَمْرَاءُ",
+      "fr": "pomme rouge",
+      "emoji": "🍎"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (verte)",
+      "emoji": "👗"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille (verte)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "كِتَابٌ",
+      "fr": "livre (bleu)",
+      "emoji": "📘"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "مِحْفَظَةٌ",
+      "fr": "cartable (bleu)",
+      "emoji": "🎒"
+    },
+    {
+      "id": "ex7_7",
+      "ar": "مَوْزٌ",
+      "fr": "banane (jaune)",
+      "emoji": "🍌"
+    },
+    {
+      "id": "ex7_8",
+      "ar": "زَهْرَةٌ",
+      "fr": "fleur (jaune)",
+      "emoji": "🌻"
+    },
+    {
+      "id": "ex7_9",
+      "ar": "الثَّلْجُ",
+      "fr": "la neige (blanc)",
+      "emoji": "❄️"
+    },
+    {
+      "id": "ex7_10",
+      "ar": "قِطَّةٌ",
+      "fr": "chatte (blanche)",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex7_11",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau (noir)",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "ex7_12",
+      "ar": "قِطَّةٌ",
+      "fr": "chatte (noire)",
+      "emoji": "🐈‍⬛"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "مَلَابِسَهُ",
+      "fr": "ses vêtements",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "يُرَتِّبُ",
+      "fr": "il range",
+      "emoji": "🗂️"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "الْخِزَانَةِ",
+      "fr": "l'armoire",
+      "emoji": "🚪"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec07_zey",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "رجزة",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "زيت",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "خبز",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "فُلْفُلٌ أَحْمَرُ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "تُفَّاحَةٌ حَمْرَاءُ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "كِتَابٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_5_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "مِحْفَظَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_6_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_7",
+      "texte_ar": "مَوْزٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_7_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_8",
+      "texte_ar": "زَهْرَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_8_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_9",
+      "texte_ar": "الثَّلْجُ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_9_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_10",
+      "texte_ar": "قِطَّةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_10_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_11",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_11_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_12",
+      "texte_ar": "قِطَّةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex7_12_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex7_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "مَلَابِسَهُ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "يُرَتِّبُ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "الْخِزَانَةِ",
+      "voix_m": "lecture_niv5_lec07_zey_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:33:25.625090",
+    "niveau": 1,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv5_lec07_zey",
+    "bucket_audio": "audio-lessons/niveau1/lecon07/",
+    "nb_audio_assets": 19
+  }
+}

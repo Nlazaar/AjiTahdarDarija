@@ -1,0 +1,103 @@
+{
+  "page_nb": 32,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie l'animal avec ce qu'il peut manger",
+    "ar": "أربط بخط بين الحيوان و ما يأكل"
+  },
+  "enonce": {
+    "fr": "Relie chaque animal à sa nourriture en traçant un trait",
+    "ar": "أربط بخط بين الحيوان و ما يأكل"
+  },
+  "elements": [
+    {
+      "id": "chien",
+      "ar": "كَلْب",
+      "fr": "chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "chameau",
+      "ar": "جَمَل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "tigre",
+      "ar": "نَمِر",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "herbe",
+      "ar": "عُشْب",
+      "fr": "herbe",
+      "emoji": "🌿"
+    },
+    {
+      "id": "viande",
+      "ar": "لَحْم",
+      "fr": "viande",
+      "emoji": "🍖"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p32_consigne",
+      "texte_ar": "أربط بخط بين الحيوان و ما يأكل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chien",
+      "texte_ar": "كَلْب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_chien_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_chien_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chameau",
+      "texte_ar": "جَمَل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_chameau_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_chameau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tigre",
+      "texte_ar": "نَمِر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_tigre_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_tigre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_herbe",
+      "texte_ar": "عُشْب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_herbe_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_herbe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_viande",
+      "texte_ar": "لَحْم",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p32_viande_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p32_viande_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:45.699938",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 6
+  }
+}

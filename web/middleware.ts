@@ -22,9 +22,19 @@ function isTokenExpired(token: string): boolean {
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
+  // ── Protection admin ──────────────────────────────────────────────────────
+  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+    const session = req.cookies.get('admin_session')?.value;
+    if (!session) {
+      const url = req.nextUrl.clone();
+      url.pathname = '/admin/login';
+      return NextResponse.redirect(url);
+    }
+  }
+
+  // ── Protection routes utilisateur ─────────────────────────────────────────
   if (PROTECTED.some(p => pathname.startsWith(p))) {
     const token = req.cookies.get('jwt')?.value;
-
     if (!token || isTokenExpired(token)) {
       const url = req.nextUrl.clone();
       url.pathname = '/login';
@@ -38,6 +48,7 @@ export function middleware(req: NextRequest) {
 
 export const config = {
   matcher: [
+    '/admin/:path*',
     '/progress/:path*',
     '/lesson/:path*',
     '/review/:path*',

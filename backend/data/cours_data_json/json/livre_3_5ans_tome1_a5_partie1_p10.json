@@ -1,0 +1,77 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres en bas et colle-les dans l'ordre alphabétique : ج، ح، خ",
+    "ar": "اقطع الحروف من الأسفل وألصقها بالترتيب الصحيح: ج، ح، خ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ج",
+      "fr": "Jim",
+      "emoji": "🐪"
+    },
+    {
+      "id": "2",
+      "ar": "ح",
+      "fr": "Ha",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "3",
+      "ar": "خ",
+      "fr": "Kha",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "اقطع الحروف من الأسفل وألصقها بالترتيب الصحيح: ج، ح، خ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p10_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ج",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p10_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p10_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p10_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p10_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p10_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p10_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:49.704299",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 4
+  }
+}

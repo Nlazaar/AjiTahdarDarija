@@ -1,0 +1,77 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte puis j'entoure le nombre",
+    "ar": "أَعُدَّ الأَشْكَالَ وَ أُحِيطُ الرَّقْمَ الْمُنَاسِبَ"
+  },
+  "enonce": {
+    "fr": "Compte les fruits et légumes puis entoure le bon nombre parmi : 5, 4, 3, 2, 1",
+    "ar": "عُدَّ الأَشْكَالَ ثُمَّ أَحِطْ بِالرَّقْمِ الْمُنَاسِبِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تُفَّاحَات",
+      "fr": "pommes (3)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "2",
+      "ar": "فَلْفَل أَخْضَر",
+      "fr": "piments verts (5)",
+      "emoji": "🌶️"
+    },
+    {
+      "id": "3",
+      "ar": "طَمَاطِم",
+      "fr": "tomates (4)",
+      "emoji": "🍅"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "عُدَّ الأَشْكَالَ ثُمَّ أَحِطْ بِالرَّقْمِ الْمُنَاسِبِ",
+      "voix_m": "coursarabe_niveau1_lecon11_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تُفَّاحَات",
+      "voix_m": "coursarabe_niveau1_lecon11_p8_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فَلْفَل أَخْضَر",
+      "voix_m": "coursarabe_niveau1_lecon11_p8_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَمَاطِم",
+      "voix_m": "coursarabe_niveau1_lecon11_p8_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p8_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:24:12.961583",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 4
+  }
+}

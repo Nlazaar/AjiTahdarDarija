@@ -1,0 +1,233 @@
+{
+  "page_nb": 50,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la hamza dans les mots",
+    "ar": "أُلَوِّنُ الهمزة فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la hamza dans chaque mot selon sa forme : أ en rouge, ء en vert, ؤ en orange, ئ en bleu, ا en violet",
+    "ar": "لوّن الهمزة في كل كلمة حسب شكلها : أ باللون الأحمر، ء باللون الأخضر، ؤ باللون البرتقالي، ئ باللون الأزرق، ا باللون البنفسجي"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَاء",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "2",
+      "ar": "سِئْم",
+      "fr": "ennuyé",
+      "emoji": "😒"
+    },
+    {
+      "id": "3",
+      "ar": "رَؤُوف",
+      "fr": "doux/compatissant",
+      "emoji": "🤲"
+    },
+    {
+      "id": "4",
+      "ar": "بِئْر",
+      "fr": "puits",
+      "emoji": "🪣"
+    },
+    {
+      "id": "5",
+      "ar": "فَأْر",
+      "fr": "souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "6",
+      "ar": "سَاء",
+      "fr": "il s'est mal comporté",
+      "emoji": "😠"
+    },
+    {
+      "id": "7",
+      "ar": "بَاء",
+      "fr": "il est revenu",
+      "emoji": "↩️"
+    },
+    {
+      "id": "8",
+      "ar": "أَسَد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "9",
+      "ar": "رَأْس",
+      "fr": "tête",
+      "emoji": "🗣️"
+    },
+    {
+      "id": "10",
+      "ar": "بَرِيء",
+      "fr": "innocent",
+      "emoji": "😇"
+    },
+    {
+      "id": "11",
+      "ar": "امْرِئ",
+      "fr": "homme",
+      "emoji": "👤"
+    },
+    {
+      "id": "12",
+      "ar": "بِرِئَ",
+      "fr": "il a guéri",
+      "emoji": "🏥"
+    },
+    {
+      "id": "13",
+      "ar": "بِئْس",
+      "fr": "quel mauvais",
+      "emoji": "👎"
+    },
+    {
+      "id": "14",
+      "ar": "فَأْس",
+      "fr": "hache",
+      "emoji": "🪓"
+    },
+    {
+      "id": "15",
+      "ar": "مَرْء",
+      "fr": "personne",
+      "emoji": "🧑"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p50_consigne",
+      "texte_ar": "لوّن الهمزة في كل كلمة حسب شكلها : أ باللون الأحمر، ء باللون الأخضر، ؤ باللون البرتقالي، ئ باللون الأزرق، ا باللون البنفسجي",
+      "voix_m": "livre_3_5ans_tome2_p50_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَاء",
+      "voix_m": "livre_3_5ans_tome2_p50_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سِئْم",
+      "voix_m": "livre_3_5ans_tome2_p50_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رَؤُوف",
+      "voix_m": "livre_3_5ans_tome2_p50_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بِئْر",
+      "voix_m": "livre_3_5ans_tome2_p50_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَأْر",
+      "voix_m": "livre_3_5ans_tome2_p50_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سَاء",
+      "voix_m": "livre_3_5ans_tome2_p50_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَاء",
+      "voix_m": "livre_3_5ans_tome2_p50_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "أَسَد",
+      "voix_m": "livre_3_5ans_tome2_p50_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "رَأْس",
+      "voix_m": "livre_3_5ans_tome2_p50_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "بَرِيء",
+      "voix_m": "livre_3_5ans_tome2_p50_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "امْرِئ",
+      "voix_m": "livre_3_5ans_tome2_p50_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "بِرِئَ",
+      "voix_m": "livre_3_5ans_tome2_p50_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "بِئْس",
+      "voix_m": "livre_3_5ans_tome2_p50_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "فَأْس",
+      "voix_m": "livre_3_5ans_tome2_p50_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "مَرْء",
+      "voix_m": "livre_3_5ans_tome2_p50_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p50_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:04:01.377337",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 16
+  }
+}

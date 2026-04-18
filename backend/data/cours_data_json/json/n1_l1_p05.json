@@ -1,0 +1,177 @@
+{
+  "page_nb": 4,
+  "type": "cours",
+  "mecanique": "Lecture et répétition de syllabes avec la voyelle damma (ضمة) sur différentes lettres de l'alphabet arabe",
+  "titre": {
+    "fr": "La voyelle Damma",
+    "ar": "الضَّمَّة"
+  },
+  "enonce": {
+    "fr": "Je suis la Damma, ton ami. Je coiffe la lettre, elle devient mon amie. Arrondis tes lèvres pour bien la prononcer sans paresse, correctement, et répète-la sans te lasser.",
+    "ar": "أَنَا الضَّمَّةُ يَا رَفِيقِي. أَضُمُّ الْحَرْفَ فَهُوَ صَدِيقِي. ضُمَّ شَفَتَاكَ لِتَنْطِقَهُ بِلا كَسَلٍ صَحِيحًا وَ كَرِّرْهُ بِلا مَلَلٍ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أُ بُ تُ",
+      "fr": "ou - bou - tou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "سُ شُ فُ قُ",
+      "fr": "sou - chou - fou - qou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "تُ جُ حُ خُ",
+      "fr": "tou - djou - hou - khou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "كُ لُ",
+      "fr": "kou - lou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "صُ ضُ",
+      "fr": "sou - dou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "مُ نُ هُ",
+      "fr": "mou - nou - hou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "خُ دُ ذُ",
+      "fr": "khou - dou - dhou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "طُ ظُ",
+      "fr": "tou - dhou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "رُ زُ",
+      "fr": "rou - zou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "عُ غُ",
+      "fr": "aou - ghou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "وُ يُ",
+      "fr": "wou - you",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَنَا الضَّمَّةُ يَا رَفِيقِي. أَضُمُّ الْحَرْفَ فَهُوَ صَدِيقِي. ضُمَّ شَفَتَاكَ لِتَنْطِقَهُ بِلا كَسَلٍ صَحِيحًا وَ كَرِّرْهُ بِلا مَلَلٍ.",
+      "voix_m": "v1_l1_p4_consigne_m.mp3",
+      "voix_f": "v1_l1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أُ بُ تُ",
+      "voix_m": "v1_l1_p4_1_m.mp3",
+      "voix_f": "v1_l1_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سُ شُ فُ قُ",
+      "voix_m": "v1_l1_p4_2_m.mp3",
+      "voix_f": "v1_l1_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تُ جُ حُ خُ",
+      "voix_m": "v1_l1_p4_3_m.mp3",
+      "voix_f": "v1_l1_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كُ لُ",
+      "voix_m": "v1_l1_p4_4_m.mp3",
+      "voix_f": "v1_l1_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صُ ضُ",
+      "voix_m": "v1_l1_p4_5_m.mp3",
+      "voix_f": "v1_l1_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مُ نُ هُ",
+      "voix_m": "v1_l1_p4_6_m.mp3",
+      "voix_f": "v1_l1_p4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خُ دُ ذُ",
+      "voix_m": "v1_l1_p4_7_m.mp3",
+      "voix_f": "v1_l1_p4_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "طُ ظُ",
+      "voix_m": "v1_l1_p4_8_m.mp3",
+      "voix_f": "v1_l1_p4_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "رُ زُ",
+      "voix_m": "v1_l1_p4_9_m.mp3",
+      "voix_f": "v1_l1_p4_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "عُ غُ",
+      "voix_m": "v1_l1_p4_10_m.mp3",
+      "voix_f": "v1_l1_p4_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "وُ يُ",
+      "voix_m": "v1_l1_p4_11_m.mp3",
+      "voix_f": "v1_l1_p4_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:11:12.565980",
+    "niveau": 1,
+    "lecon": 1,
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 12
+  }
+}

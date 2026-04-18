@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète les lignes",
+    "ar": "أَكَمِّلُ الْخُطُوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés en suivant le modèle : les traits verticaux, la lettre و (waw), la lettre ح (ha), puis le mot حذاء (chaussure)",
+    "ar": "أَكَمِّلُ الْخُطُوطَ بِاتِّبَاعِ النَّمُوذَج"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خط عمودي",
+      "fr": "Trait vertical",
+      "emoji": "📏"
+    },
+    {
+      "id": "2",
+      "ar": "و",
+      "fr": "Lettre waw",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "ح",
+      "fr": "Lettre ha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "حذاء",
+      "fr": "Chaussure",
+      "emoji": "👟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَكَمِّلُ الْخُطُوطَ بِاتِّبَاعِ النَّمُوذَج",
+      "voix_m": "arabe_niveau2_03_1_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خط عمودي",
+      "voix_m": "arabe_niveau2_03_1_p7_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_03_1_p7_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p7_3_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "حذاء",
+      "voix_m": "arabe_niveau2_03_1_p7_4_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p7_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:39:54.603227",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 5
+  }
+}

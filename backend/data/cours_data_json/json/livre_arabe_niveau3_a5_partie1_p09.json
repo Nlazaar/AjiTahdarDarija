@@ -1,0 +1,90 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Barre la forme différente dans chaque groupe d'images ou de mots",
+    "ar": "اشطب الشكل المختلف في كل مجموعة"
+  },
+  "elements": [
+    {
+      "id": "groupe1_images",
+      "ar": "تُفَّاحَةٌ",
+      "fr": "Pommes (groupe d'images)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe2_images",
+      "ar": "تَاجٌ",
+      "fr": "Couronnes (groupe d'images)",
+      "emoji": "👑"
+    },
+    {
+      "id": "groupe3_mots",
+      "ar": "تُفَّاحَةٌ",
+      "fr": "Pomme (groupe de mots)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "groupe4_mots",
+      "ar": "تَاجٌ",
+      "fr": "Couronne (groupe de mots)",
+      "emoji": "👑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اشطب الشكل المختلف في كل مجموعة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p9_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images",
+      "texte_ar": "تُفَّاحَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p9_groupe1_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p9_groupe1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p9_groupe2_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p9_groupe2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3_mots",
+      "texte_ar": "تُفَّاحَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p9_groupe3_mots_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p9_groupe3_mots_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4_mots",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p9_groupe4_mots_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p9_groupe4_mots_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:24:07.407249",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

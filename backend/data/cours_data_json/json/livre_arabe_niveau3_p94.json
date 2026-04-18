@@ -1,0 +1,116 @@
+{
+  "page_nb": 94,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ض qui manque (ضَ، ضـ، ـض)",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ: ض ضـ ـض"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خُضْرُ",
+      "fr": "légumes",
+      "emoji": "🥦"
+    },
+    {
+      "id": "2",
+      "ar": "ضِحكَ",
+      "fr": "rire",
+      "emoji": "😄"
+    },
+    {
+      "id": "3",
+      "ar": "ضِفْدَعُ",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "4",
+      "ar": "بَيْضَة",
+      "fr": "œuf",
+      "emoji": "🥚"
+    },
+    {
+      "id": "5",
+      "ar": "مَرِيض",
+      "fr": "malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "6",
+      "ar": "رَضِيعٌ",
+      "fr": "bébé",
+      "emoji": "👶"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p94_consigne",
+      "texte_ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ: ض ضـ ـض",
+      "voix_m": "livre_arabe_niveau3_p94_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خُضْرُ",
+      "voix_m": "livre_arabe_niveau3_p94_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ضِحكَ",
+      "voix_m": "livre_arabe_niveau3_p94_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ضِفْدَعُ",
+      "voix_m": "livre_arabe_niveau3_p94_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَيْضَة",
+      "voix_m": "livre_arabe_niveau3_p94_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَرِيض",
+      "voix_m": "livre_arabe_niveau3_p94_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رَضِيعٌ",
+      "voix_m": "livre_arabe_niveau3_p94_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p94_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:13:11.861532",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 28,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en suivant les modèles pointillés : lignes diagonales, lignes en zigzag et lignes verticales.",
+    "ar": "أَرْسُمُ الْخُطُوطَ مُتَّبِعًا النَّمَاذِجَ: خُطُوطٌ مَائِلَةٌ، خُطُوطٌ مُتَعَرِّجَةٌ، خُطُوطٌ عَمُودِيَّةٌ."
+  },
+  "elements": [
+    {
+      "id": "ligne_diagonale",
+      "ar": "خُطُوطٌ مَائِلَةٌ",
+      "fr": "Lignes diagonales",
+      "emoji": "↗"
+    },
+    {
+      "id": "ligne_zigzag",
+      "ar": "خُطُوطٌ مُتَعَرِّجَةٌ",
+      "fr": "Lignes en zigzag",
+      "emoji": "〰"
+    },
+    {
+      "id": "ligne_verticale",
+      "ar": "خُطُوطٌ عَمُودِيَّةٌ",
+      "fr": "Lignes verticales",
+      "emoji": "↓"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p28_consigne",
+      "texte_ar": "أَرْسُمُ الْخُطُوطَ مُتَّبِعًا النَّمَاذِجَ: خُطُوطٌ مَائِلَةٌ، خُطُوطٌ مُتَعَرِّجَةٌ، خُطُوطٌ عَمُودِيَّةٌ.",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p28_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p28_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_diagonale",
+      "texte_ar": "خُطُوطٌ مَائِلَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p28_ligne_diagonale_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p28_ligne_diagonale_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_zigzag",
+      "texte_ar": "خُطُوطٌ مُتَعَرِّجَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p28_ligne_zigzag_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p28_ligne_zigzag_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_verticale",
+      "texte_ar": "خُطُوطٌ عَمُودِيَّةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p28_ligne_verticale_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p28_ligne_verticale_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:32:41.814337",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "page_nb": 3,
+  "type": "cours",
+  "mecanique": "Apprentissage du vocabulaire des couleurs avec illustration visuelle (taches de couleur) associée au mot arabe",
+  "titre": {
+    "fr": "Les couleurs",
+    "ar": "الألوان"
+  },
+  "enonce": {
+    "fr": "Découvre les couleurs en arabe",
+    "ar": "تعلّم الألوان بالعربية"
+  },
+  "elements": [
+    {
+      "id": "color_1",
+      "ar": "أحمر",
+      "fr": "Rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "color_2",
+      "ar": "بنفسجي",
+      "fr": "Violet",
+      "emoji": "🟣"
+    },
+    {
+      "id": "color_3",
+      "ar": "أصفر",
+      "fr": "Jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "color_4",
+      "ar": "برتقالي",
+      "fr": "Orange",
+      "emoji": "🟠"
+    },
+    {
+      "id": "color_5",
+      "ar": "أزرق",
+      "fr": "Bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "color_6",
+      "ar": "بُنِّي",
+      "fr": "Marron",
+      "emoji": "🟤"
+    },
+    {
+      "id": "color_7",
+      "ar": "وردِيّ",
+      "fr": "Rose",
+      "emoji": "🌸"
+    },
+    {
+      "id": "color_8",
+      "ar": "أسود",
+      "fr": "Noir",
+      "emoji": "⚫"
+    },
+    {
+      "id": "color_9",
+      "ar": "أخضر",
+      "fr": "Vert",
+      "emoji": "🟢"
+    },
+    {
+      "id": "color_10",
+      "ar": "أبيض",
+      "fr": "Blanc",
+      "emoji": "⚪"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تعلّم الألوان بالعربية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_1",
+      "texte_ar": "أحمر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_2",
+      "texte_ar": "بنفسجي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_3",
+      "texte_ar": "أصفر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_4",
+      "texte_ar": "برتقالي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_5",
+      "texte_ar": "أزرق",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_6",
+      "texte_ar": "بُنِّي",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_7",
+      "texte_ar": "وردِيّ",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_8",
+      "texte_ar": "أسود",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_9",
+      "texte_ar": "أخضر",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_color_10",
+      "texte_ar": "أبيض",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p3_color_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p3_color_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:35:09.924526",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 11
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure ce qui est jaune",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَقٍ مَا هُوَ أَصْفَرُ"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement les objets qui sont jaunes",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ كُلَّ مَا هُوَ أَصْفَرُ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَوْزَة",
+      "fr": "Banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "2",
+      "ar": "سَيَّارَة",
+      "fr": "Voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "3",
+      "ar": "كُمَّثْرَى",
+      "fr": "Poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "4",
+      "ar": "تُفَّاحَة حَمْرَاء",
+      "fr": "Pomme rouge",
+      "emoji": "🍎"
+    },
+    {
+      "id": "5",
+      "ar": "نَجْمَة",
+      "fr": "Étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "6",
+      "ar": "تُفَّاحَة خَضْرَاء",
+      "fr": "Pomme verte",
+      "emoji": "🍏"
+    },
+    {
+      "id": "7",
+      "ar": "شَمْس",
+      "fr": "Soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "8",
+      "ar": "بُرْتُقَال",
+      "fr": "Orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "9",
+      "ar": "كُرَة خَيْط",
+      "fr": "Pelote de laine",
+      "emoji": "🧶"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَقٍ كُلَّ مَا هُوَ أَصْفَرُ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَوْزَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "كُمَّثْرَى",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تُفَّاحَة حَمْرَاء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تُفَّاحَة خَضْرَاء",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "شَمْس",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "بُرْتُقَال",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "كُرَة خَيْط",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p11_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p11_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:01.140831",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 10
+  }
+}

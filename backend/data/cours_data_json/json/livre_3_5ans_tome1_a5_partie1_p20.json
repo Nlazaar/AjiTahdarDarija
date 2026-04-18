@@ -1,0 +1,129 @@
+{
+  "page_nb": 20,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je cherche et je compte",
+    "ar": "أبحث و أحيط بخط مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Cherche les papillons et les poissons dans l'image, entoure-les et compte-les",
+    "ar": "أبحث عن الفراشات والسمكات في الصورة و أحيطها بخط مُغْلَق ثم أعدّها"
+  },
+  "elements": [
+    {
+      "id": "exercice_8",
+      "ar": "فَرَاشَة",
+      "fr": "Papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "exercice_9",
+      "ar": "سَمَكَة",
+      "fr": "Poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "choix_1",
+      "ar": "١",
+      "fr": "1",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "choix_2",
+      "ar": "٢",
+      "fr": "2",
+      "emoji": "2️⃣"
+    },
+    {
+      "id": "choix_3",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "choix_4",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "choix_5",
+      "ar": "٥",
+      "fr": "5",
+      "emoji": "5️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p20_consigne",
+      "texte_ar": "أبحث عن الفراشات والسمكات في الصورة و أحيطها بخط مُغْلَق ثم أعدّها",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_8",
+      "texte_ar": "فَرَاشَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_exercice_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_exercice_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_9",
+      "texte_ar": "سَمَكَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_exercice_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_exercice_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_choix_1",
+      "texte_ar": "١",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_choix_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_choix_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_choix_2",
+      "texte_ar": "٢",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_choix_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_choix_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_choix_3",
+      "texte_ar": "٣",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_choix_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_choix_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_choix_4",
+      "texte_ar": "٤",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_choix_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_choix_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_choix_5",
+      "texte_ar": "٥",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p20_choix_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p20_choix_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:27:22.980831",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 8
+  }
+}

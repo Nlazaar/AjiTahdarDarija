@@ -1,0 +1,272 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter la syllabe manquante dans des mots illustrés (lettre جـ et حـ), puis compléter des phrases avec les prépositions de lieu (فوق / تحت)",
+  "titre": {
+    "fr": "Révision et évaluation (2)",
+    "ar": "مُرَاجَعَةَ وَ تَقْيِيم (2)"
+  },
+  "enonce": {
+    "fr": "Exercice 6 et 7 : J'écris la syllabe manquante. Exercice 8 : Je complète avec ce qui convient (فوق / تحت).",
+    "ar": "تمرين 6 و 7 : أَكْتُبُ الْمَقْطَعَ النَّاقِصَ. تمرين 8 : أُكْمِلُ بِمَا يُنَاسِبُ (فَوْقَ / تَحْتَ)."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "نُجُومٌ",
+      "fr": "étoiles",
+      "emoji": "⭐"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "جُسْرٌ",
+      "fr": "pont",
+      "emoji": "🌉"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "جَرَسٌ",
+      "fr": "cloche",
+      "emoji": "🔔"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "جُذُورٌ",
+      "fr": "racines",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex6_5",
+      "ar": "دَجَّةٌ",
+      "fr": "poule",
+      "emoji": "🐔"
+    },
+    {
+      "id": "ex6_6",
+      "ar": "جَارَانٌ",
+      "fr": "voisins",
+      "emoji": "👨‍👩‍👧"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "حِبْرٌ",
+      "fr": "encre",
+      "emoji": "🖋️"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "صُحُونٌ",
+      "fr": "assiettes",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "تُفَّاحَةٌ",
+      "fr": "pomme",
+      "emoji": "🍎"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "حِيتَانٌ",
+      "fr": "baleines",
+      "emoji": "🐋"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "كِتَابٌ",
+      "fr": "livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "حُفْرَةٌ",
+      "fr": "trou",
+      "emoji": "🕳️"
+    },
+    {
+      "id": "ex8_prep1",
+      "ar": "فَوْقَ",
+      "fr": "sur / au-dessus",
+      "emoji": "⬆️"
+    },
+    {
+      "id": "ex8_prep2",
+      "ar": "تَحْتَ",
+      "fr": "sous / en-dessous",
+      "emoji": "⬇️"
+    },
+    {
+      "id": "ex8_phrase1",
+      "ar": "الصُّحُونُ فَوْقَ الطَّاوِلَةِ",
+      "fr": "Les assiettes sont sur la table",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex8_phrase2",
+      "ar": "الْكَلْبُ تَحْتَ الطَّاوِلَةِ",
+      "fr": "Le chien est sous la table",
+      "emoji": "🐕"
+    },
+    {
+      "id": "ex8_phrase3",
+      "ar": "الْكُؤُوسُ فَوْقَ الطَّاوِلَةِ",
+      "fr": "Les verres sont sur la table",
+      "emoji": "🥛"
+    },
+    {
+      "id": "ex8_phrase4",
+      "ar": "الْقِطَّةُ تَحْتَ الْكُرْسِيِّ",
+      "fr": "Le chat est sous la chaise",
+      "emoji": "🐱"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "bilan02",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6 و 7 : أَكْتُبُ الْمَقْطَعَ النَّاقِصَ. تمرين 8 : أُكْمِلُ بِمَا يُنَاسِبُ (فَوْقَ / تَحْتَ).",
+      "voix_m": "bilan02_p3_consigne_m.mp3",
+      "voix_f": "bilan02_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "نُجُومٌ",
+      "voix_m": "bilan02_p3_ex6_1_m.mp3",
+      "voix_f": "bilan02_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "جُسْرٌ",
+      "voix_m": "bilan02_p3_ex6_2_m.mp3",
+      "voix_f": "bilan02_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "جَرَسٌ",
+      "voix_m": "bilan02_p3_ex6_3_m.mp3",
+      "voix_f": "bilan02_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "جُذُورٌ",
+      "voix_m": "bilan02_p3_ex6_4_m.mp3",
+      "voix_f": "bilan02_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_5",
+      "texte_ar": "دَجَّةٌ",
+      "voix_m": "bilan02_p3_ex6_5_m.mp3",
+      "voix_f": "bilan02_p3_ex6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_6",
+      "texte_ar": "جَارَانٌ",
+      "voix_m": "bilan02_p3_ex6_6_m.mp3",
+      "voix_f": "bilan02_p3_ex6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "حِبْرٌ",
+      "voix_m": "bilan02_p3_ex7_1_m.mp3",
+      "voix_f": "bilan02_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "صُحُونٌ",
+      "voix_m": "bilan02_p3_ex7_2_m.mp3",
+      "voix_f": "bilan02_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "تُفَّاحَةٌ",
+      "voix_m": "bilan02_p3_ex7_3_m.mp3",
+      "voix_f": "bilan02_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "حِيتَانٌ",
+      "voix_m": "bilan02_p3_ex7_4_m.mp3",
+      "voix_f": "bilan02_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "كِتَابٌ",
+      "voix_m": "bilan02_p3_ex7_5_m.mp3",
+      "voix_f": "bilan02_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "حُفْرَةٌ",
+      "voix_m": "bilan02_p3_ex7_6_m.mp3",
+      "voix_f": "bilan02_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_prep1",
+      "texte_ar": "فَوْقَ",
+      "voix_m": "bilan02_p3_ex8_prep1_m.mp3",
+      "voix_f": "bilan02_p3_ex8_prep1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_prep2",
+      "texte_ar": "تَحْتَ",
+      "voix_m": "bilan02_p3_ex8_prep2_m.mp3",
+      "voix_f": "bilan02_p3_ex8_prep2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase1",
+      "texte_ar": "الصُّحُونُ فَوْقَ الطَّاوِلَةِ",
+      "voix_m": "bilan02_p3_ex8_phrase1_m.mp3",
+      "voix_f": "bilan02_p3_ex8_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase2",
+      "texte_ar": "الْكَلْبُ تَحْتَ الطَّاوِلَةِ",
+      "voix_m": "bilan02_p3_ex8_phrase2_m.mp3",
+      "voix_f": "bilan02_p3_ex8_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase3",
+      "texte_ar": "الْكُؤُوسُ فَوْقَ الطَّاوِلَةِ",
+      "voix_m": "bilan02_p3_ex8_phrase3_m.mp3",
+      "voix_f": "bilan02_p3_ex8_phrase3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_phrase4",
+      "texte_ar": "الْقِطَّةُ تَحْتَ الْكُرْسِيِّ",
+      "voix_m": "bilan02_p3_ex8_phrase4_m.mp3",
+      "voix_f": "bilan02_p3_ex8_phrase4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:01:06.565163",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "bilan02",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 19
+  }
+}

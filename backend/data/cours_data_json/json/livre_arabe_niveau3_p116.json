@@ -1,0 +1,116 @@
+{
+  "page_nb": 116,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre غ qui manque (en début, milieu ou fin de mot)",
+    "ar": "أكمِّل كلَّ كلمة بالحرف الناقص غ في مكانه الصحيح"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غَابَةٌ",
+      "fr": "forêt",
+      "emoji": "🌳"
+    },
+    {
+      "id": "2",
+      "ar": "غُصْنٌ",
+      "fr": "branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "3",
+      "ar": "غَيْمَةٌ",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "4",
+      "ar": "بَبَّغَاءٌ",
+      "fr": "perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "5",
+      "ar": "كَنْغُرُ",
+      "fr": "kangourou",
+      "emoji": "🦘"
+    },
+    {
+      "id": "6",
+      "ar": "غَسَّالَةٌ",
+      "fr": "machine à laver",
+      "emoji": "🫧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p116_consigne",
+      "texte_ar": "أكمِّل كلَّ كلمة بالحرف الناقص غ في مكانه الصحيح",
+      "voix_m": "livre_arabe_niveau3_p116_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غَابَةٌ",
+      "voix_m": "livre_arabe_niveau3_p116_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غُصْنٌ",
+      "voix_m": "livre_arabe_niveau3_p116_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غَيْمَةٌ",
+      "voix_m": "livre_arabe_niveau3_p116_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَبَّغَاءٌ",
+      "voix_m": "livre_arabe_niveau3_p116_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "كَنْغُرُ",
+      "voix_m": "livre_arabe_niveau3_p116_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غَسَّالَةٌ",
+      "voix_m": "livre_arabe_niveau3_p116_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p116_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:17:00.724572",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

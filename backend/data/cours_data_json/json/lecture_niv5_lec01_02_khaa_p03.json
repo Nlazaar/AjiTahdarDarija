@@ -1,0 +1,259 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices combinés : écriture de mots sous images, identification de la phrase correcte selon une image, et complétion de phrase avec une liste de mots",
+  "titre": {
+    "fr": "J'écris le mot / Je barre la phrase qui ne décrit pas l'image / Je complète la phrase",
+    "ar": "أَكْتُبُ الْكَلِمَةَ / أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ / أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot correspondant à chaque image. Exercice 7 : Je barre la phrase qui ne décrit pas l'image. Exercice 8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6 : أَكْتُبُ الْكَلِمَةَ الْمُنَاسِبَةَ لِكُلِّ صُورَةٍ. تمرين 7 : أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ. تمرين 8 : أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_1",
+      "ar": "دَخَلَ",
+      "fr": "il est entré",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ex6_2",
+      "ar": "خَرَجَ",
+      "fr": "il est sorti",
+      "emoji": "🏃"
+    },
+    {
+      "id": "ex6_3",
+      "ar": "أَخْطَبُوطٌ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "ex6_4",
+      "ar": "خَافَ",
+      "fr": "il a eu peur",
+      "emoji": "😨"
+    },
+    {
+      "id": "ex7_1",
+      "ar": "الْقِطَّةُ دَاخِلَ الْبَيْتِ",
+      "fr": "Le chat est dans la maison",
+      "emoji": "🐱🏠"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "الْقِطَّةُ خَارِجَ الْبَيْتِ",
+      "fr": "Le chat est dehors de la maison",
+      "emoji": "🐱🏠"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "fr": "Le perroquet est hors de la cage",
+      "emoji": "🦜🔓"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "الْبَبَّغَاءُ دَاخِلَ الْقَفَصِ",
+      "fr": "Le perroquet est dans la cage",
+      "emoji": "🦜🔒"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "الْكَلْبُ دَاخِلَ الْبَيْتِ",
+      "fr": "Le chien est dans la maison",
+      "emoji": "🐶🏠"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "الْكَلْبُ خَارِجَ الْبَيْتِ",
+      "fr": "Le chien est dehors de la maison",
+      "emoji": "🐶🏠"
+    },
+    {
+      "id": "ex7_7",
+      "ar": "الْوَلَدُ خَارِجَ السَّيَّارَةِ",
+      "fr": "Le garçon est hors de la voiture",
+      "emoji": "👦🚗"
+    },
+    {
+      "id": "ex7_8",
+      "ar": "الْوَلَدُ دَاخِلَ السَّيَّارَةِ",
+      "fr": "Le garçon est dans la voiture",
+      "emoji": "👦🚗"
+    },
+    {
+      "id": "ex7_9",
+      "ar": "الْبِنْتُ خَارِجَ السَّيَّارَةِ",
+      "fr": "La fille est hors de la voiture",
+      "emoji": "👧🚗"
+    },
+    {
+      "id": "ex7_10",
+      "ar": "الْبِنْتُ دَاخِلَ السَّيَّارَةِ",
+      "fr": "La fille est dans la voiture",
+      "emoji": "👧🚗"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "الْخَلِيَّةِ",
+      "fr": "la ruche",
+      "emoji": "🍯"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "النَّحْلَةُ",
+      "fr": "l'abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur de",
+      "emoji": "⬛"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_02_khaa",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6 : أَكْتُبُ الْكَلِمَةَ الْمُنَاسِبَةَ لِكُلِّ صُورَةٍ. تمرين 7 : أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُعَبِّرُ عَنِ الصُّورَةِ. تمرين 8 : أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_1",
+      "texte_ar": "دَخَلَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex6_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_2",
+      "texte_ar": "خَرَجَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex6_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_3",
+      "texte_ar": "أَخْطَبُوطٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex6_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_4",
+      "texte_ar": "خَافَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex6_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "الْقِطَّةُ دَاخِلَ الْبَيْتِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "الْقِطَّةُ خَارِجَ الْبَيْتِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "الْبَبَّغَاءُ دَاخِلَ الْقَفَصِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "الْكَلْبُ دَاخِلَ الْبَيْتِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "الْكَلْبُ خَارِجَ الْبَيْتِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_7",
+      "texte_ar": "الْوَلَدُ خَارِجَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_8",
+      "texte_ar": "الْوَلَدُ دَاخِلَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_9",
+      "texte_ar": "الْبِنْتُ خَارِجَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_10",
+      "texte_ar": "الْبِنْتُ دَاخِلَ السَّيَّارَةِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex7_10_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex7_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "الْخَلِيَّةِ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "النَّحْلَةُ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:17:58.967540",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_02_khaa",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 18
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 85,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Lignes et tracés - Leçon 7",
+    "ar": "خطوط - الدرس 7"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés en suivant le modèle, puis recopie le mot باب (porte) trois fois.",
+    "ar": "تتبع الخطوط المنقطة حسب النموذج، ثم انسخ كلمة باب ثلاث مرات."
+  },
+  "elements": [
+    {
+      "id": "ligne_1",
+      "ar": "خط مستدير صغير",
+      "fr": "Petit tracé arrondi (rangée 1)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ligne_2",
+      "ar": "خط مستدير متوسط",
+      "fr": "Tracé arrondi moyen (rangée 2)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ligne_3",
+      "ar": "خط مستدير كبير",
+      "fr": "Grand tracé arrondi (rangée 3)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_bab",
+      "ar": "باب",
+      "fr": "porte",
+      "emoji": "🚪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p85_consigne",
+      "texte_ar": "تتبع الخطوط المنقطة حسب النموذج، ثم انسخ كلمة باب ثلاث مرات.",
+      "voix_m": "livre_3_5ans_tome2_p85_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p85_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_1",
+      "texte_ar": "خط مستدير صغير",
+      "voix_m": "livre_3_5ans_tome2_p85_ligne_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p85_ligne_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_2",
+      "texte_ar": "خط مستدير متوسط",
+      "voix_m": "livre_3_5ans_tome2_p85_ligne_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p85_ligne_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_3",
+      "texte_ar": "خط مستدير كبير",
+      "voix_m": "livre_3_5ans_tome2_p85_ligne_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p85_ligne_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_bab",
+      "texte_ar": "باب",
+      "voix_m": "livre_3_5ans_tome2_p85_mot_bab_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p85_mot_bab_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:09:46.966506",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

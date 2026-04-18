@@ -1,0 +1,194 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète le dessin des étoiles",
+    "ar": "أكمّل رسم النّجوم"
+  },
+  "enonce": {
+    "fr": "Trace les étoiles en suivant les pointillés.",
+    "ar": "أكمّل رسم النّجوم باتّباع الخطوط المنقّطة."
+  },
+  "elements": [
+    {
+      "id": "etoile_1",
+      "ar": "نَجْمَة",
+      "fr": "étoile 1",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_2",
+      "ar": "نَجْمَة",
+      "fr": "étoile 2",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_3",
+      "ar": "نَجْمَة",
+      "fr": "étoile 3",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_4",
+      "ar": "نَجْمَة",
+      "fr": "étoile 4",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_5",
+      "ar": "نَجْمَة",
+      "fr": "étoile 5",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_6",
+      "ar": "نَجْمَة",
+      "fr": "étoile 6",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_7",
+      "ar": "نَجْمَة",
+      "fr": "étoile 7",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_8",
+      "ar": "نَجْمَة",
+      "fr": "étoile 8",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_9",
+      "ar": "نَجْمَة",
+      "fr": "étoile 9",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_10",
+      "ar": "نَجْمَة",
+      "fr": "étoile 10",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_11",
+      "ar": "نَجْمَة",
+      "fr": "étoile 11",
+      "emoji": "⭐"
+    },
+    {
+      "id": "etoile_12",
+      "ar": "نَجْمَة",
+      "fr": "étoile 12",
+      "emoji": "⭐"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أكمّل رسم النّجوم باتّباع الخطوط المنقّطة.",
+      "voix_m": "arabe_niveau2_04_2_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_1",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_2",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_3",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_4",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_5",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_6",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_7",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_8",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_8_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_9",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_9_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_10",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_10_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_11",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_11_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile_12",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_04_2_p7_etoile_12_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p7_etoile_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:43:41.898674",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 13
+  }
+}

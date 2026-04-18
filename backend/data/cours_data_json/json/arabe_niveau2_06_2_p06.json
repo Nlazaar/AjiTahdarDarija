@@ -1,0 +1,103 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Dessine les traits",
+    "ar": "أرْسُمُ الخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Trace les pointillés pour dessiner chaque forme",
+    "ar": "أرسم الخطوط باتباع النقاط المتقطعة"
+  },
+  "elements": [
+    {
+      "id": "etoile",
+      "ar": "نَجْمَة",
+      "fr": "étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "parapluie",
+      "ar": "مِظَلَّة",
+      "fr": "parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "couteau",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "cuillere",
+      "ar": "مِلْعَقَة",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_06_2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أرسم الخطوط باتباع النقاط المتقطعة",
+      "voix_m": "arabe_niveau2_06_2_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "arabe_niveau2_06_2_p6_etoile_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_etoile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_parapluie",
+      "texte_ar": "مِظَلَّة",
+      "voix_m": "arabe_niveau2_06_2_p6_parapluie_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_parapluie_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "arabe_niveau2_06_2_p6_fourchette_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سِكِّين",
+      "voix_m": "arabe_niveau2_06_2_p6_couteau_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_couteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cuillere",
+      "texte_ar": "مِلْعَقَة",
+      "voix_m": "arabe_niveau2_06_2_p6_cuillere_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p6_cuillere_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:49:31.251127",
+    "niveau": 2,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau2_06_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon18/",
+    "nb_audio_assets": 6
+  }
+}

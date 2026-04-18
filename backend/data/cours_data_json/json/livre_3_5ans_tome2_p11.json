@@ -1,0 +1,298 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Entoure la lettre sous toutes ses formes",
+    "ar": "أحيط الحرف بمختلف أشكاله"
+  },
+  "enonce": {
+    "fr": "Entoure toutes les formes de la lettre Shin (ش) parmi les lettres proposées",
+    "ar": "أحط بدائرة جميع أشكال حرف الشين بين الحروف المعروضة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ش",
+      "fr": "shin isolé",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "شـ",
+      "fr": "shin en début de mot",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "ـشـ",
+      "fr": "shin au milieu",
+      "emoji": "✏️"
+    },
+    {
+      "id": "4",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "سـ",
+      "fr": "sin en début",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ـشـ",
+      "fr": "shin médian",
+      "emoji": "✏️"
+    },
+    {
+      "id": "7",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "ش",
+      "fr": "shin isolé",
+      "emoji": "✏️"
+    },
+    {
+      "id": "9",
+      "ar": "ق",
+      "fr": "qaf",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "ت",
+      "fr": "ta",
+      "emoji": "❌"
+    },
+    {
+      "id": "11",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "س",
+      "fr": "sin",
+      "emoji": "❌"
+    },
+    {
+      "id": "13",
+      "ar": "شـ",
+      "fr": "shin initial",
+      "emoji": "✏️"
+    },
+    {
+      "id": "14",
+      "ar": "شـ",
+      "fr": "shin",
+      "emoji": "✏️"
+    },
+    {
+      "id": "15",
+      "ar": "ـلـ",
+      "fr": "lam médian",
+      "emoji": "❌"
+    },
+    {
+      "id": "16",
+      "ar": "ش",
+      "fr": "shin isolé",
+      "emoji": "✏️"
+    },
+    {
+      "id": "17",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": "❌"
+    },
+    {
+      "id": "18",
+      "ar": "ر",
+      "fr": "ra",
+      "emoji": "❌"
+    },
+    {
+      "id": "19",
+      "ar": "ت",
+      "fr": "ta",
+      "emoji": "❌"
+    },
+    {
+      "id": "20",
+      "ar": "ه",
+      "fr": "ha",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "أحط بدائرة جميع أشكال حرف الشين بين الحروف المعروضة",
+      "voix_m": "livre_3_5ans_tome2_p11_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome2_p11_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شـ",
+      "voix_m": "livre_3_5ans_tome2_p11_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـشـ",
+      "voix_m": "livre_3_5ans_tome2_p11_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_p11_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سـ",
+      "voix_m": "livre_3_5ans_tome2_p11_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ـشـ",
+      "voix_m": "livre_3_5ans_tome2_p11_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome2_p11_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome2_p11_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome2_p11_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ت",
+      "voix_m": "livre_3_5ans_tome2_p11_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome2_p11_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "س",
+      "voix_m": "livre_3_5ans_tome2_p11_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شـ",
+      "voix_m": "livre_3_5ans_tome2_p11_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "شـ",
+      "voix_m": "livre_3_5ans_tome2_p11_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ـلـ",
+      "voix_m": "livre_3_5ans_tome2_p11_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome2_p11_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_p11_17_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_p11_18_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "ت",
+      "voix_m": "livre_3_5ans_tome2_p11_19_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "ه",
+      "voix_m": "livre_3_5ans_tome2_p11_20_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p11_20_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:57:16.876070",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 21
+  }
+}

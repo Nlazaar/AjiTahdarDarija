@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Trois activités : relier des mots à leur image, tracer la lettre ر, et compléter des mots avec la lettre ر selon ses différentes formes",
+  "titre": {
+    "fr": "Lecture, écriture et complétion avec la lettre Ra (ر)",
+    "ar": "أقرأ وأكتب وأكمل بحرف الراء"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ر. Exercice 5 : Je complète avec ce qui convient parmi les formes de ر.",
+    "ar": "٣- أقرأُ الكَلِمَةَ ثُمَّ أرْبِطُها بِصُورَتِها. ٤- أكْتُبُ. ٥- أُكْمِلُ بِمَا يُنَاسِبُ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "سَرِيرٌ",
+      "fr": "Lit",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "mot2",
+      "ar": "جِسْرٌ",
+      "fr": "Pont",
+      "emoji": "🌉"
+    },
+    {
+      "id": "mot3",
+      "ar": "قِرْشٌ",
+      "fr": "Requin",
+      "emoji": "🦈"
+    },
+    {
+      "id": "mot4",
+      "ar": "عَصِيرٌ",
+      "fr": "Jus",
+      "emoji": "🥤"
+    },
+    {
+      "id": "mot5",
+      "ar": "قَمَرٌ",
+      "fr": "Lune",
+      "emoji": "🌕"
+    },
+    {
+      "id": "mot6",
+      "ar": "رِيحٌ",
+      "fr": "Vent",
+      "emoji": "🌬️"
+    },
+    {
+      "id": "lettre",
+      "ar": "ر",
+      "fr": "Lettre Ra",
+      "emoji": "✏️"
+    },
+    {
+      "id": "comp1",
+      "ar": "مِحْرَاثٌ",
+      "fr": "Charrue",
+      "emoji": "🚜"
+    },
+    {
+      "id": "comp2",
+      "ar": "أَوْرَاقٌ",
+      "fr": "Des feuilles",
+      "emoji": "🍃"
+    },
+    {
+      "id": "comp3",
+      "ar": "إِعْصَارٌ",
+      "fr": "Tornade",
+      "emoji": "🌪️"
+    },
+    {
+      "id": "comp4",
+      "ar": "إِبْرِيقٌ",
+      "fr": "Théière",
+      "emoji": "🫖"
+    },
+    {
+      "id": "comp5",
+      "ar": "طَرِيقٌ",
+      "fr": "Route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "comp6",
+      "ar": "نَارٌ",
+      "fr": "Feu",
+      "emoji": "🔥"
+    },
+    {
+      "id": "comp7",
+      "ar": "دَرَّاجَةٌ",
+      "fr": "Vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "comp8",
+      "ar": "حَرِيقٌ",
+      "fr": "Incendie",
+      "emoji": "🏚️"
+    },
+    {
+      "id": "comp9",
+      "ar": "جَرَّارٌ",
+      "fr": "Tracteur",
+      "emoji": "🚜"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec07_raa",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "٣- أقرأُ الكَلِمَةَ ثُمَّ أرْبِطُها بِصُورَتِها. ٤- أكْتُبُ. ٥- أُكْمِلُ بِمَا يُنَاسِبُ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "سَرِيرٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "جِسْرٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "قِرْشٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "رِيحٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre",
+      "texte_ar": "ر",
+      "voix_m": "lecture_niv4_lec07_raa_p2_lettre_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_lettre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp1",
+      "texte_ar": "مِحْرَاثٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp2",
+      "texte_ar": "أَوْرَاقٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp3",
+      "texte_ar": "إِعْصَارٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp4",
+      "texte_ar": "إِبْرِيقٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp5",
+      "texte_ar": "طَرِيقٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp6",
+      "texte_ar": "نَارٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp7",
+      "texte_ar": "دَرَّاجَةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp7_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp8",
+      "texte_ar": "حَرِيقٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp8_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp9",
+      "texte_ar": "جَرَّارٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p2_comp9_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p2_comp9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:58:19.211375",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_raa",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 17
+  }
+}

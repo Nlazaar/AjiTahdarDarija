@@ -1,0 +1,233 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de lettres, et compléter des mots avec la lettre manquante (ي)",
+  "titre": {
+    "fr": "La lettre Ya - Exercices de lecture, écriture et complétion",
+    "ar": "حرف الياء - تدريبات القراءة والكتابة والإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre. Exercice 5 : Je complète avec ce qui convient.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب. تمرين 5: أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "يُنَظِّفُ",
+      "fr": "Il nettoie",
+      "emoji": "🧹"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "خَيْمَةٌ",
+      "fr": "Une tente",
+      "emoji": "⛺"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "شَايٌ",
+      "fr": "Du thé",
+      "emoji": "🍵"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "زَرْبِيَّةٌ",
+      "fr": "Un tapis",
+      "emoji": "🪄"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "بَيْضَةٌ",
+      "fr": "Un œuf",
+      "emoji": "🥚"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "زَيْتٌ",
+      "fr": "De l'huile d'olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "هَدِيَّةٌ",
+      "fr": "Cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "زَيْتُونٌ",
+      "fr": "Olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "زَرَابِيُّ",
+      "fr": "Des tapis",
+      "emoji": "🪄"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "خَيْلٌ",
+      "fr": "Des chevaux",
+      "emoji": "🐴"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "خُيُوطٌ",
+      "fr": "Des fils",
+      "emoji": "🧵"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "يَغْسِلُ",
+      "fr": "Il lave",
+      "emoji": "🚿"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "ضَيْعَةٌ",
+      "fr": "Une ferme",
+      "emoji": "🏡"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "يَسَارٌ",
+      "fr": "Gauche",
+      "emoji": "⬅️"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "يَمِينٌ",
+      "fr": "Droite",
+      "emoji": "➡️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_03_yee",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب. تمرين 5: أكمل بما يناسب.",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "يُنَظِّفُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "خَيْمَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "شَايٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "زَرْبِيَّةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "بَيْضَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "زَيْتٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "هَدِيَّةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "زَرَابِيُّ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "خَيْلٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "خُيُوطٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "يَغْسِلُ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "ضَيْعَةٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "يَسَارٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "يَمِينٌ",
+      "voix_m": "lecture_niv5_lec01_03_yee_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_03_yee_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:19:10.976750",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_03_yee",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 16
+  }
+}

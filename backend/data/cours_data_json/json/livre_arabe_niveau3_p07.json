@@ -1,0 +1,246 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبُطُ الْبِطَاقَاتِ لِأُكَوِّنَ كَلِمَةً ثُمَّ أَرْبُطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les syllabes pour former un mot, puis relie le mot à l'image correspondante.",
+    "ar": "أَرْبُطُ الْبِطَاقَاتِ لِأُكَوِّنَ كَلِمَةً ثُمَّ أَرْبُطُهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "نَزَبَ",
+      "fr": "sauta / bondit (enfant qui saute)",
+      "emoji": "🧒"
+    },
+    {
+      "id": "mot2",
+      "ar": "فَقَتَ",
+      "fr": "élève qui écrit (enfant qui écrit)",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot3",
+      "ar": "رَأَ",
+      "fr": "lire (enfant qui lit)",
+      "emoji": "📖"
+    },
+    {
+      "id": "mot4",
+      "ar": "خَدَلَّ",
+      "fr": "entrer (enfant qui entre par une porte)",
+      "emoji": "🚪"
+    },
+    {
+      "id": "syl1",
+      "ar": "بَ",
+      "fr": "syllabe ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl2",
+      "ar": "نَزَ",
+      "fr": "syllabe naza",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl3",
+      "ar": "فَ",
+      "fr": "syllabe fa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl4",
+      "ar": "تَ",
+      "fr": "syllabe ta",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl5",
+      "ar": "قَ",
+      "fr": "syllabe qa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl6",
+      "ar": "قَّ",
+      "fr": "syllabe qqa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl7",
+      "ar": "رَ",
+      "fr": "syllabe ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl8",
+      "ar": "أَ",
+      "fr": "syllabe a",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl9",
+      "ar": "خَ",
+      "fr": "syllabe kha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl10",
+      "ar": "لَّ",
+      "fr": "syllabe lla",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl11",
+      "ar": "دَ",
+      "fr": "syllabe da",
+      "emoji": "🔤"
+    },
+    {
+      "id": "syl12",
+      "ar": "كَ",
+      "fr": "syllabe ka",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَرْبُطُ الْبِطَاقَاتِ لِأُكَوِّنَ كَلِمَةً ثُمَّ أَرْبُطُهَا بِصُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_p7_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "نَزَبَ",
+      "voix_m": "livre_arabe_niveau3_p7_mot1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "فَقَتَ",
+      "voix_m": "livre_arabe_niveau3_p7_mot2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "رَأَ",
+      "voix_m": "livre_arabe_niveau3_p7_mot3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "خَدَلَّ",
+      "voix_m": "livre_arabe_niveau3_p7_mot4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl1",
+      "texte_ar": "بَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl2",
+      "texte_ar": "نَزَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl3",
+      "texte_ar": "فَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl4",
+      "texte_ar": "تَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl5",
+      "texte_ar": "قَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl6",
+      "texte_ar": "قَّ",
+      "voix_m": "livre_arabe_niveau3_p7_syl6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl7",
+      "texte_ar": "رَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl8",
+      "texte_ar": "أَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl9",
+      "texte_ar": "خَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl10",
+      "texte_ar": "لَّ",
+      "voix_m": "livre_arabe_niveau3_p7_syl10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl11",
+      "texte_ar": "دَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_syl12",
+      "texte_ar": "كَ",
+      "voix_m": "livre_arabe_niveau3_p7_syl12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p7_syl12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:55:26.339225",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 17
+  }
+}

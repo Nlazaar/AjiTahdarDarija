@@ -1,0 +1,155 @@
+{
+  "page_nb": 64,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie chaque aliment à l'ustensile approprié",
+    "ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه"
+  },
+  "enonce": {
+    "fr": "Relie chaque aliment ou boisson à l'ustensile qu'on utilise pour le consommer",
+    "ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه"
+  },
+  "elements": [
+    {
+      "id": "assiette",
+      "ar": "طَبَق",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "cuillere",
+      "ar": "مِلْعَقَة",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "couteau",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "verre",
+      "ar": "كَأْس",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "macaroni",
+      "ar": "المَقْرُونَة",
+      "fr": "les pâtes",
+      "emoji": "🍝"
+    },
+    {
+      "id": "lait",
+      "ar": "الحَلِيب",
+      "fr": "le lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "pain",
+      "ar": "الخُبْز",
+      "fr": "le pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "soupe",
+      "ar": "الحَسَاء",
+      "fr": "la soupe",
+      "emoji": "🍲"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p64_consigne",
+      "texte_ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه",
+      "voix_m": "livre_3_5ans_tome2_p64_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_assiette",
+      "texte_ar": "طَبَق",
+      "voix_m": "livre_3_5ans_tome2_p64_assiette_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_assiette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "livre_3_5ans_tome2_p64_fourchette_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cuillere",
+      "texte_ar": "مِلْعَقَة",
+      "voix_m": "livre_3_5ans_tome2_p64_cuillere_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_cuillere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سِكِّين",
+      "voix_m": "livre_3_5ans_tome2_p64_couteau_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_couteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verre",
+      "texte_ar": "كَأْس",
+      "voix_m": "livre_3_5ans_tome2_p64_verre_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_verre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_macaroni",
+      "texte_ar": "المَقْرُونَة",
+      "voix_m": "livre_3_5ans_tome2_p64_macaroni_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_macaroni_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lait",
+      "texte_ar": "الحَلِيب",
+      "voix_m": "livre_3_5ans_tome2_p64_lait_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_lait_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pain",
+      "texte_ar": "الخُبْز",
+      "voix_m": "livre_3_5ans_tome2_p64_pain_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_pain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soupe",
+      "texte_ar": "الحَسَاء",
+      "voix_m": "livre_3_5ans_tome2_p64_soupe_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p64_soupe_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:06:18.902658",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 10
+  }
+}

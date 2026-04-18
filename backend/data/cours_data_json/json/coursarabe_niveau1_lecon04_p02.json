@@ -1,0 +1,103 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier par un trait chaque animal à sa nourriture correspondante",
+  "titre": {
+    "fr": "Je relie l'animal avec ce qu'il peut manger",
+    "ar": "أربط بخط بين الحيوان و ما يأكل"
+  },
+  "enonce": {
+    "fr": "Relie chaque animal à la nourriture qu'il mange",
+    "ar": "أربط بخط بين الحيوان و ما يأكل"
+  },
+  "elements": [
+    {
+      "id": "animal_1",
+      "ar": "كلب",
+      "fr": "chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "animal_2",
+      "ar": "جمل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "animal_3",
+      "ar": "نمر",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "nourriture_1",
+      "ar": "عشب",
+      "fr": "herbe",
+      "emoji": "🌿"
+    },
+    {
+      "id": "nourriture_2",
+      "ar": "لحم",
+      "fr": "viande",
+      "emoji": "🍖"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أربط بخط بين الحيوان و ما يأكل",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_1",
+      "texte_ar": "كلب",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_animal_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_animal_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_2",
+      "texte_ar": "جمل",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_animal_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_animal_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_3",
+      "texte_ar": "نمر",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_animal_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_animal_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nourriture_1",
+      "texte_ar": "عشب",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_nourriture_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_nourriture_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nourriture_2",
+      "texte_ar": "لحم",
+      "voix_m": "coursarabe_niveau1_lecon04_p2_nourriture_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p2_nourriture_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:43:33.767674",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 6
+  }
+}

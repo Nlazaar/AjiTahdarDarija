@@ -1,0 +1,142 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie les mots identiques au mot modèle (nez = أَنْف)",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج أَنْف"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "أَنْف",
+      "fr": "nez (modèle)",
+      "emoji": "👃"
+    },
+    {
+      "id": "mot1",
+      "ar": "أَتَف",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot2",
+      "ar": "أَنْف",
+      "fr": "nez (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot3",
+      "ar": "أَنَق",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "mot4",
+      "ar": "أَنْف",
+      "fr": "nez (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot5",
+      "ar": "أَنْف",
+      "fr": "nez (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot6",
+      "ar": "أَنْف",
+      "fr": "nez (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "mot7",
+      "ar": "لَنْف",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_modele_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "أَتَف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "أَنَق",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot7",
+      "texte_ar": "لَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p4_mot7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p4_mot7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:20:58.696156",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 9
+  }
+}

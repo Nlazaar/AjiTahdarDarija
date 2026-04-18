@@ -1,0 +1,116 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Chanson illustrée avec images associées aux paroles pour apprentissage oral et lecture",
+  "titre": {
+    "fr": "La chanson de l'araignée",
+    "ar": "أغنية العنكبوت"
+  },
+  "enonce": {
+    "fr": "L'araignée de la maison / Monte le mur / La pluie la fait tomber / Elle tombe dans la flaque / Le soleil du jour / Chasse les pluies",
+    "ar": "عَنْكَبُوتُ الدَّار / تَصْعَدُ الْجِدَار / تَهْطِلُ الأمْطَار / تَهْوِي فِي الْغَدِير / شَمْسُ النَّهَار / تَطْرُدُ الأمْطَار"
+  },
+  "elements": [
+    {
+      "id": "vers1",
+      "ar": "عَنْكَبُوتُ الدَّار",
+      "fr": "L'araignée de la maison",
+      "emoji": "🕷️🏠"
+    },
+    {
+      "id": "vers2",
+      "ar": "تَصْعَدُ الْجِدَار",
+      "fr": "Elle monte le mur",
+      "emoji": "🧱⬆️"
+    },
+    {
+      "id": "vers3",
+      "ar": "تَهْطِلُ الأمْطَار",
+      "fr": "La pluie tombe",
+      "emoji": "🌧️"
+    },
+    {
+      "id": "vers4",
+      "ar": "تَهْوِي فِي الْغَدِير",
+      "fr": "Elle tombe dans la flaque",
+      "emoji": "💧🕷️"
+    },
+    {
+      "id": "vers5",
+      "ar": "شَمْسُ النَّهَار",
+      "fr": "Le soleil du jour",
+      "emoji": "☀️"
+    },
+    {
+      "id": "vers6",
+      "ar": "تَطْرُدُ الأمْطَار",
+      "fr": "Chasse les pluies",
+      "emoji": "🌤️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "عَنْكَبُوتُ الدَّار / تَصْعَدُ الْجِدَار / تَهْطِلُ الأمْطَار / تَهْوِي فِي الْغَدِير / شَمْسُ النَّهَار / تَطْرُدُ الأمْطَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers1",
+      "texte_ar": "عَنْكَبُوتُ الدَّار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers2",
+      "texte_ar": "تَصْعَدُ الْجِدَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers3",
+      "texte_ar": "تَهْطِلُ الأمْطَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers4",
+      "texte_ar": "تَهْوِي فِي الْغَدِير",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers5",
+      "texte_ar": "شَمْسُ النَّهَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vers6",
+      "texte_ar": "تَطْرُدُ الأمْطَار",
+      "voix_m": "coursarabe_niveau1_lecon05_p1_vers6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p1_vers6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:46:24.547288",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 7
+  }
+}

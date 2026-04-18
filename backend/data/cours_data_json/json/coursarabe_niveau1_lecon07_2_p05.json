@@ -1,0 +1,129 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Colorier uniquement la lettre ب parmi un ensemble de lettres arabes mélangées",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أَلَوِّنُ الحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement la lettre ب (ba) parmi toutes les lettres proposées",
+    "ar": "لَوِّنْ حَرْفَ الباء فَقَط مِنْ بَيْنِ الحُرُوفِ الْمَعْرُوضَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ب",
+      "fr": "ba (lettre cible)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "2",
+      "ar": "ت",
+      "fr": "ta",
+      "emoji": "⬜"
+    },
+    {
+      "id": "3",
+      "ar": "ن",
+      "fr": "nun",
+      "emoji": "⬜"
+    },
+    {
+      "id": "4",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": "⬜"
+    },
+    {
+      "id": "5",
+      "ar": "ر",
+      "fr": "ra",
+      "emoji": "⬜"
+    },
+    {
+      "id": "6",
+      "ar": "س",
+      "fr": "sin",
+      "emoji": "⬜"
+    },
+    {
+      "id": "7",
+      "ar": "ف",
+      "fr": "fa",
+      "emoji": "⬜"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الباء فَقَط مِنْ بَيْنِ الحُرُوفِ الْمَعْرُوضَة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ب",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ت",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ن",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "و",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ف",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p5_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p5_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:57:03.437426",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 8
+  }
+}

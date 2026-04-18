@@ -1,0 +1,142 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Découper les lettres en bas de page et les coller dans l'ordre alphabétique dans les cases vides, puis les mémoriser",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres, colle-les dans l'ordre alphabétique dans les cases vides, puis apprends-les par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "elements": [
+    {
+      "id": "lettre_alif",
+      "ar": "أ",
+      "fr": "Alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ba",
+      "ar": "ب",
+      "fr": "Ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ta",
+      "ar": "ت",
+      "fr": "Ta",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_tha",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "mot_asad",
+      "ar": "أَسَدٌ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "mot_baqara",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "mot_tamr",
+      "ar": "تَمْرٌ",
+      "fr": "Dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "mot_thalj",
+      "ar": "ثَلْجٌ",
+      "fr": "Neige",
+      "emoji": "❄️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_2",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_alif",
+      "texte_ar": "أ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_lettre_alif_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_lettre_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ba",
+      "texte_ar": "ب",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_lettre_ba_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_lettre_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ta",
+      "texte_ar": "ت",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_lettre_ta_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_lettre_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_tha",
+      "texte_ar": "ث",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_lettre_tha_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_lettre_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_asad",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_mot_asad_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_mot_asad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_baqara",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_mot_baqara_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_mot_baqara_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_tamr",
+      "texte_ar": "تَمْرٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_mot_tamr_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_mot_tamr_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_thalj",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p5_mot_thalj_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p5_mot_thalj_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:39:22.720032",
+    "niveau": 1,
+    "lecon": 31,
+    "nom_pdf": "coursarabe_niveau1_lecon01_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon31/",
+    "nb_audio_assets": 9
+  }
+}

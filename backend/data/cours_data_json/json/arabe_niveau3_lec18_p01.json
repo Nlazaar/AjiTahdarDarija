@@ -1,0 +1,77 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Les jours de la semaine - Relier le mot à l'image",
+    "ar": "أَيَّامُ الأُسْبُوعِ - اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis puis je relie avec l'image qui correspond",
+    "ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَعِبَ",
+      "fr": "Il est fatigué",
+      "emoji": "😓"
+    },
+    {
+      "id": "2",
+      "ar": "غَضِبَ",
+      "fr": "Il est en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "3",
+      "ar": "فَهِمَ",
+      "fr": "Il a compris",
+      "emoji": "💡"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec18",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "arabe_niveau3_lec18_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec18_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَعِبَ",
+      "voix_m": "arabe_niveau3_lec18_p1_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec18_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "arabe_niveau3_lec18_p1_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec18_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "arabe_niveau3_lec18_p1_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec18_p1_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:49:49.669207",
+    "niveau": 3,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau3_lec18",
+    "bucket_audio": "audio-lessons/niveau3/lecon18/",
+    "nb_audio_assets": 4
+  }
+}

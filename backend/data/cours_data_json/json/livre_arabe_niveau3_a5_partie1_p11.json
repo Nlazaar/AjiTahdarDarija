@@ -1,0 +1,155 @@
+{
+  "page_nb": 21,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "J'entoure les lettres avec une kasra",
+    "ar": "أُحيطُ بِخَطٍّ مُغَلَق الحَرْفَ الَّذي لَهُ كَسْرَة (المَكْسُور)"
+  },
+  "enonce": {
+    "fr": "J'entoure dans ces mots les lettres qui ont une « kasra »",
+    "ar": "أُحيطُ بِخَطٍّ مُغَلَق الحَرْفَ الَّذي لَهُ كَسْرَة في الكَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "2",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "3",
+      "ar": "مِلْعَقَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "4",
+      "ar": "مِلْحٌ",
+      "fr": "sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "5",
+      "ar": "سِكِّينٌ",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "6",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "🧺"
+    },
+    {
+      "id": "7",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "8",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise",
+      "emoji": "👕"
+    },
+    {
+      "id": "9",
+      "ar": "حِصَانٌ",
+      "fr": "cheval",
+      "emoji": "🐴"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p21_consigne",
+      "texte_ar": "أُحيطُ بِخَطٍّ مُغَلَق الحَرْفَ الَّذي لَهُ كَسْرَة في الكَلِمَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِلْعَقَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مِلْحٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سِكِّينٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "حِصَانٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p21_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p21_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:24:33.482799",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

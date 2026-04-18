@@ -1,0 +1,259 @@
+{
+  "page_nb": 29,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلِّوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie les lettres qui composent le mot illustré par l'image",
+    "ar": "أَلِّوِّنُ حُرُوفَ الكَلِمَةِ الْمُصَوَّرَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex5_mot",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "ex5_lettre1",
+      "ar": "خِ",
+      "fr": "lettre kha isolée",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre2",
+      "ar": "حِ",
+      "fr": "lettre ha avec kasra",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre3",
+      "ar": "دَ",
+      "fr": "lettre dal avec fatha",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre4",
+      "ar": "ذَ",
+      "fr": "lettre dhal avec fatha",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre5",
+      "ar": "ـا",
+      "fr": "alif de prolongation",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre6",
+      "ar": "ا",
+      "fr": "alif",
+      "emoji": ""
+    },
+    {
+      "id": "ex5_lettre7",
+      "ar": "ءٌ",
+      "fr": "hamza avec tanwin",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_mot",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "ex6_lettre1",
+      "ar": "فَ",
+      "fr": "lettre fa avec fatha",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre2",
+      "ar": "فُ",
+      "fr": "lettre fa avec damma",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre3",
+      "ar": "فُسْ",
+      "fr": "fa-sukun",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre4",
+      "ar": "فُسْتَ",
+      "fr": "fa-sin-ta",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre5",
+      "ar": "نَ",
+      "fr": "lettre nun avec fatha",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre6",
+      "ar": "تَ",
+      "fr": "lettre ta avec fatha",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre7",
+      "ar": "ـا",
+      "fr": "alif de prolongation",
+      "emoji": ""
+    },
+    {
+      "id": "ex6_lettre8",
+      "ar": "نٌ",
+      "fr": "nun avec tanwin",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p29_consigne",
+      "texte_ar": "أَلِّوِّنُ حُرُوفَ الكَلِمَةِ الْمُصَوَّرَةِ",
+      "voix_m": "livre_3_5ans_tome2_p29_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_mot",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_mot_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_mot_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre1",
+      "texte_ar": "خِ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre2",
+      "texte_ar": "حِ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre3",
+      "texte_ar": "دَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre4",
+      "texte_ar": "ذَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre5",
+      "texte_ar": "ـا",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre6",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_lettre7",
+      "texte_ar": "ءٌ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex5_lettre7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex5_lettre7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_mot_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_mot_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre1",
+      "texte_ar": "فَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre2",
+      "texte_ar": "فُ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre3",
+      "texte_ar": "فُسْ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre4",
+      "texte_ar": "فُسْتَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre5",
+      "texte_ar": "نَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre6",
+      "texte_ar": "تَ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre7",
+      "texte_ar": "ـا",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_lettre8",
+      "texte_ar": "نٌ",
+      "voix_m": "livre_3_5ans_tome2_p29_ex6_lettre8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p29_ex6_lettre8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:17.409588",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 18
+  }
+}

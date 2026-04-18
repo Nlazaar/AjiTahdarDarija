@@ -3,15 +3,17 @@
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { useAudio } from "@/hooks/useAudio"
-import { LETTER_GROUPS } from "@/data/letterGroups"
-import type { DarijaLetter } from "@/components/exercises/types"
+import { LETTER_GROUPS, ALPHABET_LETTERS, MSA_ALPHABET_LETTERS } from "@/data/letterGroups"
+import type { DarijaLetter, AlphabetLetter } from "@/components/exercises/types"
 import { ExerciseCard, ContinueButton, FeedbackBanner } from "@/components/ui"
 import GenericExercisePlayer, { type CollectedAnswer } from "@/components/exercises/GenericExercisePlayer"
 import { submitLesson } from "@/lib/api"
 import { useUserProgress } from "@/contexts/UserProgressContext"
 import { getSettings } from "@/hooks/useSettings"
 
+import LessonVideo        from "@/components/LessonVideo"
 import FlashCard          from "@/components/exercises/FlashCard"
+import HarakatCard        from "@/components/exercises/HarakatCard"
 import ChoixLettre        from "@/components/exercises/ChoixLettre"
 import AssocierLettres    from "@/components/exercises/AssocierLettres"
 import TrouverLesPaires   from "@/components/exercises/TrouverLesPaires"
@@ -21,17 +23,28 @@ import DicterRomanisation from "@/components/exercises/DicterRomanisation"
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
-type ExPhase  = "flashcard" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter"
+type ExPhase  = "flashcard" | "harakat" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter"
 type TrnPhase = "t1" | "t2" | "t3" | "t4" | "t5" | "t6"
-type Phase    = ExPhase | TrnPhase | "finished"
+type Phase    = ExPhase | TrnPhase | "video" | "finished"
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
-const EX_PHASES: ExPhase[] = ["flashcard", "choix", "association", "paires", "entendre", "vrai_faux", "dicter"]
+const EX_PHASES: ExPhase[] = ["flashcard", "harakat", "choix", "association", "paires", "entendre", "vrai_faux", "dicter"]
 
-const PHASE_LABELS = ["Intro", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter"]
+const PHASE_LABELS = ["Lettres", "Voyelles", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter"]
 
 const PHASE_SEQUENCE: Phase[] = [
+  "flashcard", "harakat", "t1",
+  "choix",     "t2",
+  "association","t3",
+  "paires",    "t4",
+  "entendre",  "t5",
+  "vrai_faux", "t6",
+  "dicter",    "finished",
+]
+
+// Sequence for vocab lessons (no harakat)
+const VOCAB_PHASE_SEQUENCE: Phase[] = [
   "flashcard", "t1",
   "choix",     "t2",
   "association","t3",
@@ -42,29 +55,27 @@ const PHASE_SEQUENCE: Phase[] = [
 ]
 
 const WEIGHTS: Record<ExPhase, [number, number]> = {
-  flashcard:   [0,   14],
-  choix:       [14,  28],
-  association: [28,  42],
-  paires:      [42,  57],
-  entendre:    [57,  71],
-  vrai_faux:   [71,  85],
-  dicter:      [85, 100],
+  flashcard:   [0,   12],
+  harakat:     [12,  24],
+  choix:       [24,  36],
+  association: [36,  48],
+  paires:      [48,  60],
+  entendre:    [60,  72],
+  vrai_faux:   [72,  86],
+  dicter:      [86, 100],
 }
 
 const TRANSITIONS: Record<TrnPhase, { emoji: string; title: string; sub: string }> = {
-  t1: { emoji: "⭐", title: "Phase 1 réussie !",      sub: "Maintenant prononce les lettres." },
-  t2: { emoji: "🎯", title: "Super !",                sub: "Associe les lettres à leur son."  },
-  t3: { emoji: "🔥", title: "Tu cartonnes !",         sub: "Mémorise les paires."             },
-  t4: { emoji: "⚡", title: "Presque fini !",         sub: "Écoute et identifie."             },
-  t5: { emoji: "🎯", title: "Dernière ligne droite !", sub: "Vrai ou Faux ?"                  },
-  t6: { emoji: "🏆", title: "Excellent !",            sub: "Plus qu'un exercice !"            },
+  t1: { emoji: "⭐", title: "Super !",                 sub: "Choisis la bonne prononciation."  },
+  t2: { emoji: "🎯", title: "Bien joué !",             sub: "Associe les lettres à leur son."   },
+  t3: { emoji: "🔥", title: "Tu cartonnes !",          sub: "Trouve les paires."                },
+  t4: { emoji: "⚡", title: "Excellent !",             sub: "Écoute et identifie."              },
+  t5: { emoji: "🎯", title: "Dernière ligne droite !", sub: "Vrai ou Faux ?"                    },
+  t6: { emoji: "🏆", title: "Presque fini !",          sub: "Écris la romanisation."            },
 }
 
-// Phases où les cœurs sont affichés
 const HEART_PHASES: ExPhase[] = ["paires", "entendre", "vrai_faux"]
-// Phases avec footer (PASSER + VALIDER/CONTINUER)
 const FEEDBACK_PHASES: ExPhase[] = ["choix", "entendre", "vrai_faux", "dicter"]
-// Phases sans feedback binaire (matching) — juste PASSER + CONTINUER quand tout trouvé
 const MATCHING_PHASES: ExPhase[] = ["association", "paires"]
 const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
@@ -117,7 +128,6 @@ function SignalerModal({ onClose }: { onClose: () => void }) {
         style={{ background: '#1e2d35', border: '1px solid #2a3d47' }}
         onClick={e => e.stopPropagation()}
       >
-        {/* Header */}
         <div className="flex items-center justify-between">
           <span className="font-black text-white text-base">Signaler un problème</span>
           <button onClick={onClose} className="text-[#6b7f8a] hover:text-white text-xl font-bold">✕</button>
@@ -130,7 +140,6 @@ function SignalerModal({ onClose }: { onClose: () => void }) {
           </div>
         ) : (
           <>
-            {/* Options */}
             <div className="flex flex-col gap-2">
               {SIGNALER_OPTIONS.map(opt => {
                 const isSelected = selected.has(opt.id)
@@ -159,7 +168,6 @@ function SignalerModal({ onClose }: { onClose: () => void }) {
               })}
             </div>
 
-            {/* Bouton envoyer */}
             <button
               onClick={handleEnvoyer}
               disabled={selected.size === 0}
@@ -181,14 +189,8 @@ function SignalerModal({ onClose }: { onClose: () => void }) {
 }
 
 const SUCCESS_MESSAGES = [
-  "Super !",
-  "Excellent !",
-  "Parfait !",
-  "Bravo !",
-  "Bien joué !",
-  "C'est ça !",
-  "Magnifique !",
-  "Tu assures !",
+  "Super !", "Excellent !", "Parfait !", "Bravo !",
+  "Bien joué !", "C'est ça !", "Magnifique !", "Tu assures !",
 ]
 const randomSuccess = () => SUCCESS_MESSAGES[Math.floor(Math.random() * SUCCESS_MESSAGES.length)]
 
@@ -208,7 +210,7 @@ function TransitionScreen({ emoji, title, sub, onContinue, animate = true }: {
       <h2 className="text-2xl font-bold text-white">{title}</h2>
       <p className="text-sm text-[#8a9baa] max-w-xs">{sub}</p>
       <div className="w-full max-w-xs mt-2">
-        <ContinueButton onClick={onContinue} label="Continuer →" />
+        <ContinueButton onClick={onContinue} label="Continuer" />
       </div>
     </div>
   )
@@ -241,7 +243,7 @@ function FinishedScreen({ onNext, hasNext, animate = true }: { onNext: () => voi
       <div className="w-full max-w-xs mt-2">
         <ContinueButton
           onClick={onNext}
-          label={hasNext ? 'Leçon suivante →' : 'Retour au parcours'}
+          label={hasNext ? 'Leçon suivante' : 'Retour au parcours'}
         />
       </div>
     </div>
@@ -271,22 +273,27 @@ export default function LessonClient({
 
   const { addXP, addGemmes, incrementStreak, updateQuete, completeLesson } = useUserProgress()
 
+  // ── Determine if this is an alphabet lesson ──
+  const lessonSlug = lesson?.slug ?? ''
+  const isAlphabetLesson = lessonSlug.startsWith('alphabet-') || lessonSlug.startsWith('msa-alphabet-')
+  const allAlpha = { ...ALPHABET_LETTERS, ...MSA_ALPHABET_LETTERS }
+  const alphabetLetters: AlphabetLetter[] = isAlphabetLesson ? (allAlpha[lessonSlug] ?? []) : []
+
   // ── Données lettres ───────────────────────────────────────────────────────
-  // Priorité : groupe de lettres de la leçon (letterGroups.ts) > vocabulaire DB
-  const staticGroup: DarijaLetter[] = LETTER_GROUPS[lesson?.slug ?? ''] ?? []
+  const staticGroup: DarijaLetter[] = LETTER_GROUPS[lessonSlug] ?? []
   const vocabGroup: DarijaLetter[] = Array.isArray(_vocabulary)
     ? _vocabulary
         .filter(v => v?.word)
         .map(v => ({
-          letter: v.word as string,
-          latin:  (v.transliteration ?? '') as string,
-          fr:     ((v.translation as any)?.fr ?? '') as string,
+          letter:   v.word as string,
+          latin:    (v.transliteration ?? '') as string,
+          fr:       ((v.translation as any)?.fr ?? (v.translation as any)?.default ?? '') as string,
+          imageUrl: (v.imageUrl ?? undefined) as string | undefined,
         }))
     : []
   const letterGroup: DarijaLetter[] = staticGroup.length > 0 ? staticGroup : vocabGroup
   const hasLetterGroup = letterGroup.length > 0
 
-  // Pour les exercices à lettre unique : on prend la 1ère lettre du groupe
   const target = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
   const pool   = letterGroup.slice(1)
 
@@ -295,13 +302,15 @@ export default function LessonClient({
   const dbExercises = Array.isArray(_exercises)
     ? _exercises.filter((e: any) => e?.id && DB_TYPES.includes(e?.type))
     : []
+  const useGenericDbExercises =
+    lesson?.content?.presentation === 'generic-db' ||
+    lesson?.content?.source?.type === 'pdf-dataset'
 
   // ── TOUS les hooks inconditionnellement ──────────────────────────────────
 
-  // Index pour le défilement des FlashCards (une par lettre du groupe)
   const [flashLetterIdx, setFlashLetterIdx] = useState(0)
+  const [harakatLetterIdx, setHarakatLetterIdx] = useState(0)
 
-  // Données générées une seule fois au montage (basées sur le groupe de lettres)
   const [choixChoices]  = useState<DarijaLetter[]>(() =>
     letterGroup.length >= 3
       ? shuffle([target, ...shuffle(pool).slice(0, 2)])
@@ -326,11 +335,13 @@ export default function LessonClient({
     shuffle([target.latin ?? '', ...shuffle(pool).slice(0, 6).map(l => l.latin ?? '')])
   )
 
-  // File de phases : la phase courante est toujours queue[0]
+  // Use alphabet sequence (with harakat) or vocab sequence
   const [queue, setQueue] = useState<Phase[]>(() => {
-    let seq = PHASE_SEQUENCE.filter(p => p !== 'finished')
+    const baseSeq = isAlphabetLesson ? PHASE_SEQUENCE : VOCAB_PHASE_SEQUENCE
+    let seq = baseSeq.filter(p => p !== 'finished')
     if (!settings.listeningExercises) seq = seq.filter(p => p !== 'entendre' && p !== 't4')
     if (!settings.encouragement)      seq = seq.filter(p => !['t1','t2','t3','t4','t5','t6'].includes(p))
+    if ((lesson as any)?.videoUrl) seq = ['video', ...seq]
     return seq
   })
   const phase = queue[0] ?? 'finished'
@@ -345,7 +356,6 @@ export default function LessonClient({
   const [renderKey,    setRenderKey]    = useState(0)
   const [showSignaler, setShowSignaler] = useState(false)
 
-  // Quand toutes les paires sont trouvées (matching), déclencher le succès automatiquement
   useEffect(() => {
     const matching = MATCHING_PHASES.includes(phase as ExPhase)
     if (isReady && matching && !answered) {
@@ -355,7 +365,6 @@ export default function LessonClient({
     }
   }, [isReady, phase, answered]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // XP gagné une seule fois à la fin (flow alphabet)
   useEffect(() => {
     if (queue.length === 0 && !xpAdded) {
       addXP(50)
@@ -368,7 +377,6 @@ export default function LessonClient({
     }
   }, [queue.length]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // handleFinish pour GenericExercisePlayer (doit être défini avant le return conditionnel)
   const handleGenericFinish = async (xp: number, answers: CollectedAnswer[]) => {
     try {
       await submitLesson(lesson.id, { answers })
@@ -385,7 +393,7 @@ export default function LessonClient({
   }
 
   // ── Si pas de groupe de lettres ni vocab DB → exercices DB (player générique) ─
-  if (!hasLetterGroup && dbExercises.length > 0) {
+  if ((useGenericDbExercises || !hasLetterGroup) && dbExercises.length > 0) {
     return (
       <GenericExercisePlayer
         exercises={dbExercises}
@@ -427,19 +435,27 @@ export default function LessonClient({
     resetPhaseState()
   }
 
-  // Appelé par le bouton CONTINUER après feedback
   const handleContinuer = () => {
     if (isCorrect === false) {
-      resetPhaseState()  // mauvaise réponse → on reste sur la phase
+      resetPhaseState()
     } else {
-      advancePhase()  // bonne réponse → phase suivante
+      advancePhase()
     }
   }
 
-  // FlashCard : défile toutes les lettres du groupe avant de passer à la phase suivante
+  // FlashCard : défile toutes les lettres du groupe
   const handleFlashContinue = () => {
     if (flashLetterIdx < letterGroup.length - 1) {
       setFlashLetterIdx(i => i + 1)
+    } else {
+      advancePhase()
+    }
+  }
+
+  // HarakatCard : défile toutes les lettres du groupe (pour alphabet)
+  const handleHarakatContinue = () => {
+    if (harakatLetterIdx < alphabetLetters.length - 1) {
+      setHarakatLetterIdx(i => i + 1)
     } else {
       advancePhase()
     }
@@ -473,7 +489,8 @@ export default function LessonClient({
     }
   }
 
-  const handleSpeak = (l: DarijaLetter) => { if (settings.soundEffects) speak(l.letter, "ar-MA") }
+  const handleSpeak = (l: DarijaLetter) => { if (settings.soundEffects) speak(l.letter) }
+  const handleSpeakText = (text: string) => { if (settings.soundEffects) speak(text) }
 
   const handleNext = () => {
     router.push('/progress')
@@ -490,6 +507,22 @@ export default function LessonClient({
     )
   }
 
+  // ── Vidéo d'intro (si lesson.videoUrl) ────────────────────────────────────
+  if (phase === "video") {
+    const videoUrl = (lesson as any).videoUrl as string
+    const videoPoster = (lesson as any).videoPoster as string | null | undefined
+    return (
+      <div className="min-h-screen bg-[#131f24] flex items-center justify-center">
+        <LessonVideo
+          url={videoUrl}
+          poster={videoPoster}
+          title={(lesson as any).title}
+          onContinue={advancePhase}
+        />
+      </div>
+    )
+  }
+
   // ── Écran de transition ───────────────────────────────────────────────────
   if (["t1","t2","t3","t4","t5","t6"].includes(phase)) {
     const trn = TRANSITIONS[phase as TrnPhase]
@@ -502,12 +535,15 @@ export default function LessonClient({
     )
   }
 
-  // ── Lettre courante pour la FlashCard ─────────────────────────────────────
+  // ── Lettre courante ─────────────────────────────────────────────────────
   const flashTarget = letterGroup[flashLetterIdx] ?? target
+  const harakatTarget = alphabetLetters[harakatLetterIdx] ?? alphabetLetters[0]
 
-  // Indicateur "X / N" pour les FlashCards
   const flashProgress = letterGroup.length > 1
     ? `${flashLetterIdx + 1} / ${letterGroup.length}`
+    : undefined
+  const harakatProgress = alphabetLetters.length > 1
+    ? `${harakatLetterIdx + 1} / ${alphabetLetters.length}`
     : undefined
 
   // ── Rendu de l'exercice courant ───────────────────────────────────────────
@@ -516,11 +552,21 @@ export default function LessonClient({
       case "flashcard":
         return (
           <FlashCard
-            letter={flashTarget}
+            letter={isAlphabetLesson ? { ...flashTarget, name: (alphabetLetters[flashLetterIdx] ?? alphabetLetters[0])?.name } : flashTarget}
             onContinue={handleFlashContinue}
             onSpeak={handleSpeak}
             progress={flashProgress}
             mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
+          />
+        )
+      case "harakat":
+        if (!harakatTarget) { advancePhase(); return null }
+        return (
+          <HarakatCard
+            letter={harakatTarget}
+            onContinue={handleHarakatContinue}
+            onSpeak={handleSpeakText}
+            progress={harakatProgress}
           />
         )
       case "choix":
@@ -635,7 +681,7 @@ export default function LessonClient({
                              'w-6 h-6 bg-[#2a3d47] text-[#6b7f8a]'
                 }`}
               >
-                {i + 1}
+                {isDone ? '✓' : i + 1}
               </div>
             )
           })}
@@ -656,7 +702,6 @@ export default function LessonClient({
       {showFooter && (
         <footer className="fixed bottom-0 left-0 right-0 z-50">
           {!answered ? (
-            /* Before validation */
             <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4" style={{ animation: 'fadeUp 0.15s ease both' }}>
               <div className="max-w-lg mx-auto">
                 <button
@@ -674,9 +719,7 @@ export default function LessonClient({
               </div>
             </div>
           ) : (
-            /* After validation */
             <div style={{ animation: 'fadeUp 0.2s ease both' }}>
-              {/* Feedback row */}
               <div className={`px-6 py-4 border-t ${
                 isCorrect
                   ? 'bg-[#1a3328] border-[#34d399]/20'
@@ -705,7 +748,6 @@ export default function LessonClient({
                   </div>
                 </div>
               </div>
-              {/* CONTINUER button */}
               <div className={`px-4 py-4 ${isCorrect ? 'bg-[#1a3328]' : 'bg-[#3a1e1e]'}`}>
                 <div className="max-w-lg mx-auto">
                   <button
@@ -717,7 +759,7 @@ export default function LessonClient({
                     }`}
                     style={{ boxShadow: isCorrect ? '0 4px 0 #46a302' : '0 4px 0 #cc2a2a' }}
                   >
-                    CONTINUER →
+                    CONTINUER
                   </button>
                 </div>
               </div>

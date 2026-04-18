@@ -1,0 +1,116 @@
+{
+  "page_nb": 108,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à leur bonne place",
+    "ar": "أَلصِقْ أَجْزَاءَ الصَّورَةِ في مَكَانِها المناسِبِ"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de chaque image pour reconstituer le mot correspondant dans le bon ordre",
+    "ar": "قُصَّ وَأَلصِقْ أَجزاءَ كُلِّ صُورةٍ لِتُرَكِّبَ الكَلِمَةَ المُناسِبَةَ بِالتَّرتيبِ الصَّحيحِ"
+  },
+  "elements": [
+    {
+      "id": "whale_part1",
+      "ar": "حـ",
+      "fr": "baleine partie 1 (début)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "whale_part2",
+      "ar": "ـتـ",
+      "fr": "baleine partie 2 (milieu)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "whale_part3",
+      "ar": "ـو",
+      "fr": "baleine partie 3 (fin)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "octopus_part1",
+      "ar": "وطـ",
+      "fr": "pieuvre partie 1 (début)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "octopus_part2",
+      "ar": "أَخـ",
+      "fr": "pieuvre partie 2 (milieu)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "octopus_part3",
+      "ar": "ـبُ",
+      "fr": "pieuvre partie 3 (fin)",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p108_consigne",
+      "texte_ar": "قُصَّ وَأَلصِقْ أَجزاءَ كُلِّ صُورةٍ لِتُرَكِّبَ الكَلِمَةَ المُناسِبَةَ بِالتَّرتيبِ الصَّحيحِ",
+      "voix_m": "livre_3_5ans_tome2_p108_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_whale_part1",
+      "texte_ar": "حـ",
+      "voix_m": "livre_3_5ans_tome2_p108_whale_part1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_whale_part1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_whale_part2",
+      "texte_ar": "ـتـ",
+      "voix_m": "livre_3_5ans_tome2_p108_whale_part2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_whale_part2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_whale_part3",
+      "texte_ar": "ـو",
+      "voix_m": "livre_3_5ans_tome2_p108_whale_part3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_whale_part3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_octopus_part1",
+      "texte_ar": "وطـ",
+      "voix_m": "livre_3_5ans_tome2_p108_octopus_part1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_octopus_part1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_octopus_part2",
+      "texte_ar": "أَخـ",
+      "voix_m": "livre_3_5ans_tome2_p108_octopus_part2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_octopus_part2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_octopus_part3",
+      "texte_ar": "ـبُ",
+      "voix_m": "livre_3_5ans_tome2_p108_octopus_part3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p108_octopus_part3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:14:01.041925",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

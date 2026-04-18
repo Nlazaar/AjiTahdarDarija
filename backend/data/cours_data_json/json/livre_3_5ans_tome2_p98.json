@@ -1,0 +1,181 @@
+{
+  "page_nb": 98,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre غ dans chaque mot selon sa position : غ en début de mot, ـغـ au milieu, ـغ en fin de mot",
+    "ar": "لَوِّنْ حرف الغين في كل كلمة حسب موضعه في الكلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بَلاغ",
+      "fr": "message / annonce",
+      "emoji": "📢"
+    },
+    {
+      "id": "2",
+      "ar": "غَريب",
+      "fr": "étrange / étranger",
+      "emoji": "🌍"
+    },
+    {
+      "id": "3",
+      "ar": "غَاب",
+      "fr": "forêt / il a disparu",
+      "emoji": "🌲"
+    },
+    {
+      "id": "4",
+      "ar": "يَغْرِد",
+      "fr": "il chante (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "5",
+      "ar": "غُروب",
+      "fr": "coucher de soleil",
+      "emoji": "🌅"
+    },
+    {
+      "id": "6",
+      "ar": "غِلال",
+      "fr": "récoltes / céréales",
+      "emoji": "🌾"
+    },
+    {
+      "id": "7",
+      "ar": "بَلَّغ",
+      "fr": "il a transmis",
+      "emoji": "📣"
+    },
+    {
+      "id": "8",
+      "ar": "صَاغ",
+      "fr": "il a fabriqué / forgé",
+      "emoji": "⚒️"
+    },
+    {
+      "id": "9",
+      "ar": "مَغِيب",
+      "fr": "absence / disparition",
+      "emoji": "🌙"
+    },
+    {
+      "id": "10",
+      "ar": "غَفَر",
+      "fr": "il a pardonné",
+      "emoji": "🙏"
+    },
+    {
+      "id": "11",
+      "ar": "رَغِيف",
+      "fr": "pain / miche de pain",
+      "emoji": "🍞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p98_consigne",
+      "texte_ar": "لَوِّنْ حرف الغين في كل كلمة حسب موضعه في الكلمة",
+      "voix_m": "livre_3_5ans_tome2_p98_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بَلاغ",
+      "voix_m": "livre_3_5ans_tome2_p98_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غَريب",
+      "voix_m": "livre_3_5ans_tome2_p98_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غَاب",
+      "voix_m": "livre_3_5ans_tome2_p98_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "يَغْرِد",
+      "voix_m": "livre_3_5ans_tome2_p98_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "غُروب",
+      "voix_m": "livre_3_5ans_tome2_p98_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غِلال",
+      "voix_m": "livre_3_5ans_tome2_p98_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَلَّغ",
+      "voix_m": "livre_3_5ans_tome2_p98_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "صَاغ",
+      "voix_m": "livre_3_5ans_tome2_p98_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَغِيب",
+      "voix_m": "livre_3_5ans_tome2_p98_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "غَفَر",
+      "voix_m": "livre_3_5ans_tome2_p98_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رَغِيف",
+      "voix_m": "livre_3_5ans_tome2_p98_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p98_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:12:02.306985",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 12
+  }
+}

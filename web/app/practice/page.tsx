@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useUserProgress } from '@/contexts/UserProgressContext';
+import { useAudioCtx } from '@/contexts/AudioContext';
 import { SCENARIOS, type ScenarioData, type BotStep, type ChoiceStep, type Step } from './scenarios';
 
 /* ─── Dark theme ─────────────────────────────────────────────────────────── */
@@ -40,15 +41,14 @@ function WaveBars({ animated, color = 'white', size = 20 }: { animated: boolean;
    SPEAK BUTTON
 ───────────────────────────────────────────── */
 function SpeakBtn({ text }: { text: string }) {
-  const [playing, setPlaying] = useState(false);
+  const { speak: speakCtx, isPlaying } = useAudioCtx();
+  const [localPlaying, setLocalPlaying] = useState(false);
+  const playing = localPlaying && isPlaying;
   const speak = () => {
     if (playing) return;
-    setPlaying(true);
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = 'ar-MA';
-    utt.onend = () => setPlaying(false);
-    speechSynthesis.speak(utt);
-    setTimeout(() => setPlaying(false), 3500);
+    setLocalPlaying(true);
+    speakCtx(text, 'ar-MA');
+    setTimeout(() => setLocalPlaying(false), 3500);
   };
   return (
     <button onClick={speak} style={{

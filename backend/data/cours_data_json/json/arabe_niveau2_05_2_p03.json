@@ -1,0 +1,77 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle la moitié de l'image puis le mot",
+    "ar": "أَلْصِقُ نِصْفَ الصُّورَةِ بِنِصْفِهَا الثَّانِي ثُمَّ أَلْصِقُ الكَلِمَةَ"
+  },
+  "enonce": {
+    "fr": "Colle la deuxième moitié de chaque image, puis colle le mot correspondant dans la case vide.",
+    "ar": "أَلْصِقُ نِصْفَ الصُّورَةِ بِنِصْفِهَا الثَّانِي ثُمَّ أَلْصِقُ الكَلِمَةَ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سَيَّارَة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "2",
+      "ar": "حَافِلَة",
+      "fr": "bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "3",
+      "ar": "قِطَار",
+      "fr": "train",
+      "emoji": "🚆"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_05_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَلْصِقُ نِصْفَ الصُّورَةِ بِنِصْفِهَا الثَّانِي ثُمَّ أَلْصِقُ الكَلِمَةَ",
+      "voix_m": "arabe_niveau2_05_2_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_2_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَافِلَة",
+      "voix_m": "arabe_niveau2_05_2_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_2_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p3_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:46:40.893681",
+    "niveau": 2,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau2_05_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon16/",
+    "nb_audio_assets": 4
+  }
+}

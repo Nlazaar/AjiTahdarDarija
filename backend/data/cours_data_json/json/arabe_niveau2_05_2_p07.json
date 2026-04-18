@@ -1,0 +1,142 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Relie l'image au mot et reconstitue le mot",
+    "ar": "صِل الصورة بالكلمة وأعِد ترتيب الحروف"
+  },
+  "enonce": {
+    "fr": "Associe chaque image à sa partie de mot, puis remets les lettres dans le bon ordre pour former le mot حَافِلَة",
+    "ar": "صِل كل صورة بجزء كلمتها، ثم رتِّب الحروف لتكوين كلمة حَافِلَة"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "حَافِلَةٌ",
+      "fr": "bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "e2",
+      "ar": "سَيَّارَةٌ",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "e3",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚆"
+    },
+    {
+      "id": "e4",
+      "ar": "ح",
+      "fr": "lettre ح",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e5",
+      "ar": "ف",
+      "fr": "lettre ف",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e6",
+      "ar": "ا",
+      "fr": "lettre ا",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e7",
+      "ar": "ة",
+      "fr": "lettre ة",
+      "emoji": "🔤"
+    },
+    {
+      "id": "e8",
+      "ar": "ل",
+      "fr": "lettre ل",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "صِل كل صورة بجزء كلمتها، ثم رتِّب الحروف لتكوين كلمة حَافِلَة",
+      "voix_m": "arabe_niveau2_05_2_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "حَافِلَةٌ",
+      "voix_m": "arabe_niveau2_05_2_p7_e1_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e2",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "arabe_niveau2_05_2_p7_e2_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e3",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "arabe_niveau2_05_2_p7_e3_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e4",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_05_2_p7_e4_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e5",
+      "texte_ar": "ف",
+      "voix_m": "arabe_niveau2_05_2_p7_e5_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e6",
+      "texte_ar": "ا",
+      "voix_m": "arabe_niveau2_05_2_p7_e6_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e7",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_05_2_p7_e7_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e8",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_05_2_p7_e8_m.mp3",
+      "voix_f": "arabe_niveau2_05_2_p7_e8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:47:15.314088",
+    "niveau": 2,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau2_05_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon16/",
+    "nb_audio_assets": 9
+  }
+}

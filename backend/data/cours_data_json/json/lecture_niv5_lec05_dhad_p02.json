@@ -1,0 +1,220 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Lecture et association mot-image, écriture de la lettre ض, complétion de mots, reconstitution de mots à partir de lettres mélangées",
+  "titre": {
+    "fr": "La lettre Dad (ض)",
+    "ar": "حرف الضاد"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre ض. 3) Je complète avec la syllabe qui convient. 4) Je reconstitue le mot à partir des lettres et je l'écris.",
+    "ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف الضاد. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها."
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "الْأَرْضُ",
+      "fr": "La terre",
+      "emoji": "🌍"
+    },
+    {
+      "id": "mot2",
+      "ar": "ضَحِكَ",
+      "fr": "Il a ri",
+      "emoji": "😄"
+    },
+    {
+      "id": "mot3",
+      "ar": "رِيَاضَةٌ",
+      "fr": "Sport",
+      "emoji": "🏋️"
+    },
+    {
+      "id": "mot4",
+      "ar": "ضَرَبَ",
+      "fr": "Il a frappé",
+      "emoji": "👊"
+    },
+    {
+      "id": "mot5",
+      "ar": "غَضِبَ",
+      "fr": "Il s'est mis en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "mot6",
+      "ar": "مَرِيضَةٌ",
+      "fr": "Malade (féminin)",
+      "emoji": "🤒"
+    },
+    {
+      "id": "completion1",
+      "ar": "مُمَرِّضَةٌ",
+      "fr": "Infirmière",
+      "emoji": "👩‍⚕️"
+    },
+    {
+      "id": "completion2",
+      "ar": "نَهَضَ",
+      "fr": "S'est levé",
+      "emoji": "🌅"
+    },
+    {
+      "id": "completion3",
+      "ar": "ضَخْمٌ",
+      "fr": "Géant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "completion4",
+      "ar": "ضَجِيجٌ",
+      "fr": "Bruit",
+      "emoji": "📢"
+    },
+    {
+      "id": "completion5",
+      "ar": "رَائِدُ فَضَاءٍ",
+      "fr": "Astronaute",
+      "emoji": "👨‍🚀"
+    },
+    {
+      "id": "reconstitution1",
+      "ar": "رَخْض",
+      "fr": "Panier (خضر)",
+      "emoji": "🧺"
+    },
+    {
+      "id": "reconstitution2",
+      "ar": "رأضخ",
+      "fr": "Virus (خضراء)",
+      "emoji": "🦠"
+    },
+    {
+      "id": "reconstitution3",
+      "ar": "فدضع",
+      "fr": "Grenouille (ضفدع)",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec05_dhad",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأ الكلمة ثم أربطها بصورتها. ٢) أكتب حرف الضاد. ٣) أكمل بما يناسب. ٤) أعيد ترتيب الحروف لأحصل على كلمة وأكتبها.",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "الْأَرْضُ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "ضَحِكَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "رِيَاضَةٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "ضَرَبَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "مَرِيضَةٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion1",
+      "texte_ar": "مُمَرِّضَةٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_completion1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_completion1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion2",
+      "texte_ar": "نَهَضَ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_completion2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_completion2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion3",
+      "texte_ar": "ضَخْمٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_completion3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_completion3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion4",
+      "texte_ar": "ضَجِيجٌ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_completion4_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_completion4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion5",
+      "texte_ar": "رَائِدُ فَضَاءٍ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_completion5_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_completion5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reconstitution1",
+      "texte_ar": "رَخْض",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_reconstitution1_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_reconstitution1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reconstitution2",
+      "texte_ar": "رأضخ",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_reconstitution2_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_reconstitution2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reconstitution3",
+      "texte_ar": "فدضع",
+      "voix_m": "lecture_niv5_lec05_dhad_p2_reconstitution3_m.mp3",
+      "voix_f": "lecture_niv5_lec05_dhad_p2_reconstitution3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:26:47.484623",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv5_lec05_dhad",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 15
+  }
+}

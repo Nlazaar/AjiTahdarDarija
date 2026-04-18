@@ -1,0 +1,350 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ر avec vocabulaire illustré, phrase de lecture, exercice d'écoute et exercice d'identification de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Raa (ر)",
+    "ar": "حَرْفُ الرَّاء"
+  },
+  "enonce": {
+    "fr": "Découverte de la lettre ر à travers des mots illustrés, une phrase de lecture, puis deux exercices : j'entends ou je n'entends pas la lettre, et j'entoure la lettre dans les mots.",
+    "ar": "تَعَلُّمُ حَرْفِ الرَّاء مِنْ خِلَالِ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةِ قِرَاءَةٍ، ثُمَّ تَمْرِينَانِ: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ."
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "مَطَرِيَّةٌ",
+      "fr": "parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "mot2",
+      "ar": "رُمَّانٌ",
+      "fr": "grenade (fruit)",
+      "emoji": "🍎"
+    },
+    {
+      "id": "mot3",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille",
+      "emoji": "🍃"
+    },
+    {
+      "id": "mot4",
+      "ar": "رِيشَةٌ",
+      "fr": "plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "mot5",
+      "ar": "خَرُوفٌ",
+      "fr": "mouton",
+      "emoji": "🐑"
+    },
+    {
+      "id": "mot6",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "phrase",
+      "ar": "يَرْكُضُ عُمَرُ وَرَاءَ الْكُرَةِ",
+      "fr": "Omar court derrière le ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "ex1_img1",
+      "ar": "دَلْوٌ",
+      "fr": "seau",
+      "emoji": "🪣"
+    },
+    {
+      "id": "ex1_img2",
+      "ar": "وَعَاءٌ",
+      "fr": "bol",
+      "emoji": "🥣"
+    },
+    {
+      "id": "ex1_img3",
+      "ar": "نَمِرٌ",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "ex1_img4",
+      "ar": "شَمْعَةٌ",
+      "fr": "bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "ex1_img5",
+      "ar": "فَرَاشَةٌ",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "ex2_mot1",
+      "ar": "صَاحَ",
+      "fr": "il a crié",
+      "emoji": "📢"
+    },
+    {
+      "id": "ex2_mot2",
+      "ar": "مُرِيحٌ",
+      "fr": "confortable",
+      "emoji": "😌"
+    },
+    {
+      "id": "ex2_mot3",
+      "ar": "رِزْقٌ",
+      "fr": "subsistance",
+      "emoji": "🌾"
+    },
+    {
+      "id": "ex2_mot4",
+      "ar": "أَزَاحَ",
+      "fr": "il a écarté",
+      "emoji": "↔️"
+    },
+    {
+      "id": "ex2_mot5",
+      "ar": "مَرِيضٌ",
+      "fr": "malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "ex2_mot6",
+      "ar": "رَقَصَ",
+      "fr": "il a dansé",
+      "emoji": "💃"
+    },
+    {
+      "id": "ex2_mot7",
+      "ar": "سَحَرٌّ",
+      "fr": "magie",
+      "emoji": "✨"
+    },
+    {
+      "id": "ex2_mot8",
+      "ar": "زَالَ",
+      "fr": "il a disparu",
+      "emoji": "🌫️"
+    },
+    {
+      "id": "ex2_mot9",
+      "ar": "أَرَاحَ",
+      "fr": "il a reposé",
+      "emoji": "😮‍💨"
+    },
+    {
+      "id": "ex2_mot10",
+      "ar": "رِيَاحٌ",
+      "fr": "vents",
+      "emoji": "💨"
+    },
+    {
+      "id": "ex2_mot11",
+      "ar": "رَأَى",
+      "fr": "il a vu",
+      "emoji": "👁️"
+    },
+    {
+      "id": "ex2_mot12",
+      "ar": "مَرَّ",
+      "fr": "il est passé",
+      "emoji": "🚶"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec07_raa",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلُّمُ حَرْفِ الرَّاء مِنْ خِلَالِ كَلِمَاتٍ مُصَوَّرَةٍ وَجُمْلَةِ قِرَاءَةٍ، ثُمَّ تَمْرِينَانِ: أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ.",
+      "voix_m": "lecture_niv4_lec07_raa_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مَطَرِيَّةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "رُمَّانٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "خَرُوفٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "يَرْكُضُ عُمَرُ وَرَاءَ الْكُرَةِ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img1",
+      "texte_ar": "دَلْوٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex1_img1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex1_img1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img2",
+      "texte_ar": "وَعَاءٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex1_img2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex1_img2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img3",
+      "texte_ar": "نَمِرٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex1_img3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex1_img3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img4",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex1_img4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex1_img4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_img5",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex1_img5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex1_img5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot1",
+      "texte_ar": "صَاحَ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot2",
+      "texte_ar": "مُرِيحٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot3",
+      "texte_ar": "رِزْقٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot4",
+      "texte_ar": "أَزَاحَ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot5",
+      "texte_ar": "مَرِيضٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot6",
+      "texte_ar": "رَقَصَ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot7",
+      "texte_ar": "سَحَرٌّ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot7_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot8",
+      "texte_ar": "زَالَ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot8_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot9",
+      "texte_ar": "أَرَاحَ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot9_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot10",
+      "texte_ar": "رِيَاحٌ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot10_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot11",
+      "texte_ar": "رَأَى",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot11_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mot12",
+      "texte_ar": "مَرَّ",
+      "voix_m": "lecture_niv4_lec07_raa_p1_ex2_mot12_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p1_ex2_mot12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:57:35.961475",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_raa",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 25
+  }
+}

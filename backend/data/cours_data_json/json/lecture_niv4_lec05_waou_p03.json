@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : remise en ordre de lettres pour former un mot, complétion de phrases avec le mot approprié, et rédaction d'une phrase décrivant une image",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de phrases",
+    "ar": "تدريبات على المفردات والجمل"
+  },
+  "enonce": {
+    "fr": "1) Je remets les lettres dans l'ordre pour obtenir le mot. 2) Je complète avec ce qui convient. 3) J'écris une phrase qui décrit l'image.",
+    "ar": "١) أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٢) أُكْمِلُ بِمَا يُنَاسِبُ. ٣) أَكْتُبُ جُمْلَةً تُعَبِّرُ عَنِ الصُّورَةِ."
+  },
+  "elements": [
+    {
+      "id": "ex6_mot1",
+      "ar": "هو ج",
+      "fr": "visage (à réordonner)",
+      "emoji": "🧑"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "رالوس",
+      "fr": "pantalon (à réordonner)",
+      "emoji": "👖"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "ققور",
+      "fr": "feuille (à réordonner)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "الْأَوَانِيَ",
+      "fr": "la vaisselle",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "الدَّوَاءَ",
+      "fr": "le médicament",
+      "emoji": "💊"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "الْمِكْوَاةَ",
+      "fr": "le fer à repasser",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "الْأَوْرَاقُ",
+      "fr": "les feuilles",
+      "emoji": "🍂"
+    },
+    {
+      "id": "ex7_phrase1",
+      "ar": "يَتَنَاوَلُ عُمَرُ .............. .",
+      "fr": "Omar prend le médicament.",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex7_phrase2",
+      "ar": "تَتَسَاقَطُ .............. مِنَ الشَّجَرَةِ.",
+      "fr": "Les feuilles tombent de l'arbre.",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex7_phrase3",
+      "ar": "يَغْسِلُ سَامِي ..............",
+      "fr": "Sami lave la vaisselle.",
+      "emoji": "🚿"
+    },
+    {
+      "id": "ex7_phrase4",
+      "ar": "نَسِيَ شِهَابٌ .............. عَلَى الثَّوْبِ.",
+      "fr": "Chihab a oublié le fer à repasser sur le vêtement.",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex8_image",
+      "ar": "فَاحْتَرَقَ الْمِكْوَاةَ الْبِنْتُ عَلَى الثَّوْبِ نَسِيَت",
+      "fr": "La fille a oublié le fer à repasser sur le vêtement et il a brûlé.",
+      "emoji": "🔥"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec05_waou",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "١) أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٢) أُكْمِلُ بِمَا يُنَاسِبُ. ٣) أَكْتُبُ جُمْلَةً تُعَبِّرُ عَنِ الصُّورَةِ.",
+      "voix_m": "lecture_niv4_lec05_waou_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "هو ج",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "رالوس",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "ققور",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "الْأَوَانِيَ",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "الدَّوَاءَ",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "الْمِكْوَاةَ",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "الْأَوْرَاقُ",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase1",
+      "texte_ar": "يَتَنَاوَلُ عُمَرُ .............. .",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_phrase1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_phrase1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase2",
+      "texte_ar": "تَتَسَاقَطُ .............. مِنَ الشَّجَرَةِ.",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_phrase2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_phrase2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase3",
+      "texte_ar": "يَغْسِلُ سَامِي ..............",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_phrase3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_phrase3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_phrase4",
+      "texte_ar": "نَسِيَ شِهَابٌ .............. عَلَى الثَّوْبِ.",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex7_phrase4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex7_phrase4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_image",
+      "texte_ar": "فَاحْتَرَقَ الْمِكْوَاةَ الْبِنْتُ عَلَى الثَّوْبِ نَسِيَت",
+      "voix_m": "lecture_niv4_lec05_waou_p3_ex8_image_m.mp3",
+      "voix_f": "lecture_niv4_lec05_waou_p3_ex8_image_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:50:49.224650",
+    "niveau": 4,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv4_lec05_waou",
+    "bucket_audio": "audio-lessons/niveau4/lecon05/",
+    "nb_audio_assets": 13
+  }
+}

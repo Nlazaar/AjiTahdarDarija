@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ف avec des mots illustrés, une phrase modèle, puis deux exercices : identifier auditivement la lettre dans des mots et entourer la lettre dans des mots écrits",
+  "titre": {
+    "fr": "La lettre Fa (ف)",
+    "ar": "حرف الفاء (ف)"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre Fa avec des images et des mots, écoute et dis si tu entends la lettre, puis entoure la lettre dans les mots.",
+    "ar": "تعرَّف على حرف الفاء مع الصور والكلمات، ثم استمع وقل هل تسمع الحرف، وأرسم دائرة حول الحرف في الكلمات."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَقْفِزُ",
+      "fr": "elle saute à la corde",
+      "emoji": "🧒"
+    },
+    {
+      "id": "2",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "3",
+      "ar": "فَهْدٌ",
+      "fr": "panthère",
+      "emoji": "🐆"
+    },
+    {
+      "id": "4",
+      "ar": "دِلْفِينٌ",
+      "fr": "dauphin",
+      "emoji": "🐬"
+    },
+    {
+      "id": "5",
+      "ar": "رُفُوفٌ",
+      "fr": "étagères",
+      "emoji": "🍞"
+    },
+    {
+      "id": "6",
+      "ar": "فَازَتْ",
+      "fr": "elle a gagné",
+      "emoji": "🏅"
+    },
+    {
+      "id": "7",
+      "ar": "فَازَ فَرِيقِي الْمُفَضَّلُ",
+      "fr": "Mon équipe favorite a gagné",
+      "emoji": "🏆"
+    },
+    {
+      "id": "ex1_1",
+      "ar": "آيس كريم",
+      "fr": "glace",
+      "emoji": "🍦"
+    },
+    {
+      "id": "ex1_2",
+      "ar": "فراولة",
+      "fr": "fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "ex1_3",
+      "ar": "جزرة",
+      "fr": "carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "ex1_4",
+      "ar": "صافرة",
+      "fr": "sifflet",
+      "emoji": "🎵"
+    },
+    {
+      "id": "ex1_5",
+      "ar": "ثلج",
+      "fr": "glaçons",
+      "emoji": "🧊"
+    },
+    {
+      "id": "ex2_1",
+      "ar": "فَائِزٌ",
+      "fr": "gagnant",
+      "emoji": "🏆"
+    },
+    {
+      "id": "ex2_2",
+      "ar": "فُولٌ",
+      "fr": "fèves",
+      "emoji": "🫘"
+    },
+    {
+      "id": "ex2_3",
+      "ar": "رَفَعَ",
+      "fr": "il a levé",
+      "emoji": "💪"
+    },
+    {
+      "id": "ex2_4",
+      "ar": "رَقَصَ",
+      "fr": "il a dansé",
+      "emoji": "💃"
+    },
+    {
+      "id": "ex2_5",
+      "ar": "قَالَ",
+      "fr": "il a dit",
+      "emoji": "🗣️"
+    },
+    {
+      "id": "ex2_6",
+      "ar": "لَفَّ",
+      "fr": "il a enroulé",
+      "emoji": "🌀"
+    },
+    {
+      "id": "ex2_7",
+      "ar": "أَفْلَتَ",
+      "fr": "il a échappé",
+      "emoji": "🏃"
+    },
+    {
+      "id": "ex2_8",
+      "ar": "فَوْزٌ",
+      "fr": "victoire",
+      "emoji": "🥇"
+    },
+    {
+      "id": "ex2_9",
+      "ar": "مَلْفُوفٌ",
+      "fr": "enroulé",
+      "emoji": "🌯"
+    },
+    {
+      "id": "ex2_10",
+      "ar": "فَارِسٌ",
+      "fr": "cavalier",
+      "emoji": "🐴"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec05_fee",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تعرَّف على حرف الفاء مع الصور والكلمات، ثم استمع وقل هل تسمع الحرف، وأرسم دائرة حول الحرف في الكلمات.",
+      "voix_m": "lecture_niv4_lec05_fee_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَقْفِزُ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَهْدٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دِلْفِينٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "رُفُوفٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فَازَتْ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فَازَ فَرِيقِي الْمُفَضَّلُ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_1",
+      "texte_ar": "آيس كريم",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_2",
+      "texte_ar": "فراولة",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_3",
+      "texte_ar": "جزرة",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_4",
+      "texte_ar": "صافرة",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_5",
+      "texte_ar": "ثلج",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_1",
+      "texte_ar": "فَائِزٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_2",
+      "texte_ar": "فُولٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_3",
+      "texte_ar": "رَفَعَ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_4",
+      "texte_ar": "رَقَصَ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_5",
+      "texte_ar": "قَالَ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_6",
+      "texte_ar": "لَفَّ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_7",
+      "texte_ar": "أَفْلَتَ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_7_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_8",
+      "texte_ar": "فَوْزٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_8_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_9",
+      "texte_ar": "مَلْفُوفٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_9_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_10",
+      "texte_ar": "فَارِسٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p1_ex2_10_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p1_ex2_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:47:26.841334",
+    "niveau": 4,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv4_lec05_fee",
+    "bucket_audio": "audio-lessons/niveau4/lecon05/",
+    "nb_audio_assets": 23
+  }
+}

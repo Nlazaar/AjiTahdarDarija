@@ -1,12 +1,13 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { CoursesService } from './courses.service';
 
 @Controller('courses')
 export class CoursesController {
   constructor(private readonly coursesService: CoursesService) {}
 
+  /** GET /courses?track=DARIJA|MSA|RELIGION */
   @Get()
-  findAll() {
-    return this.coursesService.findAll();
+  findAll(@Query('track') track?: string) {
+    return this.coursesService.findAll(track?.toUpperCase() as any);
   }
 }

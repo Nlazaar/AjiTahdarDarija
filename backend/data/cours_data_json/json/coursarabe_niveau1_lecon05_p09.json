@@ -1,0 +1,142 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Découper et coller les lettres arabes dans le bon ordre, puis les mémoriser",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres du bas et colle-les dans les cases vides dans le bon ordre : ط، ظ، ع، غ",
+    "ar": "اقطع الحروف من الأسفل وألصقها في المربعات الفارغة بالترتيب الصحيح"
+  },
+  "elements": [
+    {
+      "id": "lettre_ta",
+      "ar": "ط",
+      "fr": "Lettre Tâ (emphатique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_dha",
+      "ar": "ظ",
+      "fr": "Lettre Dhâ (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_ain",
+      "ar": "ع",
+      "fr": "Lettre Aïn",
+      "emoji": "👁️"
+    },
+    {
+      "id": "lettre_ghain",
+      "ar": "غ",
+      "fr": "Lettre Ghaïn",
+      "emoji": "🦌"
+    },
+    {
+      "id": "mot_tareeq",
+      "ar": "طَرِيق",
+      "fr": "chemin / route",
+      "emoji": "🛤️"
+    },
+    {
+      "id": "mot_dharf",
+      "ar": "ظَرْف",
+      "fr": "enveloppe",
+      "emoji": "✉️"
+    },
+    {
+      "id": "mot_ain",
+      "ar": "عَيْن",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "mot_ghazal",
+      "ar": "غَزَال",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "اقطع الحروف من الأسفل وألصقها في المربعات الفارغة بالترتيب الصحيح",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ta",
+      "texte_ar": "ط",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_lettre_ta_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_lettre_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_dha",
+      "texte_ar": "ظ",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_lettre_dha_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_lettre_dha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ain",
+      "texte_ar": "ع",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_lettre_ain_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_lettre_ain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ghain",
+      "texte_ar": "غ",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_lettre_ghain_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_lettre_ghain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_tareeq",
+      "texte_ar": "طَرِيق",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_mot_tareeq_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_mot_tareeq_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_dharf",
+      "texte_ar": "ظَرْف",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_mot_dharf_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_mot_dharf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ain",
+      "texte_ar": "عَيْن",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_mot_ain_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_mot_ain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ghazal",
+      "texte_ar": "غَزَال",
+      "voix_m": "coursarabe_niveau1_lecon05_p9_mot_ghazal_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p9_mot_ghazal_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:49:15.549303",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 9
+  }
+}

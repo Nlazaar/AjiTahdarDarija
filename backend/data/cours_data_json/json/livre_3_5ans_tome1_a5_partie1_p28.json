@@ -1,0 +1,90 @@
+{
+  "page_nb": 28,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Colle les lettres dans le bon ordre alphabétique dans les cases vides",
+    "ar": "أَلْصِقُ الْحُرُوفَ فِي الْمَكَانِ الصَّحِيحِ بِالتَّرْتِيبِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ف",
+      "fr": "Fa",
+      "emoji": "🐭"
+    },
+    {
+      "id": "2",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "✏️"
+    },
+    {
+      "id": "3",
+      "ar": "كى",
+      "fr": "Kaf",
+      "emoji": "🐶"
+    },
+    {
+      "id": "4",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p28_consigne",
+      "texte_ar": "أَلْصِقُ الْحُرُوفَ فِي الْمَكَانِ الصَّحِيحِ بِالتَّرْتِيبِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p28_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p28_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p28_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p28_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p28_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p28_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "كى",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p28_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p28_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p28_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p28_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:28:33.318853",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 5
+  }
+}

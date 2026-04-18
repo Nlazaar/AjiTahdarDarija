@@ -1,0 +1,285 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre خ avec ses formes vocaliques, des mots illustrés, puis deux exercices : identifier si on entend la lettre dans un mot, et entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Kha (خ)",
+    "ar": "حَرْفُ الخَاء"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre خ à travers des images, écoute les mots et identifie si tu entends la lettre, puis entoure la lettre خ dans les mots proposés.",
+    "ar": "تَعَرَّفْ عَلَى حَرْفِ الخَاء مِنْ خِلَالِ الصُّوَرِ، ثُمَّ أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خِزَانَةٌ",
+      "fr": "armoire",
+      "emoji": "🪞"
+    },
+    {
+      "id": "2",
+      "ar": "خُبْزٌ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "3",
+      "ar": "خَبَّازٌ",
+      "fr": "boulanger",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "id": "4",
+      "ar": "نَخِيلٌ",
+      "fr": "palmiers",
+      "emoji": "🌴"
+    },
+    {
+      "id": "5",
+      "ar": "صُخُورٌ",
+      "fr": "rochers",
+      "emoji": "🪨"
+    },
+    {
+      "id": "6",
+      "ar": "خَاتَمٌ",
+      "fr": "bague",
+      "emoji": "💍"
+    },
+    {
+      "id": "7",
+      "ar": "خَبَزَ الْخَبَّازُ الْخُبْزَ",
+      "fr": "Le boulanger a cuit le pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "8",
+      "ar": "خَانَ",
+      "fr": "il a trahi",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "يَخَافُ",
+      "fr": "il a peur",
+      "emoji": "😨"
+    },
+    {
+      "id": "10",
+      "ar": "بَاخِرَةٌ",
+      "fr": "bateau à vapeur",
+      "emoji": "🚢"
+    },
+    {
+      "id": "11",
+      "ar": "فَخٌّ",
+      "fr": "piège",
+      "emoji": "🪤"
+    },
+    {
+      "id": "12",
+      "ar": "مُخٌّ",
+      "fr": "cervelle",
+      "emoji": "🧠"
+    },
+    {
+      "id": "13",
+      "ar": "فَحِيحٌ",
+      "fr": "sifflement",
+      "emoji": "🐍"
+    },
+    {
+      "id": "14",
+      "ar": "يَخِيبُ",
+      "fr": "il échoue",
+      "emoji": "😞"
+    },
+    {
+      "id": "15",
+      "ar": "خَيْبَةٌ",
+      "fr": "déception",
+      "emoji": "😔"
+    },
+    {
+      "id": "16",
+      "ar": "جِسْرٌ",
+      "fr": "pont",
+      "emoji": "🌉"
+    },
+    {
+      "id": "17",
+      "ar": "مُخِيفٌ",
+      "fr": "effrayant",
+      "emoji": "😱"
+    },
+    {
+      "id": "18",
+      "ar": "سَخِيفٌ",
+      "fr": "stupide/ridicule",
+      "emoji": "🙄"
+    },
+    {
+      "id": "19",
+      "ar": "خَاطَ",
+      "fr": "il a cousu",
+      "emoji": "🧵"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec01_02_khaa",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَرَّفْ عَلَى حَرْفِ الخَاء مِنْ خِلَالِ الصُّوَرِ، ثُمَّ أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خِزَانَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خُبْزٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خَبَّازٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نَخِيلٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صُخُورٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "خَاتَمٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خَبَزَ الْخَبَّازُ الْخُبْزَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خَانَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "يَخَافُ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "بَاخِرَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_10_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "فَخٌّ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_11_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مُخٌّ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_12_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "فَحِيحٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_13_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "يَخِيبُ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_14_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "خَيْبَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_15_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "جِسْرٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_16_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "مُخِيفٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_17_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "سَخِيفٌ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_18_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "خَاطَ",
+      "voix_m": "lecture_niv5_lec01_02_khaa_p1_19_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_khaa_p1_19_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:16:40.338672",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_02_khaa",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 20
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Reconstituer des images coupées en deux en collant les parties manquantes à leur place",
+  "titre": {
+    "fr": "Je colle les parties de chaque image",
+    "ar": "أُلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا"
+  },
+  "enonce": {
+    "fr": "Colle les parties de chaque image à sa place correcte pour reconstituer le mot",
+    "ar": "أُلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "كَلْبٌ",
+      "fr": "chien",
+      "emoji": "🐶"
+    },
+    {
+      "id": "2",
+      "ar": "جَمَلٌ",
+      "fr": "chameau",
+      "emoji": "🐪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا",
+      "voix_m": "coursarabe_niveau1_lecon04_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p3_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p3_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p3_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:43:51.216747",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 3
+  }
+}

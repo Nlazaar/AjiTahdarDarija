@@ -1,0 +1,155 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Compte les formes et relie au bon chiffre",
+    "ar": "أعدّ الأشكال و أربط بالرّقم المناسب"
+  },
+  "enonce": {
+    "fr": "Compte les objets dans chaque image et relie chaque groupe au chiffre correspondant",
+    "ar": "أعدّ الأشكال في كل صورة وأربطها بالرقم المناسب"
+  },
+  "elements": [
+    {
+      "id": "watermelon",
+      "ar": "بطيخة",
+      "fr": "1 pastèque",
+      "emoji": "🍉"
+    },
+    {
+      "id": "balls",
+      "ar": "كرات",
+      "fr": "4 ballons",
+      "emoji": "⚽"
+    },
+    {
+      "id": "orange",
+      "ar": "برتقالة",
+      "fr": "1 orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "bananas",
+      "ar": "موز",
+      "fr": "3 bananes",
+      "emoji": "🍌"
+    },
+    {
+      "id": "cherries",
+      "ar": "كرز",
+      "fr": "3 cerises",
+      "emoji": "🍒"
+    },
+    {
+      "id": "carrots",
+      "ar": "جزر",
+      "fr": "4 carottes",
+      "emoji": "🥕"
+    },
+    {
+      "id": "num1",
+      "ar": "١",
+      "fr": "1",
+      "emoji": "1️⃣"
+    },
+    {
+      "id": "num4",
+      "ar": "٤",
+      "fr": "4",
+      "emoji": "4️⃣"
+    },
+    {
+      "id": "num3",
+      "ar": "٣",
+      "fr": "3",
+      "emoji": "3️⃣"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "أعدّ الأشكال في كل صورة وأربطها بالرقم المناسب",
+      "voix_m": "arabe_niveau2_05_1_p10_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_watermelon",
+      "texte_ar": "بطيخة",
+      "voix_m": "arabe_niveau2_05_1_p10_watermelon_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_watermelon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balls",
+      "texte_ar": "كرات",
+      "voix_m": "arabe_niveau2_05_1_p10_balls_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_balls_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_orange",
+      "texte_ar": "برتقالة",
+      "voix_m": "arabe_niveau2_05_1_p10_orange_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_orange_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bananas",
+      "texte_ar": "موز",
+      "voix_m": "arabe_niveau2_05_1_p10_bananas_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_bananas_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cherries",
+      "texte_ar": "كرز",
+      "voix_m": "arabe_niveau2_05_1_p10_cherries_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_cherries_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carrots",
+      "texte_ar": "جزر",
+      "voix_m": "arabe_niveau2_05_1_p10_carrots_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_carrots_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_num1",
+      "texte_ar": "١",
+      "voix_m": "arabe_niveau2_05_1_p10_num1_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_num1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_num4",
+      "texte_ar": "٤",
+      "voix_m": "arabe_niveau2_05_1_p10_num4_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_num4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_num3",
+      "texte_ar": "٣",
+      "voix_m": "arabe_niveau2_05_1_p10_num3_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p10_num3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:45:34.170448",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image selon que la lettre ن se trouve au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَة بِمَكَانِ حَرْفِ النُّون : أَوَّل أَو وَسَط أَو آخِر"
+  },
+  "elements": [
+    {
+      "id": "debut",
+      "ar": "أَوَّل",
+      "fr": "début du mot",
+      "emoji": "🐝"
+    },
+    {
+      "id": "milieu",
+      "ar": "وَسَط",
+      "fr": "milieu du mot",
+      "emoji": "🔪"
+    },
+    {
+      "id": "milieu2",
+      "ar": "وَسَط",
+      "fr": "milieu du mot",
+      "emoji": "🐬"
+    },
+    {
+      "id": "fin",
+      "ar": "آخِر",
+      "fr": "fin du mot",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "fin2",
+      "ar": "آخِر",
+      "fr": "fin du mot",
+      "emoji": "🍽️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec12",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَسْمَعُ الْكَلِمَة وَأَرْبِطُ الصُّورَة بِمَكَانِ حَرْفِ النُّون : أَوَّل أَو وَسَط أَو آخِر",
+      "voix_m": "arabe_niveau3_lec12_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_debut",
+      "texte_ar": "أَوَّل",
+      "voix_m": "arabe_niveau3_lec12_p4_debut_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_debut_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_milieu",
+      "texte_ar": "وَسَط",
+      "voix_m": "arabe_niveau3_lec12_p4_milieu_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_milieu_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_milieu2",
+      "texte_ar": "وَسَط",
+      "voix_m": "arabe_niveau3_lec12_p4_milieu2_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_milieu2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fin",
+      "texte_ar": "آخِر",
+      "voix_m": "arabe_niveau3_lec12_p4_fin_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_fin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fin2",
+      "texte_ar": "آخِر",
+      "voix_m": "arabe_niveau3_lec12_p4_fin2_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p4_fin2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:42:34.285110",
+    "niveau": 3,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau3_lec12",
+    "bucket_audio": "audio-lessons/niveau3/lecon12/",
+    "nb_audio_assets": 6
+  }
+}

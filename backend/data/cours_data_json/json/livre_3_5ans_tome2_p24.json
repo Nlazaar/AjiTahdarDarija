@@ -1,0 +1,90 @@
+{
+  "page_nb": 24,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les vêtements",
+    "ar": "المَلابِس"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour entendre le mot en arabe",
+    "ar": "اِنْقُر عَلى كُلِّ صورةٍ لِتَسْمَعَ الكَلِمة"
+  },
+  "elements": [
+    {
+      "id": "sirwal",
+      "ar": "سِرْوَالٌ",
+      "fr": "Pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "fustan",
+      "ar": "فُسْتَانٌ",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "hida2",
+      "ar": "حِذَاءٌ",
+      "fr": "Chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "qamis",
+      "ar": "قَمِيصٌ",
+      "fr": "Chemise",
+      "emoji": "👔"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p24_consigne",
+      "texte_ar": "اِنْقُر عَلى كُلِّ صورةٍ لِتَسْمَعَ الكَلِمة",
+      "voix_m": "livre_3_5ans_tome2_p24_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p24_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sirwal",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "livre_3_5ans_tome2_p24_sirwal_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p24_sirwal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fustan",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p24_fustan_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p24_fustan_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hida2",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p24_hida2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p24_hida2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qamis",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "livre_3_5ans_tome2_p24_qamis_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p24_qamis_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:59:19.087734",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

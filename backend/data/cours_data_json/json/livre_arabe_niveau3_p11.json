@@ -1,0 +1,90 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Observe chaque groupe et barre la forme différente des autres.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ."
+  },
+  "elements": [
+    {
+      "id": "groupe1_images",
+      "ar": "سُحُب (صور)",
+      "fr": "Nuages (images) : un nuage colorié est différent des autres en blanc",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe2_images",
+      "ar": "أشجار (صور)",
+      "fr": "Arbres (images) : un arbre est différent des autres",
+      "emoji": "🌳"
+    },
+    {
+      "id": "groupe1_mots",
+      "ar": "سَحَابٌ / سَحَابٌ / سَحَابٌ / سَحَابٌ / سَحَابٌ / سِحَاتٌ / سَحَابٌ",
+      "fr": "Mots nuage : l'intrus est سِحَاتٌ",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe2_mots",
+      "ar": "شَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ / سَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ",
+      "fr": "Mots arbre : l'intrus est سَجَرَةٌ",
+      "emoji": "🌳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ مَجْمُوعَةٍ وَاشْطُبِ الشَّكْلَ الْمُخْتَلِفَ.",
+      "voix_m": "livre_arabe_niveau3_p11_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_images",
+      "texte_ar": "سُحُب (صور)",
+      "voix_m": "livre_arabe_niveau3_p11_groupe1_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p11_groupe1_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_images",
+      "texte_ar": "أشجار (صور)",
+      "voix_m": "livre_arabe_niveau3_p11_groupe2_images_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p11_groupe2_images_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_mots",
+      "texte_ar": "سَحَابٌ / سَحَابٌ / سَحَابٌ / سَحَابٌ / سَحَابٌ / سِحَاتٌ / سَحَابٌ",
+      "voix_m": "livre_arabe_niveau3_p11_groupe1_mots_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p11_groupe1_mots_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_mots",
+      "texte_ar": "شَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ / سَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ / شَجَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_p11_groupe2_mots_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p11_groupe2_mots_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:56:15.472561",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

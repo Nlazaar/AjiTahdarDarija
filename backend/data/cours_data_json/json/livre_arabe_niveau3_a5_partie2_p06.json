@@ -1,0 +1,116 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Je construis des phrases en répondant aux questions",
+    "ar": "أُعَبِّرُ بِالْإِجَابَةِ عَنِ الْأَسْئِلَةِ"
+  },
+  "enonce": {
+    "fr": "Lis les questions et construis des phrases en répondant : Où est le moineau ? Où est le perroquet ?",
+    "ar": "اقرأ الأسئلة وأجب عنها بجملة مفيدة: أَيْنَ الْعُصْفُورُ؟ أَيْنَ الْبَبَّغَاءُ؟"
+  },
+  "elements": [
+    {
+      "id": "question_1",
+      "ar": "أَيْنَ الْعُصْفُورُ؟",
+      "fr": "Où est le moineau ?",
+      "emoji": "🐦"
+    },
+    {
+      "id": "reponse_1",
+      "ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "fr": "Le moineau est à l'intérieur de la cage.",
+      "emoji": "🏠"
+    },
+    {
+      "id": "question_2",
+      "ar": "أَيْنَ الْبَبَّغَاءُ؟",
+      "fr": "Où est le perroquet ?",
+      "emoji": "🦜"
+    },
+    {
+      "id": "reponse_2",
+      "ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "fr": "Le perroquet est à l'extérieur de la cage.",
+      "emoji": "🌳"
+    },
+    {
+      "id": "mot_dakhill",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur",
+      "emoji": "⬇️"
+    },
+    {
+      "id": "mot_kharij",
+      "ar": "خَارِجَ",
+      "fr": "à l'extérieur",
+      "emoji": "⬆️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اقرأ الأسئلة وأجب عنها بجملة مفيدة: أَيْنَ الْعُصْفُورُ؟ أَيْنَ الْبَبَّغَاءُ؟",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_1",
+      "texte_ar": "أَيْنَ الْعُصْفُورُ؟",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_question_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_question_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1",
+      "texte_ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_reponse_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_reponse_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_2",
+      "texte_ar": "أَيْنَ الْبَبَّغَاءُ؟",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_question_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_question_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2",
+      "texte_ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_reponse_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_reponse_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_dakhill",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_mot_dakhill_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_mot_dakhill_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_kharij",
+      "texte_ar": "خَارِجَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p6_mot_kharij_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p6_mot_kharij_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:31:47.921523",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

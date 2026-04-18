@@ -1,0 +1,194 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Quatre exercices combinés : remise en ordre de lettres, complétion d'antonymes, complétion de mots avec la lettre qaf et association à une image, remise en ordre de mots pour former une phrase",
+  "titre": {
+    "fr": "Exercices sur la lettre qaf et le vocabulaire",
+    "ar": "تمارين على حرف القاف والمفردات"
+  },
+  "enonce": {
+    "fr": "Ex6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex7 : Je complète avec ce qui convient (antonymes). Ex8 : Je complète puis je relie à l'image (avec les formes de qaf). Ex9 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex6_mot1",
+      "ar": "مِقَصّ",
+      "fr": "ciseaux",
+      "emoji": "✂️"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "قَفَص",
+      "fr": "cage",
+      "emoji": "🪤"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "صُنْدُوق",
+      "fr": "boîte / carton",
+      "emoji": "📦"
+    },
+    {
+      "id": "ex7_antonyme1",
+      "ar": "لَيْلٌ ≠ كَثِيرٌ",
+      "fr": "nuit ≠ beaucoup (à compléter : نَهَارٌ / peu)",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ex7_antonyme2",
+      "ar": "خَفِيفٌ ≠ ثَـ...يِلٌ",
+      "fr": "léger ≠ lourd (à compléter : ثَقِيلٌ)",
+      "emoji": "⚖️"
+    },
+    {
+      "id": "ex7_antonyme3",
+      "ar": "وَا...فٌّ ≠ جَالِسٌ",
+      "fr": "debout ≠ assis (à compléter : وَاقِفٌ)",
+      "emoji": "🧍"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "أَلَامٌّ / قُفَّة",
+      "fr": "panier",
+      "emoji": "🧺"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "...رْنٌ / قُرْنٌ",
+      "fr": "corne",
+      "emoji": "🦌"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "...وِيٌّ / قَوِيٌّ",
+      "fr": "fort",
+      "emoji": "💪"
+    },
+    {
+      "id": "ex8_mot4",
+      "ar": "...أْرٌ / قَأْرٌ (فَأْر)",
+      "fr": "souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex8_mot5",
+      "ar": "ضِـ...مَدَعٌ / ضُفْدَعٌ",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "ex9_phrase",
+      "ar": "التَّلَامِيذُ يُنَظِّفُونَ قَاعَةَ الدَّرْسِ",
+      "fr": "Les élèves nettoient la salle de classe.",
+      "emoji": "🏫"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec06_qaf",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَرْبِطُ بِالصُّورَةِ. تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "مِقَصّ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "قَفَص",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "صُنْدُوق",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_antonyme1",
+      "texte_ar": "لَيْلٌ ≠ كَثِيرٌ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex7_antonyme1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex7_antonyme1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_antonyme2",
+      "texte_ar": "خَفِيفٌ ≠ ثَـ...يِلٌ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex7_antonyme2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex7_antonyme2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_antonyme3",
+      "texte_ar": "وَا...فٌّ ≠ جَالِسٌ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex7_antonyme3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex7_antonyme3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "أَلَامٌّ / قُفَّة",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "...رْنٌ / قُرْنٌ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "...وِيٌّ / قَوِيٌّ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot4",
+      "texte_ar": "...أْرٌ / قَأْرٌ (فَأْر)",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex8_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex8_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot5",
+      "texte_ar": "ضِـ...مَدَعٌ / ضُفْدَعٌ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex8_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex8_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_phrase",
+      "texte_ar": "التَّلَامِيذُ يُنَظِّفُونَ قَاعَةَ الدَّرْسِ",
+      "voix_m": "lecture_niv5_lec06_qaf_p3_ex9_phrase_m.mp3",
+      "voix_f": "lecture_niv5_lec06_qaf_p3_ex9_phrase_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:31:28.891564",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv5_lec06_qaf",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 13
+  }
+}

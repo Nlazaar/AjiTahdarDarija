@@ -1,0 +1,233 @@
+{
+  "page_nb": 107,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Découpe les images - Exercices 1, 4 et 9",
+    "ar": "أقصّ الصّور للتمرين"
+  },
+  "enonce": {
+    "fr": "Découpe les images et associe-les aux lettres et mots correspondants",
+    "ar": "أقصّ الصّور وضعها في المكان المناسب"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "طَرِيقٌ",
+      "fr": "route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "2",
+      "ar": "تَمْرٌ",
+      "fr": "dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "3",
+      "ar": "حَمَامَةٌ",
+      "fr": "pigeon",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "4",
+      "ar": "ذَيْلٌ",
+      "fr": "queue",
+      "emoji": "🐆"
+    },
+    {
+      "id": "5",
+      "ar": "سَمَكَةٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "6",
+      "ar": "لَيْلٌ",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "7",
+      "ar": "عَيْنٌ",
+      "fr": "œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "8",
+      "ar": "هَدِيَّةٌ",
+      "fr": "cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "9",
+      "ar": "فِيلٌ",
+      "fr": "éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "10",
+      "ar": "أَدَرْ",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "11",
+      "ar": "مُسَطَّطٌ",
+      "fr": "lion dans la pluie",
+      "emoji": "🌧️"
+    },
+    {
+      "id": "12",
+      "ar": "النَّوْمُ",
+      "fr": "dormir",
+      "emoji": "😴"
+    },
+    {
+      "id": "13",
+      "ar": "غَسْلُ الْيَدَيْنِ",
+      "fr": "se laver les mains",
+      "emoji": "🙌"
+    },
+    {
+      "id": "14",
+      "ar": "الشُّرْبَةُ",
+      "fr": "soupe",
+      "emoji": "🍲"
+    },
+    {
+      "id": "15",
+      "ar": "تَنْظِيفُ الْأَسْنَانِ",
+      "fr": "se brosser les dents",
+      "emoji": "🪥"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p107_consigne",
+      "texte_ar": "أقصّ الصّور وضعها في المكان المناسب",
+      "voix_m": "livre_3_5ans_tome2_p107_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "طَرِيقٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "تَمْرٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حَمَامَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "لَيْلٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "عَيْنٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "هَدِيَّةٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "فِيلٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "أَدَرْ",
+      "voix_m": "livre_3_5ans_tome2_p107_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "مُسَطَّطٌ",
+      "voix_m": "livre_3_5ans_tome2_p107_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "النَّوْمُ",
+      "voix_m": "livre_3_5ans_tome2_p107_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "غَسْلُ الْيَدَيْنِ",
+      "voix_m": "livre_3_5ans_tome2_p107_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "الشُّرْبَةُ",
+      "voix_m": "livre_3_5ans_tome2_p107_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "تَنْظِيفُ الْأَسْنَانِ",
+      "voix_m": "livre_3_5ans_tome2_p107_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p107_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:13:46.417028",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 16
+  }
+}

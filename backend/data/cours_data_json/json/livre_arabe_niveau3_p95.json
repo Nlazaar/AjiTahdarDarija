@@ -1,0 +1,116 @@
+{
+  "page_nb": 95,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Je construis des phrases en répondant aux questions",
+    "ar": "أُعَبِّرُ بِالْإِجَابَةِ عَنِ الْأَسْئِلَةِ"
+  },
+  "enonce": {
+    "fr": "Lis les questions et réponds en utilisant 'à l'intérieur' ou 'à l'extérieur'",
+    "ar": "اِقْرَأِ الْأَسْئِلَةَ وَأَجِبْ بِاسْتِخْدَامِ دَاخِلَ أَوْ خَارِجَ"
+  },
+  "elements": [
+    {
+      "id": "question_1",
+      "ar": "أَيْنَ الْعُصْفُورُ ؟",
+      "fr": "Où est le moineau ?",
+      "emoji": "🐦"
+    },
+    {
+      "id": "reponse_1",
+      "ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "fr": "Le moineau est à l'intérieur de la cage",
+      "emoji": "🐦"
+    },
+    {
+      "id": "question_2",
+      "ar": "أَيْنَ الْبَبَّغَاءُ ؟",
+      "fr": "Où est le perroquet ?",
+      "emoji": "🦜"
+    },
+    {
+      "id": "reponse_2",
+      "ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "fr": "Le perroquet est à l'extérieur de la cage",
+      "emoji": "🦜"
+    },
+    {
+      "id": "mot_1",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur",
+      "emoji": "⬛"
+    },
+    {
+      "id": "mot_2",
+      "ar": "خَارِجَ",
+      "fr": "à l'extérieur",
+      "emoji": "⬜"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p95_consigne",
+      "texte_ar": "اِقْرَأِ الْأَسْئِلَةَ وَأَجِبْ بِاسْتِخْدَامِ دَاخِلَ أَوْ خَارِجَ",
+      "voix_m": "livre_arabe_niveau3_p95_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_1",
+      "texte_ar": "أَيْنَ الْعُصْفُورُ ؟",
+      "voix_m": "livre_arabe_niveau3_p95_question_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_question_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1",
+      "texte_ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "voix_m": "livre_arabe_niveau3_p95_reponse_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_reponse_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_2",
+      "texte_ar": "أَيْنَ الْبَبَّغَاءُ ؟",
+      "voix_m": "livre_arabe_niveau3_p95_question_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_question_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2",
+      "texte_ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "voix_m": "livre_arabe_niveau3_p95_reponse_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_reponse_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "livre_arabe_niveau3_p95_mot_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "خَارِجَ",
+      "voix_m": "livre_arabe_niveau3_p95_mot_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p95_mot_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:13:22.878534",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

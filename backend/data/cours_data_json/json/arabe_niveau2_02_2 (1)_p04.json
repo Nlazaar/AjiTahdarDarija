@@ -1,0 +1,51 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à leur bonne place",
+    "ar": "أَلصِقُ أَجْزَاءَ الصُّورَةَ فِي مَكَانِها المناسب"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de l'image de la pieuvre à la bonne place dans le cadre vide.",
+    "ar": "أَلصِقُ أَجْزَاءَ الصُّورَةَ فِي مَكَانِها المُنَاسِبِ"
+  },
+  "elements": [
+    {
+      "id": "e1",
+      "ar": "أَخْطَبُوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_2 (1)",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَلصِقُ أَجْزَاءَ الصُّورَةَ فِي مَكَانِها المُنَاسِبِ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_e1",
+      "texte_ar": "أَخْطَبُوط",
+      "voix_m": "arabe_niveau2_02_2 (1)_p4_e1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p4_e1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:36:22.210805",
+    "niveau": 2,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau2_02_2 (1)",
+    "bucket_audio": "audio-lessons/niveau2/lecon09/",
+    "nb_audio_assets": 2
+  }
+}

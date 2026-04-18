@@ -1,0 +1,116 @@
+{
+  "page_nb": 29,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Reconstitue les puzzles animaux",
+    "ar": "أقصُّ هذه الصّور للتّمارين التّالية"
+  },
+  "enonce": {
+    "fr": "Découpe et reconstitue chaque image d'animal avec son mot en arabe",
+    "ar": "اقصص الصور وأعد تركيب كل حيوان مع كلمته"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "جَمَـبْ",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "2",
+      "ar": "كَـلْ",
+      "fr": "chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "3",
+      "ar": "نَمِـدَة",
+      "fr": "ver / chenille",
+      "emoji": "🐛"
+    },
+    {
+      "id": "4",
+      "ar": "دُو",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "5",
+      "ar": "سَمَـ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "6",
+      "ar": "قِـ",
+      "fr": "singe",
+      "emoji": "🐒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p29_consigne",
+      "texte_ar": "اقصص الصور وأعد تركيب كل حيوان مع كلمته",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "جَمَـبْ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كَـلْ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "نَمِـدَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دُو",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سَمَـ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قِـ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p29_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p29_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:32:50.278175",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 7
+  }
+}

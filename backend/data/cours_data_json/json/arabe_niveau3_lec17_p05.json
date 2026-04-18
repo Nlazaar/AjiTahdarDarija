@@ -1,0 +1,116 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la bonne forme de la lettre ث",
+    "ar": "أكمِّل كل كلمة بالحرف الناقص ث"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثَلَجٌ",
+      "fr": "Glace",
+      "emoji": "🧊"
+    },
+    {
+      "id": "2",
+      "ar": "ثَلَّاجَةٌ",
+      "fr": "Réfrigérateur",
+      "emoji": "🧊"
+    },
+    {
+      "id": "3",
+      "ar": "ثَوْرٌ",
+      "fr": "Taureau",
+      "emoji": "🐂"
+    },
+    {
+      "id": "4",
+      "ar": "مُثَلَّثٌ",
+      "fr": "Triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "5",
+      "ar": "مُثَلَّجَاتٌ",
+      "fr": "Glaces / Crèmes glacées",
+      "emoji": "🍦"
+    },
+    {
+      "id": "6",
+      "ar": "ثَوْمٌ",
+      "fr": "Ail",
+      "emoji": "🧄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec17",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أكمِّل كل كلمة بالحرف الناقص ث",
+      "voix_m": "arabe_niveau3_lec17_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثَلَجٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثَلَّاجَةٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ثَوْرٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مُثَلَّثٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مُثَلَّجَاتٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ثَوْمٌ",
+      "voix_m": "arabe_niveau3_lec17_p5_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p5_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:49:06.483957",
+    "niveau": 3,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau3_lec17",
+    "bucket_audio": "audio-lessons/niveau3/lecon17/",
+    "nb_audio_assets": 7
+  }
+}

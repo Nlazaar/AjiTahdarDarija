@@ -1,0 +1,220 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Entourer la lettre Kaf dans toutes ses formes",
+    "ar": "أحيط الحرف بمختلف أشكاله"
+  },
+  "enonce": {
+    "fr": "Entoure uniquement la lettre كاف (ك) dans toutes ses formes parmi les autres lettres",
+    "ar": "أحِط الحرف كاف بمختلف أشكاله (ك، كـ، ـك) من بين الحروف الأخرى"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ك",
+      "fr": "Kaf isolé",
+      "emoji": "🔵"
+    },
+    {
+      "id": "2",
+      "ar": "كـ",
+      "fr": "Kaf initial",
+      "emoji": "🔵"
+    },
+    {
+      "id": "3",
+      "ar": "ـك",
+      "fr": "Kaf final",
+      "emoji": "🔵"
+    },
+    {
+      "id": "4",
+      "ar": "ن",
+      "fr": "Noun",
+      "emoji": "⭕"
+    },
+    {
+      "id": "5",
+      "ar": "ة",
+      "fr": "Ta marbuta",
+      "emoji": "⭕"
+    },
+    {
+      "id": "6",
+      "ar": "ر",
+      "fr": "Ra",
+      "emoji": "⭕"
+    },
+    {
+      "id": "7",
+      "ar": "ي",
+      "fr": "Ya",
+      "emoji": "⭕"
+    },
+    {
+      "id": "8",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "⭕"
+    },
+    {
+      "id": "9",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "⭕"
+    },
+    {
+      "id": "10",
+      "ar": "ء",
+      "fr": "Hamza",
+      "emoji": "⭕"
+    },
+    {
+      "id": "11",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "⭕"
+    },
+    {
+      "id": "12",
+      "ar": "ا",
+      "fr": "Alif",
+      "emoji": "⭕"
+    },
+    {
+      "id": "13",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "⭕"
+    },
+    {
+      "id": "14",
+      "ar": "ض",
+      "fr": "Dad",
+      "emoji": "⭕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أحِط الحرف كاف بمختلف أشكاله (ك، كـ، ـك) من بين الحروف الأخرى",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ي",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ء",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ث",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ض",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p5_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p5_14_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:15:58.173066",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 15
+  }
+}

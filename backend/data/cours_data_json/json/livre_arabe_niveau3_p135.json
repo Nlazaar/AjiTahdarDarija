@@ -1,0 +1,116 @@
+{
+  "page_nb": 135,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أَكَمِّلُ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre manquante : م (mim)",
+    "ar": "أَكَمِّلُ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ : م"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِمْحَاةٌ",
+      "fr": "Gomme",
+      "emoji": "🧹"
+    },
+    {
+      "id": "2",
+      "ar": "مِسْطَرَةٌ",
+      "fr": "Règle",
+      "emoji": "📏"
+    },
+    {
+      "id": "3",
+      "ar": "مَعْجُونٌ",
+      "fr": "Confiture / pâte",
+      "emoji": "🍯"
+    },
+    {
+      "id": "4",
+      "ar": "مَفٌّ",
+      "fr": "Lèvres / bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "5",
+      "ar": "نَعَامَةٌ",
+      "fr": "Autruche",
+      "emoji": "🦤"
+    },
+    {
+      "id": "6",
+      "ar": "رُمَّانٌ",
+      "fr": "Grenade (fruit)",
+      "emoji": "🍎"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p135_consigne",
+      "texte_ar": "أَكَمِّلُ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ : م",
+      "voix_m": "livre_arabe_niveau3_p135_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِمْحَاةٌ",
+      "voix_m": "livre_arabe_niveau3_p135_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِسْطَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_p135_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مَعْجُونٌ",
+      "voix_m": "livre_arabe_niveau3_p135_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مَفٌّ",
+      "voix_m": "livre_arabe_niveau3_p135_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "نَعَامَةٌ",
+      "voix_m": "livre_arabe_niveau3_p135_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رُمَّانٌ",
+      "voix_m": "livre_arabe_niveau3_p135_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p135_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:20:18.546055",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

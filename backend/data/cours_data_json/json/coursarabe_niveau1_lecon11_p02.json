@@ -1,0 +1,116 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Barre la forme différente / Colorie la tomate",
+    "ar": "أشطُبُ الشَّكَل المُختلِف / ألوِّن"
+  },
+  "enonce": {
+    "fr": "Exercice 1 : Barre l'élément qui n'est pas vert parmi les légumes. Exercice 2 : Colorie la tomate (طماطم).",
+    "ar": "تمرين 1 : هل الـ... خضر ؟ أشطب الشكل المختلف. تمرين 2 : ألوِّن الطماطم."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فلفل أخضر",
+      "fr": "Poivron vert",
+      "emoji": "🫑"
+    },
+    {
+      "id": "2",
+      "ar": "ثوم",
+      "fr": "Ail (blanc)",
+      "emoji": "🧄"
+    },
+    {
+      "id": "3",
+      "ar": "بصل",
+      "fr": "Oignon (non vert)",
+      "emoji": "🧅"
+    },
+    {
+      "id": "4",
+      "ar": "عنب",
+      "fr": "Raisin vert",
+      "emoji": "🍇"
+    },
+    {
+      "id": "5",
+      "ar": "طماطم",
+      "fr": "Tomate (non verte)",
+      "emoji": "🍅"
+    },
+    {
+      "id": "6",
+      "ar": "جزر",
+      "fr": "Carottes (non vertes)",
+      "emoji": "🥕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 1 : هل الـ... خضر ؟ أشطب الشكل المختلف. تمرين 2 : ألوِّن الطماطم.",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فلفل أخضر",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثوم",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بصل",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "عنب",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طماطم",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "جزر",
+      "voix_m": "coursarabe_niveau1_lecon11_p2_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p2_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:23:11.183808",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 7
+  }
+}

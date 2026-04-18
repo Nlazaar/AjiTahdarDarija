@@ -1,0 +1,77 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie chaque mot avec son image",
+    "ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond.",
+    "ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَنْف",
+      "fr": "nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "2",
+      "ar": "شَفَة",
+      "fr": "lèvres",
+      "emoji": "👄"
+    },
+    {
+      "id": "3",
+      "ar": "شَعْر",
+      "fr": "cheveux",
+      "emoji": "💇"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 3,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا",
+      "voix_m": "coursarabe_niveau1_lecon09_p7_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَنْف",
+      "voix_m": "coursarabe_niveau1_lecon09_p7_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَفَة",
+      "voix_m": "coursarabe_niveau1_lecon09_p7_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَعْر",
+      "voix_m": "coursarabe_niveau1_lecon09_p7_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p7_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:21:21.684327",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 4
+  }
+}

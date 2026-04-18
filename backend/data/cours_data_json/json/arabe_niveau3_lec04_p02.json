@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis - Les verbes d'état et d'action",
+    "ar": "أَقْرَأُ"
+  },
+  "enonce": {
+    "fr": "Lis chaque mot arabe et associe-le à l'image correspondante",
+    "ar": "اقرأ كل كلمة وربطها بالصورة المناسبة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَعِبَ",
+      "fr": "il s'est fatigué",
+      "emoji": "😓"
+    },
+    {
+      "id": "2",
+      "ar": "مَرِضَ",
+      "fr": "il est tombé malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "3",
+      "ar": "سَمِعَ",
+      "fr": "il a entendu",
+      "emoji": "👂"
+    },
+    {
+      "id": "4",
+      "ar": "لَعِبَ",
+      "fr": "il a joué",
+      "emoji": "🎮"
+    },
+    {
+      "id": "5",
+      "ar": "فَهِمَ",
+      "fr": "il a compris",
+      "emoji": "💡"
+    },
+    {
+      "id": "6",
+      "ar": "فَرِحَ",
+      "fr": "il s'est réjoui",
+      "emoji": "😄"
+    },
+    {
+      "id": "7",
+      "ar": "غَضِبَ",
+      "fr": "il s'est mis en colère",
+      "emoji": "😠"
+    },
+    {
+      "id": "8",
+      "ar": "لَقِيَ",
+      "fr": "il a rencontré",
+      "emoji": "🤝"
+    },
+    {
+      "id": "9",
+      "ar": "حَزِنَ",
+      "fr": "il a été triste",
+      "emoji": "😢"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec04",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اقرأ كل كلمة وربطها بالصورة المناسبة",
+      "voix_m": "arabe_niveau3_lec04_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَعِبَ",
+      "voix_m": "arabe_niveau3_lec04_p2_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَرِضَ",
+      "voix_m": "arabe_niveau3_lec04_p2_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سَمِعَ",
+      "voix_m": "arabe_niveau3_lec04_p2_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "لَعِبَ",
+      "voix_m": "arabe_niveau3_lec04_p2_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "arabe_niveau3_lec04_p2_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "فَرِحَ",
+      "voix_m": "arabe_niveau3_lec04_p2_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "غَضِبَ",
+      "voix_m": "arabe_niveau3_lec04_p2_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "لَقِيَ",
+      "voix_m": "arabe_niveau3_lec04_p2_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "arabe_niveau3_lec04_p2_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec04_p2_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:28:43.099006",
+    "niveau": 3,
+    "lecon": 4,
+    "nom_pdf": "arabe_niveau3_lec04",
+    "bucket_audio": "audio-lessons/niveau3/lecon04/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,4 +1,6 @@
+'use client';
 import React, { useState } from 'react';
+import { useAudioCtx } from '@/contexts/AudioContext';
 
 type Word = { darija: string; latin?: string; fr?: string; en?: string };
 
@@ -12,15 +14,12 @@ export default function Flashcard({
   lang?: string;
 }) {
   const [index, setIndex] = useState(0);
+  const { speak: speakCtx } = useAudioCtx();
 
   const current = words[index];
 
   function speak(text: string) {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'ar';
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(u);
+    speakCtx(text, 'ar-MA');
   }
 
   function handleContinue() {

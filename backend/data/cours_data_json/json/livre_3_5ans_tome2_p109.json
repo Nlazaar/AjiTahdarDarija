@@ -1,0 +1,246 @@
+{
+  "page_nb": 109,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Découpe les images pour l'exercice 1",
+    "ar": "أقصّ الصّور للتمرين رقم 1"
+  },
+  "enonce": {
+    "fr": "Découpe les images des moyens de transport et classe-les par catégorie.",
+    "ar": "اقصّ صور وسائل النقل ورتّبها حسب فئتها."
+  },
+  "elements": [
+    {
+      "id": "train1",
+      "ar": "قطار",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "bus1",
+      "ar": "حافلة مدرسية",
+      "fr": "bus scolaire",
+      "emoji": "🚌"
+    },
+    {
+      "id": "voiture1",
+      "ar": "سيارة",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "avion1",
+      "ar": "طائرة صغيرة",
+      "fr": "petit avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "avion2",
+      "ar": "طائرة كبيرة",
+      "fr": "grand avion",
+      "emoji": "🛫"
+    },
+    {
+      "id": "train2",
+      "ar": "قطار سريع",
+      "fr": "train rapide",
+      "emoji": "🚄"
+    },
+    {
+      "id": "bus2",
+      "ar": "حافلة خضراء",
+      "fr": "bus vert",
+      "emoji": "🚌"
+    },
+    {
+      "id": "voiture2",
+      "ar": "سيارة حمراء",
+      "fr": "voiture rouge",
+      "emoji": "🚗"
+    },
+    {
+      "id": "train3",
+      "ar": "قطار فضي",
+      "fr": "train argenté",
+      "emoji": "🚅"
+    },
+    {
+      "id": "voiture3",
+      "ar": "سيارة خضراء",
+      "fr": "voiture verte",
+      "emoji": "🚗"
+    },
+    {
+      "id": "avion3",
+      "ar": "طائرة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "bus3",
+      "ar": "حافلة برتقالية",
+      "fr": "bus orange",
+      "emoji": "🚌"
+    },
+    {
+      "id": "avion4",
+      "ar": "طائرة بيضاء",
+      "fr": "avion blanc",
+      "emoji": "✈️"
+    },
+    {
+      "id": "bus4",
+      "ar": "حافلة سياحية",
+      "fr": "car de tourisme",
+      "emoji": "🚌"
+    },
+    {
+      "id": "train4",
+      "ar": "قطار حديث",
+      "fr": "train moderne",
+      "emoji": "🚄"
+    },
+    {
+      "id": "voiture4",
+      "ar": "سيارة صغيرة برتقالية",
+      "fr": "petite voiture orange",
+      "emoji": "🚐"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p109_consigne",
+      "texte_ar": "اقصّ صور وسائل النقل ورتّبها حسب فئتها.",
+      "voix_m": "livre_3_5ans_tome2_p109_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train1",
+      "texte_ar": "قطار",
+      "voix_m": "livre_3_5ans_tome2_p109_train1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_train1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus1",
+      "texte_ar": "حافلة مدرسية",
+      "voix_m": "livre_3_5ans_tome2_p109_bus1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_bus1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture1",
+      "texte_ar": "سيارة",
+      "voix_m": "livre_3_5ans_tome2_p109_voiture1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_voiture1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion1",
+      "texte_ar": "طائرة صغيرة",
+      "voix_m": "livre_3_5ans_tome2_p109_avion1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_avion1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion2",
+      "texte_ar": "طائرة كبيرة",
+      "voix_m": "livre_3_5ans_tome2_p109_avion2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_avion2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train2",
+      "texte_ar": "قطار سريع",
+      "voix_m": "livre_3_5ans_tome2_p109_train2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_train2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus2",
+      "texte_ar": "حافلة خضراء",
+      "voix_m": "livre_3_5ans_tome2_p109_bus2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_bus2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture2",
+      "texte_ar": "سيارة حمراء",
+      "voix_m": "livre_3_5ans_tome2_p109_voiture2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_voiture2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train3",
+      "texte_ar": "قطار فضي",
+      "voix_m": "livre_3_5ans_tome2_p109_train3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_train3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture3",
+      "texte_ar": "سيارة خضراء",
+      "voix_m": "livre_3_5ans_tome2_p109_voiture3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_voiture3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion3",
+      "texte_ar": "طائرة",
+      "voix_m": "livre_3_5ans_tome2_p109_avion3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_avion3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus3",
+      "texte_ar": "حافلة برتقالية",
+      "voix_m": "livre_3_5ans_tome2_p109_bus3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_bus3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion4",
+      "texte_ar": "طائرة بيضاء",
+      "voix_m": "livre_3_5ans_tome2_p109_avion4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_avion4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus4",
+      "texte_ar": "حافلة سياحية",
+      "voix_m": "livre_3_5ans_tome2_p109_bus4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_bus4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train4",
+      "texte_ar": "قطار حديث",
+      "voix_m": "livre_3_5ans_tome2_p109_train4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_train4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture4",
+      "texte_ar": "سيارة صغيرة برتقالية",
+      "voix_m": "livre_3_5ans_tome2_p109_voiture4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p109_voiture4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:14:15.493665",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 17
+  }
+}

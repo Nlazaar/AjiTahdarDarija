@@ -1,0 +1,77 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط الكلمة بصورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot arabe à l'image qui lui correspond",
+    "ar": "أربط كل كلمة بصورتها المناسبة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دجاجة",
+      "fr": "poule",
+      "emoji": "🐔"
+    },
+    {
+      "id": "2",
+      "ar": "بقرة",
+      "fr": "vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "3",
+      "ar": "خروف",
+      "fr": "mouton",
+      "emoji": "🐑"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 3,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أربط كل كلمة بصورتها المناسبة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p7_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دجاجة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p7_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بقرة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p7_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خروف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p7_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p7_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:29:53.649766",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

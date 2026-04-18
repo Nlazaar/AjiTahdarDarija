@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react"
 import { FeedbackBanner } from "@/components/ui"
+import { useAudioCtx } from "@/contexts/AudioContext"
 import type { DarijaLetter } from "./types"
 
 interface DicterRomanisationProps {
@@ -14,14 +15,15 @@ interface DicterRomanisationProps {
 }
 
 export default function DicterRomanisation({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: DicterRomanisationProps) {
+  const { speak, stop, isPlaying } = useAudioCtx()
   const [selected,    setSelected]    = useState<string | null>(null)
   const [answered,    setAnswered]    = useState(false)
   const [correct,     setCorrect]     = useState<boolean | null>(null)
-  const [playing,     setPlaying]     = useState(false)
   const [slowPlay,    setSlowPlay]    = useState(false)
   const [useKeyboard, setUseKeyboard] = useState(false)
   const [inputValue,  setInputValue]  = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
+  const playing = isPlaying && !slowPlay
 
   // Reset + auto-play on new letter
   useEffect(() => {
@@ -49,14 +51,13 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
   }, [shouldValidate]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handlePlay = (slow = false) => {
-    if (typeof window === "undefined" || !window.speechSynthesis) return
-    window.speechSynthesis.cancel()
-    const u = new SpeechSynthesisUtterance(letter.letter)
-    u.lang = "ar-MA"
-    u.rate = slow ? 0.4 : 0.9
-    slow ? setSlowPlay(true) : setPlaying(true)
-    u.onend = () => { setPlaying(false); setSlowPlay(false) }
-    window.speechSynthesis.speak(u)
+    stop()
+    setSlowPlay(slow)
+    speak(letter.letter, "ar-MA")
+    if (slow) {
+      // reset slow flag après une durée plausible (Web Speech ne permet pas un rate très bas uniforme)
+      setTimeout(() => setSlowPlay(false), 1800)
+    }
   }
 
   const currentAnswer = useKeyboard ? inputValue.trim() : (selected ?? "")

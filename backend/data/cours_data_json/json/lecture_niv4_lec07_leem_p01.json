@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ل avec vocabulaire illustré, lecture d'une phrase exemple, exercice d'écoute (entend ou n'entend pas la lettre) et exercice d'entourer la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Lam (ل)",
+    "ar": "حَرْفُ اللَّام"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ل à travers des images, écoute les mots et identifie si tu entends la lettre, puis entoure la lettre dans les mots proposés.",
+    "ar": "تَعَرَّفْ عَلَى حَرْفِ اللَّام مِنْ خِلَالِ الصُّوَرِ، ثُمَّ اسْمَعِ الْكَلِمَاتِ وَحَدِّدْ إِنْ كُنْتَ تَسْمَعُ الْحَرْفَ، ثُمَّ أَرْسُمْ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "لِسَانٌ",
+      "fr": "langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "mot_2",
+      "ar": "لُعْبَةٌ",
+      "fr": "jouet (nounours)",
+      "emoji": "🧸"
+    },
+    {
+      "id": "mot_3",
+      "ar": "قَلَمٌ",
+      "fr": "crayon",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_4",
+      "ar": "حَلِيبٌ",
+      "fr": "lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "mot_5",
+      "ar": "قُلُوبٌ",
+      "fr": "cœurs",
+      "emoji": "❤️"
+    },
+    {
+      "id": "mot_6",
+      "ar": "لَاعِبٌ",
+      "fr": "joueur",
+      "emoji": "⚽"
+    },
+    {
+      "id": "phrase",
+      "ar": "مَلَأَ الْوَلَدُ الدَّلْوَ بِالرَّمْلِ",
+      "fr": "L'enfant a rempli le seau de sable",
+      "emoji": "🏖️"
+    },
+    {
+      "id": "ex1_marteau",
+      "ar": "مِطْرَقَةٌ",
+      "fr": "marteau",
+      "emoji": "🔨"
+    },
+    {
+      "id": "ex1_canne",
+      "ar": "سَنَّارَةٌ",
+      "fr": "canne à pêche",
+      "emoji": "🎣"
+    },
+    {
+      "id": "ex1_fraise",
+      "ar": "فِرَاوْلَةٌ",
+      "fr": "fraise",
+      "emoji": "🍓"
+    },
+    {
+      "id": "ex1_ventilateur",
+      "ar": "مِرْوَحَةٌ",
+      "fr": "ventilateur",
+      "emoji": "🌀"
+    },
+    {
+      "id": "ex1_cuillere",
+      "ar": "مِلْعَقَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "ex2_layl",
+      "ar": "لَيْلٌ",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "ex2_maa",
+      "ar": "مَاءٌ",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "ex2_qalil",
+      "ar": "قَلِيلٌ",
+      "fr": "peu",
+      "emoji": "🔢"
+    },
+    {
+      "id": "ex2_raml",
+      "ar": "رَمْلٌ",
+      "fr": "sable",
+      "emoji": "🏜️"
+    },
+    {
+      "id": "ex2_tawil",
+      "ar": "طَوِيلٌ",
+      "fr": "long/grand",
+      "emoji": "📏"
+    },
+    {
+      "id": "ex2_dalw",
+      "ar": "دَلْوٌ",
+      "fr": "seau",
+      "emoji": "🪣"
+    },
+    {
+      "id": "ex2_sayl",
+      "ar": "سَيْلٌ",
+      "fr": "torrent",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ex2_qalb",
+      "ar": "قَلْبٌ",
+      "fr": "cœur",
+      "emoji": "❤️"
+    },
+    {
+      "id": "ex2_mal",
+      "ar": "مَالٌ",
+      "fr": "argent/richesse",
+      "emoji": "💰"
+    },
+    {
+      "id": "ex2_labisa",
+      "ar": "لَبِسَ",
+      "fr": "il a mis (vêtement)",
+      "emoji": "👕"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec07_leem",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَرَّفْ عَلَى حَرْفِ اللَّام مِنْ خِلَالِ الصُّوَرِ، ثُمَّ اسْمَعِ الْكَلِمَاتِ وَحَدِّدْ إِنْ كُنْتَ تَسْمَعُ الْحَرْفَ، ثُمَّ أَرْسُمْ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv4_lec07_leem_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "لِسَانٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "لُعْبَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "قَلَمٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "حَلِيبٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "قُلُوبٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "لَاعِبٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase",
+      "texte_ar": "مَلَأَ الْوَلَدُ الدَّلْوَ بِالرَّمْلِ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_phrase_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_marteau",
+      "texte_ar": "مِطْرَقَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex1_marteau_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex1_marteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_canne",
+      "texte_ar": "سَنَّارَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex1_canne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex1_canne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_fraise",
+      "texte_ar": "فِرَاوْلَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex1_fraise_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex1_fraise_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_ventilateur",
+      "texte_ar": "مِرْوَحَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex1_ventilateur_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex1_ventilateur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_cuillere",
+      "texte_ar": "مِلْعَقَةٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex1_cuillere_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex1_cuillere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_layl",
+      "texte_ar": "لَيْلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_layl_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_layl_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_maa",
+      "texte_ar": "مَاءٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_maa_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_maa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_qalil",
+      "texte_ar": "قَلِيلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_qalil_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_qalil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_raml",
+      "texte_ar": "رَمْلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_raml_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_raml_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_tawil",
+      "texte_ar": "طَوِيلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_tawil_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_tawil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_dalw",
+      "texte_ar": "دَلْوٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_dalw_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_dalw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_sayl",
+      "texte_ar": "سَيْلٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_sayl_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_sayl_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_qalb",
+      "texte_ar": "قَلْبٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_qalb_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_qalb_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_mal",
+      "texte_ar": "مَالٌ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_mal_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_mal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_labisa",
+      "texte_ar": "لَبِسَ",
+      "voix_m": "lecture_niv4_lec07_leem_p1_ex2_labisa_m.mp3",
+      "voix_f": "lecture_niv4_lec07_leem_p1_ex2_labisa_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:55:28.655675",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_leem",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 23
+  }
+}

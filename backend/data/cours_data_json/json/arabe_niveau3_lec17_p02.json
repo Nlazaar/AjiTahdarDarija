@@ -1,0 +1,77 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie le mot à l'image correspondante.",
+    "ar": "اربط البطاقتين لتكوين كلمة، ثم اربط الكلمة بصورتها."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دُوشَةٌ",
+      "fr": "Papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "2",
+      "ar": "فَرَانٌ",
+      "fr": "Ver / Chenille",
+      "emoji": "🐛"
+    },
+    {
+      "id": "3",
+      "ar": "رُمَّادَةٌ",
+      "fr": "Grenade (fruit)",
+      "emoji": "🍎"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec17",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اربط البطاقتين لتكوين كلمة، ثم اربط الكلمة بصورتها.",
+      "voix_m": "arabe_niveau3_lec17_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دُوشَةٌ",
+      "voix_m": "arabe_niveau3_lec17_p2_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "فَرَانٌ",
+      "voix_m": "arabe_niveau3_lec17_p2_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رُمَّادَةٌ",
+      "voix_m": "arabe_niveau3_lec17_p2_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec17_p2_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:48:33.967375",
+    "niveau": 3,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau3_lec17",
+    "bucket_audio": "audio-lessons/niveau3/lecon17/",
+    "nb_audio_assets": 4
+  }
+}

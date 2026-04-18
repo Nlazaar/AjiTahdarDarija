@@ -1,0 +1,220 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des phrases avec le mot approprié en utilisant des antonymes et des mots d'une liste donnée, puis lire les phrases complétées",
+  "titre": {
+    "fr": "Je complète et je lis",
+    "ar": "أُكْمِلُ بِمَا يُنَاسِبُ وَ أَقْرَأُ"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Je complète avec le mot qui convient et je lis (contraires). Exercice 8 : Je complète avec le mot qui convient (choisir parmi : la branche, les assiettes, le faucon, le poisson). Exercice 9 : Je complète la phrase par des mots de la liste (تَنْشُرُ، الْحَبْلِ، الثِّيَابَ)",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَأَقْرَأُ (المتضادات). تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْغُصْنِ، الصُّحُونَ، الْفَخَّ، سَمَكَةً). تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "ex7_1",
+      "ar": "طَوِيلٌ ≠ قَصِيرٌ",
+      "fr": "long ≠ court",
+      "emoji": "📏"
+    },
+    {
+      "id": "ex7_2",
+      "ar": "التِّمْسَاحُ طَوِيلٌ",
+      "fr": "Le crocodile est long",
+      "emoji": "🐊"
+    },
+    {
+      "id": "ex7_3",
+      "ar": "الدُّودَةُ قَصِيرَةٌ",
+      "fr": "Le ver est court",
+      "emoji": "🐛"
+    },
+    {
+      "id": "ex7_4",
+      "ar": "بَطِيءٌ ≠ سَرِيعٌ",
+      "fr": "lent ≠ rapide",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex7_5",
+      "ar": "السُّلَحْفَاةُ بَطِيئَةٌ",
+      "fr": "La tortue est lente",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex7_6",
+      "ar": "الْأَرْنَبُ سَرِيعٌ",
+      "fr": "Le lapin est rapide",
+      "emoji": "🐇"
+    },
+    {
+      "id": "ex8_1",
+      "ar": "حَطَّ الْعُصْفُورُ عَلَى الْغُصْنِ",
+      "fr": "Le moineau s'est posé sur la branche",
+      "emoji": "🐦"
+    },
+    {
+      "id": "ex8_2",
+      "ar": "أَكَلَتِ الْقِطَّةُ السَّمَكَةَ",
+      "fr": "Le chat a mangé le poisson",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex8_3",
+      "ar": "وَقَعَ الْفَأْرُ فِي الْفَخِّ",
+      "fr": "La souris est tombée dans le piège",
+      "emoji": "🐭"
+    },
+    {
+      "id": "ex8_4",
+      "ar": "يَغْسِلُ الْوَلَدُ الصُّحُونَ",
+      "fr": "Le garçon lave les assiettes",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex9_1",
+      "ar": "تَنْشُرُ",
+      "fr": "elle étend",
+      "emoji": "👗"
+    },
+    {
+      "id": "ex9_2",
+      "ar": "الْحَبْلِ",
+      "fr": "la corde",
+      "emoji": "🪢"
+    },
+    {
+      "id": "ex9_3",
+      "ar": "الثِّيَابَ",
+      "fr": "les vêtements",
+      "emoji": "👕"
+    },
+    {
+      "id": "ex9_phrase",
+      "ar": "إِيمَانُ تَنْشُرُ الثِّيَابَ عَلَى الْحَبْلِ",
+      "fr": "Imane étend les vêtements sur la corde",
+      "emoji": "🌞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec06_taa",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَأَقْرَأُ (المتضادات). تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْغُصْنِ، الصُّحُونَ، الْفَخَّ، سَمَكَةً). تمرين 9: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_1",
+      "texte_ar": "طَوِيلٌ ≠ قَصِيرٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_2",
+      "texte_ar": "التِّمْسَاحُ طَوِيلٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_3",
+      "texte_ar": "الدُّودَةُ قَصِيرَةٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_4",
+      "texte_ar": "بَطِيءٌ ≠ سَرِيعٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_4_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_5",
+      "texte_ar": "السُّلَحْفَاةُ بَطِيئَةٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_5_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_6",
+      "texte_ar": "الْأَرْنَبُ سَرِيعٌ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex7_6_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex7_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_1",
+      "texte_ar": "حَطَّ الْعُصْفُورُ عَلَى الْغُصْنِ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex8_1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_2",
+      "texte_ar": "أَكَلَتِ الْقِطَّةُ السَّمَكَةَ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex8_2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_3",
+      "texte_ar": "وَقَعَ الْفَأْرُ فِي الْفَخِّ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex8_3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_4",
+      "texte_ar": "يَغْسِلُ الْوَلَدُ الصُّحُونَ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex8_4_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_1",
+      "texte_ar": "تَنْشُرُ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex9_1_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_2",
+      "texte_ar": "الْحَبْلِ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex9_2_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_3",
+      "texte_ar": "الثِّيَابَ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex9_3_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_phrase",
+      "texte_ar": "إِيمَانُ تَنْشُرُ الثِّيَابَ عَلَى الْحَبْلِ",
+      "voix_m": "lecture_niv4_lec06_taa_p3_ex9_phrase_m.mp3",
+      "voix_f": "lecture_niv4_lec06_taa_p3_ex9_phrase_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:52:42.590662",
+    "niveau": 4,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv4_lec06_taa",
+    "bucket_audio": "audio-lessons/niveau4/lecon06/",
+    "nb_audio_assets": 15
+  }
+}

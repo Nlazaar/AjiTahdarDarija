@@ -1,0 +1,168 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'cuillère' (ملعقة) parmi les mots proposés et entoure-le à chaque fois que tu le trouves",
+    "ar": "أبحثُ عَن كَلِمةِ مِلعَقة وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِلعقة",
+      "fr": "cuillère (correct)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "2",
+      "ar": "لعقة",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "مِلعقة",
+      "fr": "cuillère (correct)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "4",
+      "ar": "مِلعقة",
+      "fr": "cuillère (correct)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "5",
+      "ar": "مَلاعق",
+      "fr": "mot incorrect (pluriel)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "مِلعقة",
+      "fr": "cuillère (correct)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "7",
+      "ar": "مِلحقة",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "لعق",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "مِلعقة",
+      "fr": "cuillère (correct)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "10",
+      "ar": "مغلقة",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أبحثُ عَن كَلِمةِ مِلعَقة وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "arabe_niveau2_06_2_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِلعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_1_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "لعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_2_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِلعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_3_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مِلعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_4_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَلاعق",
+      "voix_m": "arabe_niveau2_06_2_p4_5_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِلعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_6_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مِلحقة",
+      "voix_m": "arabe_niveau2_06_2_p4_7_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "لعق",
+      "voix_m": "arabe_niveau2_06_2_p4_8_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِلعقة",
+      "voix_m": "arabe_niveau2_06_2_p4_9_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مغلقة",
+      "voix_m": "arabe_niveau2_06_2_p4_10_m.mp3",
+      "voix_f": "arabe_niveau2_06_2_p4_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:49:14.999787",
+    "niveau": 2,
+    "lecon": 18,
+    "nom_pdf": "arabe_niveau2_06_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon18/",
+    "nb_audio_assets": 11
+  }
+}

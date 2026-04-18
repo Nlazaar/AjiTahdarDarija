@@ -1,0 +1,103 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie la plus grande chaussure avec quatre couleurs",
+    "ar": "لوّن أكبر حذاء بأربعة ألوان"
+  },
+  "enonce": {
+    "fr": "Regarde toutes les chaussures et colorie la plus grande avec quatre couleurs différentes.",
+    "ar": "انظر إلى كل الأحذية ولوّن أكبر حذاء بأربعة ألوان مختلفة."
+  },
+  "elements": [
+    {
+      "id": "shoe_1",
+      "ar": "حذاء رياضي صغير",
+      "fr": "petite basket à crampons",
+      "emoji": "👟"
+    },
+    {
+      "id": "shoe_2",
+      "ar": "حذاء رياضي بكرامبون",
+      "fr": "chaussure de foot à crampons",
+      "emoji": "👟"
+    },
+    {
+      "id": "shoe_3",
+      "ar": "حذاء كلاسيكي صغير",
+      "fr": "petite chaussure classique",
+      "emoji": "👞"
+    },
+    {
+      "id": "shoe_4",
+      "ar": "حذاء بكعب عالٍ",
+      "fr": "chaussure à talon haut",
+      "emoji": "👠"
+    },
+    {
+      "id": "shoe_5",
+      "ar": "حذاء رياضي كبير",
+      "fr": "grande basket (la plus grande)",
+      "emoji": "👟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "انظر إلى كل الأحذية ولوّن أكبر حذاء بأربعة ألوان مختلفة.",
+      "voix_m": "arabe_niveau2_03_1_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shoe_1",
+      "texte_ar": "حذاء رياضي صغير",
+      "voix_m": "arabe_niveau2_03_1_p8_shoe_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_shoe_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shoe_2",
+      "texte_ar": "حذاء رياضي بكرامبون",
+      "voix_m": "arabe_niveau2_03_1_p8_shoe_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_shoe_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shoe_3",
+      "texte_ar": "حذاء كلاسيكي صغير",
+      "voix_m": "arabe_niveau2_03_1_p8_shoe_3_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_shoe_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shoe_4",
+      "texte_ar": "حذاء بكعب عالٍ",
+      "voix_m": "arabe_niveau2_03_1_p8_shoe_4_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_shoe_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shoe_5",
+      "texte_ar": "حذاء رياضي كبير",
+      "voix_m": "arabe_niveau2_03_1_p8_shoe_5_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p8_shoe_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:40:04.588590",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 6
+  }
+}

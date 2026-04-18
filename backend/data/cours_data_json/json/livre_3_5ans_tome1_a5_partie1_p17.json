@@ -1,0 +1,90 @@
+{
+  "page_nb": 17,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je colle les parties de chaque image",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا"
+  },
+  "enonce": {
+    "fr": "Colle les deux parties de chaque mot à la bonne place pour reconstituer le mot entier",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "دُودَةٌ",
+      "fr": "ver (de terre)",
+      "emoji": "🪱"
+    },
+    {
+      "id": "mot_2",
+      "ar": "نَمِرٌ",
+      "fr": "tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "mot_3",
+      "ar": "كَلْبٌ",
+      "fr": "chien",
+      "emoji": "🐶"
+    },
+    {
+      "id": "mot_4",
+      "ar": "جَمَلٌ",
+      "fr": "chameau",
+      "emoji": "🐪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p17_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ كُلِّ صُورَةٍ فِي مَكَانِهَا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p17_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p17_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "دُودَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p17_mot_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p17_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "نَمِرٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p17_mot_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p17_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p17_mot_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p17_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p17_mot_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p17_mot_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:53.519940",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 5
+  }
+}

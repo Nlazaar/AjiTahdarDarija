@@ -1,0 +1,90 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "J'organise les activités après l'école",
+    "ar": "أرتِّب الأعمال الَّتي أقوم بها بعد العودة من المدرسة"
+  },
+  "enonce": {
+    "fr": "Remets dans le bon ordre les activités que tu fais après être rentré de l'école en dessinant dans chaque case.",
+    "ar": "أرتِّب الأعمال الَّتي أقوم بها بعد العودة من المدرسة"
+  },
+  "elements": [
+    {
+      "id": "action_1",
+      "ar": "أغْسِلُ يَدَيَّ",
+      "fr": "Je me lave les mains",
+      "emoji": "🙌"
+    },
+    {
+      "id": "action_2",
+      "ar": "أتَنَاوَلُ العَشَاءَ",
+      "fr": "Je prends le dîner",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "action_3",
+      "ar": "أُنَظِّفُ أسْنَانِي",
+      "fr": "Je me brosse les dents",
+      "emoji": "🦷"
+    },
+    {
+      "id": "action_4",
+      "ar": "أنَامُ",
+      "fr": "Je dors",
+      "emoji": "😴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_01",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أرتِّب الأعمال الَّتي أقوم بها بعد العودة من المدرسة",
+      "voix_m": "arabe_niveau2_01_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_01_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_action_1",
+      "texte_ar": "أغْسِلُ يَدَيَّ",
+      "voix_m": "arabe_niveau2_01_p8_action_1_m.mp3",
+      "voix_f": "arabe_niveau2_01_p8_action_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_action_2",
+      "texte_ar": "أتَنَاوَلُ العَشَاءَ",
+      "voix_m": "arabe_niveau2_01_p8_action_2_m.mp3",
+      "voix_f": "arabe_niveau2_01_p8_action_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_action_3",
+      "texte_ar": "أُنَظِّفُ أسْنَانِي",
+      "voix_m": "arabe_niveau2_01_p8_action_3_m.mp3",
+      "voix_f": "arabe_niveau2_01_p8_action_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_action_4",
+      "texte_ar": "أنَامُ",
+      "voix_m": "arabe_niveau2_01_p8_action_4_m.mp3",
+      "voix_f": "arabe_niveau2_01_p8_action_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:34:26.502620",
+    "niveau": 2,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau2_01",
+    "bucket_audio": "audio-lessons/niveau2/lecon07/",
+    "nb_audio_assets": 5
+  }
+}

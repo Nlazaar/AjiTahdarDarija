@@ -1,0 +1,493 @@
+{
+  "page_nb": 46,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Les jours de la semaine et le tanwin avec damma",
+    "ar": "اليَوْمُ هُوَ يَوْمُ - التَّنوينُ بِالضَّمّ"
+  },
+  "enonce": {
+    "fr": "Lis à voix haute les jours de la semaine, puis lis chaque lettre avec le tanwin par la damma (ـٌ)",
+    "ar": "اقْرَأْ أيام الأسبوع، ثم اقرأ كل حرف مع التنوين بالضم"
+  },
+  "elements": [
+    {
+      "id": "lundi",
+      "ar": "الاثْنَيْنُ",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "mardi",
+      "ar": "الثُّلاَثَاءُ",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "mercredi",
+      "ar": "الأرْبَعَاءُ",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "jeudi",
+      "ar": "الخَمِيسُ",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "vendredi",
+      "ar": "الجُمُعَةُ",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "samedi",
+      "ar": "السَّبْتُ",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "dimanche",
+      "ar": "الأَحَدُ",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    },
+    {
+      "id": "tanwin_alif",
+      "ar": "أٌ",
+      "fr": "Alif + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ba",
+      "ar": "بٌ",
+      "fr": "Ba + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ta",
+      "ar": "تٌ",
+      "fr": "Ta + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_tha",
+      "ar": "ثٌ",
+      "fr": "Tha + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_jim",
+      "ar": "جٌ",
+      "fr": "Jim + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ha_grand",
+      "ar": "حٌ",
+      "fr": "Ha + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_kha",
+      "ar": "خٌ",
+      "fr": "Kha + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_dal",
+      "ar": "دٌ",
+      "fr": "Dal + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_dhal",
+      "ar": "ذٌ",
+      "fr": "Dhal + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ra",
+      "ar": "رٌ",
+      "fr": "Ra + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_zay",
+      "ar": "زٌ",
+      "fr": "Zay + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_sin",
+      "ar": "سٌ",
+      "fr": "Sin + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_shin",
+      "ar": "شٌ",
+      "fr": "Shin + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_sad",
+      "ar": "صٌ",
+      "fr": "Sad + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_dad",
+      "ar": "ضٌ",
+      "fr": "Dad + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ta2",
+      "ar": "طٌ",
+      "fr": "Ta (emphatic) + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_dha",
+      "ar": "ظٌ",
+      "fr": "Dha + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ain",
+      "ar": "عٌ",
+      "fr": "Ayn + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ghain",
+      "ar": "غٌ",
+      "fr": "Ghayn + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_fa",
+      "ar": "فٌ",
+      "fr": "Fa + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_qaf",
+      "ar": "قٌ",
+      "fr": "Qaf + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_kaf",
+      "ar": "كٌ",
+      "fr": "Kaf + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_lam",
+      "ar": "لٌ",
+      "fr": "Lam + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_mim",
+      "ar": "مٌ",
+      "fr": "Mim + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_nun",
+      "ar": "نٌ",
+      "fr": "Nun + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ha",
+      "ar": "هٌ",
+      "fr": "Ha + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_waw",
+      "ar": "وٌ",
+      "fr": "Waw + tanwin damma",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tanwin_ya",
+      "ar": "يٌ",
+      "fr": "Ya + tanwin damma",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p46_consigne",
+      "texte_ar": "اقْرَأْ أيام الأسبوع، ثم اقرأ كل حرف مع التنوين بالضم",
+      "voix_m": "livre_arabe_niveau3_p46_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lundi",
+      "texte_ar": "الاثْنَيْنُ",
+      "voix_m": "livre_arabe_niveau3_p46_lundi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_lundi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mardi",
+      "texte_ar": "الثُّلاَثَاءُ",
+      "voix_m": "livre_arabe_niveau3_p46_mardi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_mardi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mercredi",
+      "texte_ar": "الأرْبَعَاءُ",
+      "voix_m": "livre_arabe_niveau3_p46_mercredi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_mercredi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jeudi",
+      "texte_ar": "الخَمِيسُ",
+      "voix_m": "livre_arabe_niveau3_p46_jeudi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_jeudi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_vendredi",
+      "texte_ar": "الجُمُعَةُ",
+      "voix_m": "livre_arabe_niveau3_p46_vendredi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_vendredi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_samedi",
+      "texte_ar": "السَّبْتُ",
+      "voix_m": "livre_arabe_niveau3_p46_samedi_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_samedi_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dimanche",
+      "texte_ar": "الأَحَدُ",
+      "voix_m": "livre_arabe_niveau3_p46_dimanche_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_dimanche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_alif",
+      "texte_ar": "أٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_alif_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ba",
+      "texte_ar": "بٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ba_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ta",
+      "texte_ar": "تٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ta_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_tha",
+      "texte_ar": "ثٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_tha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_jim",
+      "texte_ar": "جٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_jim_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ha_grand",
+      "texte_ar": "حٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ha_grand_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ha_grand_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_kha",
+      "texte_ar": "خٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_kha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_dal",
+      "texte_ar": "دٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_dal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_dhal",
+      "texte_ar": "ذٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_dhal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ra",
+      "texte_ar": "رٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ra_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_zay",
+      "texte_ar": "زٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_zay_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_sin",
+      "texte_ar": "سٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_sin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_shin",
+      "texte_ar": "شٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_shin_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_sad",
+      "texte_ar": "صٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_sad_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_dad",
+      "texte_ar": "ضٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_dad_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ta2",
+      "texte_ar": "طٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ta2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ta2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_dha",
+      "texte_ar": "ظٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_dha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_dha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ain",
+      "texte_ar": "عٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ain_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ghain",
+      "texte_ar": "غٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ghain_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ghain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_fa",
+      "texte_ar": "فٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_fa_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_qaf",
+      "texte_ar": "قٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_qaf_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_kaf",
+      "texte_ar": "كٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_kaf_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_lam",
+      "texte_ar": "لٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_lam_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_mim",
+      "texte_ar": "مٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_mim_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_nun",
+      "texte_ar": "نٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_nun_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ha",
+      "texte_ar": "هٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ha_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_waw",
+      "texte_ar": "وٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_waw_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tanwin_ya",
+      "texte_ar": "يٌ",
+      "voix_m": "livre_arabe_niveau3_p46_tanwin_ya_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p46_tanwin_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:03:45.174702",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 36
+  }
+}

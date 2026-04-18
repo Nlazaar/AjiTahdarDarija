@@ -1,0 +1,142 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Leçon 2 – Relier, barrer et trouver des mots",
+    "ar": "الدَّرْسُ 2 – أَرْبِطُ وَأَشْطُبُ وَأَسْتَخْرِجُ"
+  },
+  "enonce": {
+    "fr": "1) Relie chaque début de phrase à sa fin pour obtenir une phrase du texte. 2) Barre la phrase fausse sous chaque image. 3) Retrouve dans le texte trois mots contenant les lettres س et ت.",
+    "ar": "1) أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ. 2) أَشْطُبُ الْخَطَأَ. 3) أَسْتَخْرِجُ مِنَ النَّصِّ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ."
+  },
+  "elements": [
+    {
+      "id": "sujet1",
+      "ar": "أُمِّي",
+      "fr": "Ma maman",
+      "emoji": "👩"
+    },
+    {
+      "id": "sujet2",
+      "ar": "أَنَا وَ أُخْتِي",
+      "fr": "Moi et ma sœur",
+      "emoji": "👧"
+    },
+    {
+      "id": "sujet3",
+      "ar": "يَرْوِي لَنَا جَدِّي",
+      "fr": "Mon grand-père nous raconte",
+      "emoji": "👴"
+    },
+    {
+      "id": "predicat1",
+      "ar": "نَغْسِلُ الْأَوَانِيَ لِنُسَاعِدَهَا.",
+      "fr": "nous lavons la vaisselle pour l'aider.",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "predicat2",
+      "ar": "حِكَايَاتٍ جَمِيلَةً.",
+      "fr": "de belles histoires.",
+      "emoji": "📖"
+    },
+    {
+      "id": "predicat3",
+      "ar": "تُعِدُّ لَنَا طَعَامًا لَذِيذًا.",
+      "fr": "prépare pour nous un délicieux repas.",
+      "emoji": "🍲"
+    },
+    {
+      "id": "lettre_s",
+      "ar": "س",
+      "fr": "lettre sin",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_t",
+      "ar": "ت",
+      "fr": "lettre ta",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "1) أَرْبِطُ لِأَحْصُلَ عَلَى جُمْلَةٍ مِنَ النَّصِّ. 2) أَشْطُبُ الْخَطَأَ. 3) أَسْتَخْرِجُ مِنَ النَّصِّ ثَلاثَ كَلِمَاتٍ بِالْحُرُوفِ التَّالِيَةِ.",
+      "voix_m": "lecture_niv4_lec02_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sujet1",
+      "texte_ar": "أُمِّي",
+      "voix_m": "lecture_niv4_lec02_p2_sujet1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_sujet1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sujet2",
+      "texte_ar": "أَنَا وَ أُخْتِي",
+      "voix_m": "lecture_niv4_lec02_p2_sujet2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_sujet2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sujet3",
+      "texte_ar": "يَرْوِي لَنَا جَدِّي",
+      "voix_m": "lecture_niv4_lec02_p2_sujet3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_sujet3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_predicat1",
+      "texte_ar": "نَغْسِلُ الْأَوَانِيَ لِنُسَاعِدَهَا.",
+      "voix_m": "lecture_niv4_lec02_p2_predicat1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_predicat1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_predicat2",
+      "texte_ar": "حِكَايَاتٍ جَمِيلَةً.",
+      "voix_m": "lecture_niv4_lec02_p2_predicat2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_predicat2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_predicat3",
+      "texte_ar": "تُعِدُّ لَنَا طَعَامًا لَذِيذًا.",
+      "voix_m": "lecture_niv4_lec02_p2_predicat3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_predicat3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_s",
+      "texte_ar": "س",
+      "voix_m": "lecture_niv4_lec02_p2_lettre_s_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_lettre_s_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_t",
+      "texte_ar": "ت",
+      "voix_m": "lecture_niv4_lec02_p2_lettre_t_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p2_lettre_t_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:37:29.452830",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 9
+  }
+}

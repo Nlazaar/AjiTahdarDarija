@@ -1,0 +1,233 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "L'enfant cherche la lettre ر parmi d'autres lettres arabes similaires, l'entoure et la colorie",
+  "titre": {
+    "fr": "Je cherche la lettre Ra et je l'entoure",
+    "ar": "أَبْحَثُ عَن حَرْفِ الرَّاء وَ أُلَوِّنُهُ"
+  },
+  "enonce": {
+    "fr": "Je cherche la lettre et je l'entoure",
+    "ar": "أَبْحَثُ عَن حَرْفِ الرَّاء وَ أُلَوِّنُهُ"
+  },
+  "elements": [
+    {
+      "id": "lettre_cible",
+      "ar": "ر",
+      "fr": "Ra (lettre cible)",
+      "emoji": "🎯"
+    },
+    {
+      "id": "lettre_1",
+      "ar": "ا",
+      "fr": "Alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_2",
+      "ar": "ر",
+      "fr": "Ra (à trouver)",
+      "emoji": "✅"
+    },
+    {
+      "id": "lettre_3",
+      "ar": "ز",
+      "fr": "Zayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_4",
+      "ar": "ح",
+      "fr": "Ha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_5",
+      "ar": "ع",
+      "fr": "Ayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_6",
+      "ar": "ك",
+      "fr": "Kaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_7",
+      "ar": "ر",
+      "fr": "Ra (à trouver)",
+      "emoji": "✅"
+    },
+    {
+      "id": "lettre_8",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_9",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_10",
+      "ar": "ر",
+      "fr": "Ra (à trouver)",
+      "emoji": "✅"
+    },
+    {
+      "id": "lettre_11",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_12",
+      "ar": "ن",
+      "fr": "Nun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_13",
+      "ar": "ز",
+      "fr": "Zayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lettre_14",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon05",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أَبْحَثُ عَن حَرْفِ الرَّاء وَ أُلَوِّنُهُ",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_cible",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_1",
+      "texte_ar": "ا",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_2",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_3",
+      "texte_ar": "ز",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_4",
+      "texte_ar": "ح",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_5",
+      "texte_ar": "ع",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_6",
+      "texte_ar": "ك",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_7",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_8",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_9",
+      "texte_ar": "و",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_10",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_11",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_12",
+      "texte_ar": "ن",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_12_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_13",
+      "texte_ar": "ز",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_13_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_14",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon05_p8_lettre_14_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon05_p8_lettre_14_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:48:54.980633",
+    "niveau": 1,
+    "lecon": 34,
+    "nom_pdf": "coursarabe_niveau1_lecon05",
+    "bucket_audio": "audio-lessons/niveau1/lecon34/",
+    "nb_audio_assets": 16
+  }
+}

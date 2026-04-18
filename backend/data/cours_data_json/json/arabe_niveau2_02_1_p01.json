@@ -1,0 +1,103 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Dans la mer",
+    "ar": "فِي البَحْرِ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour entendre le mot en arabe",
+    "ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الكَلِمَةَ"
+  },
+  "elements": [
+    {
+      "id": "samaka",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐠"
+    },
+    {
+      "id": "hout",
+      "ar": "حُوتٌ",
+      "fr": "Baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "shabaka",
+      "ar": "شَبَكَةٌ",
+      "fr": "Filet",
+      "emoji": "🕸️"
+    },
+    {
+      "id": "akhtabout",
+      "ar": "أَخْطَبُوطٌ",
+      "fr": "Pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "sinnara",
+      "ar": "صِنَّارَةٌ",
+      "fr": "Canne à pêche",
+      "emoji": "🎣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_02_1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الكَلِمَةَ",
+      "voix_m": "arabe_niveau2_02_1_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_samaka",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "arabe_niveau2_02_1_p1_samaka_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_samaka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hout",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "arabe_niveau2_02_1_p1_hout_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_hout_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shabaka",
+      "texte_ar": "شَبَكَةٌ",
+      "voix_m": "arabe_niveau2_02_1_p1_shabaka_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_shabaka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_akhtabout",
+      "texte_ar": "أَخْطَبُوطٌ",
+      "voix_m": "arabe_niveau2_02_1_p1_akhtabout_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_akhtabout_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sinnara",
+      "texte_ar": "صِنَّارَةٌ",
+      "voix_m": "arabe_niveau2_02_1_p1_sinnara_m.mp3",
+      "voix_f": "arabe_niveau2_02_1_p1_sinnara_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:34:50.580641",
+    "niveau": 2,
+    "lecon": 8,
+    "nom_pdf": "arabe_niveau2_02_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon08/",
+    "nb_audio_assets": 6
+  }
+}

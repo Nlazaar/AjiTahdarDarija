@@ -1,0 +1,116 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète ce qui manque au mot",
+    "ar": "أكمِّل مَا يَنْقُصُ الْكَلِمَةَ"
+  },
+  "enonce": {
+    "fr": "Regarde l'image et complète le mot en ajoutant les lettres manquantes",
+    "ar": "انظر إلى الصورة وأكمل الكلمة بإضافة الحروف الناقصة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُد",
+      "fr": "Huppe fasciée",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "خَوْخ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "3",
+      "ar": "خُبْز",
+      "fr": "Pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "4",
+      "ar": "ضِفْدَع",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "5",
+      "ar": "مَدْرَسَة",
+      "fr": "École",
+      "emoji": "🏫"
+    },
+    {
+      "id": "6",
+      "ar": "خَيْط",
+      "fr": "Fil",
+      "emoji": "🧶"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec07",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "انظر إلى الصورة وأكمل الكلمة بإضافة الحروف الناقصة",
+      "voix_m": "arabe_niveau3_lec07_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُد",
+      "voix_m": "arabe_niveau3_lec07_p7_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خَوْخ",
+      "voix_m": "arabe_niveau3_lec07_p7_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "خُبْز",
+      "voix_m": "arabe_niveau3_lec07_p7_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "arabe_niveau3_lec07_p7_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَدْرَسَة",
+      "voix_m": "arabe_niveau3_lec07_p7_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "خَيْط",
+      "voix_m": "arabe_niveau3_lec07_p7_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec07_p7_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:35:32.425653",
+    "niveau": 3,
+    "lecon": 7,
+    "nom_pdf": "arabe_niveau3_lec07",
+    "bucket_audio": "audio-lessons/niveau3/lecon07/",
+    "nb_audio_assets": 7
+  }
+}

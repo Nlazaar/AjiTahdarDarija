@@ -1,0 +1,324 @@
+{
+  "page_nb": 29,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre د (page 3) et la lettre ل (page 2) chaque fois qu'elles apparaissent dans les mots",
+    "ar": "لَوِّنِ الحرف د والحرف ل في كل كلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دبّ",
+      "fr": "ours",
+      "emoji": "🐻"
+    },
+    {
+      "id": "2",
+      "ar": "دودة",
+      "fr": "ver",
+      "emoji": "🐛"
+    },
+    {
+      "id": "3",
+      "ar": "ديك",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "4",
+      "ar": "دار",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "5",
+      "ar": "درب",
+      "fr": "chemin",
+      "emoji": "🛤️"
+    },
+    {
+      "id": "6",
+      "ar": "درة",
+      "fr": "perle",
+      "emoji": "💎"
+    },
+    {
+      "id": "7",
+      "ar": "بدأ",
+      "fr": "commencer",
+      "emoji": "▶️"
+    },
+    {
+      "id": "8",
+      "ar": "برد",
+      "fr": "froid",
+      "emoji": "❄️"
+    },
+    {
+      "id": "9",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "10",
+      "ar": "بدر",
+      "fr": "pleine lune",
+      "emoji": "🌕"
+    },
+    {
+      "id": "11",
+      "ar": "دور",
+      "fr": "tour/rôle",
+      "emoji": "🔄"
+    },
+    {
+      "id": "12",
+      "ar": "ليل",
+      "fr": "nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "13",
+      "ar": "لمس",
+      "fr": "toucher",
+      "emoji": "✋"
+    },
+    {
+      "id": "14",
+      "ar": "لبس",
+      "fr": "vêtement",
+      "emoji": "👕"
+    },
+    {
+      "id": "15",
+      "ar": "ظل",
+      "fr": "ombre",
+      "emoji": "🌑"
+    },
+    {
+      "id": "16",
+      "ar": "قال",
+      "fr": "dire",
+      "emoji": "💬"
+    },
+    {
+      "id": "17",
+      "ar": "غلال",
+      "fr": "céréales",
+      "emoji": "🌾"
+    },
+    {
+      "id": "18",
+      "ar": "سأل",
+      "fr": "demander",
+      "emoji": "❓"
+    },
+    {
+      "id": "19",
+      "ar": "يلبس",
+      "fr": "il s'habille",
+      "emoji": "👔"
+    },
+    {
+      "id": "20",
+      "ar": "كل",
+      "fr": "tout",
+      "emoji": "✅"
+    },
+    {
+      "id": "21",
+      "ar": "حلف",
+      "fr": "jurer",
+      "emoji": "🤝"
+    },
+    {
+      "id": "22",
+      "ar": "غلب",
+      "fr": "vaincre",
+      "emoji": "🏆"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p29_consigne",
+      "texte_ar": "لَوِّنِ الحرف د والحرف ل في كل كلمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دبّ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "دودة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ديك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دار",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "درب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "درة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بدأ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "برد",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "دائرة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "بدر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "دور",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ليل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "لمس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "لبس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ظل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "قال",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "غلال",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_17_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "سأل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_18_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "يلبس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_19_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "كل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_20_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "حلف",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_21_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "غلب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p29_22_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p29_22_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:23:40.807114",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 23
+  }
+}

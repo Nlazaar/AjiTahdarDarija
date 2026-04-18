@@ -1,0 +1,155 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "J'entoure les mots identiques au modèle",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق الكلمات المشابِهَة لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Entoure les mots qui sont identiques au mot modèle (en rouge) dans chaque colonne",
+    "ar": "أَحِطْ بِخَطٍّ مُغلَق الكَلِماتِ المُشابِهَة لِلنَّمُوذَجِ في كُلِّ عَمُود"
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "بُرْتُقَالَةُ",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "modele_2",
+      "ar": "فِرَاشٌ",
+      "fr": "lit",
+      "emoji": "🛏️"
+    },
+    {
+      "id": "modele_3",
+      "ar": "بَصَلٌ",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "intrus_1",
+      "ar": "نُرْتُقَالَةُ",
+      "fr": "mot différent (colonne orange)",
+      "emoji": "❌"
+    },
+    {
+      "id": "intrus_2",
+      "ar": "فِرَاسٌ",
+      "fr": "mot différent (colonne lit)",
+      "emoji": "❌"
+    },
+    {
+      "id": "intrus_3",
+      "ar": "يَصَلٌ",
+      "fr": "mot différent (colonne oignon)",
+      "emoji": "❌"
+    },
+    {
+      "id": "intrus_4",
+      "ar": "نَصَلٌ",
+      "fr": "mot différent (colonne oignon)",
+      "emoji": "❌"
+    },
+    {
+      "id": "intrus_5",
+      "ar": "قِرَاشٌ",
+      "fr": "mot différent (colonne lit)",
+      "emoji": "❌"
+    },
+    {
+      "id": "intrus_6",
+      "ar": "بُرْتُقَالَةَ",
+      "fr": "mot différent (colonne orange)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغلَق الكَلِماتِ المُشابِهَة لِلنَّمُوذَجِ في كُلِّ عَمُود",
+      "voix_m": "livre_arabe_niveau3_p10_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "بُرْتُقَالَةُ",
+      "voix_m": "livre_arabe_niveau3_p10_modele_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "فِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_p10_modele_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_3",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_p10_modele_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_modele_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_1",
+      "texte_ar": "نُرْتُقَالَةُ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_2",
+      "texte_ar": "فِرَاسٌ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_3",
+      "texte_ar": "يَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_4",
+      "texte_ar": "نَصَلٌ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_5",
+      "texte_ar": "قِرَاشٌ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_intrus_6",
+      "texte_ar": "بُرْتُقَالَةَ",
+      "voix_m": "livre_arabe_niveau3_p10_intrus_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p10_intrus_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:56:04.066276",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

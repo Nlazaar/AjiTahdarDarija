@@ -1,0 +1,103 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "Association chiffre-mot arabe avec représentation visuelle sur les doigts des mains",
+  "titre": {
+    "fr": "Les chiffres",
+    "ar": "الأعداد"
+  },
+  "enonce": {
+    "fr": "Apprends les chiffres de 6 à 10 en arabe avec les mains",
+    "ar": "تَعَلَّمْ الأعداد من 6 إلى 10 بالعربية"
+  },
+  "elements": [
+    {
+      "id": "6",
+      "ar": "سِتَّة",
+      "fr": "Six",
+      "emoji": "6️⃣"
+    },
+    {
+      "id": "7",
+      "ar": "سَبعة",
+      "fr": "Sept",
+      "emoji": "7️⃣"
+    },
+    {
+      "id": "8",
+      "ar": "ثمانية",
+      "fr": "Huit",
+      "emoji": "8️⃣"
+    },
+    {
+      "id": "9",
+      "ar": "تسعة",
+      "fr": "Neuf",
+      "emoji": "9️⃣"
+    },
+    {
+      "id": "10",
+      "ar": "عشرة",
+      "fr": "Dix",
+      "emoji": "🔟"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_1",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تَعَلَّمْ الأعداد من 6 إلى 10 بالعربية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سِتَّة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَبعة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ثمانية",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "تسعة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "عشرة",
+      "voix_m": "coursarabe_niveau1_lecon01_1_p2_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_1_p2_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:34:55.819682",
+    "niveau": 1,
+    "lecon": 30,
+    "nom_pdf": "coursarabe_niveau1_lecon01_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon30/",
+    "nb_audio_assets": 6
+  }
+}

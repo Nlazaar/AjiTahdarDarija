@@ -1,0 +1,168 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Barre l'erreur",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Barre le mot mal écrit dans chaque colonne (celui qui est différent du modèle)",
+    "ar": "أَشْطُبُ الكَلِمَةَ المَكْتُوبَةَ بِشَكْلٍ خَاطِئٍ فِي كُلِّ عَمُودٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "سِرْوَالٌ",
+      "fr": "pantalon (correct)",
+      "emoji": "👖"
+    },
+    {
+      "id": "2",
+      "ar": "شِرْوَالٌ",
+      "fr": "pantalon (incorrect - شـ au lieu de سـ)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "سِرْوَالٌ",
+      "fr": "pantalon (correct)",
+      "emoji": "👖"
+    },
+    {
+      "id": "4",
+      "ar": "سِرْوَالٌ",
+      "fr": "pantalon (correct)",
+      "emoji": "👖"
+    },
+    {
+      "id": "5",
+      "ar": "صِرْوَالٌ",
+      "fr": "pantalon (incorrect - صـ au lieu de سـ)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise (correct)",
+      "emoji": "👕"
+    },
+    {
+      "id": "7",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise (correct)",
+      "emoji": "👕"
+    },
+    {
+      "id": "8",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise (correct)",
+      "emoji": "👕"
+    },
+    {
+      "id": "9",
+      "ar": "قَمِيضٌ",
+      "fr": "chemise (incorrect - ضـ au lieu de صـ)",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "قَمِيسٌ",
+      "fr": "chemise (incorrect - سـ au lieu de صـ)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَشْطُبُ الكَلِمَةَ المَكْتُوبَةَ بِشَكْلٍ خَاطِئٍ فِي كُلِّ عَمُودٍ",
+      "voix_m": "arabe_niveau2_03_2_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "صِرْوَالٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "قَمِيضٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "قَمِيسٌ",
+      "voix_m": "arabe_niveau2_03_2_p3_10_m.mp3",
+      "voix_f": "arabe_niveau2_03_2_p3_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:40:43.515962",
+    "niveau": 2,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau2_03_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon12/",
+    "nb_audio_assets": 11
+  }
+}

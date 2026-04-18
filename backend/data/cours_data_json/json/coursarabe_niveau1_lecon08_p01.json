@@ -1,0 +1,233 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Les bienfaits de mon Seigneur",
+    "ar": "نِعْمَة رَبِّي"
+  },
+  "enonce": {
+    "fr": "Lis les phrases à voix haute en suivant les images. Chaque phrase décrit un bienfait d'Allah.",
+    "ar": "اِقْرَأ الجُمَل بِصَوْتٍ عَالٍ مُتَّبِعًا الصُّوَر. كُلُّ جُمْلَة تَصِفُ نِعْمَةً مِن نِعَم اللّه."
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "آكُلُ بِيَدِي",
+      "fr": "Je mange avec ma main",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "أَشْرَبُ بِيَدِي",
+      "fr": "Je bois avec ma main",
+      "emoji": "🥤"
+    },
+    {
+      "id": "refrain_1",
+      "ar": "نِعْمَةُ رَبِّي",
+      "fr": "C'est un bienfait de mon Seigneur",
+      "emoji": "✨"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "تَسْمَعُ أُذُنِي",
+      "fr": "Mon oreille entend",
+      "emoji": "👂"
+    },
+    {
+      "id": "phrase_4",
+      "ar": "تَنْظُرُ عَيْنِي",
+      "fr": "Mon œil regarde",
+      "emoji": "👁️"
+    },
+    {
+      "id": "refrain_2",
+      "ar": "نِعْمَةُ رَبِّي",
+      "fr": "C'est un bienfait de mon Seigneur",
+      "emoji": "✨"
+    },
+    {
+      "id": "phrase_5",
+      "ar": "أَنْطِقُ بِفَمِي",
+      "fr": "Je parle avec ma bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "phrase_6",
+      "ar": "أُنْشِدُ بِفَمِي",
+      "fr": "Je chante avec ma bouche",
+      "emoji": "🎵"
+    },
+    {
+      "id": "refrain_3",
+      "ar": "نِعْمَةُ رَبِّي",
+      "fr": "C'est un bienfait de mon Seigneur",
+      "emoji": "✨"
+    },
+    {
+      "id": "phrase_7",
+      "ar": "قَوْلُ لِسَانِي",
+      "fr": "La parole de ma langue",
+      "emoji": "👅"
+    },
+    {
+      "id": "phrase_8",
+      "ar": "يُرْضِي رَبِّي",
+      "fr": "Satisfait mon Seigneur",
+      "emoji": "🤲"
+    },
+    {
+      "id": "refrain_4",
+      "ar": "نِعْمَةُ رَبِّي",
+      "fr": "C'est un bienfait de mon Seigneur",
+      "emoji": "✨"
+    },
+    {
+      "id": "phrase_9",
+      "ar": "يَرْكَعُ رَأْسِي",
+      "fr": "Ma tête s'incline",
+      "emoji": "🧎"
+    },
+    {
+      "id": "phrase_10",
+      "ar": "يَسْجُدُ وَجْهِي",
+      "fr": "Mon visage se prosterne",
+      "emoji": "🕌"
+    },
+    {
+      "id": "phrase_11",
+      "ar": "يَشْكُرُ رَبِّي",
+      "fr": "Il remercie mon Seigneur",
+      "emoji": "🙏"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon08",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِقْرَأ الجُمَل بِصَوْتٍ عَالٍ مُتَّبِعًا الصُّوَر. كُلُّ جُمْلَة تَصِفُ نِعْمَةً مِن نِعَم اللّه.",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "آكُلُ بِيَدِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "أَشْرَبُ بِيَدِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_refrain_1",
+      "texte_ar": "نِعْمَةُ رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_refrain_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_refrain_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "تَسْمَعُ أُذُنِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_4",
+      "texte_ar": "تَنْظُرُ عَيْنِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_refrain_2",
+      "texte_ar": "نِعْمَةُ رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_refrain_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_refrain_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_5",
+      "texte_ar": "أَنْطِقُ بِفَمِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_6",
+      "texte_ar": "أُنْشِدُ بِفَمِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_refrain_3",
+      "texte_ar": "نِعْمَةُ رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_refrain_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_refrain_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_7",
+      "texte_ar": "قَوْلُ لِسَانِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_8",
+      "texte_ar": "يُرْضِي رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_refrain_4",
+      "texte_ar": "نِعْمَةُ رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_refrain_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_refrain_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_9",
+      "texte_ar": "يَرْكَعُ رَأْسِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_10",
+      "texte_ar": "يَسْجُدُ وَجْهِي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_11",
+      "texte_ar": "يَشْكُرُ رَبِّي",
+      "voix_m": "coursarabe_niveau1_lecon08_p1_phrase_11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon08_p1_phrase_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:16:37.948127",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "coursarabe_niveau1_lecon08",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 16
+  }
+}

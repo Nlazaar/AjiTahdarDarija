@@ -1,0 +1,324 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre غ avec vocabulaire illustré, phrase de lecture, exercice d'écoute et exercice d'identification de la lettre dans des mots",
+  "titre": {
+    "fr": "La lettre Ghayn (غ)",
+    "ar": "حَرْفُ الغَيْن (غ)"
+  },
+  "enonce": {
+    "fr": "Découvrons la lettre غ à travers des mots illustrés. Lis la phrase, écoute et identifie si tu entends la lettre, puis entoure la lettre dans les mots.",
+    "ar": "نَتَعَلَّمُ حَرْفَ الغَيْن مَعَ كَلِمَاتٍ مُصَوَّرَةٍ. اِقْرَأِ الجُمْلَةَ، اِسْمَعْ وَحَدِّدْ إِنْ كُنْتَ تَسْمَعُ الحَرْفَ، ثُمَّ أَرْسُمْ دَائِرَةً حَوْلَ الحَرْفِ فِي الكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "غِرْبَانٌ",
+      "fr": "Des corbeaux",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "2",
+      "ar": "غُيُومٌ",
+      "fr": "Des nuages",
+      "emoji": "☁️"
+    },
+    {
+      "id": "3",
+      "ar": "غَيْمَةٌ",
+      "fr": "Un nuage",
+      "emoji": "🌥️"
+    },
+    {
+      "id": "4",
+      "ar": "صَغِيرٌ",
+      "fr": "Petit (diminutif)",
+      "emoji": "🐻"
+    },
+    {
+      "id": "5",
+      "ar": "يَغُوصُ",
+      "fr": "Il plonge",
+      "emoji": "🤿"
+    },
+    {
+      "id": "6",
+      "ar": "بَبَّغَاءٌ",
+      "fr": "Un perroquet",
+      "emoji": "🦜"
+    },
+    {
+      "id": "7",
+      "ar": "يَغُوصُ الغَوَّاصُ الصَّغِيرُ فِي أَعْمَاقِ الْبَحْرِ",
+      "fr": "Le petit plongeur plonge dans les profondeurs de la mer",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ex1_peche",
+      "ar": "خَوْخٌ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "ex1_branche",
+      "ar": "غُصْنٌ",
+      "fr": "Branche",
+      "emoji": "🌿"
+    },
+    {
+      "id": "ex1_fusee",
+      "ar": "صَارُوخٌ",
+      "fr": "Fusée",
+      "emoji": "🚀"
+    },
+    {
+      "id": "ex1_corbeau",
+      "ar": "غُرَابٌ",
+      "fr": "Corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "ex1_palmier",
+      "ar": "نَخْلَةٌ",
+      "fr": "Palmier",
+      "emoji": "🌴"
+    },
+    {
+      "id": "ex2_1",
+      "ar": "عَارٌّ",
+      "fr": "Nu",
+      "emoji": "👤"
+    },
+    {
+      "id": "ex2_2",
+      "ar": "غَارٌّ",
+      "fr": "Négligent",
+      "emoji": "😶"
+    },
+    {
+      "id": "ex2_3",
+      "ar": "غِلْمَانٌ",
+      "fr": "Garçons",
+      "emoji": "👦"
+    },
+    {
+      "id": "ex2_4",
+      "ar": "غِيرَةٌ",
+      "fr": "Jalousie",
+      "emoji": "😤"
+    },
+    {
+      "id": "ex2_5",
+      "ar": "يَغْدُرُ",
+      "fr": "Il trahit",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "ex2_6",
+      "ar": "رَاغَ",
+      "fr": "Il s'est faufilé",
+      "emoji": "🦊"
+    },
+    {
+      "id": "ex2_7",
+      "ar": "يَسْعَى",
+      "fr": "Il court / Il s'efforce",
+      "emoji": "🏃"
+    },
+    {
+      "id": "ex2_8",
+      "ar": "أَغْنَى",
+      "fr": "Il a enrichi",
+      "emoji": "💰"
+    },
+    {
+      "id": "ex2_9",
+      "ar": "أَغَارَ",
+      "fr": "Il a attaqué",
+      "emoji": "⚔️"
+    },
+    {
+      "id": "ex2_10",
+      "ar": "بَاعَ",
+      "fr": "Il a vendu",
+      "emoji": "🛒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec09_ghayn",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَتَعَلَّمُ حَرْفَ الغَيْن مَعَ كَلِمَاتٍ مُصَوَّرَةٍ. اِقْرَأِ الجُمْلَةَ، اِسْمَعْ وَحَدِّدْ إِنْ كُنْتَ تَسْمَعُ الحَرْفَ، ثُمَّ أَرْسُمْ دَائِرَةً حَوْلَ الحَرْفِ فِي الكَلِمَاتِ.",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "غِرْبَانٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غُيُومٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غَيْمَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "صَغِيرٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "يَغُوصُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَبَّغَاءٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "يَغُوصُ الغَوَّاصُ الصَّغِيرُ فِي أَعْمَاقِ الْبَحْرِ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_7_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_peche",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex1_peche_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex1_peche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_branche",
+      "texte_ar": "غُصْنٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex1_branche_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex1_branche_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_fusee",
+      "texte_ar": "صَارُوخٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex1_fusee_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex1_fusee_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_corbeau",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex1_corbeau_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex1_corbeau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_palmier",
+      "texte_ar": "نَخْلَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex1_palmier_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex1_palmier_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_1",
+      "texte_ar": "عَارٌّ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_2",
+      "texte_ar": "غَارٌّ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_3",
+      "texte_ar": "غِلْمَانٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_3_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_4",
+      "texte_ar": "غِيرَةٌ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_4_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_5",
+      "texte_ar": "يَغْدُرُ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_5_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_6",
+      "texte_ar": "رَاغَ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_6_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_7",
+      "texte_ar": "يَسْعَى",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_7_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_8",
+      "texte_ar": "أَغْنَى",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_8_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_9",
+      "texte_ar": "أَغَارَ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_9_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_10",
+      "texte_ar": "بَاعَ",
+      "voix_m": "lecture_niv4_lec09_ghayn_p1_ex2_10_m.mp3",
+      "voix_f": "lecture_niv4_lec09_ghayn_p1_ex2_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:05:28.959568",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_ghayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 23
+  }
+}

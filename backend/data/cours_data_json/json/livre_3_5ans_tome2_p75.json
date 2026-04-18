@@ -1,0 +1,90 @@
+{
+  "page_nb": 75,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أرسم الخطوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés et entraîne-toi à écrire la lettre Noun (ن) en suivant le modèle.",
+    "ar": "ارسم الخطوط المتقطعة وتدرّب على كتابة حرف النون (ن) باتباع النموذج."
+  },
+  "elements": [
+    {
+      "id": "arc_large",
+      "ar": "قوس كبير",
+      "fr": "Grand arc en pointillés",
+      "emoji": "〰️"
+    },
+    {
+      "id": "arc_moyen",
+      "ar": "قوس متوسط",
+      "fr": "Arc moyen en pointillés",
+      "emoji": "〰️"
+    },
+    {
+      "id": "arc_petit",
+      "ar": "قوس صغير",
+      "fr": "Petit arc en pointillés",
+      "emoji": "〰️"
+    },
+    {
+      "id": "lettre_noun",
+      "ar": "ن",
+      "fr": "Lettre Noun",
+      "emoji": "✍️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p75_consigne",
+      "texte_ar": "ارسم الخطوط المتقطعة وتدرّب على كتابة حرف النون (ن) باتباع النموذج.",
+      "voix_m": "livre_3_5ans_tome2_p75_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p75_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_large",
+      "texte_ar": "قوس كبير",
+      "voix_m": "livre_3_5ans_tome2_p75_arc_large_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p75_arc_large_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_moyen",
+      "texte_ar": "قوس متوسط",
+      "voix_m": "livre_3_5ans_tome2_p75_arc_moyen_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p75_arc_moyen_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_arc_petit",
+      "texte_ar": "قوس صغير",
+      "voix_m": "livre_3_5ans_tome2_p75_arc_petit_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p75_arc_petit_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_noun",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome2_p75_lettre_noun_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p75_lettre_noun_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:08:11.987474",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

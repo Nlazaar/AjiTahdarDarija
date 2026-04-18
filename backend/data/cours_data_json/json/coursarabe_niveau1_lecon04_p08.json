@@ -1,0 +1,77 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Compter les animaux illustrés et entourer le bon chiffre parmi une série de 1 à 5",
+  "titre": {
+    "fr": "Je compte puis j'entoure le nombre",
+    "ar": "أعدَّ الأشكال التَّالية و أحيط الرَّقم المناسب بخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Compte les animaux et entoure le bon chiffre (de 1 à 5)",
+    "ar": "أعدَّ الأشكال التَّالية و أحيط الرَّقم المناسب بخَطٍّ مُغْلَق"
+  },
+  "elements": [
+    {
+      "id": "poissons",
+      "ar": "سمكات",
+      "fr": "poissons",
+      "emoji": "🐟"
+    },
+    {
+      "id": "papillons",
+      "ar": "فراشات",
+      "fr": "papillons",
+      "emoji": "🦋"
+    },
+    {
+      "id": "fourmis",
+      "ar": "نملات",
+      "fr": "fourmis",
+      "emoji": "🐜"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أعدَّ الأشكال التَّالية و أحيط الرَّقم المناسب بخَطٍّ مُغْلَق",
+      "voix_m": "coursarabe_niveau1_lecon04_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poissons",
+      "texte_ar": "سمكات",
+      "voix_m": "coursarabe_niveau1_lecon04_p8_poissons_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p8_poissons_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_papillons",
+      "texte_ar": "فراشات",
+      "voix_m": "coursarabe_niveau1_lecon04_p8_papillons_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p8_papillons_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourmis",
+      "texte_ar": "نملات",
+      "voix_m": "coursarabe_niveau1_lecon04_p8_fourmis_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p8_fourmis_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:45:19.936929",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 4
+  }
+}

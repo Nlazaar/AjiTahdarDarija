@@ -1,0 +1,116 @@
+{
+  "page_nb": 100,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre manquante (ل) en te guidant par l'image",
+    "ar": "أكمِّل كل كلمة بالحرف الناقص (ل) مستعيناً بالصورة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "لَيْـ____",
+      "fr": "Nuit (لَيْلٌ)",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "مُثَـ____جَاتٌ",
+      "fr": "Glaces (مُثَلَّجَاتٌ)",
+      "emoji": "🍦"
+    },
+    {
+      "id": "3",
+      "ar": "____سِرْوَا",
+      "fr": "Pantalon (سِرْوَالٌ)",
+      "emoji": "👖"
+    },
+    {
+      "id": "4",
+      "ar": "حَـ____زُونٌ",
+      "fr": "Escargot (حَلَزُونٌ)",
+      "emoji": "🐌"
+    },
+    {
+      "id": "5",
+      "ar": "____عَسَـ____",
+      "fr": "Miel (عَسَلٌ)",
+      "emoji": "🍯"
+    },
+    {
+      "id": "6",
+      "ar": "مِـ____حٌ",
+      "fr": "Sel (مِلْحٌ)",
+      "emoji": "🧂"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p100_consigne",
+      "texte_ar": "أكمِّل كل كلمة بالحرف الناقص (ل) مستعيناً بالصورة",
+      "voix_m": "livre_arabe_niveau3_p100_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "لَيْـ____",
+      "voix_m": "livre_arabe_niveau3_p100_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مُثَـ____جَاتٌ",
+      "voix_m": "livre_arabe_niveau3_p100_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "____سِرْوَا",
+      "voix_m": "livre_arabe_niveau3_p100_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "حَـ____زُونٌ",
+      "voix_m": "livre_arabe_niveau3_p100_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "____عَسَـ____",
+      "voix_m": "livre_arabe_niveau3_p100_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِـ____حٌ",
+      "voix_m": "livre_arabe_niveau3_p100_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p100_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:14:17.915804",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 7
+  }
+}

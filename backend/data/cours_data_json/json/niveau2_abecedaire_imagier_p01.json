@@ -1,0 +1,402 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Tableau illustré associant chaque lettre de l'alphabet arabe à un mot et une image correspondante",
+  "titre": {
+    "fr": "L'alphabet arabe en images",
+    "ar": "الحروف العربية بالصور"
+  },
+  "enonce": {
+    "fr": "Découvre les lettres de l'alphabet arabe avec des mots et des images illustratives",
+    "ar": "تعلّم حروف الأبجدية العربية من خلال الكلمات والصور"
+  },
+  "elements": [
+    {
+      "id": "alif",
+      "ar": "أَسَدٌ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "ba",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "ta",
+      "ar": "تَمْرٌ",
+      "fr": "Dattes",
+      "emoji": "🌴"
+    },
+    {
+      "id": "tha",
+      "ar": "ثَلْجٌ",
+      "fr": "Neige",
+      "emoji": "🌨️"
+    },
+    {
+      "id": "jim",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ha",
+      "ar": "حَمَامَةٌ",
+      "fr": "Colombe",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "kha",
+      "ar": "خَوْخٌ",
+      "fr": "Pêche",
+      "emoji": "🍑"
+    },
+    {
+      "id": "dal",
+      "ar": "دَارٌ",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "dhal",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐆"
+    },
+    {
+      "id": "ra",
+      "ar": "رِيشَةٌ",
+      "fr": "Plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "zay",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "sin",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "shin",
+      "ar": "شَمْعَةٌ",
+      "fr": "Bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "sad",
+      "ar": "صَبَاحٌ",
+      "fr": "Matin",
+      "emoji": "🌅"
+    },
+    {
+      "id": "dad",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "ta2",
+      "ar": "طَرِيقٌ",
+      "fr": "Route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "dha2",
+      "ar": "ظَرْفٌ",
+      "fr": "Enveloppe",
+      "emoji": "✉️"
+    },
+    {
+      "id": "ayn",
+      "ar": "عَيْنٌ",
+      "fr": "Œil",
+      "emoji": "👁️"
+    },
+    {
+      "id": "ghayn",
+      "ar": "غَزَالٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "fa",
+      "ar": "فَأْرٌ",
+      "fr": "Souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "qaf",
+      "ar": "قَلَمٌ",
+      "fr": "Crayon",
+      "emoji": "✏️"
+    },
+    {
+      "id": "kaf",
+      "ar": "كَلْبٌ",
+      "fr": "Chien",
+      "emoji": "🐕"
+    },
+    {
+      "id": "lam",
+      "ar": "لَيْلٌ",
+      "fr": "Nuit",
+      "emoji": "🌙"
+    },
+    {
+      "id": "mim",
+      "ar": "مَسْجِدٌ",
+      "fr": "Mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "nun",
+      "ar": "نَمِرٌ",
+      "fr": "Tigre",
+      "emoji": "🐯"
+    },
+    {
+      "id": "ha2",
+      "ar": "هَدِيَّةٌ",
+      "fr": "Cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "waw",
+      "ar": "وَرْدَةٌ",
+      "fr": "Rose",
+      "emoji": "🌸"
+    },
+    {
+      "id": "ya",
+      "ar": "يَدٌ",
+      "fr": "Main",
+      "emoji": "✋"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 15,
+  "nom_pdf": "niveau2_abecedaire_imagier",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تعلّم حروف الأبجدية العربية من خلال الكلمات والصور",
+      "voix_m": "niveau2_abecedaire_imagier_p1_consigne_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_alif",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_alif_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ba",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ba_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta",
+      "texte_ar": "تَمْرٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ta_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tha",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_tha_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jim",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_jim_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha",
+      "texte_ar": "حَمَامَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ha_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kha",
+      "texte_ar": "خَوْخٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_kha_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dal",
+      "texte_ar": "دَارٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_dal_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dhal",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_dhal_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ra",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ra_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zay",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_zay_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_sin_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shin",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_shin_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sad",
+      "texte_ar": "صَبَاحٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_sad_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dad",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_dad_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta2",
+      "texte_ar": "طَرِيقٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ta2_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ta2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dha2",
+      "texte_ar": "ظَرْفٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_dha2_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_dha2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ayn",
+      "texte_ar": "عَيْنٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ayn_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ghayn",
+      "texte_ar": "غَزَالٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ghayn_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ghayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fa",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_fa_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qaf",
+      "texte_ar": "قَلَمٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_qaf_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kaf",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_kaf_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lam",
+      "texte_ar": "لَيْلٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_lam_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mim",
+      "texte_ar": "مَسْجِدٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_mim_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nun",
+      "texte_ar": "نَمِرٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_nun_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha2",
+      "texte_ar": "هَدِيَّةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ha2_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ha2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_waw",
+      "texte_ar": "وَرْدَةٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_waw_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya",
+      "texte_ar": "يَدٌ",
+      "voix_m": "niveau2_abecedaire_imagier_p1_ya_m.mp3",
+      "voix_f": "niveau2_abecedaire_imagier_p1_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:34:04.782943",
+    "niveau": 2,
+    "lecon": 29,
+    "nom_pdf": "niveau2_abecedaire_imagier",
+    "bucket_audio": "audio-lessons/niveau2/lecon29/",
+    "nb_audio_assets": 29
+  }
+}

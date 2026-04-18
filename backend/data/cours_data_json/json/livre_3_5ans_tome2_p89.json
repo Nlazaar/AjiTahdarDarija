@@ -1,0 +1,181 @@
+{
+  "page_nb": 89,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ظ chaque fois que tu la trouves dans les mots suivants",
+    "ar": "لَوِّنِ الحرفَ ظ في كُلِّ مَكَانٍ تَجِدُهُ في الكَلِمَاتِ التَّالِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ظَرْف",
+      "fr": "enveloppe",
+      "emoji": "✉️"
+    },
+    {
+      "id": "2",
+      "ar": "ظَبْي",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "3",
+      "ar": "وَظِيفَة",
+      "fr": "emploi/devoir",
+      "emoji": "💼"
+    },
+    {
+      "id": "4",
+      "ar": "ظَبْط",
+      "fr": "précision/réglage",
+      "emoji": "🎯"
+    },
+    {
+      "id": "5",
+      "ar": "أَظَافِر",
+      "fr": "ongles",
+      "emoji": "💅"
+    },
+    {
+      "id": "6",
+      "ar": "ظِل",
+      "fr": "ombre",
+      "emoji": "🌑"
+    },
+    {
+      "id": "7",
+      "ar": "مَظَلَّة",
+      "fr": "parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "8",
+      "ar": "مُوَظَّف",
+      "fr": "employé",
+      "emoji": "👨‍💼"
+    },
+    {
+      "id": "9",
+      "ar": "ظِلَال",
+      "fr": "ombres",
+      "emoji": "🌿"
+    },
+    {
+      "id": "10",
+      "ar": "ظَافِر",
+      "fr": "victorieux",
+      "emoji": "🏆"
+    },
+    {
+      "id": "11",
+      "ar": "ظُرُوف",
+      "fr": "enveloppes/circonstances",
+      "emoji": "📬"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p89_consigne",
+      "texte_ar": "لَوِّنِ الحرفَ ظ في كُلِّ مَكَانٍ تَجِدُهُ في الكَلِمَاتِ التَّالِيَةِ",
+      "voix_m": "livre_3_5ans_tome2_p89_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ظَرْف",
+      "voix_m": "livre_3_5ans_tome2_p89_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ظَبْي",
+      "voix_m": "livre_3_5ans_tome2_p89_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "وَظِيفَة",
+      "voix_m": "livre_3_5ans_tome2_p89_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ظَبْط",
+      "voix_m": "livre_3_5ans_tome2_p89_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أَظَافِر",
+      "voix_m": "livre_3_5ans_tome2_p89_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ظِل",
+      "voix_m": "livre_3_5ans_tome2_p89_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مَظَلَّة",
+      "voix_m": "livre_3_5ans_tome2_p89_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مُوَظَّف",
+      "voix_m": "livre_3_5ans_tome2_p89_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ظِلَال",
+      "voix_m": "livre_3_5ans_tome2_p89_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ظَافِر",
+      "voix_m": "livre_3_5ans_tome2_p89_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ظُرُوف",
+      "voix_m": "livre_3_5ans_tome2_p89_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p89_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:10:33.491540",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 12
+  }
+}

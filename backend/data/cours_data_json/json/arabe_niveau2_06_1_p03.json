@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure la lettre dans les mots",
+    "ar": "أَحِيطُ الحَرْفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre ش dans chacun des mots suivants",
+    "ar": "أَحِيطُ حَرْفَ الشِّينِ فِي الكَلِمَاتِ التَّالِيَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شَيْخ",
+      "fr": "cheikh",
+      "emoji": "👴"
+    },
+    {
+      "id": "2",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "3",
+      "ar": "مِشْمِش",
+      "fr": "abricot",
+      "emoji": "🍑"
+    },
+    {
+      "id": "4",
+      "ar": "كَرْش",
+      "fr": "ventre/panse",
+      "emoji": "🫃"
+    },
+    {
+      "id": "5",
+      "ar": "شَمْس",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "رِيشَة",
+      "fr": "plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "7",
+      "ar": "مَشَى",
+      "fr": "marcher",
+      "emoji": "🚶"
+    },
+    {
+      "id": "8",
+      "ar": "رَشْوَة",
+      "fr": "pot-de-vin",
+      "emoji": "💰"
+    },
+    {
+      "id": "9",
+      "ar": "مَرَش",
+      "fr": "égratignure",
+      "emoji": "🤕"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أَحِيطُ حَرْفَ الشِّينِ فِي الكَلِمَاتِ التَّالِيَةِ",
+      "voix_m": "arabe_niveau2_06_1_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شَيْخ",
+      "voix_m": "arabe_niveau2_06_1_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "arabe_niveau2_06_1_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِشْمِش",
+      "voix_m": "arabe_niveau2_06_1_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كَرْش",
+      "voix_m": "arabe_niveau2_06_1_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "شَمْس",
+      "voix_m": "arabe_niveau2_06_1_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "رِيشَة",
+      "voix_m": "arabe_niveau2_06_1_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مَشَى",
+      "voix_m": "arabe_niveau2_06_1_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "رَشْوَة",
+      "voix_m": "arabe_niveau2_06_1_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَرَش",
+      "voix_m": "arabe_niveau2_06_1_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:47:46.675176",
+    "niveau": 2,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau2_06_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon17/",
+    "nb_audio_assets": 10
+  }
+}

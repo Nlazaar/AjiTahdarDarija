@@ -1,0 +1,207 @@
+{
+  "page_nb": 33,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ فِي الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre م (mim) dans chaque mot, comme dans l'exemple : en rouge quand elle est au milieu, en bleu quand elle est isolée.",
+    "ar": "لوِّن حرف الميم في كل كلمة كما في المثال"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَاهِر",
+      "fr": "Maher (prénom)",
+      "emoji": "👦"
+    },
+    {
+      "id": "2",
+      "ar": "مَرِيـم",
+      "fr": "Maryam (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "3",
+      "ar": "فَم",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "4",
+      "ar": "مِجهَر",
+      "fr": "microscope",
+      "emoji": "🔬"
+    },
+    {
+      "id": "5",
+      "ar": "مُرُور",
+      "fr": "passage / circulation",
+      "emoji": "🚗"
+    },
+    {
+      "id": "6",
+      "ar": "مِصبَاح",
+      "fr": "lampe",
+      "emoji": "💡"
+    },
+    {
+      "id": "7",
+      "ar": "سَمَر",
+      "fr": "Samar (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "8",
+      "ar": "مَصِير",
+      "fr": "destin",
+      "emoji": "🌟"
+    },
+    {
+      "id": "9",
+      "ar": "رَام",
+      "fr": "Ram (prénom)",
+      "emoji": "👦"
+    },
+    {
+      "id": "10",
+      "ar": "مَكَث",
+      "fr": "rester",
+      "emoji": "🏠"
+    },
+    {
+      "id": "11",
+      "ar": "كَتَم",
+      "fr": "taire / cacher",
+      "emoji": "🤫"
+    },
+    {
+      "id": "12",
+      "ar": "مَاء",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "13",
+      "ar": "مَرَض",
+      "fr": "maladie",
+      "emoji": "🤒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p33_consigne",
+      "texte_ar": "لوِّن حرف الميم في كل كلمة كما في المثال",
+      "voix_m": "livre_3_5ans_tome2_p33_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَاهِر",
+      "voix_m": "livre_3_5ans_tome2_p33_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَرِيـم",
+      "voix_m": "livre_3_5ans_tome2_p33_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَم",
+      "voix_m": "livre_3_5ans_tome2_p33_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مِجهَر",
+      "voix_m": "livre_3_5ans_tome2_p33_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مُرُور",
+      "voix_m": "livre_3_5ans_tome2_p33_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِصبَاح",
+      "voix_m": "livre_3_5ans_tome2_p33_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَمَر",
+      "voix_m": "livre_3_5ans_tome2_p33_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مَصِير",
+      "voix_m": "livre_3_5ans_tome2_p33_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "رَام",
+      "voix_m": "livre_3_5ans_tome2_p33_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "مَكَث",
+      "voix_m": "livre_3_5ans_tome2_p33_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "كَتَم",
+      "voix_m": "livre_3_5ans_tome2_p33_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَاء",
+      "voix_m": "livre_3_5ans_tome2_p33_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "مَرَض",
+      "voix_m": "livre_3_5ans_tome2_p33_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p33_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:59.402156",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 14
+  }
+}

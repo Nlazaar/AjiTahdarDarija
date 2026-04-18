@@ -1,0 +1,77 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَات لِأَحْصُلَ عَلَى كَلِمَة ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie ce mot à l'image correspondante.",
+    "ar": "اِرْبِطِ الْبِطَاقَتَيْنِ لِتُكَوِّنَ كَلِمَة، ثُمَّ اِرْبِطْهَا بِصُورَتِهَا."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "مِلْوَاةٌ",
+      "fr": "salière",
+      "emoji": "🧂"
+    },
+    {
+      "id": "mot_2",
+      "ar": "مِذْعَقَةٌ",
+      "fr": "fer à repasser",
+      "emoji": "👔"
+    },
+    {
+      "id": "mot_3",
+      "ar": "مِكْحَةٌ",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec19",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اِرْبِطِ الْبِطَاقَتَيْنِ لِتُكَوِّنَ كَلِمَة، ثُمَّ اِرْبِطْهَا بِصُورَتِهَا.",
+      "voix_m": "arabe_niveau3_lec19_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "مِلْوَاةٌ",
+      "voix_m": "arabe_niveau3_lec19_p2_mot_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p2_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "مِذْعَقَةٌ",
+      "voix_m": "arabe_niveau3_lec19_p2_mot_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p2_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "مِكْحَةٌ",
+      "voix_m": "arabe_niveau3_lec19_p2_mot_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p2_mot_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:50:55.895131",
+    "niveau": 3,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau3_lec19",
+    "bucket_audio": "audio-lessons/niveau3/lecon19/",
+    "nb_audio_assets": 4
+  }
+}

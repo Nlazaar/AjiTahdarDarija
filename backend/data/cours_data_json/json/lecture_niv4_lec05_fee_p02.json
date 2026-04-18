@@ -1,0 +1,233 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de la lettre ف, et compléter les mots avec la lettre manquante ف",
+  "titre": {
+    "fr": "La lettre Fa - ف",
+    "ar": "حرف الفاء - ف"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre ف. 3) Je complète avec ce qui convient.",
+    "ar": "١) أَقْرَأُ الكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. ٢) أَكْتُبُ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَنْفٌ",
+      "fr": "Nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "2",
+      "ar": "خُطَّافٌ",
+      "fr": "Hirondelle",
+      "emoji": "🐦"
+    },
+    {
+      "id": "3",
+      "ar": "فَمٌّ",
+      "fr": "Bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "4",
+      "ar": "قُفْلٌ",
+      "fr": "Cadenas",
+      "emoji": "🔒"
+    },
+    {
+      "id": "5",
+      "ar": "فِيلٌ",
+      "fr": "Éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "6",
+      "ar": "مِفْتَاحٌ",
+      "fr": "Clé",
+      "emoji": "🔑"
+    },
+    {
+      "id": "7",
+      "ar": "عُصْفُورٌ",
+      "fr": "Oiseau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "8",
+      "ar": "طِفْلٌ",
+      "fr": "Enfant",
+      "emoji": "👦"
+    },
+    {
+      "id": "9",
+      "ar": "خُفَّاشٌ",
+      "fr": "Chauve-souris",
+      "emoji": "🦇"
+    },
+    {
+      "id": "10",
+      "ar": "فَهِمَ",
+      "fr": "Il a compris",
+      "emoji": "💡"
+    },
+    {
+      "id": "11",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "12",
+      "ar": "يَقْفِزُ",
+      "fr": "Il saute",
+      "emoji": "🧒"
+    },
+    {
+      "id": "13",
+      "ar": "جَرَّافَةٌ",
+      "fr": "Bulldozer",
+      "emoji": "🚜"
+    },
+    {
+      "id": "14",
+      "ar": "فُرْنٌ",
+      "fr": "Four",
+      "emoji": "🔥"
+    },
+    {
+      "id": "15",
+      "ar": "فَرِحَتْ",
+      "fr": "Elle est contente",
+      "emoji": "😊"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec05_fee",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أَقْرَأُ الكَلِمَةَ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا. ٢) أَكْتُبُ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ.",
+      "voix_m": "lecture_niv4_lec05_fee_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَنْفٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خُطَّافٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَمٌّ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قُفْلٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فِيلٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِفْتَاحٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "عُصْفُورٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_7_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "طِفْلٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_8_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "خُفَّاشٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_9_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "فَهِمَ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_10_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_11_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "يَقْفِزُ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_12_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "جَرَّافَةٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_13_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "فُرْنٌ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_14_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "فَرِحَتْ",
+      "voix_m": "lecture_niv4_lec05_fee_p2_15_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p2_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:48:07.188122",
+    "niveau": 4,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv4_lec05_fee",
+    "bucket_audio": "audio-lessons/niveau4/lecon05/",
+    "nb_audio_assets": 16
+  }
+}

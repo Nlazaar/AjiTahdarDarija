@@ -1,0 +1,116 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la bonne forme de la lettre ض",
+    "ar": "أكمِّل كلَّ كلمةٍ بالحرف الناقص ض"
+  },
+  "elements": [
+    {
+      "id": "khodar",
+      "ar": "خُـ_ـرُ",
+      "fr": "légumes (خُضرُ)",
+      "emoji": "🥦"
+    },
+    {
+      "id": "dahika",
+      "ar": "_ـحِكَ",
+      "fr": "il a ri (ضَحِكَ)",
+      "emoji": "😄"
+    },
+    {
+      "id": "fudaa",
+      "ar": "فِدَعُ_",
+      "fr": "grenouilles (ضَفَادِع)",
+      "emoji": "🐸"
+    },
+    {
+      "id": "bayda",
+      "ar": "بَيْـ_ـةٌ",
+      "fr": "œuf (بَيْضَةٌ)",
+      "emoji": "🍳"
+    },
+    {
+      "id": "marid",
+      "ar": "_ـمَرِيدٍ",
+      "fr": "malade (مَرِيض)",
+      "emoji": "🤒"
+    },
+    {
+      "id": "radi3",
+      "ar": "رَ_ـيعٌ",
+      "fr": "bébé (رَضِيعٌ)",
+      "emoji": "👶"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec13",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أكمِّل كلَّ كلمةٍ بالحرف الناقص ض",
+      "voix_m": "arabe_niveau3_lec13_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_khodar",
+      "texte_ar": "خُـ_ـرُ",
+      "voix_m": "arabe_niveau3_lec13_p5_khodar_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_khodar_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dahika",
+      "texte_ar": "_ـحِكَ",
+      "voix_m": "arabe_niveau3_lec13_p5_dahika_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_dahika_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fudaa",
+      "texte_ar": "فِدَعُ_",
+      "voix_m": "arabe_niveau3_lec13_p5_fudaa_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_fudaa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bayda",
+      "texte_ar": "بَيْـ_ـةٌ",
+      "voix_m": "arabe_niveau3_lec13_p5_bayda_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_bayda_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_marid",
+      "texte_ar": "_ـمَرِيدٍ",
+      "voix_m": "arabe_niveau3_lec13_p5_marid_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_marid_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_radi3",
+      "texte_ar": "رَ_ـيعٌ",
+      "voix_m": "arabe_niveau3_lec13_p5_radi3_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p5_radi3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:43:51.456636",
+    "niveau": 3,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau3_lec13",
+    "bucket_audio": "audio-lessons/niveau3/lecon13/",
+    "nb_audio_assets": 7
+  }
+}

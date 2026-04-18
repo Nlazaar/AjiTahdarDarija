@@ -1,0 +1,90 @@
+{
+  "page_nb": 68,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres du mot",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق حُرُوفَ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "Entoure parmi les lettres proposées uniquement celles qui composent le mot illustré",
+    "ar": "أحِط بخط مغلق الحروف التي تكوّن الكلمة المكتوبة تحت الصورة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عِنَبٌ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "2",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille",
+      "emoji": "🍃"
+    },
+    {
+      "id": "3",
+      "ar": "بُرْتُقَالٌ",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "4",
+      "ar": "فَأْرٌ",
+      "fr": "souris",
+      "emoji": "🐭"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p68_consigne",
+      "texte_ar": "أحِط بخط مغلق الحروف التي تكوّن الكلمة المكتوبة تحت الصورة",
+      "voix_m": "livre_arabe_niveau3_p68_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p68_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "livre_arabe_niveau3_p68_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p68_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "livre_arabe_niveau3_p68_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p68_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بُرْتُقَالٌ",
+      "voix_m": "livre_arabe_niveau3_p68_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p68_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "livre_arabe_niveau3_p68_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p68_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:08:06.682944",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 5
+  }
+}

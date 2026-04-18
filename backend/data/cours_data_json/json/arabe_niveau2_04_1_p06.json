@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je dessine",
+    "ar": "أَرْسُمُ"
+  },
+  "enonce": {
+    "fr": "Trace les nuages en suivant les pointillés",
+    "ar": "ارسم السحاب باتباع الخطوط المتقطعة"
+  },
+  "elements": [
+    {
+      "id": "nuage_1",
+      "ar": "سَحَابٌ كَبِيرٌ",
+      "fr": "Grand nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "nuage_2",
+      "ar": "سَحَابٌ مُتَوَسِّطٌ",
+      "fr": "Nuage moyen",
+      "emoji": "🌥️"
+    },
+    {
+      "id": "nuage_3",
+      "ar": "سَحَابٌ صَغِيرٌ",
+      "fr": "Petit nuage",
+      "emoji": "⛅"
+    },
+    {
+      "id": "mot",
+      "ar": "سَحَاب",
+      "fr": "nuage",
+      "emoji": "☁️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "ارسم السحاب باتباع الخطوط المتقطعة",
+      "voix_m": "arabe_niveau2_04_1_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_1",
+      "texte_ar": "سَحَابٌ كَبِيرٌ",
+      "voix_m": "arabe_niveau2_04_1_p6_nuage_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p6_nuage_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_2",
+      "texte_ar": "سَحَابٌ مُتَوَسِّطٌ",
+      "voix_m": "arabe_niveau2_04_1_p6_nuage_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p6_nuage_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage_3",
+      "texte_ar": "سَحَابٌ صَغِيرٌ",
+      "voix_m": "arabe_niveau2_04_1_p6_nuage_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p6_nuage_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot",
+      "texte_ar": "سَحَاب",
+      "voix_m": "arabe_niveau2_04_1_p6_mot_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p6_mot_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:42:13.035145",
+    "niveau": 2,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau2_04_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon13/",
+    "nb_audio_assets": 5
+  }
+}

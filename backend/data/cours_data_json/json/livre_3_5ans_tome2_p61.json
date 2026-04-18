@@ -1,0 +1,90 @@
+{
+  "page_nb": 61,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colle les enfants en dehors du bus",
+    "ar": "ألصق الأطفال خارج الحافلة"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les enfants à l'extérieur du bus, pas à l'intérieur.",
+    "ar": "قصّ وألصق الأطفال خارج الحافلة وليس داخلها."
+  },
+  "elements": [
+    {
+      "id": "bus",
+      "ar": "الحافلة",
+      "fr": "le bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "enfant1",
+      "ar": "طفل",
+      "fr": "enfant",
+      "emoji": "🧒"
+    },
+    {
+      "id": "enfant2",
+      "ar": "طفلة",
+      "fr": "fillette",
+      "emoji": "👧"
+    },
+    {
+      "id": "chauffeur",
+      "ar": "السائق",
+      "fr": "le chauffeur",
+      "emoji": "👨"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p61_consigne",
+      "texte_ar": "قصّ وألصق الأطفال خارج الحافلة وليس داخلها.",
+      "voix_m": "livre_3_5ans_tome2_p61_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p61_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "الحافلة",
+      "voix_m": "livre_3_5ans_tome2_p61_bus_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p61_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_enfant1",
+      "texte_ar": "طفل",
+      "voix_m": "livre_3_5ans_tome2_p61_enfant1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p61_enfant1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_enfant2",
+      "texte_ar": "طفلة",
+      "voix_m": "livre_3_5ans_tome2_p61_enfant2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p61_enfant2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chauffeur",
+      "texte_ar": "السائق",
+      "voix_m": "livre_3_5ans_tome2_p61_chauffeur_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p61_chauffeur_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:05:49.634930",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

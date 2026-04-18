@@ -1,0 +1,90 @@
+{
+  "page_nb": 90,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Complète les lettres manquantes",
+    "ar": "أَكَمِّلُ الحُرُوفَ النَّاقِصَة"
+  },
+  "enonce": {
+    "fr": "Observe chaque image et complète le mot en ajoutant les lettres manquantes",
+    "ar": "انظر إلى كل صورة وأكمل الكلمة بإضافة الحروف الناقصة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُد",
+      "fr": "Huppe fasciée",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "ظَبْيٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "3",
+      "ar": "تِمْسَاحٌ",
+      "fr": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "4",
+      "ar": "دِيكٌ",
+      "fr": "Coq",
+      "emoji": "🐓"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p90_consigne",
+      "texte_ar": "انظر إلى كل صورة وأكمل الكلمة بإضافة الحروف الناقصة",
+      "voix_m": "livre_3_5ans_tome2_p90_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p90_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُد",
+      "voix_m": "livre_3_5ans_tome2_p90_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p90_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ظَبْيٌ",
+      "voix_m": "livre_3_5ans_tome2_p90_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p90_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "livre_3_5ans_tome2_p90_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p90_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "livre_3_5ans_tome2_p90_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p90_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:10:43.285359",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 119,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les étiquettes de syllabes pour former un mot, puis relie le mot à son image correspondante",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot1_syllabe1",
+      "ar": "دُو",
+      "fr": "dou",
+      "emoji": ""
+    },
+    {
+      "id": "mot1_syllabe2",
+      "ar": "شَّةٌ",
+      "fr": "chcha",
+      "emoji": ""
+    },
+    {
+      "id": "mot1_image",
+      "ar": "فَرَاشَةٌ",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "mot2_syllabe1",
+      "ar": "فَرَا",
+      "fr": "fara",
+      "emoji": ""
+    },
+    {
+      "id": "mot2_syllabe2",
+      "ar": "نٌّ",
+      "fr": "nn",
+      "emoji": ""
+    },
+    {
+      "id": "mot2_image",
+      "ar": "فَرَانٌ",
+      "fr": "ver/chenille",
+      "emoji": "🐛"
+    },
+    {
+      "id": "mot3_syllabe1",
+      "ar": "رُمَّا",
+      "fr": "rumma",
+      "emoji": ""
+    },
+    {
+      "id": "mot3_syllabe2",
+      "ar": "دَةٌ",
+      "fr": "da",
+      "emoji": ""
+    },
+    {
+      "id": "mot3_image",
+      "ar": "رُمَّانَةٌ",
+      "fr": "grenade",
+      "emoji": "🍎"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p119_consigne",
+      "texte_ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا",
+      "voix_m": "livre_arabe_niveau3_p119_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1_syllabe1",
+      "texte_ar": "دُو",
+      "voix_m": "livre_arabe_niveau3_p119_mot1_syllabe1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot1_syllabe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1_syllabe2",
+      "texte_ar": "شَّةٌ",
+      "voix_m": "livre_arabe_niveau3_p119_mot1_syllabe2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot1_syllabe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1_image",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "livre_arabe_niveau3_p119_mot1_image_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot1_image_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2_syllabe1",
+      "texte_ar": "فَرَا",
+      "voix_m": "livre_arabe_niveau3_p119_mot2_syllabe1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot2_syllabe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2_syllabe2",
+      "texte_ar": "نٌّ",
+      "voix_m": "livre_arabe_niveau3_p119_mot2_syllabe2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot2_syllabe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2_image",
+      "texte_ar": "فَرَانٌ",
+      "voix_m": "livre_arabe_niveau3_p119_mot2_image_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot2_image_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3_syllabe1",
+      "texte_ar": "رُمَّا",
+      "voix_m": "livre_arabe_niveau3_p119_mot3_syllabe1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot3_syllabe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3_syllabe2",
+      "texte_ar": "دَةٌ",
+      "voix_m": "livre_arabe_niveau3_p119_mot3_syllabe2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot3_syllabe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3_image",
+      "texte_ar": "رُمَّانَةٌ",
+      "voix_m": "livre_arabe_niveau3_p119_mot3_image_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p119_mot3_image_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:17:28.104339",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

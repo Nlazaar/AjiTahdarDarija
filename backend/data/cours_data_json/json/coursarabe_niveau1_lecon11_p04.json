@@ -1,0 +1,181 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أُلَوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres ص parmi toutes les lettres présentées",
+    "ar": "لَوِّنْ حَرْفَ الصَّادِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ص",
+      "fr": "Sad isolé (grand modèle colorié en bleu)",
+      "emoji": "🔵"
+    },
+    {
+      "id": "2",
+      "ar": "ص",
+      "fr": "Sad isolé (à colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "3",
+      "ar": "صـ",
+      "fr": "Sad en début de mot (à colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "4",
+      "ar": "ـصـ",
+      "fr": "Sad au milieu de mot (à colorier)",
+      "emoji": "⬜"
+    },
+    {
+      "id": "5",
+      "ar": "ض",
+      "fr": "Dad isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "س",
+      "fr": "Sin isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "ر",
+      "fr": "Ra isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "ي",
+      "fr": "Ya isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "9",
+      "ar": "ذ",
+      "fr": "Dhal isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "10",
+      "ar": "ب",
+      "fr": "Ba isolé (intrus - ne pas colorier)",
+      "emoji": "❌"
+    },
+    {
+      "id": "11",
+      "ar": "بَصَل",
+      "fr": "Oignon (mot exemple avec ص)",
+      "emoji": "🧅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon11",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الصَّادِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الْحُرُوفِ",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ص",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ص",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "صـ",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ـصـ",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ض",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ي",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذ",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ب",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_10_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "بَصَل",
+      "voix_m": "coursarabe_niveau1_lecon11_p4_11_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon11_p4_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:23:32.079822",
+    "niveau": 1,
+    "lecon": 4,
+    "nom_pdf": "coursarabe_niveau1_lecon11",
+    "bucket_audio": "audio-lessons/niveau1/lecon04/",
+    "nb_audio_assets": 12
+  }
+}

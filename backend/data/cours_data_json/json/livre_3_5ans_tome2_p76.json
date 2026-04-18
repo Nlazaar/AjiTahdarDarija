@@ -1,0 +1,103 @@
+{
+  "page_nb": 76,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أَرْسُمُ الْخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Trace les pointillés pour dessiner chaque image",
+    "ar": "اِرْسُمِ الْخُطُوطَ الْمُتَقَطِّعَةَ لِتُكْمِلَ كُلَّ صُورَة"
+  },
+  "elements": [
+    {
+      "id": "etoile",
+      "ar": "نَجْمَة",
+      "fr": "étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "parapluie",
+      "ar": "مِظَلَّة",
+      "fr": "parapluie",
+      "emoji": "☂️"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "couteau",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "cuillere",
+      "ar": "مِلْعَقَة",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p76_consigne",
+      "texte_ar": "اِرْسُمِ الْخُطُوطَ الْمُتَقَطِّعَةَ لِتُكْمِلَ كُلَّ صُورَة",
+      "voix_m": "livre_3_5ans_tome2_p76_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoile",
+      "texte_ar": "نَجْمَة",
+      "voix_m": "livre_3_5ans_tome2_p76_etoile_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_etoile_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_parapluie",
+      "texte_ar": "مِظَلَّة",
+      "voix_m": "livre_3_5ans_tome2_p76_parapluie_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_parapluie_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "livre_3_5ans_tome2_p76_fourchette_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سِكِّين",
+      "voix_m": "livre_3_5ans_tome2_p76_couteau_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_couteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cuillere",
+      "texte_ar": "مِلْعَقَة",
+      "voix_m": "livre_3_5ans_tome2_p76_cuillere_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p76_cuillere_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:08:20.165626",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 6
+  }
+}

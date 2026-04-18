@@ -1,0 +1,77 @@
+{
+  "page_nb": 103,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Aujourd'hui c'est quel jour ? - Relier le mot à l'image",
+    "ar": "اليَوْمُ هُوَ يَوْمُ - اِرْبِطْ بِالصُّورَةِ المُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis / J'écoute puis je relie avec l'image qui correspond",
+    "ar": "أَقْرَأُ/أَسْمَعُ ثُمَّ أَرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "طَبَخَ",
+      "fr": "Il a cuisiné (masculin)",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "id": "2",
+      "ar": "تَقْرَأُ",
+      "fr": "Elle lit",
+      "emoji": "📚"
+    },
+    {
+      "id": "3",
+      "ar": "طَبَخَتْ",
+      "fr": "Elle a cuisiné (féminin)",
+      "emoji": "👩‍🍳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p103_consigne",
+      "texte_ar": "أَقْرَأُ/أَسْمَعُ ثُمَّ أَرْبِطُ بِالصُّورَةِ المُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_p103_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p103_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "طَبَخَ",
+      "voix_m": "livre_arabe_niveau3_p103_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p103_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "تَقْرَأُ",
+      "voix_m": "livre_arabe_niveau3_p103_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p103_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَبَخَتْ",
+      "voix_m": "livre_arabe_niveau3_p103_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p103_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:14:50.161968",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

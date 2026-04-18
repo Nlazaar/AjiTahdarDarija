@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { useUserProgress } from '@/contexts/UserProgressContext';
-import { getShopItems, getMyInventory, buyShopItem } from '@/lib/api';
+import { getShopItems, getMyInventory, buyShopItem, getCulturalItems, getMyCultural, unlockCulturalItem } from '@/lib/api';
 
 /* ─── Colors ──────────────────────────────────────────────────────────────── */
 const CARD   = 'var(--c-card)';
@@ -12,20 +12,92 @@ const TEXT   = 'var(--c-text)';
 const SUB    = 'var(--c-sub)';
 const GREEN  = '#58cc02';
 
-type Category = 'all' | 'consumable' | 'cosmetic' | 'pack';
+type Category = 'all' | 'consumable' | 'cosmetic' | 'pack' | 'culture';
 
 const CATEGORY_LABELS: Record<string, string> = {
   all: '🏪 Tout',
   consumable: '⚗️ Consommables',
   cosmetic: '🎨 Cosmétiques',
   pack: '📦 Packs',
+  culture: '🇲🇦 Collection',
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
   consumable: '#ff6b35',
   cosmetic: '#a78bfa',
   pack: '#1cb0f6',
+  culture: '#e9a84c',
 };
+
+const RARITY: Record<string, { price: number; color: string; label: string }> = {
+  common:    { price: 20,  color: '#94a3b8', label: 'Commun' },
+  rare:      { price: 60,  color: '#38bdf8', label: 'Rare' },
+  epic:      { price: 150, color: '#a78bfa', label: 'Épique' },
+  legendary: { price: 400, color: '#ffc800', label: 'Légendaire' },
+};
+
+const CULTURE_EMOJI: Record<string, string> = {
+  food: '🍽️', music: '🎵', place: '📍', monument: '🕌', tradition: '✨',
+};
+
+function CulturalCard({ item, owned, onUnlock }: {
+  item: any; owned: boolean; onUnlock: () => void;
+}) {
+  const rarity = RARITY[item.rarity] ?? RARITY.common;
+  const emoji = CULTURE_EMOJI[item.category] ?? '🎁';
+  return (
+    <div style={{
+      background: CARD, borderRadius: 20,
+      border: `1px solid ${owned ? 'rgba(88,204,2,0.3)' : rarity.color + '40'}`,
+      overflow: 'hidden', position: 'relative',
+    }}>
+      <div style={{
+        padding: '20px 16px 12px',
+        background: `linear-gradient(135deg, ${rarity.color}20, ${rarity.color}05)`,
+        textAlign: 'center', borderBottom: `1px solid ${rarity.color}20`,
+      }}>
+        <div style={{ fontSize: 40, lineHeight: 1, marginBottom: 6 }}>{emoji}</div>
+        <div style={{
+          display: 'inline-block', background: rarity.color + '25',
+          color: rarity.color, fontSize: 10, fontWeight: 900,
+          padding: '3px 10px', borderRadius: 6,
+          textTransform: 'uppercase' as const, letterSpacing: '0.05em',
+        }}>{rarity.label}</div>
+      </div>
+      <div style={{ padding: '12px 14px 14px' }}>
+        <div style={{ fontSize: 14, fontWeight: 900, color: TEXT, lineHeight: 1.25 }}>
+          {item.name}
+        </div>
+        {item.nameAr && (
+          <div style={{
+            fontFamily: 'var(--font-arabic, Amiri, serif)', direction: 'rtl',
+            fontSize: 16, color: SUB, marginTop: 2, fontWeight: 700,
+          }}>{item.nameAr}</div>
+        )}
+        {item.region && (
+          <div style={{ fontSize: 11, color: SUB, marginTop: 4 }}>📍 {item.region}</div>
+        )}
+        <div style={{ fontSize: 11, color: SUB, lineHeight: 1.4, marginTop: 8, minHeight: 32 }}>
+          {item.description}
+        </div>
+        {owned ? (
+          <div style={{
+            width: '100%', marginTop: 10, padding: 9, borderRadius: 11,
+            background: 'rgba(88,204,2,0.15)', border: '1px solid rgba(88,204,2,0.3)',
+            color: GREEN, fontSize: 12, fontWeight: 800, textAlign: 'center' as const,
+          }}>✓ Dans ta collection</div>
+        ) : (
+          <button onClick={onUnlock} style={{
+            width: '100%', marginTop: 10, padding: 9, borderRadius: 11, border: 'none',
+            background: rarity.color, color: 'white',
+            fontSize: 13, fontWeight: 800, cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+          }}>💎 {rarity.price.toLocaleString()}</button>
+        )}
+      </div>
+    </div>
+  );
+}
 
 function ItemCard({ item, owned, quantity, onBuy }: {
   item: any; owned: boolean; quantity: number; onBuy: () => void;
@@ -194,6 +266,8 @@ export default function ShopPage() {
 
   const [items,     setItems]     = useState<any[]>([]);
   const [inventory, setInventory] = useState<any[]>([]);
+  const [cultural,  setCultural]  = useState<any[]>([]);
+  const [myCultural,setMyCultural]= useState<any[]>([]);
   const [category,  setCategory]  = useState<Category>('all');
   const [loading,   setLoading]   = useState(true);
   const [confirm,   setConfirm]   = useState<any | null>(null);
@@ -204,9 +278,11 @@ export default function ShopPage() {
 
   const loadData = useCallback(() => {
     setLoading(true);
-    Promise.allSettled([getShopItems(), getMyInventory()]).then(([i, inv]) => {
+    Promise.allSettled([getShopItems(), getMyInventory(), getCulturalItems(), getMyCultural()]).then(([i, inv, c, mc]) => {
       if (i.status === 'fulfilled' && Array.isArray(i.value)) setItems(i.value);
       if (inv.status === 'fulfilled' && Array.isArray(inv.value)) setInventory(inv.value);
+      if (c.status === 'fulfilled' && Array.isArray(c.value)) setCultural(c.value);
+      if (mc.status === 'fulfilled' && Array.isArray(mc.value)) setMyCultural(mc.value);
       setLoading(false);
     });
   }, []);
@@ -214,7 +290,10 @@ export default function ShopPage() {
   useEffect(() => { loadData(); }, [loadData]);
 
   const inventoryMap = new Map(inventory.map(i => [i.itemKey, i.quantity]));
-  const filteredItems = category === 'all' ? items : items.filter(i => i.category === category);
+  const ownedCultural = new Set(myCultural.map(u => u.item?.key ?? u.itemId));
+  const filteredItems = category === 'all' ? items
+    : category === 'culture' ? []
+    : items.filter(i => i.category === category);
 
   const showToast = (msg: string, ok: boolean) => {
     setToast({ msg, ok });
@@ -239,7 +318,23 @@ export default function ShopPage() {
     setConfirm(null);
   };
 
-  const categories: Category[] = ['all', 'consumable', 'cosmetic', 'pack'];
+  const handleUnlockCultural = async (item: any) => {
+    const price = RARITY[item.rarity]?.price ?? 50;
+    if (gemmes < price) { showToast(`Il te manque ${price - gemmes} 💎`, false); return; }
+    try {
+      const res = await unlockCulturalItem(item.key);
+      if (res?.success) {
+        addGemmes(-price);
+        await syncFromBackend();
+        loadData();
+        showToast(`${item.name} débloqué ! 🎉`, true);
+      }
+    } catch (e: any) {
+      showToast(e?.message?.includes('Déjà') ? 'Déjà dans ta collection' : "Erreur d'unlock.", false);
+    }
+  };
+
+  const categories: Category[] = ['all', 'consumable', 'cosmetic', 'pack', 'culture'];
 
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 80px', color: TEXT }}>
@@ -289,6 +384,38 @@ export default function ShopPage() {
       {/* Items grid */}
       {loading ? (
         <div style={{ textAlign: 'center', padding: '60px 0', color: SUB }}>Chargement…</div>
+      ) : category === 'culture' ? (
+        <>
+          <div style={{
+            marginBottom: 14, padding: '12px 14px', borderRadius: 14,
+            background: CARD, border: `1px solid ${BORDER}`,
+            fontSize: 12, color: SUB, lineHeight: 1.5,
+          }}>
+            ✨ Débloque des trésors marocains : plats, musique, lieux, monuments, traditions.
+            Collection personnelle — {myCultural.length} / {cultural.length} débloqués.
+          </div>
+          {(['food','music','place','monument','tradition'] as const).map(cat => {
+            const inCat = cultural.filter(c => c.category === cat);
+            if (inCat.length === 0) return null;
+            return (
+              <div key={cat} style={{ marginBottom: 22 }}>
+                <div style={{
+                  fontSize: 13, fontWeight: 900, color: TEXT, marginBottom: 10,
+                  textTransform: 'uppercase' as const, letterSpacing: '0.08em',
+                }}>
+                  {CULTURE_EMOJI[cat]} {cat === 'food' ? 'Gastronomie' : cat === 'music' ? 'Musique' : cat === 'place' ? 'Lieux' : cat === 'monument' ? 'Monuments' : 'Traditions'}
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+                  {inCat.map(item => (
+                    <CulturalCard key={item.key} item={item}
+                      owned={ownedCultural.has(item.key)}
+                      onUnlock={() => handleUnlockCultural(item)} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </>
       ) : filteredItems.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px 0' }}>
           <div style={{ fontSize: 40, marginBottom: 10 }}>🏪</div>

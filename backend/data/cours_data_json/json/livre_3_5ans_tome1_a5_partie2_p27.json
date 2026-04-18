@@ -1,0 +1,77 @@
+{
+  "page_nb": 27,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre la case qui n'est pas identique au modèle",
+    "ar": "أَشْطُبُ الخانات الَّتي لا تُطابِقُ الأنموذج"
+  },
+  "enonce": {
+    "fr": "Barre la case qui n'est pas identique au modèle donné en début de ligne",
+    "ar": "اشطب الخانة التي لا تطابق النموذج في بداية كل سطر"
+  },
+  "elements": [
+    {
+      "id": "row1",
+      "ar": "طماطم (نموذج: طماطم كاملة)",
+      "fr": "Tomates - barrer celles qui ne correspondent pas au modèle",
+      "emoji": "🍅"
+    },
+    {
+      "id": "row2",
+      "ar": "حرف الألف (نموذج: أَ)",
+      "fr": "Lettre Alif avec hamza au-dessus - barrer les différentes",
+      "emoji": "أ"
+    },
+    {
+      "id": "row3",
+      "ar": "حرف الواو (نموذج: و)",
+      "fr": "Lettre Waw - barrer celles qui ne correspondent pas au modèle",
+      "emoji": "و"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p27_consigne",
+      "texte_ar": "اشطب الخانة التي لا تطابق النموذج في بداية كل سطر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p27_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p27_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row1",
+      "texte_ar": "طماطم (نموذج: طماطم كاملة)",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p27_row1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p27_row1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row2",
+      "texte_ar": "حرف الألف (نموذج: أَ)",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p27_row2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p27_row2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_row3",
+      "texte_ar": "حرف الواو (نموذج: و)",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p27_row3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p27_row3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:32:32.953267",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

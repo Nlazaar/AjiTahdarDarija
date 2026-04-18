@@ -1,0 +1,90 @@
+{
+  "page_nb": 47,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les moyens de transport",
+    "ar": "أَتَنَقَّلُ"
+  },
+  "enonce": {
+    "fr": "Regarde et lis le nom de chaque moyen de transport",
+    "ar": "اُنْظُرْ وَاقْرَأْ اسْمَ كُلِّ وَسِيلَةِ نَقْلٍ"
+  },
+  "elements": [
+    {
+      "id": "avion",
+      "ar": "طَائِرَةٌ",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "bus",
+      "ar": "حَافِلَةٌ",
+      "fr": "bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "voiture",
+      "ar": "سَيَّارَةٌ",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "train",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚂"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p47_consigne",
+      "texte_ar": "اُنْظُرْ وَاقْرَأْ اسْمَ كُلِّ وَسِيلَةِ نَقْلٍ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p47_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p47_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion",
+      "texte_ar": "طَائِرَةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p47_avion_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p47_avion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "حَافِلَةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p47_bus_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p47_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p47_voiture_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p47_voiture_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p47_train_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p47_train_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:18:52.884676",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 5
+  }
+}

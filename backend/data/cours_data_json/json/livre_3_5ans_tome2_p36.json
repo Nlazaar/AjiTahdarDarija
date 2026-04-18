@@ -1,0 +1,181 @@
+{
+  "page_nb": 36,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Cherche le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'shams' (soleil) parmi tous les mots et entoure-le à chaque fois que tu le trouves",
+    "ar": "أبحثُ عَن كَلِمَة شَمس وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شَمس",
+      "fr": "shams (soleil) - mot cible",
+      "emoji": "☀️"
+    },
+    {
+      "id": "2",
+      "ar": "سَمس",
+      "fr": "sams - mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "شَمش",
+      "fr": "shamsh - mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "شَمس",
+      "fr": "shams (soleil) - mot cible",
+      "emoji": "☀️"
+    },
+    {
+      "id": "5",
+      "ar": "شَمس",
+      "fr": "shams (soleil) - mot cible",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "مشمَس",
+      "fr": "mshmas - mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "مشمَش",
+      "fr": "mishmish (abricot) - mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "شَمس",
+      "fr": "shams (soleil) - mot cible",
+      "emoji": "☀️"
+    },
+    {
+      "id": "9",
+      "ar": "شَمس",
+      "fr": "shams (soleil) - mot cible",
+      "emoji": "☀️"
+    },
+    {
+      "id": "10",
+      "ar": "شَخص",
+      "fr": "shakhs (personne) - mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "11",
+      "ar": "شَموس",
+      "fr": "shamous - mot incorrect",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p36_consigne",
+      "texte_ar": "أبحثُ عَن كَلِمَة شَمس وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "livre_3_5ans_tome2_p36_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَمش",
+      "voix_m": "livre_3_5ans_tome2_p36_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "شَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مشمَس",
+      "voix_m": "livre_3_5ans_tome2_p36_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مشمَش",
+      "voix_m": "livre_3_5ans_tome2_p36_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "شَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "شَمس",
+      "voix_m": "livre_3_5ans_tome2_p36_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "شَخص",
+      "voix_m": "livre_3_5ans_tome2_p36_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "شَموس",
+      "voix_m": "livre_3_5ans_tome2_p36_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p36_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:01:27.386555",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 12
+  }
+}

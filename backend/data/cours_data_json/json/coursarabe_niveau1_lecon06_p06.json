@@ -1,0 +1,142 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Découper et coller les lettres arabes dans le bon ordre en les mémorisant",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres du bas et colle-les dans les cases vides dans le bon ordre, en suivant le modèle.",
+    "ar": "اقطع الحروف من الأسفل وألصقها في المربعات الفارغة بالترتيب الصحيح."
+  },
+  "elements": [
+    {
+      "id": "lettre_fa",
+      "ar": "ف",
+      "fr": "Fa",
+      "emoji": "🖱️"
+    },
+    {
+      "id": "lettre_qaf",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_kaf",
+      "ar": "ك",
+      "fr": "Kaf",
+      "emoji": "🐕"
+    },
+    {
+      "id": "lettre_lam",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🌙"
+    },
+    {
+      "id": "mot_far",
+      "ar": "فَأْرٌ",
+      "fr": "Souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "mot_qalam",
+      "ar": "قَلَمٌ",
+      "fr": "Crayon",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_kalb",
+      "ar": "كَلْبٌ",
+      "fr": "Chien",
+      "emoji": "🐶"
+    },
+    {
+      "id": "mot_layl",
+      "ar": "لَيْلٌ",
+      "fr": "Nuit",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon06",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اقطع الحروف من الأسفل وألصقها في المربعات الفارغة بالترتيب الصحيح.",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_fa",
+      "texte_ar": "ف",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_lettre_fa_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_lettre_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_qaf",
+      "texte_ar": "ق",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_lettre_qaf_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_lettre_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_kaf",
+      "texte_ar": "ك",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_lettre_kaf_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_lettre_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_lam",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_lettre_lam_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_lettre_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_far",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_mot_far_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_mot_far_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_qalam",
+      "texte_ar": "قَلَمٌ",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_mot_qalam_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_mot_qalam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_kalb",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_mot_kalb_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_mot_kalb_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_layl",
+      "texte_ar": "لَيْلٌ",
+      "voix_m": "coursarabe_niveau1_lecon06_p6_mot_layl_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p6_mot_layl_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:51:42.223677",
+    "niveau": 1,
+    "lecon": 35,
+    "nom_pdf": "coursarabe_niveau1_lecon06",
+    "bucket_audio": "audio-lessons/niveau1/lecon35/",
+    "nb_audio_assets": 9
+  }
+}

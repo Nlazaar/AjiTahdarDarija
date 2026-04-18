@@ -1,0 +1,233 @@
+{
+  "page_nb": 17,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie les mots identiques au modèle",
+    "ar": "أَرْبِطُ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَج"
+  },
+  "enonce": {
+    "fr": "Relie tous les mots identiques au mot-modèle illustré par l'image",
+    "ar": "اِرْبِطْ جَمِيعَ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَجِ الْمُصَوَّرِ"
+  },
+  "elements": [
+    {
+      "id": "modele_3",
+      "ar": "أَنْف",
+      "fr": "nez",
+      "emoji": "👃"
+    },
+    {
+      "id": "correct_3a",
+      "ar": "أَنْف",
+      "fr": "nez (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_3b",
+      "ar": "أَنْف",
+      "fr": "nez (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_3c",
+      "ar": "أَنْف",
+      "fr": "nez (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "incorrect_3a",
+      "ar": "أَتْف",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "incorrect_3b",
+      "ar": "أَنَق",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "incorrect_3c",
+      "ar": "لَنَف",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "modele_4",
+      "ar": "شَعْر",
+      "fr": "cheveux",
+      "emoji": "💇"
+    },
+    {
+      "id": "correct_4a",
+      "ar": "شَعْر",
+      "fr": "cheveux (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_4b",
+      "ar": "شَعْر",
+      "fr": "cheveux (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_4c",
+      "ar": "شَعْر",
+      "fr": "cheveux (identique)",
+      "emoji": "✅"
+    },
+    {
+      "id": "incorrect_4a",
+      "ar": "سَعْر",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "incorrect_4b",
+      "ar": "ثَعْر",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "incorrect_4c",
+      "ar": "سَحَر",
+      "fr": "mot différent",
+      "emoji": "❌"
+    },
+    {
+      "id": "incorrect_4d",
+      "ar": "شَجَر",
+      "fr": "mot différent",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p17_consigne",
+      "texte_ar": "اِرْبِطْ جَمِيعَ الْكَلِمَاتِ الْمُطَابِقَةَ لِلنَّمُوذَجِ الْمُصَوَّرِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_3",
+      "texte_ar": "أَنْف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_modele_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_modele_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_3a",
+      "texte_ar": "أَنْف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_3a_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_3b",
+      "texte_ar": "أَنْف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_3b_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_3c",
+      "texte_ar": "أَنْف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_3c_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_3c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_3a",
+      "texte_ar": "أَتْف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3a_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_3b",
+      "texte_ar": "أَنَق",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3b_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_3c",
+      "texte_ar": "لَنَف",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3c_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_3c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_4",
+      "texte_ar": "شَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_modele_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_modele_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_4a",
+      "texte_ar": "شَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_4a_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_4a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_4b",
+      "texte_ar": "شَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_4b_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_4b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_4c",
+      "texte_ar": "شَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_correct_4c_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_correct_4c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_4a",
+      "texte_ar": "سَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4a_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_4b",
+      "texte_ar": "ثَعْر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4b_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_4c",
+      "texte_ar": "سَحَر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4c_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_incorrect_4d",
+      "texte_ar": "شَجَر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4d_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p17_incorrect_4d_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:31:05.090445",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 16
+  }
+}

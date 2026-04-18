@@ -1,0 +1,181 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre غ dans chacun des mots selon sa position : غ isolée (violet), غـ initiale (rouge), ـغـ médiale (orange)",
+    "ar": "لوّن حرف الغين في كل كلمة حسب موقعه في الكلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بَلاغ",
+      "fr": "message / annonce",
+      "emoji": "📢"
+    },
+    {
+      "id": "2",
+      "ar": "غَريب",
+      "fr": "étrange / étranger",
+      "emoji": "🤔"
+    },
+    {
+      "id": "3",
+      "ar": "غَاب",
+      "fr": "il a été absent / forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "4",
+      "ar": "يَغرِد",
+      "fr": "il chante (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "5",
+      "ar": "غُروب",
+      "fr": "coucher de soleil",
+      "emoji": "🌅"
+    },
+    {
+      "id": "6",
+      "ar": "غِلال",
+      "fr": "récoltes / céréales",
+      "emoji": "🌾"
+    },
+    {
+      "id": "7",
+      "ar": "بَلَغ",
+      "fr": "il a atteint / il a transmis",
+      "emoji": "✅"
+    },
+    {
+      "id": "8",
+      "ar": "صَاغ",
+      "fr": "il a façonné / il a formulé",
+      "emoji": "🔧"
+    },
+    {
+      "id": "9",
+      "ar": "مَغِيب",
+      "fr": "absence / coucher",
+      "emoji": "🌙"
+    },
+    {
+      "id": "10",
+      "ar": "غَفَر",
+      "fr": "il a pardonné",
+      "emoji": "🤲"
+    },
+    {
+      "id": "11",
+      "ar": "رَغِيف",
+      "fr": "miche de pain",
+      "emoji": "🍞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_09",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "لوّن حرف الغين في كل كلمة حسب موقعه في الكلمة",
+      "voix_m": "arabe_niveau2_09_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بَلاغ",
+      "voix_m": "arabe_niveau2_09_p6_1_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غَريب",
+      "voix_m": "arabe_niveau2_09_p6_2_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غَاب",
+      "voix_m": "arabe_niveau2_09_p6_3_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "يَغرِد",
+      "voix_m": "arabe_niveau2_09_p6_4_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "غُروب",
+      "voix_m": "arabe_niveau2_09_p6_5_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غِلال",
+      "voix_m": "arabe_niveau2_09_p6_6_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بَلَغ",
+      "voix_m": "arabe_niveau2_09_p6_7_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "صَاغ",
+      "voix_m": "arabe_niveau2_09_p6_8_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مَغِيب",
+      "voix_m": "arabe_niveau2_09_p6_9_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "غَفَر",
+      "voix_m": "arabe_niveau2_09_p6_10_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رَغِيف",
+      "voix_m": "arabe_niveau2_09_p6_11_m.mp3",
+      "voix_f": "arabe_niveau2_09_p6_11_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:53:23.100114",
+    "niveau": 2,
+    "lecon": 21,
+    "nom_pdf": "arabe_niveau2_09",
+    "bucket_audio": "audio-lessons/niveau2/lecon21/",
+    "nb_audio_assets": 12
+  }
+}

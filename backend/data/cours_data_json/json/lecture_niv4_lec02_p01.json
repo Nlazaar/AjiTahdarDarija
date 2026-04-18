@@ -1,0 +1,220 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Ma famille",
+    "ar": "عَائِلَتِي"
+  },
+  "enonce": {
+    "fr": "Lis le texte sur la famille, puis mets une croix dans les bonnes cases pour répondre aux questions.",
+    "ar": "اقرأ النص عن العائلة ثم ضع علامةً في الخانات المناسبة"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "أَهْلًا بِكُمْ. أَنَا اسْمِي نَسِيم.",
+      "fr": "Bienvenue. Je m'appelle Nassim.",
+      "emoji": "👋"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "هَذِهِ عَائِلَتِي.",
+      "fr": "Voici ma famille.",
+      "emoji": "👨‍👩‍👧‍👦"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "أُمِّي وَ أَبِي وَ أُخْتِي وَ أَخِي وَ جَدِّي وَ جَدَّتِي.",
+      "fr": "Ma mère, mon père, ma sœur, mon frère, mon grand-père et ma grand-mère.",
+      "emoji": "👪"
+    },
+    {
+      "id": "phrase_4",
+      "ar": "أُمِّي تُعِدُّ لَنَا طَعَامًا لَذِيذًا.",
+      "fr": "Ma mère nous prépare un repas délicieux.",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "phrase_5",
+      "ar": "أَنَا وَ أُخْتِي نَغْسِلُ الأَوَانِيَ لِنُسَاعِدَهَا.",
+      "fr": "Ma sœur et moi lavons la vaisselle pour l'aider.",
+      "emoji": "🍶"
+    },
+    {
+      "id": "phrase_6",
+      "ar": "فِي الْمَسَاءِ يَرْوِي لَنَا جَدِّي حِكَايَاتٍ جَمِيلَةً.",
+      "fr": "Le soir, mon grand-père nous raconte de belles histoires.",
+      "emoji": "📖"
+    },
+    {
+      "id": "question_1",
+      "ar": "مَنِ الَّذِي يُعِدُّ الطَّعَامَ؟",
+      "fr": "Qui prépare le repas ?",
+      "emoji": "❓"
+    },
+    {
+      "id": "reponse_1a",
+      "ar": "الأَبُ",
+      "fr": "Le père",
+      "emoji": "👨"
+    },
+    {
+      "id": "reponse_1b",
+      "ar": "الجَدُّ",
+      "fr": "Le grand-père",
+      "emoji": "👴"
+    },
+    {
+      "id": "reponse_1c",
+      "ar": "الأُمُّ",
+      "fr": "La mère",
+      "emoji": "👩"
+    },
+    {
+      "id": "question_2",
+      "ar": "مَنِ الَّذِي يُسَاعِدُ الأُمَّ؟",
+      "fr": "Qui aide la mère ?",
+      "emoji": "❓"
+    },
+    {
+      "id": "reponse_2a",
+      "ar": "نَسِيمٌ وَ أَخُوهُ",
+      "fr": "Nassim et son frère",
+      "emoji": "👦👦"
+    },
+    {
+      "id": "reponse_2b",
+      "ar": "نَسِيمٌ وَ أُخْتُهُ",
+      "fr": "Nassim et sa sœur",
+      "emoji": "👦👧"
+    },
+    {
+      "id": "reponse_2c",
+      "ar": "نَسِيمٌ وَ جَدُّهُ",
+      "fr": "Nassim et son grand-père",
+      "emoji": "👦👴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "lecture_niv4_lec02",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اقرأ النص عن العائلة ثم ضع علامةً في الخانات المناسبة",
+      "voix_m": "lecture_niv4_lec02_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "أَهْلًا بِكُمْ. أَنَا اسْمِي نَسِيم.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "هَذِهِ عَائِلَتِي.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "أُمِّي وَ أَبِي وَ أُخْتِي وَ أَخِي وَ جَدِّي وَ جَدَّتِي.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_3_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_4",
+      "texte_ar": "أُمِّي تُعِدُّ لَنَا طَعَامًا لَذِيذًا.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_4_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_5",
+      "texte_ar": "أَنَا وَ أُخْتِي نَغْسِلُ الأَوَانِيَ لِنُسَاعِدَهَا.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_5_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_6",
+      "texte_ar": "فِي الْمَسَاءِ يَرْوِي لَنَا جَدِّي حِكَايَاتٍ جَمِيلَةً.",
+      "voix_m": "lecture_niv4_lec02_p1_phrase_6_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_phrase_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_1",
+      "texte_ar": "مَنِ الَّذِي يُعِدُّ الطَّعَامَ؟",
+      "voix_m": "lecture_niv4_lec02_p1_question_1_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_question_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1a",
+      "texte_ar": "الأَبُ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_1a_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1b",
+      "texte_ar": "الجَدُّ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_1b_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1c",
+      "texte_ar": "الأُمُّ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_1c_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_question_2",
+      "texte_ar": "مَنِ الَّذِي يُسَاعِدُ الأُمَّ؟",
+      "voix_m": "lecture_niv4_lec02_p1_question_2_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_question_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2a",
+      "texte_ar": "نَسِيمٌ وَ أَخُوهُ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_2a_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2b",
+      "texte_ar": "نَسِيمٌ وَ أُخْتُهُ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_2b_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_2c",
+      "texte_ar": "نَسِيمٌ وَ جَدُّهُ",
+      "voix_m": "lecture_niv4_lec02_p1_reponse_2c_m.mp3",
+      "voix_f": "lecture_niv4_lec02_p1_reponse_2c_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:37:13.723109",
+    "niveau": 4,
+    "lecon": 2,
+    "nom_pdf": "lecture_niv4_lec02",
+    "bucket_audio": "audio-lessons/niveau4/lecon02/",
+    "nb_audio_assets": 15
+  }
+}

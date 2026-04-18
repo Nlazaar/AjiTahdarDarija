@@ -1,0 +1,116 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Remets les lettres dans l'ordre pour former le mot",
+    "ar": "أَلْصِقْ كلَّ حرف في مكانه حسب ترتيبه في الكلمة"
+  },
+  "enonce": {
+    "fr": "Colle chaque lettre à sa place dans le mot selon son ordre (image : bus = حافلة)",
+    "ar": "أَلْصِقْ كلَّ حرف في مكانه حسب ترتيبه في الكلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ح",
+      "fr": "lettre ḥā",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "ا",
+      "fr": "lettre alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "فـ",
+      "fr": "lettre fā",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "لـ",
+      "fr": "lettre lām",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "ـة",
+      "fr": "lettre tā marbūṭa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "حافلة",
+      "fr": "bus",
+      "emoji": "🚌"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَلْصِقْ كلَّ حرف في مكانه حسب ترتيبه في الكلمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "لـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ـة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حافلة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p7_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p7_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:19:48.551302",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 7
+  }
+}

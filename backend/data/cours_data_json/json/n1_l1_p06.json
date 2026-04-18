@@ -1,0 +1,372 @@
+{
+  "page_nb": 5,
+  "type": "cours",
+  "mecanique": "Présentation de la kasra (voyelle courte 'i') appliquée aux lettres de l'alphabet arabe, avec un texte poétique d'introduction et des panneaux montrant les lettres avec kasra",
+  "titre": {
+    "fr": "La Kasra - La voyelle courte 'i'",
+    "ar": "الْكَسْرَة"
+  },
+  "enonce": {
+    "fr": "Je suis la Kasra ! Et qu'est-ce que la Kasra ? Je me place sous la lettre dès le premier instant, je la casse, alors souris mon enfant pour la prononcer correctement sans faute.",
+    "ar": "أَنَا الْكَسْرَةُ ! وَ مَا أَدْرَاكَ مَا الْكَسْرَة. أَدْخُلُ عَلَى الْحَرْفِ وَ مِنْ أَوَّلِ مَرَّة، أَكْسِرُهُ، فَابْتَسِمْ يَا وَلَدِي لِتَنْطِقَهُ سَوِيًّا بِلا خَطَأٍ."
+  },
+  "elements": [
+    {
+      "id": "kasra_ba",
+      "ar": "بِ",
+      "fr": "bi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ta",
+      "ar": "تِ",
+      "fr": "ti",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_jim",
+      "ar": "جِ",
+      "fr": "ji",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ha",
+      "ar": "حِ",
+      "fr": "hi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_kha",
+      "ar": "خِ",
+      "fr": "khi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dal",
+      "ar": "دِ",
+      "fr": "di",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dhal",
+      "ar": "ذِ",
+      "fr": "dhi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ra",
+      "ar": "رِ",
+      "fr": "ri",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_zay",
+      "ar": "زِ",
+      "fr": "zi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_sin",
+      "ar": "سِ",
+      "fr": "si",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_shin",
+      "ar": "شِ",
+      "fr": "shi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_sad",
+      "ar": "صِ",
+      "fr": "si",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dad",
+      "ar": "ضِ",
+      "fr": "di",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ta2",
+      "ar": "طِ",
+      "fr": "ti",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_dha",
+      "ar": "ظِ",
+      "fr": "dhi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ayn",
+      "ar": "عِ",
+      "fr": "'i",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ghayn",
+      "ar": "غِ",
+      "fr": "ghi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_fa",
+      "ar": "فِ",
+      "fr": "fi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_qaf",
+      "ar": "قِ",
+      "fr": "qi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_kaf",
+      "ar": "كِ",
+      "fr": "ki",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_lam",
+      "ar": "لِ",
+      "fr": "li",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_mim",
+      "ar": "مِ",
+      "fr": "mi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_nun",
+      "ar": "نِ",
+      "fr": "ni",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ha2",
+      "ar": "هِ",
+      "fr": "hi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_waw",
+      "ar": "وِ",
+      "fr": "wi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kasra_ya",
+      "ar": "يِ",
+      "fr": "yi",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَنَا الْكَسْرَةُ ! وَ مَا أَدْرَاكَ مَا الْكَسْرَة. أَدْخُلُ عَلَى الْحَرْفِ وَ مِنْ أَوَّلِ مَرَّة، أَكْسِرُهُ، فَابْتَسِمْ يَا وَلَدِي لِتَنْطِقَهُ سَوِيًّا بِلا خَطَأٍ.",
+      "voix_m": "v1_l1_p5_consigne_m.mp3",
+      "voix_f": "v1_l1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ba",
+      "texte_ar": "بِ",
+      "voix_m": "v1_l1_p5_kasra_ba_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ta",
+      "texte_ar": "تِ",
+      "voix_m": "v1_l1_p5_kasra_ta_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_jim",
+      "texte_ar": "جِ",
+      "voix_m": "v1_l1_p5_kasra_jim_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ha",
+      "texte_ar": "حِ",
+      "voix_m": "v1_l1_p5_kasra_ha_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_kha",
+      "texte_ar": "خِ",
+      "voix_m": "v1_l1_p5_kasra_kha_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dal",
+      "texte_ar": "دِ",
+      "voix_m": "v1_l1_p5_kasra_dal_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dhal",
+      "texte_ar": "ذِ",
+      "voix_m": "v1_l1_p5_kasra_dhal_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ra",
+      "texte_ar": "رِ",
+      "voix_m": "v1_l1_p5_kasra_ra_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_zay",
+      "texte_ar": "زِ",
+      "voix_m": "v1_l1_p5_kasra_zay_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_sin",
+      "texte_ar": "سِ",
+      "voix_m": "v1_l1_p5_kasra_sin_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_shin",
+      "texte_ar": "شِ",
+      "voix_m": "v1_l1_p5_kasra_shin_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_sad",
+      "texte_ar": "صِ",
+      "voix_m": "v1_l1_p5_kasra_sad_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dad",
+      "texte_ar": "ضِ",
+      "voix_m": "v1_l1_p5_kasra_dad_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ta2",
+      "texte_ar": "طِ",
+      "voix_m": "v1_l1_p5_kasra_ta2_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ta2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_dha",
+      "texte_ar": "ظِ",
+      "voix_m": "v1_l1_p5_kasra_dha_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_dha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ayn",
+      "texte_ar": "عِ",
+      "voix_m": "v1_l1_p5_kasra_ayn_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ghayn",
+      "texte_ar": "غِ",
+      "voix_m": "v1_l1_p5_kasra_ghayn_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ghayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_fa",
+      "texte_ar": "فِ",
+      "voix_m": "v1_l1_p5_kasra_fa_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_qaf",
+      "texte_ar": "قِ",
+      "voix_m": "v1_l1_p5_kasra_qaf_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_kaf",
+      "texte_ar": "كِ",
+      "voix_m": "v1_l1_p5_kasra_kaf_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_lam",
+      "texte_ar": "لِ",
+      "voix_m": "v1_l1_p5_kasra_lam_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_mim",
+      "texte_ar": "مِ",
+      "voix_m": "v1_l1_p5_kasra_mim_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_nun",
+      "texte_ar": "نِ",
+      "voix_m": "v1_l1_p5_kasra_nun_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ha2",
+      "texte_ar": "هِ",
+      "voix_m": "v1_l1_p5_kasra_ha2_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ha2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_waw",
+      "texte_ar": "وِ",
+      "voix_m": "v1_l1_p5_kasra_waw_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra_ya",
+      "texte_ar": "يِ",
+      "voix_m": "v1_l1_p5_kasra_ya_m.mp3",
+      "voix_f": "v1_l1_p5_kasra_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:12:00.985976",
+    "niveau": 1,
+    "lecon": 1,
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 27
+  }
+}

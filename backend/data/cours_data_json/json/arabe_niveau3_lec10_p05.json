@@ -1,0 +1,233 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure la lettre dans les mots",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق الحَرْفَ فِي الْكَلِمَات"
+  },
+  "enonce": {
+    "fr": "Entoure la lettre ز dans chacun des mots suivants",
+    "ar": "أَحِطْ بِخَطٍّ مُغْلَق حَرْفَ الزَّاي فِي كُلِّ كَلِمَةٍ مِنَ الْكَلِمَاتِ الآتِيَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "زَرَافَةٌ",
+      "fr": "girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "2",
+      "ar": "زَيْنَب",
+      "fr": "Zainab (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "3",
+      "ar": "أَزْرَارُ",
+      "fr": "boutons",
+      "emoji": "🔘"
+    },
+    {
+      "id": "4",
+      "ar": "زَارَ",
+      "fr": "il a rendu visite",
+      "emoji": "🚶"
+    },
+    {
+      "id": "5",
+      "ar": "أَزِيزُ",
+      "fr": "bourdonnement",
+      "emoji": "🔊"
+    },
+    {
+      "id": "6",
+      "ar": "زَيْتُ",
+      "fr": "huile",
+      "emoji": "🫙"
+    },
+    {
+      "id": "7",
+      "ar": "زَيْتُونُ",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "8",
+      "ar": "زَئِيرُ",
+      "fr": "rugissement",
+      "emoji": "🦁"
+    },
+    {
+      "id": "9",
+      "ar": "زَادَ",
+      "fr": "il a augmenté",
+      "emoji": "📈"
+    },
+    {
+      "id": "10",
+      "ar": "جَزَرُ",
+      "fr": "carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "11",
+      "ar": "خُبْزُ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "12",
+      "ar": "حَلَزُونُ",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "13",
+      "ar": "غَزَالٌ",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "14",
+      "ar": "أَزْرَق",
+      "fr": "bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "15",
+      "ar": "زَادَ",
+      "fr": "provisions / il a ajouté",
+      "emoji": "🎒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec10",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَحِطْ بِخَطٍّ مُغْلَق حَرْفَ الزَّاي فِي كُلِّ كَلِمَةٍ مِنَ الْكَلِمَاتِ الآتِيَة",
+      "voix_m": "arabe_niveau3_lec10_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "arabe_niveau3_lec10_p5_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "زَيْنَب",
+      "voix_m": "arabe_niveau3_lec10_p5_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "أَزْرَارُ",
+      "voix_m": "arabe_niveau3_lec10_p5_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "زَارَ",
+      "voix_m": "arabe_niveau3_lec10_p5_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أَزِيزُ",
+      "voix_m": "arabe_niveau3_lec10_p5_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "زَيْتُ",
+      "voix_m": "arabe_niveau3_lec10_p5_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "زَيْتُونُ",
+      "voix_m": "arabe_niveau3_lec10_p5_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "زَئِيرُ",
+      "voix_m": "arabe_niveau3_lec10_p5_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "زَادَ",
+      "voix_m": "arabe_niveau3_lec10_p5_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "جَزَرُ",
+      "voix_m": "arabe_niveau3_lec10_p5_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "خُبْزُ",
+      "voix_m": "arabe_niveau3_lec10_p5_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "حَلَزُونُ",
+      "voix_m": "arabe_niveau3_lec10_p5_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "غَزَالٌ",
+      "voix_m": "arabe_niveau3_lec10_p5_13_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "أَزْرَق",
+      "voix_m": "arabe_niveau3_lec10_p5_14_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "زَادَ",
+      "voix_m": "arabe_niveau3_lec10_p5_15_m.mp3",
+      "voix_f": "arabe_niveau3_lec10_p5_15_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:40:11.739850",
+    "niveau": 3,
+    "lecon": 10,
+    "nom_pdf": "arabe_niveau3_lec10",
+    "bucket_audio": "audio-lessons/niveau3/lecon10/",
+    "nb_audio_assets": 16
+  }
+}

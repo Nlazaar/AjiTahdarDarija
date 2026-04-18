@@ -1,0 +1,77 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "Introduction aux voyelles courtes arabes (harakat) : fatha, damma, kasra, illustrées par trois enfants tenant des pancartes avec les signes de voyellation",
+  "titre": {
+    "fr": "Nous sommes les voyelles !",
+    "ar": "نَحْنُ الْحَرَكَاتُ"
+  },
+  "enonce": {
+    "fr": "Nous sommes les voyelles, avec les lettres nous avons des histoires : nous les changeons, nous les embellissons, nous les ornons pour les mots. Fatha, Damma, Kasra.",
+    "ar": "نَحْنُ الْحَرَكَاتُ ، مَعَ الْحُرُوفِ لَنَا حِكَايَاتٌ : نُغَيِّرُهَا ، نُجَمِّلُهَا ، نُزَيِّنُهَا لِلْكَلِمَاتِ. فَتْحَة ، ضَمَّة ، كَسْرَة."
+  },
+  "elements": [
+    {
+      "id": "fatha",
+      "ar": "فَتْحَة ( َ )",
+      "fr": "Fatha - voyelle courte 'a'",
+      "emoji": "➖"
+    },
+    {
+      "id": "damma",
+      "ar": "ضَمَّة ( ُ )",
+      "fr": "Damma - voyelle courte 'ou'",
+      "emoji": "🔼"
+    },
+    {
+      "id": "kasra",
+      "ar": "كَسْرَة ( ِ )",
+      "fr": "Kasra - voyelle courte 'i'",
+      "emoji": "➖"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "histoire_hourouf_harakete",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "نَحْنُ الْحَرَكَاتُ ، مَعَ الْحُرُوفِ لَنَا حِكَايَاتٌ : نُغَيِّرُهَا ، نُجَمِّلُهَا ، نُزَيِّنُهَا لِلْكَلِمَاتِ. فَتْحَة ، ضَمَّة ، كَسْرَة.",
+      "voix_m": "histoire_hourouf_harakete_p2_consigne_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fatha",
+      "texte_ar": "فَتْحَة ( َ )",
+      "voix_m": "histoire_hourouf_harakete_p2_fatha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p2_fatha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_damma",
+      "texte_ar": "ضَمَّة ( ُ )",
+      "voix_m": "histoire_hourouf_harakete_p2_damma_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p2_damma_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kasra",
+      "texte_ar": "كَسْرَة ( ِ )",
+      "voix_m": "histoire_hourouf_harakete_p2_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p2_kasra_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:06:44.027234",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "histoire_hourouf_harakete",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je colle la deuxième moitié de chaque mot",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِلْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colle la deuxième moitié manquante pour compléter chaque mot illustré",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِإِتْمَامِ كُلِّ كَلِمَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بَقَ...",
+      "fr": "vache (première moitié : بَقَ)",
+      "emoji": "🐄"
+    },
+    {
+      "id": "2",
+      "ar": "شَجَ...",
+      "fr": "arbre (première moitié : شَجَ)",
+      "emoji": "🌳"
+    },
+    {
+      "id": "3",
+      "ar": "صَحْ...",
+      "fr": "assiette (première moitié : صَحْ)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "4",
+      "ar": "مِكْ...",
+      "fr": "balai (première moitié : مِكْ)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "5",
+      "ar": "ثَعْ...",
+      "fr": "renard (première moitié : ثَعْ)",
+      "emoji": "🦊"
+    },
+    {
+      "id": "6",
+      "ar": "شَمْ...",
+      "fr": "soleil (première moitié : شَمْ)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "7",
+      "ar": "مِشْ...",
+      "fr": "abricot (première moitié : مِشْ)",
+      "emoji": "🍑"
+    },
+    {
+      "id": "8",
+      "ar": "مِلْ...",
+      "fr": "cuillère (première moitié : مِلْ)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "9",
+      "ar": "ضِفْ...",
+      "fr": "grenouille (première moitié : ضِفْ)",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec09",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِإِتْمَامِ كُلِّ كَلِمَةٍ",
+      "voix_m": "arabe_niveau3_lec09_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بَقَ...",
+      "voix_m": "arabe_niveau3_lec09_p3_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَجَ...",
+      "voix_m": "arabe_niveau3_lec09_p3_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "صَحْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مِكْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ثَعْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "شَمْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مِشْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مِلْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ضِفْ...",
+      "voix_m": "arabe_niveau3_lec09_p3_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p3_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:38:20.038719",
+    "niveau": 3,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau3_lec09",
+    "bucket_audio": "audio-lessons/niveau3/lecon09/",
+    "nb_audio_assets": 10
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 78,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Dans la maison",
+    "ar": "فِي الْمَنْزِلِ"
+  },
+  "enonce": {
+    "fr": "Tape sur chaque image pour entendre le mot en arabe",
+    "ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ"
+  },
+  "elements": [
+    {
+      "id": "shabbak",
+      "ar": "شُبَّاكٌ",
+      "fr": "fenêtre",
+      "emoji": "🪟"
+    },
+    {
+      "id": "bab",
+      "ar": "بَابٌ",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "mikwah",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "👔"
+    },
+    {
+      "id": "miknasah",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p78_consigne",
+      "texte_ar": "اِنْقُرْ عَلَى كُلِّ صُورَةٍ لِتَسْمَعَ الْكَلِمَةَ",
+      "voix_m": "livre_3_5ans_tome2_p78_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p78_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shabbak",
+      "texte_ar": "شُبَّاكٌ",
+      "voix_m": "livre_3_5ans_tome2_p78_shabbak_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p78_shabbak_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bab",
+      "texte_ar": "بَابٌ",
+      "voix_m": "livre_3_5ans_tome2_p78_bab_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p78_bab_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mikwah",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_p78_mikwah_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p78_mikwah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_miknasah",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p78_miknasah_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p78_miknasah_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:08:38.228313",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

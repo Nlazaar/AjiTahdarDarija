@@ -1,0 +1,155 @@
+{
+  "page_nb": 33,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Colle la deuxième moitié de chaque mot",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِلْكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colle la deuxième moitié manquante pour compléter chaque mot illustré",
+    "ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِلْكَلِمَاتِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَحْـ",
+      "fr": "assiette (première moitié)",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "2",
+      "ar": "شَجَـ",
+      "fr": "arbre (première moitié)",
+      "emoji": "🌳"
+    },
+    {
+      "id": "3",
+      "ar": "بَـقَـ",
+      "fr": "vache (première moitié)",
+      "emoji": "🐄"
+    },
+    {
+      "id": "4",
+      "ar": "شَمْـ",
+      "fr": "soleil (première moitié)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "5",
+      "ar": "ثَعْـ",
+      "fr": "renard (première moitié)",
+      "emoji": "🦊"
+    },
+    {
+      "id": "6",
+      "ar": "مِكْـ",
+      "fr": "balai (première moitié)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "7",
+      "ar": "ضِفْـ",
+      "fr": "grenouille (première moitié)",
+      "emoji": "🐸"
+    },
+    {
+      "id": "8",
+      "ar": "مِلْـ",
+      "fr": "cuillère (première moitié)",
+      "emoji": "🥄"
+    },
+    {
+      "id": "9",
+      "ar": "مِشْـ",
+      "fr": "abricot (première moitié)",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p33_consigne",
+      "texte_ar": "أُلْصِقُ النِّصْفَ النَّاقِصَ لِلْكَلِمَاتِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَحْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "شَجَـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بَـقَـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شَمْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ثَعْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِكْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ضِفْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مِلْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِشْـ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p33_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p33_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:28:56.089354",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

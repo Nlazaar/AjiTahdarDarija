@@ -1,0 +1,77 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "Découper les lettres en bas de page et les coller dans l'ordre alphabétique dans les cases vides, puis mémoriser les lettres",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres, colle-les dans l'ordre alphabétique dans les cases vides, puis apprends-les par cœur",
+    "ar": "اِقْطَعِ الْحُرُوفَ وَ أَلْصِقْهَا فِي الْمَكَانِ الصَّحِيحِ بِالتَّرْتِيبِ ثُمَّ احْفَظْهَا"
+  },
+  "elements": [
+    {
+      "id": "jim",
+      "ar": "ج - جَمَل",
+      "fr": "Jîm - Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ha",
+      "ar": "ح - حَمَامَة",
+      "fr": "Hâ - Colombe",
+      "emoji": "🕊️"
+    },
+    {
+      "id": "kha",
+      "ar": "خ - خَوْخ",
+      "fr": "Khâ - Pêche",
+      "emoji": "🍑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اِقْطَعِ الْحُرُوفَ وَ أَلْصِقْهَا فِي الْمَكَانِ الصَّحِيحِ بِالتَّرْتِيبِ ثُمَّ احْفَظْهَا",
+      "voix_m": "coursarabe_niveau1_lecon02_p6_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jim",
+      "texte_ar": "ج - جَمَل",
+      "voix_m": "coursarabe_niveau1_lecon02_p6_jim_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p6_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha",
+      "texte_ar": "ح - حَمَامَة",
+      "voix_m": "coursarabe_niveau1_lecon02_p6_ha_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p6_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kha",
+      "texte_ar": "خ - خَوْخ",
+      "voix_m": "coursarabe_niveau1_lecon02_p6_kha_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p6_kha_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:41:24.618794",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 4
+  }
+}

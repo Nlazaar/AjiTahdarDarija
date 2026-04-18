@@ -22,9 +22,7 @@ export default function AlphabetExercise({ item, choices, onResult, getAudioUrl 
     const ok = c === item.latin;
     if (ok) {
       setFeedback("Bonne réponse");
-      const src = getAudioUrl ? getAudioUrl(item.latin) : undefined;
-      if (src) audio.play(src);
-      else audio.speak(item.letter, "ar-SA");
+      audio.speak(item.letter);
       onResult(true);
     } else {
       setFeedback(`Faux, la bonne réponse est ${item.latin}`);
@@ -43,9 +41,7 @@ export default function AlphabetExercise({ item, choices, onResult, getAudioUrl 
           <button
             aria-label="écouter"
             onClick={() => {
-              const src = getAudioUrl ? getAudioUrl(item.latin) : undefined;
-              if (src) audio.play(src);
-              else audio.speak(item.letter, 'ar-SA');
+              audio.speak(item.letter);
             }}
             className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-md border border-gray-100 text-[#06b6d4] hover:scale-105 transition"
           >

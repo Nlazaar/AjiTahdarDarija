@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Les objets de la maison",
+    "ar": "أدوات المنزل"
+  },
+  "enonce": {
+    "fr": "Relie à la maison les objets qui peuvent se trouver à l'intérieur",
+    "ar": "أربط بالمنزل الأدوات الّتي يمكن أن توجد داخله"
+  },
+  "elements": [
+    {
+      "id": "fer_a_repasser",
+      "ar": "مكواة",
+      "fr": "Fer à repasser",
+      "emoji": "👕"
+    },
+    {
+      "id": "seche_cheveux",
+      "ar": "مجفف شعر",
+      "fr": "Sèche-cheveux",
+      "emoji": "💨"
+    },
+    {
+      "id": "chariot_courses",
+      "ar": "عربة تسوق",
+      "fr": "Chariot de courses",
+      "emoji": "🛒"
+    },
+    {
+      "id": "bus",
+      "ar": "حافلة",
+      "fr": "Bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "maison",
+      "ar": "منزل",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "table",
+      "ar": "طاولة",
+      "fr": "Table",
+      "emoji": "🪑"
+    },
+    {
+      "id": "balai",
+      "ar": "مكنسة",
+      "fr": "Balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "panneau_ecole",
+      "ar": "لافتة مدرسة",
+      "fr": "Panneau école",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "aspirateur",
+      "ar": "مكنسة كهربائية",
+      "fr": "Aspirateur",
+      "emoji": "🌀"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أربط بالمنزل الأدوات الّتي يمكن أن توجد داخله",
+      "voix_m": "arabe_niveau2_07_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fer_a_repasser",
+      "texte_ar": "مكواة",
+      "voix_m": "arabe_niveau2_07_p2_fer_a_repasser_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_fer_a_repasser_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_seche_cheveux",
+      "texte_ar": "مجفف شعر",
+      "voix_m": "arabe_niveau2_07_p2_seche_cheveux_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_seche_cheveux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chariot_courses",
+      "texte_ar": "عربة تسوق",
+      "voix_m": "arabe_niveau2_07_p2_chariot_courses_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_chariot_courses_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "حافلة",
+      "voix_m": "arabe_niveau2_07_p2_bus_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_maison",
+      "texte_ar": "منزل",
+      "voix_m": "arabe_niveau2_07_p2_maison_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_maison_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_table",
+      "texte_ar": "طاولة",
+      "voix_m": "arabe_niveau2_07_p2_table_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_table_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balai",
+      "texte_ar": "مكنسة",
+      "voix_m": "arabe_niveau2_07_p2_balai_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_balai_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_panneau_ecole",
+      "texte_ar": "لافتة مدرسة",
+      "voix_m": "arabe_niveau2_07_p2_panneau_ecole_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_panneau_ecole_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_aspirateur",
+      "texte_ar": "مكنسة كهربائية",
+      "voix_m": "arabe_niveau2_07_p2_aspirateur_m.mp3",
+      "voix_f": "arabe_niveau2_07_p2_aspirateur_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:50:04.167953",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 10
+  }
+}

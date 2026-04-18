@@ -1,0 +1,151 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Présentation de lettres de l'alphabet arabe sous forme de cartes illustrées avec leur translittération",
+  "titre": {
+    "fr": "Les lettres de l'alphabet arabe",
+    "ar": "حروف الأبجدية العربية"
+  },
+  "enonce": {
+    "fr": "Découvre et apprends les premières lettres de l'alphabet arabe",
+    "ar": "اكتشف وتعلم أولى حروف الأبجدية العربية"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أ",
+      "fr": "alif",
+      "emoji": "🔴"
+    },
+    {
+      "id": "2",
+      "ar": "ب",
+      "fr": "bê",
+      "emoji": "🔵"
+    },
+    {
+      "id": "3",
+      "ar": "ت",
+      "fr": "tê",
+      "emoji": "🟢"
+    },
+    {
+      "id": "4",
+      "ar": "ث",
+      "fr": "thê",
+      "emoji": "🟠"
+    },
+    {
+      "id": "5",
+      "ar": "ج",
+      "fr": "jîm",
+      "emoji": "🟤"
+    },
+    {
+      "id": "6",
+      "ar": "ح",
+      "fr": "hâ",
+      "emoji": "⚫"
+    },
+    {
+      "id": "7",
+      "ar": "خ",
+      "fr": "khâ",
+      "emoji": "🔵"
+    },
+    {
+      "id": "8",
+      "ar": "د",
+      "fr": "dêl",
+      "emoji": "🔴"
+    },
+    {
+      "id": "9",
+      "ar": "ذ",
+      "fr": "dhêl",
+      "emoji": "🟤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اكتشف وتعلم أولى حروف الأبجدية العربية",
+      "voix_m": "v1_l1_p1_consigne_m.mp3",
+      "voix_f": "v1_l1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أ",
+      "voix_m": "v1_l1_p1_1_m.mp3",
+      "voix_f": "v1_l1_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ب",
+      "voix_m": "v1_l1_p1_2_m.mp3",
+      "voix_f": "v1_l1_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ت",
+      "voix_m": "v1_l1_p1_3_m.mp3",
+      "voix_f": "v1_l1_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ث",
+      "voix_m": "v1_l1_p1_4_m.mp3",
+      "voix_f": "v1_l1_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ج",
+      "voix_m": "v1_l1_p1_5_m.mp3",
+      "voix_f": "v1_l1_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ح",
+      "voix_m": "v1_l1_p1_6_m.mp3",
+      "voix_f": "v1_l1_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خ",
+      "voix_m": "v1_l1_p1_7_m.mp3",
+      "voix_f": "v1_l1_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "د",
+      "voix_m": "v1_l1_p1_8_m.mp3",
+      "voix_f": "v1_l1_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذ",
+      "voix_m": "v1_l1_p1_9_m.mp3",
+      "voix_f": "v1_l1_p1_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T23:48:46.571595",
+    "niveau": 1,
+    "lecon": 1,
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 10
+  }
+}

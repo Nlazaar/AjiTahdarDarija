@@ -6,6 +6,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { UserProvider } from '@/context/UserContext';
 import { MascotProvider } from '@/contexts/MascotContext';
 import { UserProgressProvider } from '@/contexts/UserProgressContext';
+import { AudioProvider } from '@/contexts/AudioContext';
 import { ThemeProvider } from '@/hooks/useTheme';
 import { Amiri, Outfit } from 'next/font/google';
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" className={`${outfit.variable} ${amiri.variable}`}>
       <body className="min-h-screen font-outfit" style={{ backgroundColor: 'var(--c-bg)', overflowX: 'hidden' }}>
         <ThemeProvider>
+        <AudioProvider>
         <MascotProvider>
           <UserProgressProvider>
             <UserProvider>
@@ -43,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </UserProvider>
           </UserProgressProvider>
         </MascotProvider>
+        </AudioProvider>
         </ThemeProvider>
       </body>
     </html>

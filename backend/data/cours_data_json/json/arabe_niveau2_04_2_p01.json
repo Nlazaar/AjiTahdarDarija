@@ -1,0 +1,207 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرفَ في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre ق en rouge et la lettre ف en bleu dans chaque mot",
+    "ar": "لوِّن حرف القاف بالأحمر وحرف الفاء بالأزرق في كل كلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قَلَق",
+      "fr": "anxiété",
+      "emoji": "😟"
+    },
+    {
+      "id": "2",
+      "ar": "قِرد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "3",
+      "ar": "فَم",
+      "fr": "bouche",
+      "emoji": "👄"
+    },
+    {
+      "id": "4",
+      "ar": "قُمقُم",
+      "fr": "théière",
+      "emoji": "🫖"
+    },
+    {
+      "id": "5",
+      "ar": "قِمَّة",
+      "fr": "sommet",
+      "emoji": "⛰️"
+    },
+    {
+      "id": "6",
+      "ar": "مَقام",
+      "fr": "station",
+      "emoji": "🏛️"
+    },
+    {
+      "id": "7",
+      "ar": "سَقم",
+      "fr": "maladie",
+      "emoji": "🤒"
+    },
+    {
+      "id": "8",
+      "ar": "ساق",
+      "fr": "jambe",
+      "emoji": "🦵"
+    },
+    {
+      "id": "9",
+      "ar": "راقي",
+      "fr": "élégant",
+      "emoji": "✨"
+    },
+    {
+      "id": "10",
+      "ar": "راق",
+      "fr": "plaisant",
+      "emoji": "😊"
+    },
+    {
+      "id": "11",
+      "ar": "قَدَم",
+      "fr": "pied",
+      "emoji": "🦶"
+    },
+    {
+      "id": "12",
+      "ar": "رَقَد",
+      "fr": "s'allonger",
+      "emoji": "😴"
+    },
+    {
+      "id": "13",
+      "ar": "مَقَت",
+      "fr": "détester",
+      "emoji": "😠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "لوِّن حرف القاف بالأحمر وحرف الفاء بالأزرق في كل كلمة",
+      "voix_m": "arabe_niveau2_04_2_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قَلَق",
+      "voix_m": "arabe_niveau2_04_2_p1_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "قِرد",
+      "voix_m": "arabe_niveau2_04_2_p1_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَم",
+      "voix_m": "arabe_niveau2_04_2_p1_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قُمقُم",
+      "voix_m": "arabe_niveau2_04_2_p1_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قِمَّة",
+      "voix_m": "arabe_niveau2_04_2_p1_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مَقام",
+      "voix_m": "arabe_niveau2_04_2_p1_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "سَقم",
+      "voix_m": "arabe_niveau2_04_2_p1_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ساق",
+      "voix_m": "arabe_niveau2_04_2_p1_8_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "راقي",
+      "voix_m": "arabe_niveau2_04_2_p1_9_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "راق",
+      "voix_m": "arabe_niveau2_04_2_p1_10_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "قَدَم",
+      "voix_m": "arabe_niveau2_04_2_p1_11_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "رَقَد",
+      "voix_m": "arabe_niveau2_04_2_p1_12_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "مَقَت",
+      "voix_m": "arabe_niveau2_04_2_p1_13_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p1_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:42:43.159336",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 14
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "page_nb": 5,
+  "type": "cours",
+  "mecanique": "Découverte de la kasra (voyelle courte 'i') appliquée aux lettres de l'alphabet arabe, présentées par groupes sur des pancartes tenues par des enfants",
+  "titre": {
+    "fr": "La Kasra - La voyelle courte 'i'",
+    "ar": "أَنَا الْكَسْرَة"
+  },
+  "enonce": {
+    "fr": "Je suis la Kasra ! Et qui te dira ce qu'est la Kasra ? Je me place sous la lettre et dès la première fois, je la casse - souris mes enfants - pour la prononcer correctement sans faute.",
+    "ar": "أَنَا الْكَسْرَة ! وَ مَا أَدْرَاكَ مَا الْكَسْرَة. أَدْخُلُ عَلَى الْحَرْفِ وَ مِنْ أَوَّلِ مَرَّة، أَكْسِرُهُ، فَابْتَسِمْ يَا وَلَدِي لِتَنْطِقَهُ سَوِيًّا بِلا خَطَأٍ."
+  },
+  "elements": [
+    {
+      "id": "b_kasra",
+      "ar": "بِ",
+      "fr": "bi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "th_kasra",
+      "ar": "تِ",
+      "fr": "ti",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tha_kasra",
+      "ar": "ثِ",
+      "fr": "thi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "j_kasra",
+      "ar": "جِ",
+      "fr": "ji",
+      "emoji": "🔤"
+    },
+    {
+      "id": "h_kasra",
+      "ar": "حِ",
+      "fr": "hi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kh_kasra",
+      "ar": "خِ",
+      "fr": "khi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "d_kasra",
+      "ar": "دِ",
+      "fr": "di",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dh_kasra",
+      "ar": "ذِ",
+      "fr": "dhi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "r_kasra",
+      "ar": "رِ",
+      "fr": "ri",
+      "emoji": "🔤"
+    },
+    {
+      "id": "z_kasra",
+      "ar": "زِ",
+      "fr": "zi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "s_kasra",
+      "ar": "سِ",
+      "fr": "si",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sh_kasra",
+      "ar": "شِ",
+      "fr": "shi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sad_kasra",
+      "ar": "صِ",
+      "fr": "si (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dad_kasra",
+      "ar": "ضِ",
+      "fr": "di (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ta_kasra",
+      "ar": "طِ",
+      "fr": "ti (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dha_kasra",
+      "ar": "ظِ",
+      "fr": "dhi (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ain_kasra",
+      "ar": "عِ",
+      "fr": "'i",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ghain_kasra",
+      "ar": "غِ",
+      "fr": "ghi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "f_kasra",
+      "ar": "فِ",
+      "fr": "fi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "q_kasra",
+      "ar": "قِ",
+      "fr": "qi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "k_kasra",
+      "ar": "كِ",
+      "fr": "ki",
+      "emoji": "🔤"
+    },
+    {
+      "id": "l_kasra",
+      "ar": "لِ",
+      "fr": "li",
+      "emoji": "🔤"
+    },
+    {
+      "id": "m_kasra",
+      "ar": "مِ",
+      "fr": "mi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "n_kasra",
+      "ar": "نِ",
+      "fr": "ni",
+      "emoji": "🔤"
+    },
+    {
+      "id": "h2_kasra",
+      "ar": "هِ",
+      "fr": "hi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "w_kasra",
+      "ar": "وِ",
+      "fr": "wi",
+      "emoji": "🔤"
+    },
+    {
+      "id": "y_kasra",
+      "ar": "يِ",
+      "fr": "yi",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "histoire_hourouf_harakete",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَنَا الْكَسْرَة ! وَ مَا أَدْرَاكَ مَا الْكَسْرَة. أَدْخُلُ عَلَى الْحَرْفِ وَ مِنْ أَوَّلِ مَرَّة، أَكْسِرُهُ، فَابْتَسِمْ يَا وَلَدِي لِتَنْطِقَهُ سَوِيًّا بِلا خَطَأٍ.",
+      "voix_m": "histoire_hourouf_harakete_p5_consigne_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_b_kasra",
+      "texte_ar": "بِ",
+      "voix_m": "histoire_hourouf_harakete_p5_b_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_b_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_th_kasra",
+      "texte_ar": "تِ",
+      "voix_m": "histoire_hourouf_harakete_p5_th_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_th_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tha_kasra",
+      "texte_ar": "ثِ",
+      "voix_m": "histoire_hourouf_harakete_p5_tha_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_tha_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_j_kasra",
+      "texte_ar": "جِ",
+      "voix_m": "histoire_hourouf_harakete_p5_j_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_j_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_h_kasra",
+      "texte_ar": "حِ",
+      "voix_m": "histoire_hourouf_harakete_p5_h_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_h_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kh_kasra",
+      "texte_ar": "خِ",
+      "voix_m": "histoire_hourouf_harakete_p5_kh_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_kh_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_d_kasra",
+      "texte_ar": "دِ",
+      "voix_m": "histoire_hourouf_harakete_p5_d_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_d_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dh_kasra",
+      "texte_ar": "ذِ",
+      "voix_m": "histoire_hourouf_harakete_p5_dh_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_dh_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_r_kasra",
+      "texte_ar": "رِ",
+      "voix_m": "histoire_hourouf_harakete_p5_r_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_r_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_z_kasra",
+      "texte_ar": "زِ",
+      "voix_m": "histoire_hourouf_harakete_p5_z_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_z_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_s_kasra",
+      "texte_ar": "سِ",
+      "voix_m": "histoire_hourouf_harakete_p5_s_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_s_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sh_kasra",
+      "texte_ar": "شِ",
+      "voix_m": "histoire_hourouf_harakete_p5_sh_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_sh_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sad_kasra",
+      "texte_ar": "صِ",
+      "voix_m": "histoire_hourouf_harakete_p5_sad_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_sad_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dad_kasra",
+      "texte_ar": "ضِ",
+      "voix_m": "histoire_hourouf_harakete_p5_dad_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_dad_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta_kasra",
+      "texte_ar": "طِ",
+      "voix_m": "histoire_hourouf_harakete_p5_ta_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_ta_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dha_kasra",
+      "texte_ar": "ظِ",
+      "voix_m": "histoire_hourouf_harakete_p5_dha_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_dha_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ain_kasra",
+      "texte_ar": "عِ",
+      "voix_m": "histoire_hourouf_harakete_p5_ain_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_ain_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ghain_kasra",
+      "texte_ar": "غِ",
+      "voix_m": "histoire_hourouf_harakete_p5_ghain_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_ghain_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_f_kasra",
+      "texte_ar": "فِ",
+      "voix_m": "histoire_hourouf_harakete_p5_f_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_f_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_q_kasra",
+      "texte_ar": "قِ",
+      "voix_m": "histoire_hourouf_harakete_p5_q_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_q_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_k_kasra",
+      "texte_ar": "كِ",
+      "voix_m": "histoire_hourouf_harakete_p5_k_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_k_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_l_kasra",
+      "texte_ar": "لِ",
+      "voix_m": "histoire_hourouf_harakete_p5_l_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_l_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_m_kasra",
+      "texte_ar": "مِ",
+      "voix_m": "histoire_hourouf_harakete_p5_m_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_m_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_n_kasra",
+      "texte_ar": "نِ",
+      "voix_m": "histoire_hourouf_harakete_p5_n_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_n_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_h2_kasra",
+      "texte_ar": "هِ",
+      "voix_m": "histoire_hourouf_harakete_p5_h2_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_h2_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_w_kasra",
+      "texte_ar": "وِ",
+      "voix_m": "histoire_hourouf_harakete_p5_w_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_w_kasra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_y_kasra",
+      "texte_ar": "يِ",
+      "voix_m": "histoire_hourouf_harakete_p5_y_kasra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p5_y_kasra_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:08:27.535647",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "histoire_hourouf_harakete",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 28
+  }
+}

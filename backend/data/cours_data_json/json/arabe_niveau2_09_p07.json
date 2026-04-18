@@ -1,0 +1,116 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve l'image identique au modèle",
+    "ar": "أبحث عن الرّسوم المطابقة للأنموذج"
+  },
+  "enonce": {
+    "fr": "Cherche les dessins identiques au modèle, fais-les tourner et complète les autres",
+    "ar": "أبحث عن الرّسوم المطابقة للأنموذج و أدِرها و أكمِّل الأخرى"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "النموذج",
+      "fr": "Modèle (trottinette de référence)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image_1",
+      "ar": "رسم 1",
+      "fr": "Trottinette 1 (gauche haut)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image_2",
+      "ar": "رسم 2",
+      "fr": "Trottinette 2 (droite haut)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image_3",
+      "ar": "رسم 3",
+      "fr": "Trottinette 3 (centre)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image_4",
+      "ar": "رسم 4",
+      "fr": "Trottinette 4 (gauche bas)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image_5",
+      "ar": "رسم 5",
+      "fr": "Trottinette 5 (droite bas)",
+      "emoji": "🛴"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_09",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أبحث عن الرّسوم المطابقة للأنموذج و أدِرها و أكمِّل الأخرى",
+      "voix_m": "arabe_niveau2_09_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "النموذج",
+      "voix_m": "arabe_niveau2_09_p7_modele_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_1",
+      "texte_ar": "رسم 1",
+      "voix_m": "arabe_niveau2_09_p7_image_1_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_image_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_2",
+      "texte_ar": "رسم 2",
+      "voix_m": "arabe_niveau2_09_p7_image_2_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_image_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_3",
+      "texte_ar": "رسم 3",
+      "voix_m": "arabe_niveau2_09_p7_image_3_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_image_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_4",
+      "texte_ar": "رسم 4",
+      "voix_m": "arabe_niveau2_09_p7_image_4_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_image_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image_5",
+      "texte_ar": "رسم 5",
+      "voix_m": "arabe_niveau2_09_p7_image_5_m.mp3",
+      "voix_f": "arabe_niveau2_09_p7_image_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:53:33.374509",
+    "niveau": 2,
+    "lecon": 21,
+    "nom_pdf": "arabe_niveau2_09",
+    "bucket_audio": "audio-lessons/niveau2/lecon21/",
+    "nb_audio_assets": 7
+  }
+}

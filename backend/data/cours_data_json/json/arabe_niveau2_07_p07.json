@@ -1,0 +1,77 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "enonce": {
+    "fr": "Relie chaque image au mot arabe qui lui correspond",
+    "ar": "أربط بين الكلمة و صورتها"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "👕"
+    },
+    {
+      "id": "2",
+      "ar": "بَابٌ",
+      "fr": "porte",
+      "emoji": "🚪"
+    },
+    {
+      "id": "3",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 3,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أربط بين الكلمة و صورتها",
+      "voix_m": "arabe_niveau2_07_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "arabe_niveau2_07_p7_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بَابٌ",
+      "voix_m": "arabe_niveau2_07_p7_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "arabe_niveau2_07_p7_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p7_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:51:01.426191",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 4
+  }
+}

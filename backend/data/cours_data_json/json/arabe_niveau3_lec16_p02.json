@@ -1,0 +1,77 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Je relie les étiquettes pour former un mot puis je le relie à son image",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Relie les deux étiquettes de syllabes pour former un mot, puis relie ce mot à l'image correspondante.",
+    "ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "دَرَّابَانُ",
+      "fr": "vélo / bicyclette",
+      "emoji": "🚲"
+    },
+    {
+      "id": "mot2",
+      "ar": "زَيْتُونَةٌ",
+      "fr": "olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "mot3",
+      "ar": "ثُعْبَانٌ",
+      "fr": "serpent",
+      "emoji": "🐍"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec16",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَرْبِطُ الْبِطَاقَاتِ لِأَحْصُلَ عَلَى كَلِمَةٍ ثُمَّ أَرْبِطُهَا بِصُورَتِهَا",
+      "voix_m": "arabe_niveau3_lec16_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "دَرَّابَانُ",
+      "voix_m": "arabe_niveau3_lec16_p2_mot1_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "زَيْتُونَةٌ",
+      "voix_m": "arabe_niveau3_lec16_p2_mot2_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "ثُعْبَانٌ",
+      "voix_m": "arabe_niveau3_lec16_p2_mot3_m.mp3",
+      "voix_f": "arabe_niveau3_lec16_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:47:28.957563",
+    "niveau": 3,
+    "lecon": 16,
+    "nom_pdf": "arabe_niveau3_lec16",
+    "bucket_audio": "audio-lessons/niveau3/lecon16/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je complète les traits",
+    "ar": "أَكَمِّلُ الخُطُوطَ"
+  },
+  "enonce": {
+    "fr": "Complète les lignes en suivant le modèle : traits horizontaux, cercles, courbes et le mot فيل (éléphant)",
+    "ar": "أَكَمِّلُ الخُطُوطَ مُتَّبِعًا النَّمُوذَجَ : خُطُوطٌ أُفُقِيَّةٌ وَدَوَائِرُ وَأَقْوَاسٌ وَكَلِمَةُ فِيل"
+  },
+  "elements": [
+    {
+      "id": "ligne_horizontale",
+      "ar": "خَطٌّ أُفُقِيٌّ",
+      "fr": "Trait horizontal avec flèche",
+      "emoji": "➡️"
+    },
+    {
+      "id": "cercle",
+      "ar": "دَائِرَةٌ",
+      "fr": "Cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "courbe",
+      "ar": "قَوْسٌ",
+      "fr": "Courbe (demi-cercle)",
+      "emoji": "🌙"
+    },
+    {
+      "id": "mot_fil",
+      "ar": "فِيل",
+      "fr": "Éléphant",
+      "emoji": "🐘"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَكَمِّلُ الخُطُوطَ مُتَّبِعًا النَّمُوذَجَ : خُطُوطٌ أُفُقِيَّةٌ وَدَوَائِرُ وَأَقْوَاسٌ وَكَلِمَةُ فِيل",
+      "voix_m": "livre_3_5ans_tome2_p7_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_horizontale",
+      "texte_ar": "خَطٌّ أُفُقِيٌّ",
+      "voix_m": "livre_3_5ans_tome2_p7_ligne_horizontale_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p7_ligne_horizontale_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle",
+      "texte_ar": "دَائِرَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p7_cercle_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p7_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe",
+      "texte_ar": "قَوْسٌ",
+      "voix_m": "livre_3_5ans_tome2_p7_courbe_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p7_courbe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_fil",
+      "texte_ar": "فِيل",
+      "voix_m": "livre_3_5ans_tome2_p7_mot_fil_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p7_mot_fil_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:56:33.833708",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

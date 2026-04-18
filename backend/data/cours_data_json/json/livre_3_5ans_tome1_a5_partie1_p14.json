@@ -1,0 +1,142 @@
+{
+  "page_nb": 14,
+  "type": "exercice",
+  "mecanique": "ordre_alphabet",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres en bas et colle-les dans l'ordre alphabétique dans les cases vides",
+    "ar": "اِقْطَعِ الْحُرُوفَ وَأَلْصِقْهَا فِي التَّرْتِيبِ الصَّحِيحِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "دَارٌ",
+      "fr": "Maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "2",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐾"
+    },
+    {
+      "id": "3",
+      "ar": "رِيشَةٌ",
+      "fr": "Plume",
+      "emoji": "🪶"
+    },
+    {
+      "id": "4",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "5",
+      "ar": "د",
+      "fr": "Lettre dal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ذ",
+      "fr": "Lettre dhal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "ر",
+      "fr": "Lettre ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "ز",
+      "fr": "Lettre zay",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p14_consigne",
+      "texte_ar": "اِقْطَعِ الْحُرُوفَ وَأَلْصِقْهَا فِي التَّرْتِيبِ الصَّحِيحِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "دَارٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "رِيشَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ذ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "ز",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p14_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p14_8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:31.493006",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 9
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Les couleurs - Je barre ce qui est faux",
+    "ar": "الْأَلْوَانُ - أَشْطُبُ الْخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Observe chaque clown et barre la description de couleur qui est fausse. Puis complète les phrases avec la bonne couleur pour chaque fruit.",
+    "ar": "اُنْظُرْ إِلَى كُلِّ مُهَرِّجٍ وَاشْطُبِ الْخَطَأَ، ثُمَّ أَكْمِلْ بِمَا يُنَاسِبُ."
+  },
+  "elements": [
+    {
+      "id": "clown1",
+      "ar": "شَعْرُ الْمُهَرِّجِ وَرْدِيٌّ",
+      "fr": "Les cheveux du clown sont roses",
+      "emoji": "🤡"
+    },
+    {
+      "id": "clown1_faux",
+      "ar": "شَعْرُ الْمُهَرِّجِ أَزْرَقُ",
+      "fr": "Les cheveux du clown sont bleus (FAUX)",
+      "emoji": "❌"
+    },
+    {
+      "id": "clown2",
+      "ar": "شَعْرُ الْمُهَرِّجِ أَزْرَقُ",
+      "fr": "Les cheveux du clown sont bleus",
+      "emoji": "🤡"
+    },
+    {
+      "id": "clown2_faux",
+      "ar": "شَعْرُ الْمُهَرِّجِ أَحْمَرُ",
+      "fr": "Les cheveux du clown sont rouges (FAUX)",
+      "emoji": "❌"
+    },
+    {
+      "id": "clown3",
+      "ar": "شَعْرُ الْمُهَرِّجِ أَحْضَرُ",
+      "fr": "Les cheveux du clown sont verts",
+      "emoji": "🤡"
+    },
+    {
+      "id": "clown3_faux",
+      "ar": "شَعْرُ الْمُهَرِّجِ بُرْتُقَالِيٌّ",
+      "fr": "Les cheveux du clown sont oranges (FAUX)",
+      "emoji": "❌"
+    },
+    {
+      "id": "fruit1",
+      "ar": "الطَّمَاطِمُ",
+      "fr": "Les tomates",
+      "emoji": "🍅"
+    },
+    {
+      "id": "fruit2",
+      "ar": "اللَّيْمُونُ",
+      "fr": "Les citrons",
+      "emoji": "🍋"
+    },
+    {
+      "id": "fruit3",
+      "ar": "الْفُلْفُلُ",
+      "fr": "Le poivron",
+      "emoji": "🫑"
+    },
+    {
+      "id": "fruit4",
+      "ar": "الْمَوْزُ",
+      "fr": "Les bananes",
+      "emoji": "🍌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "lecture_niv4_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى كُلِّ مُهَرِّجٍ وَاشْطُبِ الْخَطَأَ، ثُمَّ أَكْمِلْ بِمَا يُنَاسِبُ.",
+      "voix_m": "lecture_niv4_lec03_p4_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown1",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ وَرْدِيٌّ",
+      "voix_m": "lecture_niv4_lec03_p4_clown1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown1_faux",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ أَزْرَقُ",
+      "voix_m": "lecture_niv4_lec03_p4_clown1_faux_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown1_faux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown2",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ أَزْرَقُ",
+      "voix_m": "lecture_niv4_lec03_p4_clown2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown2_faux",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ أَحْمَرُ",
+      "voix_m": "lecture_niv4_lec03_p4_clown2_faux_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown2_faux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown3",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ أَحْضَرُ",
+      "voix_m": "lecture_niv4_lec03_p4_clown3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown3_faux",
+      "texte_ar": "شَعْرُ الْمُهَرِّجِ بُرْتُقَالِيٌّ",
+      "voix_m": "lecture_niv4_lec03_p4_clown3_faux_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_clown3_faux_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fruit1",
+      "texte_ar": "الطَّمَاطِمُ",
+      "voix_m": "lecture_niv4_lec03_p4_fruit1_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_fruit1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fruit2",
+      "texte_ar": "اللَّيْمُونُ",
+      "voix_m": "lecture_niv4_lec03_p4_fruit2_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_fruit2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fruit3",
+      "texte_ar": "الْفُلْفُلُ",
+      "voix_m": "lecture_niv4_lec03_p4_fruit3_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_fruit3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fruit4",
+      "texte_ar": "الْمَوْزُ",
+      "voix_m": "lecture_niv4_lec03_p4_fruit4_m.mp3",
+      "voix_f": "lecture_niv4_lec03_p4_fruit4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:38:42.197834",
+    "niveau": 4,
+    "lecon": 3,
+    "nom_pdf": "lecture_niv4_lec03",
+    "bucket_audio": "audio-lessons/niveau4/lecon03/",
+    "nb_audio_assets": 11
+  }
+}

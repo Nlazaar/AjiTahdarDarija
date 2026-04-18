@@ -1,0 +1,90 @@
+{
+  "page_nb": 30,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Complète les lignes",
+    "ar": "أَكَمِّلُ الخُطُوط"
+  },
+  "enonce": {
+    "fr": "Trace les traits en pointillés en suivant le modèle : les lignes verticales, la lettre waw (و), la lettre ha (ح), puis écris le mot 'chaussure' (حذاء)",
+    "ar": "أَكَمِّلُ الخُطُوط بِاتِّبَاعِ النَّمُوذَج: الخُطُوط العَمُودِيَّة، حَرف الوَاو، حَرف الحَاء، ثُمَّ كَلِمَة حِذَاء"
+  },
+  "elements": [
+    {
+      "id": "ligne_verticale",
+      "ar": "خط عمودي",
+      "fr": "Ligne verticale",
+      "emoji": "📏"
+    },
+    {
+      "id": "lettre_waw",
+      "ar": "و",
+      "fr": "Lettre waw",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_ha",
+      "ar": "ح",
+      "fr": "Lettre ha",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_chaussure",
+      "ar": "حِذَاء",
+      "fr": "Chaussure",
+      "emoji": "👟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p30_consigne",
+      "texte_ar": "أَكَمِّلُ الخُطُوط بِاتِّبَاعِ النَّمُوذَج: الخُطُوط العَمُودِيَّة، حَرف الوَاو، حَرف الحَاء، ثُمَّ كَلِمَة حِذَاء",
+      "voix_m": "livre_3_5ans_tome2_p30_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p30_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_verticale",
+      "texte_ar": "خط عمودي",
+      "voix_m": "livre_3_5ans_tome2_p30_ligne_verticale_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p30_ligne_verticale_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_waw",
+      "texte_ar": "و",
+      "voix_m": "livre_3_5ans_tome2_p30_lettre_waw_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p30_lettre_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_ha",
+      "texte_ar": "ح",
+      "voix_m": "livre_3_5ans_tome2_p30_lettre_ha_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p30_lettre_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_chaussure",
+      "texte_ar": "حِذَاء",
+      "voix_m": "livre_3_5ans_tome2_p30_mot_chaussure_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p30_mot_chaussure_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:28.056666",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

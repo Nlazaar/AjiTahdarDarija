@@ -1,0 +1,298 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Trouve le mot correspondant à l'image et entoure-le parmi les autres mots",
+    "ar": "أبحثُ عَن الكَلِمَةِ المُطَابِقَةِ لِلصُّورَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "target_4",
+      "ar": "شَوكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "word_4_1",
+      "ar": "شَوك",
+      "fr": "épines",
+      "emoji": ""
+    },
+    {
+      "id": "word_4_2",
+      "ar": "شَوكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "word_4_3",
+      "ar": "شَوكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "word_4_4",
+      "ar": "أشواك",
+      "fr": "épines (pluriel)",
+      "emoji": ""
+    },
+    {
+      "id": "word_4_5",
+      "ar": "شَوكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "word_4_6",
+      "ar": "شَركَة",
+      "fr": "société",
+      "emoji": ""
+    },
+    {
+      "id": "word_4_7",
+      "ar": "شَوكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "word_4_8",
+      "ar": "شَراكَة",
+      "fr": "partenariat",
+      "emoji": ""
+    },
+    {
+      "id": "target_5",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "word_5_1",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "word_5_2",
+      "ar": "مسكين",
+      "fr": "pauvre",
+      "emoji": ""
+    },
+    {
+      "id": "word_5_3",
+      "ar": "مكين",
+      "fr": "solide",
+      "emoji": ""
+    },
+    {
+      "id": "word_5_4",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "word_5_5",
+      "ar": "سكير",
+      "fr": "ivrogne",
+      "emoji": ""
+    },
+    {
+      "id": "word_5_6",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "word_5_7",
+      "ar": "شكين",
+      "fr": "(mot incorrect)",
+      "emoji": ""
+    },
+    {
+      "id": "word_5_8",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "word_5_9",
+      "ar": "سكيز",
+      "fr": "(mot incorrect)",
+      "emoji": ""
+    },
+    {
+      "id": "word_5_10",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "أبحثُ عَن الكَلِمَةِ المُطَابِقَةِ لِلصُّورَةِ وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_target_4",
+      "texte_ar": "شَوكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_target_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_target_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_1",
+      "texte_ar": "شَوك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_2",
+      "texte_ar": "شَوكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_3",
+      "texte_ar": "شَوكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_4",
+      "texte_ar": "أشواك",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_5",
+      "texte_ar": "شَوكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_6",
+      "texte_ar": "شَركَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_7",
+      "texte_ar": "شَوكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_4_8",
+      "texte_ar": "شَراكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_4_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_4_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_target_5",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_target_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_target_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_1",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_2",
+      "texte_ar": "مسكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_3",
+      "texte_ar": "مكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_4",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_5",
+      "texte_ar": "سكير",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_6",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_7",
+      "texte_ar": "شكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_8",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_9",
+      "texte_ar": "سكيز",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_word_5_10",
+      "texte_ar": "سكين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p11_word_5_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p11_word_5_10_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:20:33.772321",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 21
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الكَلِمَة بالحَرْفِ النَّاقِص"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ظ qui manque",
+    "ar": "أكمِّل كل كلمة بحرف الظاء الناقص"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عَـظْـمٌ",
+      "fr": "os",
+      "emoji": "🦴"
+    },
+    {
+      "id": "2",
+      "ar": "ظِلٌّ",
+      "fr": "ombre",
+      "emoji": "🌑"
+    },
+    {
+      "id": "3",
+      "ar": "ظَبْيٌ",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "4",
+      "ar": "نَـظَّـارَةٌ",
+      "fr": "lunettes",
+      "emoji": "👓"
+    },
+    {
+      "id": "5",
+      "ar": "مِـظَـلَّةٌ",
+      "fr": "parasol",
+      "emoji": "⛱️"
+    },
+    {
+      "id": "6",
+      "ar": "مِحْفَـظَـةٌ",
+      "fr": "cartable",
+      "emoji": "🎒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec15",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أكمِّل كل كلمة بحرف الظاء الناقص",
+      "voix_m": "arabe_niveau3_lec15_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عَـظْـمٌ",
+      "voix_m": "arabe_niveau3_lec15_p8_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ظِلٌّ",
+      "voix_m": "arabe_niveau3_lec15_p8_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ظَبْيٌ",
+      "voix_m": "arabe_niveau3_lec15_p8_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نَـظَّـارَةٌ",
+      "voix_m": "arabe_niveau3_lec15_p8_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مِـظَـلَّةٌ",
+      "voix_m": "arabe_niveau3_lec15_p8_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِحْفَـظَـةٌ",
+      "voix_m": "arabe_niveau3_lec15_p8_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p8_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:47:01.187823",
+    "niveau": 3,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau3_lec15",
+    "bucket_audio": "audio-lessons/niveau3/lecon15/",
+    "nb_audio_assets": 7
+  }
+}

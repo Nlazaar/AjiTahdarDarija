@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "cours",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Je construis des phrases en répondant aux questions",
+    "ar": "أُعَبِّرُ بِالْإِجَابَةِ عَنِ الْأَسْئِلَةِ"
+  },
+  "enonce": {
+    "fr": "Où est le moineau ? Où est le perroquet ? Fais glisser chaque oiseau au bon endroit : à l'intérieur ou à l'extérieur de la cage.",
+    "ar": "أَيْنَ الْعُصْفُورُ ؟ أَيْنَ الْبَبَّغَاءُ ؟ ضَعْ كُلَّ طَائِرٍ فِي مَكَانِهِ الصَّحِيحِ."
+  },
+  "elements": [
+    {
+      "id": "usfur",
+      "ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "fr": "Le moineau est à l'intérieur de la cage",
+      "emoji": "🐦"
+    },
+    {
+      "id": "babagha",
+      "ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "fr": "Le perroquet est à l'extérieur de la cage",
+      "emoji": "🦜"
+    },
+    {
+      "id": "dakhil",
+      "ar": "دَاخِلَ",
+      "fr": "à l'intérieur",
+      "emoji": "🔒"
+    },
+    {
+      "id": "kharij",
+      "ar": "خَارِجَ",
+      "fr": "à l'extérieur",
+      "emoji": "🔓"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec13",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَيْنَ الْعُصْفُورُ ؟ أَيْنَ الْبَبَّغَاءُ ؟ ضَعْ كُلَّ طَائِرٍ فِي مَكَانِهِ الصَّحِيحِ.",
+      "voix_m": "arabe_niveau3_lec13_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_usfur",
+      "texte_ar": "الْعُصْفُورُ دَاخِلَ الْقَفَصِ",
+      "voix_m": "arabe_niveau3_lec13_p6_usfur_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p6_usfur_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_babagha",
+      "texte_ar": "الْبَبَّغَاءُ خَارِجَ الْقَفَصِ",
+      "voix_m": "arabe_niveau3_lec13_p6_babagha_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p6_babagha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dakhil",
+      "texte_ar": "دَاخِلَ",
+      "voix_m": "arabe_niveau3_lec13_p6_dakhil_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p6_dakhil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kharij",
+      "texte_ar": "خَارِجَ",
+      "voix_m": "arabe_niveau3_lec13_p6_kharij_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p6_kharij_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:44:01.532105",
+    "niveau": 3,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau3_lec13",
+    "bucket_audio": "audio-lessons/niveau3/lecon13/",
+    "nb_audio_assets": 5
+  }
+}

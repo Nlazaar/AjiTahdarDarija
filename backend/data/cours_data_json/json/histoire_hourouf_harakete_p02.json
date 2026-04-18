@@ -1,0 +1,402 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Présentation chantée de l'alphabet arabe complet avec récitation collective",
+  "titre": {
+    "fr": "Nous sommes les lettres de l'alphabet arabe",
+    "ar": "نَحْنُ الْحُرُوفُ"
+  },
+  "enonce": {
+    "fr": "Nous sommes les lettres. Les lettres de l'alphabet arabe. Vous nous connaissez ? Chantez-nous alors et régalez vos oreilles...",
+    "ar": "نَحْنُ الْحُرُوفُ. حُرُوفُ الْهِجَاءِ الْعَرَبِيَّةِ. أَتَعْرِفُنَا ؟ أَنْشِدْنَا إِذَنْ وَ أَطْرِبْ مَسَامِعَنَا ..."
+  },
+  "elements": [
+    {
+      "id": "alif",
+      "ar": "ا",
+      "fr": "Alif",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ba",
+      "ar": "ب",
+      "fr": "Ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ta",
+      "ar": "ت",
+      "fr": "Ta",
+      "emoji": "🔤"
+    },
+    {
+      "id": "tha",
+      "ar": "ث",
+      "fr": "Tha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "jim",
+      "ar": "ج",
+      "fr": "Jim",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ha",
+      "ar": "ح",
+      "fr": "Ha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kha",
+      "ar": "خ",
+      "fr": "Kha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dal",
+      "ar": "د",
+      "fr": "Dal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dhal",
+      "ar": "ذ",
+      "fr": "Dhal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ra",
+      "ar": "ر",
+      "fr": "Ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "zay",
+      "ar": "ز",
+      "fr": "Zay",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sin",
+      "ar": "س",
+      "fr": "Sin",
+      "emoji": "🔤"
+    },
+    {
+      "id": "shin",
+      "ar": "ش",
+      "fr": "Shin",
+      "emoji": "🔤"
+    },
+    {
+      "id": "sad",
+      "ar": "ص",
+      "fr": "Sad",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dad",
+      "ar": "ض",
+      "fr": "Dad",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ta2",
+      "ar": "ط",
+      "fr": "Ta (emphatique)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "dha",
+      "ar": "ظ",
+      "fr": "Dha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ayn",
+      "ar": "ع",
+      "fr": "Ayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ghayn",
+      "ar": "غ",
+      "fr": "Ghayn",
+      "emoji": "🔤"
+    },
+    {
+      "id": "fa",
+      "ar": "ف",
+      "fr": "Fa",
+      "emoji": "🔤"
+    },
+    {
+      "id": "qaf",
+      "ar": "ق",
+      "fr": "Qaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "kaf",
+      "ar": "ك",
+      "fr": "Kaf",
+      "emoji": "🔤"
+    },
+    {
+      "id": "lam",
+      "ar": "ل",
+      "fr": "Lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "mim",
+      "ar": "م",
+      "fr": "Mim",
+      "emoji": "🔤"
+    },
+    {
+      "id": "nun",
+      "ar": "ن",
+      "fr": "Nun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ha2",
+      "ar": "ه",
+      "fr": "Ha (doux)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "waw",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "🔤"
+    },
+    {
+      "id": "ya",
+      "ar": "ي",
+      "fr": "Ya",
+      "emoji": "🔤"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "histoire_hourouf_harakete",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "نَحْنُ الْحُرُوفُ. حُرُوفُ الْهِجَاءِ الْعَرَبِيَّةِ. أَتَعْرِفُنَا ؟ أَنْشِدْنَا إِذَنْ وَ أَطْرِبْ مَسَامِعَنَا ...",
+      "voix_m": "histoire_hourouf_harakete_p1_consigne_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_alif",
+      "texte_ar": "ا",
+      "voix_m": "histoire_hourouf_harakete_p1_alif_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_alif_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ba",
+      "texte_ar": "ب",
+      "voix_m": "histoire_hourouf_harakete_p1_ba_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ba_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta",
+      "texte_ar": "ت",
+      "voix_m": "histoire_hourouf_harakete_p1_ta_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tha",
+      "texte_ar": "ث",
+      "voix_m": "histoire_hourouf_harakete_p1_tha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_tha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jim",
+      "texte_ar": "ج",
+      "voix_m": "histoire_hourouf_harakete_p1_jim_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_jim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha",
+      "texte_ar": "ح",
+      "voix_m": "histoire_hourouf_harakete_p1_ha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kha",
+      "texte_ar": "خ",
+      "voix_m": "histoire_hourouf_harakete_p1_kha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_kha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dal",
+      "texte_ar": "د",
+      "voix_m": "histoire_hourouf_harakete_p1_dal_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_dal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dhal",
+      "texte_ar": "ذ",
+      "voix_m": "histoire_hourouf_harakete_p1_dhal_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_dhal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ra",
+      "texte_ar": "ر",
+      "voix_m": "histoire_hourouf_harakete_p1_ra_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ra_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zay",
+      "texte_ar": "ز",
+      "voix_m": "histoire_hourouf_harakete_p1_zay_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_zay_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sin",
+      "texte_ar": "س",
+      "voix_m": "histoire_hourouf_harakete_p1_sin_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_shin",
+      "texte_ar": "ش",
+      "voix_m": "histoire_hourouf_harakete_p1_shin_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sad",
+      "texte_ar": "ص",
+      "voix_m": "histoire_hourouf_harakete_p1_sad_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dad",
+      "texte_ar": "ض",
+      "voix_m": "histoire_hourouf_harakete_p1_dad_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ta2",
+      "texte_ar": "ط",
+      "voix_m": "histoire_hourouf_harakete_p1_ta2_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ta2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_dha",
+      "texte_ar": "ظ",
+      "voix_m": "histoire_hourouf_harakete_p1_dha_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_dha_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ayn",
+      "texte_ar": "ع",
+      "voix_m": "histoire_hourouf_harakete_p1_ayn_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ghayn",
+      "texte_ar": "غ",
+      "voix_m": "histoire_hourouf_harakete_p1_ghayn_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ghayn_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fa",
+      "texte_ar": "ف",
+      "voix_m": "histoire_hourouf_harakete_p1_fa_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_fa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qaf",
+      "texte_ar": "ق",
+      "voix_m": "histoire_hourouf_harakete_p1_qaf_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_kaf",
+      "texte_ar": "ك",
+      "voix_m": "histoire_hourouf_harakete_p1_kaf_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_kaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lam",
+      "texte_ar": "ل",
+      "voix_m": "histoire_hourouf_harakete_p1_lam_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_lam_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mim",
+      "texte_ar": "م",
+      "voix_m": "histoire_hourouf_harakete_p1_mim_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_mim_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nun",
+      "texte_ar": "ن",
+      "voix_m": "histoire_hourouf_harakete_p1_nun_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_nun_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ha2",
+      "texte_ar": "ه",
+      "voix_m": "histoire_hourouf_harakete_p1_ha2_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ha2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_waw",
+      "texte_ar": "و",
+      "voix_m": "histoire_hourouf_harakete_p1_waw_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_waw_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ya",
+      "texte_ar": "ي",
+      "voix_m": "histoire_hourouf_harakete_p1_ya_m.mp3",
+      "voix_f": "histoire_hourouf_harakete_p1_ya_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:05:59.952148",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "histoire_hourouf_harakete",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 29
+  }
+}

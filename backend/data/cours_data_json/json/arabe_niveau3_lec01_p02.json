@@ -1,0 +1,194 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie chaque mot à son initiale",
+    "ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِأَوَّلِ حَرْفٍ مِنْ حُرُوفِهَا"
+  },
+  "enonce": {
+    "fr": "Relie chaque mot à la lettre par laquelle il commence",
+    "ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِأَوَّلِ حَرْفٍ مِنْ حُرُوفِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حُوتٌ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "2",
+      "ar": "قَمِيصٌ",
+      "fr": "chemise",
+      "emoji": "👕"
+    },
+    {
+      "id": "3",
+      "ar": "شَمْسٌ",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "4",
+      "ar": "سَيَّارَةٌ",
+      "fr": "voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "5",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "6",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "L1",
+      "ar": "ش",
+      "fr": "lettre Shin",
+      "emoji": ""
+    },
+    {
+      "id": "L2",
+      "ar": "ك",
+      "fr": "lettre Kaf",
+      "emoji": ""
+    },
+    {
+      "id": "L3",
+      "ar": "ح",
+      "fr": "lettre Ha",
+      "emoji": ""
+    },
+    {
+      "id": "L4",
+      "ar": "ق",
+      "fr": "lettre Qaf",
+      "emoji": ""
+    },
+    {
+      "id": "L5",
+      "ar": "غ",
+      "fr": "lettre Ghain",
+      "emoji": ""
+    },
+    {
+      "id": "L6",
+      "ar": "س",
+      "fr": "lettre Sin",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec01",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَرْبِطُ كُلَّ كَلِمَةٍ بِأَوَّلِ حَرْفٍ مِنْ حُرُوفِهَا",
+      "voix_m": "arabe_niveau3_lec01_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَمْسٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سَيَّارَةٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "arabe_niveau3_lec01_p2_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L1",
+      "texte_ar": "ش",
+      "voix_m": "arabe_niveau3_lec01_p2_L1_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L2",
+      "texte_ar": "ك",
+      "voix_m": "arabe_niveau3_lec01_p2_L2_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L3",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau3_lec01_p2_L3_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L4",
+      "texte_ar": "ق",
+      "voix_m": "arabe_niveau3_lec01_p2_L4_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L5",
+      "texte_ar": "غ",
+      "voix_m": "arabe_niveau3_lec01_p2_L5_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_L6",
+      "texte_ar": "س",
+      "voix_m": "arabe_niveau3_lec01_p2_L6_m.mp3",
+      "voix_f": "arabe_niveau3_lec01_p2_L6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:24:49.652103",
+    "niveau": 3,
+    "lecon": 1,
+    "nom_pdf": "arabe_niveau3_lec01",
+    "bucket_audio": "audio-lessons/niveau3/lecon01/",
+    "nb_audio_assets": 13
+  }
+}

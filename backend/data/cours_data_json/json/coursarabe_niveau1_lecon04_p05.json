@@ -1,0 +1,142 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "Découper et coller les lettres arabes dans le bon ordre, puis les mémoriser avec des mots illustrés",
+  "titre": {
+    "fr": "Je colle les lettres dans l'ordre et je les apprends par cœur",
+    "ar": "أَلْصِقُ الْحُرُوفَ بِالتَّرْتِيبِ وَ أَحْفَظُهَا"
+  },
+  "enonce": {
+    "fr": "Découpe les lettres en bas de la page et colle-les dans le bon ordre dans les cases vides, en suivant le modèle.",
+    "ar": "اِقْطَعِ الْحُرُوفَ وَأَلْصِقْهَا فِي الْمَكَانِ الصَّحِيحِ"
+  },
+  "elements": [
+    {
+      "id": "lettre_sin",
+      "ar": "س",
+      "fr": "Sin",
+      "emoji": "🐟"
+    },
+    {
+      "id": "lettre_shin",
+      "ar": "ش",
+      "fr": "Shin",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "lettre_sad",
+      "ar": "ص",
+      "fr": "Sad",
+      "emoji": "🌅"
+    },
+    {
+      "id": "lettre_dad",
+      "ar": "ض",
+      "fr": "Dad",
+      "emoji": "🐸"
+    },
+    {
+      "id": "mot_samaka",
+      "ar": "سَمَكَةٌ",
+      "fr": "Poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "mot_shamaa",
+      "ar": "شَمْعَةٌ",
+      "fr": "Bougie",
+      "emoji": "🕯️"
+    },
+    {
+      "id": "mot_sabah",
+      "ar": "صَبَاحٌ",
+      "fr": "Matin",
+      "emoji": "🌅"
+    },
+    {
+      "id": "mot_difdaa",
+      "ar": "ضِفْدَعٌ",
+      "fr": "Grenouille",
+      "emoji": "🐸"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon04",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "اِقْطَعِ الْحُرُوفَ وَأَلْصِقْهَا فِي الْمَكَانِ الصَّحِيحِ",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_sin",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_lettre_sin_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_lettre_sin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_shin",
+      "texte_ar": "ش",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_lettre_shin_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_lettre_shin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_sad",
+      "texte_ar": "ص",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_lettre_sad_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_lettre_sad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_dad",
+      "texte_ar": "ض",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_lettre_dad_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_lettre_dad_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_samaka",
+      "texte_ar": "سَمَكَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_mot_samaka_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_mot_samaka_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_shamaa",
+      "texte_ar": "شَمْعَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_mot_shamaa_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_mot_shamaa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_sabah",
+      "texte_ar": "صَبَاحٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_mot_sabah_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_mot_sabah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_difdaa",
+      "texte_ar": "ضِفْدَعٌ",
+      "voix_m": "coursarabe_niveau1_lecon04_p5_mot_difdaa_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon04_p5_mot_difdaa_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:44:19.618665",
+    "niveau": 1,
+    "lecon": 33,
+    "nom_pdf": "coursarabe_niveau1_lecon04",
+    "bucket_audio": "audio-lessons/niveau1/lecon33/",
+    "nb_audio_assets": 9
+  }
+}

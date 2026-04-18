@@ -1,0 +1,155 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je colle le mot en dessous de son image",
+    "ar": "أُلْصِقُ الْكَلِمَةَ تَحْتَ صُورَتِهَا"
+  },
+  "enonce": {
+    "fr": "Colle le mot correspondant sous chaque image",
+    "ar": "أُلْصِقُ الْكَلِمَةَ الْمُنَاسِبَةَ تَحْتَ كُلِّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "جَزَرٌ",
+      "fr": "carotte",
+      "emoji": "🥕"
+    },
+    {
+      "id": "2",
+      "ar": "مِفْتَاحٌ",
+      "fr": "clé (trou de serrure)",
+      "emoji": "🔑"
+    },
+    {
+      "id": "3",
+      "ar": "جَمَلٌ",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "4",
+      "ar": "كَلْبٌ",
+      "fr": "chien",
+      "emoji": "🐶"
+    },
+    {
+      "id": "5",
+      "ar": "بَصَلٌ",
+      "fr": "oignon",
+      "emoji": "🧅"
+    },
+    {
+      "id": "6",
+      "ar": "سُجُودٌ",
+      "fr": "prosternation",
+      "emoji": "🕌"
+    },
+    {
+      "id": "7",
+      "ar": "كَأْسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "8",
+      "ar": "مِلْحٌ",
+      "fr": "sel",
+      "emoji": "🧂"
+    },
+    {
+      "id": "9",
+      "ar": "قِرْدٌ",
+      "fr": "singe",
+      "emoji": "🐒"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec09",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أُلْصِقُ الْكَلِمَةَ الْمُنَاسِبَةَ تَحْتَ كُلِّ صُورَةٍ",
+      "voix_m": "arabe_niveau3_lec09_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِفْتَاحٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "بَصَلٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سُجُودٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مِلْحٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "arabe_niveau3_lec09_p4_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec09_p4_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:38:30.192179",
+    "niveau": 3,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau3_lec09",
+    "bucket_audio": "audio-lessons/niveau3/lecon09/",
+    "nb_audio_assets": 10
+  }
+}

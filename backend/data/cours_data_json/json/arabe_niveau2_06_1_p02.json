@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie chaque aliment à l'ustensile approprié",
+    "ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه"
+  },
+  "enonce": {
+    "fr": "Relie chaque aliment à l'ustensile avec lequel on le mange ou le boit",
+    "ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه"
+  },
+  "elements": [
+    {
+      "id": "assiette",
+      "ar": "طبق",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شوكة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "cuillere",
+      "ar": "ملعقة",
+      "fr": "cuillère",
+      "emoji": "🥄"
+    },
+    {
+      "id": "couteau",
+      "ar": "سكين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "verre",
+      "ar": "كأس",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "macaroni",
+      "ar": "المقرونة",
+      "fr": "les pâtes",
+      "emoji": "🍝"
+    },
+    {
+      "id": "lait",
+      "ar": "الحليب",
+      "fr": "le lait",
+      "emoji": "🥛"
+    },
+    {
+      "id": "pain",
+      "ar": "الخبز",
+      "fr": "le pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "soupe",
+      "ar": "الحساء",
+      "fr": "la soupe",
+      "emoji": "🍲"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_1",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أربط كلّ أكل بالأداة المناسبة لِتَناوُلِه",
+      "voix_m": "arabe_niveau2_06_1_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_assiette",
+      "texte_ar": "طبق",
+      "voix_m": "arabe_niveau2_06_1_p2_assiette_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_assiette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شوكة",
+      "voix_m": "arabe_niveau2_06_1_p2_fourchette_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cuillere",
+      "texte_ar": "ملعقة",
+      "voix_m": "arabe_niveau2_06_1_p2_cuillere_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_cuillere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سكين",
+      "voix_m": "arabe_niveau2_06_1_p2_couteau_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_couteau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_verre",
+      "texte_ar": "كأس",
+      "voix_m": "arabe_niveau2_06_1_p2_verre_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_verre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_macaroni",
+      "texte_ar": "المقرونة",
+      "voix_m": "arabe_niveau2_06_1_p2_macaroni_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_macaroni_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lait",
+      "texte_ar": "الحليب",
+      "voix_m": "arabe_niveau2_06_1_p2_lait_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_lait_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pain",
+      "texte_ar": "الخبز",
+      "voix_m": "arabe_niveau2_06_1_p2_pain_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_pain_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soupe",
+      "texte_ar": "الحساء",
+      "voix_m": "arabe_niveau2_06_1_p2_soupe_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p2_soupe_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:47:37.481277",
+    "niveau": 2,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau2_06_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon17/",
+    "nb_audio_assets": 10
+  }
+}

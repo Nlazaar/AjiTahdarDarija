@@ -1,0 +1,90 @@
+{
+  "page_nb": 46,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Lignes et tracés",
+    "ar": "خطوط"
+  },
+  "enonce": {
+    "fr": "Trace les formes en suivant le modèle pointillé : les cercles, la courbe, la lettre qaf et le mot 'lune'.",
+    "ar": "تتبع الأشكال على النقاط : الدوائر، المنحنى، حرف القاف، وكلمة قمر."
+  },
+  "elements": [
+    {
+      "id": "cercle",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "courbe",
+      "ar": "منحنى",
+      "fr": "courbe",
+      "emoji": "〰️"
+    },
+    {
+      "id": "lettre_qaf",
+      "ar": "ق",
+      "fr": "lettre qaf",
+      "emoji": "✍️"
+    },
+    {
+      "id": "mot_qamar",
+      "ar": "قمر",
+      "fr": "lune",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p46_consigne",
+      "texte_ar": "تتبع الأشكال على النقاط : الدوائر، المنحنى، حرف القاف، وكلمة قمر.",
+      "voix_m": "livre_3_5ans_tome2_p46_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p46_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle",
+      "texte_ar": "دائرة",
+      "voix_m": "livre_3_5ans_tome2_p46_cercle_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p46_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_courbe",
+      "texte_ar": "منحنى",
+      "voix_m": "livre_3_5ans_tome2_p46_courbe_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p46_courbe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_qaf",
+      "texte_ar": "ق",
+      "voix_m": "livre_3_5ans_tome2_p46_lettre_qaf_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p46_lettre_qaf_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_qamar",
+      "texte_ar": "قمر",
+      "voix_m": "livre_3_5ans_tome2_p46_mot_qamar_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p46_mot_qamar_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:03:13.087487",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 5
+  }
+}

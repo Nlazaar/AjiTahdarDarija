@@ -1,0 +1,64 @@
+{
+  "page_nb": 82,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de chaque image",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux pour reconstituer chaque image de mot",
+    "ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "mot2",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "🧺"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p82_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ كُلَّ صُورَةٍ",
+      "voix_m": "livre_3_5ans_tome2_p82_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p82_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "livre_3_5ans_tome2_p82_mot1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p82_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "livre_3_5ans_tome2_p82_mot2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p82_mot2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:09:18.727592",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 3
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte puis je relie",
+    "ar": "أَعُدُّ ثُمَّ أَرْبِطُ بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Compte les objets dans chaque rangée et relie ceux qui sont au nombre de 5 avec une ligne.",
+    "ar": "أَعُدُّ الأشياء في كل صف وأربط التي عددها 5 بخط"
+  },
+  "elements": [
+    {
+      "id": "croissants",
+      "ar": "أهلة",
+      "fr": "croissants de lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "bananes",
+      "ar": "موز",
+      "fr": "bananes",
+      "emoji": "🍌"
+    },
+    {
+      "id": "balles",
+      "ar": "كرات",
+      "fr": "balles de tennis",
+      "emoji": "🎾"
+    },
+    {
+      "id": "pommes",
+      "ar": "تفاح",
+      "fr": "pommes",
+      "emoji": "🍎"
+    },
+    {
+      "id": "etoiles",
+      "ar": "نجوم",
+      "fr": "étoiles",
+      "emoji": "⭐"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_1",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أَعُدُّ الأشياء في كل صف وأربط التي عددها 5 بخط",
+      "voix_m": "arabe_niveau2_04_1_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_croissants",
+      "texte_ar": "أهلة",
+      "voix_m": "arabe_niveau2_04_1_p7_croissants_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_croissants_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bananes",
+      "texte_ar": "موز",
+      "voix_m": "arabe_niveau2_04_1_p7_bananes_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_bananes_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balles",
+      "texte_ar": "كرات",
+      "voix_m": "arabe_niveau2_04_1_p7_balles_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_balles_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pommes",
+      "texte_ar": "تفاح",
+      "voix_m": "arabe_niveau2_04_1_p7_pommes_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_pommes_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_etoiles",
+      "texte_ar": "نجوم",
+      "voix_m": "arabe_niveau2_04_1_p7_etoiles_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p7_etoiles_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:42:29.209679",
+    "niveau": 2,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau2_04_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon13/",
+    "nb_audio_assets": 6
+  }
+}

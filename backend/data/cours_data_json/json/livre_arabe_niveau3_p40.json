@@ -1,0 +1,103 @@
+{
+  "page_nb": 40,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وسط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute la lettre 'J' (ج) et je relie chaque image selon que j'entends la lettre au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْحَرْفَ (ج) وَأَرْبِطُ كُلَّ صُورَةٍ حَسَبَ مَوْضِعِ الْحَرْفِ فِي أَوَّلِ الْكَلِمَةِ أَوْ وَسَطِهَا أَوْ آخِرِهَا"
+  },
+  "elements": [
+    {
+      "id": "poire",
+      "ar": "إِجَّاصَة",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "chameau",
+      "ar": "جَمَل",
+      "fr": "chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "priere",
+      "ar": "سُجُود",
+      "fr": "prosternation",
+      "emoji": "🧎"
+    },
+    {
+      "id": "couronne",
+      "ar": "تَاج",
+      "fr": "couronne",
+      "emoji": "👑"
+    },
+    {
+      "id": "carotte",
+      "ar": "جَزَر",
+      "fr": "carotte",
+      "emoji": "🥕"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p40_consigne",
+      "texte_ar": "أَسْمَعُ الْحَرْفَ (ج) وَأَرْبِطُ كُلَّ صُورَةٍ حَسَبَ مَوْضِعِ الْحَرْفِ فِي أَوَّلِ الْكَلِمَةِ أَوْ وَسَطِهَا أَوْ آخِرِهَا",
+      "voix_m": "livre_arabe_niveau3_p40_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poire",
+      "texte_ar": "إِجَّاصَة",
+      "voix_m": "livre_arabe_niveau3_p40_poire_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_poire_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chameau",
+      "texte_ar": "جَمَل",
+      "voix_m": "livre_arabe_niveau3_p40_chameau_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_chameau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_priere",
+      "texte_ar": "سُجُود",
+      "voix_m": "livre_arabe_niveau3_p40_priere_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_priere_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couronne",
+      "texte_ar": "تَاج",
+      "voix_m": "livre_arabe_niveau3_p40_couronne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_couronne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_carotte",
+      "texte_ar": "جَزَر",
+      "voix_m": "livre_arabe_niveau3_p40_carotte_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p40_carotte_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:02:23.988016",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

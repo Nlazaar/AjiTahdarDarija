@@ -1,0 +1,90 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Barre l'élément qui est différent des autres dans chaque groupe",
+    "ar": "اشطب الشكل المختلف في كل مجموعة"
+  },
+  "elements": [
+    {
+      "id": "groupe1_intrus",
+      "ar": "شَجَرَةٌ",
+      "fr": "arbre (intrus parmi les nuages)",
+      "emoji": "🌳"
+    },
+    {
+      "id": "groupe1_normal",
+      "ar": "سَحَابٌ",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe2_intrus",
+      "ar": "سَحَاتٌ",
+      "fr": "sécheresse/intrus orthographique parmi les arbres",
+      "emoji": "☁️"
+    },
+    {
+      "id": "groupe2_normal",
+      "ar": "شَجَرَةٌ",
+      "fr": "arbre",
+      "emoji": "🌳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اشطب الشكل المختلف في كل مجموعة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_intrus",
+      "texte_ar": "شَجَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_groupe1_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_groupe1_intrus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1_normal",
+      "texte_ar": "سَحَابٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_groupe1_normal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_groupe1_normal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_intrus",
+      "texte_ar": "سَحَاتٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_groupe2_intrus_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_groupe2_intrus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2_normal",
+      "texte_ar": "شَجَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p6_groupe2_normal_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p6_groupe2_normal_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:23:31.174417",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

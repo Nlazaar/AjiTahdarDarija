@@ -1,0 +1,129 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "La chanson du clown",
+    "ar": "أنشودة المُهَرِّج"
+  },
+  "enonce": {
+    "fr": "Lis la chanson du clown à voix haute en arabe",
+    "ar": "اِقرأ أنشودة المُهَرِّج بصوت عالٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هَذا أنا المُهَرِّج",
+      "fr": "Je suis le clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "2",
+      "ar": "عِنْدي أنفٌ أحْمَر",
+      "fr": "J'ai un nez rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "3",
+      "ar": "شَعْري لَوْنُه أصْفَر",
+      "fr": "Mes cheveux sont jaunes",
+      "emoji": "🟡"
+    },
+    {
+      "id": "4",
+      "ar": "سِرْوَالي أخضَر كَبِير",
+      "fr": "Mon pantalon est grand et vert",
+      "emoji": "🟢"
+    },
+    {
+      "id": "5",
+      "ar": "أمْشي أمْشي أمْشي",
+      "fr": "Je marche, je marche, je marche",
+      "emoji": "🚶"
+    },
+    {
+      "id": "6",
+      "ar": "أجري أجري أجري",
+      "fr": "Je cours, je cours, je cours",
+      "emoji": "🏃"
+    },
+    {
+      "id": "7",
+      "ar": "أقْفِز نَحْوَ الفَوْق",
+      "fr": "Je saute vers le haut",
+      "emoji": "⬆️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon09",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اِقرأ أنشودة المُهَرِّج بصوت عالٍ",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هَذا أنا المُهَرِّج",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "عِنْدي أنفٌ أحْمَر",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَعْري لَوْنُه أصْفَر",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "سِرْوَالي أخضَر كَبِير",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أمْشي أمْشي أمْشي",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أجري أجري أجري",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أقْفِز نَحْوَ الفَوْق",
+      "voix_m": "coursarabe_niveau1_lecon09_p1_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon09_p1_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:20:33.749164",
+    "niveau": 1,
+    "lecon": 2,
+    "nom_pdf": "coursarabe_niveau1_lecon09",
+    "bucket_audio": "audio-lessons/niveau1/lecon02/",
+    "nb_audio_assets": 8
+  }
+}

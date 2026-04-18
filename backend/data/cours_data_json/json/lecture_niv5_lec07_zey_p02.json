@@ -1,0 +1,233 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de lettre, compléter mots avec lettre manquante (ز)",
+  "titre": {
+    "fr": "La lettre Zay (ز) - Lecture, écriture et complétion",
+    "ar": "حرف الزاي - القراءة والكتابة والإكمال"
+  },
+  "enonce": {
+    "fr": "Exercice 3 : Je lis le mot et je le relie à son image. Exercice 4 : J'écris la lettre ز. Exercice 5 : Je complète avec ce qui convient.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الزاي. تمرين 5: أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "مَوْزُ",
+      "fr": "Banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "mot2",
+      "ar": "زَرْبِيَّةٌ",
+      "fr": "Tapis",
+      "emoji": "🪺"
+    },
+    {
+      "id": "mot3",
+      "ar": "زَيْتُونٌ",
+      "fr": "Olive",
+      "emoji": "🫒"
+    },
+    {
+      "id": "mot4",
+      "ar": "خِزَانَةٌ",
+      "fr": "Armoire",
+      "emoji": "🗄️"
+    },
+    {
+      "id": "mot5",
+      "ar": "زَئِيرٌ",
+      "fr": "Rugissement",
+      "emoji": "🦁"
+    },
+    {
+      "id": "mot6",
+      "ar": "كَنْزُ",
+      "fr": "Trésor",
+      "emoji": "💰"
+    },
+    {
+      "id": "comp1",
+      "ar": "إِوَزَّةٌ",
+      "fr": "Oie",
+      "emoji": "🦆"
+    },
+    {
+      "id": "comp2",
+      "ar": "قَوْسُ قُزَحٍ",
+      "fr": "Arc-en-ciel",
+      "emoji": "🌈"
+    },
+    {
+      "id": "comp3",
+      "ar": "أَزْرَقُ",
+      "fr": "Bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "comp4",
+      "ar": "أَرُزٌّ",
+      "fr": "Riz",
+      "emoji": "🍚"
+    },
+    {
+      "id": "comp5",
+      "ar": "أَزْهَارٌ",
+      "fr": "Des fleurs",
+      "emoji": "🌷"
+    },
+    {
+      "id": "comp6",
+      "ar": "زَرَافَةٌ",
+      "fr": "Girafe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "comp7",
+      "ar": "غَزَالٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "comp8",
+      "ar": "خَبَّازٌ",
+      "fr": "Boulanger",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "id": "comp9",
+      "ar": "جَزَّارٌ",
+      "fr": "Boucher",
+      "emoji": "🥩"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec07_zey",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الزاي. تمرين 5: أكمل بما يناسب.",
+      "voix_m": "lecture_niv5_lec07_zey_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "مَوْزُ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot1_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "زَرْبِيَّةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot2_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "زَيْتُونٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "خِزَانَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot4_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "زَئِيرٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot5_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "كَنْزُ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_mot6_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp1",
+      "texte_ar": "إِوَزَّةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp1_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp2",
+      "texte_ar": "قَوْسُ قُزَحٍ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp2_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp3",
+      "texte_ar": "أَزْرَقُ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp3_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp4",
+      "texte_ar": "أَرُزٌّ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp4_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp5",
+      "texte_ar": "أَزْهَارٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp5_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp6",
+      "texte_ar": "زَرَافَةٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp6_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp7",
+      "texte_ar": "غَزَالٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp7_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp8",
+      "texte_ar": "خَبَّازٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp8_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_comp9",
+      "texte_ar": "جَزَّارٌ",
+      "voix_m": "lecture_niv5_lec07_zey_p2_comp9_m.mp3",
+      "voix_f": "lecture_niv5_lec07_zey_p2_comp9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:32:51.341523",
+    "niveau": 1,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv5_lec07_zey",
+    "bucket_audio": "audio-lessons/niveau1/lecon07/",
+    "nb_audio_assets": 16
+  }
+}

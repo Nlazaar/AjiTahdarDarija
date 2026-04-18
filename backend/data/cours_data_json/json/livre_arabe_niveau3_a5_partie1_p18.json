@@ -1,0 +1,90 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Je barre l'intrus dans chaque ensemble",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "enonce": {
+    "fr": "Barre la lettre qui est différente des autres dans chaque ligne",
+    "ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ"
+  },
+  "elements": [
+    {
+      "id": "ligne1",
+      "ar": "و",
+      "fr": "Lettre waw et ses variantes",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ligne2",
+      "ar": "ح",
+      "fr": "Lettre ha et ses variantes",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ligne3",
+      "ar": "س",
+      "fr": "Lettre sin et ses variantes",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ligne4",
+      "ar": "ق",
+      "fr": "Lettre qaf et ses variantes",
+      "emoji": "✍️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أَشْطُبُ الشَّكْلَ الْمُخْتَلِفَ فِي كُلِّ مَجْمُوعَةٍ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p8_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne1",
+      "texte_ar": "و",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p8_ligne1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p8_ligne1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne2",
+      "texte_ar": "ح",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p8_ligne2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p8_ligne2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne3",
+      "texte_ar": "س",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p8_ligne3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p8_ligne3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne4",
+      "texte_ar": "ق",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p8_ligne4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p8_ligne4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:26:04.322728",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

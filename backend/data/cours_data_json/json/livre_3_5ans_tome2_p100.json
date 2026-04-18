@@ -1,0 +1,116 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Compléter ou barrer pour obtenir 5 éléments",
+    "ar": "أكمّل العناصر أو أشطب منها لأحصل على خمسة عناصر في كلّ مجموعة"
+  },
+  "enonce": {
+    "fr": "Complète ou barre les éléments pour obtenir exactement 5 éléments dans chaque groupe.",
+    "ar": "أكمّل العناصر أو أشطب منها لأحصل على خمسة عناصر في كلّ مجموعة"
+  },
+  "elements": [
+    {
+      "id": "groupe1",
+      "ar": "سهمان (٢ سهم)",
+      "fr": "2 flèches → à compléter jusqu'à 5",
+      "emoji": "➡️"
+    },
+    {
+      "id": "groupe2",
+      "ar": "علامتا × (٢ ×)",
+      "fr": "2 croix × à compléter jusqu'à 5",
+      "emoji": "✖️"
+    },
+    {
+      "id": "groupe3",
+      "ar": "تسع دوائر (٩ دوائر)",
+      "fr": "9 cercles à barrer jusqu'à 5",
+      "emoji": "⭕"
+    },
+    {
+      "id": "groupe4",
+      "ar": "ثلاثة مثلثات (٣)",
+      "fr": "3 triangles à compléter jusqu'à 5",
+      "emoji": "🔺"
+    },
+    {
+      "id": "groupe5",
+      "ar": "عشرة وجوه مبتسمة (١٠)",
+      "fr": "10 smileys à barrer jusqu'à 5",
+      "emoji": "😊"
+    },
+    {
+      "id": "groupe6",
+      "ar": "ستة أهلة (٦)",
+      "fr": "6 croissants à barrer jusqu'à 5",
+      "emoji": "🌙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أكمّل العناصر أو أشطب منها لأحصل على خمسة عناصر في كلّ مجموعة",
+      "voix_m": "livre_3_5ans_tome2_p8_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe1",
+      "texte_ar": "سهمان (٢ سهم)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe2",
+      "texte_ar": "علامتا × (٢ ×)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe3",
+      "texte_ar": "تسع دوائر (٩ دوائر)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe4",
+      "texte_ar": "ثلاثة مثلثات (٣)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe5",
+      "texte_ar": "عشرة وجوه مبتسمة (١٠)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_groupe6",
+      "texte_ar": "ستة أهلة (٦)",
+      "voix_m": "livre_3_5ans_tome2_p8_groupe6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p8_groupe6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:12:23.375722",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

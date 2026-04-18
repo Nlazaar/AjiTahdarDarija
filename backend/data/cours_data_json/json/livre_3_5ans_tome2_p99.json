@@ -1,0 +1,116 @@
+{
+  "page_nb": 99,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve l'image identique au modèle",
+    "ar": "أبحث عن الرّسوم المطابقة للأنموذج و أديرها و أكمّل الأخرى"
+  },
+  "enonce": {
+    "fr": "Observe la trottinette modèle dans le cadre, trouve celle qui lui est identique parmi les autres et complète les autres dessins.",
+    "ar": "أبحث عن الرّسوم المطابقة للأنموذج و أديرها و أكمّل الأخرى"
+  },
+  "elements": [
+    {
+      "id": "modele",
+      "ar": "النّموذج",
+      "fr": "Modèle (trottinette de référence)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image1",
+      "ar": "الصّورة 1",
+      "fr": "Trottinette 1 (en haut à gauche)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image2",
+      "ar": "الصّورة 2",
+      "fr": "Trottinette 2 (en haut à droite)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image3",
+      "ar": "الصّورة 3",
+      "fr": "Trottinette 3 (au centre)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image4",
+      "ar": "الصّورة 4",
+      "fr": "Trottinette 4 (en bas à gauche)",
+      "emoji": "🛴"
+    },
+    {
+      "id": "image5",
+      "ar": "الصّورة 5",
+      "fr": "Trottinette 5 (en bas à droite)",
+      "emoji": "🛴"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p99_consigne",
+      "texte_ar": "أبحث عن الرّسوم المطابقة للأنموذج و أديرها و أكمّل الأخرى",
+      "voix_m": "livre_3_5ans_tome2_p99_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele",
+      "texte_ar": "النّموذج",
+      "voix_m": "livre_3_5ans_tome2_p99_modele_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_modele_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image1",
+      "texte_ar": "الصّورة 1",
+      "voix_m": "livre_3_5ans_tome2_p99_image1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_image1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image2",
+      "texte_ar": "الصّورة 2",
+      "voix_m": "livre_3_5ans_tome2_p99_image2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_image2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image3",
+      "texte_ar": "الصّورة 3",
+      "voix_m": "livre_3_5ans_tome2_p99_image3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_image3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image4",
+      "texte_ar": "الصّورة 4",
+      "voix_m": "livre_3_5ans_tome2_p99_image4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_image4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_image5",
+      "texte_ar": "الصّورة 5",
+      "voix_m": "livre_3_5ans_tome2_p99_image5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p99_image5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:12:13.024790",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

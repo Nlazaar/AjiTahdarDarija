@@ -192,9 +192,9 @@ export class AudioService {
   //  UTILITAIRES STATIQUES
   // ──────────────────────────────────────────────
 
-  /** Génère un slug de fichier stable (MD5 du texte) */
+  /** Génère un slug de fichier stable (SHA-256 du texte, 16 premiers chars) */
   static slug(text: string): string {
-    return crypto.createHash('md5').update(text.trim().toLowerCase()).digest('hex').slice(0, 16)
+    return crypto.createHash('sha256').update(text.trim().toLowerCase()).digest('hex').slice(0, 16)
   }
 
   /** URL publique relative du fichier audio mis en cache */

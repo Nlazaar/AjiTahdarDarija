@@ -1,0 +1,155 @@
+{
+  "page_nb": 47,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Je lis",
+    "ar": "أَقْرَأُ"
+  },
+  "enonce": {
+    "fr": "Lis chaque mot à voix haute en regardant l'image correspondante.",
+    "ar": "اقرأ كل كلمة بصوت عالٍ مع النظر إلى الصورة المقابلة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قَمَرٌ",
+      "fr": "Lune",
+      "emoji": "🌕"
+    },
+    {
+      "id": "2",
+      "ar": "وَرَقَةٌ",
+      "fr": "Feuille",
+      "emoji": "🍃"
+    },
+    {
+      "id": "3",
+      "ar": "هُدْهُدٌ",
+      "fr": "Huppe fasciée",
+      "emoji": "🐦"
+    },
+    {
+      "id": "4",
+      "ar": "بَقَرَةٌ",
+      "fr": "Vache",
+      "emoji": "🐄"
+    },
+    {
+      "id": "5",
+      "ar": "مَسْجِدٌ",
+      "fr": "Mosquée",
+      "emoji": "🕌"
+    },
+    {
+      "id": "6",
+      "ar": "شَجَرَةٌ",
+      "fr": "Arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "7",
+      "ar": "ثَعْلَبٌ",
+      "fr": "Renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "8",
+      "ar": "كَأْسٌ",
+      "fr": "Verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "9",
+      "ar": "شَعْرٌ",
+      "fr": "Cheveux",
+      "emoji": "💇"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p47_consigne",
+      "texte_ar": "اقرأ كل كلمة بصوت عالٍ مع النظر إلى الصورة المقابلة.",
+      "voix_m": "livre_arabe_niveau3_p47_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "livre_arabe_niveau3_p47_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "livre_arabe_niveau3_p47_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هُدْهُدٌ",
+      "voix_m": "livre_arabe_niveau3_p47_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَقَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_p47_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَسْجِدٌ",
+      "voix_m": "livre_arabe_niveau3_p47_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "شَجَرَةٌ",
+      "voix_m": "livre_arabe_niveau3_p47_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ثَعْلَبٌ",
+      "voix_m": "livre_arabe_niveau3_p47_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "كَأْسٌ",
+      "voix_m": "livre_arabe_niveau3_p47_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "شَعْرٌ",
+      "voix_m": "livre_arabe_niveau3_p47_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p47_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:03:55.720948",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 10
+  }
+}

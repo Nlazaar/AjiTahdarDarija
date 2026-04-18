@@ -1,0 +1,77 @@
+{
+  "page_nb": 111,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je repasse puis je colorie",
+    "ar": "أَرْسُمُ وَ أُلَوِّنُ"
+  },
+  "enonce": {
+    "fr": "Repasse les pointillés pour dessiner les images, puis colorie-les.",
+    "ar": "تتبع الخطوط المنقطة لرسم الصور ثم لوّنها."
+  },
+  "elements": [
+    {
+      "id": "soleil",
+      "ar": "شَمْسٌ",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "nuage",
+      "ar": "سَحَابَةٌ",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "parasol",
+      "ar": "مِظَلَّةٌ",
+      "fr": "parasol / parapluie",
+      "emoji": "⛱️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p111_consigne",
+      "texte_ar": "تتبع الخطوط المنقطة لرسم الصور ثم لوّنها.",
+      "voix_m": "livre_arabe_niveau3_p111_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p111_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil",
+      "texte_ar": "شَمْسٌ",
+      "voix_m": "livre_arabe_niveau3_p111_soleil_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p111_soleil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage",
+      "texte_ar": "سَحَابَةٌ",
+      "voix_m": "livre_arabe_niveau3_p111_nuage_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p111_nuage_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_parasol",
+      "texte_ar": "مِظَلَّةٌ",
+      "voix_m": "livre_arabe_niveau3_p111_parasol_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p111_parasol_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:16:11.907951",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 4
+  }
+}

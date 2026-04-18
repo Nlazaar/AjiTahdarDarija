@@ -1,0 +1,129 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "Compter les enfants dans chaque case (groupes de 2) et colorier en jaune les cases contenant exactement 2 enfants",
+  "titre": {
+    "fr": "Je compte les enfants dans les cases",
+    "ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ هَذِهِ الْمَجْمُوعَات"
+  },
+  "enonce": {
+    "fr": "Compte les enfants dans chaque case. Colorie en jaune les cases qui contiennent 2 enfants. Un, deux...",
+    "ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ كُلِّ مَجْمُوعَة. أُلَوِّنُ بِالْأَصْفَرِ. وَاحِد، اثْنَان..."
+  },
+  "elements": [
+    {
+      "id": "case_1",
+      "ar": "مجموعة 1 - طفلان",
+      "fr": "Case 1 - 2 enfants (fille + garçon avec sacs)",
+      "emoji": "👧👦"
+    },
+    {
+      "id": "case_2",
+      "ar": "مجموعة 2 - طفلان",
+      "fr": "Case 2 - 2 enfants (garçon + fille en uniforme)",
+      "emoji": "👦👧"
+    },
+    {
+      "id": "case_3",
+      "ar": "مجموعة 3 - طفلان",
+      "fr": "Case 3 - 2 enfants (lisant un livre)",
+      "emoji": "📖👫"
+    },
+    {
+      "id": "case_4",
+      "ar": "مجموعة 4 - طفلان",
+      "fr": "Case 4 - 2 enfants (garçon et femme voilée)",
+      "emoji": "👦🧕"
+    },
+    {
+      "id": "case_5",
+      "ar": "مجموعة 5 - طفلتان",
+      "fr": "Case 5 - 2 enfants (deux filles voilées)",
+      "emoji": "🧕🧕"
+    },
+    {
+      "id": "case_6",
+      "ar": "مجموعة 6 - طفلتان",
+      "fr": "Case 6 - 2 enfants (deux filles avec sacs)",
+      "emoji": "👧👧"
+    },
+    {
+      "id": "nombre_2",
+      "ar": "اثْنَان",
+      "fr": "Deux",
+      "emoji": "2️⃣"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon02",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَعُدُّ الْأَطْفَالَ دَاخِلَ كُلِّ مَجْمُوعَة. أُلَوِّنُ بِالْأَصْفَرِ. وَاحِد، اثْنَان...",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_1",
+      "texte_ar": "مجموعة 1 - طفلان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_2",
+      "texte_ar": "مجموعة 2 - طفلان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_3",
+      "texte_ar": "مجموعة 3 - طفلان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_4",
+      "texte_ar": "مجموعة 4 - طفلان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_5",
+      "texte_ar": "مجموعة 5 - طفلتان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_case_6",
+      "texte_ar": "مجموعة 6 - طفلتان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_case_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_case_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nombre_2",
+      "texte_ar": "اثْنَان",
+      "voix_m": "coursarabe_niveau1_lecon02_p9_nombre_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon02_p9_nombre_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:42:34.363562",
+    "niveau": 1,
+    "lecon": 32,
+    "nom_pdf": "coursarabe_niveau1_lecon02",
+    "bucket_audio": "audio-lessons/niveau1/lecon32/",
+    "nb_audio_assets": 8
+  }
+}

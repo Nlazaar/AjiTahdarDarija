@@ -1,0 +1,90 @@
+{
+  "page_nb": 34,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "J'entoure les lettres du mot",
+    "ar": "أُحِيطُ بِخَطٍّ مُغْلَق حُرُوفَ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "Entoure les lettres qui composent le mot illustré parmi les lettres proposées",
+    "ar": "أَحُطْ بِخَطٍّ مُغْلَق الْحُرُوفَ الَّتِي تُكَوِّنُ الْكَلِمَةَ الْمُصَوَّرَةَ مِنْ بَيْنِ الْحُرُوفِ الْمَقْتَرَحَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "عِنَبٌ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "2",
+      "ar": "وَرَقَةٌ",
+      "fr": "feuille",
+      "emoji": "🍃"
+    },
+    {
+      "id": "3",
+      "ar": "بُرْتُقَالٌ",
+      "fr": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "id": "4",
+      "ar": "فَأْرٌ",
+      "fr": "souris",
+      "emoji": "🐭"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p34_consigne",
+      "texte_ar": "أَحُطْ بِخَطٍّ مُغْلَق الْحُرُوفَ الَّتِي تُكَوِّنُ الْكَلِمَةَ الْمُصَوَّرَةَ مِنْ بَيْنِ الْحُرُوفِ الْمَقْتَرَحَة",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p34_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p34_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "عِنَبٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p34_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p34_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "وَرَقَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p34_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p34_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "بُرْتُقَالٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p34_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p34_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فَأْرٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p34_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p34_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:29:05.192131",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 5
+  }
+}

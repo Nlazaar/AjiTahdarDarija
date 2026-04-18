@@ -1,0 +1,77 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je repasse puis je colorie",
+    "ar": "أَرْسُمُ وَ أُلَوِّنُ"
+  },
+  "enonce": {
+    "fr": "Repasse les pointillés pour dessiner les images, puis colorie-les.",
+    "ar": "أَرْسُمُ عَلَى النِّقَاطِ ثُمَّ أُلَوِّنُ الصُّوَرَ."
+  },
+  "elements": [
+    {
+      "id": "soleil",
+      "ar": "شَمْسٌ",
+      "fr": "soleil",
+      "emoji": "☀️"
+    },
+    {
+      "id": "nuage",
+      "ar": "سَحَابَةٌ",
+      "fr": "nuage",
+      "emoji": "☁️"
+    },
+    {
+      "id": "parasol",
+      "ar": "مِظَلَّةٌ",
+      "fr": "parasol",
+      "emoji": "⛱️"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec15",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أَرْسُمُ عَلَى النِّقَاطِ ثُمَّ أُلَوِّنُ الصُّوَرَ.",
+      "voix_m": "arabe_niveau3_lec15_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_soleil",
+      "texte_ar": "شَمْسٌ",
+      "voix_m": "arabe_niveau3_lec15_p9_soleil_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p9_soleil_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_nuage",
+      "texte_ar": "سَحَابَةٌ",
+      "voix_m": "arabe_niveau3_lec15_p9_nuage_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p9_nuage_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_parasol",
+      "texte_ar": "مِظَلَّةٌ",
+      "voix_m": "arabe_niveau3_lec15_p9_parasol_m.mp3",
+      "voix_f": "arabe_niveau3_lec15_p9_parasol_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:47:08.068342",
+    "niveau": 3,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau3_lec15",
+    "bucket_audio": "audio-lessons/niveau3/lecon15/",
+    "nb_audio_assets": 4
+  }
+}

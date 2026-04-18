@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre ض dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image selon que j'entends la lettre ض au début, au milieu ou à la fin du mot",
+    "ar": "أَسْمَعُ الْحَرْفَ وَأَرْبِطُ الصُّورَةَ بِمَكَانِ الْحَرْفِ ض فِي الْكَلِمَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بَيْضَة",
+      "fr": "œuf",
+      "emoji": "🥚"
+    },
+    {
+      "id": "2",
+      "ar": "مَرِيض",
+      "fr": "malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "3",
+      "ar": "ضِفْدَع",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "4",
+      "ar": "رَضِيع",
+      "fr": "bébé",
+      "emoji": "👶"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec13",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أَسْمَعُ الْحَرْفَ وَأَرْبِطُ الصُّورَةَ بِمَكَانِ الْحَرْفِ ض فِي الْكَلِمَة",
+      "voix_m": "arabe_niveau3_lec13_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بَيْضَة",
+      "voix_m": "arabe_niveau3_lec13_p4_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَرِيض",
+      "voix_m": "arabe_niveau3_lec13_p4_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ضِفْدَع",
+      "voix_m": "arabe_niveau3_lec13_p4_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "رَضِيع",
+      "voix_m": "arabe_niveau3_lec13_p4_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec13_p4_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:43:38.934465",
+    "niveau": 3,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau3_lec13",
+    "bucket_audio": "audio-lessons/niveau3/lecon13/",
+    "nb_audio_assets": 5
+  }
+}

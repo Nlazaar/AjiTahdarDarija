@@ -1,0 +1,220 @@
+{
+  "page_nb": 1,
+  "type": "exercice",
+  "mecanique": "1) Relier chaque mot à son image. 2) Remettre les lettres dans l'ordre et écrire le mot.",
+  "titre": {
+    "fr": "Révision et évaluation (3)",
+    "ar": "مُرَاجَعَة وَ تَقْيِيم (3)"
+  },
+  "enonce": {
+    "fr": "Exercice 1 : Je relie chaque mot à son image. Exercice 2 : Je remets les lettres dans l'ordre et j'écris le mot.",
+    "ar": "١- أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا. ٢- أُرَتِّبُ الْحُرُوفَ وَ أَكْتُبُ الْكَلِمَةَ."
+  },
+  "elements": [
+    {
+      "id": "ex1_1",
+      "ar": "مِذْيَاعٌ",
+      "fr": "radio",
+      "emoji": "📻"
+    },
+    {
+      "id": "ex1_2",
+      "ar": "جَرَّارٌ",
+      "fr": "tracteur",
+      "emoji": "🚜"
+    },
+    {
+      "id": "ex1_3",
+      "ar": "خَبَّازٌ",
+      "fr": "boulanger",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "id": "ex1_4",
+      "ar": "عُودٌ",
+      "fr": "allumette",
+      "emoji": "🪵"
+    },
+    {
+      "id": "ex1_5",
+      "ar": "جَزَّارٌ",
+      "fr": "boucher",
+      "emoji": "🥩"
+    },
+    {
+      "id": "ex2_1",
+      "ar": "قِدْرٌ",
+      "fr": "marmite (lettres: د ق ر)",
+      "emoji": "🍲"
+    },
+    {
+      "id": "ex2_2",
+      "ar": "قِرْدٌ",
+      "fr": "singe (lettres: ر د ق)",
+      "emoji": "🐒"
+    },
+    {
+      "id": "ex2_3",
+      "ar": "قِرْشٌ",
+      "fr": "requin (lettres: ر ش ق)",
+      "emoji": "🦈"
+    },
+    {
+      "id": "ex2_4",
+      "ar": "نَارٌ",
+      "fr": "feu (lettres: ر ن ا)",
+      "emoji": "🔥"
+    },
+    {
+      "id": "ex2_5",
+      "ar": "جَرَسٌ",
+      "fr": "cloche (lettres: ر ج س)",
+      "emoji": "🔔"
+    },
+    {
+      "id": "ex2_6",
+      "ar": "جِسْرٌ",
+      "fr": "pont (lettres: ر ج س)",
+      "emoji": "🌉"
+    },
+    {
+      "id": "ex2_7",
+      "ar": "قَمَرٌ",
+      "fr": "lune (lettres: م ق ر)",
+      "emoji": "🌕"
+    },
+    {
+      "id": "ex2_8",
+      "ar": "نَمِرٌ",
+      "fr": "tigre (lettres: م ن ر)",
+      "emoji": "🐯"
+    },
+    {
+      "id": "ex2_9",
+      "ar": "مَوْزٌ",
+      "fr": "banane (lettres: و ز م)",
+      "emoji": "🍌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "bilan03",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "١- أَرْبِطُ كُلَّ كَلِمَةٍ بِصُورَتِهَا. ٢- أُرَتِّبُ الْحُرُوفَ وَ أَكْتُبُ الْكَلِمَةَ.",
+      "voix_m": "bilan03_p1_consigne_m.mp3",
+      "voix_f": "bilan03_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_1",
+      "texte_ar": "مِذْيَاعٌ",
+      "voix_m": "bilan03_p1_ex1_1_m.mp3",
+      "voix_f": "bilan03_p1_ex1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_2",
+      "texte_ar": "جَرَّارٌ",
+      "voix_m": "bilan03_p1_ex1_2_m.mp3",
+      "voix_f": "bilan03_p1_ex1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_3",
+      "texte_ar": "خَبَّازٌ",
+      "voix_m": "bilan03_p1_ex1_3_m.mp3",
+      "voix_f": "bilan03_p1_ex1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_4",
+      "texte_ar": "عُودٌ",
+      "voix_m": "bilan03_p1_ex1_4_m.mp3",
+      "voix_f": "bilan03_p1_ex1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex1_5",
+      "texte_ar": "جَزَّارٌ",
+      "voix_m": "bilan03_p1_ex1_5_m.mp3",
+      "voix_f": "bilan03_p1_ex1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_1",
+      "texte_ar": "قِدْرٌ",
+      "voix_m": "bilan03_p1_ex2_1_m.mp3",
+      "voix_f": "bilan03_p1_ex2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_2",
+      "texte_ar": "قِرْدٌ",
+      "voix_m": "bilan03_p1_ex2_2_m.mp3",
+      "voix_f": "bilan03_p1_ex2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_3",
+      "texte_ar": "قِرْشٌ",
+      "voix_m": "bilan03_p1_ex2_3_m.mp3",
+      "voix_f": "bilan03_p1_ex2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_4",
+      "texte_ar": "نَارٌ",
+      "voix_m": "bilan03_p1_ex2_4_m.mp3",
+      "voix_f": "bilan03_p1_ex2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_5",
+      "texte_ar": "جَرَسٌ",
+      "voix_m": "bilan03_p1_ex2_5_m.mp3",
+      "voix_f": "bilan03_p1_ex2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_6",
+      "texte_ar": "جِسْرٌ",
+      "voix_m": "bilan03_p1_ex2_6_m.mp3",
+      "voix_f": "bilan03_p1_ex2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_7",
+      "texte_ar": "قَمَرٌ",
+      "voix_m": "bilan03_p1_ex2_7_m.mp3",
+      "voix_f": "bilan03_p1_ex2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_8",
+      "texte_ar": "نَمِرٌ",
+      "voix_m": "bilan03_p1_ex2_8_m.mp3",
+      "voix_f": "bilan03_p1_ex2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex2_9",
+      "texte_ar": "مَوْزٌ",
+      "voix_m": "bilan03_p1_ex2_9_m.mp3",
+      "voix_f": "bilan03_p1_ex2_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T00:02:12.675095",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "bilan03",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 15
+  }
+}

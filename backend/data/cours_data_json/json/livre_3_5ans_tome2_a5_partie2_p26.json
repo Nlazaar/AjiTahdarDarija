@@ -1,0 +1,324 @@
+{
+  "page_nb": 26,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorier la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre غ (page 6) et la lettre ض (page 5) chaque fois qu'elles apparaissent dans les mots.",
+    "ar": "لوِّن حرف الغين وحرف الضاد في كل كلمة تجدهما فيها."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "بـلاغ",
+      "fr": "message",
+      "emoji": "📢"
+    },
+    {
+      "id": "2",
+      "ar": "غـريـب",
+      "fr": "étrange",
+      "emoji": "🤔"
+    },
+    {
+      "id": "3",
+      "ar": "غـاب",
+      "fr": "forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "4",
+      "ar": "يـغـرد",
+      "fr": "il chante (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "5",
+      "ar": "غـروب",
+      "fr": "coucher de soleil",
+      "emoji": "🌅"
+    },
+    {
+      "id": "6",
+      "ar": "غـلال",
+      "fr": "récoltes",
+      "emoji": "🌾"
+    },
+    {
+      "id": "7",
+      "ar": "بـلـغ",
+      "fr": "il a atteint",
+      "emoji": "✅"
+    },
+    {
+      "id": "8",
+      "ar": "صـاغ",
+      "fr": "il a fabriqué",
+      "emoji": "🔨"
+    },
+    {
+      "id": "9",
+      "ar": "مـغـيب",
+      "fr": "coucher",
+      "emoji": "🌙"
+    },
+    {
+      "id": "10",
+      "ar": "غـفـر",
+      "fr": "il a pardonné",
+      "emoji": "🤲"
+    },
+    {
+      "id": "11",
+      "ar": "رغـيـف",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "12",
+      "ar": "ضـفـدع",
+      "fr": "grenouille",
+      "emoji": "🐸"
+    },
+    {
+      "id": "13",
+      "ar": "ضـفـط",
+      "fr": "pression",
+      "emoji": "💪"
+    },
+    {
+      "id": "14",
+      "ar": "ضِل",
+      "fr": "ombre",
+      "emoji": "🌤"
+    },
+    {
+      "id": "15",
+      "ar": "ضـرورة",
+      "fr": "nécessité",
+      "emoji": "❗"
+    },
+    {
+      "id": "16",
+      "ar": "نـبـض",
+      "fr": "pouls",
+      "emoji": "❤️"
+    },
+    {
+      "id": "17",
+      "ar": "رضـنـا",
+      "fr": "nous avons accepté",
+      "emoji": "😊"
+    },
+    {
+      "id": "18",
+      "ar": "بـيـض",
+      "fr": "œufs",
+      "emoji": "🥚"
+    },
+    {
+      "id": "19",
+      "ar": "روضـة",
+      "fr": "jardin d'enfants",
+      "emoji": "🌸"
+    },
+    {
+      "id": "20",
+      "ar": "أبـيـض",
+      "fr": "blanc",
+      "emoji": "⬜"
+    },
+    {
+      "id": "21",
+      "ar": "رضـي",
+      "fr": "il a accepté",
+      "emoji": "😌"
+    },
+    {
+      "id": "22",
+      "ar": "مـاضـي",
+      "fr": "passé",
+      "emoji": "⏪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p26_consigne",
+      "texte_ar": "لوِّن حرف الغين وحرف الضاد في كل كلمة تجدهما فيها.",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "بـلاغ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "غـريـب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غـاب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "يـغـرد",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "غـروب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "غـلال",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "بـلـغ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "صـاغ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مـغـيب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "غـفـر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رغـيـف",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ضـفـدع",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "ضـفـط",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ضِل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_14_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ضـرورة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_15_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "نـبـض",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_16_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "رضـنـا",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_17_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "بـيـض",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_18_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "روضـة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_19_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "أبـيـض",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_20_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "رضـي",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_21_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "مـاضـي",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p26_22_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p26_22_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:23:09.113046",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 23
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices combinés : réordonner des lettres pour former un mot, compléter des phrases avec la bonne conjugaison, compléter des phrases avec des mots d'une liste",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de conjugaison sur les jeux",
+    "ar": "تمارين المفردات والتصريف حول الألعاب"
+  },
+  "enonce": {
+    "fr": "Ex6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex7 : Je complète avec la bonne forme du verbe jouer (يَلْعَبُ / تَلْعَبُ / يَلْعَبَانِ / تَلْعَبَانِ). Ex8 : Je complète la phrase par des mots de la liste.",
+    "ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ بِاسْتِخْدَامِ يَلْعَبُ / تَلْعَبُ / يَلْعَبَانِ / تَلْعَبَانِ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حِمَار",
+      "fr": "âne",
+      "emoji": "🫏"
+    },
+    {
+      "id": "2",
+      "ar": "مِرْآة",
+      "fr": "miroir",
+      "emoji": "🪞"
+    },
+    {
+      "id": "3",
+      "ar": "حَرْب",
+      "fr": "guerre",
+      "emoji": "⚔️"
+    },
+    {
+      "id": "4",
+      "ar": "قِرْد",
+      "fr": "singe",
+      "emoji": "🐒"
+    },
+    {
+      "id": "5",
+      "ar": "حَبْل",
+      "fr": "corde",
+      "emoji": "🪢"
+    },
+    {
+      "id": "6",
+      "ar": "حَفْرَة",
+      "fr": "trou",
+      "emoji": "🕳️"
+    },
+    {
+      "id": "7",
+      "ar": "الْكُرَة",
+      "fr": "le ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "8",
+      "ar": "الدُّمْيَة",
+      "fr": "la poupée",
+      "emoji": "🪆"
+    },
+    {
+      "id": "9",
+      "ar": "الدَّوَّامَة",
+      "fr": "la toupie",
+      "emoji": "🌀"
+    },
+    {
+      "id": "10",
+      "ar": "الْأُرْجُوحَة",
+      "fr": "la balançoire",
+      "emoji": "🛝"
+    },
+    {
+      "id": "11",
+      "ar": "يَلْعَبُ",
+      "fr": "il joue",
+      "emoji": "👦"
+    },
+    {
+      "id": "12",
+      "ar": "تَلْعَبُ",
+      "fr": "elle joue",
+      "emoji": "👧"
+    },
+    {
+      "id": "13",
+      "ar": "يَلْعَبَانِ",
+      "fr": "ils jouent (deux)",
+      "emoji": "👦👦"
+    },
+    {
+      "id": "14",
+      "ar": "تَلْعَبَانِ",
+      "fr": "elles jouent (deux)",
+      "emoji": "👧👧"
+    },
+    {
+      "id": "15",
+      "ar": "الْبِنْت",
+      "fr": "la fille",
+      "emoji": "👧"
+    },
+    {
+      "id": "16",
+      "ar": "الْوَلَد",
+      "fr": "le garçon",
+      "emoji": "👦"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec07_raa",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. تمرين 7: أُكْمِلُ بِاسْتِخْدَامِ يَلْعَبُ / تَلْعَبُ / يَلْعَبَانِ / تَلْعَبَانِ. تمرين 8: أُكْمِلُ الْجُمْلَةَ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُنَاسِبَةِ.",
+      "voix_m": "lecture_niv4_lec07_raa_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حِمَار",
+      "voix_m": "lecture_niv4_lec07_raa_p3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مِرْآة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "حَرْب",
+      "voix_m": "lecture_niv4_lec07_raa_p3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قِرْد",
+      "voix_m": "lecture_niv4_lec07_raa_p3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "حَبْل",
+      "voix_m": "lecture_niv4_lec07_raa_p3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حَفْرَة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "الْكُرَة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_7_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "الدُّمْيَة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_8_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "الدَّوَّامَة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_9_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "الْأُرْجُوحَة",
+      "voix_m": "lecture_niv4_lec07_raa_p3_10_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "يَلْعَبُ",
+      "voix_m": "lecture_niv4_lec07_raa_p3_11_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "تَلْعَبُ",
+      "voix_m": "lecture_niv4_lec07_raa_p3_12_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "يَلْعَبَانِ",
+      "voix_m": "lecture_niv4_lec07_raa_p3_13_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "تَلْعَبَانِ",
+      "voix_m": "lecture_niv4_lec07_raa_p3_14_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "الْبِنْت",
+      "voix_m": "lecture_niv4_lec07_raa_p3_15_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "الْوَلَد",
+      "voix_m": "lecture_niv4_lec07_raa_p3_16_m.mp3",
+      "voix_f": "lecture_niv4_lec07_raa_p3_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:58:52.014261",
+    "niveau": 4,
+    "lecon": 7,
+    "nom_pdf": "lecture_niv4_lec07_raa",
+    "bucket_audio": "audio-lessons/niveau4/lecon07/",
+    "nb_audio_assets": 17
+  }
+}

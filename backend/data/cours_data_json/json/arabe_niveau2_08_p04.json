@@ -1,0 +1,90 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Complète les lettres manquantes",
+    "ar": "أَكَمِّلُ الحُرُوفَ النَّاقِصَة"
+  },
+  "enonce": {
+    "fr": "Regarde l'image et complète le mot en ajoutant les lettres manquantes",
+    "ar": "اُنظُر إلى الصورة وأَكمِّل الكلمة بإضافة الحروف الناقصة"
+  },
+  "elements": [
+    {
+      "id": "hudhud",
+      "ar": "هُدْهُدُ",
+      "fr": "Huppe fasciée",
+      "emoji": "🐦"
+    },
+    {
+      "id": "thaby",
+      "ar": "ظَبْيٌ",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "timsah",
+      "ar": "تِمْسَاحٌ",
+      "fr": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "deek",
+      "ar": "دِيكٌ",
+      "fr": "Coq",
+      "emoji": "🐓"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "arabe_niveau2_08",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اُنظُر إلى الصورة وأَكمِّل الكلمة بإضافة الحروف الناقصة",
+      "voix_m": "arabe_niveau2_08_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_08_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hudhud",
+      "texte_ar": "هُدْهُدُ",
+      "voix_m": "arabe_niveau2_08_p4_hudhud_m.mp3",
+      "voix_f": "arabe_niveau2_08_p4_hudhud_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_thaby",
+      "texte_ar": "ظَبْيٌ",
+      "voix_m": "arabe_niveau2_08_p4_thaby_m.mp3",
+      "voix_f": "arabe_niveau2_08_p4_thaby_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_timsah",
+      "texte_ar": "تِمْسَاحٌ",
+      "voix_m": "arabe_niveau2_08_p4_timsah_m.mp3",
+      "voix_f": "arabe_niveau2_08_p4_timsah_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_deek",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "arabe_niveau2_08_p4_deek_m.mp3",
+      "voix_f": "arabe_niveau2_08_p4_deek_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:52:08.513842",
+    "niveau": 2,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau2_08",
+    "bucket_audio": "audio-lessons/niveau2/lecon20/",
+    "nb_audio_assets": 5
+  }
+}

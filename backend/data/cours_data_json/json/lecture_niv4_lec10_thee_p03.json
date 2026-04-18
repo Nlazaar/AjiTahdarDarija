@@ -1,0 +1,246 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices combinés : écriture de mots sous images, complétion de phrases avec des mots donnés, et construction de phrases avec vocabulaire imposé",
+  "titre": {
+    "fr": "J'écris, je complète et je construis des phrases",
+    "ar": "أَكْتُبُ الْكَلِمَةَ - أُكْمِلُ بِمَا يُنَاسِبُ - أُكْمِلُ كِتَابَةَ الْجُمْلَةِ"
+  },
+  "enonce": {
+    "fr": "Exercice 6 : J'écris le mot sous chaque image. Exercice 7 : Je complète les phrases avec le mot qui convient parmi la liste. Exercice 8 : Je complète la phrase en utilisant les mots suivants.",
+    "ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تَحْتَ كُلِّ صُورَةٍ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُعْطَاةِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ثُومٌ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "2",
+      "ar": "ثَلْجٌ",
+      "fr": "neige",
+      "emoji": "❄️"
+    },
+    {
+      "id": "3",
+      "ar": "ثِيَابٌ",
+      "fr": "vêtements",
+      "emoji": "👕"
+    },
+    {
+      "id": "4",
+      "ar": "مُثَلَّثًا",
+      "fr": "un triangle",
+      "emoji": "🔺"
+    },
+    {
+      "id": "5",
+      "ar": "يَحْرُثُ",
+      "fr": "il laboure",
+      "emoji": "🌾"
+    },
+    {
+      "id": "6",
+      "ar": "الثَّعْلَبُ",
+      "fr": "le renard",
+      "emoji": "🦊"
+    },
+    {
+      "id": "7",
+      "ar": "الثَّلْجُ",
+      "fr": "la neige",
+      "emoji": "❄️"
+    },
+    {
+      "id": "8",
+      "ar": "الثِّيَابَ",
+      "fr": "les vêtements",
+      "emoji": "👗"
+    },
+    {
+      "id": "9",
+      "ar": "لَذِيذًا",
+      "fr": "délicieux",
+      "emoji": "😋"
+    },
+    {
+      "id": "10",
+      "ar": "الثُّلَاثَاءِ",
+      "fr": "mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "11",
+      "ar": "بُثَيْنَةُ",
+      "fr": "Buthaina (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "12",
+      "ar": "تَكْوِي الْبِنْتُ",
+      "fr": "la fille repasse",
+      "emoji": "👧"
+    },
+    {
+      "id": "13",
+      "ar": "الْفَلَّاحُ الْأَرْضَ",
+      "fr": "le paysan laboure la terre",
+      "emoji": "👨‍🌾"
+    },
+    {
+      "id": "14",
+      "ar": "يَرْسُمُ الْوَلَدُ",
+      "fr": "le garçon dessine",
+      "emoji": "👦"
+    },
+    {
+      "id": "15",
+      "ar": "يَجْرِي",
+      "fr": "il court",
+      "emoji": "🏃"
+    },
+    {
+      "id": "16",
+      "ar": "يَنْزِلُ",
+      "fr": "il descend / il tombe",
+      "emoji": "⬇️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec10_thee",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 6: أَكْتُبُ الْكَلِمَةَ تَحْتَ كُلِّ صُورَةٍ. تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ. تمرين 8: أُكْمِلُ كِتَابَةَ الْجُمْلَةِ بِاسْتِعْمَالِ الْكَلِمَاتِ الْمُعْطَاةِ.",
+      "voix_m": "lecture_niv4_lec10_thee_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ثُومٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_1_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ثَلْجٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_2_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ثِيَابٌ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_3_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مُثَلَّثًا",
+      "voix_m": "lecture_niv4_lec10_thee_p3_4_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "يَحْرُثُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_5_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "الثَّعْلَبُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_6_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "الثَّلْجُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_7_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "الثِّيَابَ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_8_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "لَذِيذًا",
+      "voix_m": "lecture_niv4_lec10_thee_p3_9_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "الثُّلَاثَاءِ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_10_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "بُثَيْنَةُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_11_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "تَكْوِي الْبِنْتُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_12_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "الْفَلَّاحُ الْأَرْضَ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_13_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "يَرْسُمُ الْوَلَدُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_14_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "يَجْرِي",
+      "voix_m": "lecture_niv4_lec10_thee_p3_15_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "يَنْزِلُ",
+      "voix_m": "lecture_niv4_lec10_thee_p3_16_m.mp3",
+      "voix_f": "lecture_niv4_lec10_thee_p3_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:10:32.970233",
+    "niveau": 4,
+    "lecon": 10,
+    "nom_pdf": "lecture_niv4_lec10_thee",
+    "bucket_audio": "audio-lessons/niveau4/lecon10/",
+    "nb_audio_assets": 17
+  }
+}

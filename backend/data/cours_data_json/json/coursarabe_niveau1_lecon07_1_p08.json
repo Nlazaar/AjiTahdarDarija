@@ -1,0 +1,90 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "Coloriage alterné de séquences d'animaux et complétion d'une suite de formes géométriques",
+  "titre": {
+    "fr": "Colorier en alternance et compléter la suite",
+    "ar": "ألوّن و أكمّل السّلسلة"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je colorie une abeille en jaune et la suivante en marron et je continue ainsi. Ex.7 : Je colorie un oiseau en orange et le suivant en rouge et je continue ainsi. Ex.8 : Je continue la suite en dessinant un cercle ensuite un triangle.",
+    "ar": "٦- ألوّن نحلة بالأصفر و الموالية بالبنّيّ. ٧- ألوّن عصفورًا بالبرتقالي و الموالي بالأحمر. ٨- أكمّل السّلسلة برسم دائرة ثمّ مثلّث"
+  },
+  "elements": [
+    {
+      "id": "exercice_6_abeille",
+      "ar": "نحلة",
+      "fr": "abeille (jaune / marron en alternance)",
+      "emoji": "🐝"
+    },
+    {
+      "id": "exercice_7_oiseau",
+      "ar": "عصفور",
+      "fr": "oiseau (orange / rouge en alternance)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "exercice_8_cercle",
+      "ar": "دائرة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "exercice_8_triangle",
+      "ar": "مثلّث",
+      "fr": "triangle",
+      "emoji": "🔺"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "٦- ألوّن نحلة بالأصفر و الموالية بالبنّيّ. ٧- ألوّن عصفورًا بالبرتقالي و الموالي بالأحمر. ٨- أكمّل السّلسلة برسم دائرة ثمّ مثلّث",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p8_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_6_abeille",
+      "texte_ar": "نحلة",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p8_exercice_6_abeille_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p8_exercice_6_abeille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_7_oiseau",
+      "texte_ar": "عصفور",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p8_exercice_7_oiseau_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p8_exercice_7_oiseau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_8_cercle",
+      "texte_ar": "دائرة",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p8_exercice_8_cercle_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p8_exercice_8_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_8_triangle",
+      "texte_ar": "مثلّث",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p8_exercice_8_triangle_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p8_exercice_8_triangle_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:55:03.704425",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 5
+  }
+}

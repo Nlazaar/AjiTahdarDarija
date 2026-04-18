@@ -1,0 +1,155 @@
+{
+  "page_nb": 37,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "J'entoure les lettres avec prolongation par fatha",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرْفَ المَمْدودَ بِالفَتْح"
+  },
+  "enonce": {
+    "fr": "Entoure dans ces mots les lettres qui ont une prolongation avec fatha",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرْفَ المَمْدودَ بِالفَتْح"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "كِتَابٌ",
+      "fr": "livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "2",
+      "ar": "مَاءٌ",
+      "fr": "eau",
+      "emoji": "💧"
+    },
+    {
+      "id": "3",
+      "ar": "غُرَابٌ",
+      "fr": "corbeau",
+      "emoji": "🐦‍⬛"
+    },
+    {
+      "id": "4",
+      "ar": "ثُعْبَانٌ",
+      "fr": "serpent",
+      "emoji": "🐍"
+    },
+    {
+      "id": "5",
+      "ar": "طَمَاطِمٌ",
+      "fr": "tomates",
+      "emoji": "🍅"
+    },
+    {
+      "id": "6",
+      "ar": "طَائِرَةٌ",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "7",
+      "ar": "فَرَاشَةٌ",
+      "fr": "papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "8",
+      "ar": "مِبْرَاةٌ",
+      "fr": "taille-crayon",
+      "emoji": "✏️"
+    },
+    {
+      "id": "9",
+      "ar": "مِمْحَاةٌ",
+      "fr": "gomme",
+      "emoji": "🧹"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p37_consigne",
+      "texte_ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرْفَ المَمْدودَ بِالفَتْح",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "كِتَابٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَاءٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غُرَابٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثُعْبَانٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَمَاطِمٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "طَائِرَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "مِبْرَاةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "مِمْحَاةٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p37_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p37_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:29:42.687992",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 10
+  }
+}

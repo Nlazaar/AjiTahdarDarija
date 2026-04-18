@@ -1,0 +1,129 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Chanson sur les animaux avec description de chaque animal en vers rimés, accompagnée d'illustrations",
+  "titre": {
+    "fr": "La chanson des animaux",
+    "ar": "أغنية الحيوانات"
+  },
+  "enonce": {
+    "fr": "Lis la chanson des animaux. Chaque animal se présente et décrit où il vit et ce qu'il fait.",
+    "ar": "اقرأ أغنية الحيوانات. كل حيوان يقدم نفسه ويصف أين يعيش وماذا يفعل."
+  },
+  "elements": [
+    {
+      "id": "animal_1",
+      "ar": "غزال",
+      "fr": "Gazelle",
+      "emoji": "🦌"
+    },
+    {
+      "id": "animal_2",
+      "ar": "أسد",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "animal_3",
+      "ar": "فيل",
+      "fr": "Éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "animal_4",
+      "ar": "عصفور",
+      "fr": "Moineau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "animal_5",
+      "ar": "نحل",
+      "fr": "Abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "animal_6",
+      "ar": "عنكبوت",
+      "fr": "Araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "animal_7",
+      "ar": "خنفساء",
+      "fr": "Coccinelle",
+      "emoji": "🐞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اقرأ أغنية الحيوانات. كل حيوان يقدم نفسه ويصف أين يعيش وماذا يفعل.",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_1",
+      "texte_ar": "غزال",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_2",
+      "texte_ar": "أسد",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_3",
+      "texte_ar": "فيل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_4",
+      "texte_ar": "عصفور",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_5",
+      "texte_ar": "نحل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_6",
+      "texte_ar": "عنكبوت",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_animal_7",
+      "texte_ar": "خنفساء",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p1_animal_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p1_animal_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:52:27.935223",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 8
+  }
+}

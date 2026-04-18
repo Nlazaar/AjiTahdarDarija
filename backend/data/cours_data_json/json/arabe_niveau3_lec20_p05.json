@@ -1,0 +1,103 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "Écoute le mot illustré par chaque image et relie-le à la position de la lettre ه (début, milieu ou fin du mot)",
+    "ar": "أَسْمَعُ الْحَرْفَ هـ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة وَأَرْبِطُ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "هُدْهُد",
+      "fr": "Huppe (oiseau)",
+      "emoji": "🐦"
+    },
+    {
+      "id": "2",
+      "ar": "نَهَار",
+      "fr": "Jour/nuit",
+      "emoji": "🌓"
+    },
+    {
+      "id": "3",
+      "ar": "هَدِيَّة",
+      "fr": "Cadeau",
+      "emoji": "🎁"
+    },
+    {
+      "id": "4",
+      "ar": "نَمِر",
+      "fr": "Panthère",
+      "emoji": "🐆"
+    },
+    {
+      "id": "5",
+      "ar": "هَاتِف",
+      "fr": "Téléphone",
+      "emoji": "📞"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec20",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَسْمَعُ الْحَرْفَ هـ فِي أَوَّل أَو وَسَط أَو آخِرِ الْكَلِمَة وَأَرْبِطُ",
+      "voix_m": "arabe_niveau3_lec20_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "هُدْهُد",
+      "voix_m": "arabe_niveau3_lec20_p5_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نَهَار",
+      "voix_m": "arabe_niveau3_lec20_p5_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هَدِيَّة",
+      "voix_m": "arabe_niveau3_lec20_p5_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نَمِر",
+      "voix_m": "arabe_niveau3_lec20_p5_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "هَاتِف",
+      "voix_m": "arabe_niveau3_lec20_p5_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec20_p5_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:53:11.518509",
+    "niveau": 3,
+    "lecon": 20,
+    "nom_pdf": "arabe_niveau3_lec20",
+    "bucket_audio": "audio-lessons/niveau3/lecon20/",
+    "nb_audio_assets": 6
+  }
+}

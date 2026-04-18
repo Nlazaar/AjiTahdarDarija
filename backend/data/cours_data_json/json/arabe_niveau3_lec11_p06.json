@@ -1,0 +1,116 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Je dessine une balle sous la table et un livre dessus",
+    "ar": "أَرْسُمُ كُرَةً تَحْتَ الطَّاوِلَةِ وَ كِتَابًا فَوْقَهَا"
+  },
+  "enonce": {
+    "fr": "Lis les phrases en arabe : où est le chat ? où est la balle ? où est le livre ?",
+    "ar": "اِقْرَأِ الْجُمَلَ : أَيْنَ الْقِطَّةُ ؟ أَيْنَ الْكُرَةُ ؟ أَيْنَ الْكِتَابُ ؟"
+  },
+  "elements": [
+    {
+      "id": "phrase_1",
+      "ar": "أَيْنَ الْقِطَّةُ ؟",
+      "fr": "Où est le chat ?",
+      "emoji": "🐱"
+    },
+    {
+      "id": "reponse_1",
+      "ar": "الْقِطَّةُ فَوْقَ الْكُرْسِيّ",
+      "fr": "Le chat est sur la chaise",
+      "emoji": "🪑"
+    },
+    {
+      "id": "phrase_2",
+      "ar": "أَيْنَ الْكُرَةُ ؟",
+      "fr": "Où est la balle ?",
+      "emoji": "⚽"
+    },
+    {
+      "id": "phrase_3",
+      "ar": "أَيْنَ الْكِتَابُ ؟",
+      "fr": "Où est le livre ?",
+      "emoji": "📖"
+    },
+    {
+      "id": "objet_table",
+      "ar": "الطَّاوِلَة",
+      "fr": "la table",
+      "emoji": "🪵"
+    },
+    {
+      "id": "objet_chaise",
+      "ar": "الْكُرْسِيّ",
+      "fr": "la chaise",
+      "emoji": "🪑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec11",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اِقْرَأِ الْجُمَلَ : أَيْنَ الْقِطَّةُ ؟ أَيْنَ الْكُرَةُ ؟ أَيْنَ الْكِتَابُ ؟",
+      "voix_m": "arabe_niveau3_lec11_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "أَيْنَ الْقِطَّةُ ؟",
+      "voix_m": "arabe_niveau3_lec11_p6_phrase_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_reponse_1",
+      "texte_ar": "الْقِطَّةُ فَوْقَ الْكُرْسِيّ",
+      "voix_m": "arabe_niveau3_lec11_p6_reponse_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_reponse_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_2",
+      "texte_ar": "أَيْنَ الْكُرَةُ ؟",
+      "voix_m": "arabe_niveau3_lec11_p6_phrase_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_phrase_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_3",
+      "texte_ar": "أَيْنَ الْكِتَابُ ؟",
+      "voix_m": "arabe_niveau3_lec11_p6_phrase_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_phrase_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_objet_table",
+      "texte_ar": "الطَّاوِلَة",
+      "voix_m": "arabe_niveau3_lec11_p6_objet_table_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_objet_table_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_objet_chaise",
+      "texte_ar": "الْكُرْسِيّ",
+      "voix_m": "arabe_niveau3_lec11_p6_objet_chaise_m.mp3",
+      "voix_f": "arabe_niveau3_lec11_p6_objet_chaise_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:41:38.004215",
+    "niveau": 3,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau3_lec11",
+    "bucket_audio": "audio-lessons/niveau3/lecon11/",
+    "nb_audio_assets": 7
+  }
+}

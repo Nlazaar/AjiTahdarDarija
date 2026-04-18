@@ -1,0 +1,155 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أُلَوِّنُ الْحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres و comme dans le mot مَوْز (banane)",
+    "ar": "لَوِّنْ حَرْفَ الْوَاوِ فَقَطْ كَمَا فِي كَلِمَةِ مَوْز"
+  },
+  "elements": [
+    {
+      "id": "cible",
+      "ar": "و",
+      "fr": "lettre waw (à colorier)",
+      "emoji": "🟡"
+    },
+    {
+      "id": "distracteur_1",
+      "ar": "ر",
+      "fr": "lettre ra",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_2",
+      "ar": "ز",
+      "fr": "lettre zay",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_3",
+      "ar": "ل",
+      "fr": "lettre lam",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_4",
+      "ar": "ي",
+      "fr": "lettre ya",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_5",
+      "ar": "ت",
+      "fr": "lettre ta",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_6",
+      "ar": "س",
+      "fr": "lettre sin",
+      "emoji": "⬜"
+    },
+    {
+      "id": "distracteur_7",
+      "ar": "ع",
+      "fr": "lettre ain",
+      "emoji": "⬜"
+    },
+    {
+      "id": "mot_exemple",
+      "ar": "موز",
+      "fr": "banane",
+      "emoji": "🍌"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon10",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ الْوَاوِ فَقَطْ كَمَا فِي كَلِمَةِ مَوْز",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cible",
+      "texte_ar": "و",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_1",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_2",
+      "texte_ar": "ز",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_3",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_4",
+      "texte_ar": "ي",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_5",
+      "texte_ar": "ت",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_6",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_7",
+      "texte_ar": "ع",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_distracteur_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_distracteur_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_exemple",
+      "texte_ar": "موز",
+      "voix_m": "coursarabe_niveau1_lecon10_p5_mot_exemple_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon10_p5_mot_exemple_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:22:19.184261",
+    "niveau": 1,
+    "lecon": 3,
+    "nom_pdf": "coursarabe_niveau1_lecon10",
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 10
+  }
+}

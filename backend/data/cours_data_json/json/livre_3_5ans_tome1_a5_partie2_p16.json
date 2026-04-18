@@ -1,0 +1,116 @@
+{
+  "page_nb": 16,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie le clown à ce qu'il utilise dans ses jeux",
+    "ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ"
+  },
+  "enonce": {
+    "fr": "Relie le clown uniquement aux objets qu'il utilise dans ses jeux",
+    "ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ"
+  },
+  "elements": [
+    {
+      "id": "clown",
+      "ar": "مُهَرِّج",
+      "fr": "clown",
+      "emoji": "🤡"
+    },
+    {
+      "id": "ballons",
+      "ar": "بَالُونَات",
+      "fr": "ballons",
+      "emoji": "🎈"
+    },
+    {
+      "id": "chapeau",
+      "ar": "قُبَّعَة",
+      "fr": "chapeau de fête",
+      "emoji": "🎉"
+    },
+    {
+      "id": "fourchette",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "ballon_rond",
+      "ar": "كُرَة",
+      "fr": "balle",
+      "emoji": "🎾"
+    },
+    {
+      "id": "couteau",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p16_consigne",
+      "texte_ar": "أَرْبِطُ الْمُهَرِّجَ بِمَا يَسْتَعْمِلُهُ فِي أَلْعَابِهِ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_clown",
+      "texte_ar": "مُهَرِّج",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_clown_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_clown_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballons",
+      "texte_ar": "بَالُونَات",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_ballons_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_ballons_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chapeau",
+      "texte_ar": "قُبَّعَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_chapeau_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_chapeau_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fourchette",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_fourchette_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_fourchette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ballon_rond",
+      "texte_ar": "كُرَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_ballon_rond_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_ballon_rond_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_couteau",
+      "texte_ar": "سِكِّين",
+      "voix_m": "livre_3_5ans_tome1_a5_partie2_p16_couteau_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie2_p16_couteau_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:30:53.575181",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Découper et coller chaque forme colorée sur son ombre correspondante",
+  "titre": {
+    "fr": "Je colle chaque objet sur son ombre",
+    "ar": "أَلْصِقُ كُلَّ شَكْلٍ فَوْقَ ظِلِّهِ"
+  },
+  "enonce": {
+    "fr": "Découpe les images du bas et colle chaque objet sur l'ombre qui lui correspond dans la partie du haut.",
+    "ar": "اقْطَعِ الصُّوَرَ السُّفْلِيَّةَ وَأَلْصِقْ كُلَّ شَكْلٍ فَوْقَ ظِلِّهِ فِي الْجُزْءِ الْعُلْوِيِّ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "وَرَقَةٌ خَضْرَاءُ صَغِيرَةٌ",
+      "fr": "Petite feuille verte (trèfle)",
+      "emoji": "🍀"
+    },
+    {
+      "id": "2",
+      "ar": "وَرَقَةٌ خَضْرَاءُ كَبِيرَةٌ",
+      "fr": "Grande feuille verte (chêne)",
+      "emoji": "🍃"
+    },
+    {
+      "id": "3",
+      "ar": "هِلَالٌ",
+      "fr": "Croissant de lune",
+      "emoji": "🌙"
+    },
+    {
+      "id": "4",
+      "ar": "نَجْمَةٌ",
+      "fr": "Étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "5",
+      "ar": "فَرَاشَةٌ",
+      "fr": "Papillon",
+      "emoji": "🦋"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon01_2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "اقْطَعِ الصُّوَرَ السُّفْلِيَّةَ وَأَلْصِقْ كُلَّ شَكْلٍ فَوْقَ ظِلِّهِ فِي الْجُزْءِ الْعُلْوِيِّ.",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "وَرَقَةٌ خَضْرَاءُ صَغِيرَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "وَرَقَةٌ خَضْرَاءُ كَبِيرَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "هِلَالٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "نَجْمَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "فَرَاشَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p4_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p4_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:39:01.709196",
+    "niveau": 1,
+    "lecon": 31,
+    "nom_pdf": "coursarabe_niveau1_lecon01_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon31/",
+    "nb_audio_assets": 6
+  }
+}

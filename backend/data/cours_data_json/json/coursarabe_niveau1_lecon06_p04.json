@@ -1,0 +1,103 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer le mot cible parmi des distracteurs",
+  "titre": {
+    "fr": "J'entoure le mot",
+    "ar": "أُحيطُ الكَلِمَةَ بِخَطٍّ مُغْلَق"
+  },
+  "enonce": {
+    "fr": "Entoure le mot 'lapin' (أرنب) chaque fois que tu le vois parmi les autres mots.",
+    "ar": "أحِط كلمة (أرنب) في كل مرة تراها بين الكلمات الأخرى."
+  },
+  "elements": [
+    {
+      "id": "mot_cible",
+      "ar": "أرنب",
+      "fr": "lapin",
+      "emoji": "🐇"
+    },
+    {
+      "id": "distracteur_1",
+      "ar": "دجاجة",
+      "fr": "poule",
+      "emoji": "🐔"
+    },
+    {
+      "id": "distracteur_2",
+      "ar": "أسد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "distracteur_3",
+      "ar": "دار",
+      "fr": "maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "distracteur_4",
+      "ar": "أرانب",
+      "fr": "lapins (pluriel)",
+      "emoji": "🐇"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon06",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أحِط كلمة (أرنب) في كل مرة تراها بين الكلمات الأخرى.",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_cible",
+      "texte_ar": "أرنب",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_mot_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_mot_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_1",
+      "texte_ar": "دجاجة",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_distracteur_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_distracteur_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_2",
+      "texte_ar": "أسد",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_distracteur_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_distracteur_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_3",
+      "texte_ar": "دار",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_distracteur_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_distracteur_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_4",
+      "texte_ar": "أرانب",
+      "voix_m": "coursarabe_niveau1_lecon06_p4_distracteur_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon06_p4_distracteur_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:51:04.867164",
+    "niveau": 1,
+    "lecon": 35,
+    "nom_pdf": "coursarabe_niveau1_lecon06",
+    "bucket_audio": "audio-lessons/niveau1/lecon35/",
+    "nb_audio_assets": 6
+  }
+}

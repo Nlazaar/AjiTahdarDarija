@@ -1,0 +1,246 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, écriture de lettre, compléter mots avec la lettre جيم",
+  "titre": {
+    "fr": "La lettre Jim (ج) - Lecture, écriture et complétion",
+    "ar": "حرف الجيم - قراءة وكتابة وإكمال"
+  },
+  "enonce": {
+    "fr": "Ex.3: Je lis le mot et je le relie à son image. Ex.4: J'écris la lettre jim. Ex.5: Je complète les mots avec la forme appropriée de la lettre jim.",
+    "ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الجيم. تمرين 5: أكمل بما يناسب."
+  },
+  "elements": [
+    {
+      "id": "ex3_1",
+      "ar": "جَزِيرَةٌ",
+      "fr": "Île",
+      "emoji": "🏝️"
+    },
+    {
+      "id": "ex3_2",
+      "ar": "جَزَرٌ",
+      "fr": "Carottes",
+      "emoji": "🥕"
+    },
+    {
+      "id": "ex3_3",
+      "ar": "جِذْعٌ",
+      "fr": "Tronc",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex3_4",
+      "ar": "مَوْجَةٌ",
+      "fr": "Vague",
+      "emoji": "🌊"
+    },
+    {
+      "id": "ex3_5",
+      "ar": "دَجَاجَةٌ",
+      "fr": "Poule",
+      "emoji": "🐓"
+    },
+    {
+      "id": "ex3_6",
+      "ar": "جَرَسٌ",
+      "fr": "Cloche",
+      "emoji": "🔔"
+    },
+    {
+      "id": "ex4_1",
+      "ar": "ج",
+      "fr": "Jim isolée",
+      "emoji": "✍️"
+    },
+    {
+      "id": "ex5_1",
+      "ar": "جِسْرٌ",
+      "fr": "Pont",
+      "emoji": "🌉"
+    },
+    {
+      "id": "ex5_2",
+      "ar": "نَجْمٌ",
+      "fr": "Étoile",
+      "emoji": "⭐"
+    },
+    {
+      "id": "ex5_3",
+      "ar": "شَجَرَةٌ",
+      "fr": "Arbre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex5_4",
+      "ar": "تَاجٌ",
+      "fr": "Couronne",
+      "emoji": "👑"
+    },
+    {
+      "id": "ex5_5",
+      "ar": "جَمَلٌ",
+      "fr": "Chameau",
+      "emoji": "🐪"
+    },
+    {
+      "id": "ex5_6",
+      "ar": "جُذُورٌ",
+      "fr": "Racines",
+      "emoji": "🌱"
+    },
+    {
+      "id": "ex5_7",
+      "ar": "سَجَّادَةٌ",
+      "fr": "Tapis de prière",
+      "emoji": "🟥"
+    },
+    {
+      "id": "ex5_8",
+      "ar": "وَجْهُهُ",
+      "fr": "Visage",
+      "emoji": "😊"
+    },
+    {
+      "id": "ex5_9",
+      "ar": "أَحْجَارٌ",
+      "fr": "Pierres",
+      "emoji": "💎"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv5_lec01_02_jime",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "تمرين 3: أقرأ الكلمة ثم أربطها بصورتها. تمرين 4: أكتب حرف الجيم. تمرين 5: أكمل بما يناسب.",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_1",
+      "texte_ar": "جَزِيرَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_2",
+      "texte_ar": "جَزَرٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_3",
+      "texte_ar": "جِذْعٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_4",
+      "texte_ar": "مَوْجَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_5",
+      "texte_ar": "دَجَاجَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex3_6",
+      "texte_ar": "جَرَسٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex3_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex4_1",
+      "texte_ar": "ج",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex4_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_1",
+      "texte_ar": "جِسْرٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_1_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_2",
+      "texte_ar": "نَجْمٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_2_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_3",
+      "texte_ar": "شَجَرَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_3_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_4",
+      "texte_ar": "تَاجٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_4_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_5",
+      "texte_ar": "جَمَلٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_5_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_6",
+      "texte_ar": "جُذُورٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_6_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_7",
+      "texte_ar": "سَجَّادَةٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_7_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_8",
+      "texte_ar": "وَجْهُهُ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_8_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex5_9",
+      "texte_ar": "أَحْجَارٌ",
+      "voix_m": "lecture_niv5_lec01_02_jime_p2_ex5_9_m.mp3",
+      "voix_f": "lecture_niv5_lec01_02_jime_p2_ex5_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:15:16.577346",
+    "niveau": 1,
+    "lecon": 1,
+    "nom_pdf": "lecture_niv5_lec01_02_jime",
+    "bucket_audio": "audio-lessons/niveau1/lecon01/",
+    "nb_audio_assets": 17
+  }
+}

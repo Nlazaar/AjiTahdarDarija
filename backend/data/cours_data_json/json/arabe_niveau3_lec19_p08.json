@@ -1,0 +1,116 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète le mot avec la lettre manquante",
+    "ar": "أكمِّل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la bonne forme de la lettre كاف (ك / ك / ك)",
+    "ar": "أكمِّل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شَوْكَةٌ",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "2",
+      "ar": "كأسٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "3",
+      "ar": "كُرَّةٌ",
+      "fr": "ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "4",
+      "ar": "دِيكٌ",
+      "fr": "coq",
+      "emoji": "🐓"
+    },
+    {
+      "id": "5",
+      "ar": "سِكِّينٌ",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "6",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "🧺"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec19",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "أكمِّل الْكَلِمَة بِالْحَرْفِ النَّاقِصِ",
+      "voix_m": "arabe_niveau3_lec19_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شَوْكَةٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كأسٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "كُرَّةٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "دِيكٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "سِكِّينٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "arabe_niveau3_lec19_p8_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec19_p8_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:52:11.391456",
+    "niveau": 3,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau3_lec19",
+    "bucket_audio": "audio-lessons/niveau3/lecon19/",
+    "nb_audio_assets": 7
+  }
+}

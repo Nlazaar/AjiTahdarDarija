@@ -1,0 +1,194 @@
+{
+  "page_nb": 96,
+  "type": "cours",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "La Chadda - Leçon 14",
+    "ar": "الشَّدَّة - الدَّرْسُ 14"
+  },
+  "enonce": {
+    "fr": "Lis à voix haute les mots suivants qui contiennent la chadda (doublement de la lettre)",
+    "ar": "اقْرَأْ الكَلِمَاتِ الآتِيَةَ الَّتِي تَحْتَوِي عَلَى الشَّدَّة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "فَرَّ",
+      "fr": "il s'est enfui",
+      "emoji": "🏃"
+    },
+    {
+      "id": "2",
+      "ar": "مَرَّ",
+      "fr": "il est passé",
+      "emoji": "🚶"
+    },
+    {
+      "id": "3",
+      "ar": "مَدَّ",
+      "fr": "il a étendu",
+      "emoji": "✋"
+    },
+    {
+      "id": "4",
+      "ar": "أَسَرَّ",
+      "fr": "il a confié un secret",
+      "emoji": "🤫"
+    },
+    {
+      "id": "5",
+      "ar": "رَدَّ",
+      "fr": "il a répondu/rendu",
+      "emoji": "↩️"
+    },
+    {
+      "id": "6",
+      "ar": "سَدَّ",
+      "fr": "il a bouché",
+      "emoji": "🔒"
+    },
+    {
+      "id": "7",
+      "ar": "أَقَرَّ",
+      "fr": "il a reconnu",
+      "emoji": "✅"
+    },
+    {
+      "id": "8",
+      "ar": "حَدَّ",
+      "fr": "limite/frontière",
+      "emoji": "📏"
+    },
+    {
+      "id": "9",
+      "ar": "قَصَّ",
+      "fr": "il a coupé/raconté",
+      "emoji": "✂️"
+    },
+    {
+      "id": "10",
+      "ar": "حَطَّ",
+      "fr": "il a posé",
+      "emoji": "📦"
+    },
+    {
+      "id": "11",
+      "ar": "رَقَّ",
+      "fr": "il s'est attendri",
+      "emoji": "💓"
+    },
+    {
+      "id": "12",
+      "ar": "دَقَّ",
+      "fr": "il a frappé",
+      "emoji": "🔔"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p96_consigne",
+      "texte_ar": "اقْرَأْ الكَلِمَاتِ الآتِيَةَ الَّتِي تَحْتَوِي عَلَى الشَّدَّة",
+      "voix_m": "livre_arabe_niveau3_p96_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "فَرَّ",
+      "voix_m": "livre_arabe_niveau3_p96_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَرَّ",
+      "voix_m": "livre_arabe_niveau3_p96_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مَدَّ",
+      "voix_m": "livre_arabe_niveau3_p96_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَسَرَّ",
+      "voix_m": "livre_arabe_niveau3_p96_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "رَدَّ",
+      "voix_m": "livre_arabe_niveau3_p96_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "سَدَّ",
+      "voix_m": "livre_arabe_niveau3_p96_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أَقَرَّ",
+      "voix_m": "livre_arabe_niveau3_p96_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "حَدَّ",
+      "voix_m": "livre_arabe_niveau3_p96_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "قَصَّ",
+      "voix_m": "livre_arabe_niveau3_p96_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "حَطَّ",
+      "voix_m": "livre_arabe_niveau3_p96_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "رَقَّ",
+      "voix_m": "livre_arabe_niveau3_p96_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "دَقَّ",
+      "voix_m": "livre_arabe_niveau3_p96_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p96_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:13:32.754668",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 13
+  }
+}

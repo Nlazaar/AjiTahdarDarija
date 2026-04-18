@@ -1,0 +1,194 @@
+{
+  "page_nb": 28,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Barre les erreurs",
+    "ar": "أَشْطُبُ الخَطَأَ"
+  },
+  "enonce": {
+    "fr": "Observe le mot modèle avec l'image, puis barre les mots qui sont écrits différemment (les erreurs).",
+    "ar": "انظر إلى الكلمة النموذج مع الصورة، ثم اشطب الكلمات المكتوبة بشكل مختلف (الأخطاء)."
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (modèle correct)",
+      "emoji": "👗"
+    },
+    {
+      "id": "erreur_1a",
+      "ar": "بُسْتَانٌ",
+      "fr": "robe (erreur - ب au lieu de ف)",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_1a",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_1b",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "erreur_1b",
+      "ar": "بُهْتَانٌ",
+      "fr": "robe (erreur - بهتان)",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_1c",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "modele_2",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (modèle correct)",
+      "emoji": "👟"
+    },
+    {
+      "id": "correct_2a",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "erreur_2a",
+      "ar": "غِذَاءٌ",
+      "fr": "chaussure (erreur - غ au lieu de ح)",
+      "emoji": "❌"
+    },
+    {
+      "id": "correct_2b",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "correct_2c",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure (correct)",
+      "emoji": "✅"
+    },
+    {
+      "id": "erreur_2b",
+      "ar": "غَـذَاءٌ",
+      "fr": "chaussure (erreur - غ au lieu de ح)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p28_consigne",
+      "texte_ar": "انظر إلى الكلمة النموذج مع الصورة، ثم اشطب الكلمات المكتوبة بشكل مختلف (الأخطاء).",
+      "voix_m": "livre_3_5ans_tome2_p28_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_modele_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_erreur_1a",
+      "texte_ar": "بُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_erreur_1a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_erreur_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1a",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_1a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_1a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1b",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_1b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_erreur_1b",
+      "texte_ar": "بُهْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_erreur_1b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_erreur_1b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_1c",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_1c_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_1c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_modele_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_2a",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_2a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_erreur_2a",
+      "texte_ar": "غِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_erreur_2a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_erreur_2a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_2b",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_2b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_2b_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_correct_2c",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_correct_2c_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_correct_2c_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_erreur_2b",
+      "texte_ar": "غَـذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_p28_erreur_2b_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p28_erreur_2b_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:04.522513",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 13
+  }
+}

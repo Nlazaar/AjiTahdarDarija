@@ -1,0 +1,77 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colle des autocollants dans chaque carré",
+    "ar": "أَلصِقُ مُلصَقَاتٍ داخِلَ كُلِّ مُرَبَّع"
+  },
+  "enonce": {
+    "fr": "Colle des autocollants à l'intérieur de chaque carré",
+    "ar": "أَلصِقُ مُلصَقَاتٍ داخِلَ كُلِّ مُرَبَّع"
+  },
+  "elements": [
+    {
+      "id": "forme_carre",
+      "ar": "مُرَبَّع",
+      "fr": "carré",
+      "emoji": "⬜"
+    },
+    {
+      "id": "forme_cercle",
+      "ar": "دَائِرَة",
+      "fr": "cercle",
+      "emoji": "⭕"
+    },
+    {
+      "id": "forme_triangle",
+      "ar": "مُثَلَّث",
+      "fr": "triangle",
+      "emoji": "🔺"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أَلصِقُ مُلصَقَاتٍ داخِلَ كُلِّ مُرَبَّع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p5_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_carre",
+      "texte_ar": "مُرَبَّع",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p5_forme_carre_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p5_forme_carre_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_cercle",
+      "texte_ar": "دَائِرَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p5_forme_cercle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p5_forme_cercle_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_triangle",
+      "texte_ar": "مُثَلَّث",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p5_forme_triangle_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p5_forme_triangle_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:25:07.316503",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Je colle chaque image dans son groupe et je la nomme",
+    "ar": "أُلْصِقُ كُلَّ صُورَةٍ فِي المَجْمُوعَةِ الخَاصَّةِ بِهَا وَ أُسَمِّيهَا"
+  },
+  "enonce": {
+    "fr": "Colle chaque image dans la bonne case et nomme-la en arabe (هَذِه / هَذَا + nom du transport)",
+    "ar": "أُلْصِقُ كُلَّ صُورَةٍ فِي المَجْمُوعَةِ الخَاصَّةِ بِهَا وَ أُسَمِّيهَا"
+  },
+  "elements": [
+    {
+      "id": "avion",
+      "ar": "هَذِهِ طَائِرَةٌ",
+      "fr": "C'est un avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "bus",
+      "ar": "هَذِهِ حَافِلَةٌ",
+      "fr": "C'est un bus",
+      "emoji": "🚌"
+    },
+    {
+      "id": "voiture",
+      "ar": "هَذِهِ سَيَّارَةٌ",
+      "fr": "C'est une voiture",
+      "emoji": "🚗"
+    },
+    {
+      "id": "train",
+      "ar": "هَذَا قِطَارٌ",
+      "fr": "C'est un train",
+      "emoji": "🚂"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أُلْصِقُ كُلَّ صُورَةٍ فِي المَجْمُوعَةِ الخَاصَّةِ بِهَا وَ أُسَمِّيهَا",
+      "voix_m": "arabe_niveau2_05_1_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion",
+      "texte_ar": "هَذِهِ طَائِرَةٌ",
+      "voix_m": "arabe_niveau2_05_1_p2_avion_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p2_avion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_bus",
+      "texte_ar": "هَذِهِ حَافِلَةٌ",
+      "voix_m": "arabe_niveau2_05_1_p2_bus_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p2_bus_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_voiture",
+      "texte_ar": "هَذِهِ سَيَّارَةٌ",
+      "voix_m": "arabe_niveau2_05_1_p2_voiture_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p2_voiture_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train",
+      "texte_ar": "هَذَا قِطَارٌ",
+      "voix_m": "arabe_niveau2_05_1_p2_train_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p2_train_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:44:11.509583",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 5
+  }
+}

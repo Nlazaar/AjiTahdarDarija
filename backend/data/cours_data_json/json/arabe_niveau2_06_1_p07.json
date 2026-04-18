@@ -1,0 +1,64 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Observe le mot et l'image, puis colorie uniquement les lettres qui composent le mot parmi les lettres proposées.",
+    "ar": "اُنْظُرْ إِلَى الكَلِمَةِ وَالصُّورَةِ، ثُمَّ لَوِّنْ حُرُوفَ الكَلِمَةِ فَقَطْ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "mot_2",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_06_1",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى الكَلِمَةِ وَالصُّورَةِ، ثُمَّ لَوِّنْ حُرُوفَ الكَلِمَةِ فَقَطْ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ.",
+      "voix_m": "arabe_niveau2_06_1_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "arabe_niveau2_06_1_p7_mot_1_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p7_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "سِكِّين",
+      "voix_m": "arabe_niveau2_06_1_p7_mot_2_m.mp3",
+      "voix_f": "arabe_niveau2_06_1_p7_mot_2_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:48:21.768759",
+    "niveau": 2,
+    "lecon": 17,
+    "nom_pdf": "arabe_niveau2_06_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon17/",
+    "nb_audio_assets": 3
+  }
+}

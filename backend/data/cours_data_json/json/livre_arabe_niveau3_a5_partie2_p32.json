@@ -1,0 +1,207 @@
+{
+  "page_nb": 32,
+  "type": "exercice",
+  "mecanique": "lecture_phrase",
+  "titre": {
+    "fr": "Lecture de phrases et de mots arabes – Leçon 20",
+    "ar": "قراءة الجمل والكلمات العربية – الدرس 20"
+  },
+  "enonce": {
+    "fr": "Lis les phrases et les mots suivants à voix haute",
+    "ar": "اقرأ الجمل والكلمات التالية بصوت عالٍ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "زَيْنَبُ تَلْعَبُ مَعَ أَخِيهَا بِالدَّرَاجَةِ",
+      "fr": "Zaynab joue avec son frère à vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "2",
+      "ar": "مَعَ أَخِيهَا زَيْنَبُ تَقْرَأُ كِتَابًا",
+      "fr": "Avec son frère, Zaynab lit un livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "3",
+      "ar": "زُونُ جَةُ شَةُ نُ تُونُ",
+      "fr": "Syllabes : zou-na-cha-na-tou-nou",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "بَانُ بُ دَةُ ـةُ",
+      "fr": "Syllabes : ba-nou-bou-da-toun",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "مَوْزُ",
+      "fr": "Banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "6",
+      "ar": "زَيْتُ",
+      "fr": "Huile",
+      "emoji": "🫙"
+    },
+    {
+      "id": "7",
+      "ar": "أَسَدُ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "8",
+      "ar": "حُوتُ",
+      "fr": "Poisson/baleine",
+      "emoji": "🐟"
+    },
+    {
+      "id": "9",
+      "ar": "عِنَبُ",
+      "fr": "Raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "10",
+      "ar": "خُبْزُ",
+      "fr": "Pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "11",
+      "ar": "أَرْنَبُ",
+      "fr": "Lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "12",
+      "ar": "ثُوْمُ",
+      "fr": "Ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "13",
+      "ar": "صَحْنُ",
+      "fr": "Assiette",
+      "emoji": "🍽️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p32_consigne",
+      "texte_ar": "اقرأ الجمل والكلمات التالية بصوت عالٍ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "زَيْنَبُ تَلْعَبُ مَعَ أَخِيهَا بِالدَّرَاجَةِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "مَعَ أَخِيهَا زَيْنَبُ تَقْرَأُ كِتَابًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "زُونُ جَةُ شَةُ نُ تُونُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "بَانُ بُ دَةُ ـةُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مَوْزُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "زَيْتُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أَسَدُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "حُوتُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "عِنَبُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "خُبْزُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "أَرْنَبُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ثُوْمُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "صَحْنُ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p32_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p32_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:35:55.447075",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 14
+  }
+}

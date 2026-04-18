@@ -1,0 +1,350 @@
+{
+  "page_nb": 146,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Leçon 20 – Reconstituer des phrases et des mots",
+    "ar": "الدرس 20 – ترتيب الكلمات وتركيب الجمل"
+  },
+  "enonce": {
+    "fr": "Découpe les étiquettes et reconstitue les phrases ou les mots dans le bon ordre.",
+    "ar": "قصّ البطاقات ورتّب الكلمات لتكوين جمل صحيحة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "زَيْنَبُ",
+      "fr": "Zaynab",
+      "emoji": "👧"
+    },
+    {
+      "id": "2",
+      "ar": "بِالدَّرَاجَةِ",
+      "fr": "à vélo",
+      "emoji": "🚲"
+    },
+    {
+      "id": "3",
+      "ar": "مَعَ أَخِيهَا",
+      "fr": "avec son frère",
+      "emoji": "👦"
+    },
+    {
+      "id": "4",
+      "ar": "تَلْعَبُ",
+      "fr": "joue",
+      "emoji": "🎮"
+    },
+    {
+      "id": "5",
+      "ar": "تَقْرَأُ",
+      "fr": "lit",
+      "emoji": "📖"
+    },
+    {
+      "id": "6",
+      "ar": "كِتَابًا",
+      "fr": "un livre",
+      "emoji": "📚"
+    },
+    {
+      "id": "7",
+      "ar": "زُرُونُ",
+      "fr": "zourou (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "جَةٌ",
+      "fr": "ja (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "شَةٌ",
+      "fr": "cha (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "نْ",
+      "fr": "n (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "تُونُ",
+      "fr": "toun (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "بَانُ",
+      "fr": "banu (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "بُ",
+      "fr": "bu (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "دَةٌ",
+      "fr": "da (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "15",
+      "ar": "ـةٌ",
+      "fr": "a (syllabe)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "16",
+      "ar": "مَوْزُ",
+      "fr": "banane",
+      "emoji": "🍌"
+    },
+    {
+      "id": "17",
+      "ar": "زَيْتُ",
+      "fr": "huile",
+      "emoji": "🫒"
+    },
+    {
+      "id": "18",
+      "ar": "أَسَدُ",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "19",
+      "ar": "حُوتُ",
+      "fr": "poisson",
+      "emoji": "🐟"
+    },
+    {
+      "id": "20",
+      "ar": "عِنَبُ",
+      "fr": "raisin",
+      "emoji": "🍇"
+    },
+    {
+      "id": "21",
+      "ar": "خُبْزُ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "22",
+      "ar": "أَرْنَبُ",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "23",
+      "ar": "ثَوْمُ",
+      "fr": "ail",
+      "emoji": "🧄"
+    },
+    {
+      "id": "24",
+      "ar": "صَحْنُ",
+      "fr": "assiette",
+      "emoji": "🍽️"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p146_consigne",
+      "texte_ar": "قصّ البطاقات ورتّب الكلمات لتكوين جمل صحيحة.",
+      "voix_m": "livre_arabe_niveau3_p146_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "زَيْنَبُ",
+      "voix_m": "livre_arabe_niveau3_p146_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بِالدَّرَاجَةِ",
+      "voix_m": "livre_arabe_niveau3_p146_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مَعَ أَخِيهَا",
+      "voix_m": "livre_arabe_niveau3_p146_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تَلْعَبُ",
+      "voix_m": "livre_arabe_niveau3_p146_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "تَقْرَأُ",
+      "voix_m": "livre_arabe_niveau3_p146_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "كِتَابًا",
+      "voix_m": "livre_arabe_niveau3_p146_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "زُرُونُ",
+      "voix_m": "livre_arabe_niveau3_p146_7_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "جَةٌ",
+      "voix_m": "livre_arabe_niveau3_p146_8_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "شَةٌ",
+      "voix_m": "livre_arabe_niveau3_p146_9_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "نْ",
+      "voix_m": "livre_arabe_niveau3_p146_10_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "تُونُ",
+      "voix_m": "livre_arabe_niveau3_p146_11_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "بَانُ",
+      "voix_m": "livre_arabe_niveau3_p146_12_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "بُ",
+      "voix_m": "livre_arabe_niveau3_p146_13_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "دَةٌ",
+      "voix_m": "livre_arabe_niveau3_p146_14_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ـةٌ",
+      "voix_m": "livre_arabe_niveau3_p146_15_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "مَوْزُ",
+      "voix_m": "livre_arabe_niveau3_p146_16_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "زَيْتُ",
+      "voix_m": "livre_arabe_niveau3_p146_17_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "أَسَدُ",
+      "voix_m": "livre_arabe_niveau3_p146_18_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "حُوتُ",
+      "voix_m": "livre_arabe_niveau3_p146_19_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "عِنَبُ",
+      "voix_m": "livre_arabe_niveau3_p146_20_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "خُبْزُ",
+      "voix_m": "livre_arabe_niveau3_p146_21_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "أَرْنَبُ",
+      "voix_m": "livre_arabe_niveau3_p146_22_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_23",
+      "texte_ar": "ثَوْمُ",
+      "voix_m": "livre_arabe_niveau3_p146_23_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_24",
+      "texte_ar": "صَحْنُ",
+      "voix_m": "livre_arabe_niveau3_p146_24_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p146_24_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:22:19.127599",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 25
+  }
+}

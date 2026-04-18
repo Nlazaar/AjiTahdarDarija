@@ -1,0 +1,103 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je dessine un garçon à côté du chat",
+    "ar": "أَرْسُمُ وَلَدًا بِجَانِبِ الْقِطَّةِ"
+  },
+  "enonce": {
+    "fr": "Je relie selon que j'entends la lettre : au début, au milieu ou à la fin du mot. Lis les phrases et dessine le garçon à côté du chat selon les indications de position.",
+    "ar": "أَيْنَ الْقِطَّةُ؟ الْقِطَّةُ أَمَامَ الدَّارِ. أَيْنَ الْوَلَدُ؟ أَيْنَ الشَّجَرَةُ؟"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَمَامَ الدَّارِ",
+      "fr": "devant la maison",
+      "emoji": "🏠"
+    },
+    {
+      "id": "2",
+      "ar": "وَرَاءَ الدَّارِ",
+      "fr": "derrière la maison",
+      "emoji": "🌳"
+    },
+    {
+      "id": "3",
+      "ar": "الْقِطَّةُ",
+      "fr": "le chat",
+      "emoji": "🐱"
+    },
+    {
+      "id": "4",
+      "ar": "الْوَلَدُ",
+      "fr": "le garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "5",
+      "ar": "الشَّجَرَةُ",
+      "fr": "l'arbre",
+      "emoji": "🌲"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec12",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "أَيْنَ الْقِطَّةُ؟ الْقِطَّةُ أَمَامَ الدَّارِ. أَيْنَ الْوَلَدُ؟ أَيْنَ الشَّجَرَةُ؟",
+      "voix_m": "arabe_niveau3_lec12_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَمَامَ الدَّارِ",
+      "voix_m": "arabe_niveau3_lec12_p6_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "وَرَاءَ الدَّارِ",
+      "voix_m": "arabe_niveau3_lec12_p6_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "الْقِطَّةُ",
+      "voix_m": "arabe_niveau3_lec12_p6_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "الْوَلَدُ",
+      "voix_m": "arabe_niveau3_lec12_p6_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "الشَّجَرَةُ",
+      "voix_m": "arabe_niveau3_lec12_p6_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec12_p6_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:42:53.939039",
+    "niveau": 3,
+    "lecon": 12,
+    "nom_pdf": "arabe_niveau3_lec12",
+    "bucket_audio": "audio-lessons/niveau3/lecon12/",
+    "nb_audio_assets": 6
+  }
+}

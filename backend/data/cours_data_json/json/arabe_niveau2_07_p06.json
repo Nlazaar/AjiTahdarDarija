@@ -1,0 +1,168 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète selon le modèle",
+    "ar": "أُكَمِّلُ حَسَبَ الْمِثَالِ"
+  },
+  "enonce": {
+    "fr": "Observe le mot modèle avec son image, puis complète les mots incomplets en ajoutant la partie manquante.",
+    "ar": "اُنْظُرْ إِلَى الْمِثَالِ مَعَ صُورَتِهِ، ثُمَّ أَكْمِلِ الْكَلِمَاتِ النَّاقِصَةَ."
+  },
+  "elements": [
+    {
+      "id": "modele_1",
+      "ar": "مِكْنَسَةٌ",
+      "fr": "balai",
+      "emoji": "🧹"
+    },
+    {
+      "id": "variante_1_1",
+      "ar": "مِكْـنَسَةٌ",
+      "fr": "balai (variante 1)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "variante_1_2",
+      "ar": "مِكْنَسَـ",
+      "fr": "balai (variante 2)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "variante_1_3",
+      "ar": "كْنَسَةٌ",
+      "fr": "balai (variante 3)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "variante_1_4",
+      "ar": "مِكْنَـةٌ",
+      "fr": "balai (variante 4)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "modele_2",
+      "ar": "مِكْوَاةٌ",
+      "fr": "fer à repasser",
+      "emoji": "🧺"
+    },
+    {
+      "id": "variante_2_1",
+      "ar": "مِـوَاةٌ",
+      "fr": "fer à repasser (variante 1)",
+      "emoji": "🧺"
+    },
+    {
+      "id": "variante_2_2",
+      "ar": "مِكْـاةٌ",
+      "fr": "fer à repasser (variante 2)",
+      "emoji": "🧺"
+    },
+    {
+      "id": "variante_2_3",
+      "ar": "مِكْوَةٌ",
+      "fr": "fer à repasser (variante 3)",
+      "emoji": "🧺"
+    },
+    {
+      "id": "variante_2_4",
+      "ar": "مِكْوَا",
+      "fr": "fer à repasser (variante 4)",
+      "emoji": "🧺"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "اُنْظُرْ إِلَى الْمِثَالِ مَعَ صُورَتِهِ، ثُمَّ أَكْمِلِ الْكَلِمَاتِ النَّاقِصَةَ.",
+      "voix_m": "arabe_niveau2_07_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_1",
+      "texte_ar": "مِكْنَسَةٌ",
+      "voix_m": "arabe_niveau2_07_p6_modele_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_modele_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1_1",
+      "texte_ar": "مِكْـنَسَةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_1_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1_2",
+      "texte_ar": "مِكْنَسَـ",
+      "voix_m": "arabe_niveau2_07_p6_variante_1_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1_3",
+      "texte_ar": "كْنَسَةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_1_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_1_4",
+      "texte_ar": "مِكْنَـةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_1_4_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_modele_2",
+      "texte_ar": "مِكْوَاةٌ",
+      "voix_m": "arabe_niveau2_07_p6_modele_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_modele_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2_1",
+      "texte_ar": "مِـوَاةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_2_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2_2",
+      "texte_ar": "مِكْـاةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_2_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2_3",
+      "texte_ar": "مِكْوَةٌ",
+      "voix_m": "arabe_niveau2_07_p6_variante_2_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_variante_2_4",
+      "texte_ar": "مِكْوَا",
+      "voix_m": "arabe_niveau2_07_p6_variante_2_4_m.mp3",
+      "voix_f": "arabe_niveau2_07_p6_variante_2_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:50:55.871404",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 11
+  }
+}

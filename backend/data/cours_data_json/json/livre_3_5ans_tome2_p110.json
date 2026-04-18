@@ -1,0 +1,116 @@
+{
+  "page_nb": 110,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Découpe les images pour l'exercice numéro 7",
+    "ar": "أقصّ الصّور للتمرين رقم 7"
+  },
+  "enonce": {
+    "fr": "Découpe les morceaux d'images et de syllabes, puis reconstitue les mots en assemblant chaque image avec ses syllabes dans le bon ordre.",
+    "ar": "اقصّ قطع الصور والمقاطع، ثم رتّبها لتكوين الكلمات الصحيحة."
+  },
+  "elements": [
+    {
+      "id": "avion_1",
+      "ar": "ة",
+      "fr": "syllabe finale (ta marbouta)",
+      "emoji": "✈️"
+    },
+    {
+      "id": "avion_2",
+      "ar": "طَا",
+      "fr": "syllabe médiane (TA)",
+      "emoji": "✈️"
+    },
+    {
+      "id": "avion_3",
+      "ar": "ئـر",
+      "fr": "syllabe initiale (air)",
+      "emoji": "✈️"
+    },
+    {
+      "id": "train_1",
+      "ar": "قَا",
+      "fr": "syllabe finale (qa)",
+      "emoji": "🚂"
+    },
+    {
+      "id": "train_2",
+      "ar": "طَا",
+      "fr": "syllabe médiane (TA)",
+      "emoji": "🚂"
+    },
+    {
+      "id": "train_3",
+      "ar": "ر",
+      "fr": "syllabe initiale (r)",
+      "emoji": "🚂"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p110_consigne",
+      "texte_ar": "اقصّ قطع الصور والمقاطع، ثم رتّبها لتكوين الكلمات الصحيحة.",
+      "voix_m": "livre_3_5ans_tome2_p110_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion_1",
+      "texte_ar": "ة",
+      "voix_m": "livre_3_5ans_tome2_p110_avion_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_avion_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion_2",
+      "texte_ar": "طَا",
+      "voix_m": "livre_3_5ans_tome2_p110_avion_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_avion_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_avion_3",
+      "texte_ar": "ئـر",
+      "voix_m": "livre_3_5ans_tome2_p110_avion_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_avion_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_1",
+      "texte_ar": "قَا",
+      "voix_m": "livre_3_5ans_tome2_p110_train_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_train_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_2",
+      "texte_ar": "طَا",
+      "voix_m": "livre_3_5ans_tome2_p110_train_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_train_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_train_3",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_p110_train_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p110_train_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:14:30.808039",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

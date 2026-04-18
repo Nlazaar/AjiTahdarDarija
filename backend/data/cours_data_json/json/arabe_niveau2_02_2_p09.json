@@ -1,0 +1,116 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à la bonne place",
+    "ar": "أَلصِقُ أَجْزَاءَ الصَّورَةِ في مَكَانِها المناسِب"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de chaque image pour reconstituer le mot dans le bon ordre",
+    "ar": "قُصَّ وَأَلصِقْ أَجْزَاءَ كُلِّ صُورَةٍ لِتُرَكِّبَ الكَلِمَةَ في تَرتيبِها الصَّحيح"
+  },
+  "elements": [
+    {
+      "id": "piece1_1",
+      "ar": "حـ",
+      "fr": "syllabe ح (début de baleine)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "piece1_2",
+      "ar": "تـ",
+      "fr": "syllabe ت (milieu de baleine)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "piece1_3",
+      "ar": "وـ",
+      "fr": "syllabe و (fin de baleine)",
+      "emoji": "🐋"
+    },
+    {
+      "id": "piece2_1",
+      "ar": "وَطَـ",
+      "fr": "syllabe وط (début de pieuvre)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "piece2_2",
+      "ar": "أَخْـ",
+      "fr": "syllabe أخ (milieu de pieuvre)",
+      "emoji": "🐙"
+    },
+    {
+      "id": "piece2_3",
+      "ar": "طَبٌ",
+      "fr": "syllabe طب (fin de pieuvre)",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 8,
+  "nom_pdf": "arabe_niveau2_02_2",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "قُصَّ وَأَلصِقْ أَجْزَاءَ كُلِّ صُورَةٍ لِتُرَكِّبَ الكَلِمَةَ في تَرتيبِها الصَّحيح",
+      "voix_m": "arabe_niveau2_02_2_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece1_1",
+      "texte_ar": "حـ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece1_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece1_2",
+      "texte_ar": "تـ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece1_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece1_3",
+      "texte_ar": "وـ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece1_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece2_1",
+      "texte_ar": "وَطَـ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece2_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece2_2",
+      "texte_ar": "أَخْـ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece2_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_piece2_3",
+      "texte_ar": "طَبٌ",
+      "voix_m": "arabe_niveau2_02_2_p9_piece2_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2_p9_piece2_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:38:45.359947",
+    "niveau": 2,
+    "lecon": 10,
+    "nom_pdf": "arabe_niveau2_02_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon10/",
+    "nb_audio_assets": 7
+  }
+}

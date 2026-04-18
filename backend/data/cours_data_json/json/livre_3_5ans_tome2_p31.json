@@ -1,0 +1,103 @@
+{
+  "page_nb": 31,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie la plus grande chaussure avec quatre couleurs",
+    "ar": "لوّن أكبر حذاء بأربعة ألوان"
+  },
+  "enonce": {
+    "fr": "Observe toutes les chaussures et colorie la plus grande avec quatre couleurs différentes.",
+    "ar": "انظر إلى كل الأحذية ولوّن أكبر حذاء بأربعة ألوان مختلفة."
+  },
+  "elements": [
+    {
+      "id": "chaussure_1",
+      "ar": "حذاء رياضي صغير بمسامير",
+      "fr": "Petite chaussure de sport à crampons",
+      "emoji": "👟"
+    },
+    {
+      "id": "chaussure_2",
+      "ar": "حذاء رياضي كبير بمسامير",
+      "fr": "Grande chaussure de sport à crampons",
+      "emoji": "👟"
+    },
+    {
+      "id": "chaussure_3",
+      "ar": "حذاء كلاسيكي صغير",
+      "fr": "Petite chaussure classique",
+      "emoji": "👞"
+    },
+    {
+      "id": "chaussure_4",
+      "ar": "حذاء بكعب عالٍ",
+      "fr": "Chaussure à talon haut",
+      "emoji": "👠"
+    },
+    {
+      "id": "chaussure_5",
+      "ar": "حذاء رياضي كبير جداً",
+      "fr": "Très grande chaussure de sport (à colorier)",
+      "emoji": "👟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p31_consigne",
+      "texte_ar": "انظر إلى كل الأحذية ولوّن أكبر حذاء بأربعة ألوان مختلفة.",
+      "voix_m": "livre_3_5ans_tome2_p31_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussure_1",
+      "texte_ar": "حذاء رياضي صغير بمسامير",
+      "voix_m": "livre_3_5ans_tome2_p31_chaussure_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_chaussure_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussure_2",
+      "texte_ar": "حذاء رياضي كبير بمسامير",
+      "voix_m": "livre_3_5ans_tome2_p31_chaussure_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_chaussure_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussure_3",
+      "texte_ar": "حذاء كلاسيكي صغير",
+      "voix_m": "livre_3_5ans_tome2_p31_chaussure_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_chaussure_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussure_4",
+      "texte_ar": "حذاء بكعب عالٍ",
+      "voix_m": "livre_3_5ans_tome2_p31_chaussure_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_chaussure_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chaussure_5",
+      "texte_ar": "حذاء رياضي كبير جداً",
+      "voix_m": "livre_3_5ans_tome2_p31_chaussure_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p31_chaussure_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:00:37.269491",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 6
+  }
+}

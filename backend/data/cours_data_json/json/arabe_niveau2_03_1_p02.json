@@ -1,0 +1,129 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie chaque vêtement à celui qui le porte habituellement",
+    "ar": "أربط بسهم كلّ واحدٍ بما يَلبَسُ عادةً"
+  },
+  "enonce": {
+    "fr": "Relie par une flèche chaque vêtement à la personne qui le porte habituellement (garçon ou fille).",
+    "ar": "أربط بسهم كلّ واحدٍ بما يَلبَسُ عادةً"
+  },
+  "elements": [
+    {
+      "id": "robe_princesse",
+      "ar": "فستان",
+      "fr": "Robe de princesse",
+      "emoji": "👗"
+    },
+    {
+      "id": "pantalon",
+      "ar": "بنطلون",
+      "fr": "Pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "jupe",
+      "ar": "تنورة",
+      "fr": "Jupe",
+      "emoji": "🩱"
+    },
+    {
+      "id": "chemisette",
+      "ar": "قميص",
+      "fr": "Chemisette",
+      "emoji": "👚"
+    },
+    {
+      "id": "tshirt",
+      "ar": "تي شيرت",
+      "fr": "T-shirt",
+      "emoji": "👕"
+    },
+    {
+      "id": "garcon",
+      "ar": "ولد",
+      "fr": "Garçon",
+      "emoji": "👦"
+    },
+    {
+      "id": "fille",
+      "ar": "بنت",
+      "fr": "Fille",
+      "emoji": "👧"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أربط بسهم كلّ واحدٍ بما يَلبَسُ عادةً",
+      "voix_m": "arabe_niveau2_03_1_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_robe_princesse",
+      "texte_ar": "فستان",
+      "voix_m": "arabe_niveau2_03_1_p2_robe_princesse_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_robe_princesse_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pantalon",
+      "texte_ar": "بنطلون",
+      "voix_m": "arabe_niveau2_03_1_p2_pantalon_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_pantalon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_jupe",
+      "texte_ar": "تنورة",
+      "voix_m": "arabe_niveau2_03_1_p2_jupe_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_jupe_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_chemisette",
+      "texte_ar": "قميص",
+      "voix_m": "arabe_niveau2_03_1_p2_chemisette_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_chemisette_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tshirt",
+      "texte_ar": "تي شيرت",
+      "voix_m": "arabe_niveau2_03_1_p2_tshirt_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_tshirt_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_garcon",
+      "texte_ar": "ولد",
+      "voix_m": "arabe_niveau2_03_1_p2_garcon_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_garcon_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fille",
+      "texte_ar": "بنت",
+      "voix_m": "arabe_niveau2_03_1_p2_fille_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p2_fille_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:39:04.209076",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 8
+  }
+}

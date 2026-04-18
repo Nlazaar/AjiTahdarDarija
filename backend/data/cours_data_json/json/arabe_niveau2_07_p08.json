@@ -1,0 +1,77 @@
+{
+  "page_nb": 8,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Lignes et tracés - Leçon 7",
+    "ar": "خطوط - الدرس 7"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en pointillés et recopie le mot بَاب (porte) en suivant le modèle.",
+    "ar": "اتبع الخطوط المنقطة وانسخ كلمة بَاب مع احترام النموذج."
+  },
+  "elements": [
+    {
+      "id": "ligne_u_petit",
+      "ar": "شكل U صغير",
+      "fr": "Forme en U petit",
+      "emoji": "✏️"
+    },
+    {
+      "id": "ligne_u_grand",
+      "ar": "شكل U كبير",
+      "fr": "Forme en U grand",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_bab",
+      "ar": "بَاب",
+      "fr": "porte",
+      "emoji": "🚪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p8_consigne",
+      "texte_ar": "اتبع الخطوط المنقطة وانسخ كلمة بَاب مع احترام النموذج.",
+      "voix_m": "arabe_niveau2_07_p8_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p8_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_u_petit",
+      "texte_ar": "شكل U صغير",
+      "voix_m": "arabe_niveau2_07_p8_ligne_u_petit_m.mp3",
+      "voix_f": "arabe_niveau2_07_p8_ligne_u_petit_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ligne_u_grand",
+      "texte_ar": "شكل U كبير",
+      "voix_m": "arabe_niveau2_07_p8_ligne_u_grand_m.mp3",
+      "voix_f": "arabe_niveau2_07_p8_ligne_u_grand_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_bab",
+      "texte_ar": "بَاب",
+      "voix_m": "arabe_niveau2_07_p8_mot_bab_m.mp3",
+      "voix_f": "arabe_niveau2_07_p8_mot_bab_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:51:11.064226",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 4
+  }
+}

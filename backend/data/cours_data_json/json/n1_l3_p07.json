@@ -1,0 +1,60 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "Coloriage de trois canards parmi quatre et repassage du chiffre 3 en arabe et en latin",
+  "titre": {
+    "fr": "Je colorie trois canards / Je repasse",
+    "ar": "أَلوِّن ثَلاثَ بَطَّاتٍ / أَكتُب الرَّقم ثَلاثَة"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Colorie trois canards parmi les quatre dessinés. Exercice 8 : Repasse le chiffre 3 trois fois.",
+    "ar": "تمرين 7 : لوِّن ثلاث بطات من بين الأربع المرسومة. تمرين 8 : أعِد كتابة الرقم ثلاثة ثلاث مرات."
+  },
+  "elements": [
+    {
+      "id": "number_3",
+      "ar": "ثَلاثَة",
+      "fr": "trois",
+      "emoji": "3️⃣"
+    },
+    {
+      "id": "duck",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "تمرين 7 : لوِّن ثلاث بطات من بين الأربع المرسومة. تمرين 8 : أعِد كتابة الرقم ثلاثة ثلاث مرات.",
+      "voix_m": "v1_l3_p7_consigne_m.mp3",
+      "voix_f": "v1_l3_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_number_3",
+      "texte_ar": "ثَلاثَة",
+      "voix_m": "v1_l3_p7_number_3_m.mp3",
+      "voix_f": "v1_l3_p7_number_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_duck",
+      "texte_ar": "بَطَّة",
+      "voix_m": "v1_l3_p7_duck_m.mp3",
+      "voix_f": "v1_l3_p7_duck_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-14T22:53:42.728080",
+    "niveau": 1,
+    "lecon": 3,
+    "bucket_audio": "audio-lessons/niveau1/lecon03/",
+    "nb_audio_assets": 3
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "page_nb": 91,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "J'entoure les lettres avec prolongation kasra",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرفَ المَمدودَ بِالكَسر"
+  },
+  "enonce": {
+    "fr": "Entoure dans ces mots les lettres qui ont une prolongation avec kasra",
+    "ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرفَ المَمدودَ بِالكَسر"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "يَجْرِي",
+      "fr": "il court",
+      "emoji": "🏃"
+    },
+    {
+      "id": "2",
+      "ar": "كَتَبَ",
+      "fr": "il a écrit",
+      "emoji": "✍️"
+    },
+    {
+      "id": "3",
+      "ar": "سَمِعَ",
+      "fr": "il a entendu",
+      "emoji": "👂"
+    },
+    {
+      "id": "4",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "5",
+      "ar": "عَصِيرٌ",
+      "fr": "jus",
+      "emoji": "🥤"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p91_consigne",
+      "texte_ar": "أُحيطُ بِخَطٍّ مُغلَق الحَرفَ المَمدودَ بِالكَسر",
+      "voix_m": "livre_arabe_niveau3_p91_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "يَجْرِي",
+      "voix_m": "livre_arabe_niveau3_p91_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "كَتَبَ",
+      "voix_m": "livre_arabe_niveau3_p91_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سَمِعَ",
+      "voix_m": "livre_arabe_niveau3_p91_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_arabe_niveau3_p91_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "عَصِيرٌ",
+      "voix_m": "livre_arabe_niveau3_p91_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p91_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:12:40.278662",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

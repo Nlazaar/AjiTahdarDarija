@@ -1,0 +1,155 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Identifier et entourer les cercles de couleur jaune parmi des cercles de différentes couleurs",
+  "titre": {
+    "fr": "J'entoure les cercles jaunes",
+    "ar": "أُحِيطُ الدَّوائِرَ الصَّفراء بِخَطٍّ مُغْلَقٍ"
+  },
+  "enonce": {
+    "fr": "J'entoure les cercles (ronds) jaunes",
+    "ar": "أُحِيطُ الدَّوائِرَ الصَّفراء بِخَطٍّ مُغْلَقٍ"
+  },
+  "elements": [
+    {
+      "id": "cercle_1",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_2",
+      "ar": "دائرة زرقاء",
+      "fr": "cercle bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "cercle_3",
+      "ar": "دائرة خضراء",
+      "fr": "cercle vert",
+      "emoji": "🟢"
+    },
+    {
+      "id": "cercle_4",
+      "ar": "دائرة حمراء",
+      "fr": "cercle rouge",
+      "emoji": "🔴"
+    },
+    {
+      "id": "cercle_5",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_6",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_7",
+      "ar": "دائرة صفراء",
+      "fr": "cercle jaune",
+      "emoji": "🟡"
+    },
+    {
+      "id": "cercle_8",
+      "ar": "دائرة زرقاء",
+      "fr": "cercle bleu",
+      "emoji": "🔵"
+    },
+    {
+      "id": "cercle_9",
+      "ar": "دائرة خضراء",
+      "fr": "cercle vert",
+      "emoji": "🟢"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon01_2",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أُحِيطُ الدَّوائِرَ الصَّفراء بِخَطٍّ مُغْلَقٍ",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_1",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_2",
+      "texte_ar": "دائرة زرقاء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_3",
+      "texte_ar": "دائرة خضراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_4",
+      "texte_ar": "دائرة حمراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_5",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_6",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_7",
+      "texte_ar": "دائرة صفراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_7_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_8",
+      "texte_ar": "دائرة زرقاء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_8_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_cercle_9",
+      "texte_ar": "دائرة خضراء",
+      "voix_m": "coursarabe_niveau1_lecon01_2_p3_cercle_9_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon01_2_p3_cercle_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:38:34.181705",
+    "niveau": 1,
+    "lecon": 31,
+    "nom_pdf": "coursarabe_niveau1_lecon01_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon31/",
+    "nb_audio_assets": 10
+  }
+}

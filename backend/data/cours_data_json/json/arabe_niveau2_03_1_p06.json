@@ -1,0 +1,64 @@
+{
+  "page_nb": 6,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie les lettres qui composent chaque mot parmi les lettres proposées",
+    "ar": "لَوِّنْ حُرُوفَ الكَلِمَةِ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ"
+  },
+  "elements": [
+    {
+      "id": "mot_5",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "mot_6",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p6_consigne",
+      "texte_ar": "لَوِّنْ حُرُوفَ الكَلِمَةِ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ",
+      "voix_m": "arabe_niveau2_03_1_p6_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p6_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "arabe_niveau2_03_1_p6_mot_5_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p6_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "arabe_niveau2_03_1_p6_mot_6_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p6_mot_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:39:46.221905",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 3
+  }
+}

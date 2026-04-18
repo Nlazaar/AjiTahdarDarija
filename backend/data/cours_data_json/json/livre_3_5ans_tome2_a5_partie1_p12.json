@@ -1,0 +1,90 @@
+{
+  "page_nb": 12,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "Les vêtements",
+    "ar": "المَلابِس"
+  },
+  "enonce": {
+    "fr": "Écoute et répète le nom de chaque vêtement",
+    "ar": "استمع وكرر اسم كل ملبس"
+  },
+  "elements": [
+    {
+      "id": "sirwal",
+      "ar": "سِرْوَالٌ",
+      "fr": "Pantalon",
+      "emoji": "👖"
+    },
+    {
+      "id": "fustan",
+      "ar": "فُسْتَانٌ",
+      "fr": "Robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "hithaa",
+      "ar": "حِذَاءٌ",
+      "fr": "Chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "qamis",
+      "ar": "قَمِيصٌ",
+      "fr": "Chemise",
+      "emoji": "👔"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p12_consigne",
+      "texte_ar": "استمع وكرر اسم كل ملبس",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p12_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p12_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_sirwal",
+      "texte_ar": "سِرْوَالٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p12_sirwal_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p12_sirwal_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fustan",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p12_fustan_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p12_fustan_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_hithaa",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p12_hithaa_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p12_hithaa_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_qamis",
+      "texte_ar": "قَمِيصٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p12_qamis_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p12_qamis_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:16:58.430079",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 5
+  }
+}

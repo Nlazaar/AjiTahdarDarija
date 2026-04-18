@@ -1,0 +1,129 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Compléter des phrases avec le mot approprié, associer des images à des mots, et remettre des mots dans l'ordre pour former une phrase",
+  "titre": {
+    "fr": "Je complète, je lis et je remets en ordre",
+    "ar": "أُكْمِلُ وَ أَقْرَأُ وَ أُرَتِّبُ"
+  },
+  "enonce": {
+    "fr": "Exercice 7 : Je complète avec ce qui convient et je lis. Exercice 8 : Je complète avec ce qui convient (les os, les poissons, l'herbe, la nourriture). Exercice 9 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَقْرَأُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْعِظَام، الدُّعَاء، السَّمَكِ، الْعُشْبَ). تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex7_pair1",
+      "ar": "بَـ........يدُ ≠ قَرِيبٌ",
+      "fr": "Loin ≠ Proche",
+      "emoji": "↔️"
+    },
+    {
+      "id": "ex7_pair2",
+      "ar": "يَصْـ........دُ ≠ يَنْزِلُ",
+      "fr": "Il monte ≠ Il descend",
+      "emoji": "🪜"
+    },
+    {
+      "id": "ex8_cat",
+      "ar": "تُحِبُّ الْقِطَّةُ أَكْلَ ............",
+      "fr": "Le chat aime manger du ...",
+      "emoji": "🐱"
+    },
+    {
+      "id": "ex8_dog",
+      "ar": "يُحِبُّ الْكَلْبُ أَكْلَ ............",
+      "fr": "Le chien aime manger des ...",
+      "emoji": "🐶"
+    },
+    {
+      "id": "ex8_sheep",
+      "ar": "يَأْكُلُ الْخَرُوفُ ............",
+      "fr": "Le mouton mange ...",
+      "emoji": "🐑"
+    },
+    {
+      "id": "ex8_girl",
+      "ar": "قَبْلَ الْإِفْطَارِ تَقُولُ الْبِنْتُ ............",
+      "fr": "Avant de manger, la fille dit ...",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex9_words",
+      "ar": "نُقُودًا / فِي / يُعْطِينِي / الْعِيدِ / جَدِّي",
+      "fr": "de l'argent / dans / me donne / la fête / mon grand-père",
+      "emoji": "👴"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec09_3ayn",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "تمرين 7: أُكْمِلُ بِمَا يُنَاسِبُ وَ أَقْرَأُ. تمرين 8: أُكْمِلُ بِمَا يُنَاسِبُ (الْعِظَام، الدُّعَاء، السَّمَكِ، الْعُشْبَ). تمرين 9: أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair1",
+      "texte_ar": "بَـ........يدُ ≠ قَرِيبٌ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex7_pair1_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex7_pair1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_pair2",
+      "texte_ar": "يَصْـ........دُ ≠ يَنْزِلُ",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex7_pair2_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex7_pair2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_cat",
+      "texte_ar": "تُحِبُّ الْقِطَّةُ أَكْلَ ............",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex8_cat_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex8_cat_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_dog",
+      "texte_ar": "يُحِبُّ الْكَلْبُ أَكْلَ ............",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex8_dog_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex8_dog_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_sheep",
+      "texte_ar": "يَأْكُلُ الْخَرُوفُ ............",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex8_sheep_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex8_sheep_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_girl",
+      "texte_ar": "قَبْلَ الْإِفْطَارِ تَقُولُ الْبِنْتُ ............",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex8_girl_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex8_girl_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex9_words",
+      "texte_ar": "نُقُودًا / فِي / يُعْطِينِي / الْعِيدِ / جَدِّي",
+      "voix_m": "lecture_niv4_lec09_3ayn_p3_ex9_words_m.mp3",
+      "voix_f": "lecture_niv4_lec09_3ayn_p3_ex9_words_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:04:50.743630",
+    "niveau": 4,
+    "lecon": 9,
+    "nom_pdf": "lecture_niv4_lec09_3ayn",
+    "bucket_audio": "audio-lessons/niveau4/lecon09/",
+    "nb_audio_assets": 8
+  }
+}

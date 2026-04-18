@@ -1,0 +1,194 @@
+{
+  "page_nb": 5,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Trouve le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'soleil' (شمس) parmi tous les mots et entoure-le à chaque fois que tu le trouves",
+    "ar": "أبحثُ عَن كَلِمَة شمس وَ أحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "2",
+      "ar": "سمس",
+      "fr": "incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "شمش",
+      "fr": "incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "5",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "6",
+      "ar": "مشمس",
+      "fr": "incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "مشمش",
+      "fr": "abricot (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "8",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "9",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "10",
+      "ar": "شمس",
+      "fr": "soleil (correct)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "11",
+      "ar": "شخص",
+      "fr": "personne (incorrect)",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "شموس",
+      "fr": "incorrect",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_1",
+  "audio_assets": [
+    {
+      "id": "audio_p5_consigne",
+      "texte_ar": "أبحثُ عَن كَلِمَة شمس وَ أحيطُهَا بِخَطٍّ",
+      "voix_m": "arabe_niveau2_04_1_p5_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "سمس",
+      "voix_m": "arabe_niveau2_04_1_p5_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شمش",
+      "voix_m": "arabe_niveau2_04_1_p5_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "مشمس",
+      "voix_m": "arabe_niveau2_04_1_p5_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "مشمش",
+      "voix_m": "arabe_niveau2_04_1_p5_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_8_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_9_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "شمس",
+      "voix_m": "arabe_niveau2_04_1_p5_10_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "شخص",
+      "voix_m": "arabe_niveau2_04_1_p5_11_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "شموس",
+      "voix_m": "arabe_niveau2_04_1_p5_12_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p5_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:42:06.570582",
+    "niveau": 2,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau2_04_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon13/",
+    "nb_audio_assets": 13
+  }
+}

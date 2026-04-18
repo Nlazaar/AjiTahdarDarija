@@ -1,0 +1,194 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorier la lettre dans les mots",
+    "ar": "أُلَوِّنُ الحرف في الكَلِمَاتِ"
+  },
+  "enonce": {
+    "fr": "Colorie la lettre خ dans chaque mot",
+    "ar": "لَوِّنْ حرف الخاء في كل كلمة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "خَافَ",
+      "fr": "il a eu peur",
+      "emoji": "😨"
+    },
+    {
+      "id": "2",
+      "ar": "خُبْزٌ",
+      "fr": "pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "3",
+      "ar": "مَخْبَرٌ",
+      "fr": "laboratoire",
+      "emoji": "🔬"
+    },
+    {
+      "id": "4",
+      "ar": "أَخٌ",
+      "fr": "frère",
+      "emoji": "👦"
+    },
+    {
+      "id": "5",
+      "ar": "خَبَرٌ",
+      "fr": "nouvelle",
+      "emoji": "📰"
+    },
+    {
+      "id": "6",
+      "ar": "أَخْطَبُوطٌ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "7",
+      "ar": "خَاضَ",
+      "fr": "il a traversé",
+      "emoji": "🌊"
+    },
+    {
+      "id": "8",
+      "ar": "رَخِيصٌ",
+      "fr": "bon marché",
+      "emoji": "💰"
+    },
+    {
+      "id": "9",
+      "ar": "خَوْفٌ",
+      "fr": "peur",
+      "emoji": "😱"
+    },
+    {
+      "id": "10",
+      "ar": "خَسٌّ",
+      "fr": "laitue",
+      "emoji": "🥬"
+    },
+    {
+      "id": "11",
+      "ar": "بَخَسَ",
+      "fr": "il a lésé",
+      "emoji": "⚖️"
+    },
+    {
+      "id": "12",
+      "ar": "مَخٌّ",
+      "fr": "cerveau",
+      "emoji": "🧠"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "لَوِّنْ حرف الخاء في كل كلمة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "خَافَ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "خُبْزٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "مَخْبَرٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "أَخٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خَبَرٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أَخْطَبُوطٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خَاضَ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "رَخِيصٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "خَوْفٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "خَسٌّ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "بَخَسَ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "مَخٌّ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p9_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p9_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:16:33.995221",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 13
+  }
+}

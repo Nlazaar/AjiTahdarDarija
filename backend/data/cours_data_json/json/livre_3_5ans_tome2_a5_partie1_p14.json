@@ -1,0 +1,207 @@
+{
+  "page_nb": 14,
+  "type": "exercice",
+  "mecanique": "trouver_intrus",
+  "titre": {
+    "fr": "Entoure la lettre dans ses différentes formes / Barre les erreurs",
+    "ar": "أحيط الحرف بمختلف أشكاله / أشطُبُ الخَطَأ"
+  },
+  "enonce": {
+    "fr": "Page 3 : Entoure toutes les lettres ذ parmi les autres lettres. Page 4 : Barre les mots qui ne correspondent pas au modèle (فُسْتَانٌ et حِذَاءٌ).",
+    "ar": "صفحة 3: أحِط الحرف ذ بمختلف أشكاله بين الحروف الأخرى. صفحة 4: أشطب الكلمات الخاطئة التي لا تطابق النموذج."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ذ",
+      "fr": "lettre dhal",
+      "emoji": "✏️"
+    },
+    {
+      "id": "2",
+      "ar": "د",
+      "fr": "lettre dal",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "ر",
+      "fr": "lettre ra",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ز",
+      "fr": "lettre zay",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "ل",
+      "fr": "lettre lam",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "ب",
+      "fr": "lettre ba",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "ش",
+      "fr": "lettre shin",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "خ",
+      "fr": "lettre kha",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "فُسْتَانٌ",
+      "fr": "robe",
+      "emoji": "👗"
+    },
+    {
+      "id": "10",
+      "ar": "حِذَاءٌ",
+      "fr": "chaussure",
+      "emoji": "👟"
+    },
+    {
+      "id": "11",
+      "ar": "بُسْتَانٌ",
+      "fr": "jardin (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "12",
+      "ar": "غِذَاءٌ",
+      "fr": "nourriture (erreur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "13",
+      "ar": "بُهْتَانٌ",
+      "fr": "mensonge (erreur)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p14_consigne",
+      "texte_ar": "صفحة 3: أحِط الحرف ذ بمختلف أشكاله بين الحروف الأخرى. صفحة 4: أشطب الكلمات الخاطئة التي لا تطابق النموذج.",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ذ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "د",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ر",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ز",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ل",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_5_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ب",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_6_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ش",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_7_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "خ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_8_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "فُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_9_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "حِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_10_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "بُسْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_11_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "غِذَاءٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_12_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "بُهْتَانٌ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie1_p14_13_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie1_p14_13_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:17:16.908506",
+    "niveau": 1,
+    "lecon": 24,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon24/",
+    "nb_audio_assets": 14
+  }
+}

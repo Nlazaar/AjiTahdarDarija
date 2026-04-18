@@ -1,0 +1,116 @@
+{
+  "page_nb": 86,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte chaque groupe et j'écris le chiffre",
+    "ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم"
+  },
+  "enonce": {
+    "fr": "Compte les objets dans chaque groupe et écris le chiffre correspondant (entre 1 et 6).",
+    "ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم"
+  },
+  "elements": [
+    {
+      "id": "fers",
+      "ar": "مكاوي",
+      "fr": "Fers à repasser (3)",
+      "emoji": "🔧"
+    },
+    {
+      "id": "tables",
+      "ar": "طاولات",
+      "fr": "Tables (4)",
+      "emoji": "🪑"
+    },
+    {
+      "id": "fenetres",
+      "ar": "نوافذ",
+      "fr": "Fenêtres (5)",
+      "emoji": "🪟"
+    },
+    {
+      "id": "aspirateurs",
+      "ar": "مكانس كهربائية",
+      "fr": "Aspirateurs (3)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "balais",
+      "ar": "مكانس",
+      "fr": "Balais (6)",
+      "emoji": "🧹"
+    },
+    {
+      "id": "porte",
+      "ar": "باب",
+      "fr": "Porte (1)",
+      "emoji": "🚪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p86_consigne",
+      "texte_ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم",
+      "voix_m": "livre_3_5ans_tome2_p86_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fers",
+      "texte_ar": "مكاوي",
+      "voix_m": "livre_3_5ans_tome2_p86_fers_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_fers_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_tables",
+      "texte_ar": "طاولات",
+      "voix_m": "livre_3_5ans_tome2_p86_tables_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_tables_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_fenetres",
+      "texte_ar": "نوافذ",
+      "voix_m": "livre_3_5ans_tome2_p86_fenetres_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_fenetres_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_aspirateurs",
+      "texte_ar": "مكانس كهربائية",
+      "voix_m": "livre_3_5ans_tome2_p86_aspirateurs_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_aspirateurs_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_balais",
+      "texte_ar": "مكانس",
+      "voix_m": "livre_3_5ans_tome2_p86_balais_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_balais_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_porte",
+      "texte_ar": "باب",
+      "voix_m": "livre_3_5ans_tome2_p86_porte_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p86_porte_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:09:58.223902",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "page_nb": 9,
+  "type": "exercice",
+  "mecanique": "comptage_limite",
+  "titre": {
+    "fr": "Je compte chaque groupe et j'écris le nombre",
+    "ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم"
+  },
+  "enonce": {
+    "fr": "Compte les objets dans chaque groupe et écris le chiffre correspondant (1 à 6)",
+    "ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مكاوي",
+      "fr": "Fers à repasser",
+      "emoji": "🔌"
+    },
+    {
+      "id": "2",
+      "ar": "طاولات",
+      "fr": "Tables",
+      "emoji": "🪑"
+    },
+    {
+      "id": "3",
+      "ar": "نوافذ",
+      "fr": "Fenêtres",
+      "emoji": "🪟"
+    },
+    {
+      "id": "4",
+      "ar": "مكانس كهربائية",
+      "fr": "Aspirateurs",
+      "emoji": "🧹"
+    },
+    {
+      "id": "5",
+      "ar": "مكانس",
+      "fr": "Balais",
+      "emoji": "🧹"
+    },
+    {
+      "id": "6",
+      "ar": "أبواب",
+      "fr": "Portes",
+      "emoji": "🚪"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_07",
+  "audio_assets": [
+    {
+      "id": "audio_p9_consigne",
+      "texte_ar": "أعدّ أشكال كلّ مجموعة و أكتب الرّقم",
+      "voix_m": "arabe_niveau2_07_p9_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مكاوي",
+      "voix_m": "arabe_niveau2_07_p9_1_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طاولات",
+      "voix_m": "arabe_niveau2_07_p9_2_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "نوافذ",
+      "voix_m": "arabe_niveau2_07_p9_3_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "مكانس كهربائية",
+      "voix_m": "arabe_niveau2_07_p9_4_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "مكانس",
+      "voix_m": "arabe_niveau2_07_p9_5_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "أبواب",
+      "voix_m": "arabe_niveau2_07_p9_6_m.mp3",
+      "voix_f": "arabe_niveau2_07_p9_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:51:19.723699",
+    "niveau": 2,
+    "lecon": 19,
+    "nom_pdf": "arabe_niveau2_07",
+    "bucket_audio": "audio-lessons/niveau2/lecon19/",
+    "nb_audio_assets": 7
+  }
+}

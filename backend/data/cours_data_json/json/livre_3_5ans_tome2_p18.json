@@ -1,0 +1,51 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "puzzle_image_mot",
+  "titre": {
+    "fr": "Colle les morceaux de l'image à leur bonne place",
+    "ar": "أَلْصِقُ أَجْزَاءَ الصُّورَةِ فِي مَكَانِها المناسِبِ"
+  },
+  "enonce": {
+    "fr": "Découpe et colle les morceaux de l'image de la baleine dans le cadre prévu à cet effet.",
+    "ar": "أَلْصِقُ أَجْزَاءَ الصُّورَةِ فِي مَكَانِها المناسِبِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "حُوتٌ",
+      "fr": "baleine",
+      "emoji": "🐳"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "أَلْصِقُ أَجْزَاءَ الصُّورَةِ فِي مَكَانِها المناسِبِ",
+      "voix_m": "livre_3_5ans_tome2_p18_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "حُوتٌ",
+      "voix_m": "livre_3_5ans_tome2_p18_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p18_1_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:58:22.591535",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 2
+  }
+}

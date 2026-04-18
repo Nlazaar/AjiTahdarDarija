@@ -1,0 +1,116 @@
+{
+  "page_nb": 12,
+  "type": "exercice",
+  "mecanique": "completer_mot",
+  "titre": {
+    "fr": "Je complète par la lettre qui manque au mot",
+    "ar": "أكمَل الْكَلِمَة بالْحَرْفِ النَّاقِصِ"
+  },
+  "enonce": {
+    "fr": "Complète chaque mot avec la lettre ط manquante (au début, au milieu ou à la fin du mot)",
+    "ar": "أكمِل كل كلمة بالحرف الناقص ط في أول الكلمة أو وسطها أو آخرها"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قِطَارٌ",
+      "fr": "train",
+      "emoji": "🚂"
+    },
+    {
+      "id": "2",
+      "ar": "طَاوُوسٌ",
+      "fr": "paon",
+      "emoji": "🦚"
+    },
+    {
+      "id": "3",
+      "ar": "طَرِيقٌ",
+      "fr": "chemin/route",
+      "emoji": "🛣️"
+    },
+    {
+      "id": "4",
+      "ar": "خَيْطٌ",
+      "fr": "fil de laine",
+      "emoji": "🧶"
+    },
+    {
+      "id": "5",
+      "ar": "أُخْطُبُوطٌ",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "6",
+      "ar": "بَطْرِيقٌ",
+      "fr": "pingouin",
+      "emoji": "🐧"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 8,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p12_consigne",
+      "texte_ar": "أكمِل كل كلمة بالحرف الناقص ط في أول الكلمة أو وسطها أو آخرها",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قِطَارٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "طَاوُوسٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "طَرِيقٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "خَيْطٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_4_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "أُخْطُبُوطٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_5_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "بَطْرِيقٌ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p12_6_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p12_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:32:45.875307",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 7
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "page_nb": 26,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "J'apprends les mots du vocabulaire - leçon 6",
+    "ar": "أَحْفَظُ"
+  },
+  "enonce": {
+    "fr": "Mémorise les mots : relie chaque image à son mot en arabe",
+    "ar": "أَحْفَظُ الكَلِمَات: اِرْبُطْ كُلَّ صُورَةٍ بِكَلِمَتِهَا"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "صَيَّادٌ",
+      "fr": "chasseur",
+      "emoji": "🏹"
+    },
+    {
+      "id": "2",
+      "ar": "أَرْنَبٌ",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "3",
+      "ar": "غَابَةٌ",
+      "fr": "forêt",
+      "emoji": "🌲"
+    },
+    {
+      "id": "4",
+      "ar": "غَزَالٌ",
+      "fr": "gazelle",
+      "emoji": "🦌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p26_consigne",
+      "texte_ar": "أَحْفَظُ الكَلِمَات: اِرْبُطْ كُلَّ صُورَةٍ بِكَلِمَتِهَا",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p26_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p26_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "صَيَّادٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p26_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p26_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "أَرْنَبٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p26_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p26_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "غَابَةٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p26_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p26_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "غَزَالٌ",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p26_4_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p26_4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:28:15.328184",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 5
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je lis",
+    "ar": "أَقْرَأُ"
+  },
+  "enonce": {
+    "fr": "Lis chaque mot et associe-le à l'image correspondante",
+    "ar": "اقْرَأْ كُلَّ كَلِمَةٍ وَاربِطْهَا بِالصُّورَةِ المُنَاسِبَة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَقْرَأُ",
+      "fr": "Elle lit",
+      "emoji": "📖"
+    },
+    {
+      "id": "2",
+      "ar": "تَكْتُبُ",
+      "fr": "Elle écrit",
+      "emoji": "✍️"
+    },
+    {
+      "id": "3",
+      "ar": "تَرْسُمُ",
+      "fr": "Elle dessine",
+      "emoji": "🎨"
+    },
+    {
+      "id": "4",
+      "ar": "تَسْمَعُ",
+      "fr": "Elle écoute",
+      "emoji": "👂"
+    },
+    {
+      "id": "5",
+      "ar": "يَصْرُخُ",
+      "fr": "Il crie",
+      "emoji": "😱"
+    },
+    {
+      "id": "6",
+      "ar": "تَأْكُلُ",
+      "fr": "Elle mange",
+      "emoji": "🍜"
+    },
+    {
+      "id": "7",
+      "ar": "أَرْسُمُ",
+      "fr": "Je dessine",
+      "emoji": "🖊️"
+    },
+    {
+      "id": "8",
+      "ar": "أَشْطُبُ",
+      "fr": "Je barre",
+      "emoji": "✏️"
+    },
+    {
+      "id": "9",
+      "ar": "أُلْصِقُ",
+      "fr": "Je colle",
+      "emoji": "📌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau3_lec05",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "اقْرَأْ كُلَّ كَلِمَةٍ وَاربِطْهَا بِالصُّورَةِ المُنَاسِبَة",
+      "voix_m": "arabe_niveau3_lec05_p2_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَقْرَأُ",
+      "voix_m": "arabe_niveau3_lec05_p2_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "تَكْتُبُ",
+      "voix_m": "arabe_niveau3_lec05_p2_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تَرْسُمُ",
+      "voix_m": "arabe_niveau3_lec05_p2_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "تَسْمَعُ",
+      "voix_m": "arabe_niveau3_lec05_p2_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "يَصْرُخُ",
+      "voix_m": "arabe_niveau3_lec05_p2_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "تَأْكُلُ",
+      "voix_m": "arabe_niveau3_lec05_p2_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "أَرْسُمُ",
+      "voix_m": "arabe_niveau3_lec05_p2_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "أَشْطُبُ",
+      "voix_m": "arabe_niveau3_lec05_p2_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "أُلْصِقُ",
+      "voix_m": "arabe_niveau3_lec05_p2_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec05_p2_9_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:30:34.492152",
+    "niveau": 3,
+    "lecon": 5,
+    "nom_pdf": "arabe_niveau3_lec05",
+    "bucket_audio": "audio-lessons/niveau3/lecon05/",
+    "nb_audio_assets": 10
+  }
+}

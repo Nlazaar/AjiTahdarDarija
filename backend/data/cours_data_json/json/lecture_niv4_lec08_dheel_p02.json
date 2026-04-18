@@ -1,0 +1,220 @@
+{
+  "page_nb": 2,
+  "type": "exercice",
+  "mecanique": "Relier mot à image, tracer une lettre, compléter des mots avec la lettre ذ",
+  "titre": {
+    "fr": "La lettre Dhal (ذ) - Exercices",
+    "ar": "حرف الذال - تدريبات"
+  },
+  "enonce": {
+    "fr": "1) Je lis le mot et je le relie à son image. 2) J'écris la lettre ذ. 3) Je complète avec ce qui convient parmi: ذَ ذُ ذِ نذ ذد ذّ",
+    "ar": "١) أقرأُ الكَلِمَةَ ثُمَّ أرْبِطُهَا بِصُورَتِهَا. ٢) أكْتُبُ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "ذَهَبٌ",
+      "fr": "Or",
+      "emoji": "🥇"
+    },
+    {
+      "id": "mot2",
+      "ar": "لَذِيذٌ",
+      "fr": "Délicieux",
+      "emoji": "😊"
+    },
+    {
+      "id": "mot3",
+      "ar": "ذَيْلٌ",
+      "fr": "Queue",
+      "emoji": "🐋"
+    },
+    {
+      "id": "mot4",
+      "ar": "مِذْيَاعٌ",
+      "fr": "Radio",
+      "emoji": "📻"
+    },
+    {
+      "id": "mot5",
+      "ar": "تَذْكِرَةٌ",
+      "fr": "Billet",
+      "emoji": "🎫"
+    },
+    {
+      "id": "mot6",
+      "ar": "ذُرَةٌ",
+      "fr": "Maïs",
+      "emoji": "🌽"
+    },
+    {
+      "id": "completion1",
+      "ar": "قُنْفُذٌ",
+      "fr": "Hérisson",
+      "emoji": "🦔"
+    },
+    {
+      "id": "completion2",
+      "ar": "جُذُورٌ",
+      "fr": "Racines",
+      "emoji": "🌳"
+    },
+    {
+      "id": "completion3",
+      "ar": ".... بُلَتْ",
+      "fr": "Elle s'est fanée",
+      "emoji": "🌱"
+    },
+    {
+      "id": "completion4",
+      "ar": "تَذُوبُ",
+      "fr": "Elle fond",
+      "emoji": "🍦"
+    },
+    {
+      "id": "completion5",
+      "ar": "يَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "fr": "Il va à l'école",
+      "emoji": "👦"
+    },
+    {
+      "id": "completion6",
+      "ar": "تَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "fr": "Elle va à l'école",
+      "emoji": "👧"
+    },
+    {
+      "id": "completion7",
+      "ar": "يَقْذِفُ",
+      "fr": "Il lance",
+      "emoji": "🧒"
+    },
+    {
+      "id": "completion8",
+      "ar": "يَجْذُبُ",
+      "fr": "Il tire",
+      "emoji": "🧑"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 15,
+  "nom_pdf": "lecture_niv4_lec08_dheel",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "١) أقرأُ الكَلِمَةَ ثُمَّ أرْبِطُهَا بِصُورَتِهَا. ٢) أكْتُبُ. ٣) أُكْمِلُ بِمَا يُنَاسِبُ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "ذَهَبٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "لَذِيذٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot3",
+      "texte_ar": "ذَيْلٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot4",
+      "texte_ar": "مِذْيَاعٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot5",
+      "texte_ar": "تَذْكِرَةٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot6",
+      "texte_ar": "ذُرَةٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion1",
+      "texte_ar": "قُنْفُذٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion1_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion2",
+      "texte_ar": "جُذُورٌ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion2_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion3",
+      "texte_ar": ".... بُلَتْ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion3_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion4",
+      "texte_ar": "تَذُوبُ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion4_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion5",
+      "texte_ar": "يَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion5_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion6",
+      "texte_ar": "تَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion6_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion7",
+      "texte_ar": "يَقْذِفُ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion7_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_completion8",
+      "texte_ar": "يَجْذُبُ",
+      "voix_m": "lecture_niv4_lec08_dheel_p2_completion8_m.mp3",
+      "voix_f": "lecture_niv4_lec08_dheel_p2_completion8_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:02:30.168209",
+    "niveau": 4,
+    "lecon": 8,
+    "nom_pdf": "lecture_niv4_lec08_dheel",
+    "bucket_audio": "audio-lessons/niveau4/lecon08/",
+    "nb_audio_assets": 15
+  }
+}

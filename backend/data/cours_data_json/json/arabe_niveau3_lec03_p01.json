@@ -1,0 +1,493 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "flashcard_audio_tap",
+  "titre": {
+    "fr": "La voyelle Damma - Les jours de la semaine",
+    "ar": "الضَّمَّة - أيام الأسبوع"
+  },
+  "enonce": {
+    "fr": "Lis chaque lettre avec la voyelle Damma (u)",
+    "ar": "اقرأ كل حرف مع الضَّمَّة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أُ",
+      "fr": "u (alif)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "2",
+      "ar": "بُ",
+      "fr": "bu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "3",
+      "ar": "تُ",
+      "fr": "tu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "4",
+      "ar": "ثُ",
+      "fr": "thu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "5",
+      "ar": "جُ",
+      "fr": "ju",
+      "emoji": "🔤"
+    },
+    {
+      "id": "6",
+      "ar": "حُ",
+      "fr": "hu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "7",
+      "ar": "خُ",
+      "fr": "khu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "8",
+      "ar": "دُ",
+      "fr": "du",
+      "emoji": "🔤"
+    },
+    {
+      "id": "9",
+      "ar": "ذُ",
+      "fr": "dhu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "10",
+      "ar": "رُ",
+      "fr": "ru",
+      "emoji": "🔤"
+    },
+    {
+      "id": "11",
+      "ar": "زُ",
+      "fr": "zu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "12",
+      "ar": "سُ",
+      "fr": "su",
+      "emoji": "🔤"
+    },
+    {
+      "id": "13",
+      "ar": "شُ",
+      "fr": "shu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "14",
+      "ar": "صُ",
+      "fr": "su (emphatic)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "15",
+      "ar": "ضُ",
+      "fr": "du (emphatic)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "16",
+      "ar": "طُ",
+      "fr": "tu (emphatic)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "17",
+      "ar": "ظُ",
+      "fr": "dhu (emphatic)",
+      "emoji": "🔤"
+    },
+    {
+      "id": "18",
+      "ar": "عُ",
+      "fr": "'u",
+      "emoji": "🔤"
+    },
+    {
+      "id": "19",
+      "ar": "غُ",
+      "fr": "ghu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "20",
+      "ar": "فُ",
+      "fr": "fu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "21",
+      "ar": "قُ",
+      "fr": "qu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "22",
+      "ar": "كُ",
+      "fr": "ku",
+      "emoji": "🔤"
+    },
+    {
+      "id": "23",
+      "ar": "لُ",
+      "fr": "lu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "24",
+      "ar": "مُ",
+      "fr": "mu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "25",
+      "ar": "نُ",
+      "fr": "nu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "26",
+      "ar": "هُ",
+      "fr": "hu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "27",
+      "ar": "وُ",
+      "fr": "wu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "28",
+      "ar": "يُ",
+      "fr": "yu",
+      "emoji": "🔤"
+    },
+    {
+      "id": "29",
+      "ar": "الاثنين",
+      "fr": "Lundi",
+      "emoji": "📅"
+    },
+    {
+      "id": "30",
+      "ar": "الثلاثاء",
+      "fr": "Mardi",
+      "emoji": "📅"
+    },
+    {
+      "id": "31",
+      "ar": "الأربعاء",
+      "fr": "Mercredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "32",
+      "ar": "الخميس",
+      "fr": "Jeudi",
+      "emoji": "📅"
+    },
+    {
+      "id": "33",
+      "ar": "الجمعة",
+      "fr": "Vendredi",
+      "emoji": "📅"
+    },
+    {
+      "id": "34",
+      "ar": "السبت",
+      "fr": "Samedi",
+      "emoji": "📅"
+    },
+    {
+      "id": "35",
+      "ar": "الأحد",
+      "fr": "Dimanche",
+      "emoji": "📅"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "arabe_niveau3_lec03",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "اقرأ كل حرف مع الضَّمَّة",
+      "voix_m": "arabe_niveau3_lec03_p1_consigne_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أُ",
+      "voix_m": "arabe_niveau3_lec03_p1_1_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "بُ",
+      "voix_m": "arabe_niveau3_lec03_p1_2_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تُ",
+      "voix_m": "arabe_niveau3_lec03_p1_3_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ثُ",
+      "voix_m": "arabe_niveau3_lec03_p1_4_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "جُ",
+      "voix_m": "arabe_niveau3_lec03_p1_5_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "حُ",
+      "voix_m": "arabe_niveau3_lec03_p1_6_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "خُ",
+      "voix_m": "arabe_niveau3_lec03_p1_7_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "دُ",
+      "voix_m": "arabe_niveau3_lec03_p1_8_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ذُ",
+      "voix_m": "arabe_niveau3_lec03_p1_9_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "رُ",
+      "voix_m": "arabe_niveau3_lec03_p1_10_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "زُ",
+      "voix_m": "arabe_niveau3_lec03_p1_11_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "سُ",
+      "voix_m": "arabe_niveau3_lec03_p1_12_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "شُ",
+      "voix_m": "arabe_niveau3_lec03_p1_13_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "صُ",
+      "voix_m": "arabe_niveau3_lec03_p1_14_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ضُ",
+      "voix_m": "arabe_niveau3_lec03_p1_15_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "طُ",
+      "voix_m": "arabe_niveau3_lec03_p1_16_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "ظُ",
+      "voix_m": "arabe_niveau3_lec03_p1_17_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "عُ",
+      "voix_m": "arabe_niveau3_lec03_p1_18_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_18_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_19",
+      "texte_ar": "غُ",
+      "voix_m": "arabe_niveau3_lec03_p1_19_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_19_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_20",
+      "texte_ar": "فُ",
+      "voix_m": "arabe_niveau3_lec03_p1_20_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_20_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_21",
+      "texte_ar": "قُ",
+      "voix_m": "arabe_niveau3_lec03_p1_21_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_21_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_22",
+      "texte_ar": "كُ",
+      "voix_m": "arabe_niveau3_lec03_p1_22_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_22_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_23",
+      "texte_ar": "لُ",
+      "voix_m": "arabe_niveau3_lec03_p1_23_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_23_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_24",
+      "texte_ar": "مُ",
+      "voix_m": "arabe_niveau3_lec03_p1_24_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_24_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_25",
+      "texte_ar": "نُ",
+      "voix_m": "arabe_niveau3_lec03_p1_25_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_25_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_26",
+      "texte_ar": "هُ",
+      "voix_m": "arabe_niveau3_lec03_p1_26_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_26_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_27",
+      "texte_ar": "وُ",
+      "voix_m": "arabe_niveau3_lec03_p1_27_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_27_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_28",
+      "texte_ar": "يُ",
+      "voix_m": "arabe_niveau3_lec03_p1_28_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_28_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_29",
+      "texte_ar": "الاثنين",
+      "voix_m": "arabe_niveau3_lec03_p1_29_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_29_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_30",
+      "texte_ar": "الثلاثاء",
+      "voix_m": "arabe_niveau3_lec03_p1_30_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_30_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_31",
+      "texte_ar": "الأربعاء",
+      "voix_m": "arabe_niveau3_lec03_p1_31_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_31_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_32",
+      "texte_ar": "الخميس",
+      "voix_m": "arabe_niveau3_lec03_p1_32_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_32_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_33",
+      "texte_ar": "الجمعة",
+      "voix_m": "arabe_niveau3_lec03_p1_33_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_33_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_34",
+      "texte_ar": "السبت",
+      "voix_m": "arabe_niveau3_lec03_p1_34_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_34_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_35",
+      "texte_ar": "الأحد",
+      "voix_m": "arabe_niveau3_lec03_p1_35_m.mp3",
+      "voix_f": "arabe_niveau3_lec03_p1_35_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:27:00.246901",
+    "niveau": 3,
+    "lecon": 3,
+    "nom_pdf": "arabe_niveau3_lec03",
+    "bucket_audio": "audio-lessons/niveau3/lecon03/",
+    "nb_audio_assets": 36
+  }
+}

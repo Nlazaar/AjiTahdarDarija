@@ -1,0 +1,311 @@
+{
+  "page_nb": 1,
+  "type": "cours",
+  "mecanique": "Découverte de la lettre ك avec ses voyelles, identification auditive et visuelle, puis exercices de reconnaissance dans des mots",
+  "titre": {
+    "fr": "La lettre Kaf (ك)",
+    "ar": "حَرْفُ الْكَافِ"
+  },
+  "enonce": {
+    "fr": "Découvre la lettre ك avec ses différentes voyelles à travers des images, écoute et dis si tu entends la lettre dans le mot, puis entoure la lettre ك dans les mots proposés.",
+    "ar": "تَعَلَّمْ حَرْفَ الْكَافِ مَعَ حَرَكَاتِهِ مِنْ خِلَالِ الصُّوَرِ، ثُمَّ أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ."
+  },
+  "elements": [
+    {
+      "id": "mot_1",
+      "ar": "كِتَابٌ",
+      "fr": "livre",
+      "emoji": "📘"
+    },
+    {
+      "id": "mot_2",
+      "ar": "كُرَةٌ",
+      "fr": "ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "mot_3",
+      "ar": "كَلْبٌ",
+      "fr": "chien",
+      "emoji": "🐶"
+    },
+    {
+      "id": "mot_4",
+      "ar": "كِيسٌ",
+      "fr": "sac",
+      "emoji": "👜"
+    },
+    {
+      "id": "mot_5",
+      "ar": "كُوبٌ",
+      "fr": "verre",
+      "emoji": "🥛"
+    },
+    {
+      "id": "mot_6",
+      "ar": "بُرْكَانٌ",
+      "fr": "volcan",
+      "emoji": "🌋"
+    },
+    {
+      "id": "phrase_1",
+      "ar": "رَكَلَ حَكِيمٌ الْكُرَةَ",
+      "fr": "Hakim a botté le ballon",
+      "emoji": "⚽"
+    },
+    {
+      "id": "exercice_1",
+      "ar": "أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ",
+      "fr": "J'entends ou je n'entends pas la lettre",
+      "emoji": "👂"
+    },
+    {
+      "id": "exercice_2",
+      "ar": "أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ",
+      "fr": "J'entoure la lettre dans les mots",
+      "emoji": "✏️"
+    },
+    {
+      "id": "mot_ex_1",
+      "ar": "بَاكِرًا",
+      "fr": "tôt",
+      "emoji": "🌅"
+    },
+    {
+      "id": "mot_ex_2",
+      "ar": "مَكَانٌ",
+      "fr": "endroit",
+      "emoji": "📍"
+    },
+    {
+      "id": "mot_ex_3",
+      "ar": "صَحْرَاءُ",
+      "fr": "désert",
+      "emoji": "🏜️"
+    },
+    {
+      "id": "mot_ex_4",
+      "ar": "سُكُونٌ",
+      "fr": "calme / sukun",
+      "emoji": "🔇"
+    },
+    {
+      "id": "mot_ex_5",
+      "ar": "رُكْنٌ",
+      "fr": "coin",
+      "emoji": "📐"
+    },
+    {
+      "id": "mot_ex_6",
+      "ar": "يَقِفُ",
+      "fr": "il s'arrête",
+      "emoji": "🛑"
+    },
+    {
+      "id": "mot_ex_7",
+      "ar": "حَكَمُ",
+      "fr": "arbitre",
+      "emoji": "🏅"
+    },
+    {
+      "id": "mot_ex_8",
+      "ar": "مَحْكَمَةٌ",
+      "fr": "tribunal",
+      "emoji": "⚖️"
+    },
+    {
+      "id": "mot_ex_9",
+      "ar": "كُحَّةٌ",
+      "fr": "toux",
+      "emoji": "🤧"
+    },
+    {
+      "id": "mot_ex_10",
+      "ar": "مُلَاكِمٌ",
+      "fr": "boxeur",
+      "emoji": "🥊"
+    },
+    {
+      "id": "mot_ex_11",
+      "ar": "مَسْكَنٌ",
+      "fr": "logement",
+      "emoji": "🏠"
+    },
+    {
+      "id": "mot_ex_12",
+      "ar": "بَكَى",
+      "fr": "il a pleuré",
+      "emoji": "😢"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv5_lec06_kef",
+  "audio_assets": [
+    {
+      "id": "audio_p1_consigne",
+      "texte_ar": "تَعَلَّمْ حَرْفَ الْكَافِ مَعَ حَرَكَاتِهِ مِنْ خِلَالِ الصُّوَرِ، ثُمَّ أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ، وَأَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ فِي الْكَلِمَاتِ.",
+      "voix_m": "lecture_niv5_lec06_kef_p1_consigne_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_1",
+      "texte_ar": "كِتَابٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_2",
+      "texte_ar": "كُرَةٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_3",
+      "texte_ar": "كَلْبٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_4",
+      "texte_ar": "كِيسٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_5",
+      "texte_ar": "كُوبٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_5_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_6",
+      "texte_ar": "بُرْكَانٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_6_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_phrase_1",
+      "texte_ar": "رَكَلَ حَكِيمٌ الْكُرَةَ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_phrase_1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_phrase_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_1",
+      "texte_ar": "أَسْمَعُ أَوْ لَا أَسْمَعُ الْحَرْفَ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_exercice_1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_exercice_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_exercice_2",
+      "texte_ar": "أَرْسُمُ دَائِرَةً حَوْلَ الْحَرْفِ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_exercice_2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_exercice_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_1",
+      "texte_ar": "بَاكِرًا",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_1_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_2",
+      "texte_ar": "مَكَانٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_2_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_3",
+      "texte_ar": "صَحْرَاءُ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_3_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_4",
+      "texte_ar": "سُكُونٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_4_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_5",
+      "texte_ar": "رُكْنٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_5_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_6",
+      "texte_ar": "يَقِفُ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_6_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_7",
+      "texte_ar": "حَكَمُ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_7_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_8",
+      "texte_ar": "مَحْكَمَةٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_8_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_9",
+      "texte_ar": "كُحَّةٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_9_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_10",
+      "texte_ar": "مُلَاكِمٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_10_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_11",
+      "texte_ar": "مَسْكَنٌ",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_11_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot_ex_12",
+      "texte_ar": "بَكَى",
+      "voix_m": "lecture_niv5_lec06_kef_p1_mot_ex_12_m.mp3",
+      "voix_f": "lecture_niv5_lec06_kef_p1_mot_ex_12_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:28:06.739267",
+    "niveau": 1,
+    "lecon": 6,
+    "nom_pdf": "lecture_niv5_lec06_kef",
+    "bucket_audio": "audio-lessons/niveau1/lecon06/",
+    "nb_audio_assets": 22
+  }
+}

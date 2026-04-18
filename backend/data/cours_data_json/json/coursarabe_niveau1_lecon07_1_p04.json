@@ -1,0 +1,207 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "Identifier et colorier uniquement la lettre cible parmi d'autres lettres mélangées",
+  "titre": {
+    "fr": "Je colorie la lettre",
+    "ar": "أَلَوِّنُ الحَرْفَ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement la lettre ل parmi toutes les lettres présentées",
+    "ar": "لَوِّنْ حَرْفَ اللَّامِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الحُرُوفِ"
+  },
+  "elements": [
+    {
+      "id": "lettre_cible",
+      "ar": "ل",
+      "fr": "lam (lettre cible en rouge)",
+      "emoji": "🔴"
+    },
+    {
+      "id": "lettre_1",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_2",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_3",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_4",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_5",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "lettre_6",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": "✏️"
+    },
+    {
+      "id": "distracteur_1",
+      "ar": "ف",
+      "fr": "fa (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "distracteur_2",
+      "ar": "س",
+      "fr": "sin (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "distracteur_3",
+      "ar": "و",
+      "fr": "waw (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "distracteur_4",
+      "ar": "ن",
+      "fr": "nun (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "distracteur_5",
+      "ar": "ر",
+      "fr": "ra (distracteur)",
+      "emoji": "❌"
+    },
+    {
+      "id": "distracteur_6",
+      "ar": "ي",
+      "fr": "ya (distracteur)",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 1,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "لَوِّنْ حَرْفَ اللَّامِ فَقَطْ مِنْ بَيْنِ جَمِيعِ الحُرُوفِ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_cible",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_cible_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_cible_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_1",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_2",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_3",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_4",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_5",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre_6",
+      "texte_ar": "ل",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_lettre_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_lettre_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_1",
+      "texte_ar": "ف",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_2",
+      "texte_ar": "س",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_3",
+      "texte_ar": "و",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_4",
+      "texte_ar": "ن",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_5",
+      "texte_ar": "ر",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_distracteur_6",
+      "texte_ar": "ي",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p4_distracteur_6_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p4_distracteur_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 10,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:53:35.799741",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 14
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "page_nb": 11,
+  "type": "exercice",
+  "mecanique": "drag_drop_habitat",
+  "titre": {
+    "fr": "Découpe les images pour l'exercice 1",
+    "ar": "أقصّ الصّور للتمرين رقم 1"
+  },
+  "enonce": {
+    "fr": "Découpe les images des moyens de transport et classe-les par catégorie : avion, train, voiture, bus.",
+    "ar": "اقصص صور وسائل النقل وصنّفها حسب الفئة: طائرة، قطار، سيارة، حافلة."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قِطَار",
+      "fr": "train (ancien)",
+      "emoji": "🚂"
+    },
+    {
+      "id": "2",
+      "ar": "حَافِلَة مَدْرَسِيَّة",
+      "fr": "bus scolaire",
+      "emoji": "🚌"
+    },
+    {
+      "id": "3",
+      "ar": "سَيَّارَة",
+      "fr": "voiture bleue",
+      "emoji": "🚗"
+    },
+    {
+      "id": "4",
+      "ar": "طَائِرَة",
+      "fr": "avion petit",
+      "emoji": "✈️"
+    },
+    {
+      "id": "5",
+      "ar": "طَائِرَة كَبِيرَة",
+      "fr": "grand avion",
+      "emoji": "🛩️"
+    },
+    {
+      "id": "6",
+      "ar": "قِطَار حَدِيث",
+      "fr": "train moderne",
+      "emoji": "🚄"
+    },
+    {
+      "id": "7",
+      "ar": "حَافِلَة خَضْرَاء",
+      "fr": "bus vert",
+      "emoji": "🚌"
+    },
+    {
+      "id": "8",
+      "ar": "سَيَّارَة حَمْرَاء",
+      "fr": "voiture rouge",
+      "emoji": "🚗"
+    },
+    {
+      "id": "9",
+      "ar": "قِطَار سَرِيع",
+      "fr": "train rapide",
+      "emoji": "🚅"
+    },
+    {
+      "id": "10",
+      "ar": "سَيَّارَة خَضْرَاء",
+      "fr": "voiture verte",
+      "emoji": "🚗"
+    },
+    {
+      "id": "11",
+      "ar": "طَائِرَة",
+      "fr": "avion",
+      "emoji": "✈️"
+    },
+    {
+      "id": "12",
+      "ar": "حَافِلَة بُرْتُقَالِيَّة",
+      "fr": "bus orange",
+      "emoji": "🚌"
+    },
+    {
+      "id": "13",
+      "ar": "طَائِرَة كَبِيرَة",
+      "fr": "grand avion blanc",
+      "emoji": "🛩️"
+    },
+    {
+      "id": "14",
+      "ar": "حَافِلَة سَوْدَاء",
+      "fr": "bus noir",
+      "emoji": "🚌"
+    },
+    {
+      "id": "15",
+      "ar": "قِطَار أَبْيَض",
+      "fr": "train blanc",
+      "emoji": "🚄"
+    },
+    {
+      "id": "16",
+      "ar": "سَيَّارَة صَغِيرَة",
+      "fr": "petite voiture orange",
+      "emoji": "🚗"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_05_1",
+  "audio_assets": [
+    {
+      "id": "audio_p11_consigne",
+      "texte_ar": "اقصص صور وسائل النقل وصنّفها حسب الفئة: طائرة، قطار، سيارة، حافلة.",
+      "voix_m": "arabe_niveau2_05_1_p11_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قِطَار",
+      "voix_m": "arabe_niveau2_05_1_p11_1_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَافِلَة مَدْرَسِيَّة",
+      "voix_m": "arabe_niveau2_05_1_p11_2_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "سَيَّارَة",
+      "voix_m": "arabe_niveau2_05_1_p11_3_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "arabe_niveau2_05_1_p11_4_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "طَائِرَة كَبِيرَة",
+      "voix_m": "arabe_niveau2_05_1_p11_5_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قِطَار حَدِيث",
+      "voix_m": "arabe_niveau2_05_1_p11_6_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "حَافِلَة خَضْرَاء",
+      "voix_m": "arabe_niveau2_05_1_p11_7_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "سَيَّارَة حَمْرَاء",
+      "voix_m": "arabe_niveau2_05_1_p11_8_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "قِطَار سَرِيع",
+      "voix_m": "arabe_niveau2_05_1_p11_9_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "سَيَّارَة خَضْرَاء",
+      "voix_m": "arabe_niveau2_05_1_p11_10_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "طَائِرَة",
+      "voix_m": "arabe_niveau2_05_1_p11_11_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "حَافِلَة بُرْتُقَالِيَّة",
+      "voix_m": "arabe_niveau2_05_1_p11_12_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "طَائِرَة كَبِيرَة",
+      "voix_m": "arabe_niveau2_05_1_p11_13_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "حَافِلَة سَوْدَاء",
+      "voix_m": "arabe_niveau2_05_1_p11_14_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "قِطَار أَبْيَض",
+      "voix_m": "arabe_niveau2_05_1_p11_15_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "سَيَّارَة صَغِيرَة",
+      "voix_m": "arabe_niveau2_05_1_p11_16_m.mp3",
+      "voix_f": "arabe_niveau2_05_1_p11_16_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:45:49.815284",
+    "niveau": 2,
+    "lecon": 15,
+    "nom_pdf": "arabe_niveau2_05_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon15/",
+    "nb_audio_assets": 17
+  }
+}

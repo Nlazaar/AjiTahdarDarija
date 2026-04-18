@@ -1,0 +1,77 @@
+{
+  "page_nb": 18,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à son image",
+    "ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "enonce": {
+    "fr": "Je lis puis je relie avec l'image qui correspond",
+    "ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "مَرِضَ",
+      "fr": "malade",
+      "emoji": "🤒"
+    },
+    {
+      "id": "2",
+      "ar": "حَزِنَ",
+      "fr": "triste",
+      "emoji": "😢"
+    },
+    {
+      "id": "3",
+      "ar": "فَرِحَ",
+      "fr": "joyeux",
+      "emoji": "😄"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p18_consigne",
+      "texte_ar": "اِقْرَأْ ثُمَّ ارْبِطْ بِالصُّورَةِ الْمُنَاسِبَةِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p18_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p18_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "مَرِضَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p18_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p18_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حَزِنَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p18_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p18_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فَرِحَ",
+      "voix_m": "livre_arabe_niveau3_a5_partie2_p18_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie2_p18_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:33:37.825197",
+    "niveau": 3,
+    "lecon": 48,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau3/lecon48/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure la lettre sous toutes ses formes",
+    "ar": "أحيط الحرف بمختلف أشكاله"
+  },
+  "enonce": {
+    "fr": "Entoure toutes les formes de la lettre ح parmi les lettres proposées",
+    "ar": "أحِط بدائرة جميع أشكال حرف الحاء من بين الحروف المعروضة"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "ج",
+      "fr": "jim",
+      "emoji": ""
+    },
+    {
+      "id": "2",
+      "ar": "ح",
+      "fr": "ha (isolé)",
+      "emoji": "✅"
+    },
+    {
+      "id": "3",
+      "ar": "ك",
+      "fr": "kaf",
+      "emoji": ""
+    },
+    {
+      "id": "4",
+      "ar": "ح",
+      "fr": "ha (début)",
+      "emoji": "✅"
+    },
+    {
+      "id": "5",
+      "ar": "ي",
+      "fr": "ya",
+      "emoji": ""
+    },
+    {
+      "id": "6",
+      "ar": "ة",
+      "fr": "ta marbuta",
+      "emoji": ""
+    },
+    {
+      "id": "7",
+      "ar": "ض",
+      "fr": "dad",
+      "emoji": ""
+    },
+    {
+      "id": "8",
+      "ar": "و",
+      "fr": "waw",
+      "emoji": ""
+    },
+    {
+      "id": "9",
+      "ar": "ل",
+      "fr": "lam",
+      "emoji": ""
+    },
+    {
+      "id": "10",
+      "ar": "ء",
+      "fr": "hamza",
+      "emoji": ""
+    },
+    {
+      "id": "11",
+      "ar": "ث",
+      "fr": "tha",
+      "emoji": ""
+    },
+    {
+      "id": "12",
+      "ar": "ع",
+      "fr": "ayn",
+      "emoji": ""
+    },
+    {
+      "id": "13",
+      "ar": "خ",
+      "fr": "kha",
+      "emoji": ""
+    },
+    {
+      "id": "14",
+      "ar": "ح",
+      "fr": "ha (milieu)",
+      "emoji": "✅"
+    },
+    {
+      "id": "15",
+      "ar": "ح",
+      "fr": "ha (fin)",
+      "emoji": "✅"
+    },
+    {
+      "id": "16",
+      "ar": "ح",
+      "fr": "ha (isolé grand)",
+      "emoji": "✅"
+    },
+    {
+      "id": "17",
+      "ar": "غ",
+      "fr": "ghayn",
+      "emoji": ""
+    },
+    {
+      "id": "18",
+      "ar": "ع",
+      "fr": "ayn isolé",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_03_1",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "أحِط بدائرة جميع أشكال حرف الحاء من بين الحروف المعروضة",
+      "voix_m": "arabe_niveau2_03_1_p3_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "ج",
+      "voix_m": "arabe_niveau2_03_1_p3_1_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p3_2_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ك",
+      "voix_m": "arabe_niveau2_03_1_p3_3_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p3_4_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "ي",
+      "voix_m": "arabe_niveau2_03_1_p3_5_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ة",
+      "voix_m": "arabe_niveau2_03_1_p3_6_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ض",
+      "voix_m": "arabe_niveau2_03_1_p3_7_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_8",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_03_1_p3_8_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_8_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_9",
+      "texte_ar": "ل",
+      "voix_m": "arabe_niveau2_03_1_p3_9_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_9_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_10",
+      "texte_ar": "ء",
+      "voix_m": "arabe_niveau2_03_1_p3_10_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_10_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_11",
+      "texte_ar": "ث",
+      "voix_m": "arabe_niveau2_03_1_p3_11_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_11_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_12",
+      "texte_ar": "ع",
+      "voix_m": "arabe_niveau2_03_1_p3_12_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_12_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_13",
+      "texte_ar": "خ",
+      "voix_m": "arabe_niveau2_03_1_p3_13_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_13_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_14",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p3_14_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_14_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_15",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p3_15_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_15_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_16",
+      "texte_ar": "ح",
+      "voix_m": "arabe_niveau2_03_1_p3_16_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_16_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_17",
+      "texte_ar": "غ",
+      "voix_m": "arabe_niveau2_03_1_p3_17_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_17_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_18",
+      "texte_ar": "ع",
+      "voix_m": "arabe_niveau2_03_1_p3_18_m.mp3",
+      "voix_f": "arabe_niveau2_03_1_p3_18_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:39:15.696730",
+    "niveau": 2,
+    "lecon": 11,
+    "nom_pdf": "arabe_niveau2_03_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon11/",
+    "nb_audio_assets": 19
+  }
+}

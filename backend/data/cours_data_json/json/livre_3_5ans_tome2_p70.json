@@ -1,0 +1,64 @@
+{
+  "page_nb": 70,
+  "type": "exercice",
+  "mecanique": "ecriture_guidee",
+  "titre": {
+    "fr": "Je trace les lignes",
+    "ar": "أرسم الخطوط"
+  },
+  "enonce": {
+    "fr": "Trace les lignes en zigzag et les formes en suivant le modèle pointillé.",
+    "ar": "ارسم الخطوط المتعرجة والأشكال باتباع النموذج المنقط."
+  },
+  "elements": [
+    {
+      "id": "zigzag",
+      "ar": "خط متعرج",
+      "fr": "ligne en zigzag",
+      "emoji": "〰️"
+    },
+    {
+      "id": "forme_arabe",
+      "ar": "شكل خطي",
+      "fr": "forme calligraphique",
+      "emoji": "✏️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "livre_3_5ans_tome2",
+  "audio_assets": [
+    {
+      "id": "audio_p70_consigne",
+      "texte_ar": "ارسم الخطوط المتعرجة والأشكال باتباع النموذج المنقط.",
+      "voix_m": "livre_3_5ans_tome2_p70_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p70_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_zigzag",
+      "texte_ar": "خط متعرج",
+      "voix_m": "livre_3_5ans_tome2_p70_zigzag_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p70_zigzag_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_forme_arabe",
+      "texte_ar": "شكل خطي",
+      "voix_m": "livre_3_5ans_tome2_p70_forme_arabe_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_p70_forme_arabe_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:07:22.473135",
+    "niveau": 1,
+    "lecon": 23,
+    "nom_pdf": "livre_3_5ans_tome2",
+    "bucket_audio": "audio-lessons/niveau1/lecon23/",
+    "nb_audio_assets": 3
+  }
+}

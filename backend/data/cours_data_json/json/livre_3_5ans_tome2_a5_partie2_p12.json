@@ -1,0 +1,181 @@
+{
+  "page_nb": 12,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Colorie les lettres du mot",
+    "ar": "أَلْوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot illustré par l'image",
+    "ar": "أَلْوِّنُ حُرُوفَ الكَلِمَةِ الَّتِي تُمَثِّلُهَا الصُّورَةُ"
+  },
+  "elements": [
+    {
+      "id": "mot1",
+      "ar": "شَوْكَة",
+      "fr": "fourchette",
+      "emoji": "🍴"
+    },
+    {
+      "id": "lettre1_sh",
+      "ar": "شـ",
+      "fr": "sh",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_w",
+      "ar": "وـ",
+      "fr": "w",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_k",
+      "ar": "كـ",
+      "fr": "k",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_a",
+      "ar": "ا",
+      "fr": "a",
+      "emoji": ""
+    },
+    {
+      "id": "lettre1_ta",
+      "ar": "ـة",
+      "fr": "ta marbouta",
+      "emoji": ""
+    },
+    {
+      "id": "mot2",
+      "ar": "سِكِّين",
+      "fr": "couteau",
+      "emoji": "🔪"
+    },
+    {
+      "id": "lettre2_s",
+      "ar": "سـ",
+      "fr": "s",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_k",
+      "ar": "كـ",
+      "fr": "k",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_i",
+      "ar": "ـيـ",
+      "fr": "i",
+      "emoji": ""
+    },
+    {
+      "id": "lettre2_n",
+      "ar": "ن",
+      "fr": "n",
+      "emoji": ""
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+  "audio_assets": [
+    {
+      "id": "audio_p12_consigne",
+      "texte_ar": "أَلْوِّنُ حُرُوفَ الكَلِمَةِ الَّتِي تُمَثِّلُهَا الصُّورَةُ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot1",
+      "texte_ar": "شَوْكَة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_mot1_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_sh",
+      "texte_ar": "شـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_sh_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_sh_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_w",
+      "texte_ar": "وـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_w_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_w_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_k",
+      "texte_ar": "كـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_k_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_k_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_a",
+      "texte_ar": "ا",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_a_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_a_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre1_ta",
+      "texte_ar": "ـة",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_ta_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre1_ta_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_mot2",
+      "texte_ar": "سِكِّين",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_mot2_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_s",
+      "texte_ar": "سـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_s_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_s_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_k",
+      "texte_ar": "كـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_k_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_k_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_i",
+      "texte_ar": "ـيـ",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_i_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_i_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lettre2_n",
+      "texte_ar": "ن",
+      "voix_m": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_n_m.mp3",
+      "voix_f": "livre_3_5ans_tome2_a5_partie2_p12_lettre2_n_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T09:20:44.160491",
+    "niveau": 1,
+    "lecon": 25,
+    "nom_pdf": "livre_3_5ans_tome2_a5_partie2",
+    "bucket_audio": "audio-lessons/niveau1/lecon25/",
+    "nb_audio_assets": 12
+  }
+}

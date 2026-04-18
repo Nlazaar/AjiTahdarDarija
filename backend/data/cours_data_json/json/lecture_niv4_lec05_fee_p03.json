@@ -1,0 +1,233 @@
+{
+  "page_nb": 3,
+  "type": "exercice",
+  "mecanique": "Trois exercices : remettre des lettres dans l'ordre pour former un mot (ex.6), compléter des phrases avec les mots proposés (ex.7), remettre des mots dans l'ordre pour construire une phrase (ex.8)",
+  "titre": {
+    "fr": "Exercices de vocabulaire et de phrases en arabe",
+    "ar": "تمارين في المفردات والجمل"
+  },
+  "enonce": {
+    "fr": "Ex.6 : Je remets les lettres dans l'ordre pour obtenir le mot. Ex.7 : Je complète avec ce qui convient. Ex.8 : Je remets les mots dans l'ordre pour construire une phrase.",
+    "ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ."
+  },
+  "elements": [
+    {
+      "id": "ex6_mot1",
+      "ar": "حافتة ← فَاكِهَة",
+      "fr": "lettres : ح ا ف ت ة → pomme/fruit",
+      "emoji": "🍎"
+    },
+    {
+      "id": "ex6_mot2",
+      "ar": "نساءخف ← فَرَاشَة",
+      "fr": "lettres : ن س ا ء خ ف → coccinelle/papillon",
+      "emoji": "🐞"
+    },
+    {
+      "id": "ex6_mot3",
+      "ar": "اةسحلف ← سَلَحْفَاة",
+      "fr": "lettres : ا ة س ح ل ف → tortue",
+      "emoji": "🐢"
+    },
+    {
+      "id": "ex6_mot4",
+      "ar": "فشراة ← فَرَاشَة",
+      "fr": "lettres : ف ش ر ا ة → papillon",
+      "emoji": "🦋"
+    },
+    {
+      "id": "ex7_mot1",
+      "ar": "الْخُبْزَ",
+      "fr": "le pain",
+      "emoji": "🍞"
+    },
+    {
+      "id": "ex7_mot2",
+      "ar": "الْمِفْتَاح",
+      "fr": "la clé",
+      "emoji": "🔑"
+    },
+    {
+      "id": "ex7_mot3",
+      "ar": "الْكِتَابَ",
+      "fr": "le livre",
+      "emoji": "📖"
+    },
+    {
+      "id": "ex7_mot4",
+      "ar": "الْفُرْن",
+      "fr": "le four",
+      "emoji": "🍳"
+    },
+    {
+      "id": "ex7_mot5",
+      "ar": "الْمِرْآةَ",
+      "fr": "le miroir",
+      "emoji": "🪞"
+    },
+    {
+      "id": "ex7_mot6",
+      "ar": "ظِلّ",
+      "fr": "l'ombre",
+      "emoji": "🌳"
+    },
+    {
+      "id": "ex7_mot7",
+      "ar": "فَتَحَ",
+      "fr": "il a ouvert",
+      "emoji": "🚪"
+    },
+    {
+      "id": "ex8_mot1",
+      "ar": "فِي",
+      "fr": "dans",
+      "emoji": "📍"
+    },
+    {
+      "id": "ex8_mot2",
+      "ar": "فَرِيدَةُ",
+      "fr": "Farida (prénom)",
+      "emoji": "👧"
+    },
+    {
+      "id": "ex8_mot3",
+      "ar": "السِّبَاق",
+      "fr": "la course",
+      "emoji": "🏃"
+    },
+    {
+      "id": "ex8_mot4",
+      "ar": "فَازَتْ",
+      "fr": "elle a gagné",
+      "emoji": "🏆"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 20,
+  "nom_pdf": "lecture_niv4_lec05_fee",
+  "audio_assets": [
+    {
+      "id": "audio_p3_consigne",
+      "texte_ar": "٦- أُرَتِّبُ الْحُرُوفَ لِأَحْصُلَ عَلَى الْكَلِمَةِ. ٧- أُكْمِلُ بِمَا يُنَاسِبُ. ٨- أُرَتِّبُ الْكَلِمَاتِ لِأَحْصُلَ عَلَى جُمْلَةٍ.",
+      "voix_m": "lecture_niv4_lec05_fee_p3_consigne_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot1",
+      "texte_ar": "حافتة ← فَاكِهَة",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex6_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex6_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot2",
+      "texte_ar": "نساءخف ← فَرَاشَة",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex6_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex6_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot3",
+      "texte_ar": "اةسحلف ← سَلَحْفَاة",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex6_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex6_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex6_mot4",
+      "texte_ar": "فشراة ← فَرَاشَة",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex6_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex6_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot1",
+      "texte_ar": "الْخُبْزَ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot2",
+      "texte_ar": "الْمِفْتَاح",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot3",
+      "texte_ar": "الْكِتَابَ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot4",
+      "texte_ar": "الْفُرْن",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot5",
+      "texte_ar": "الْمِرْآةَ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot5_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot6",
+      "texte_ar": "ظِلّ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot6_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex7_mot7",
+      "texte_ar": "فَتَحَ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex7_mot7_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex7_mot7_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot1",
+      "texte_ar": "فِي",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex8_mot1_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex8_mot1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot2",
+      "texte_ar": "فَرِيدَةُ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex8_mot2_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex8_mot2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot3",
+      "texte_ar": "السِّبَاق",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex8_mot3_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex8_mot3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_ex8_mot4",
+      "texte_ar": "فَازَتْ",
+      "voix_m": "lecture_niv4_lec05_fee_p3_ex8_mot4_m.mp3",
+      "voix_f": "lecture_niv4_lec05_fee_p3_ex8_mot4_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T06:48:44.870280",
+    "niveau": 4,
+    "lecon": 5,
+    "nom_pdf": "lecture_niv4_lec05_fee",
+    "bucket_audio": "audio-lessons/niveau4/lecon05/",
+    "nb_audio_assets": 16
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "page_nb": 7,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Relie le mot à l'image",
+    "ar": "أربط بين الكلمة و الصّورة"
+  },
+  "enonce": {
+    "fr": "Relie chaque image au mot arabe qui lui correspond.",
+    "ar": "أربط بين الكلمة و الصّورة المناسبة لها."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أخطبوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    },
+    {
+      "id": "2",
+      "ar": "حوت",
+      "fr": "baleine",
+      "emoji": "🐋"
+    },
+    {
+      "id": "3",
+      "ar": "شَبَكَةٌ",
+      "fr": "filet",
+      "emoji": "🕸️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 3,
+  "nom_pdf": "arabe_niveau2_02_2 (1)",
+  "audio_assets": [
+    {
+      "id": "audio_p7_consigne",
+      "texte_ar": "أربط بين الكلمة و الصّورة المناسبة لها.",
+      "voix_m": "arabe_niveau2_02_2 (1)_p7_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p7_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أخطبوط",
+      "voix_m": "arabe_niveau2_02_2 (1)_p7_1_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p7_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "حوت",
+      "voix_m": "arabe_niveau2_02_2 (1)_p7_2_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p7_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "شَبَكَةٌ",
+      "voix_m": "arabe_niveau2_02_2 (1)_p7_3_m.mp3",
+      "voix_f": "arabe_niveau2_02_2 (1)_p7_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:36:52.627976",
+    "niveau": 2,
+    "lecon": 9,
+    "nom_pdf": "arabe_niveau2_02_2 (1)",
+    "bucket_audio": "audio-lessons/niveau2/lecon09/",
+    "nb_audio_assets": 4
+  }
+}

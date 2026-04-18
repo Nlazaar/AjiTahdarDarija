@@ -1,0 +1,116 @@
+{
+  "page_nb": 15,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les canards en jaune",
+    "ar": "أَلوِّن الْبَطَّات بِالأَصْفَر"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les canards en jaune parmi tous les animaux",
+    "ar": "لَوِّن الْبَطَّات فَقَط بِاللَّوْنِ الأَصْفَر"
+  },
+  "elements": [
+    {
+      "id": "canard_1",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "lapin",
+      "ar": "أَرْنَب",
+      "fr": "lapin",
+      "emoji": "🐰"
+    },
+    {
+      "id": "canard_2",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "canard_3",
+      "ar": "بَطَّة",
+      "fr": "canard",
+      "emoji": "🦆"
+    },
+    {
+      "id": "escargot",
+      "ar": "حَلَزُون",
+      "fr": "escargot",
+      "emoji": "🐌"
+    },
+    {
+      "id": "poisson",
+      "ar": "سَمَكَة",
+      "fr": "poisson",
+      "emoji": "🐟"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p15_consigne",
+      "texte_ar": "لَوِّن الْبَطَّات فَقَط بِاللَّوْنِ الأَصْفَر",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_consigne_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canard_1",
+      "texte_ar": "بَطَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_canard_1_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_canard_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lapin",
+      "texte_ar": "أَرْنَب",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_lapin_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_lapin_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canard_2",
+      "texte_ar": "بَطَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_canard_2_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_canard_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_canard_3",
+      "texte_ar": "بَطَّة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_canard_3_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_canard_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_escargot",
+      "texte_ar": "حَلَزُون",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_escargot_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_escargot_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poisson",
+      "texte_ar": "سَمَكَة",
+      "voix_m": "livre_3_5ans_tome1_a5_partie1_p15_poisson_m.mp3",
+      "voix_f": "livre_3_5ans_tome1_a5_partie1_p15_poisson_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:26:38.988559",
+    "niveau": 1,
+    "lecon": 5,
+    "nom_pdf": "livre_3_5ans_tome1_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau1/lecon05/",
+    "nb_audio_assets": 7
+  }
+}

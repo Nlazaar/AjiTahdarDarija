@@ -1,0 +1,103 @@
+{
+  "page_nb": 60,
+  "type": "exercice",
+  "mecanique": "relier_mot_image",
+  "titre": {
+    "fr": "Je relie selon la position de la lettre dans le mot",
+    "ar": "أَرْبِطُ بِمَا يُنَاسِبُ : أَسْمَعُ الْحَرْفَ فِي أَوَّلَ أَو وَسَطَ أَو آخِرِ الْكَلِمَة"
+  },
+  "enonce": {
+    "fr": "J'écoute le mot et je relie l'image à la position de la lettre ع : au début (أ), au milieu (ع), ou à la fin (إ) du mot",
+    "ar": "اِسْمَعِ الْكَلِمَةَ وَارْبِطِ الصُّورَةَ بِمَكَانِ حَرْفِ الْعَيْنِ : أَوَّلًا أَوْ وَسَطًا أَوْ آخِرًا"
+  },
+  "elements": [
+    {
+      "id": "lion",
+      "ar": "أَسَد",
+      "fr": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "poire",
+      "ar": "إِجَّاصَة",
+      "fr": "poire",
+      "emoji": "🍐"
+    },
+    {
+      "id": "oreille",
+      "ar": "أُذُن",
+      "fr": "oreille",
+      "emoji": "👂"
+    },
+    {
+      "id": "souris",
+      "ar": "فَأْر",
+      "fr": "souris",
+      "emoji": "🐭"
+    },
+    {
+      "id": "pieuvre",
+      "ar": "أَخْطَبُوط",
+      "fr": "pieuvre",
+      "emoji": "🐙"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 7,
+  "nom_pdf": "livre_arabe_niveau3",
+  "audio_assets": [
+    {
+      "id": "audio_p60_consigne",
+      "texte_ar": "اِسْمَعِ الْكَلِمَةَ وَارْبِطِ الصُّورَةَ بِمَكَانِ حَرْفِ الْعَيْنِ : أَوَّلًا أَوْ وَسَطًا أَوْ آخِرًا",
+      "voix_m": "livre_arabe_niveau3_p60_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_lion",
+      "texte_ar": "أَسَد",
+      "voix_m": "livre_arabe_niveau3_p60_lion_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_lion_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_poire",
+      "texte_ar": "إِجَّاصَة",
+      "voix_m": "livre_arabe_niveau3_p60_poire_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_poire_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_oreille",
+      "texte_ar": "أُذُن",
+      "voix_m": "livre_arabe_niveau3_p60_oreille_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_oreille_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_souris",
+      "texte_ar": "فَأْر",
+      "voix_m": "livre_arabe_niveau3_p60_souris_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_souris_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_pieuvre",
+      "texte_ar": "أَخْطَبُوط",
+      "voix_m": "livre_arabe_niveau3_p60_pieuvre_m.mp3",
+      "voix_f": "livre_arabe_niveau3_p60_pieuvre_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:06:36.309525",
+    "niveau": 3,
+    "lecon": 46,
+    "nom_pdf": "livre_arabe_niveau3",
+    "bucket_audio": "audio-lessons/niveau3/lecon46/",
+    "nb_audio_assets": 6
+  }
+}

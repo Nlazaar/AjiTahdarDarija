@@ -1,0 +1,116 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Trouve le mot et entoure-le",
+    "ar": "أبحثُ عَن الكَلِمَةِ وَ أحيطُهَا بِخَطٍّ"
+  },
+  "enonce": {
+    "fr": "Cherche le mot 'lune' (قمر) parmi tous les mots écrits et entoure-le à chaque fois que tu le trouves.",
+    "ar": "أبحثُ عَن كَلِمَة قمر وَ أُحيطُهَا بِخَطٍّ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "قمر",
+      "fr": "lune (correct)",
+      "emoji": "🌙"
+    },
+    {
+      "id": "2",
+      "ar": "قمل",
+      "fr": "poux (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "3",
+      "ar": "فمر",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "4",
+      "ar": "قمد",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "قبر",
+      "fr": "tombe (intrus)",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "قمو",
+      "fr": "mot incorrect",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_2",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "أبحثُ عَن كَلِمَة قمر وَ أُحيطُهَا بِخَطٍّ",
+      "voix_m": "arabe_niveau2_04_2_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "قمر",
+      "voix_m": "arabe_niveau2_04_2_p4_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "قمل",
+      "voix_m": "arabe_niveau2_04_2_p4_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "فمر",
+      "voix_m": "arabe_niveau2_04_2_p4_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "قمد",
+      "voix_m": "arabe_niveau2_04_2_p4_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "قبر",
+      "voix_m": "arabe_niveau2_04_2_p4_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "قمو",
+      "voix_m": "arabe_niveau2_04_2_p4_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_2_p4_6_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:43:17.081602",
+    "niveau": 2,
+    "lecon": 14,
+    "nom_pdf": "arabe_niveau2_04_2",
+    "bucket_audio": "audio-lessons/niveau2/lecon14/",
+    "nb_audio_assets": 7
+  }
+}

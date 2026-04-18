@@ -1,0 +1,103 @@
+{
+  "page_nb": 2,
+  "type": "cours",
+  "mecanique": "Mémorisation de vocabulaire : association image-mot pour des animaux en arabe",
+  "titre": {
+    "fr": "Mémorise !",
+    "ar": "أَحْفَظْ"
+  },
+  "enonce": {
+    "fr": "Mémorise le nom de ces animaux en arabe",
+    "ar": "أَحْفَظْ أَسْمَاءَ هَذِهِ الْحَيَوَانَاتِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "أَسَدٌ",
+      "fr": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "2",
+      "ar": "نَحْلَةٌ",
+      "fr": "Abeille",
+      "emoji": "🐝"
+    },
+    {
+      "id": "3",
+      "ar": "عُصْفُورٌ",
+      "fr": "Moineau",
+      "emoji": "🐦"
+    },
+    {
+      "id": "4",
+      "ar": "فِيلٌ",
+      "fr": "Éléphant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "5",
+      "ar": "خُنْفُسَاءٌ",
+      "fr": "Coccinelle",
+      "emoji": "🐞"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 10,
+  "nom_pdf": "coursarabe_niveau1_lecon07_1",
+  "audio_assets": [
+    {
+      "id": "audio_p2_consigne",
+      "texte_ar": "أَحْفَظْ أَسْمَاءَ هَذِهِ الْحَيَوَانَاتِ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "أَسَدٌ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_1_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "نَحْلَةٌ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_2_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "عُصْفُورٌ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_3_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "فِيلٌ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_4_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خُنْفُسَاءٌ",
+      "voix_m": "coursarabe_niveau1_lecon07_1_p2_5_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_1_p2_5_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:52:49.684453",
+    "niveau": 1,
+    "lecon": 36,
+    "nom_pdf": "coursarabe_niveau1_lecon07_1",
+    "bucket_audio": "audio-lessons/niveau1/lecon36/",
+    "nb_audio_assets": 6
+  }
+}

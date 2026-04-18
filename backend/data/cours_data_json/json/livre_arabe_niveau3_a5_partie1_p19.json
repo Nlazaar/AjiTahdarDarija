@@ -1,0 +1,77 @@
+{
+  "page_nb": 38,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Entoure les lettres avec tanwine fatHa",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُنَوَّنَ بِالْفَتْحِ"
+  },
+  "enonce": {
+    "fr": "Entoure dans ces mots les lettres qui ont tanwine avec fatHa",
+    "ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُنَوَّنَ بِالْفَتْحِ"
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "تَقْرَأُ زَيْنَبُ كِتَابًا",
+      "fr": "Zaynab lit un livre",
+      "emoji": "📚"
+    },
+    {
+      "id": "2",
+      "ar": "يَصْرُخُ الْوَلَدُ صُرَاخًا شَدِيدًا",
+      "fr": "L'enfant crie très fort",
+      "emoji": "😮"
+    },
+    {
+      "id": "3",
+      "ar": "تَأْكُلُ مَرْيَمُ طَعَامًا لَذِيذًا",
+      "fr": "Maryam mange un repas délicieux",
+      "emoji": "🍜"
+    }
+  ],
+  "difficulte": 3,
+  "duree_minutes": 5,
+  "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+  "audio_assets": [
+    {
+      "id": "audio_p38_consigne",
+      "texte_ar": "أَحِيطُ بِخَطٍّ مُغْلَقٍ الحَرْفَ المُنَوَّنَ بِالْفَتْحِ",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p38_consigne_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p38_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "تَقْرَأُ زَيْنَبُ كِتَابًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p38_1_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p38_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "يَصْرُخُ الْوَلَدُ صُرَاخًا شَدِيدًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p38_2_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p38_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "تَأْكُلُ مَرْيَمُ طَعَامًا لَذِيذًا",
+      "voix_m": "livre_arabe_niveau3_a5_partie1_p38_3_m.mp3",
+      "voix_f": "livre_arabe_niveau3_a5_partie1_p38_3_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 30,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T10:26:13.590011",
+    "niveau": 3,
+    "lecon": 47,
+    "nom_pdf": "livre_arabe_niveau3_a5_partie1",
+    "bucket_audio": "audio-lessons/niveau3/lecon47/",
+    "nb_audio_assets": 4
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "page_nb": 4,
+  "type": "exercice",
+  "mecanique": "coloriage_selectif",
+  "titre": {
+    "fr": "Je colorie les lettres du mot",
+    "ar": "أُلَوِّنُ حُرُوفَ الكَلِمَةِ"
+  },
+  "enonce": {
+    "fr": "Colorie uniquement les lettres qui composent le mot 'شَمْس' (soleil) parmi toutes les lettres proposées.",
+    "ar": "لَوِّنْ حُرُوفَ كَلِمَةِ شَمْس فَقَطْ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ."
+  },
+  "elements": [
+    {
+      "id": "1",
+      "ar": "شـ",
+      "fr": "Shin (début)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "2",
+      "ar": "ـمـ",
+      "fr": "Mim (milieu)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "3",
+      "ar": "ـس",
+      "fr": "Sin (fin)",
+      "emoji": "☀️"
+    },
+    {
+      "id": "4",
+      "ar": "و",
+      "fr": "Waw",
+      "emoji": "❌"
+    },
+    {
+      "id": "5",
+      "ar": "خـ",
+      "fr": "Kha",
+      "emoji": "❌"
+    },
+    {
+      "id": "6",
+      "ar": "ـل",
+      "fr": "Lam",
+      "emoji": "❌"
+    },
+    {
+      "id": "7",
+      "ar": "ـبـ",
+      "fr": "Ba",
+      "emoji": "❌"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "arabe_niveau2_04_1",
+  "audio_assets": [
+    {
+      "id": "audio_p4_consigne",
+      "texte_ar": "لَوِّنْ حُرُوفَ كَلِمَةِ شَمْس فَقَطْ مِنْ بَيْنِ الحُرُوفِ المَعْرُوضَةِ.",
+      "voix_m": "arabe_niveau2_04_1_p4_consigne_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_1",
+      "texte_ar": "شـ",
+      "voix_m": "arabe_niveau2_04_1_p4_1_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_1_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_2",
+      "texte_ar": "ـمـ",
+      "voix_m": "arabe_niveau2_04_1_p4_2_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_2_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_3",
+      "texte_ar": "ـس",
+      "voix_m": "arabe_niveau2_04_1_p4_3_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_3_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_4",
+      "texte_ar": "و",
+      "voix_m": "arabe_niveau2_04_1_p4_4_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_4_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_5",
+      "texte_ar": "خـ",
+      "voix_m": "arabe_niveau2_04_1_p4_5_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_5_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_6",
+      "texte_ar": "ـل",
+      "voix_m": "arabe_niveau2_04_1_p4_6_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_6_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_7",
+      "texte_ar": "ـبـ",
+      "voix_m": "arabe_niveau2_04_1_p4_7_m.mp3",
+      "voix_f": "arabe_niveau2_04_1_p4_7_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T08:41:57.969182",
+    "niveau": 2,
+    "lecon": 13,
+    "nom_pdf": "arabe_niveau2_04_1",
+    "bucket_audio": "audio-lessons/niveau2/lecon13/",
+    "nb_audio_assets": 8
+  }
+}

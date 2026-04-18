@@ -1,0 +1,64 @@
+{
+  "page_nb": 10,
+  "type": "exercice",
+  "mecanique": "Tracer en suivant les pointillés pour compléter le dessin d'une toile d'araignée",
+  "titre": {
+    "fr": "Complète le dessin des fils de la toile d'araignée",
+    "ar": "أكمّل رسم خيوط العنكبوت"
+  },
+  "enonce": {
+    "fr": "Complète le dessin des fils de la toile d'araignée en suivant les pointillés",
+    "ar": "أكمّل رسم خيوط العنكبوت باتباع النقاط المتقطعة"
+  },
+  "elements": [
+    {
+      "id": "araignee",
+      "ar": "عنكبوت",
+      "fr": "araignée",
+      "emoji": "🕷️"
+    },
+    {
+      "id": "toile",
+      "ar": "خيوط العنكبوت",
+      "fr": "toile d'araignée",
+      "emoji": "🕸️"
+    }
+  ],
+  "difficulte": 2,
+  "duree_minutes": 5,
+  "nom_pdf": "coursarabe_niveau1_lecon07_2",
+  "audio_assets": [
+    {
+      "id": "audio_p10_consigne",
+      "texte_ar": "أكمّل رسم خيوط العنكبوت باتباع النقاط المتقطعة",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p10_consigne_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p10_consigne_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_araignee",
+      "texte_ar": "عنكبوت",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p10_araignee_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p10_araignee_f.mp3",
+      "statut": "a_generer"
+    },
+    {
+      "id": "audio_toile",
+      "texte_ar": "خيوط العنكبوت",
+      "voix_m": "coursarabe_niveau1_lecon07_2_p10_toile_m.mp3",
+      "voix_f": "coursarabe_niveau1_lecon07_2_p10_toile_f.mp3",
+      "statut": "a_generer"
+    }
+  ],
+  "progression_xp": 20,
+  "duree_estimee_minutes": 5,
+  "_meta": {
+    "schema_version": "2.0",
+    "genere_le": "2026-04-15T07:58:34.581677",
+    "niveau": 1,
+    "lecon": 37,
+    "nom_pdf": "coursarabe_niveau1_lecon07_2",
+    "bucket_audio": "audio-lessons/niveau1/lecon37/",
+    "nb_audio_assets": 3
+  }
+}
