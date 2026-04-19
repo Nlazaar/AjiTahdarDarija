@@ -44,6 +44,24 @@ enum ModuleTrack {
   RELIGION
 }
 
+/// Métadonnées éditables des 3 tracks top-level (onglets du parcours).
+/// Le `code` reprend la valeur de l'enum ModuleTrack (DARIJA / MSA / RELIGION).
+model Track {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  nameAr      String?
+  description String?
+  emoji       String?
+  color       String?
+  order       Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([order])
+}
+
 enum DuelStatus {
   WAITING // en attente d'un adversaire
   IN_PROGRESS
@@ -113,6 +131,7 @@ model Language {
 model Module {
   id             String      @id @default(cuid())
   title          String
+  titleAr        String?
   subtitle       String?
   description    String?
   level          Int         @default(1)
@@ -125,6 +144,17 @@ model Module {
   colorA         String?
   colorB         String?
   shadowColor    String?
+  /// Nom de la ville isolé du titre (ex: "Tanger", "Casablanca").
+  cityName       String?
+  cityNameAr     String?
+  /// Emoji de la section parcours (fallback lecture → cityInfo.emoji).
+  emoji          String?
+  /// Sous-titre affiché sur la carte ville (ex: "Porte du détroit...").
+  photoCaption   String?
+  /// Infos ville affichées au clic sur le bandeau de la section. Shape :
+  /// { emoji, photoUrl, history, typicalWord: { ar, latin, fr },
+  /// food, culturalFact, toSee, music }. Tous champs optionnels.
+  cityInfo       Json?
   createdAt      DateTime    @default(now())
   updatedAt      DateTime    @updatedAt
   isPublished    Boolean     @default(false)
@@ -160,13 +190,31 @@ model Lesson {
   language   Language @relation(fields: [languageId], references: [id])
   languageId String
 
-  exercises    Exercise[]
-  userProgress UserProgress[]
-  duels        Duel[]
+  exercises        Exercise[]
+  authoredExercises LessonExercise[]
+  userProgress     UserProgress[]
+  duels            Duel[]
 
   @@index([moduleId, order])
   @@index([languageId, level])
   @@index([isPublished, isDeleted])
+}
+
+/// Exercice authoré (config explicite — supplante la séquence auto-générée).
+/// Si une leçon a >= 1 LessonExercise, le runtime les utilise au lieu de
+/// générer la séquence à partir du vocabulaire + sequence par défaut.
+model LessonExercise {
+  id        String   @id @default(cuid())
+  lesson    Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lessonId  String
+  order     Int      @default(0)
+  typology  String   // clé du registry web : "FlashCard", "ChoixLettre", etc.
+  config    Json     // forme spécifique à la typologie (vocabIds, distractors, pairs, ...)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([lessonId, order])
+  @@index([typology])
 }
 
 model Vocabulary {

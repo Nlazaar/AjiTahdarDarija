@@ -1,42 +1,91 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useUser, type LangTrack } from '@/context/UserContext';
+import { getTracks, type Track } from '@/lib/api';
 
-const TRACKS: { id: LangTrack; emoji: string; title: string; subtitle: string; description: string; color: string; shadow: string }[] = [
+type TrackCard = {
+  id: LangTrack;
+  emoji: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  color: string;
+  shadow: string;
+};
+
+const FALLBACK: TrackCard[] = [
   {
-    id: 'DARIJA',
-    emoji: '🇲🇦',
-    title: 'Darija',
-    subtitle: 'الدارجة المغربية',
+    id: 'DARIJA', emoji: '🇲🇦', title: 'Darija', subtitle: 'الدارجة المغربية',
     description: 'Le dialecte marocain — langue du quotidien, des souks et de la famille.',
-    color: '#ff4b4b',
-    shadow: '#cc0000',
+    color: '#ff4b4b', shadow: '#cc0000',
   },
   {
-    id: 'MSA',
-    emoji: '📖',
-    title: 'Arabe Littéraire',
-    subtitle: 'الفصحى',
-    description: 'L\'arabe standard moderne — compris dans tout le monde arabe, TV, presse, Coran.',
-    color: '#1cb0f6',
-    shadow: '#0a8fc7',
+    id: 'MSA', emoji: '📖', title: 'Arabe Littéraire', subtitle: 'الفصحى',
+    description: "L'arabe standard moderne — compris dans tout le monde arabe, TV, presse, Coran.",
+    color: '#1cb0f6', shadow: '#0a8fc7',
   },
   {
-    id: 'BOTH',
-    emoji: '⭐',
-    title: 'Les deux parcours',
-    subtitle: 'دارجة + فصحى',
-    description: 'Commence par Darija et enrichis avec le littéraire. Recommandé pour aller loin.',
-    color: '#58cc02',
-    shadow: '#46a302',
+    id: 'RELIGION', emoji: '☪︎', title: 'Religion', subtitle: 'الدين',
+    description: 'Parcours islamique — fondements et pratiques.',
+    color: '#a855f7', shadow: '#7c3aed',
   },
 ];
 
+const BOTH_CARD: TrackCard = {
+  id: 'BOTH', emoji: '⭐', title: 'Les deux parcours', subtitle: 'دارجة + فصحى',
+  description: 'Commence par Darija et enrichis avec le littéraire. Recommandé pour aller loin.',
+  color: '#58cc02', shadow: '#46a302',
+};
+
+/** Darken a #rrggbb hex color by pct (0..1). */
+function darken(hex: string, pct = 0.2): string {
+  const m = /^#?([a-f\d]{6})$/i.exec(hex.trim());
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  const r = Math.max(0, Math.round(((n >> 16) & 0xff) * (1 - pct)));
+  const g = Math.max(0, Math.round(((n >> 8) & 0xff) * (1 - pct)));
+  const b = Math.max(0, Math.round((n & 0xff) * (1 - pct)));
+  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0')}`;
+}
+
 export default function TrackSelectionPage() {
   const { mascot, setLangTrack } = useUser();
-  const [selected, setSelected] = React.useState<LangTrack | null>(null);
+  const [selected, setSelected] = useState<LangTrack | null>(null);
+  const [dbTracks, setDbTracks] = useState<Track[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const t = (await getTracks()) as Track[];
+        if (!cancelled && Array.isArray(t)) setDbTracks(t);
+      } catch { /* fallback */ }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  const cards = useMemo<TrackCard[]>(() => {
+    if (!dbTracks || dbTracks.length === 0) return [...FALLBACK, BOTH_CARD];
+    const sorted = [...dbTracks]
+      .filter((t) => t.isPublished !== false)
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    const out = sorted.map<TrackCard>((t) => {
+      const fallback = FALLBACK.find((f) => f.id === t.code);
+      const color = t.color || fallback?.color || '#58cc02';
+      return {
+        id: t.code as LangTrack,
+        emoji: t.emoji || fallback?.emoji || '📚',
+        title: t.name || fallback?.title || t.code,
+        subtitle: t.nameAr || fallback?.subtitle || '',
+        description: t.description || fallback?.description || '',
+        color,
+        shadow: darken(color, 0.22),
+      };
+    });
+    return [...out, BOTH_CARD];
+  }, [dbTracks]);
 
   const handleContinue = () => {
     if (selected) setLangTrack(selected);
@@ -44,43 +93,29 @@ export default function TrackSelectionPage() {
 
   return (
     <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      minHeight: '100vh',
-      width: '100vw',
+      display: 'flex', flexDirection: 'column', alignItems: 'center',
+      minHeight: '100vh', width: '100vw',
       backgroundColor: '#ffffff',
       fontFamily: '"Nunito", "Inter", sans-serif',
     }}>
-      {/* Progress bar ~70% */}
       <div style={{ width: '100%', maxWidth: '1000px', padding: '24px 20px' }}>
         <div style={{ height: '16px', backgroundColor: '#e5e5e5', borderRadius: '10px', overflow: 'hidden' }}>
           <div style={{ width: '70%', height: '100%', backgroundColor: '#58cc02', borderRadius: '10px', transition: 'width 0.5s ease-out' }} />
         </div>
       </div>
 
-      {/* Content */}
       <div style={{
-        flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '20px',
-        width: '100%',
-        maxWidth: '1000px',
+        flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
+        padding: '20px', width: '100%', maxWidth: '1000px',
       }}>
-        {/* Mascot + bubble */}
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px', marginBottom: '40px', justifyContent: 'center' }}>
           <div className="animate-mascot" style={{ width: '140px', flexShrink: 0 }}>
             <img src={mascot} alt="Mascot" style={{ width: '100%', height: 'auto' }} />
           </div>
           <div style={{
-            position: 'relative',
-            backgroundColor: 'white',
-            border: '2px solid #e5e5e5',
-            borderRadius: '20px',
-            padding: '20px 24px',
-            maxWidth: '400px',
+            position: 'relative', backgroundColor: 'white',
+            border: '2px solid #e5e5e5', borderRadius: '20px',
+            padding: '20px 24px', maxWidth: '400px',
             boxShadow: '0 4px 0 #e5e5e5',
           }}>
             <div style={{
@@ -91,18 +126,17 @@ export default function TrackSelectionPage() {
               borderLeft: '2px solid #e5e5e5',
               borderBottom: '2px solid #e5e5e5',
             }} />
-            <h1 style={{ fontSize: '20px', fontWeight: '800', color: '#4b4b4b', margin: '0 0 4px 0', lineHeight: '1.3' }}>
+            <h1 style={{ fontSize: '20px', fontWeight: 800, color: '#4b4b4b', margin: '0 0 4px 0', lineHeight: '1.3' }}>
               Quel parcours tu veux apprendre ?
             </h1>
-            <p style={{ fontSize: '15px', fontWeight: '700', color: '#afafaf', margin: '0' }}>
+            <p style={{ fontSize: '15px', fontWeight: 700, color: '#afafaf', margin: 0 }}>
               Chno bghiti titallam?
             </p>
           </div>
         </div>
 
-        {/* Track cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', width: '100%', maxWidth: '520px' }}>
-          {TRACKS.map((track) => {
+          {cards.map((track) => {
             const isSelected = selected === track.id;
             return (
               <button
@@ -123,7 +157,6 @@ export default function TrackSelectionPage() {
                   gap: '16px',
                 }}
               >
-                {/* Emoji */}
                 <div style={{
                   width: '52px', height: '52px',
                   borderRadius: '14px',
@@ -135,28 +168,30 @@ export default function TrackSelectionPage() {
                 }}>
                   {track.emoji}
                 </div>
-                {/* Text */}
                 <div style={{ flex: 1 }}>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '3px' }}>
-                    <span style={{ fontSize: '17px', fontWeight: '900', color: isSelected ? track.color : '#4b4b4b' }}>
+                    <span style={{ fontSize: '17px', fontWeight: 900, color: isSelected ? track.color : '#4b4b4b' }}>
                       {track.title}
                     </span>
-                    <span style={{ fontSize: '15px', fontWeight: '700', color: '#afafaf', fontFamily: 'serif', direction: 'rtl' }}>
-                      {track.subtitle}
-                    </span>
+                    {track.subtitle && (
+                      <span style={{ fontSize: '15px', fontWeight: 700, color: '#afafaf', fontFamily: 'serif', direction: 'rtl' }}>
+                        {track.subtitle}
+                      </span>
+                    )}
                   </div>
-                  <span style={{ fontSize: '13px', fontWeight: '600', color: '#777', lineHeight: '1.4' }}>
-                    {track.description}
-                  </span>
+                  {track.description && (
+                    <span style={{ fontSize: '13px', fontWeight: 600, color: '#777', lineHeight: '1.4' }}>
+                      {track.description}
+                    </span>
+                  )}
                 </div>
-                {/* Check */}
                 <div style={{
                   width: '24px', height: '24px',
                   borderRadius: '50%',
                   border: `2px solid ${isSelected ? track.color : '#e5e5e5'}`,
                   backgroundColor: isSelected ? track.color : 'transparent',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: 'white', fontSize: '14px', fontWeight: '900',
+                  color: 'white', fontSize: '14px', fontWeight: 900,
                   flexShrink: 0,
                   transition: 'all 0.15s',
                 }}>
@@ -168,7 +203,6 @@ export default function TrackSelectionPage() {
         </div>
       </div>
 
-      {/* Footer */}
       <div style={{
         width: '100%',
         borderTop: '2px solid #e5e5e5',
@@ -190,7 +224,7 @@ export default function TrackSelectionPage() {
                 borderRadius: '16px',
                 padding: '16px',
                 fontSize: '15px',
-                fontWeight: '900',
+                fontWeight: 900,
                 letterSpacing: '0.08em',
                 cursor: !selected ? 'default' : 'pointer',
                 boxShadow: `0 5px 0 ${!selected ? '#afafaf' : '#46a302'}`,

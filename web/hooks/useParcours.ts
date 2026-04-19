@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { getModules, getLessonsByModule } from '@/lib/api';
+import { getModules } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
+import { useUser } from '@/context/UserContext';
+import type { CityDescription } from '@/types/parcours';
 
 export type NodeStatus = 'completed' | 'current' | 'locked';
 
@@ -15,6 +17,7 @@ export interface Lecon {
 export interface Unite {
   id: string;
   title: string;
+  titleAr?: string;
   subtitle?: string;
   level: number;
   colorA: string;
@@ -25,6 +28,7 @@ export interface Unite {
   trophyUnlocked: boolean;
   unlocked: boolean;
   completed: boolean;
+  description?: CityDescription;
 }
 
 const PALETTE = [
@@ -40,14 +44,15 @@ const PALETTE = [
   { colorA: '#f4845f', colorB: '#d4643f', shadow: '#a44020' },
 ];
 
-interface RawModule {
-  id: string;
-  title: string;
-  subtitle?: string;
-  level?: number;
-  colorA?: string;
-  colorB?: string;
-  shadowColor?: string;
+interface RawCityInfo {
+  emoji?: string;
+  photoUrl?: string;
+  history?: string;
+  typicalWord?: { ar?: string; latin?: string; fr?: string };
+  food?: string;
+  culturalFact?: string;
+  toSee?: string;
+  music?: string;
 }
 
 interface RawLesson {
@@ -56,28 +61,101 @@ interface RawLesson {
   order?: number;
 }
 
+interface RawModule {
+  id: string;
+  slug?: string;
+  title: string;
+  titleAr?: string | null;
+  subtitle?: string | null;
+  level?: number;
+  colorA?: string | null;
+  colorB?: string | null;
+  shadowColor?: string | null;
+  track?: 'DARIJA' | 'MSA' | 'RELIGION';
+  canonicalOrder?: number;
+  cityName?: string | null;
+  cityNameAr?: string | null;
+  emoji?: string | null;
+  photoCaption?: string | null;
+  cityInfo?: RawCityInfo | null;
+  lessons?: RawLesson[];
+}
+
+function buildDescription(m: RawModule): CityDescription | undefined {
+  const ci = m.cityInfo ?? null;
+  const tw = ci?.typicalWord ?? {};
+  const photoEmoji = m.emoji || ci?.emoji || '🏙️';
+  const hasAny =
+    m.photoCaption || ci?.history || ci?.food || ci?.culturalFact || ci?.toSee || ci?.music ||
+    tw.ar || tw.latin || tw.fr || ci?.photoUrl;
+  if (!hasAny) return undefined;
+  return {
+    photoEmoji,
+    photoCaption: m.photoCaption ?? '',
+    photoUrl: ci?.photoUrl || undefined,
+    histoire: ci?.history || '',
+    motTypique: { ar: tw.ar || '', latin: tw.latin || '', fr: tw.fr || '' },
+    specialite: ci?.food || '',
+    faitCulturel: ci?.culturalFact || '',
+    aVoir: ci?.toSee || '',
+    musique: ci?.music || '',
+  } as CityDescription;
+}
+
+function buildLecons(lessons: RawLesson[], unlocked: boolean, completedSet: Set<string>): Lecon[] {
+  let foundCurrent = false;
+  return lessons.map((l, lIdx) => {
+    const isDone = completedSet.has(l.id);
+    const prevAllDone = lessons.slice(0, lIdx).every((p) => completedSet.has(p.id));
+    let status: NodeStatus = 'locked';
+    if (isDone) status = 'completed';
+    else if (unlocked && prevAllDone && !foundCurrent) {
+      status = 'current';
+      foundCurrent = true;
+    }
+    return { id: l.id, title: l.title, status };
+  });
+}
+
+function moduleToUnite(m: RawModule, idx: number, unlocked: boolean, completedSet: Set<string>): Unite {
+  const palette = PALETTE[idx % PALETTE.length];
+  const lessons = m.lessons ?? [];
+  const lecons = buildLecons(lessons, unlocked, completedSet);
+  const allDone = lessons.length > 0 && lessons.every((l) => completedSet.has(l.id));
+  const title = m.cityName?.trim() || m.title;
+  const titleAr = m.cityNameAr?.trim() || m.titleAr?.trim() || undefined;
+  return {
+    id: m.id,
+    title,
+    titleAr,
+    subtitle: m.subtitle ?? undefined,
+    level: m.level ?? 1,
+    colorA: m.colorA ?? palette.colorA,
+    colorB: m.colorB ?? palette.colorB,
+    shadow: m.shadowColor ?? palette.shadow,
+    lecons,
+    chestUnlocked: lessons.length > 0 && lecons.slice(0, Math.max(1, lessons.length - 1)).every((l) => l.status === 'completed'),
+    trophyUnlocked: allDone,
+    unlocked,
+    completed: allDone,
+    description: buildDescription(m),
+  };
+}
+
 export function useParcours() {
   const { progress } = useUserProgress();
-  const [modules, setModules] = useState<Array<RawModule & { lessons: RawLesson[] }>>([]);
+  const { langTrack } = useUser();
+  const [modules, setModules] = useState<RawModule[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
+    setLoading(true);
     (async () => {
       try {
-        const mods = (await getModules()) as RawModule[];
-        if (!Array.isArray(mods)) throw new Error('empty');
-        const withLessons = await Promise.all(
-          mods.map(async (m) => {
-            try {
-              const lessons = (await getLessonsByModule(m.id)) as RawLesson[];
-              return { ...m, lessons: Array.isArray(lessons) ? lessons : [] };
-            } catch {
-              return { ...m, lessons: [] };
-            }
-          })
-        );
-        if (!cancelled) setModules(withLessons);
+        const trackParam = langTrack === 'BOTH' ? undefined : langTrack;
+        const mods = (await getModules(trackParam)) as RawModule[];
+        if (!cancelled) setModules(Array.isArray(mods) ? mods : []);
       } catch {
         if (!cancelled) setModules([]);
       } finally {
@@ -85,7 +163,7 @@ export function useParcours() {
       }
     })();
     return () => { cancelled = true; };
-  }, []);
+  }, [langTrack]);
 
   const completedSet = useMemo(
     () => new Set(progress.completedLessons.map(String)),
@@ -96,40 +174,10 @@ export function useParcours() {
     const out: Unite[] = [];
     let prevCompleted = true;
     modules.forEach((m, idx) => {
-      const palette = PALETTE[idx % PALETTE.length];
-      const lessons = m.lessons ?? [];
-      const allDone = lessons.length > 0 && lessons.every((l) => completedSet.has(l.id));
       const unlocked = prevCompleted;
-
-      let foundCurrent = false;
-      const lecons: Lecon[] = lessons.map((l, lIdx) => {
-        const isDone = completedSet.has(l.id);
-        const prevAllDone = lessons.slice(0, lIdx).every((p) => completedSet.has(p.id));
-        let status: NodeStatus = 'locked';
-        if (isDone) status = 'completed';
-        else if (unlocked && prevAllDone && !foundCurrent) {
-          status = 'current';
-          foundCurrent = true;
-        }
-        return { id: l.id, title: l.title, status };
-      });
-
-      out.push({
-        id: m.id,
-        title: m.title,
-        subtitle: m.subtitle,
-        level: m.level ?? 1,
-        colorA: m.colorA ?? palette.colorA,
-        colorB: m.colorB ?? palette.colorB,
-        shadow: m.shadowColor ?? palette.shadow,
-        lecons,
-        chestUnlocked: lessons.length > 0 && lecons.slice(0, Math.max(1, lessons.length - 1)).every((l) => l.status === 'completed'),
-        trophyUnlocked: allDone,
-        unlocked,
-        completed: allDone,
-      });
-
-      prevCompleted = allDone;
+      const unite = moduleToUnite(m, idx, unlocked, completedSet);
+      out.push(unite);
+      prevCompleted = unite.completed;
     });
     return out;
   }, [modules, completedSet]);

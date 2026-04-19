@@ -239,11 +239,22 @@ export default function AdminPage() {
       {/* Raccourcis */}
       <Section title="Contenu pédagogique">
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-          <a href="/admin/lessons" style={{
+          <a href="/admin/tracks" style={{
+            padding: "10px 16px", borderRadius: 10, textDecoration: "none",
+            background: "#1cb0f6", color: "white", fontWeight: 800, fontSize: 13,
+            display: "inline-flex", alignItems: "center", gap: 6,
+          }}>🗂️ Parcours (tracks)</a>
+          <a href="/admin/contenu" style={{
             padding: "10px 16px", borderRadius: 10, textDecoration: "none",
             background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13,
             display: "inline-flex", alignItems: "center", gap: 6,
-          }}>📚 Gérer les leçons</a>
+          }}>🧩 Sections · Cours · Items</a>
+          <a href="/admin/lessons" style={{
+            padding: "10px 16px", borderRadius: 10, textDecoration: "none",
+            background: "var(--c-card)", color: "var(--c-text)", fontWeight: 700, fontSize: 13,
+            border: "1px solid var(--c-border)",
+            display: "inline-flex", alignItems: "center", gap: 6,
+          }}>📚 Leçons (ancienne vue)</a>
         </div>
       </Section>
 

@@ -75,16 +75,35 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   return JSON.parse(text) as T;
 }
 
+export type Track = {
+  id: string;
+  code: 'DARIJA' | 'MSA' | 'RELIGION';
+  name: string;
+  nameAr?: string | null;
+  description?: string | null;
+  emoji?: string | null;
+  color?: string | null;
+  order: number;
+  isPublished: boolean;
+};
+
 export const getModules            = (track?: string)   => request<Module[]>(track ? `/modules?track=${encodeURIComponent(track)}` : '/modules');
+export const getTracks             = ()                 => request<Track[]>('/tracks');
 export const getLessonsByModule    = (moduleId: string) => request<Lesson[]>(`/modules/${moduleId}/lessons`);
 export const getLesson             = (lessonId: string) => request<Lesson>(`/lessons/${lessonId}`);
 export const getExercises          = (lessonId: string) => request<Exercise[]>(`/lessons/${lessonId}/exercises`);
 export const getVocabularyByLesson = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/vocabulary`);
+export const getAuthoredExercises  = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/authored-exercises`);
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
 export const updateProfile         = (data: { avatar?: string; name?: string }) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });
 export const getMyProgress         = ()                 => request<any>('/progress/me');
 export const completeLessonApi     = (lessonId: string) => request<any>(`/progress/complete/${lessonId}`, { method: 'POST' });
+export const getMyJourney          = ()                 => request<{
+  currentCityKey: string | null
+  visitedCityKeys: string[]
+  route: { moduleId: string; moduleSlug: string; canonicalOrder: number; cityKey: string }[]
+}>('/progress/journey');
 
 // Leaderboard
 export const getLeaderboard        = ()                 => request<any[]>('/leaderboard/global');
