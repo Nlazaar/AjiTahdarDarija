@@ -1,13 +1,13 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useMemo, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { useAudio } from "@/hooks/useAudio"
-import { LETTER_GROUPS, ALPHABET_LETTERS, MSA_ALPHABET_LETTERS } from "@/data/letterGroups"
+import { LETTER_GROUPS, MSA_ALPHABET_LETTERS } from "@/data/letterGroups"
 import type { DarijaLetter, AlphabetLetter } from "@/components/exercises/types"
 import { ExerciseCard, ContinueButton, FeedbackBanner } from "@/components/ui"
 import GenericExercisePlayer, { type CollectedAnswer } from "@/components/exercises/GenericExercisePlayer"
-import { submitLesson } from "@/lib/api"
+import { submitLesson, markVocabSeen, markVocabResult } from "@/lib/api"
 import { useUserProgress } from "@/contexts/UserProgressContext"
 import { getSettings } from "@/hooks/useSettings"
 
@@ -20,18 +20,71 @@ import TrouverLesPaires   from "@/components/exercises/TrouverLesPaires"
 import EntendreEtChoisir  from "@/components/exercises/EntendreEtChoisir"
 import VraiFaux           from "@/components/exercises/VraiFaux"
 import DicterRomanisation from "@/components/exercises/DicterRomanisation"
+import NumeroterOrdre     from "@/components/exercises/NumeroterOrdre"
+import PlacerDansEtoile   from "@/components/exercises/PlacerDansEtoile"
+import TexteReligieux     from "@/components/exercises/TexteReligieux"
+import SelectionImages    from "@/components/exercises/SelectionImages"
+import TriDeuxCategories  from "@/components/exercises/TriDeuxCategories"
+import RelierParTrait     from "@/components/exercises/RelierParTrait"
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
-type ExPhase  = "flashcard" | "harakat" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter"
+type ExPhase  = "flashcard" | "harakat" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter" | "numeroter" | "placer_etoile" | "texte_religieux" | "selection_images" | "tri_deux_cat" | "relier_trait"
 type TrnPhase = "t1" | "t2" | "t3" | "t4" | "t5" | "t6"
-type Phase    = ExPhase | TrnPhase | "video" | "finished"
+type Phase    = ExPhase | TrnPhase | "video" | "finished" | "empty"
+
+// ── Mapping registry key (PascalCase) ↔ phase interne (lowercase) ─────────────
+// La séquence est stockée en DB avec les clés du registry (ex. "FlashCard"),
+// mais le moteur de rendu utilise les phases internes historiques.
+const REGISTRY_TO_PHASE: Record<string, ExPhase> = {
+  FlashCard:          "flashcard",
+  ChoixLettre:        "choix",
+  AssocierLettres:    "association",
+  TrouverLesPaires:   "paires",
+  EntendreEtChoisir:  "entendre",
+  VraiFaux:           "vrai_faux",
+  DicterRomanisation: "dicter",
+  NumeroterOrdre:     "numeroter",
+  PlacerDansEtoile:   "placer_etoile",
+  TexteReligieux:     "texte_religieux",
+  SelectionImages:    "selection_images",
+  TriDeuxCategories:  "tri_deux_cat",
+  RelierParTrait:     "relier_trait",
+}
+
+const TRN_KEYS: TrnPhase[] = ["t1", "t2", "t3", "t4", "t5", "t6"]
+
+/**
+ * Construit la séquence de phases (queue) à partir d'une liste de clés du registry.
+ * Insère automatiquement une transition (t1..t6) entre chaque exercice consécutif.
+ * Retourne null si la séquence est invalide (vide ou aucune clé connue).
+ *
+ * Note: la flashcard est une présentation passive (pas un exercice validé),
+ * on ne montre donc pas d'écran de félicitations juste après.
+ */
+function buildPhaseQueue(registryKeys: string[]): Phase[] | null {
+  const phases = registryKeys
+    .map(k => REGISTRY_TO_PHASE[k])
+    .filter((p): p is ExPhase => !!p)
+  if (phases.length === 0) return null
+
+  const out: Phase[] = []
+  let trnIdx = 0
+  phases.forEach((p, i) => {
+    out.push(p)
+    if (i < phases.length - 1 && p !== "flashcard") {
+      out.push(TRN_KEYS[trnIdx % TRN_KEYS.length])
+      trnIdx++
+    }
+  })
+  return out
+}
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
-const EX_PHASES: ExPhase[] = ["flashcard", "harakat", "choix", "association", "paires", "entendre", "vrai_faux", "dicter"]
+const EX_PHASES: ExPhase[] = ["flashcard", "harakat", "choix", "association", "paires", "entendre", "vrai_faux", "dicter", "numeroter", "placer_etoile", "texte_religieux", "selection_images", "tri_deux_cat", "relier_trait"]
 
-const PHASE_LABELS = ["Lettres", "Voyelles", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter"]
+const PHASE_LABELS = ["Lettres", "Voyelles", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter", "Ordre", "Étoile", "Lecture", "Choisir", "Trier", "Relier"]
 
 const PHASE_SEQUENCE: Phase[] = [
   "flashcard", "harakat", "t1",
@@ -44,26 +97,16 @@ const PHASE_SEQUENCE: Phase[] = [
 ]
 
 // Sequence for vocab lessons (no harakat)
+// Pas de transition après flashcard (présentation passive, pas d'exercice validé).
 const VOCAB_PHASE_SEQUENCE: Phase[] = [
-  "flashcard", "t1",
-  "choix",     "t2",
-  "association","t3",
-  "paires",    "t4",
-  "entendre",  "t5",
-  "vrai_faux", "t6",
+  "flashcard",
+  "choix",     "t1",
+  "association","t2",
+  "paires",    "t3",
+  "entendre",  "t4",
+  "vrai_faux", "t5",
   "dicter",    "finished",
 ]
-
-const WEIGHTS: Record<ExPhase, [number, number]> = {
-  flashcard:   [0,   12],
-  harakat:     [12,  24],
-  choix:       [24,  36],
-  association: [36,  48],
-  paires:      [48,  60],
-  entendre:    [60,  72],
-  vrai_faux:   [72,  86],
-  dicter:      [86, 100],
-}
 
 const TRANSITIONS: Record<TrnPhase, { emoji: string; title: string; sub: string }> = {
   t1: { emoji: "⭐", title: "Super !",                 sub: "Choisis la bonne prononciation."  },
@@ -76,7 +119,7 @@ const TRANSITIONS: Record<TrnPhase, { emoji: string; title: string; sub: string 
 
 const HEART_PHASES: ExPhase[] = ["paires", "entendre", "vrai_faux"]
 const FEEDBACK_PHASES: ExPhase[] = ["choix", "entendre", "vrai_faux", "dicter"]
-const MATCHING_PHASES: ExPhase[] = ["association", "paires"]
+const MATCHING_PHASES: ExPhase[] = ["association", "paires", "numeroter", "placer_etoile", "selection_images", "tri_deux_cat", "relier_trait"]
 const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
 const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5)
@@ -256,16 +299,18 @@ export default function LessonClient({
   lesson,
   exercises: _exercises,
   vocabulary: _vocabulary,
+  authoredExercises: _authoredExercises = [],
   userId,
   nextLessonId,
   isLastLesson,
 }: {
-  lesson:         any
-  exercises:      any[]
-  vocabulary?:    any[]
-  userId:         string
-  nextLessonId?:  string | null
-  isLastLesson?:  boolean
+  lesson:             any
+  exercises:          any[]
+  vocabulary?:        any[]
+  authoredExercises?: any[]
+  userId:             string
+  nextLessonId?:      string | null
+  isLastLesson?:      boolean
 }) {
   const router    = useRouter()
   const { speak } = useAudio()
@@ -275,27 +320,55 @@ export default function LessonClient({
 
   // ── Determine if this is an alphabet lesson ──
   const lessonSlug = lesson?.slug ?? ''
-  const isAlphabetLesson = lessonSlug.startsWith('alphabet-') || lessonSlug.startsWith('msa-alphabet-')
-  const allAlpha = { ...ALPHABET_LETTERS, ...MSA_ALPHABET_LETTERS }
-  const alphabetLetters: AlphabetLetter[] = isAlphabetLesson ? (allAlpha[lessonSlug] ?? []) : []
+  // L'alphabet n'existe qu'en MSA (pas en Darija).
+  const isAlphabetLesson = lessonSlug.startsWith('msa-alphabet-')
+  const alphabetLetters: AlphabetLetter[] = isAlphabetLesson ? (MSA_ALPHABET_LETTERS[lessonSlug] ?? []) : []
 
   // ── Données lettres ───────────────────────────────────────────────────────
+  // ⚠️ memoizé pour stabiliser les refs : sinon les useMemo en aval (choixData…)
+  // se ré-exécutent à chaque render et `shuffle()` change l'ordre des choix.
   const staticGroup: DarijaLetter[] = LETTER_GROUPS[lessonSlug] ?? []
-  const vocabGroup: DarijaLetter[] = Array.isArray(_vocabulary)
-    ? _vocabulary
-        .filter(v => v?.word)
-        .map(v => ({
-          letter:   v.word as string,
-          latin:    (v.transliteration ?? '') as string,
-          fr:       ((v.translation as any)?.fr ?? (v.translation as any)?.default ?? '') as string,
-          imageUrl: (v.imageUrl ?? undefined) as string | undefined,
-        }))
-    : []
+  const vocabGroup = useMemo<DarijaLetter[]>(() => {
+    if (!Array.isArray(_vocabulary)) return []
+    return _vocabulary.filter(v => v?.word).map(v => ({
+      id:       v.id as string,
+      letter:   v.word as string,
+      latin:    (v.transliteration ?? '') as string,
+      fr:       ((v.translation as any)?.fr ?? (v.translation as any)?.default ?? '') as string,
+      imageUrl: (v.imageUrl ?? undefined) as string | undefined,
+    }))
+  }, [_vocabulary])
   const letterGroup: DarijaLetter[] = staticGroup.length > 0 ? staticGroup : vocabGroup
   const hasLetterGroup = letterGroup.length > 0
 
   const target = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
   const pool   = letterGroup.slice(1)
+
+  // ── Map id → DarijaLetter (pour résoudre les configs authored) ───────────
+  const vocabById = useMemo(() => {
+    const m = new Map<string, DarijaLetter>()
+    if (Array.isArray(_vocabulary)) {
+      for (const v of _vocabulary) {
+        if (!v?.id) continue
+        m.set(v.id, {
+          id:       v.id,
+          letter:   v.word ?? '',
+          latin:    v.transliteration ?? '',
+          fr:       (v.translation as any)?.fr ?? (v.translation as any)?.default ?? '',
+          imageUrl: v.imageUrl ?? undefined,
+        })
+      }
+    }
+    return m
+  }, [_vocabulary])
+
+  // Liste authored triée — la queue est construite à partir de cette liste,
+  // donc l'index dans la queue (en filtrant les transitions) = index ici.
+  const authoredList = useMemo(() => {
+    return Array.isArray(_authoredExercises)
+      ? [..._authoredExercises].sort((a: any, b: any) => (a?.order ?? 0) - (b?.order ?? 0))
+      : []
+  }, [_authoredExercises])
 
   // ── DB exercises ──────────────────────────────────────────────────────────
   const DB_TYPES = ['MULTIPLE_CHOICE', 'FILL_BLANK', 'TRANSLATION', 'REORDER', 'LISTENING']
@@ -311,40 +384,254 @@ export default function LessonClient({
   const [flashLetterIdx, setFlashLetterIdx] = useState(0)
   const [harakatLetterIdx, setHarakatLetterIdx] = useState(0)
 
-  const [choixChoices]  = useState<DarijaLetter[]>(() =>
-    letterGroup.length >= 3
-      ? shuffle([target, ...shuffle(pool).slice(0, 2)])
-      : [target]
-  )
-  const [assocPairs]    = useState<DarijaLetter[]>(() =>
-    shuffle(letterGroup.slice(0, Math.min(4, letterGroup.length)))
-  )
-  const [pairsPairs]    = useState<DarijaLetter[]>(() =>
-    shuffle(letterGroup.slice(0, Math.min(5, letterGroup.length)))
-  )
-  const [entChoices]    = useState<DarijaLetter[]>(() =>
-    letterGroup.length >= 4
-      ? shuffle([target, ...shuffle(pool).slice(0, 3)])
-      : shuffle(letterGroup)
-  )
-  const [vraiFauxData]  = useState(() => {
-    const isTrue = pool.length > 0 ? Math.random() > 0.5 : true
-    return { proposed: isTrue ? (target.latin ?? '') : (pool[0]?.latin ?? ''), isTrue }
-  })
-  const [dicterChoices] = useState<string[]>(() =>
-    shuffle([target.latin ?? '', ...shuffle(pool).slice(0, 6).map(l => l.latin ?? '')])
-  )
-
-  // Use alphabet sequence (with harakat) or vocab sequence
+  // Use alphabet sequence (with harakat), authored exercises, DB-driven sequence, or just flashcards
   const [queue, setQueue] = useState<Phase[]>(() => {
-    const baseSeq = isAlphabetLesson ? PHASE_SEQUENCE : VOCAB_PHASE_SEQUENCE
-    let seq = baseSeq.filter(p => p !== 'finished')
+    let seq: Phase[]
+
+    // 1. Exercices authored (LessonExercise[]) — source de vérité prioritaire pour les leçons vocab
+    const authoredKeys = Array.isArray(_authoredExercises)
+      ? _authoredExercises
+          .slice()
+          .sort((a: any, b: any) => (a?.order ?? 0) - (b?.order ?? 0))
+          .map((ex: any) => ex?.typology)
+          .filter((k: any): k is string => typeof k === 'string')
+      : []
+
+    // 2. Ancienne séquence stockée en DB (Lesson.content.sequence)
+    const dbSeq = (lesson as any)?.content?.sequence
+
+    if (!isAlphabetLesson && authoredKeys.length > 0) {
+      const built = buildPhaseQueue(authoredKeys)
+      seq = built ?? []
+    } else if (!isAlphabetLesson && Array.isArray(dbSeq) && dbSeq.length > 0) {
+      const built = buildPhaseQueue(dbSeq as string[])
+      seq = built ?? []
+    } else if (isAlphabetLesson) {
+      seq = PHASE_SEQUENCE.filter(p => p !== 'finished')
+    } else {
+      // Aucun exercice authored : l'écran "Cours en construction" prendra le relais.
+      seq = []
+    }
+
     if (!settings.listeningExercises) seq = seq.filter(p => p !== 'entendre' && p !== 't4')
     if (!settings.encouragement)      seq = seq.filter(p => !['t1','t2','t3','t4','t5','t6'].includes(p))
     if ((lesson as any)?.videoUrl) seq = ['video', ...seq]
     return seq
   })
-  const phase = queue[0] ?? 'finished'
+  const phase: Phase = queue.length === 0 ? 'empty' : queue[0]
+
+  // Séquence d'exercices initiale de CETTE leçon (capturée au 1er rendu,
+  // sans vidéo ni transitions). Sert à afficher les pastilles de phases
+  // propres à la leçon plutôt que le catalogue global EX_PHASES.
+  const initialExSeqRef = useRef<ExPhase[] | null>(null)
+  if (initialExSeqRef.current === null) {
+    initialExSeqRef.current = queue.filter(p => EX_PHASES.includes(p as ExPhase)) as ExPhase[]
+  }
+  const lessonExPhases: ExPhase[] = initialExSeqRef.current
+
+  // ── Curseur authored : à quel exercice authored sommes-nous ? ────────────
+  // La queue alterne [ex, transition, ex, transition, ...] donc le nombre
+  // de phases d'exercice restantes (en comptant la courante) indique notre position.
+  const currentAuthored = useMemo(() => {
+    if (isAlphabetLesson || authoredList.length === 0) return null
+    const remaining = queue.filter(p => EX_PHASES.includes(p as ExPhase)).length
+    const consumed  = Math.max(0, authoredList.length - remaining)
+    return authoredList[consumed] ?? null
+  }, [queue, authoredList, isAlphabetLesson])
+
+  const currentCfg: any   = currentAuthored?.config ?? null
+  const customPrompt: string | undefined = typeof currentCfg?.prompt === 'string' && currentCfg.prompt.trim()
+    ? currentCfg.prompt.trim()
+    : undefined
+
+  // Résout une liste d'IDs vocab → DarijaLetter[]
+  const resolveIds = (ids: any): DarijaLetter[] => {
+    if (!Array.isArray(ids)) return []
+    return ids.map((id: any) => vocabById.get(id)).filter((x): x is DarijaLetter => !!x)
+  }
+
+  // FlashCard : liste des items à parcourir
+  const flashItems = useMemo<DarijaLetter[]>(() => {
+    if (currentAuthored?.typology === 'FlashCard') {
+      const items = resolveIds(currentCfg?.vocabIds)
+      if (items.length > 0) return items
+    }
+    return letterGroup
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // ChoixLettre : target + 2 distracteurs
+  const choixData = useMemo(() => {
+    if (currentAuthored?.typology === 'ChoixLettre') {
+      const t = vocabById.get(currentCfg?.targetVocabId)
+      const d = resolveIds(currentCfg?.distractorVocabIds)
+      if (t) return { target: t, choices: shuffle([t, ...d]) }
+    }
+    const fbT = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
+    const fbP = letterGroup.slice(1)
+    return {
+      target:  fbT,
+      choices: letterGroup.length >= 3 ? shuffle([fbT, ...shuffle(fbP).slice(0, 2)]) : [fbT],
+    }
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // EntendreEtChoisir : target + 3 distracteurs
+  const entendreData = useMemo(() => {
+    if (currentAuthored?.typology === 'EntendreEtChoisir') {
+      const t = vocabById.get(currentCfg?.targetVocabId)
+      const d = resolveIds(currentCfg?.distractorVocabIds)
+      if (t) return { target: t, choices: shuffle([t, ...d]) }
+    }
+    const fbT = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
+    const fbP = letterGroup.slice(1)
+    return {
+      target:  fbT,
+      choices: letterGroup.length >= 4 ? shuffle([fbT, ...shuffle(fbP).slice(0, 3)]) : shuffle(letterGroup),
+    }
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // DicterRomanisation : target + 3 distracteurs (latin)
+  const dicterData = useMemo(() => {
+    if (currentAuthored?.typology === 'DicterRomanisation') {
+      const t = vocabById.get(currentCfg?.targetVocabId)
+      const d = resolveIds(currentCfg?.distractorVocabIds)
+      if (t) return {
+        target:  t,
+        choices: shuffle([t.latin, ...d.map(x => x.latin)].filter(Boolean) as string[]),
+      }
+    }
+    const fbT = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
+    const fbP = letterGroup.slice(1)
+    return {
+      target:  fbT,
+      choices: shuffle([fbT.latin ?? '', ...shuffle(fbP).slice(0, 6).map(l => l.latin ?? '')]),
+    }
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // VraiFaux : mot affiché + mot proposé (vocab picker) → isTrue auto-calculé
+  const vraiFauxData = useMemo(() => {
+    if (currentAuthored?.typology === 'VraiFaux') {
+      const t = vocabById.get(currentCfg?.targetVocabId)
+      if (t) {
+        const p = vocabById.get(currentCfg?.proposedVocabId)
+        if (p) return {
+          target:   t,
+          proposed: { latin: p.latin ?? '', fr: p.fr },
+          isTrue:   currentCfg?.targetVocabId === currentCfg?.proposedVocabId,
+        }
+        // Backward compat : ancien format proposedRomanisation + isTrue manuel
+        return {
+          target:   t,
+          proposed: { latin: typeof currentCfg?.proposedRomanisation === 'string' ? currentCfg.proposedRomanisation : (t.latin ?? '') },
+          isTrue:   currentCfg?.isTrue !== false,
+        }
+      }
+    }
+    const fbT = letterGroup[0] ?? { letter: '', latin: '', fr: '' }
+    const fbP = letterGroup.slice(1)
+    const isTrue = fbP.length > 0 ? Math.random() > 0.5 : true
+    const pSrc = isTrue ? fbT : (fbP[0] ?? fbT)
+    return {
+      target:   fbT,
+      proposed: { latin: pSrc.latin ?? '', fr: pSrc.fr },
+      isTrue,
+    }
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // AssocierLettres : 4 paires
+  const assocPairs = useMemo<DarijaLetter[]>(() => {
+    if (currentAuthored?.typology === 'AssocierLettres') {
+      const items = resolveIds(currentCfg?.vocabIds)
+      if (items.length > 0) return shuffle(items)
+    }
+    return shuffle(letterGroup.slice(0, Math.min(4, letterGroup.length)))
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // TrouverLesPaires : 5 paires
+  const pairsPairs = useMemo<DarijaLetter[]>(() => {
+    if (currentAuthored?.typology === 'TrouverLesPaires') {
+      const items = resolveIds(currentCfg?.vocabIds)
+      if (items.length > 0) return shuffle(items)
+    }
+    return shuffle(letterGroup.slice(0, Math.min(5, letterGroup.length)))
+  }, [currentAuthored, currentCfg, vocabById, letterGroup])
+
+  // NumeroterOrdre : items avec correctPos
+  const numeroterData = useMemo(() => {
+    if (currentAuthored?.typology === 'NumeroterOrdre' && Array.isArray(currentCfg?.items)) {
+      return currentCfg.items as Array<{ id: string; ar: string; latin?: string; fr: string; correctPos: number }>
+    }
+    return [] as Array<{ id: string; ar: string; latin?: string; fr: string; correctPos: number }>
+  }, [currentAuthored, currentCfg])
+
+  // PlacerDansEtoile : zones + words
+  const placerEtoileData = useMemo(() => {
+    if (currentAuthored?.typology === 'PlacerDansEtoile') {
+      const zones = Array.isArray(currentCfg?.zones) ? currentCfg.zones : []
+      const words = Array.isArray(currentCfg?.words) ? currentCfg.words : []
+      return { zones, words }
+    }
+    return { zones: [], words: [] as string[] }
+  }, [currentAuthored, currentCfg])
+
+  // SelectionImages : items + minSelection / freeSelection
+  const selectionImagesData = useMemo(() => {
+    if (currentAuthored?.typology === 'SelectionImages') {
+      return {
+        question: typeof currentCfg?.question === 'string' ? currentCfg.question : undefined,
+        questionFr: typeof currentCfg?.questionFr === 'string' ? currentCfg.questionFr : undefined,
+        items: Array.isArray(currentCfg?.items) ? currentCfg.items : [],
+        minSelection: typeof currentCfg?.minSelection === 'number' ? currentCfg.minSelection : undefined,
+        freeSelection: currentCfg?.freeSelection === true,
+      }
+    }
+    return { question: undefined as string | undefined, questionFr: undefined as string | undefined, items: [] as any[], minSelection: undefined as number | undefined, freeSelection: false }
+  }, [currentAuthored, currentCfg])
+
+  // TriDeuxCategories : 2 catégories + items
+  const triDeuxCatData = useMemo(() => {
+    if (currentAuthored?.typology === 'TriDeuxCategories') {
+      return {
+        question: typeof currentCfg?.question === 'string' ? currentCfg.question : undefined,
+        questionFr: typeof currentCfg?.questionFr === 'string' ? currentCfg.questionFr : undefined,
+        categorieA: currentCfg?.categorieA ?? { label: 'A' },
+        categorieB: currentCfg?.categorieB ?? { label: 'B' },
+        items: Array.isArray(currentCfg?.items) ? currentCfg.items : [],
+      }
+    }
+    return { question: undefined as string | undefined, questionFr: undefined as string | undefined, categorieA: { label: 'A' }, categorieB: { label: 'B' }, items: [] as any[] }
+  }, [currentAuthored, currentCfg])
+
+  // RelierParTrait : pairesGauche + pairesDroite + correct
+  const relierTraitData = useMemo(() => {
+    if (currentAuthored?.typology === 'RelierParTrait') {
+      return {
+        question: typeof currentCfg?.question === 'string' ? currentCfg.question : undefined,
+        questionFr: typeof currentCfg?.questionFr === 'string' ? currentCfg.questionFr : undefined,
+        pairesGauche: Array.isArray(currentCfg?.pairesGauche) ? currentCfg.pairesGauche : [],
+        pairesDroite: Array.isArray(currentCfg?.pairesDroite) ? currentCfg.pairesDroite : [],
+        correct: (currentCfg?.correct ?? {}) as Record<string, string>,
+      }
+    }
+    return { question: undefined as string | undefined, questionFr: undefined as string | undefined, pairesGauche: [] as any[], pairesDroite: [] as any[], correct: {} as Record<string, string> }
+  }, [currentAuthored, currentCfg])
+
+  // TexteReligieux : bloc arabe + fr + source
+  const texteReligieuxData = useMemo(() => {
+    if (currentAuthored?.typology === 'TexteReligieux') {
+      return {
+        arabe: typeof currentCfg?.arabe === 'string' ? currentCfg.arabe : '',
+        fr: typeof currentCfg?.fr === 'string' ? currentCfg.fr : '',
+        source: typeof currentCfg?.source === 'string' ? currentCfg.source : undefined,
+        titre: typeof currentCfg?.titre === 'string' ? currentCfg.titre : undefined,
+      }
+    }
+    return { arabe: '', fr: '', source: undefined as string | undefined, titre: undefined as string | undefined }
+  }, [currentAuthored, currentCfg])
+
+  // Reset l'index FlashCard quand on change d'exercice authored
+  useEffect(() => {
+    setFlashLetterIdx(0)
+  }, [currentAuthored?.id])
 
   const [hearts,      setHearts]   = useState(5)
   const [answered,    setAnswered] = useState(false)
@@ -355,6 +642,12 @@ export default function LessonClient({
   const [shouldValidate, setShouldValidate] = useState(false)
   const [renderKey,    setRenderKey]    = useState(0)
   const [showSignaler, setShowSignaler] = useState(false)
+
+  // Gate d'hydratation : shuffle() dans les useMemo (choixData, etc.) utilise
+  // Math.random() et produit un ordre différent entre SSR pre-render et client,
+  // ce qui cause un mismatch d'hydratation. On ne rend l'exercice qu'après mount.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
 
   useEffect(() => {
     const matching = MATCHING_PHASES.includes(phase as ExPhase)
@@ -414,9 +707,15 @@ export default function LessonClient({
   }
 
   const mainPhase  = phase === "finished" ? "dicter" : getCurrentExPhase()
-  const [lo]       = WEIGHTS[mainPhase]
-  const globalPct  = phase === "finished" ? 100 : lo
-  const phaseIdx   = EX_PHASES.indexOf(mainPhase)
+  // Index dans la séquence propre à la leçon (et non le catalogue global).
+  const remainingEx = queue.filter(p => EX_PHASES.includes(p as ExPhase)).length
+  const lessonPhaseIdx = phase === "finished"
+    ? lessonExPhases.length
+    : Math.max(0, lessonExPhases.length - remainingEx)
+  // Progression Duolingo-like : proportionnelle aux exos de CETTE leçon.
+  const globalPct = lessonExPhases.length > 0
+    ? Math.round((lessonPhaseIdx / lessonExPhases.length) * 100)
+    : 0
   const showHearts = HEART_PHASES.includes(mainPhase)
   const showFooter   = FOOTER_PHASES.includes(phase as ExPhase)
   const isMatching   = MATCHING_PHASES.includes(phase as ExPhase)
@@ -443,9 +742,11 @@ export default function LessonClient({
     }
   }
 
-  // FlashCard : défile toutes les lettres du groupe
+  // FlashCard : défile toutes les lettres du groupe (ou des vocabIds authored)
   const handleFlashContinue = () => {
-    if (flashLetterIdx < letterGroup.length - 1) {
+    const current = flashItems[flashLetterIdx] as any
+    if (current?.id) markVocabSeen(current.id).catch(() => {})
+    if (flashLetterIdx < flashItems.length - 1) {
       setFlashLetterIdx(i => i + 1)
     } else {
       advancePhase()
@@ -461,11 +762,19 @@ export default function LessonClient({
     }
   }
 
+  const trackRetention = (correct: boolean) => {
+    const vid = (target as any)?.id as string | undefined
+    if (!vid) return
+    markVocabSeen(vid).catch(() => {})
+    markVocabResult(vid, correct).catch(() => {})
+  }
+
   const handleSuccess = () => {
     setShouldValidate(false)
     setAnswered(true)
     setIsCorrect(true)
     setFeedback(randomSuccess())
+    trackRetention(true)
   }
 
   const handleFailed = (correctHint?: string) => {
@@ -474,6 +783,7 @@ export default function LessonClient({
     setIsCorrect(false)
     setHearts(h => Math.max(0, h - 1))
     setFeedback(correctHint ?? target.latin)
+    trackRetention(false)
   }
 
   const handlePasser = () => {
@@ -502,6 +812,40 @@ export default function LessonClient({
       <div className="min-h-screen bg-[#131f24] flex flex-col items-center justify-center px-4">
         <ExerciseCard className="max-w-sm w-full">
           <FinishedScreen onNext={handleNext} hasNext={!!nextLessonId} animate={settings.animations} />
+        </ExerciseCard>
+      </div>
+    )
+  }
+
+  // ── Cours sans exercice : écran "en construction" (charte Maroc) ─────────
+  if (phase === "empty") {
+    return (
+      <div className="min-h-screen bg-[#0f1720] flex flex-col items-center justify-center px-4">
+        <ExerciseCard className="max-w-sm w-full">
+          <div className="relative overflow-hidden flex flex-col items-center text-center gap-4 py-8 px-6"
+               style={{ borderRadius: 24, border: '2px solid #d4a84b55',
+                        background: 'radial-gradient(circle at 30% 20%, #d4a84b10, #0f1720 65%)' }}>
+            <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" style={{ opacity: 0.05 }} aria-hidden>
+              <g fill="#d4a84b">
+                <rect x="10" y="10" width="80" height="80" />
+                <rect x="10" y="10" width="80" height="80" transform="rotate(45 50 50)" />
+              </g>
+            </svg>
+            <div className="relative z-[5] text-5xl">🏗️</div>
+            <div className="relative z-[5] font-black uppercase tracking-widest text-sm" style={{ color: '#d4a84b' }}>
+              Cours en construction
+            </div>
+            <div className="relative z-[5] text-sm" style={{ color: '#e4eef3', opacity: 0.85 }}>
+              Aucun exercice n'est encore publié pour ce cours.
+            </div>
+            <button
+              onClick={handleNext}
+              className="relative z-[5] mt-2 px-6 py-3 rounded-2xl font-black text-sm uppercase tracking-widest text-white"
+              style={{ background: '#006233', boxShadow: '0 4px 0 #004a26' }}
+            >
+              Retour au parcours
+            </button>
+          </div>
         </ExerciseCard>
       </div>
     )
@@ -536,15 +880,17 @@ export default function LessonClient({
   }
 
   // ── Lettre courante ─────────────────────────────────────────────────────
-  const flashTarget = letterGroup[flashLetterIdx] ?? target
+  const flashTarget = flashItems[flashLetterIdx] ?? flashItems[0] ?? target
   const harakatTarget = alphabetLetters[harakatLetterIdx] ?? alphabetLetters[0]
 
-  const flashProgress = letterGroup.length > 1
-    ? `${flashLetterIdx + 1} / ${letterGroup.length}`
+  const flashProgress = flashItems.length > 1
+    ? `${flashLetterIdx + 1} / ${flashItems.length}`
     : undefined
   const harakatProgress = alphabetLetters.length > 1
     ? `${harakatLetterIdx + 1} / ${alphabetLetters.length}`
     : undefined
+
+  const lessonMode: 'lettre' | 'mot' = staticGroup.length > 0 ? 'lettre' : 'mot'
 
   // ── Rendu de l'exercice courant ───────────────────────────────────────────
   const renderExercise = () => {
@@ -556,7 +902,8 @@ export default function LessonClient({
             onContinue={handleFlashContinue}
             onSpeak={handleSpeak}
             progress={flashProgress}
-            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
+            mode={lessonMode}
+            prompt={customPrompt}
           />
         )
       case "harakat":
@@ -572,37 +919,39 @@ export default function LessonClient({
       case "choix":
         return (
           <ChoixLettre
-            letter={target}
-            choices={choixChoices}
+            letter={choixData.target}
+            choices={choixData.choices}
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
-            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
+            mode={lessonMode}
+            prompt={customPrompt}
           />
         )
       case "association":
-        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={staticGroup.length > 0 ? 'lettre' : 'mot'} />
+        return <AssocierLettres pairs={assocPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={lessonMode} prompt={customPrompt} />
       case "paires":
-        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={staticGroup.length > 0 ? 'lettre' : 'mot'} />
+        return <TrouverLesPaires pairs={pairsPairs} onConfirm={advancePhase} onReadyChange={setIsReady} mode={lessonMode} prompt={customPrompt} />
       case "entendre":
         return (
           <EntendreEtChoisir
-            letter={target}
-            choices={entChoices}
+            letter={entendreData.target}
+            choices={entendreData.choices}
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
-            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
+            mode={lessonMode}
+            prompt={customPrompt}
           />
         )
       case "vrai_faux":
         return (
           <VraiFaux
-            letter={target}
+            letter={vraiFauxData.target}
             proposed={vraiFauxData.proposed}
             isTrue={vraiFauxData.isTrue}
             onSuccess={handleSuccess}
@@ -610,19 +959,97 @@ export default function LessonClient({
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
-            mode={staticGroup.length > 0 ? 'lettre' : 'mot'}
+            mode={lessonMode}
+            prompt={customPrompt}
           />
         )
       case "dicter":
         return (
           <DicterRomanisation
-            letter={target}
-            choices={dicterChoices}
+            letter={dicterData.target}
+            choices={dicterData.choices}
             onSuccess={handleSuccess}
             onFailed={handleFailed}
             onSpeak={handleSpeak}
             onReadyChange={setIsReady}
             shouldValidate={shouldValidate}
+            prompt={customPrompt}
+          />
+        )
+      case "numeroter":
+        if (numeroterData.length === 0) { advancePhase(); return null }
+        return (
+          <NumeroterOrdre
+            items={numeroterData}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
+          />
+        )
+      case "placer_etoile":
+        if (placerEtoileData.zones.length === 0) { advancePhase(); return null }
+        return (
+          <PlacerDansEtoile
+            zones={placerEtoileData.zones}
+            words={placerEtoileData.words}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
+          />
+        )
+      case "texte_religieux":
+        if (!texteReligieuxData.arabe && !texteReligieuxData.fr) { advancePhase(); return null }
+        return (
+          <TexteReligieux
+            arabe={texteReligieuxData.arabe}
+            fr={texteReligieuxData.fr}
+            source={texteReligieuxData.source}
+            titre={texteReligieuxData.titre}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
+          />
+        )
+      case "selection_images":
+        if (selectionImagesData.items.length === 0) { advancePhase(); return null }
+        return (
+          <SelectionImages
+            question={selectionImagesData.question}
+            questionFr={selectionImagesData.questionFr}
+            items={selectionImagesData.items}
+            minSelection={selectionImagesData.minSelection}
+            freeSelection={selectionImagesData.freeSelection}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
+          />
+        )
+      case "tri_deux_cat":
+        if (triDeuxCatData.items.length === 0) { advancePhase(); return null }
+        return (
+          <TriDeuxCategories
+            question={triDeuxCatData.question}
+            questionFr={triDeuxCatData.questionFr}
+            categorieA={triDeuxCatData.categorieA}
+            categorieB={triDeuxCatData.categorieB}
+            items={triDeuxCatData.items}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
+          />
+        )
+      case "relier_trait":
+        if (relierTraitData.pairesGauche.length === 0 || relierTraitData.pairesDroite.length === 0) { advancePhase(); return null }
+        return (
+          <RelierParTrait
+            question={relierTraitData.question}
+            questionFr={relierTraitData.questionFr}
+            pairesGauche={relierTraitData.pairesGauche}
+            pairesDroite={relierTraitData.pairesDroite}
+            correct={relierTraitData.correct}
+            onConfirm={advancePhase}
+            onReadyChange={setIsReady}
+            prompt={customPrompt}
           />
         )
       default:
@@ -668,13 +1095,14 @@ export default function LessonClient({
 
         {/* Ligne 2 : pastilles phases */}
         <div className="flex items-center justify-center gap-1.5">
-          {EX_PHASES.map((_, i) => {
-            const isDone   = i < phaseIdx
-            const isActive = i === phaseIdx
+          {lessonExPhases.map((p, i) => {
+            const isDone   = i < lessonPhaseIdx
+            const isActive = i === lessonPhaseIdx
+            const label    = PHASE_LABELS[EX_PHASES.indexOf(p)] ?? ''
             return (
               <div
                 key={i}
-                title={PHASE_LABELS[i]}
+                title={label}
                 className={`flex items-center justify-center rounded-full text-[10px] font-bold transition-all duration-200 ${
                   isDone   ? 'w-6 h-6 bg-[#58cc02] text-white' :
                   isActive ? 'w-7 h-7 bg-[#1cb0f6] text-white' :
@@ -691,7 +1119,7 @@ export default function LessonClient({
       {/* ── CONTENU ────────────────────────────────────────────────────── */}
       <main className="flex-1 flex flex-col items-center px-4 py-6 pb-40">
         <ExerciseCard className="max-w-lg w-full" key={renderKey}>
-          {renderExercise()}
+          {mounted ? renderExercise() : <div style={{ minHeight: 400 }} />}
         </ExerciseCard>
       </main>
 

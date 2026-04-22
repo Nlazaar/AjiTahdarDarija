@@ -1,0 +1,40 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-meteo",
+      "title": "Vocabulaire — Météo",
+      "subtitle": "Parler du temps qu'il fait",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 160,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-meteo-base",
+        "title": "La météo",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "الجَوّ زْوِين",         "transliteration": "ljaw zwine",      "translation": { "fr": "il fait beau" },            "tags": ["meteo"] },
+          { "word": "الجَوّ بَارْد",         "transliteration": "ljaw bard",       "translation": { "fr": "il fait froid" },           "tags": ["meteo"] },
+          { "word": "الجَوّ سْخُون",         "transliteration": "ljaw skhoun",     "translation": { "fr": "il fait chaud" },           "tags": ["meteo"] },
+          { "word": "كَايْن الشْتَا",          "transliteration": "kayen chtta",     "translation": { "fr": "il pleut" },                "tags": ["meteo"] },
+          { "word": "مَا كَايْنَاش الشْتَا",    "transliteration": "ma kaynach chtta","translation": { "fr": "il ne pleut pas" },         "tags": ["meteo"] },
+          { "word": "كَايْن الرِّيح",          "transliteration": "kayen rri7",      "translation": { "fr": "il y a du vent" },          "tags": ["meteo"] },
+          { "word": "السْمَاء غِيمَّة",        "transliteration": "ssma ghimma",     "translation": { "fr": "le ciel est nuageux" },     "tags": ["meteo"] },
+          { "word": "كَايْن الضْبَاب",         "transliteration": "kayen DDbab",     "translation": { "fr": "il y a du brouillard" },    "tags": ["meteo"] },
+          { "word": "الجَوّ نَاشْف",          "transliteration": "ljaw nachf",      "translation": { "fr": "le temps est sec" },        "tags": ["meteo"] },
+          { "word": "الجَوّ رْطْب",          "transliteration": "ljaw rTb",        "translation": { "fr": "le temps est humide" },     "tags": ["meteo"] },
+          { "word": "كَايْن التْلْج",          "transliteration": "kayen ttlj",      "translation": { "fr": "il neige" },                "tags": ["meteo"] },
+          { "word": "الحْرَارَة طَالْعَة",     "transliteration": "l7rara Ta3la",    "translation": { "fr": "la température monte" },    "tags": ["meteo"] },
+          { "word": "الحْرَارَة هَابْطَة",     "transliteration": "l7rara habTa",    "translation": { "fr": "la température baisse" },   "tags": ["meteo"] },
+          { "word": "الجَوّ مْعْتَدِل",        "transliteration": "ljaw m3tdel",     "translation": { "fr": "le temps est doux" },       "tags": ["meteo"] },
+          { "word": "كَايْن عْجَاج",          "transliteration": "kayen 3jaj",      "translation": { "fr": "il y a une tempête de sable" }, "tags": ["meteo"] }
+        ]
+      }
+    ]
+  }
+}

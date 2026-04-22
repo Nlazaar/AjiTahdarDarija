@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { useUserProgress } from '@/contexts/UserProgressContext';
-import { getMyRank } from '@/lib/api';
+import { useUser } from '@/context/UserContext';
+import { getMyRank, getDailyVocab } from '@/lib/api';
 
 /* ─────────────────────────────────────────────────────────────
    LEAGUES
@@ -169,13 +170,27 @@ function QuestItem({ quest }: { quest: { id: string; icon: string; label: string
 ───────────────────────────────────────────────────────────── */
 export default function StatsPanel() {
   const { progress } = useUserProgress();
+  const { langTrack } = useUser();
   const league = getLeague(progress.xp);
 
   const [realRank, setRealRank] = useState<number | null>(null);
+  const [daily, setDaily] = useState<{ word: string; transliteration: string | null; translation: any; audioUrl: string | null } | null>(null);
+
+  // Track → libellé du widget "du jour"
+  const dailyTitle =
+    langTrack === 'MSA'      ? 'Arabe du jour' :
+    langTrack === 'RELIGION' ? 'Islam du jour' :
+                               'Darija du jour';
 
   useEffect(() => {
     getMyRank().then(r => { if (r?.rank != null) setRealRank(r.rank) }).catch(() => {});
-  }, []);
+    setDaily(null);
+    getDailyVocab(langTrack).then(d => { if (d) setDaily(d); }).catch(() => {});
+  }, [langTrack]);
+
+  const dailyFr = daily?.translation && typeof daily.translation === 'object'
+    ? (daily.translation.fr ?? daily.translation.en ?? '')
+    : (typeof daily?.translation === 'string' ? daily.translation : '');
 
   const divisionRank = realRank != null ? ((realRank - 1) % LEAGUE_SIZE) + 1 : null;
   const displayRank  = divisionRank ?? '…';
@@ -343,13 +358,29 @@ export default function StatsPanel() {
 
       {/* ── Darija du jour ──────────────────────────────── */}
       <HoverCard style={{ background: 'linear-gradient(135deg, #1b3a6b, #2d5a9e)', border: 'none', padding: '12px 16px', boxShadow: '0 4px 0 #0f2147' }}>
-        <div style={{ fontSize: 10, fontWeight: 900, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 5 }}>
-          💡 Darija du jour
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5 }}>
+          <div style={{ fontSize: 10, fontWeight: 900, color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            💡 {dailyTitle}
+          </div>
+          {daily?.audioUrl && (
+            <button
+              onClick={() => new Audio(daily.audioUrl!).play().catch(() => {})}
+              aria-label="Écouter"
+              style={{ background: 'rgba(255,255,255,0.15)', border: 'none', borderRadius: 8, padding: '3px 8px', color: 'white', cursor: 'pointer', fontSize: 11 }}
+            >▶</button>
+          )}
         </div>
-        <p style={{ fontSize: 12, color: 'white', margin: 0, lineHeight: 1.5 }}>
-          <strong style={{ fontFamily: 'var(--font-amiri)', fontSize: 16 }}>لاباس؟</strong>
-          {' '}— <em>Labass ?</em> — "Ça va ?" La réponse : <strong>لاباس، الحمد لله</strong> "Ça va, merci à Dieu"
-        </p>
+        {daily ? (
+          <p style={{ fontSize: 12, color: 'white', margin: 0, lineHeight: 1.5 }}>
+            <strong style={{ fontFamily: 'var(--font-amiri)', fontSize: 18 }} dir="rtl">{daily.word}</strong>
+            {daily.transliteration ? <> {' '}— <em>{daily.transliteration}</em></> : null}
+            {dailyFr ? <> — &laquo; {dailyFr} &raquo;</> : null}
+          </p>
+        ) : (
+          <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.5 }}>
+            Chargement…
+          </p>
+        )}
       </HoverCard>
 
     </div>

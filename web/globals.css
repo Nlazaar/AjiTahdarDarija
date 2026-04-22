@@ -352,6 +352,31 @@ body {
   }
 }
 
+/* ── POSTCARD LESSON DOT PULSE ── */
+@keyframes postcardDotPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.75; transform: scale(0.93); }
+}
+
+/* ── POSTCARD UNLOCK CELEBRATION ── */
+@keyframes postcardShine {
+  0%   { transform: translateX(-120%); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translateX(120%); opacity: 0; }
+}
+@keyframes postcardSparkle {
+  0%   { opacity: 0; transform: scale(0.4) rotate(0deg); }
+  30%  { opacity: 1; transform: scale(1.2) rotate(20deg); }
+  100% { opacity: 0; transform: scale(0.6) translateY(-18px) rotate(40deg); }
+}
+@keyframes postcardPop {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  20%  { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  30%  { transform: translate(-50%, -50%) scale(1); }
+  80%  { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+}
+
 /* ── STATS PANEL ── */
 .widget-card {
   background: var(--c-card);

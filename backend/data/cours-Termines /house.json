@@ -1,0 +1,61 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-maison",
+      "title": "Vocabulaire — Maison",
+      "subtitle": "Pièces et meubles de la maison",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 190,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-maison-base",
+        "title": "La maison",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "دَار",               "transliteration": "dar",               "translation": { "fr": "maison" },              "tags": ["maison"] },
+          { "word": "شُقَّة",              "transliteration": "choqqa",            "translation": { "fr": "appartement" },         "tags": ["maison"] },
+          { "word": "بَاب",               "transliteration": "bab",               "translation": { "fr": "porte" },               "tags": ["maison"] },
+          { "word": "شَرْجَم",            "transliteration": "cherjem",           "translation": { "fr": "fenêtre" },             "tags": ["maison"] },
+          { "word": "سْقْف",              "transliteration": "sqf",               "translation": { "fr": "plafond" },             "tags": ["maison"] },
+          { "word": "حَايْط",             "transliteration": "7ayT",              "translation": { "fr": "mur" },                 "tags": ["maison"] },
+          { "word": "أَرْض",              "transliteration": "arD",               "translation": { "fr": "sol" },                 "tags": ["maison"] },
+          { "word": "سْطَح",              "transliteration": "sTa7",              "translation": { "fr": "toit / terrasse" },     "tags": ["maison"] },
+          { "word": "حُوش",               "transliteration": "7ouch",             "translation": { "fr": "cour" },                "tags": ["maison"] },
+          { "word": "صَالَة",             "transliteration": "sala",              "translation": { "fr": "salon" },               "tags": ["maison"] },
+          { "word": "صَالُون",            "transliteration": "salon",             "translation": { "fr": "salon (variante)" },    "tags": ["maison"] },
+          { "word": "بِيَّة",              "transliteration": "biyya",             "translation": { "fr": "chambre" },             "tags": ["maison"] },
+          { "word": "غُرْفَة النُّوم",      "transliteration": "ghorfa nnoum",      "translation": { "fr": "chambre (variante)" }, "tags": ["maison"] },
+          { "word": "بِيت النُّعَاس",      "transliteration": "bit nna3as",        "translation": { "fr": "chambre (variante)" }, "tags": ["maison"] },
+          { "word": "كُوزِينَة",            "transliteration": "kouzina",           "translation": { "fr": "cuisine" },             "tags": ["maison"] },
+          { "word": "مَطْبَخ",             "transliteration": "maTbakh",           "translation": { "fr": "cuisine (variante)" }, "tags": ["maison"] },
+          { "word": "حَمَّام",              "transliteration": "7mmam",             "translation": { "fr": "salle de bain" },       "tags": ["maison"] },
+          { "word": "طْوَالِيط",            "transliteration": "twalit",            "translation": { "fr": "toilettes" },           "tags": ["maison"] },
+          { "word": "مِرْحَاض",            "transliteration": "mr7aD",             "translation": { "fr": "toilettes (variante)" },"tags": ["maison"] },
+          { "word": "فْرَاش",              "transliteration": "frach",             "translation": { "fr": "lit" },                 "tags": ["maison"] },
+          { "word": "مْخَدَّة",              "transliteration": "mkheda",            "translation": { "fr": "oreiller" },            "tags": ["maison"] },
+          { "word": "بَرْدَعَة",             "transliteration": "brda3a",            "translation": { "fr": "coussin" },             "tags": ["maison"] },
+          { "word": "زْرَابِي",             "transliteration": "zrabyi",            "translation": { "fr": "tapis" },               "tags": ["maison"] },
+          { "word": "طَابْلَة",             "transliteration": "tabla",             "translation": { "fr": "table" },               "tags": ["maison"] },
+          { "word": "كُرَّاسَة",             "transliteration": "korrassa",          "translation": { "fr": "chaise" },              "tags": ["maison"] },
+          { "word": "خْزَانَة",              "transliteration": "khzana",            "translation": { "fr": "armoire" },             "tags": ["maison"] },
+          { "word": "بْلَاكَار",             "transliteration": "placard",           "translation": { "fr": "placard" },             "tags": ["maison"] },
+          { "word": "ثْلَاجَة",              "transliteration": "tlaja",             "translation": { "fr": "frigo" },               "tags": ["maison"] },
+          { "word": "فُور",                "transliteration": "for",               "translation": { "fr": "four" },                "tags": ["maison"] },
+          { "word": "فْرَان",               "transliteration": "frran",             "translation": { "fr": "four (variante)" },    "tags": ["maison"] },
+          { "word": "مَاكِينَة دْيَال الصَّابُون","transliteration": "makina dyal Ssaboun","translation": { "fr": "machine à laver" },"tags": ["maison"] },
+          { "word": "تِلْفَاز",             "transliteration": "tilfaz",            "translation": { "fr": "télévision" },          "tags": ["maison"] },
+          { "word": "ضَوْ",                "transliteration": "daw",               "translation": { "fr": "lumière" },             "tags": ["maison"] },
+          { "word": "مْرَايَة",              "transliteration": "mraya",             "translation": { "fr": "miroir" },              "tags": ["maison"] },
+          { "word": "مْفْتَاح",              "transliteration": "mfta7",             "translation": { "fr": "clé" },                 "tags": ["maison"] },
+          { "word": "قْفْل",                "transliteration": "qfl",               "translation": { "fr": "cadenas" },             "tags": ["maison"] }
+        ]
+      }
+    ]
+  }
+}

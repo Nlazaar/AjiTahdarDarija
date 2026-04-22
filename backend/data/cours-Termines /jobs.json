@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-metiers",
+      "title": "Vocabulaire — Métiers",
+      "subtitle": "Professions du quotidien",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 110,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-metiers-base",
+        "title": "Les métiers",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "خْدْمَة",       "transliteration": "khdma",    "translation": { "fr": "travail / job" },       "tags": ["metier"] },
+          { "word": "خَدَّام",        "transliteration": "khddam",   "translation": { "fr": "travailleur" },         "tags": ["metier"] },
+          { "word": "طْبِيب",         "transliteration": "Tbib",     "translation": { "fr": "médecin" },             "tags": ["metier"] },
+          { "word": "مُمَرِّض",       "transliteration": "mommreD",  "translation": { "fr": "infirmier" },           "tags": ["metier"] },
+          { "word": "أُسْتَاذ",       "transliteration": "ostad",    "translation": { "fr": "professeur" },          "tags": ["metier"] },
+          { "word": "مُهَنْدِس",      "transliteration": "mohandis", "translation": { "fr": "ingénieur" },           "tags": ["metier"] },
+          { "word": "مْحَاسِب",       "transliteration": "m7aseb",   "translation": { "fr": "comptable" },           "tags": ["metier"] },
+          { "word": "مُحَامِي",       "transliteration": "mo7ami",   "translation": { "fr": "avocat" },              "tags": ["metier"] },
+          { "word": "شُرْطِي",        "transliteration": "chorti",   "translation": { "fr": "policier" },            "tags": ["metier"] },
+          { "word": "جُنْدِي",        "transliteration": "jondi",    "translation": { "fr": "soldat" },              "tags": ["metier"] },
+          { "word": "نَادِل",         "transliteration": "nadel",    "translation": { "fr": "serveur" },             "tags": ["metier"] },
+          { "word": "طْبَّاخ",        "transliteration": "Tbakh",    "translation": { "fr": "cuisinier" },           "tags": ["metier"] },
+          { "word": "خَبَّاز",        "transliteration": "khabbaz",  "translation": { "fr": "boulanger" },           "tags": ["metier"] },
+          { "word": "حْلَّاق",        "transliteration": "7llaq",    "translation": { "fr": "coiffeur / barbier" },  "tags": ["metier"] },
+          { "word": "سَائِق",         "transliteration": "sa2iq",    "translation": { "fr": "chauffeur" },           "tags": ["metier"] },
+          { "word": "فْلَّاح",         "transliteration": "fella7",   "translation": { "fr": "agriculteur" },         "tags": ["metier"] },
+          { "word": "نَجَّار",         "transliteration": "njjar",    "translation": { "fr": "menuisier" },           "tags": ["metier"] },
+          { "word": "بَنَّاء",         "transliteration": "banna2",   "translation": { "fr": "maçon" },               "tags": ["metier"] },
+          { "word": "مِيكَانِيكِي",    "transliteration": "mikaniki", "translation": { "fr": "mécanicien" },          "tags": ["metier"] },
+          { "word": "تَاجِر",         "transliteration": "tajer",    "translation": { "fr": "commerçant" },          "tags": ["metier"] }
+        ]
+      }
+    ]
+  }
+}

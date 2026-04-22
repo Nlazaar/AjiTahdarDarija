@@ -1,0 +1,38 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-couleurs",
+      "title": "Vocabulaire — Couleurs",
+      "subtitle": "13 couleurs essentielles en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 10,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-couleurs-base",
+        "title": "Les couleurs",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "بْيَض",       "transliteration": "byed",      "translation": { "fr": "blanc" },    "tags": ["couleur"] },
+          { "word": "كْحَل",       "transliteration": "k7el",      "translation": { "fr": "noir" },     "tags": ["couleur"] },
+          { "word": "حْمَر",       "transliteration": "7mer",      "translation": { "fr": "rouge" },    "tags": ["couleur"] },
+          { "word": "خْضَر",       "transliteration": "khder",     "translation": { "fr": "vert" },     "tags": ["couleur"] },
+          { "word": "زْرَق",       "transliteration": "zrq",       "translation": { "fr": "bleu" },     "tags": ["couleur"] },
+          { "word": "صْفَر",       "transliteration": "Sfer",      "translation": { "fr": "jaune" },    "tags": ["couleur"] },
+          { "word": "وَرْدِي",     "transliteration": "wardi",     "translation": { "fr": "rose" },     "tags": ["couleur"] },
+          { "word": "رْمَادِي",    "transliteration": "rmadi",     "translation": { "fr": "gris" },     "tags": ["couleur"] },
+          { "word": "بْنِي",       "transliteration": "bni",       "translation": { "fr": "marron" },   "tags": ["couleur"] },
+          { "word": "بُرْتُقَالِي", "transliteration": "bortoqali", "translation": { "fr": "orange" },   "tags": ["couleur"] },
+          { "word": "بْنَفْسَجِي",  "transliteration": "bnafsaji",  "translation": { "fr": "violet" },   "tags": ["couleur"] },
+          { "word": "دْهَبِي",     "transliteration": "dhahbi",    "translation": { "fr": "doré" },     "tags": ["couleur"] },
+          { "word": "فُضِّي",      "transliteration": "fddi",      "translation": { "fr": "argenté" },  "tags": ["couleur"] }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-directions",
+      "title": "Vocabulaire — Directions",
+      "subtitle": "Se repérer et demander son chemin",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 60,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-directions-base",
+        "title": "Les directions",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "فِين",         "transliteration": "fin",       "translation": { "fr": "où" },                  "tags": ["direction"] },
+          { "word": "هْنَا",         "transliteration": "hna",       "translation": { "fr": "ici" },                 "tags": ["direction"] },
+          { "word": "تْمَا",         "transliteration": "tma",       "translation": { "fr": "là-bas" },              "tags": ["direction"] },
+          { "word": "قْدَّام",        "transliteration": "qddam",     "translation": { "fr": "devant" },              "tags": ["direction"] },
+          { "word": "لُور",          "transliteration": "lour",      "translation": { "fr": "derrière" },            "tags": ["direction"] },
+          { "word": "عْلَى اليْمِين",   "transliteration": "3la limin", "translation": { "fr": "à droite" },            "tags": ["direction"] },
+          { "word": "عْلَى اليْسَار",   "transliteration": "3la lisar", "translation": { "fr": "à gauche" },            "tags": ["direction"] },
+          { "word": "فُوق",          "transliteration": "foq",       "translation": { "fr": "au-dessus" },           "tags": ["direction"] },
+          { "word": "لْتْحَت",        "transliteration": "lt7t",      "translation": { "fr": "en dessous" },          "tags": ["direction"] },
+          { "word": "قْرِيب",        "transliteration": "qrib",      "translation": { "fr": "près" },                "tags": ["direction"] },
+          { "word": "بْعِيد",        "transliteration": "b3id",      "translation": { "fr": "loin" },                "tags": ["direction"] },
+          { "word": "دْغِيَّة",       "transliteration": "dghiyya",   "translation": { "fr": "vite / rapidement" },   "tags": ["direction"] },
+          { "word": "بْشْوِيَة",      "transliteration": "bchwiya",   "translation": { "fr": "lentement" },           "tags": ["direction"] },
+          { "word": "وْقَف",         "transliteration": "wqef",      "translation": { "fr": "s'arrêter" },           "tags": ["direction", "verbe"] },
+          { "word": "زِيد",          "transliteration": "zid",       "translation": { "fr": "avancer / continuer" }, "tags": ["direction", "verbe"] },
+          { "word": "دَوَّر",        "transliteration": "dwwr",      "translation": { "fr": "tourner" },             "tags": ["direction", "verbe"] },
+          { "word": "رْجَع",         "transliteration": "rja3",      "translation": { "fr": "revenir / retourner" }, "tags": ["direction", "verbe"] },
+          { "word": "دْخَل",         "transliteration": "dkhol",     "translation": { "fr": "entrer" },              "tags": ["direction", "verbe"] },
+          { "word": "خْرَج",         "transliteration": "khrej",     "translation": { "fr": "sortir" },              "tags": ["direction", "verbe"] },
+          { "word": "شَدّ الطْرِيق",    "transliteration": "ched Triq", "translation": { "fr": "prendre la route" },    "tags": ["direction"] }
+        ]
+      }
+    ]
+  }
+}

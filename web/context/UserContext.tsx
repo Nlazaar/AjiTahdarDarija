@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { type AuthUser, getStoredUser, clearAuth } from '@/lib/auth';
 
-export type LangTrack = 'DARIJA' | 'MSA' | 'RELIGION' | 'BOTH';
+export type LangTrack = 'DARIJA' | 'MSA' | 'RELIGION';
 
 type UserContextType = {
   /* Mascot & display name (onboarding) */
@@ -32,10 +32,12 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedMascot = localStorage.getItem('darija_mascot');
     const savedName   = localStorage.getItem('darija_username');
-    const savedTrack  = localStorage.getItem('darija_lang_track') as LangTrack | null;
+    const savedTrack  = localStorage.getItem('darija_lang_track');
     if (savedMascot) setMascotState(savedMascot);
     if (savedName)   setUserNameState(savedName);
-    if (savedTrack)  setLangTrackState(savedTrack);
+    if (savedTrack === 'DARIJA' || savedTrack === 'MSA' || savedTrack === 'RELIGION') {
+      setLangTrackState(savedTrack);
+    }
     const storedUser = getStoredUser();
     if (storedUser)  setUserState(storedUser);
   }, []);

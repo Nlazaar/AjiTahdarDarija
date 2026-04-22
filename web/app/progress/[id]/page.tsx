@@ -6,6 +6,9 @@ import Loader from '@/components/Loader';
 import { useMascot, MASCOT_EMOJI } from '@/contexts/MascotContext';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 import { getLessonHref } from '@/lib/lessonLink';
+import { ZelligeNode as ZNode, type NodeShape, NODE_SHAPES } from '@/components/parcours/ZelligeNode';
+
+const SHAPE_STORAGE_KEY = 'parcoursNodeShape';
 
 /* ─────────────────────────────────────────────
    SECTION THEMES
@@ -201,8 +204,8 @@ function LessonPopup({
 /* ─────────────────────────────────────────────
    ZELLIGE STAR NODE
 ───────────────────────────────────────────── */
-function ZelligeNode({
-  lesson, colorA, status, phraseIndex, mascotEmoji, animDelay, onTap, href,
+function LessonNodeCard({
+  lesson, colorA, status, phraseIndex, mascotEmoji, animDelay, onTap, href, shape,
 }: {
   lesson: any; colorA: string;
   status: 'completed' | 'current' | 'locked';
@@ -210,12 +213,13 @@ function ZelligeNode({
   animDelay: number;
   onTap: (lesson: any, href: string) => void;
   href: string;
+  shape: NodeShape;
 }) {
   const [shake, setShake] = useState(false);
   const isCurrent   = status === 'current';
-  const isCompleted = status === 'completed';
   const isLocked    = status === 'locked';
-  const size        = isCurrent ? 80 : 68;
+  const zStatus = status === 'completed' ? 'done' : status === 'current' ? 'active' : 'locked';
+  const sizeKey: 'sm' | 'md' | 'lg' = 'md';
 
   const handleClick = () => {
     if (isLocked) { setShake(true); setTimeout(() => setShake(false), 400); return; }
@@ -242,48 +246,24 @@ function ZelligeNode({
         </div>
       )}
 
-      {/* Zellige star button */}
       <button
         onClick={handleClick}
         className={shake ? 'animate-shake-x' : ''}
         style={{
-          width: size, height: size,
           border: 'none', background: 'transparent', padding: 0,
           cursor: isLocked ? 'default' : 'pointer',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           flexShrink: 0,
         }}
       >
-        <svg width={size} height={size} viewBox="0 0 110 110" style={
-          isCompleted ? { filter: 'drop-shadow(0 5px 0 #2d6e02)' } :
-          isCurrent   ? { animation: 'zelligePulse 2s ease-in-out infinite' } :
-          { filter: 'drop-shadow(0 5px 0 #111827)', opacity: 0.55 }
-        }>
-          {isCompleted ? (
-            <>
-              <polygon points="55,4 68,22 93,14 87,40 107,50 87,62 93,88 68,80 55,96 42,80 17,88 23,62 3,50 23,40 17,14 42,22" fill="#58cc02"/>
-              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#46a302"/>
-              <circle cx="55" cy="51" r="14" fill="#3a8a02"/>
-              <text x="55" y="51" textAnchor="middle" dominantBaseline="central" fontSize="17" fill="#ffffff" fontWeight="900" fontFamily="sans-serif">✓</text>
-            </>
-          ) : isCurrent ? (
-            <>
-              <polygon points="55,1 68,22 93,14 87,40 112,51 87,62 93,88 68,80 55,101 42,80 17,88 23,62 -2,51 23,40 17,14 42,22" fill="#ffffff"/>
-              <polygon points="55,6 67,25 90,18 84,42 107,52 84,62 90,86 67,79 55,98 43,79 20,86 26,62 3,52 26,42 20,18 43,25" fill="#1b3a6b"/>
-              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#e76f51"/>
-              <polygon points="55,29 63,40 75,36 71,48 82,52 71,56 75,68 63,64 55,75 47,64 35,68 39,56 28,52 39,48 35,36 47,40" fill="#2a9d8f"/>
-              <circle cx="55" cy="52" r="13" fill="#c9941a"/>
-              <text x="55" y="52" textAnchor="middle" dominantBaseline="central" fontSize="14" fontFamily="sans-serif">📖</text>
-            </>
-          ) : (
-            <>
-              <polygon points="55,4 68,22 93,14 87,40 107,50 87,62 93,88 68,80 55,96 42,80 17,88 23,62 3,50 23,40 17,14 42,22" fill="#374151"/>
-              <polygon points="55,18 65,33 83,28 78,44 93,52 78,60 83,74 65,69 55,84 45,69 27,74 32,60 17,52 32,44 27,28 45,33" fill="#4b5563"/>
-              <circle cx="55" cy="51" r="14" fill="#1f2937"/>
-              <text x="55" y="51" textAnchor="middle" dominantBaseline="central" fontSize="15" fontFamily="sans-serif">🔒</text>
-            </>
-          )}
-        </svg>
+        <ZNode
+          status={zStatus}
+          icon="📖"
+          label=""
+          size={sizeKey}
+          shape={shape}
+          interactive={false}
+        />
       </button>
 
       {/* Label below current node */}
@@ -416,6 +396,20 @@ export default function UnitPathPage() {
   const [loading,       setLoading]       = useState(true);
   const [popup,         setPopup]         = useState<{ lesson: any; href: string; theme: SectionTheme } | null>(null);
   const [showUnitModal, setShowUnitModal] = useState(false);
+  const [shape,         setShape]         = useState<NodeShape>('star');
+
+  useEffect(() => {
+    const read = () => {
+      try {
+        const saved = localStorage.getItem(SHAPE_STORAGE_KEY);
+        if (saved && NODE_SHAPES.some(s => s.key === saved)) setShape(saved as NodeShape);
+      } catch {}
+    };
+    read();
+    const onStorage = (e: StorageEvent) => { if (e.key === SHAPE_STORAGE_KEY) read(); };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   useEffect(() => {
     if (searchParams?.get('unitComplete') === 'true') {
@@ -582,7 +576,7 @@ export default function UnitPathPage() {
           return (
             <React.Fragment key={lesson.id ?? i}>
               <div id={`lesson-node-${lesson.id}`} style={{ transform: `translateX(${xOffset}px)` }}>
-                <ZelligeNode
+                <LessonNodeCard
                   lesson={lesson}
                   colorA={colorA}
                   status={status}
@@ -591,6 +585,7 @@ export default function UnitPathPage() {
                   animDelay={i * 0.07}
                   href={getLessonHref(lesson)}
                   onTap={(l, href) => setPopup({ lesson: l, href, theme })}
+                  shape={shape}
                 />
               </div>
               {!isLast && (

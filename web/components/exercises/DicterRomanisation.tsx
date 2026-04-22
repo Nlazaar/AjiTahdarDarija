@@ -1,20 +1,82 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react"
-import { FeedbackBanner } from "@/components/ui"
 import { useAudioCtx } from "@/contexts/AudioContext"
 import type { DarijaLetter } from "./types"
 
+/** Palette DarijaMaroc — voir project_design_system memory. */
+const MC = {
+  green:  "#006233",
+  red:    "#c1272d",
+  gold:   "#d4a84b",
+  blue:   "#1e4d8c",
+  bg:     "#0f1720",
+  card:   "#1a242b",
+  border: "#2a3d47",
+  sub:    "#8a9baa",
+}
+
 interface DicterRomanisationProps {
   letter:          DarijaLetter
-  choices:         string[]        // romanisations proposées (correct + leurres)
+  choices:         string[]
   onSuccess:       () => void
   onFailed:        () => void
   onSpeak:         (l: DarijaLetter) => void
   onReadyChange?:  (ready: boolean) => void
   shouldValidate?: boolean
+  prompt?:         string
 }
 
-export default function DicterRomanisation({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate }: DicterRomanisationProps) {
+/** Bouton audio carré Majorelle, avec motif zellige en filigrane et pulse au play. */
+function MajorelleAudio({
+  onPlay, playing, size = 80, slow = false,
+}: { onPlay: () => void; playing: boolean; size?: number; slow?: boolean }) {
+  const icon = size >= 70 ? 36 : 24
+  return (
+    <button
+      onClick={onPlay}
+      aria-label={slow ? "Écouter lentement" : "Écouter"}
+      className="relative flex items-center justify-center cursor-pointer transition-transform active:scale-95 overflow-hidden"
+      style={{
+        width: size, height: size,
+        borderRadius: size >= 70 ? 24 : 18,
+        background: MC.blue,
+        border: "none",
+        boxShadow: playing ? `0 3px 0 #153a6b` : `0 ${size >= 70 ? 6 : 4}px 0 #153a6b`,
+        transform: playing ? "translateY(2px)" : undefined,
+        transition: "all 0.15s",
+      }}
+    >
+      <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" style={{ opacity: 0.08 }} aria-hidden>
+        <g fill="#ffffff">
+          <rect x="10" y="10" width="80" height="80" />
+          <rect x="10" y="10" width="80" height="80" transform="rotate(45 50 50)" />
+        </g>
+      </svg>
+
+      {slow ? (
+        /* Icône "tortue" pour la lecture lente */
+        <svg viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" style={{ width: icon, height: icon }}>
+          <ellipse cx="12" cy="13" rx="6" ry="4" />
+          <circle cx="12" cy="9" r="3" />
+          <path d="M6 13 Q4 15 4 17" fill="none" />
+          <path d="M18 13 Q20 15 20 17" fill="none" />
+          <path d="M8 17 Q8 19 9 19" fill="none" />
+          <path d="M16 17 Q16 19 15 19" fill="none" />
+          <path d="M20 8a3 3 0 0 1 0 4" fill="none" />
+          <path d="M22 6a6 6 0 0 1 0 8" fill="none" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth={2} strokeLinecap="round" style={{ width: icon, height: icon }}>
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="#ffffff" />
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+        </svg>
+      )}
+    </button>
+  )
+}
+
+export default function DicterRomanisation({ letter, choices, onSuccess, onFailed, onSpeak, onReadyChange, shouldValidate, prompt }: DicterRomanisationProps) {
   const { speak, stop, isPlaying } = useAudioCtx()
   const [selected,    setSelected]    = useState<string | null>(null)
   const [answered,    setAnswered]    = useState(false)
@@ -23,9 +85,9 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
   const [useKeyboard, setUseKeyboard] = useState(false)
   const [inputValue,  setInputValue]  = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
-  const playing = isPlaying && !slowPlay
+  const playingNormal = isPlaying && !slowPlay
+  const playingSlow   = isPlaying && slowPlay
 
-  // Reset + auto-play on new letter
   useEffect(() => {
     setSelected(null); setAnswered(false); setCorrect(null)
     setInputValue(""); setUseKeyboard(false)
@@ -34,17 +96,14 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
     return () => clearTimeout(t)
   }, [letter.latin]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Focus input when keyboard mode activates
   useEffect(() => {
     if (useKeyboard && inputRef.current) inputRef.current.focus()
   }, [useKeyboard])
 
-  // Notify parent when answer readiness changes
   useEffect(() => {
     onReadyChange?.(!!currentAnswer)
   }, [selected, inputValue]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Evaluate when shouldValidate fires
   useEffect(() => {
     if (!shouldValidate || !currentAnswer || answered) return
     verify()
@@ -54,10 +113,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
     stop()
     setSlowPlay(slow)
     speak(letter.letter, "ar-MA")
-    if (slow) {
-      // reset slow flag après une durée plausible (Web Speech ne permet pas un rate très bas uniforme)
-      setTimeout(() => setSlowPlay(false), 1800)
-    }
+    if (slow) setTimeout(() => setSlowPlay(false), 1800)
   }
 
   const currentAnswer = useKeyboard ? inputValue.trim() : (selected ?? "")
@@ -67,7 +123,7 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
     const ok = currentAnswer.toLowerCase() === letter.latin.toLowerCase()
     setAnswered(true)
     setCorrect(ok)
-    if (ok) { onSpeak(letter); onSuccess() }
+    if (ok) onSuccess()
     else    onFailed()
   }
 
@@ -75,84 +131,122 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
     if (e.key === "Enter") verify()
   }
 
-  const switchToKeyboard = () => {
-    setUseKeyboard(true)
-    setSelected(null)
-  }
+  const switchToKeyboard = () => { setUseKeyboard(true);  setSelected(null) }
+  const switchToTiles    = () => { setUseKeyboard(false); setInputValue("") }
 
-  const switchToTiles = () => {
-    setUseKeyboard(false)
-    setInputValue("")
-  }
-
-  // Tuiles restantes dans la banque
   const bankTiles = choices.filter(c => c !== selected)
 
+  // Style de la tuile sélectionnée (dans la zone de réponse)
+  const selectedTileStyle: React.CSSProperties = (() => {
+    const base: React.CSSProperties = {
+      padding: '10px 16px',
+      borderRadius: 14,
+      borderWidth: 2,
+      borderStyle: 'solid',
+      fontWeight: 900,
+      fontSize: 16,
+      transition: 'all 0.15s',
+      cursor: answered ? 'default' : 'pointer',
+    }
+    if (!answered) {
+      return { ...base, background: '#1f2a1e', borderColor: MC.gold, color: '#ffffff', boxShadow: `0 3px 0 ${MC.gold}55` }
+    }
+    if (correct) return { ...base, background: '#0f2419', borderColor: MC.green, color: '#ffffff', boxShadow: `0 0 0 4px ${MC.green}33` }
+    return           { ...base, background: '#2a1416', borderColor: MC.red,   color: '#ffffff', boxShadow: `0 4px 0 #7a1a1c` }
+  })()
+
+  const inputStyle: React.CSSProperties = (() => {
+    const base: React.CSSProperties = {
+      width: '100%',
+      padding: '14px 18px',
+      borderRadius: 18,
+      borderWidth: 2,
+      borderStyle: 'solid',
+      fontWeight: 700,
+      fontSize: 16,
+      outline: 'none',
+      transition: 'all 0.15s',
+      background: MC.card,
+      color: '#ffffff',
+    }
+    if (!answered) return { ...base, borderColor: `${MC.gold}55`, boxShadow: `0 3px 0 #1a2830` }
+    if (correct)   return { ...base, borderColor: MC.green, background: '#0f2419', boxShadow: `0 0 0 4px ${MC.green}33` }
+    return               { ...base, borderColor: MC.red,   background: '#2a1416', boxShadow: `0 4px 0 #7a1a1c` }
+  })()
+
+  const bankTileStyle: React.CSSProperties = {
+    padding: '10px 16px',
+    borderRadius: 14,
+    borderWidth: 2,
+    borderStyle: 'solid',
+    borderColor: `${MC.gold}55`,
+    background: MC.card,
+    color: '#ffffff',
+    fontWeight: 800,
+    fontSize: 16,
+    cursor: 'pointer',
+    transition: 'all 0.15s',
+    boxShadow: `0 3px 0 #1a2830`,
+  }
+
+  const toggleBtnStyle: React.CSSProperties = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 8,
+    padding: '8px 14px',
+    borderRadius: 14,
+    borderWidth: 2,
+    borderStyle: 'solid',
+    borderColor: `${MC.gold}55`,
+    background: 'transparent',
+    color: MC.sub,
+    fontWeight: 800,
+    fontSize: 12,
+    textTransform: 'uppercase',
+    letterSpacing: '0.08em',
+    cursor: 'pointer',
+    transition: 'all 0.15s',
+  }
+
   return (
-    <div className="flex flex-col gap-5">
-      <p className="text-sm font-semibold text-[#8a9baa] text-center">
-        Appuie sur ce que tu entends
+    <div className="flex flex-col gap-5 w-full max-w-xl mx-auto">
+      <p
+        className="text-[13px] font-extrabold uppercase text-center"
+        style={{ color: MC.gold, letterSpacing: '0.12em' }}
+      >
+        {prompt ?? 'Appuie sur ce que tu entends'}
       </p>
 
-      {/* Boutons audio : normal + lent */}
+      {/* Boutons audio Majorelle : normal + lent */}
       <div className="flex items-center justify-center gap-3">
-        <button
-          onClick={() => handlePlay(false)}
-          className={`w-20 h-20 rounded-2xl flex items-center justify-center text-white transition-all ${
-            playing ? "bg-[#0a9fe0] scale-95" : "bg-[#1cb0f6] hover:bg-[#0a9fe0]"
-          }`}
-          style={!playing ? { boxShadow: '0 5px 0 #0a8fc4' } : {}}
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          </svg>
-        </button>
-
-        <button
-          onClick={() => handlePlay(true)}
-          className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white transition-all ${
-            slowPlay ? "bg-[#0a9fe0] scale-95" : "bg-[#1cb0f6] hover:bg-[#0a9fe0]"
-          }`}
-          style={!slowPlay ? { boxShadow: '0 4px 0 #0a8fc4' } : {}}
-          title="Écouter lentement"
-        >
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
-            <ellipse cx="12" cy="13" rx="6" ry="4" fill="currentColor" opacity="0.9"/>
-            <circle cx="12" cy="9" r="3" fill="currentColor"/>
-            <path d="M6 13 Q4 15 4 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-            <path d="M18 13 Q20 15 20 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-            <path d="M8 17 Q8 19 9 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-            <path d="M16 17 Q16 19 15 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-            <path d="M20 8a3 3 0 0 1 0 4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-            <path d="M22 6a6 6 0 0 1 0 8" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
-        </button>
+        <MajorelleAudio onPlay={() => handlePlay(false)} playing={playingNormal} size={80} />
+        <MajorelleAudio onPlay={() => handlePlay(true)}  playing={playingSlow}   size={56} slow />
       </div>
 
       {/* ── MODE TUILES ── */}
       {!useKeyboard && (
         <>
-          {/* Zone réponse */}
-          <div className="min-h-[56px] border-b-2 border-[#2a3d47] flex items-end pb-2 px-2 gap-2 flex-wrap">
+          {/* Zone réponse — ligne pointillée or, puise dans la banque */}
+          <div
+            className="min-h-[64px] flex items-center px-3 gap-2 flex-wrap"
+            style={{
+              borderBottom: `2px dashed ${MC.gold}55`,
+              paddingBottom: 10,
+            }}
+          >
             {selected ? (
               <button
                 disabled={answered}
                 onClick={() => !answered && setSelected(null)}
-                className={`px-4 py-2 rounded-xl border-2 font-bold text-base transition-all ${
-                  answered
-                    ? correct
-                      ? "bg-[#1e3a2e] border-[#58cc02] text-[#34d399]"
-                      : "bg-[#3a1e1e] border-red-500 text-red-400"
-                    : "bg-[#1a2e3e] border-[#1cb0f6] text-[#1cb0f6] hover:bg-[#1e3347]"
-                }`}
-                style={{ boxShadow: answered ? 'none' : '0 3px 0 #0a8fc4' }}
+                style={selectedTileStyle}
+                className={answered && !correct ? "animate-shake-x" : ""}
               >
                 {selected}
               </button>
             ) : (
-              <span className="text-[#4a5d6a] text-sm italic">Choisis une réponse…</span>
+              <span className="text-sm italic" style={{ color: MC.sub }}>
+                Choisis une réponse…
+              </span>
             )}
           </div>
 
@@ -163,9 +257,9 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
                 key={tile}
                 disabled={answered}
                 onClick={() => { if (!answered) setSelected(selected === tile ? null : tile) }}
-                className="px-4 py-2 bg-[#263744] border-2 border-[#2a3d47] rounded-xl font-bold text-base text-white
-                  hover:border-[#1cb0f6] hover:bg-[#1a2e3e] transition-all disabled:opacity-50"
-                style={{ boxShadow: '0 3px 0 #1a2830' }}
+                style={bankTileStyle}
+                onMouseEnter={(e) => { if (!answered) e.currentTarget.style.borderColor = MC.gold }}
+                onMouseLeave={(e) => { if (!answered) e.currentTarget.style.borderColor = `${MC.gold}55` }}
               >
                 {tile}
               </button>
@@ -185,46 +279,31 @@ export default function DicterRomanisation({ letter, choices, onSuccess, onFaile
             onKeyDown={handleKeyDown}
             disabled={answered}
             placeholder="Écris ce que tu entends…"
-            className={`w-full px-4 py-3 rounded-2xl border-2 font-bold text-base outline-none transition-all ${
-              answered
-                ? correct
-                  ? "border-[#58cc02] bg-[#1e3a2e] text-[#34d399]"
-                  : "border-red-500 bg-[#3a1e1e] text-red-400"
-                : "border-[#2a3d47] focus:border-[#1cb0f6] bg-[#263744] text-white placeholder-[#4a5d6a]"
-            }`}
-            style={{ boxShadow: answered ? 'none' : '0 3px 0 #1a2830' }}
+            style={inputStyle}
           />
         </div>
       )}
 
-      {/* ── BARRE BASSE : UTILISER LE CLAVIER / LES TUILES ── */}
+      {/* ── BARRE BASSE : TUILES ⇄ CLAVIER ── */}
       {!answered && (
-        <div className="flex items-center justify-center pt-2 border-t border-[#2a3d47]">
+        <div className="flex items-center justify-center pt-2" style={{ borderTop: `1px solid ${MC.border}` }}>
           {!useKeyboard ? (
-            <button
-              onClick={switchToKeyboard}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-[#2a3d47] text-[#6b7f8a]
-                font-bold text-sm hover:border-[#3a4d57] hover:text-white transition-all"
-            >
+            <button onClick={switchToKeyboard} style={toggleBtnStyle}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <rect x="2" y="6" width="20" height="12" rx="2"/>
                 <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/>
               </svg>
-              UTILISER LE CLAVIER
+              Utiliser le clavier
             </button>
           ) : (
-            <button
-              onClick={switchToTiles}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-[#2a3d47] text-[#6b7f8a]
-                font-bold text-sm hover:border-[#3a4d57] hover:text-white transition-all"
-            >
+            <button onClick={switchToTiles} style={toggleBtnStyle}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
                 <rect x="3" y="3" width="7" height="7" rx="1"/>
                 <rect x="14" y="3" width="7" height="7" rx="1"/>
                 <rect x="3" y="14" width="7" height="7" rx="1"/>
                 <rect x="14" y="14" width="7" height="7" rx="1"/>
               </svg>
-              UTILISER LES TUILES
+              Utiliser les tuiles
             </button>
           )}
         </div>

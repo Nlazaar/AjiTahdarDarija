@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-loisirs",
+      "title": "Vocabulaire — Loisirs",
+      "subtitle": "Sports, arts et passe-temps",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 100,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-loisirs-base",
+        "title": "Les loisirs",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "رِيَاضَة",       "transliteration": "riyada",     "translation": { "fr": "sport" },            "tags": ["loisir"] },
+          { "word": "كُرَة القَدَم",  "transliteration": "kora lqadam","translation": { "fr": "football" },         "tags": ["loisir"] },
+          { "word": "جْرِي",          "transliteration": "jri",        "translation": { "fr": "course à pied" },    "tags": ["loisir"] },
+          { "word": "سْبَاحَة",       "transliteration": "sba7a",      "translation": { "fr": "natation" },         "tags": ["loisir"] },
+          { "word": "مُوسِيقَى",      "transliteration": "mousiqa",    "translation": { "fr": "musique" },          "tags": ["loisir"] },
+          { "word": "غْنَاء",         "transliteration": "ghina2",     "translation": { "fr": "chant" },            "tags": ["loisir"] },
+          { "word": "رَقْص",          "transliteration": "raqs",       "translation": { "fr": "danse" },            "tags": ["loisir"] },
+          { "word": "مْطَالَعَة",      "transliteration": "mTala3a",    "translation": { "fr": "lecture" },          "tags": ["loisir"] },
+          { "word": "كْتَابَة",        "transliteration": "ktaba",      "translation": { "fr": "écriture" },         "tags": ["loisir"] },
+          { "word": "رَسْم",          "transliteration": "rasm",       "translation": { "fr": "dessin" },           "tags": ["loisir"] },
+          { "word": "تْصْوِير",        "transliteration": "tswir",      "translation": { "fr": "photographie" },     "tags": ["loisir"] },
+          { "word": "طْبْخ",          "transliteration": "Tbkh",       "translation": { "fr": "cuisine" },          "tags": ["loisir"] },
+          { "word": "سْفَر",          "transliteration": "safar",      "translation": { "fr": "voyage" },           "tags": ["loisir"] },
+          { "word": "تْخْيِيم",        "transliteration": "tkhim",      "translation": { "fr": "camping" },          "tags": ["loisir"] },
+          { "word": "صَيْد",          "transliteration": "Sayd",       "translation": { "fr": "pêche / chasse" },   "tags": ["loisir"] },
+          { "word": "أَلْعَاب فِيدْيُو","transliteration": "al3ab fidyo","translation": { "fr": "jeux vidéo" },       "tags": ["loisir"] },
+          { "word": "شْطْرَنْج",       "transliteration": "chTrenj",    "translation": { "fr": "échecs" },           "tags": ["loisir"] },
+          { "word": "يُوغَا",         "transliteration": "yoga",       "translation": { "fr": "yoga" },             "tags": ["loisir"] },
+          { "word": "حْدِيقَة",        "transliteration": "7diiqa",     "translation": { "fr": "jardinage" },        "tags": ["loisir"] },
+          { "word": "تْطَوُّع",        "transliteration": "tTaTawwa3",  "translation": { "fr": "bénévolat" },        "tags": ["loisir"] }
+        ]
+      }
+    ]
+  }
+}

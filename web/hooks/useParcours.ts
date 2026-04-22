@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { getModules } from '@/lib/api';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 import { useUser } from '@/context/UserContext';
-import type { CityDescription } from '@/types/parcours';
+import type { CityDescription, HadithDescription } from '@/types/parcours';
 
 export type NodeStatus = 'completed' | 'current' | 'locked';
 
@@ -29,6 +29,7 @@ export interface Unite {
   unlocked: boolean;
   completed: boolean;
   description?: CityDescription;
+  hadith?: HadithDescription;
 }
 
 const PALETTE = [
@@ -47,12 +48,17 @@ const PALETTE = [
 interface RawCityInfo {
   emoji?: string;
   photoUrl?: string;
+  postcardUrl?: string;
   history?: string;
   typicalWord?: { ar?: string; latin?: string; fr?: string };
   food?: string;
   culturalFact?: string;
   toSee?: string;
   music?: string;
+  // Variantes Religion (réutilisation du bucket cityInfo)
+  hadith?: { ar?: string; fr?: string; source?: string };
+  description?: string;
+  subtitle?: string;
 }
 
 interface RawLesson {
@@ -60,6 +66,8 @@ interface RawLesson {
   title: string;
   order?: number;
 }
+
+type RawTrack = 'DARIJA' | 'MSA' | 'RELIGION';
 
 interface RawModule {
   id: string;
@@ -71,7 +79,7 @@ interface RawModule {
   colorA?: string | null;
   colorB?: string | null;
   shadowColor?: string | null;
-  track?: 'DARIJA' | 'MSA' | 'RELIGION';
+  track?: RawTrack;
   canonicalOrder?: number;
   cityName?: string | null;
   cityNameAr?: string | null;
@@ -87,12 +95,13 @@ function buildDescription(m: RawModule): CityDescription | undefined {
   const photoEmoji = m.emoji || ci?.emoji || '🏙️';
   const hasAny =
     m.photoCaption || ci?.history || ci?.food || ci?.culturalFact || ci?.toSee || ci?.music ||
-    tw.ar || tw.latin || tw.fr || ci?.photoUrl;
+    tw.ar || tw.latin || tw.fr || ci?.photoUrl || ci?.postcardUrl;
   if (!hasAny) return undefined;
   return {
     photoEmoji,
     photoCaption: m.photoCaption ?? '',
     photoUrl: ci?.photoUrl || undefined,
+    postcardUrl: ci?.postcardUrl || undefined,
     histoire: ci?.history || '',
     motTypique: { ar: tw.ar || '', latin: tw.latin || '', fr: tw.fr || '' },
     specialite: ci?.food || '',
@@ -100,6 +109,20 @@ function buildDescription(m: RawModule): CityDescription | undefined {
     aVoir: ci?.toSee || '',
     musique: ci?.music || '',
   } as CityDescription;
+}
+
+function buildHadith(m: RawModule): HadithDescription | undefined {
+  const ci = m.cityInfo ?? null;
+  const h = ci?.hadith ?? null;
+  if (!h?.ar && !ci?.description) return undefined;
+  return {
+    emoji: m.emoji || ci?.emoji || '☪️',
+    subtitle: ci?.subtitle || m.photoCaption || undefined,
+    description: ci?.description || undefined,
+    hadith: h?.ar
+      ? { ar: h.ar, fr: h.fr || '', source: h.source || undefined }
+      : undefined,
+  };
 }
 
 function buildLecons(lessons: RawLesson[], unlocked: boolean, completedSet: Set<string>): Lecon[] {
@@ -138,7 +161,8 @@ function moduleToUnite(m: RawModule, idx: number, unlocked: boolean, completedSe
     trophyUnlocked: allDone,
     unlocked,
     completed: allDone,
-    description: buildDescription(m),
+    description: m.track === 'RELIGION' ? undefined : buildDescription(m),
+    hadith: m.track === 'RELIGION' ? buildHadith(m) : undefined,
   };
 }
 
@@ -153,8 +177,7 @@ export function useParcours() {
     setLoading(true);
     (async () => {
       try {
-        const trackParam = langTrack === 'BOTH' ? undefined : langTrack;
-        const mods = (await getModules(trackParam)) as RawModule[];
+        const mods = (await getModules(langTrack)) as RawModule[];
         if (!cancelled) setModules(Array.isArray(mods) ? mods : []);
       } catch {
         if (!cancelled) setModules([]);

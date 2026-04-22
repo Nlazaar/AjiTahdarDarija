@@ -51,7 +51,9 @@ function RelierMotImage({ exercise, onAnswer }: { exercise: MsaExercise; onAnswe
   const [matched, setMatched] = useState<Record<string, string>>({}); // arId -> frId
   const [wrong, setWrong] = useState<{ ar: string; fr: string } | null>(null);
 
-  const shuffledFr = React.useMemo(() => [...elements].sort(() => Math.random() - 0.5), [elements.length]);
+  // Signature stable : ne re-shuffle que si les éléments changent vraiment
+  const elementsKey = elements.map(e => e.id ?? `${e.ar ?? ''}|${e.fr ?? ''}`).join(',');
+  const shuffledFr = React.useMemo(() => [...elements].sort(() => Math.random() - 0.5), [elementsKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleArClick = (el: MsaElement) => {
     if (el.ar) speak(el.ar);

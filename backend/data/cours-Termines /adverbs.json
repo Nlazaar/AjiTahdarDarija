@@ -1,0 +1,64 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-adverbes",
+      "title": "Vocabulaire — Adverbes & Connecteurs",
+      "subtitle": "Articuler et nuancer ses phrases",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 280,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-adverbes-connecteurs",
+        "title": "Connecteurs & adverbes de base",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "دَابَا",          "transliteration": "daba",       "translation": { "fr": "maintenant" },          "tags": ["adverbe", "temps"] },
+          { "word": "غَدَّا",           "transliteration": "ghdda",      "translation": { "fr": "demain" },              "tags": ["adverbe", "temps"] },
+          { "word": "دَّابْز",          "transliteration": "ddabz",      "translation": { "fr": "tout de suite" },       "tags": ["adverbe", "temps"] },
+          { "word": "حِيت",            "transliteration": "7it",        "translation": { "fr": "parce que" },           "tags": ["connecteur"] },
+          { "word": "حِيتَاش",          "transliteration": "7itach",     "translation": { "fr": "parce que (plus long)" },"tags": ["connecteur"] },
+          { "word": "حِيث",            "transliteration": "7it",        "translation": { "fr": "car" },                 "tags": ["connecteur"] },
+          { "word": "وَلَاكِن",         "transliteration": "walakin",    "translation": { "fr": "mais" },                "tags": ["connecteur"] },
+          { "word": "وَ مَن بْعْد",     "transliteration": "w men b3d",  "translation": { "fr": "et ensuite" },          "tags": ["connecteur"] },
+          { "word": "وَخَّا",           "transliteration": "wakha",      "translation": { "fr": "même si / bien que" }, "tags": ["connecteur"] },
+          { "word": "حِيثْمَا",          "transliteration": "7itma",      "translation": { "fr": "où que" },              "tags": ["connecteur"] },
+          { "word": "بَاش",            "transliteration": "bach",       "translation": { "fr": "pour / afin de" },      "tags": ["connecteur"] },
+          { "word": "قْبَل مَا",        "transliteration": "qbl ma",     "translation": { "fr": "avant de" },            "tags": ["connecteur"] },
+          { "word": "مْنِين",           "transliteration": "mnin",       "translation": { "fr": "quand / lorsque" },     "tags": ["connecteur"] },
+          { "word": "إِلَا",            "transliteration": "ila",        "translation": { "fr": "si (condition)" },      "tags": ["connecteur"] },
+          { "word": "حَاجَة أُخْرَى",   "transliteration": "7aja okhra", "translation": { "fr": "autre chose" },         "tags": ["adverbe"] },
+          { "word": "بَالصَّح",         "transliteration": "bssa7",      "translation": { "fr": "vraiment" },            "tags": ["adverbe"] }
+        ]
+      },
+      {
+        "slug": "vocab-adverbes-frequence-intensite",
+        "title": "Adverbes de fréquence & intensité",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "دِيمَا",            "transliteration": "dima",           "translation": { "fr": "toujours" },                   "tags": ["adverbe", "frequence"] },
+          { "word": "غَالِبًا",           "transliteration": "ghaleban",       "translation": { "fr": "souvent" },                    "tags": ["adverbe", "frequence"] },
+          { "word": "مَرَّة مَرَّة",      "transliteration": "mra mra",        "translation": { "fr": "parfois / de temps en temps" },"tags": ["adverbe", "frequence"] },
+          { "word": "قَلِيلًا",           "transliteration": "qlilan",         "translation": { "fr": "rarement" },                   "tags": ["adverbe", "frequence"] },
+          { "word": "عَمَّرْنِي",         "transliteration": "3mrrni",         "translation": { "fr": "jamais" },                     "tags": ["adverbe", "frequence"] },
+          { "word": "بْزَاف",            "transliteration": "bzzaf",          "translation": { "fr": "beaucoup" },                   "tags": ["adverbe", "intensite"] },
+          { "word": "شْوِيَّة",           "transliteration": "chwya",          "translation": { "fr": "un peu" },                     "tags": ["adverbe", "intensite"] },
+          { "word": "بْزَرْبَة",          "transliteration": "bzzerba",        "translation": { "fr": "vite / rapidement" },          "tags": ["adverbe", "intensite"] },
+          { "word": "بْشْوِيَّة",          "transliteration": "bchwiya",        "translation": { "fr": "doucement / lentement" },      "tags": ["adverbe", "intensite"] },
+          { "word": "مَزْيَان بْزَاف",    "transliteration": "mzian bzzaf",    "translation": { "fr": "très bien" },                  "tags": ["adverbe", "intensite"] },
+          { "word": "شْوِيَّة بْزَاف",    "transliteration": "chwya bzzaf",    "translation": { "fr": "un tout petit peu" },          "tags": ["adverbe", "intensite"] },
+          { "word": "قَاع",              "transliteration": "ga3",            "translation": { "fr": "du tout (négation)" },         "tags": ["adverbe", "intensite"] },
+          { "word": "بَالزَّرْبَة",        "transliteration": "bzzrba",         "translation": { "fr": "en vitesse" },                 "tags": ["adverbe", "intensite"] },
+          { "word": "بْلَا قْيَاس",       "transliteration": "bla qyas",       "translation": { "fr": "énormément" },                 "tags": ["adverbe", "intensite"] },
+          { "word": "بْلَا حْدُود",       "transliteration": "bla 7doud",      "translation": { "fr": "sans limites" },               "tags": ["adverbe", "intensite"] }
+        ]
+      }
+    ]
+  }
+}

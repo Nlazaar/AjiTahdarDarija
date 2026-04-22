@@ -12,6 +12,11 @@ const baseConfig = {
         source: '/audio/:path*',
         destination: `${API_URL}/audio/:path*`,
       },
+      // Proxy /uploads/* vers le backend (images villes, etc.)
+      {
+        source: '/uploads/:path*',
+        destination: `${API_URL}/uploads/:path*`,
+      },
     ];
   },
 };

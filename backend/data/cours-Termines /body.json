@@ -1,0 +1,53 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-corps",
+      "title": "Vocabulaire — Corps humain",
+      "subtitle": "Parties du corps en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 40,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-corps-base",
+        "title": "Le corps humain",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "رَاس",       "transliteration": "ras",      "translation": { "fr": "tête" },        "tags": ["corps"] },
+          { "word": "وَجْه",      "transliteration": "wjeh",     "translation": { "fr": "visage" },      "tags": ["corps"] },
+          { "word": "عِين",       "transliteration": "3in",      "translation": { "fr": "œil" },         "tags": ["corps"] },
+          { "word": "وْدَن",      "transliteration": "wedn",     "translation": { "fr": "oreille" },     "tags": ["corps"] },
+          { "word": "فَمّ",       "transliteration": "femm",     "translation": { "fr": "bouche" },      "tags": ["corps"] },
+          { "word": "سْنَّان",     "transliteration": "snan",     "translation": { "fr": "dents" },       "tags": ["corps"] },
+          { "word": "سْنُون",     "transliteration": "snoun",    "translation": { "fr": "dents (variante)" }, "tags": ["corps"] },
+          { "word": "لْسَان",     "transliteration": "lsan",     "translation": { "fr": "langue" },      "tags": ["corps"] },
+          { "word": "مْنْخَار",    "transliteration": "mnkhar",   "translation": { "fr": "nez" },         "tags": ["corps"] },
+          { "word": "شْعَر",      "transliteration": "cha3r",    "translation": { "fr": "cheveux" },     "tags": ["corps"] },
+          { "word": "رْقْبَة",     "transliteration": "rqba",     "translation": { "fr": "cou" },         "tags": ["corps"] },
+          { "word": "كْتَاف",     "transliteration": "ktaf",     "translation": { "fr": "épaules" },     "tags": ["corps"] },
+          { "word": "يَد",        "transliteration": "yed",      "translation": { "fr": "main" },        "tags": ["corps"] },
+          { "word": "صْبَع",      "transliteration": "Sba3",     "translation": { "fr": "doigt" },       "tags": ["corps"] },
+          { "word": "دْرَاع",     "transliteration": "dra3",     "translation": { "fr": "bras" },        "tags": ["corps"] },
+          { "word": "صْدْر",      "transliteration": "Sdr",      "translation": { "fr": "poitrine" },    "tags": ["corps"] },
+          { "word": "ظْهْر",      "transliteration": "Dher",     "translation": { "fr": "dos" },         "tags": ["corps"] },
+          { "word": "كْرْش",      "transliteration": "kerch",    "translation": { "fr": "ventre" },      "tags": ["corps"] },
+          { "word": "جْنْب",      "transliteration": "jenb",     "translation": { "fr": "côté" },        "tags": ["corps"] },
+          { "word": "رْجْل",      "transliteration": "rjel",     "translation": { "fr": "jambe" },       "tags": ["corps"] },
+          { "word": "رْكْبَة",     "transliteration": "rkba",     "translation": { "fr": "genou" },       "tags": ["corps"] },
+          { "word": "صْبَع الرْجْل", "transliteration": "Sba3 rjel", "translation": { "fr": "orteil" },    "tags": ["corps"] },
+          { "word": "قَلْب",      "transliteration": "qalb",     "translation": { "fr": "cœur" },        "tags": ["corps"] },
+          { "word": "عْظْم",      "transliteration": "3Dhm",     "translation": { "fr": "os" },          "tags": ["corps"] },
+          { "word": "جْلْد",      "transliteration": "jeld",     "translation": { "fr": "peau" },        "tags": ["corps"] },
+          { "word": "دْم",        "transliteration": "dm",       "translation": { "fr": "sang" },        "tags": ["corps"] },
+          { "word": "دْمَاغ",     "transliteration": "dmagh",    "translation": { "fr": "cerveau" },     "tags": ["corps"] },
+          { "word": "مُخّ",       "transliteration": "mokh",     "translation": { "fr": "cerveau (variante)" }, "tags": ["corps"] }
+        ]
+      }
+    ]
+  }
+}

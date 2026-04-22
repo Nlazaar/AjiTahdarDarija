@@ -1,0 +1,35 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-formes",
+      "title": "Vocabulaire — Formes",
+      "subtitle": "Les formes géométriques",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 310,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-formes-base",
+        "title": "Les formes",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "دَائِرَة",    "transliteration": "da2ira",    "translation": { "fr": "cercle" },         "tags": ["forme"] },
+          { "word": "مُرَبَّع",     "transliteration": "mrbba3",    "translation": { "fr": "carré" },          "tags": ["forme"] },
+          { "word": "مُثَلَّث",     "transliteration": "mtallat",   "translation": { "fr": "triangle" },       "tags": ["forme"] },
+          { "word": "مُسْتَطِيل",   "transliteration": "mostaTil",  "translation": { "fr": "rectangle" },      "tags": ["forme"] },
+          { "word": "خَطّ",        "transliteration": "khaTT",     "translation": { "fr": "ligne" },          "tags": ["forme"] },
+          { "word": "نُقْطَة",      "transliteration": "noqTa",     "translation": { "fr": "point" },          "tags": ["forme"] },
+          { "word": "قَلْب",       "transliteration": "qalb",      "translation": { "fr": "forme de cœur" },  "tags": ["forme"] },
+          { "word": "نَجْمَة",      "transliteration": "nejma",     "translation": { "fr": "étoile" },         "tags": ["forme"] },
+          { "word": "هْلَال",       "transliteration": "hilal",     "translation": { "fr": "croissant" },      "tags": ["forme"] },
+          { "word": "شْكَل حُرّ",   "transliteration": "chkel 7or", "translation": { "fr": "forme libre" },    "tags": ["forme"] }
+        ]
+      }
+    ]
+  }
+}

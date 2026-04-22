@@ -96,6 +96,11 @@ model User {
   subscriptionStatus    String?   @default("free")
   subscriptionExpiresAt DateTime?
 
+  // Push notifications (OneSignal)
+  oneSignalSubId    String?
+  pushOptedInAt     DateTime?
+  lastStreakNotifAt DateTime?
+
   // Relations (toutes les FK déclarées explicitement pour intégrité référentielle)
   lessonsAuthored      Lesson[]               @relation("AuthorLessons")
   progress             UserProgress[]
@@ -204,17 +209,19 @@ model Lesson {
 /// Si une leçon a >= 1 LessonExercise, le runtime les utilise au lieu de
 /// générer la séquence à partir du vocabulaire + sequence par défaut.
 model LessonExercise {
-  id        String   @id @default(cuid())
-  lesson    Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
-  lessonId  String
-  order     Int      @default(0)
-  typology  String   // clé du registry web : "FlashCard", "ChoixLettre", etc.
-  config    Json     // forme spécifique à la typologie (vocabIds, distractors, pairs, ...)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id          String   @id @default(cuid())
+  lesson      Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lessonId    String
+  order       Int      @default(0)
+  typology    String   // clé du registry web : "FlashCard", "ChoixLettre", etc.
+  config      Json     // forme spécifique à la typologie (vocabIds, distractors, pairs, ...)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   @@index([lessonId, order])
   @@index([typology])
+  @@index([lessonId, isPublished])
 }
 
 model Vocabulary {
@@ -227,6 +234,7 @@ model Vocabulary {
   partOfSpeech    PartOfSpeech?
   examples        Json?
   tags            String[]      @default([])
+  isPublished     Boolean       @default(true)
   createdAt       DateTime      @default(now())
   updatedAt       DateTime      @updatedAt
   language        Language      @relation(fields: [languageId], references: [id])
@@ -238,6 +246,7 @@ model Vocabulary {
 
   @@index([word])
   @@index([languageId, word])
+  @@index([isPublished])
 }
 
 model Exercise {

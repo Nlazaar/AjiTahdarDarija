@@ -2,7 +2,7 @@
 import React, { useMemo, useState } from "react";
 import ProgressBar from "../../../web/components/ProgressBar";
 import AlphabetExercise from "../../../web/components/AlphabetExercise";
-import { darijaAlphabet } from "../../../backend/data/alphabet/alphabet";
+import { darijaAlphabet } from "../../../backend/data/data_ts/alphabet/alphabet";
 import Link from "next/link";
 
 type Letter = { letter: string; latin: string; fr: string };

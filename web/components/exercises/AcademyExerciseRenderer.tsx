@@ -388,7 +388,9 @@ function QuizMatchBlock({ ex, onAnswer }: { ex: AcademyExercise; onAnswer: Answe
   const [matched, setMatched] = useState<Record<number, string>>({});
   const [selectedAudio, setSelectedAudio] = useState<number | null>(null);
   const [wrong, setWrong] = useState<{ audio: number; ans: string } | null>(null);
-  const shuffledAnswers = useMemo(() => [...pairs.map(p => p.answer)].sort(() => Math.random() - 0.5), [pairs.length]);
+  // Signature stable : ne re-shuffle que si les paires changent vraiment
+  const answersKey = pairs.map(p => p.answer).join('|');
+  const shuffledAnswers = useMemo(() => [...pairs.map(p => p.answer)].sort(() => Math.random() - 0.5), [answersKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleAnswerClick = (ans: string) => {
     if (selectedAudio === null) return;

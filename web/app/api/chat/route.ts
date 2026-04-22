@@ -87,23 +87,8 @@ IMPORTANT ligne 🔊 : écris TOUTES les voyelles courtes (fatha َ, kasra ِ, d
 Explique brièvement la grammaire si utile (genre, pluriel, conjugaison).
 Sois encourageant, court et pédagogique.`;
 
-const SYSTEM_BOTH = `Tu es Aji, professeur bilingue Darija + Arabe Littéraire (MSA).
-
-Tu enseignes en parallèle le dialecte marocain et l'arabe standard moderne.
-Quand l'élève pose une question, donne la réponse en DARIJA d'abord, puis la version MSA.
-
-Format de réponse OBLIGATOIRE :
-🗣️ [Darija phonétique française] / [MSA translittération]
-🔊 [arabe dialectal avec tashkeel] / [arabe MSA avec tashkeel]
-🇫🇷 [traduction française]
-💡 [exemple Darija] / [exemple MSA]
-
-IMPORTANT : toujours écrire les deux versions côte à côte, séparées par /
-Sois encourageant, court et pédagogique.`;
-
 function getSystemPrompt(track?: string) {
-  if (track === 'MSA')  return SYSTEM_MSA;
-  if (track === 'BOTH') return SYSTEM_BOTH;
+  if (track === 'MSA') return SYSTEM_MSA;
   return SYSTEM_DARIJA;
 }
 
@@ -139,7 +124,7 @@ export async function POST(req: NextRequest) {
 
   const body = await req.json().catch(() => ({}));
   const messages: any[] = (body.messages ?? []).slice(-10);
-  const track: string   = body.track ?? 'DARIJA'; // 'DARIJA' | 'MSA' | 'BOTH'
+  const track: string   = body.track ?? 'DARIJA'; // 'DARIJA' | 'MSA' | 'RELIGION'
 
   if (!messages.length) return NextResponse.json({ error: 'Messages vides' }, { status: 400 });
 

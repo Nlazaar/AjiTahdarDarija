@@ -3,8 +3,13 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { useParcours } from '@/hooks/useParcours';
 import UnitePath from '@/components/parcours/UnitePath';
+import type { NodeShape } from '@/components/parcours/ZelligeNode';
+import PushOptInBanner from '@/components/PushOptInBanner';
+import ResetAdminMenu from '@/components/parcours/ResetAdminMenu';
 import { useUser, type LangTrack } from '@/context/UserContext';
 import { getTracks, type Track } from '@/lib/api';
+
+const SHAPE_STORAGE_KEY = 'parcoursNodeShape';
 
 type TrackTab = { key: LangTrack; label: string; emoji: string; color: string };
 
@@ -17,32 +22,54 @@ const FALLBACK_TABS: TrackTab[] = [
 function TrackSwitcher({ tabs }: { tabs: TrackTab[] }) {
   const { langTrack, setLangTrack } = useUser();
   return (
-    <div style={{
-      display: 'flex', justifyContent: 'center', gap: 8,
-      padding: '14px 12px 4px', flexWrap: 'wrap',
-    }}>
-      {tabs.map(t => {
-        const active = langTrack === t.key;
-        return (
-          <button
-            key={t.key}
-            onClick={() => setLangTrack(t.key)}
-            style={{
-              padding: '8px 16px', borderRadius: 999,
-              border: `2px solid ${active ? t.color : 'var(--c-border)'}`,
-              background: active ? `${t.color}1a` : 'var(--c-card)',
-              color: active ? t.color : 'var(--c-sub)',
-              fontSize: 13, fontWeight: 800, cursor: 'pointer',
-              display: 'flex', alignItems: 'center', gap: 6,
-              transition: 'all 0.15s',
-            }}
-          >
-            <span style={{ fontSize: 14 }}>{t.emoji}</span>
-            {t.label}
-          </button>
-        );
-      })}
-    </div>
+    <>
+      {/* Réserve l'espace dans le flow pour que le contenu ne passe pas
+          sous le bandeau fixed. */}
+      <div style={{ height: 66 }} aria-hidden />
+      <div className="track-switcher-fixed" style={{
+        display: 'flex', justifyContent: 'center', gap: 8,
+        padding: '14px 12px 10px', flexWrap: 'wrap',
+        background: 'var(--c-bg)',
+        borderBottom: '1px solid var(--c-border)',
+        position: 'fixed', top: 0, zIndex: 30,
+      }}>
+        {tabs.map(t => {
+          const active = langTrack === t.key;
+          return (
+            <button
+              key={t.key}
+              onClick={() => setLangTrack(t.key)}
+              style={{
+                padding: '8px 16px', borderRadius: 999,
+                border: `2px solid ${active ? t.color : 'var(--c-border)'}`,
+                background: active ? `${t.color}1a` : 'var(--c-card)',
+                color: active ? t.color : 'var(--c-sub)',
+                fontSize: 13, fontWeight: 800, cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 6,
+                transition: 'all 0.15s',
+              }}
+            >
+              <span style={{ fontSize: 14 }}>{t.emoji}</span>
+              {t.label}
+            </button>
+          );
+        })}
+      </div>
+      <style jsx>{`
+        .track-switcher-fixed { left: 0; right: 0; }
+        @media (min-width: 768px) {
+          .track-switcher-fixed { left: 260px; }
+        }
+        @media (min-width: 1280px) {
+          /* Laisse la place au panneau carte postale (660px = 260 sidebar + 400 panel) */
+          .track-switcher-fixed { left: 660px; }
+        }
+        @media (min-width: 1536px) {
+          /* Stoppe avant le StatsPanel droit (340px + 32 margin) pour éviter le masquage */
+          .track-switcher-fixed { right: 372px; }
+        }
+      `}</style>
+    </>
   );
 }
 
@@ -77,10 +104,30 @@ function LevelDivider({ level }: { level: number }) {
   );
 }
 
+const VALID_SHAPES: NodeShape[] = ['star', 'circle', 'arch', 'hex', 'medallion'];
+
 function ProgressPageInner() {
   const { unites, loading } = useParcours();
   const { langTrack } = useUser();
   const [tabs, setTabs] = useState<TrackTab[]>(FALLBACK_TABS);
+  const [shape, setShape] = useState<NodeShape>('star');
+
+  useEffect(() => {
+    const read = () => {
+      try {
+        const saved = localStorage.getItem(SHAPE_STORAGE_KEY);
+        if (saved && (VALID_SHAPES as string[]).includes(saved)) {
+          setShape(saved as NodeShape);
+        }
+      } catch {}
+    };
+    read();
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === SHAPE_STORAGE_KEY) read();
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -138,17 +185,13 @@ function ProgressPageInner() {
         return (
           <React.Fragment key={u.id}>
             {showDivider && <LevelDivider level={u.level} />}
-            <UnitePath unite={u} />
+            <UnitePath unite={u} shape={shape} />
           </React.Fragment>
         );
       })}
 
-      <style>{`
-        @keyframes zelligePulse {
-          0%, 100% { transform: scale(1); }
-          50%      { transform: scale(1.06); }
-        }
-      `}</style>
+      <PushOptInBanner />
+      <ResetAdminMenu />
     </div>
   );
 }

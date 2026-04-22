@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-technologie",
+      "title": "Vocabulaire — Technologie",
+      "subtitle": "Numérique et appareils modernes",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 130,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-technologie-base",
+        "title": "La technologie",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "تِكْنُولُوجْيَا",  "transliteration": "tiknolojia", "translation": { "fr": "technologie" },       "tags": ["technologie"] },
+          { "word": "حَاسُوب",         "transliteration": "7asoub",     "translation": { "fr": "ordinateur" },        "tags": ["technologie"] },
+          { "word": "لَابْ تُوب",       "transliteration": "labtop",     "translation": { "fr": "ordinateur portable" },"tags": ["technologie"] },
+          { "word": "تِلِيفُون",        "transliteration": "tilifun",    "translation": { "fr": "téléphone" },          "tags": ["technologie"] },
+          { "word": "سْمَارْتْفُون",    "transliteration": "smartfon",   "translation": { "fr": "smartphone" },        "tags": ["technologie"] },
+          { "word": "طَابْلِيت",        "transliteration": "tablette",   "translation": { "fr": "tablette" },           "tags": ["technologie"] },
+          { "word": "إِنْتَرْنِت",      "transliteration": "internet",   "translation": { "fr": "internet" },           "tags": ["technologie"] },
+          { "word": "وَايْ فَايْ",     "transliteration": "wifi",       "translation": { "fr": "wifi" },               "tags": ["technologie"] },
+          { "word": "شَبَكَة",         "transliteration": "chabka",     "translation": { "fr": "réseau" },             "tags": ["technologie"] },
+          { "word": "تَطْبِيق",         "transliteration": "tatbiq",     "translation": { "fr": "application" },        "tags": ["technologie"] },
+          { "word": "بَرْنَامَج",       "transliteration": "barnamaj",   "translation": { "fr": "logiciel" },           "tags": ["technologie"] },
+          { "word": "مْلَف",           "transliteration": "mlaf",       "translation": { "fr": "fichier" },            "tags": ["technologie"] },
+          { "word": "خَازِن",          "transliteration": "khazen",     "translation": { "fr": "stockage" },           "tags": ["technologie"] },
+          { "word": "سِيرْفَر",         "transliteration": "server",     "translation": { "fr": "serveur" },            "tags": ["technologie"] },
+          { "word": "كْلَاوُد",         "transliteration": "cloud",      "translation": { "fr": "cloud" },              "tags": ["technologie"] },
+          { "word": "شَاشَة",          "transliteration": "chacha",     "translation": { "fr": "écran" },              "tags": ["technologie"] },
+          { "word": "كِيبُورْد",        "transliteration": "keyboard",   "translation": { "fr": "clavier" },            "tags": ["technologie"] },
+          { "word": "فَأْرَة",          "transliteration": "fa2ra",      "translation": { "fr": "souris" },             "tags": ["technologie"] },
+          { "word": "شَاحِن",          "transliteration": "cha7en",     "translation": { "fr": "chargeur" },           "tags": ["technologie"] },
+          { "word": "بَطَّارِيَّة",      "transliteration": "baTTariya",  "translation": { "fr": "batterie" },           "tags": ["technologie"] }
+        ]
+      }
+    ]
+  }
+}

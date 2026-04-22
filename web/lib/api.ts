@@ -93,17 +93,20 @@ export const getLessonsByModule    = (moduleId: string) => request<Lesson[]>(`/m
 export const getLesson             = (lessonId: string) => request<Lesson>(`/lessons/${lessonId}`);
 export const getExercises          = (lessonId: string) => request<Exercise[]>(`/lessons/${lessonId}/exercises`);
 export const getVocabularyByLesson = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/vocabulary`);
+export const getDailyVocab         = (track?: string)   => request<{ id: string; word: string; transliteration: string | null; translation: any; audioUrl: string | null } | null>(
+  track ? `/vocabulary/daily?track=${encodeURIComponent(track)}` : `/vocabulary/daily`
+);
 export const getAuthoredExercises  = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/authored-exercises`);
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
 export const updateProfile         = (data: { avatar?: string; name?: string }) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });
 export const getMyProgress         = ()                 => request<any>('/progress/me');
 export const completeLessonApi     = (lessonId: string) => request<any>(`/progress/complete/${lessonId}`, { method: 'POST' });
-export const getMyJourney          = ()                 => request<{
+export const getMyJourney          = (track?: string)   => request<{
   currentCityKey: string | null
   visitedCityKeys: string[]
   route: { moduleId: string; moduleSlug: string; canonicalOrder: number; cityKey: string }[]
-}>('/progress/journey');
+}>(track ? `/progress/journey?track=${encodeURIComponent(track)}` : '/progress/journey');
 
 // Leaderboard
 export const getLeaderboard        = ()                 => request<any[]>('/leaderboard/global');
@@ -157,3 +160,11 @@ export const cancelDuel    = (id: string) => request<any>(`/duels/${id}/cancel`,
 // Quests
 export const getQuestState   = ()            => request<any>('/quests');
 export const claimQuestReward = (key: string) => request<any>(`/quests/claim/${key}`, { method: 'POST' });
+
+// Rétention / révision (SRS)
+export const markVocabSeen   = (vocabularyId: string) =>
+  request<any>('/user-vocabulary/seen', { method: 'POST', body: JSON.stringify({ vocabularyId }) });
+export const markVocabResult = (vocabularyId: string, correct: boolean) =>
+  request<any>(`/user-vocabulary/${vocabularyId}/result`, { method: 'POST', body: JSON.stringify({ correct }) });
+export const getDueVocab     = (limit = 20) => request<any[]>(`/user-vocabulary/due?limit=${limit}`);
+export const getRetentionStats = () => request<{ total: number; mastered: number; learning: number; toReview: number; dueNow: number }>('/user-vocabulary/stats');

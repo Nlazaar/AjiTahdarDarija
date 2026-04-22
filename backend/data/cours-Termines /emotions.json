@@ -1,0 +1,71 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-emotions",
+      "title": "Vocabulaire — Émotions",
+      "subtitle": "Exprimer ses sentiments en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 70,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-emotions-base",
+        "title": "Les émotions",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "فَرْحَان",     "transliteration": "fr7an",         "translation": { "fr": "heureux" },                       "tags": ["emotion"] },
+          { "word": "حْزِين",       "transliteration": "7zin",          "translation": { "fr": "triste" },                        "tags": ["emotion"] },
+          { "word": "مْعَصَّب",     "transliteration": "m3aSSeb",       "translation": { "fr": "énervé" },                        "tags": ["emotion"] },
+          { "word": "مْقَلَّق",     "transliteration": "mqelleq",       "translation": { "fr": "agacé / contrarié / stressé" },   "tags": ["emotion"] },
+          { "word": "مْرْتَاح",     "transliteration": "mrta7",         "translation": { "fr": "soulagé / détendu" },             "tags": ["emotion"] },
+          { "word": "خَايَف",      "transliteration": "khayef",        "translation": { "fr": "effrayé" },                       "tags": ["emotion"] },
+          { "word": "مَصْدُوم",     "transliteration": "msdoum",        "translation": { "fr": "choqué" },                        "tags": ["emotion"] },
+          { "word": "مْتْفَاجِئ",   "transliteration": "mtfaj2",        "translation": { "fr": "surpris" },                       "tags": ["emotion"] },
+          { "word": "مْفَاجِئ",    "transliteration": "mfaji2",        "translation": { "fr": "surpris (variante)" },            "tags": ["emotion"] },
+          { "word": "مْتْحَمَّس",   "transliteration": "mt7ammes",      "translation": { "fr": "enthousiaste" },                  "tags": ["emotion"] },
+          { "word": "مْكْتَئِب",    "transliteration": "mkta2eb",       "translation": { "fr": "déprimé" },                       "tags": ["emotion"] },
+          { "word": "مَطْمُور",    "transliteration": "mTmour",        "translation": { "fr": "déprimé (variante)" },            "tags": ["emotion"] },
+          { "word": "مْحْتَار",    "transliteration": "m7tar",         "translation": { "fr": "indécis / confus" },              "tags": ["emotion"] },
+          { "word": "مَغْتَاظ",    "transliteration": "mghTaD",        "translation": { "fr": "furieux" },                       "tags": ["emotion"] },
+          { "word": "مَغْضُوب",    "transliteration": "mghDoub",       "translation": { "fr": "fâché" },                         "tags": ["emotion"] },
+          { "word": "غَاضِب",     "transliteration": "ghaDib",        "translation": { "fr": "furieux (variante)" },            "tags": ["emotion"] },
+          { "word": "مُطْمَئِنّ",   "transliteration": "mTma2en",       "translation": { "fr": "rassuré" },                       "tags": ["emotion"] },
+          { "word": "مْشْتَاق",    "transliteration": "mchtaq",        "translation": { "fr": "nostalgique / en manque" },       "tags": ["emotion"] },
+          { "word": "مْحْرَج",     "transliteration": "m7raj",         "translation": { "fr": "gêné" },                          "tags": ["emotion"] },
+          { "word": "مَكْسُوف",    "transliteration": "mksouf",        "translation": { "fr": "gêné / honteux" },                "tags": ["emotion"] },
+          { "word": "مْسْتْحِي",    "transliteration": "msta7i",        "translation": { "fr": "gêné / timide" },                 "tags": ["emotion"] },
+          { "word": "فَخُور",     "transliteration": "fkhour",        "translation": { "fr": "fier" },                          "tags": ["emotion"] },
+          { "word": "مَفْتَخَر",    "transliteration": "mftakhr",       "translation": { "fr": "fier (variante)" },               "tags": ["emotion"] },
+          { "word": "مَرْعُوب",    "transliteration": "mr3oub",        "translation": { "fr": "terrifié" },                      "tags": ["emotion"] },
+          { "word": "مْرْتَاح البَال", "transliteration": "mrta7 lbal",  "translation": { "fr": "tranquille d'esprit" },           "tags": ["emotion"] },
+          { "word": "مْلْيَان طَاقَة", "transliteration": "mlyan Taqa",  "translation": { "fr": "plein d'énergie" },               "tags": ["emotion"] },
+          { "word": "نَشْطَان",    "transliteration": "nchTan",        "translation": { "fr": "énergique" },                     "tags": ["emotion"] },
+          { "word": "قَلْقَان",    "transliteration": "qlqan",         "translation": { "fr": "anxieux" },                       "tags": ["emotion"] },
+          { "word": "عَيَّان",     "transliteration": "3yyan",         "translation": { "fr": "fatigué" },                       "tags": ["emotion"] },
+          { "word": "مَقْلُوع",    "transliteration": "mqlou3",        "translation": { "fr": "épuisé" },                        "tags": ["emotion"] },
+          { "word": "مْكْسَل",     "transliteration": "mksel",         "translation": { "fr": "paresseux" },                     "tags": ["emotion"] },
+          { "word": "مَبْسُوط",    "transliteration": "mbsout",        "translation": { "fr": "content" },                       "tags": ["emotion"] },
+          { "word": "مَسْرُور",    "transliteration": "msrour",        "translation": { "fr": "content (variante)" },            "tags": ["emotion"] },
+          { "word": "مْكَرَّه",     "transliteration": "mkrrh",         "translation": { "fr": "dégoûté" },                       "tags": ["emotion"] },
+          { "word": "مْغْرَم",     "transliteration": "mghram",        "translation": { "fr": "amoureux" },                      "tags": ["emotion"] },
+          { "word": "فَرْحَان بْزَّاف", "transliteration": "fr7an bzzaf",  "translation": { "fr": "très heureux" },                  "tags": ["emotion"] },
+          { "word": "مْعَصَّب بْزَّاف", "transliteration": "m3aSSeb bzzaf","translation": { "fr": "très énervé" },                   "tags": ["emotion"] },
+          { "word": "مْقَلَّق بْزَّاف", "transliteration": "mqelleq bzzaf","translation": { "fr": "très inquiet" },                  "tags": ["emotion"] },
+          { "word": "مْرْتَاح بْزَّاف", "transliteration": "mrta7 bzzaf",  "translation": { "fr": "très à l'aise" },                 "tags": ["emotion"] },
+          { "word": "مَصْدُوم بْزَّاف", "transliteration": "msdoum bzzaf", "translation": { "fr": "très choqué" },                   "tags": ["emotion"] },
+          { "word": "مْفَاجِئ بْزَّاف", "transliteration": "mfaji2 bzzaf", "translation": { "fr": "très surpris" },                  "tags": ["emotion"] },
+          { "word": "مَقْلُوع بْزَّاف", "transliteration": "mqlou3 bzzaf", "translation": { "fr": "très fatigué" },                  "tags": ["emotion"] },
+          { "word": "مَغْضُوب بْزَّاف", "transliteration": "mghDoub bzzaf","translation": { "fr": "très fâché" },                    "tags": ["emotion"] },
+          { "word": "مَسْرُور بْزَّاف", "transliteration": "msrour bzzaf", "translation": { "fr": "très content" },                  "tags": ["emotion"] },
+          { "word": "مَفْتَخَر بْزَّاف", "transliteration": "mftakhr bzzaf","translation": { "fr": "très fier" },                    "tags": ["emotion"] },
+          { "word": "مَكْسُوف بْزَّاف", "transliteration": "mksouf bzzaf", "translation": { "fr": "très gêné" },                     "tags": ["emotion"] }
+        ]
+      }
+    ]
+  }
+}

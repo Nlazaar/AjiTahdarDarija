@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Param, Request, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Param, Query, Request, UseGuards } from '@nestjs/common';
 import { ProgressService } from './progress.service';
 import { JwtGuard } from '../auth/guards/jwt.guard';
 
@@ -10,6 +10,12 @@ export class ProgressController {
   @Get('me')
   me(@Request() req: any) {
     return this.progressService.getUserProgress(req.user.id);
+  }
+
+  @Get('journey')
+  journey(@Request() req: any, @Query('track') track?: string) {
+    const t = track === 'MSA' || track === 'RELIGION' ? track : 'DARIJA';
+    return this.progressService.getJourney(req.user.id, t);
   }
 
   @Post('complete/:lessonId')

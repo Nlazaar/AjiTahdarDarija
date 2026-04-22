@@ -1,0 +1,64 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-adjectifs",
+      "title": "Vocabulaire — Adjectifs",
+      "subtitle": "39 adjectifs essentiels en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 20,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-adjectifs-base",
+        "title": "Les adjectifs",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "زْوِين",    "transliteration": "zwine",    "translation": { "fr": "beau / joli" },                  "tags": ["adjectif"] },
+          { "word": "خَايَب",    "transliteration": "khayeb",   "translation": { "fr": "moche / mauvais" },              "tags": ["adjectif"] },
+          { "word": "بْشِيع",    "transliteration": "bchi3",    "translation": { "fr": "moche" },                        "tags": ["adjectif"] },
+          { "word": "كْبِير",    "transliteration": "kbir",     "translation": { "fr": "grand" },                        "tags": ["adjectif"] },
+          { "word": "صْغِير",    "transliteration": "sghir",    "translation": { "fr": "petit" },                        "tags": ["adjectif"] },
+          { "word": "طْوِيل",    "transliteration": "Twil",     "translation": { "fr": "long / grand (taille)" },        "tags": ["adjectif"] },
+          { "word": "قْصِير",    "transliteration": "qSir",     "translation": { "fr": "court / petit (taille)" },       "tags": ["adjectif"] },
+          { "word": "ثْقِيل",    "transliteration": "thqil",    "translation": { "fr": "lourd" },                        "tags": ["adjectif"] },
+          { "word": "خْفِيف",    "transliteration": "khfif",    "translation": { "fr": "léger" },                        "tags": ["adjectif"] },
+          { "word": "سَهْل",     "transliteration": "sahl",     "translation": { "fr": "facile" },                       "tags": ["adjectif"] },
+          { "word": "صْعِيب",    "transliteration": "s3ib",     "translation": { "fr": "difficile" },                    "tags": ["adjectif"] },
+          { "word": "غَالِي",    "transliteration": "ghali",    "translation": { "fr": "cher" },                         "tags": ["adjectif"] },
+          { "word": "رْخِيص",    "transliteration": "rkhis",    "translation": { "fr": "pas cher" },                     "tags": ["adjectif"] },
+          { "word": "جْدِيد",    "transliteration": "jdid",     "translation": { "fr": "nouveau" },                      "tags": ["adjectif"] },
+          { "word": "قْدِيم",    "transliteration": "qdim",     "translation": { "fr": "ancien / vieux" },               "tags": ["adjectif"] },
+          { "word": "نْقِي",     "transliteration": "nqi",      "translation": { "fr": "propre" },                       "tags": ["adjectif"] },
+          { "word": "وْسَخ",     "transliteration": "wskh",     "translation": { "fr": "sale" },                         "tags": ["adjectif"] },
+          { "word": "سْرِيع",    "transliteration": "sri3",     "translation": { "fr": "rapide" },                       "tags": ["adjectif"] },
+          { "word": "بْطِيء",    "transliteration": "bTi2",     "translation": { "fr": "lent" },                         "tags": ["adjectif"] },
+          { "word": "مْهَم",     "transliteration": "mohem",    "translation": { "fr": "important" },                    "tags": ["adjectif"] },
+          { "word": "ضَرُورِي",  "transliteration": "Darouri",  "translation": { "fr": "nécessaire / indispensable" },   "tags": ["adjectif"] },
+          { "word": "قْرِيب",    "transliteration": "qrib",     "translation": { "fr": "proche" },                       "tags": ["adjectif"] },
+          { "word": "بْعِيد",    "transliteration": "b3id",     "translation": { "fr": "loin" },                         "tags": ["adjectif"] },
+          { "word": "خَطِير",    "transliteration": "khatir",   "translation": { "fr": "dangereux" },                    "tags": ["adjectif"] },
+          { "word": "آمَن",      "transliteration": "amen",     "translation": { "fr": "sûr / sécurisé" },               "tags": ["adjectif"] },
+          { "word": "بَارِد",    "transliteration": "barid",    "translation": { "fr": "froid" },                        "tags": ["adjectif"] },
+          { "word": "سْخُون",    "transliteration": "skhoun",   "translation": { "fr": "chaud" },                        "tags": ["adjectif"] },
+          { "word": "مْبَلَّل",   "transliteration": "mbellal",  "translation": { "fr": "mouillé" },                      "tags": ["adjectif"] },
+          { "word": "يَابَس",    "transliteration": "yabes",    "translation": { "fr": "sec" },                          "tags": ["adjectif"] },
+          { "word": "مَفْتُوح",   "transliteration": "mftou7",   "translation": { "fr": "ouvert" },                       "tags": ["adjectif"] },
+          { "word": "مَسْدُود",   "transliteration": "msdoud",   "translation": { "fr": "fermé / bloqué" },               "tags": ["adjectif"] },
+          { "word": "مْرِيح",    "transliteration": "mri7",     "translation": { "fr": "confortable" },                  "tags": ["adjectif"] },
+          { "word": "مْزَعَّج",   "transliteration": "mz3j",     "translation": { "fr": "dérangeant" },                   "tags": ["adjectif"] },
+          { "word": "قْوِي",     "transliteration": "qwi",      "translation": { "fr": "fort" },                         "tags": ["adjectif"] },
+          { "word": "ضْعِيف",    "transliteration": "D3if",     "translation": { "fr": "faible" },                       "tags": ["adjectif"] },
+          { "word": "مْلْيَان",   "transliteration": "mlyan",    "translation": { "fr": "plein" },                        "tags": ["adjectif"] },
+          { "word": "فَارِغ",    "transliteration": "fargh",    "translation": { "fr": "vide" },                         "tags": ["adjectif"] },
+          { "word": "وَاضَح",    "transliteration": "waDe7",    "translation": { "fr": "clair" },                        "tags": ["adjectif"] },
+          { "word": "غَامَض",    "transliteration": "ghamD",    "translation": { "fr": "ambigu / mystérieux" },          "tags": ["adjectif"] }
+        ]
+      }
+    ]
+  }
+}

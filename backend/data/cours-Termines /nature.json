@@ -1,0 +1,50 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-nature",
+      "title": "Vocabulaire — Nature",
+      "subtitle": "Paysages, ciel et éléments",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 120,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-nature-base",
+        "title": "La nature",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "طَبِيعَة",     "transliteration": "Tabi3a", "translation": { "fr": "nature" },          "tags": ["nature"] },
+          { "word": "شَجْرَة",      "transliteration": "chajra", "translation": { "fr": "arbre" },           "tags": ["nature"] },
+          { "word": "وَرْقَة",      "transliteration": "wrqa",   "translation": { "fr": "feuille" },         "tags": ["nature"] },
+          { "word": "غَابَة",       "transliteration": "ghaba",  "translation": { "fr": "forêt" },           "tags": ["nature"] },
+          { "word": "نَهْر",        "transliteration": "nahr",   "translation": { "fr": "rivière" },         "tags": ["nature"] },
+          { "word": "بْحَر",        "transliteration": "b7ar",   "translation": { "fr": "mer" },             "tags": ["nature"] },
+          { "word": "مُحِيط",       "transliteration": "mo7iT",  "translation": { "fr": "océan" },           "tags": ["nature"] },
+          { "word": "سْمَاء",       "transliteration": "sma",    "translation": { "fr": "ciel" },            "tags": ["nature"] },
+          { "word": "شْمْس",        "transliteration": "chms",   "translation": { "fr": "soleil" },          "tags": ["nature"] },
+          { "word": "قْمَر",        "transliteration": "qmar",   "translation": { "fr": "lune" },            "tags": ["nature"] },
+          { "word": "رِيح",         "transliteration": "ri7",    "translation": { "fr": "vent" },            "tags": ["nature"] },
+          { "word": "شْتَا",        "transliteration": "chta",   "translation": { "fr": "pluie" },           "tags": ["nature"] },
+          { "word": "مْطَر",        "transliteration": "mTar",   "translation": { "fr": "pluie (variante)" },"tags": ["nature"] },
+          { "word": "تْلْج",         "transliteration": "telj",   "translation": { "fr": "neige" },           "tags": ["nature"] },
+          { "word": "رَعْد",        "transliteration": "ra3d",   "translation": { "fr": "tonnerre" },        "tags": ["nature"] },
+          { "word": "بْرْق",        "transliteration": "breq",   "translation": { "fr": "éclair" },          "tags": ["nature"] },
+          { "word": "جْبَل",        "transliteration": "jbel",   "translation": { "fr": "montagne" },        "tags": ["nature"] },
+          { "word": "وَادِي",       "transliteration": "wadi",   "translation": { "fr": "vallée" },          "tags": ["nature"] },
+          { "word": "صَحْرَاء",     "transliteration": "Sa7ra2", "translation": { "fr": "désert" },          "tags": ["nature"] },
+          { "word": "حْجَر",        "transliteration": "7jer",   "translation": { "fr": "pierre" },          "tags": ["nature"] },
+          { "word": "تْرَاب",       "transliteration": "trab",   "translation": { "fr": "terre / sol" },     "tags": ["nature"] },
+          { "word": "وَرْدَة",      "transliteration": "warda",  "translation": { "fr": "fleur" },           "tags": ["nature"] },
+          { "word": "عْشْب",        "transliteration": "3chb",   "translation": { "fr": "herbe" },           "tags": ["nature"] },
+          { "word": "رْمْل",        "transliteration": "rml",    "translation": { "fr": "sable" },           "tags": ["nature"] },
+          { "word": "صَخْرَة",      "transliteration": "sakhra", "translation": { "fr": "roche" },           "tags": ["nature"] }
+        ]
+      }
+    ]
+  }
+}

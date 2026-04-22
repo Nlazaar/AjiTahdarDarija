@@ -63,10 +63,65 @@ export class LessonsController {
   }
 
   @UseGuards(AdminGuard)
+  @Patch(':id/sequence')
+  updateSequence(@Param('id') id: string, @Body() body: any) {
+    return this.lessonsService.updateSequence(id, body ?? {});
+  }
+
+  @UseGuards(AdminGuard)
+  @Patch(':id/vocab-order')
+  reorderVocabulary(@Param('id') id: string, @Body() body: any) {
+    return this.lessonsService.reorderVocabulary(id, body?.orderedIds ?? []);
+  }
+
+  @UseGuards(AdminGuard)
   @Delete(':id')
   remove(@Param('id') id: string, @Query('hard') hard?: string) {
     return hard === 'true'
       ? this.lessonsService.hardDelete(id)
       : this.lessonsService.softDelete(id);
+  }
+
+  // ── Authored exercises (LessonExercise) ──────────────────────────────────
+
+  /** Lecture publique : utilisée par le runtime LessonClient (exos publiés uniquement). */
+  @Get(':id/authored-exercises')
+  listAuthoredExercises(@Param('id') id: string) {
+    return this.lessonsService.listAuthoredExercises(id);
+  }
+
+  /** Lecture admin : tous les exos (publiés + brouillons). */
+  @UseGuards(AdminGuard)
+  @Get(':id/authored-exercises-admin')
+  listAuthoredExercisesAdmin(@Param('id') id: string) {
+    return this.lessonsService.listAuthoredExercisesAdmin(id);
+  }
+
+  @UseGuards(AdminGuard)
+  @Post(':id/authored-exercises')
+  createAuthoredExercise(@Param('id') id: string, @Body() body: any) {
+    return this.lessonsService.createAuthoredExercise(id, body ?? {});
+  }
+
+  @UseGuards(AdminGuard)
+  @Patch(':id/authored-exercises/reorder')
+  reorderAuthoredExercises(@Param('id') id: string, @Body() body: any) {
+    return this.lessonsService.reorderAuthoredExercises(id, body?.orderedIds ?? []);
+  }
+
+  @UseGuards(AdminGuard)
+  @Patch(':id/authored-exercises/:exId')
+  updateAuthoredExercise(
+    @Param('id') id: string,
+    @Param('exId') exId: string,
+    @Body() body: any,
+  ) {
+    return this.lessonsService.updateAuthoredExercise(id, exId, body ?? {});
+  }
+
+  @UseGuards(AdminGuard)
+  @Delete(':id/authored-exercises/:exId')
+  deleteAuthoredExercise(@Param('id') id: string, @Param('exId') exId: string) {
+    return this.lessonsService.deleteAuthoredExercise(id, exId);
   }
 }

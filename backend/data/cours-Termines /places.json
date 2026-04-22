@@ -1,0 +1,63 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-lieux",
+      "title": "Vocabulaire — Lieux",
+      "subtitle": "Endroits de la ville et au-delà",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 220,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-lieux-base",
+        "title": "Les lieux",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "مْدِينَة",           "transliteration": "mdina",          "translation": { "fr": "ville" },              "tags": ["lieu"] },
+          { "word": "دْوَار",             "transliteration": "douar",          "translation": { "fr": "village" },            "tags": ["lieu"] },
+          { "word": "زَنْقَة",            "transliteration": "zanqa",          "translation": { "fr": "rue" },                "tags": ["lieu"] },
+          { "word": "سَاحَة",            "transliteration": "sa7a",           "translation": { "fr": "place (publique)" },   "tags": ["lieu"] },
+          { "word": "دَار",              "transliteration": "dar",            "translation": { "fr": "maison" },             "tags": ["lieu"] },
+          { "word": "مْدْرَسَة",          "transliteration": "mdrasa",         "translation": { "fr": "école" },              "tags": ["lieu"] },
+          { "word": "جَامْعَة",           "transliteration": "jam3a",          "translation": { "fr": "université" },         "tags": ["lieu"] },
+          { "word": "مُسْتَشْفَى",        "transliteration": "mostachfa",      "translation": { "fr": "hôpital" },            "tags": ["lieu"] },
+          { "word": "صَيْدَلِيَّة",        "transliteration": "saydaliya",      "translation": { "fr": "pharmacie" },          "tags": ["lieu"] },
+          { "word": "مْخْبْزَة",           "transliteration": "mkbza",          "translation": { "fr": "boulangerie" },        "tags": ["lieu"] },
+          { "word": "سُوق",              "transliteration": "souq",           "translation": { "fr": "marché" },             "tags": ["lieu"] },
+          { "word": "مَرْجَان",           "transliteration": "marjan",         "translation": { "fr": "supermarché" },        "tags": ["lieu"] },
+          { "word": "مَحَطَّة الطُّوبِيس", "transliteration": "ma7atat toubiis","translation": { "fr": "arrêt de bus" },       "tags": ["lieu"] },
+          { "word": "مَحَطَّة الطْرَام",  "transliteration": "ma7atat tram",   "translation": { "fr": "station de tram" },    "tags": ["lieu"] },
+          { "word": "مَحَطَّة القْطَار",  "transliteration": "ma7atat lqitar", "translation": { "fr": "gare" },               "tags": ["lieu"] },
+          { "word": "مَطَار",             "transliteration": "matar",          "translation": { "fr": "aéroport" },           "tags": ["lieu"] },
+          { "word": "مَقْهَى",            "transliteration": "qahwa",          "translation": { "fr": "café" },               "tags": ["lieu"] },
+          { "word": "مَطْعَم",            "transliteration": "maT3am",         "translation": { "fr": "restaurant" },         "tags": ["lieu"] },
+          { "word": "فُنْدُق",             "transliteration": "fndoq",          "translation": { "fr": "hôtel" },              "tags": ["lieu"] },
+          { "word": "بْحَر",              "transliteration": "b7ar",           "translation": { "fr": "mer" },                "tags": ["lieu"] },
+          { "word": "شَاطِئ",             "transliteration": "chaTi2",         "translation": { "fr": "plage" },              "tags": ["lieu"] },
+          { "word": "غَابَة",              "transliteration": "ghaba",          "translation": { "fr": "forêt" },              "tags": ["lieu"] },
+          { "word": "حْدِيقَة",             "transliteration": "7adiqa",         "translation": { "fr": "jardin / parc" },      "tags": ["lieu"] },
+          { "word": "مَسْجِد",             "transliteration": "msjid",          "translation": { "fr": "mosquée" },            "tags": ["lieu"] },
+          { "word": "كْنِيسَة",             "transliteration": "knisa",          "translation": { "fr": "église" },             "tags": ["lieu"] },
+          { "word": "مَكْتَب",              "transliteration": "mektab",         "translation": { "fr": "bureau" },             "tags": ["lieu"] },
+          { "word": "مَحْكَمَة",            "transliteration": "ma7kama",        "translation": { "fr": "tribunal" },           "tags": ["lieu"] },
+          { "word": "بَلَدِيَّة",             "transliteration": "baladiya",       "translation": { "fr": "mairie" },             "tags": ["lieu"] },
+          { "word": "مَكْتَبَة",             "transliteration": "maktaba",        "translation": { "fr": "bibliothèque" },       "tags": ["lieu"] },
+          { "word": "سِينِمَا",             "transliteration": "cinima",         "translation": { "fr": "cinéma" },             "tags": ["lieu"] },
+          { "word": "مَلْعَب",              "transliteration": "mal3ab",         "translation": { "fr": "stade" },              "tags": ["lieu"] },
+          { "word": "مَحَطَّة البَنْزِين",  "transliteration": "stasyon benzine","translation": { "fr": "station-service" },    "tags": ["lieu"] },
+          { "word": "مَوْقِف السَّيَّارَات","transliteration": "mou9if sayarat", "translation": { "fr": "parking" },            "tags": ["lieu"] },
+          { "word": "مَرْكَز الشُّرْطَة",   "transliteration": "markaz chorta",  "translation": { "fr": "commissariat" },       "tags": ["lieu"] },
+          { "word": "سِجْن",              "transliteration": "sjn",            "translation": { "fr": "prison" },             "tags": ["lieu"] },
+          { "word": "مَسْبَح",             "transliteration": "msba7",          "translation": { "fr": "piscine" },            "tags": ["lieu"] },
+          { "word": "مَتْحَف",             "transliteration": "mata7af",        "translation": { "fr": "musée" },              "tags": ["lieu"] },
+          { "word": "مَحَلّ",              "transliteration": "ma7al",          "translation": { "fr": "magasin" },            "tags": ["lieu"] }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-sante",
+      "title": "Vocabulaire — Santé",
+      "subtitle": "Corps, maladies et soins",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 90,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-sante-base",
+        "title": "La santé",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "صِحَّة",         "transliteration": "Se77a",    "translation": { "fr": "santé" },               "tags": ["sante"] },
+          { "word": "مْرَض",          "transliteration": "mraD",     "translation": { "fr": "maladie" },             "tags": ["sante"] },
+          { "word": "طْبِيب",         "transliteration": "Tbib",     "translation": { "fr": "médecin" },             "tags": ["sante"] },
+          { "word": "صَيْدَلِي",       "transliteration": "Saydali",  "translation": { "fr": "pharmacien" },          "tags": ["sante"] },
+          { "word": "صَيْدَلِيَّة",     "transliteration": "Saydaliya","translation": { "fr": "pharmacie" },           "tags": ["sante"] },
+          { "word": "دْوَاء",         "transliteration": "dwa",      "translation": { "fr": "médicament" },          "tags": ["sante"] },
+          { "word": "حُقْنَة",        "transliteration": "7oqna",    "translation": { "fr": "piqûre / injection" },  "tags": ["sante"] },
+          { "word": "جْرَح",          "transliteration": "jra7",     "translation": { "fr": "blessure" },            "tags": ["sante"] },
+          { "word": "حُمَّى",         "transliteration": "7omma",    "translation": { "fr": "fièvre" },              "tags": ["sante"] },
+          { "word": "سُعَال",         "transliteration": "so3al",    "translation": { "fr": "toux" },                "tags": ["sante"] },
+          { "word": "رْشَح",          "transliteration": "rcha7",    "translation": { "fr": "rhume" },               "tags": ["sante"] },
+          { "word": "أَلَم",          "transliteration": "alam",     "translation": { "fr": "douleur" },             "tags": ["sante"] },
+          { "word": "صْدَاع",         "transliteration": "Sda3",     "translation": { "fr": "mal de tête" },         "tags": ["sante"] },
+          { "word": "إِسْهَال",       "transliteration": "ishal",    "translation": { "fr": "diarrhée" },            "tags": ["sante"] },
+          { "word": "قَيْء",          "transliteration": "qi2",      "translation": { "fr": "vomissement" },         "tags": ["sante"] },
+          { "word": "ضْغَط الدَّم",   "transliteration": "DaGht ddm","translation": { "fr": "tension artérielle" },  "tags": ["sante"] },
+          { "word": "سُكَّر",         "transliteration": "sokkar",   "translation": { "fr": "diabète" },             "tags": ["sante"] },
+          { "word": "تْنَفُّس",        "transliteration": "tnaffos",  "translation": { "fr": "respiration" },         "tags": ["sante"] },
+          { "word": "أُكْسِجِين",     "transliteration": "oksijin",  "translation": { "fr": "oxygène" },             "tags": ["sante"] },
+          { "word": "تْحَالِيل",      "transliteration": "t7alil",   "translation": { "fr": "analyses médicales" },  "tags": ["sante"] }
+        ]
+      }
+    ]
+  }
+}

@@ -4,6 +4,9 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useUser, type LangTrack } from '@/context/UserContext';
 import { getTracks, type Track } from '@/lib/api';
+import HomeLogoLink from '@/components/HomeLogoLink';
+import LottiePlayer from '@/components/LottiePlayer';
+import { TRACK_COLORS, TRACK_GRADIENT, ONBOARDING_BG } from '@/lib/trackColors';
 
 type TrackCard = {
   id: LangTrack;
@@ -33,12 +36,6 @@ const FALLBACK: TrackCard[] = [
   },
 ];
 
-const BOTH_CARD: TrackCard = {
-  id: 'BOTH', emoji: '⭐', title: 'Les deux parcours', subtitle: 'دارجة + فصحى',
-  description: 'Commence par Darija et enrichis avec le littéraire. Recommandé pour aller loin.',
-  color: '#58cc02', shadow: '#46a302',
-};
-
 /** Darken a #rrggbb hex color by pct (0..1). */
 function darken(hex: string, pct = 0.2): string {
   const m = /^#?([a-f\d]{6})$/i.exec(hex.trim());
@@ -67,11 +64,11 @@ export default function TrackSelectionPage() {
   }, []);
 
   const cards = useMemo<TrackCard[]>(() => {
-    if (!dbTracks || dbTracks.length === 0) return [...FALLBACK, BOTH_CARD];
+    if (!dbTracks || dbTracks.length === 0) return FALLBACK;
     const sorted = [...dbTracks]
       .filter((t) => t.isPublished !== false)
       .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
-    const out = sorted.map<TrackCard>((t) => {
+    return sorted.map<TrackCard>((t) => {
       const fallback = FALLBACK.find((f) => f.id === t.code);
       const color = t.color || fallback?.color || '#58cc02';
       return {
@@ -84,23 +81,28 @@ export default function TrackSelectionPage() {
         shadow: darken(color, 0.22),
       };
     });
-    return [...out, BOTH_CARD];
   }, [dbTracks]);
 
   const handleContinue = () => {
     if (selected) setLangTrack(selected);
   };
 
+  const barColor = selected ? TRACK_COLORS[selected].color : '#afafaf';
+
   return (
     <div style={{
       display: 'flex', flexDirection: 'column', alignItems: 'center',
       minHeight: '100vh', width: '100vw',
-      backgroundColor: '#ffffff',
+      backgroundColor: ONBOARDING_BG,
       fontFamily: '"Nunito", "Inter", sans-serif',
     }}>
-      <div style={{ width: '100%', maxWidth: '1000px', padding: '24px 20px' }}>
-        <div style={{ height: '16px', backgroundColor: '#e5e5e5', borderRadius: '10px', overflow: 'hidden' }}>
-          <div style={{ width: '70%', height: '100%', backgroundColor: '#58cc02', borderRadius: '10px', transition: 'width 0.5s ease-out' }} />
+      {/* Bande décorative 3-parcours */}
+      <div style={{ width: '100%', height: 4, background: TRACK_GRADIENT }} />
+
+      <div style={{ width: '100%', maxWidth: '1000px', padding: '16px 20px 20px', display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <HomeLogoLink />
+        <div style={{ flex: 1, height: '16px', backgroundColor: '#e5e5e5', borderRadius: '10px', overflow: 'hidden' }}>
+          <div style={{ width: '70%', height: '100%', backgroundColor: barColor, borderRadius: '10px', transition: 'all 0.3s ease-out' }} />
         </div>
       </div>
 
@@ -109,8 +111,12 @@ export default function TrackSelectionPage() {
         padding: '20px', width: '100%', maxWidth: '1000px',
       }}>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px', marginBottom: '40px', justifyContent: 'center' }}>
-          <div className="animate-mascot" style={{ width: '140px', flexShrink: 0 }}>
-            <img src={mascot} alt="Mascot" style={{ width: '100%', height: 'auto' }} />
+          <div style={{ width: '180px', flexShrink: 0 }}>
+            <LottiePlayer
+              src="mascot-with-bird.json"
+              size="100%"
+              fallback={<img src={mascot} alt="Mascot" style={{ width: '100%', height: 'auto' }} />}
+            />
           </div>
           <div style={{
             position: 'relative', backgroundColor: 'white',
@@ -218,7 +224,7 @@ export default function TrackSelectionPage() {
               disabled={!selected}
               onClick={handleContinue}
               style={{
-                backgroundColor: !selected ? '#e5e5e5' : '#58cc02',
+                backgroundColor: !selected ? '#e5e5e5' : TRACK_COLORS[selected].color,
                 color: !selected ? '#afafaf' : 'white',
                 border: 'none',
                 borderRadius: '16px',
@@ -227,10 +233,10 @@ export default function TrackSelectionPage() {
                 fontWeight: 900,
                 letterSpacing: '0.08em',
                 cursor: !selected ? 'default' : 'pointer',
-                boxShadow: `0 5px 0 ${!selected ? '#afafaf' : '#46a302'}`,
+                boxShadow: `0 5px 0 ${!selected ? '#afafaf' : TRACK_COLORS[selected].shadow}`,
                 width: '100%',
                 textTransform: 'uppercase',
-                transition: 'all 0.1s',
+                transition: 'all 0.15s',
               }}
             >
               Continuer

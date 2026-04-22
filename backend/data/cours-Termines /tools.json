@@ -1,0 +1,45 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-outils",
+      "title": "Vocabulaire — Outils",
+      "subtitle": "Bricolage et équipement",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 140,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-outils-base",
+        "title": "Les outils",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "مْطَرْقَة",          "transliteration": "mTaqa",           "translation": { "fr": "marteau" },           "tags": ["outil"] },
+          { "word": "مْفَكّ",             "transliteration": "mfakk",           "translation": { "fr": "tournevis" },          "tags": ["outil"] },
+          { "word": "بُرْغِي",            "transliteration": "borghi",          "translation": { "fr": "vis" },                "tags": ["outil"] },
+          { "word": "مْسْمَار",           "transliteration": "msmar",           "translation": { "fr": "clou" },               "tags": ["outil"] },
+          { "word": "كْمَّاشَة",           "transliteration": "kmacha",          "translation": { "fr": "pince" },              "tags": ["outil"] },
+          { "word": "مِنْشَار",            "transliteration": "menshar",         "translation": { "fr": "scie" },               "tags": ["outil"] },
+          { "word": "مِتْر",              "transliteration": "mitr",            "translation": { "fr": "mètre" },              "tags": ["outil"] },
+          { "word": "مْفْتَاح رْبَط",      "transliteration": "mfta7 rbat",      "translation": { "fr": "clé à molette" },      "tags": ["outil"] },
+          { "word": "صَنْدُوق العُدَّة",    "transliteration": "sondouq l3dda",   "translation": { "fr": "boîte à outils" },     "tags": ["outil"] },
+          { "word": "لَاصِق",             "transliteration": "lasq",            "translation": { "fr": "colle" },              "tags": ["outil"] },
+          { "word": "شْرِيط لَاصِق",      "transliteration": "chrit lasq",      "translation": { "fr": "ruban adhésif" },      "tags": ["outil"] },
+          { "word": "كْمَّاشَة كَهْرَبَائِيَّة","transliteration": "kmacha kahraba2iya","translation": { "fr": "pince électrique" },"tags": ["outil"] },
+          { "word": "مْفَكّ بْرَاغِي",     "transliteration": "mfakk braghi",    "translation": { "fr": "tournevis cruciforme" },"tags": ["outil"] },
+          { "word": "مْفْتَاح أَنَابِيب",   "transliteration": "mfta7 anabib",    "translation": { "fr": "clé à tuyau" },        "tags": ["outil"] },
+          { "word": "مُسْتَوَى",           "transliteration": "mostawa",         "translation": { "fr": "niveau à bulle" },     "tags": ["outil"] },
+          { "word": "مِثْقَاب",            "transliteration": "mthqeb",          "translation": { "fr": "perceuse" },           "tags": ["outil"] },
+          { "word": "رْمْل وَرَق",        "transliteration": "rml wrq",         "translation": { "fr": "papier de verre" },    "tags": ["outil"] },
+          { "word": "كْمَّاشَة قْطَع",     "transliteration": "kmacha qTa3",     "translation": { "fr": "pince coupante" },     "tags": ["outil"] },
+          { "word": "كْمَّاشَة ضَغْط",     "transliteration": "kmacha DaghT",    "translation": { "fr": "pince multiprise" },   "tags": ["outil"] },
+          { "word": "مْفْتَاح صْوَامِيل",   "transliteration": "mfta7 SwaMil",    "translation": { "fr": "clé pour écrous" },    "tags": ["outil"] }
+        ]
+      }
+    ]
+  }
+}

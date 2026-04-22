@@ -1,0 +1,173 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-conjugaison",
+      "title": "Vocabulaire — Conjugaison",
+      "subtitle": "Conjuguer les verbes essentiels",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 270,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-conjugaison-passe",
+        "title": "Conjugaison — Passé",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "أَنَا مْشِيت",      "transliteration": "ana mchit",       "translation": { "fr": "je suis allé(e)" },           "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "نْتَ مْشِيتِي",     "transliteration": "nta mchiti",      "translation": { "fr": "tu es allé (m)" },            "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "نْتِ مْشِيتِي",     "transliteration": "nti mchiti",      "translation": { "fr": "tu es allée (f)" },           "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "هُوَ مْشَى",         "transliteration": "howa mcha",       "translation": { "fr": "il est allé" },               "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "هِيَ مْشَات",        "transliteration": "hiya mchat",      "translation": { "fr": "elle est allée" },            "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "حْنَا مْشِينَا",     "transliteration": "7na mchina",      "translation": { "fr": "nous sommes allé(e)s" },      "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "نْتُومَا مْشِيتُو",  "transliteration": "ntouma mchitou",  "translation": { "fr": "vous êtes allé(e)s" },        "tags": ["conjugaison", "passe", "mcha"] },
+          { "word": "هُومَا مْشَاو",      "transliteration": "houma mchaw",     "translation": { "fr": "ils/elles sont allé(e)s" },   "tags": ["conjugaison", "passe", "mcha"] },
+
+          { "word": "أَنَا بْغِيت",       "transliteration": "ana bghit",       "translation": { "fr": "j'ai voulu" },                "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "نْتَ بْغِيتِي",      "transliteration": "nta bghiti",      "translation": { "fr": "tu as voulu (m)" },           "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "نْتِ بْغِيتِي",      "transliteration": "nti bghiti",      "translation": { "fr": "tu as voulu (f)" },           "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "هُوَ بْغَى",          "transliteration": "howa bgha",       "translation": { "fr": "il a voulu" },                "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "هِيَ بْغَات",         "transliteration": "hiya bghat",      "translation": { "fr": "elle a voulu" },              "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "حْنَا بْغِينَا",      "transliteration": "7na bghina",      "translation": { "fr": "nous avons voulu" },          "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "نْتُومَا بْغِيتُو",   "transliteration": "ntouma bghitou",  "translation": { "fr": "vous avez voulu" },           "tags": ["conjugaison", "passe", "bgha"] },
+          { "word": "هُومَا بْغَاو",       "transliteration": "houma bghaw",     "translation": { "fr": "ils/elles ont voulu" },       "tags": ["conjugaison", "passe", "bgha"] },
+
+          { "word": "أَنَا كْتَبْت",       "transliteration": "ana ktebt",       "translation": { "fr": "j'ai écrit" },                "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "نْتَ كْتَبْتِي",      "transliteration": "nta ktebti",      "translation": { "fr": "tu as écrit (m)" },           "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "نْتِ كْتَبْتِي",      "transliteration": "nti ktebti",      "translation": { "fr": "tu as écrit (f)" },           "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "هُوَ كْتَب",           "transliteration": "howa kteb",       "translation": { "fr": "il a écrit" },                "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "هِيَ كْتَبَات",        "transliteration": "hiya ktebat",     "translation": { "fr": "elle a écrit" },              "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "حْنَا كْتَبْنَا",      "transliteration": "7na ktebna",      "translation": { "fr": "nous avons écrit" },          "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "نْتُومَا كْتَبْتُو",   "transliteration": "ntouma ktebtou",  "translation": { "fr": "vous avez écrit" },           "tags": ["conjugaison", "passe", "kteb"] },
+          { "word": "هُومَا كْتَبُو",       "transliteration": "houma ktebou",    "translation": { "fr": "ils/elles ont écrit" },       "tags": ["conjugaison", "passe", "kteb"] },
+
+          { "word": "أَنَا فْهَمْت",        "transliteration": "ana fhemt",       "translation": { "fr": "j'ai compris" },              "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "نْتَ فْهَمْتِي",       "transliteration": "nta fhemti",      "translation": { "fr": "tu as compris (m)" },         "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "نْتِ فْهَمْتِي",       "transliteration": "nti fhemti",      "translation": { "fr": "tu as compris (f)" },         "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "هُوَ فْهَم",            "transliteration": "howa fhem",       "translation": { "fr": "il a compris" },              "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "هِيَ فْهَمَات",         "transliteration": "hiya fhemat",     "translation": { "fr": "elle a compris" },            "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "حْنَا فْهَمْنَا",       "transliteration": "7na fhemna",      "translation": { "fr": "nous avons compris" },        "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "نْتُومَا فْهَمْتُو",    "transliteration": "ntouma fhemtou",  "translation": { "fr": "vous avez compris" },         "tags": ["conjugaison", "passe", "fhem"] },
+          { "word": "هُومَا فْهَمُو",        "transliteration": "houma fhemou",    "translation": { "fr": "ils/elles ont compris" },     "tags": ["conjugaison", "passe", "fhem"] },
+
+          { "word": "أَنَا شْرَبْت",         "transliteration": "ana chrbt",       "translation": { "fr": "j'ai bu" },                   "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "نْتَ شْرَبْتِي",        "transliteration": "nta chrbti",      "translation": { "fr": "tu as bu (m)" },              "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "نْتِ شْرَبْتِي",        "transliteration": "nti chrbti",      "translation": { "fr": "tu as bu (f)" },              "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "هُوَ شْرَب",             "transliteration": "howa chrb",       "translation": { "fr": "il a bu" },                   "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "هِيَ شْرَبَات",          "transliteration": "hiya chrbat",     "translation": { "fr": "elle a bu" },                 "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "حْنَا شْرَبْنَا",        "transliteration": "7na chrbna",      "translation": { "fr": "nous avons bu" },             "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "نْتُومَا شْرَبْتُو",     "transliteration": "ntouma chrbtou",  "translation": { "fr": "vous avez bu" },              "tags": ["conjugaison", "passe", "chrb"] },
+          { "word": "هُومَا شْرَبُو",         "transliteration": "houma chrbou",    "translation": { "fr": "ils/elles ont bu" },          "tags": ["conjugaison", "passe", "chrb"] }
+        ]
+      },
+      {
+        "slug": "vocab-conjugaison-present",
+        "title": "Conjugaison — Présent",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "أَنَا كَنْمْشِي",        "transliteration": "ana kanmchi",       "translation": { "fr": "je marche / je vais" },       "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "نْتَ كَتْمْشِي",         "transliteration": "nta katmchi",       "translation": { "fr": "tu marches (m)" },            "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "نْتِ كَتْمْشِي",         "transliteration": "nti katmchi",       "translation": { "fr": "tu marches (f)" },            "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "هُوَ كَيْمْشِي",          "transliteration": "howa kaymchi",      "translation": { "fr": "il marche" },                 "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "هِيَ كَتْمْشِي",          "transliteration": "hiya katmchi",      "translation": { "fr": "elle marche" },               "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "حْنَا كَنْمْشِيُو",       "transliteration": "7na kanmchiu",      "translation": { "fr": "nous marchons" },             "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "نْتُومَا كَتْمْشِيُو",    "transliteration": "ntouma katmchiu",   "translation": { "fr": "vous marchez" },              "tags": ["conjugaison", "present", "mcha"] },
+          { "word": "هُومَا كَيْمْشِيُو",      "transliteration": "houma kaymchiu",    "translation": { "fr": "ils/elles marchent" },        "tags": ["conjugaison", "present", "mcha"] },
+
+          { "word": "أَنَا كَنْبْغِي",         "transliteration": "ana kanbghi",       "translation": { "fr": "je veux" },                   "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "نْتَ كَتْبْغِي",          "transliteration": "nta katbghi",       "translation": { "fr": "tu veux (m)" },               "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "نْتِ كَتْبْغِي",          "transliteration": "nti katbghi",       "translation": { "fr": "tu veux (f)" },               "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "هُوَ كَيْبْغِي",           "transliteration": "howa kaybghi",      "translation": { "fr": "il veut" },                   "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "هِيَ كَتْبْغِي",           "transliteration": "hiya katbghi",      "translation": { "fr": "elle veut" },                 "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "حْنَا كَنْبْغِيُو",        "transliteration": "7na kanbghiu",      "translation": { "fr": "nous voulons" },              "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "نْتُومَا كَتْبْغِيُو",     "transliteration": "ntouma katbghiu",   "translation": { "fr": "vous voulez" },               "tags": ["conjugaison", "present", "bgha"] },
+          { "word": "هُومَا كَيْبْغِيُو",       "transliteration": "houma kaybghiu",    "translation": { "fr": "ils/elles veulent" },         "tags": ["conjugaison", "present", "bgha"] },
+
+          { "word": "أَنَا كَنْكْتَب",          "transliteration": "ana kankteb",       "translation": { "fr": "j'écris" },                   "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "نْتَ كَتْكْتَب",           "transliteration": "nta katkteb",       "translation": { "fr": "tu écris (m)" },              "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "نْتِ كَتْكْتَبِي",         "transliteration": "nti katktebi",      "translation": { "fr": "tu écris (f)" },              "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "هُوَ كَيْكْتَب",            "transliteration": "howa kaykteb",      "translation": { "fr": "il écrit" },                  "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "هِيَ كَتْكْتَب",            "transliteration": "hiya katkteb",      "translation": { "fr": "elle écrit" },                "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "حْنَا كَنْكْتَبُو",         "transliteration": "7na kanktebu",      "translation": { "fr": "nous écrivons" },             "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "نْتُومَا كَتْكْتَبُو",      "transliteration": "ntouma katktebu",   "translation": { "fr": "vous écrivez" },              "tags": ["conjugaison", "present", "kteb"] },
+          { "word": "هُومَا كَيْكْتَبُو",        "transliteration": "houma kayktebu",    "translation": { "fr": "ils/elles écrivent" },        "tags": ["conjugaison", "present", "kteb"] },
+
+          { "word": "أَنَا كَنْفْهَم",           "transliteration": "ana kanfham",       "translation": { "fr": "je comprends" },              "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "نْتَ كَتْفْهَم",            "transliteration": "nta katfham",       "translation": { "fr": "tu comprends (m)" },          "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "نْتِ كَتْفْهَمِي",          "transliteration": "nti katfhami",      "translation": { "fr": "tu comprends (f)" },          "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "هُوَ كَيْفْهَم",             "transliteration": "howa kayfham",      "translation": { "fr": "il comprend" },               "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "هِيَ كَتْفْهَم",             "transliteration": "hiya katfham",      "translation": { "fr": "elle comprend" },             "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "حْنَا كَنْفْهْمُو",          "transliteration": "7na kanfhmu",       "translation": { "fr": "nous comprenons" },           "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "نْتُومَا كَتْفْهْمُو",       "transliteration": "ntouma katfhmu",    "translation": { "fr": "vous comprenez" },            "tags": ["conjugaison", "present", "fhem"] },
+          { "word": "هُومَا كَيْفْهْمُو",         "transliteration": "houma kayfhmu",     "translation": { "fr": "ils/elles comprennent" },     "tags": ["conjugaison", "present", "fhem"] },
+
+          { "word": "أَنَا كَنْشْرَب",            "transliteration": "ana kanshrab",      "translation": { "fr": "je bois" },                   "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "نْتَ كَتْشْرَب",             "transliteration": "nta katshrab",      "translation": { "fr": "tu bois (m)" },               "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "نْتِ كَتْشْرَبِي",           "transliteration": "nti katshrabi",     "translation": { "fr": "tu bois (f)" },               "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "هُوَ كَيْشْرَب",              "transliteration": "howa kayshrab",     "translation": { "fr": "il boit" },                   "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "هِيَ كَتْشْرَب",              "transliteration": "hiya katshrab",     "translation": { "fr": "elle boit" },                 "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "حْنَا كَنْشْرَبُو",           "transliteration": "7na kanshrabu",     "translation": { "fr": "nous buvons" },               "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "نْتُومَا كَتْشْرَبُو",        "transliteration": "ntouma katshrabu",  "translation": { "fr": "vous buvez" },                "tags": ["conjugaison", "present", "chrb"] },
+          { "word": "هُومَا كَيْشْرَبُو",          "transliteration": "houma kayshrabu",   "translation": { "fr": "ils/elles boivent" },         "tags": ["conjugaison", "present", "chrb"] }
+        ]
+      },
+      {
+        "slug": "vocab-conjugaison-futur",
+        "title": "Conjugaison — Futur",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "أَنَا غَادِي نْمْشِي",        "transliteration": "ana ghadi nmchi",        "translation": { "fr": "je vais aller" },                "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "نْتَ غَادِي تْمْشِي",         "transliteration": "nta ghadi tmchi",        "translation": { "fr": "tu vas aller (m)" },             "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "نْتِ غَادِي تْمْشِي",         "transliteration": "nti ghadi tmchi",        "translation": { "fr": "tu vas aller (f)" },             "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "هُوَ غَادِي يْمْشِي",          "transliteration": "howa ghadi ymchi",       "translation": { "fr": "il va aller" },                  "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "هِيَ غَادِي تْمْشِي",          "transliteration": "hiya ghadi tmchi",       "translation": { "fr": "elle va aller" },                "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "حْنَا غَادِي نْمْشِيُو",       "transliteration": "7na ghadi nmchiu",       "translation": { "fr": "nous allons aller" },            "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "نْتُومَا غَادِي تْمْشِيُو",    "transliteration": "ntouma ghadi tmchiu",    "translation": { "fr": "vous allez aller" },             "tags": ["conjugaison", "futur", "mcha"] },
+          { "word": "هُومَا غَادِي يْمْشِيُو",      "transliteration": "houma ghadi ymchiu",     "translation": { "fr": "ils/elles vont aller" },         "tags": ["conjugaison", "futur", "mcha"] },
+
+          { "word": "أَنَا غَادِي نْبْغِي",         "transliteration": "ana ghadi nbghi",        "translation": { "fr": "je vais vouloir" },              "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "نْتَ غَادِي تْبْغِي",          "transliteration": "nta ghadi tbghi",        "translation": { "fr": "tu vas vouloir (m)" },           "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "نْتِ غَادِي تْبْغِي",          "transliteration": "nti ghadi tbghi",        "translation": { "fr": "tu vas vouloir (f)" },           "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "هُوَ غَادِي يْبْغِي",           "transliteration": "howa ghadi ybghi",       "translation": { "fr": "il va vouloir" },                "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "هِيَ غَادِي تْبْغِي",           "transliteration": "hiya ghadi tbghi",       "translation": { "fr": "elle va vouloir" },              "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "حْنَا غَادِي نْبْغِيُو",        "transliteration": "7na ghadi nbghiu",       "translation": { "fr": "nous allons vouloir" },          "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "نْتُومَا غَادِي تْبْغِيُو",     "transliteration": "ntouma ghadi tbghiu",    "translation": { "fr": "vous allez vouloir" },           "tags": ["conjugaison", "futur", "bgha"] },
+          { "word": "هُومَا غَادِي يْبْغِيُو",       "transliteration": "houma ghadi ybghiu",     "translation": { "fr": "ils/elles vont vouloir" },       "tags": ["conjugaison", "futur", "bgha"] },
+
+          { "word": "أَنَا غَادِي نْكْتَب",          "transliteration": "ana ghadi nkteb",        "translation": { "fr": "je vais écrire" },               "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "نْتَ غَادِي تْكْتَب",           "transliteration": "nta ghadi tkteb",        "translation": { "fr": "tu vas écrire (m)" },            "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "نْتِ غَادِي تْكْتَبِي",         "transliteration": "nti ghadi tktebi",       "translation": { "fr": "tu vas écrire (f)" },            "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "هُوَ غَادِي يْكْتَب",            "transliteration": "howa ghadi ykteb",       "translation": { "fr": "il va écrire" },                 "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "هِيَ غَادِي تْكْتَب",            "transliteration": "hiya ghadi tkteb",       "translation": { "fr": "elle va écrire" },               "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "حْنَا غَادِي نْكْتَبُو",         "transliteration": "7na ghadi nktebu",       "translation": { "fr": "nous allons écrire" },           "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "نْتُومَا غَادِي تْكْتَبُو",      "transliteration": "ntouma ghadi tktebu",    "translation": { "fr": "vous allez écrire" },            "tags": ["conjugaison", "futur", "kteb"] },
+          { "word": "هُومَا غَادِي يْكْتَبُو",        "transliteration": "houma ghadi yktebu",     "translation": { "fr": "ils/elles vont écrire" },        "tags": ["conjugaison", "futur", "kteb"] },
+
+          { "word": "أَنَا غَادِي نْفْهَم",           "transliteration": "ana ghadi nfham",        "translation": { "fr": "je vais comprendre" },           "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "نْتَ غَادِي تْفْهَم",            "transliteration": "nta ghadi tfham",        "translation": { "fr": "tu vas comprendre (m)" },        "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "نْتِ غَادِي تْفْهَمِي",          "transliteration": "nti ghadi tfhami",       "translation": { "fr": "tu vas comprendre (f)" },        "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "هُوَ غَادِي يْفْهَم",             "transliteration": "howa ghadi yfham",       "translation": { "fr": "il va comprendre" },             "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "هِيَ غَادِي تْفْهَم",             "transliteration": "hiya ghadi tfham",       "translation": { "fr": "elle va comprendre" },           "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "حْنَا غَادِي نْفْهْمُو",          "transliteration": "7na ghadi nfhmu",        "translation": { "fr": "nous allons comprendre" },       "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "نْتُومَا غَادِي تْفْهْمُو",       "transliteration": "ntouma ghadi tfhmu",     "translation": { "fr": "vous allez comprendre" },        "tags": ["conjugaison", "futur", "fhem"] },
+          { "word": "هُومَا غَادِي يْفْهْمُو",         "transliteration": "houma ghadi yfhmu",      "translation": { "fr": "ils/elles vont comprendre" },    "tags": ["conjugaison", "futur", "fhem"] },
+
+          { "word": "أَنَا غَادِي نْشْرَب",            "transliteration": "ana ghadi nshrab",       "translation": { "fr": "je vais boire" },                "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "نْتَ غَادِي تْشْرَب",             "transliteration": "nta ghadi tshrab",       "translation": { "fr": "tu vas boire (m)" },             "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "نْتِ غَادِي تْشْرَبِي",           "transliteration": "nti ghadi tshrabi",      "translation": { "fr": "tu vas boire (f)" },             "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "هُوَ غَادِي يْشْرَب",              "transliteration": "howa ghadi yshrab",      "translation": { "fr": "il va boire" },                  "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "هِيَ غَادِي تْشْرَب",              "transliteration": "hiya ghadi tshrab",      "translation": { "fr": "elle va boire" },                "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "حْنَا غَادِي نْشْرَبُو",           "transliteration": "7na ghadi nshrabu",      "translation": { "fr": "nous allons boire" },            "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "نْتُومَا غَادِي تْشْرَبُو",        "transliteration": "ntouma ghadi tshrabu",   "translation": { "fr": "vous allez boire" },             "tags": ["conjugaison", "futur", "chrb"] },
+          { "word": "هُومَا غَادِي يْشْرَبُو",          "transliteration": "houma ghadi yshrabu",    "translation": { "fr": "ils/elles vont boire" },         "tags": ["conjugaison", "futur", "chrb"] }
+        ]
+      }
+    ]
+  }
+}

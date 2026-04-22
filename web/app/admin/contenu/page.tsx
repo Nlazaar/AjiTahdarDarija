@@ -3,14 +3,22 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { EXERCISE_TYPES, EXERCISE_REGISTRY } from "@/lib/exerciseRegistry";
+import ExercisePreview from "@/components/exercises/ExercisePreview";
+import { MOROCCO_CITIES } from "@/data/morocco-cities";
+import { ConfirmProvider, useConfirm } from "@/components/ConfirmDialog";
+import { SortableList, DragHandle } from "@/components/admin/SortableList";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
 type Track = "DARIJA" | "MSA" | "RELIGION";
 
 interface CityInfo {
+  cityKey?: string;
   emoji?: string;
+  /** Bandeau de section (CityCard). Toujours visible. */
   photoUrl?: string;
+  /** Carte postale (CartePostalePanel), révélée à 100%. Fallback → photoUrl. */
+  postcardUrl?: string;
   history?: string;
   typicalWord?: { ar?: string; latin?: string; fr?: string };
   food?: string;
@@ -60,6 +68,7 @@ interface VocabRow {
   audioUrl: string | null;
   imageUrl: string | null;
   languageId: string;
+  isPublished?: boolean;
 }
 
 interface Language { id: string; code: string; name: string }
@@ -70,6 +79,7 @@ interface AuthoredExercise {
   order: number;
   typology: string;
   config: any;
+  isPublished?: boolean;
 }
 
 // ── Styles partagés ─────────────────────────────────────────────────────────
@@ -89,7 +99,7 @@ const rowBase: React.CSSProperties = { padding: "10px 14px", borderBottom: "1px 
 const TRACK_BADGE: Record<Track, { label: string; color: string }> = {
   DARIJA: { label: "🇲🇦 Darija", color: "#58cc02" },
   MSA: { label: "📖 MSA", color: "#1cb0f6" },
-  RELIGION: { label: "☪︎ Rel.", color: "#a855f7" },
+  RELIGION: { label: "☪︎ Religion", color: "#a855f7" },
 };
 
 // ── Modal réutilisable ──────────────────────────────────────────────────────
@@ -113,7 +123,6 @@ function Modal({
   if (!open) return null;
   return (
     <div
-      onClick={onClose}
       style={{
         position: "fixed", inset: 0, zIndex: 1000,
         background: "rgba(0,0,0,0.55)", backdropFilter: "blur(3px)",
@@ -122,7 +131,6 @@ function Modal({
       }}
     >
       <div
-        onClick={e => e.stopPropagation()}
         style={{
           width: "100%", maxWidth: width, maxHeight: "90vh", overflow: "auto",
           background: "var(--c-card)", border: "1px solid var(--c-border)",
@@ -142,6 +150,107 @@ function Modal({
         </div>
         <div style={{ padding: 18 }}>{children}</div>
       </div>
+    </div>
+  );
+}
+
+// ── Photo uploader ──────────────────────────────────────────────────────────
+
+function PhotoUploader({
+  moduleId,
+  photoUrl,
+  kind = "section",
+  onUploaded,
+  onError,
+}: {
+  moduleId?: string;
+  photoUrl: string;
+  kind?: "section" | "postcard";
+  onUploaded: (url: string) => void;
+  onError: (msg: string) => void;
+}) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const disabled = !moduleId;
+  const label = kind === "postcard" ? "Carte postale" : "Photo";
+
+  async function handleFile(file: File) {
+    if (!moduleId) return;
+    if (file.size > 5 * 1024 * 1024) {
+      onError(`${label}: fichier > 5 Mo`);
+      return;
+    }
+    setBusy(true);
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      const r = await fetch(`/api/admin/modules/${moduleId}/photo?kind=${kind}`, {
+        method: "POST",
+        credentials: "include",
+        body: fd,
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data?.message || data?.error || `HTTP ${r.status}`);
+      onUploaded(data.url);
+    } catch (e: any) {
+      onError(`${label}: ${e.message}`);
+    } finally {
+      setBusy(false);
+      if (inputRef.current) inputRef.current.value = "";
+    }
+  }
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      {photoUrl ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={photoUrl}
+          alt="Photo ville"
+          style={{
+            width: 64, height: 48, objectFit: "cover",
+            borderRadius: 8, border: "1px solid var(--c-border)",
+            flexShrink: 0,
+          }}
+        />
+      ) : (
+        <div style={{
+          width: 64, height: 48, borderRadius: 8,
+          border: "1px dashed var(--c-border)",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          color: "var(--c-sub)", fontSize: 10, flexShrink: 0,
+        }}>—</div>
+      )}
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/jpeg,image/png,image/webp,image/avif"
+        style={{ display: "none" }}
+        onChange={e => {
+          const f = e.target.files?.[0];
+          if (f) handleFile(f);
+        }}
+      />
+      <button
+        type="button"
+        disabled={disabled || busy}
+        onClick={() => inputRef.current?.click()}
+        style={{
+          padding: "8px 12px", borderRadius: 8,
+          border: "1px solid var(--c-border)", background: "var(--c-card)",
+          color: disabled ? "var(--c-sub)" : "var(--c-text)",
+          fontSize: 12, fontWeight: 700,
+          cursor: disabled ? "not-allowed" : "pointer",
+          opacity: busy ? 0.6 : 1,
+        }}
+      >
+        {busy ? "Upload…" : photoUrl ? "Remplacer" : "Choisir une image"}
+      </button>
+      {disabled && (
+        <span style={{ fontSize: 10, color: "var(--c-sub)" }}>
+          Enregistre la section d'abord
+        </span>
+      )}
     </div>
   );
 }
@@ -329,11 +438,20 @@ const btnGhost: React.CSSProperties = {
 // ── Page principale ─────────────────────────────────────────────────────────
 
 export default function AdminContenuPage() {
+  return (
+    <ConfirmProvider>
+      <AdminContenuInner />
+    </ConfirmProvider>
+  );
+}
+
+function AdminContenuInner() {
   const [modules, setModules] = useState<ModuleRow[]>([]);
   const [lessons, setLessons] = useState<LessonRow[]>([]);
   const [vocab, setVocab] = useState<VocabRow[]>([]);
   const [languages, setLanguages] = useState<Language[]>([]);
   const [trackFilter, setTrackFilter] = useState<Track | "ALL">("ALL");
+  const [search, setSearch] = useState("");
   const [selectedModuleId, setSelectedModuleId] = useState<string | null>(null);
   const [selectedLessonId, setSelectedLessonId] = useState<string | null>(null);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
@@ -361,7 +479,7 @@ export default function AdminContenuPage() {
   const reloadVocab = useCallback(async (lessonId: string | null) => {
     if (!lessonId) { setVocab([]); return; }
     try {
-      const vs = await api<VocabRow[]>(`/api/admin/vocabulary?lessonId=${encodeURIComponent(lessonId)}`);
+      const vs = await api<VocabRow[]>(`/api/admin/vocabulary?lessonId=${encodeURIComponent(lessonId)}&includeDrafts=1`);
       setVocab(Array.isArray(vs) ? vs : []);
     } catch (e: any) { flash(false, `Vocabulaire: ${e.message}`); }
   }, [flash]);
@@ -378,19 +496,72 @@ export default function AdminContenuPage() {
   // When lesson changes → reload vocab
   useEffect(() => { reloadVocab(selectedLessonId); }, [selectedLessonId, reloadVocab]);
 
+  // Reset sélection si le module actif ne correspond plus au filtre de track
+  useEffect(() => {
+    if (!selectedModuleId) return;
+    const mod = modules.find(m => m.id === selectedModuleId);
+    if (!mod) return;
+    if (trackFilter !== "ALL" && mod.track !== trackFilter) {
+      setSelectedModuleId(null);
+      setSelectedLessonId(null);
+      setVocab([]);
+    }
+  }, [trackFilter, selectedModuleId, modules]);
+
+  // Si la leçon sélectionnée n'appartient plus au module actif, la reset
+  useEffect(() => {
+    if (!selectedLessonId) return;
+    const lesson = lessons.find(l => l.id === selectedLessonId);
+    if (!lesson) return;
+    if (selectedModuleId && lesson.moduleId !== selectedModuleId) {
+      setSelectedLessonId(null);
+      setVocab([]);
+    }
+  }, [selectedModuleId, selectedLessonId, lessons]);
+
   // Derived lists
+  const searchNorm = useMemo(() => search.trim().toLowerCase(), [search]);
+
+  const lessonMatches = useCallback((l: LessonRow) => {
+    if (!searchNorm) return false;
+    return (l.title ?? "").toLowerCase().includes(searchNorm)
+      || (l.slug ?? "").toLowerCase().includes(searchNorm);
+  }, [searchNorm]);
+
+  const moduleMatches = useCallback((m: ModuleRow) => {
+    if (!searchNorm) return true;
+    const self =
+      (m.title ?? "").toLowerCase().includes(searchNorm)
+      || (m.titleAr ?? "").toLowerCase().includes(searchNorm)
+      || (m.subtitle ?? "").toLowerCase().includes(searchNorm)
+      || (m.slug ?? "").toLowerCase().includes(searchNorm);
+    if (self) return true;
+    return lessons.some(l => l.moduleId === m.id && !l.isDeleted && lessonMatches(l));
+  }, [searchNorm, lessons, lessonMatches]);
+
   const filteredModules = useMemo(() => {
     return modules
       .filter(m => trackFilter === "ALL" || m.track === trackFilter)
+      .filter(moduleMatches)
       .sort((a, b) => a.track.localeCompare(b.track) || a.canonicalOrder - b.canonicalOrder || a.level - b.level);
-  }, [modules, trackFilter]);
+  }, [modules, trackFilter, moduleMatches]);
 
   const moduleLessons = useMemo(() => {
     if (!selectedModuleId) return [];
-    return lessons
+    const all = lessons
       .filter(l => l.moduleId === selectedModuleId && !l.isDeleted)
       .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
-  }, [lessons, selectedModuleId]);
+    if (!searchNorm) return all;
+    const mod = modules.find(m => m.id === selectedModuleId);
+    const moduleSelfMatches = !!mod && (
+      (mod.title ?? "").toLowerCase().includes(searchNorm)
+      || (mod.titleAr ?? "").toLowerCase().includes(searchNorm)
+      || (mod.subtitle ?? "").toLowerCase().includes(searchNorm)
+      || (mod.slug ?? "").toLowerCase().includes(searchNorm)
+    );
+    if (moduleSelfMatches) return all;
+    return all.filter(lessonMatches);
+  }, [lessons, selectedModuleId, searchNorm, modules, lessonMatches]);
 
   const selectedLesson = useMemo(
     () => lessons.find(l => l.id === selectedLessonId) ?? null,
@@ -398,21 +569,11 @@ export default function AdminContenuPage() {
   );
 
   // ── Réordonnancement : sections (modules) ────────────────────────────────
-  // On réindexe toute la liste affichée (canonicalOrder = position) puis on
-  // PATCH les 2 modules dont l'ordre a changé. Robuste même si plusieurs
-  // modules avaient le même canonicalOrder initial.
-  const reorderModule = useCallback(async (idx: number, dir: -1 | 1) => {
-    const j = idx + dir;
-    if (j < 0 || j >= filteredModules.length) return;
-    const a = filteredModules[idx];
-    const b = filteredModules[j];
-    // Réassigner les positions séquentielles (0..n-1) à partir de la liste
-    // affichée puis swap a/b.
-    const reindexed = filteredModules.map((m, i) => ({ id: m.id, order: i }));
-    [reindexed[idx].order, reindexed[j].order] = [reindexed[j].order, reindexed[idx].order];
+  // On PATCH chaque module avec son index final dans la liste fournie.
+  const reorderModules = useCallback(async (orderedIds: string[]) => {
     try {
       await Promise.all(
-        reindexed.map(({ id, order }) =>
+        orderedIds.map((id, order) =>
           api(`/api/admin/modules/${id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
@@ -421,19 +582,15 @@ export default function AdminContenuPage() {
         ),
       );
       reloadModules();
-      flash(true, `Section ${dir < 0 ? "remontée" : "descendue"} ✓`);
+      flash(true, "Sections réordonnées ✓");
     } catch (e: any) { flash(false, `Réordonner: ${e.message}`); }
-  }, [filteredModules, reloadModules, flash]);
+  }, [reloadModules, flash]);
 
   // ── Réordonnancement : cours (lessons) ───────────────────────────────────
-  const reorderLesson = useCallback(async (idx: number, dir: -1 | 1) => {
-    const j = idx + dir;
-    if (j < 0 || j >= moduleLessons.length) return;
-    const reindexed = moduleLessons.map((l, i) => ({ id: l.id, order: i }));
-    [reindexed[idx].order, reindexed[j].order] = [reindexed[j].order, reindexed[idx].order];
+  const reorderLessons = useCallback(async (orderedIds: string[]) => {
     try {
       await Promise.all(
-        reindexed.map(({ id, order }) =>
+        orderedIds.map((id, order) =>
           api(`/api/admin/lessons/${id}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
@@ -442,27 +599,23 @@ export default function AdminContenuPage() {
         ),
       );
       reloadLessons();
-      flash(true, `Cours ${dir < 0 ? "remonté" : "descendu"} ✓`);
+      flash(true, "Cours réordonnés ✓");
     } catch (e: any) { flash(false, `Réordonner: ${e.message}`); }
-  }, [moduleLessons, reloadLessons, flash]);
+  }, [reloadLessons, flash]);
 
   // ── Réordonnancement : items (vocab) via Lesson.content.vocabOrder ──────
-  const reorderItem = useCallback(async (idx: number, dir: -1 | 1) => {
+  const reorderItems = useCallback(async (orderedIds: string[]) => {
     if (!selectedLessonId) return;
-    const j = idx + dir;
-    if (j < 0 || j >= vocab.length) return;
-    const next = vocab.map(v => v.id);
-    [next[idx], next[j]] = [next[j], next[idx]];
     try {
       await api(`/api/admin/lessons/${selectedLessonId}/vocab-order`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orderedIds: next }),
+        body: JSON.stringify({ orderedIds }),
       });
       reloadVocab(selectedLessonId);
-      flash(true, `Item ${dir < 0 ? "remonté" : "descendu"} ✓`);
+      flash(true, "Items réordonnés ✓");
     } catch (e: any) { flash(false, `Réordonner: ${e.message}`); }
-  }, [selectedLessonId, vocab, reloadVocab, flash]);
+  }, [selectedLessonId, reloadVocab, flash]);
 
   return (
     <div className="admin-contenu-fullscreen">
@@ -476,15 +629,62 @@ export default function AdminContenuPage() {
           left: 0;
           right: 0;
           bottom: 0;
-          padding: 20px 16px;
-          overflow: auto;
+          padding: 0 16px 16px;
+          overflow: hidden;
           background: var(--c-bg);
           z-index: 50;
+          display: flex;
+          flex-direction: column;
         }
         @media (min-width: 768px) {
           .admin-contenu-fullscreen { left: 260px; }
         }
+        .admin-contenu-sticky {
+          flex-shrink: 0;
+          background: var(--c-bg);
+          padding: 20px 0 8px;
+          margin: 0 -16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          border-bottom: 1px solid var(--c-border);
+          margin-bottom: 12px;
+        }
+        .admin-contenu-grid {
+          flex: 1;
+          min-height: 0;
+          overflow: hidden;
+        }
+        .admin-contenu-grid > * {
+          height: 100%;
+          min-height: 0;
+          max-height: 100%;
+        }
       `}</style>
+      <style jsx global>{`
+        .col-scroll {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(127,127,127,0.5) transparent;
+        }
+        .col-scroll::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+        .col-scroll::-webkit-scrollbar-track {
+          background: rgba(127,127,127,0.08);
+          border-radius: 6px;
+        }
+        .col-scroll::-webkit-scrollbar-thumb {
+          background: rgba(127,127,127,0.45);
+          border-radius: 6px;
+          border: 2px solid transparent;
+          background-clip: padding-box;
+        }
+        .col-scroll::-webkit-scrollbar-thumb:hover {
+          background: rgba(127,127,127,0.75);
+          background-clip: padding-box;
+        }
+      `}</style>
+      <div className="admin-contenu-sticky">
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
         <div>
@@ -497,23 +697,59 @@ export default function AdminContenuPage() {
         </div>
       </div>
 
-      {/* Track filter */}
-      <div style={{ display: "flex", gap: 6, marginBottom: 12, flexWrap: "wrap" }}>
-        {(["ALL", "DARIJA", "MSA", "RELIGION"] as const).map(t => (
-          <button key={t} onClick={() => setTrackFilter(t)} style={{
-            padding: "5px 12px", borderRadius: 8, cursor: "pointer", fontSize: 11, fontWeight: 700,
-            border: "1.5px solid", borderColor: trackFilter === t ? "#58cc02" : "var(--c-border)",
-            background: trackFilter === t ? "rgba(88,204,2,0.1)" : "var(--c-bg)",
-            color: trackFilter === t ? "#46a302" : "var(--c-sub)",
-          }}>
-            {t === "ALL" ? "Tous" : TRACK_BADGE[t].label}
-          </button>
-        ))}
+      {/* Track filter + recherche */}
+      <div style={{ display: "flex", gap: 10, marginBottom: 12, flexWrap: "wrap", alignItems: "center" }}>
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {(["ALL", "DARIJA", "MSA", "RELIGION"] as const).map(t => (
+            <button key={t} onClick={() => setTrackFilter(t)} style={{
+              padding: "5px 12px", borderRadius: 8, cursor: "pointer", fontSize: 11, fontWeight: 700,
+              border: "1.5px solid", borderColor: trackFilter === t ? "#58cc02" : "var(--c-border)",
+              background: trackFilter === t ? "rgba(88,204,2,0.1)" : "var(--c-bg)",
+              color: trackFilter === t ? "#46a302" : "var(--c-sub)",
+            }}>
+              {t === "ALL" ? "Tous" : TRACK_BADGE[t].label}
+            </button>
+          ))}
+        </div>
+        <div style={{ position: "relative", flex: 1, minWidth: 240, maxWidth: 360 }}>
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="🔍 Rechercher un cours ou une leçon…"
+            style={{
+              width: "100%",
+              padding: "6px 30px 6px 12px",
+              borderRadius: 8,
+              border: "1.5px solid var(--c-border)",
+              background: "var(--c-bg)",
+              color: "var(--c-text)",
+              fontSize: 12,
+              outline: "none",
+            }}
+          />
+          {search && (
+            <button
+              onClick={() => setSearch("")}
+              title="Effacer"
+              style={{
+                position: "absolute", right: 6, top: "50%", transform: "translateY(-50%)",
+                background: "transparent", border: "none", cursor: "pointer",
+                color: "var(--c-sub)", fontSize: 14, padding: "2px 6px",
+              }}
+            >✕</button>
+          )}
+        </div>
+        {searchNorm && (
+          <span style={{ fontSize: 11, color: "var(--c-sub)", fontWeight: 700 }}>
+            {filteredModules.length} cours trouvé{filteredModules.length > 1 ? "s" : ""}
+          </span>
+        )}
+      </div>
       </div>
 
       {/* 3 colonnes : Sections · Cours · Items+Exercices.
-          Les colonnes apparaissent au fur et à mesure des sélections. */}
-      <div style={{
+          Chaque colonne scrolle indépendamment (v. .admin-contenu-grid). */}
+      <div className="admin-contenu-grid" style={{
         display: "grid",
         gridTemplateColumns: filteredModules.length === 0
           ? "1fr"
@@ -524,7 +760,7 @@ export default function AdminContenuPage() {
               : "300px",
         justifyContent: "start",
         gap: 12,
-        alignItems: "start",
+        alignItems: "stretch",
       }}>
         <SectionsColumn
           modules={filteredModules}
@@ -533,7 +769,7 @@ export default function AdminContenuPage() {
           onSelect={(id) => { setSelectedModuleId(id); setSelectedLessonId(null); }}
           onChanged={() => { reloadModules(); flash(true, "Section sauvegardée ✓"); }}
           onError={(t) => flash(false, t)}
-          onReorder={reorderModule}
+          onReorder={reorderModules}
           onImport={() => setIo({ mode: 'import', kind: 'section', slug: null })}
           onExport={(slug) => setIo({ mode: 'export', kind: 'section', slug })}
         />
@@ -550,7 +786,7 @@ export default function AdminContenuPage() {
             onChanged={() => { reloadLessons(); flash(true, "Leçon sauvegardée ✓"); }}
             onModulesChanged={() => reloadModules()}
             onError={(t) => flash(false, t)}
-            onReorder={reorderLesson}
+            onReorder={reorderLessons}
             onImport={() => setIo({ mode: 'import', kind: 'lessons', slug: null })}
             onExport={(slug) => setIo({ mode: 'export', kind: 'lessons', slug })}
           />
@@ -564,7 +800,7 @@ export default function AdminContenuPage() {
             allLessons={lessons}
             onVocabChanged={() => reloadVocab(selectedLessonId)}
             onLessonChanged={() => reloadLessons()}
-            onReorderItem={reorderItem}
+            onReorderItem={reorderItems}
             onChanged={(t) => flash(true, t)}
             onError={(t) => flash(false, t)}
             onImportVocab={() => setIo({ mode: 'import', kind: 'vocabulary', slug: null })}
@@ -603,12 +839,21 @@ function SectionsColumn({
   onSelect: (id: string) => void;
   onChanged: () => void;
   onError: (t: string) => void;
-  onReorder: (idx: number, dir: -1 | 1) => void;
+  onReorder: (orderedIds: string[]) => void;
   onImport: () => void;
   onExport: (slug: string) => void;
 }) {
   const selectedSlug = modules.find(m => m.id === selectedId)?.slug ?? null;
   const [editing, setEditing] = useState<Partial<ModuleRow> | null>(null);
+  const askConfirm = useConfirm();
+
+  function moveBy(idx: number, dir: -1 | 1) {
+    const j = idx + dir;
+    if (j < 0 || j >= modules.length) return;
+    const next = modules.map(m => m.id);
+    [next[idx], next[j]] = [next[j], next[idx]];
+    onReorder(next);
+  }
 
   const openCreate = () => setEditing({ title: "", slug: "", track: "DARIJA", level: 1, isPublished: true });
 
@@ -652,11 +897,28 @@ function SectionsColumn({
   }
 
   async function remove(id: string) {
-    if (!confirm("Supprimer cette section ?\n\n(Les leçons rattachées sont détachées, pas supprimées.)")) return;
+    const ok = await askConfirm({
+      title: "Supprimer cette section ?",
+      message: "Les leçons rattachées sont détachées, pas supprimées.",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
     try {
       await api(`/api/admin/modules/${id}?hard=true`, { method: "DELETE" });
       onChanged();
     } catch (e: any) { onError(`Suppression: ${e.message}`); }
+  }
+
+  async function togglePublished(id: string, next: boolean) {
+    try {
+      await api(`/api/admin/modules/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ isPublished: next }),
+      });
+      onChanged();
+    } catch (e: any) { onError(`Publication: ${e.message}`); }
   }
 
   const isEmpty = modules.length === 0;
@@ -825,6 +1087,30 @@ function SectionsColumn({
               <summary style={{ fontSize: 11, color: "var(--c-sub)", cursor: "pointer", userSelect: "none" }}>
                 🏙️ Infos ville (affichées au clic sur le bandeau du parcours)
               </summary>
+              <div style={{ marginTop: 10 }}>
+                <label style={lbl}>Ville du Maroc (synchronise la carte)</label>
+                <select
+                  style={inp}
+                  value={editing.cityInfo?.cityKey ?? ""}
+                  onChange={e => {
+                    const key = e.target.value;
+                    setEditing(s => ({
+                      ...s,
+                      cityInfo: { ...(s?.cityInfo ?? {}), cityKey: key || undefined },
+                    }));
+                  }}
+                >
+                  <option value="">— Aucune ville (module non affiché sur la carte) —</option>
+                  {MOROCCO_CITIES.map(c => (
+                    <option key={c.key} value={c.key}>
+                      #{c.order} · {c.nameFr} ({c.region})
+                    </option>
+                  ))}
+                </select>
+                <div style={{ fontSize: 10, color: "var(--c-sub)", marginTop: 3 }}>
+                  Sélectionne la ville qui représente ce module sur la carte du parcours. L'ordre suit ton canonicalOrder.
+                </div>
+              </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 10 }}>
                 <div>
                   <label style={lbl}>Emoji</label>
@@ -837,14 +1123,27 @@ function SectionsColumn({
                   />
                 </div>
                 <div>
-                  <label style={lbl}>Photo (URL)</label>
-                  <input
-                    style={inp}
-                    value={editing.cityInfo?.photoUrl ?? ""}
-                    onChange={e => setEditing(s => ({ ...s, cityInfo: { ...(s?.cityInfo ?? {}), photoUrl: e.target.value } }))}
-                    placeholder="https://…"
+                  <label style={lbl}>Photo bandeau section</label>
+                  <PhotoUploader
+                    moduleId={editing.id}
+                    photoUrl={editing.cityInfo?.photoUrl ?? ""}
+                    kind="section"
+                    onUploaded={(url) => setEditing(s => ({ ...s, cityInfo: { ...(s?.cityInfo ?? {}), photoUrl: url } }))}
+                    onError={onError}
                   />
                 </div>
+              </div>
+              <div style={{ marginTop: 10 }}>
+                <label style={lbl}>
+                  Photo carte postale <span style={{ fontWeight: 500, color: "var(--c-sub)" }}>— optionnel, fallback sur la photo section</span>
+                </label>
+                <PhotoUploader
+                  moduleId={editing.id}
+                  photoUrl={editing.cityInfo?.postcardUrl ?? ""}
+                  kind="postcard"
+                  onUploaded={(url) => setEditing(s => ({ ...s, cityInfo: { ...(s?.cityInfo ?? {}), postcardUrl: url } }))}
+                  onError={onError}
+                />
               </div>
               <div style={{ marginTop: 10 }}>
                 <label style={lbl}>Histoire</label>
@@ -946,44 +1245,58 @@ function SectionsColumn({
         )}
       </Modal>
 
-      {!isEmpty && <div style={{ flex: 1, overflow: "auto" }}>
-        {modules.map((m, idx) => (
-          <div
-            key={m.id}
-            onClick={() => onSelect(m.id)}
-            style={{
-              ...rowBase,
-              background: selectedId === m.id ? "rgba(88,204,2,0.08)" : "transparent",
-              borderLeft: selectedId === m.id ? "3px solid #58cc02" : "3px solid transparent",
-            }}
-          >
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                <span style={{ fontSize: 10, fontWeight: 800, color: TRACK_BADGE[m.track].color }}>{TRACK_BADGE[m.track].label}</span>
-                <span style={{ fontSize: 10, color: "var(--c-sub)" }}>· N{m.level}</span>
-                {!m.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>· brouillon</span>}
+      {!isEmpty && <div className="col-scroll" style={{ flex: 1, overflow: "auto" }}>
+        <SortableList
+          items={modules}
+          onReorder={onReorder}
+          renderItem={(m, { handleProps, isDragging }) => {
+            const idx = modules.findIndex(x => x.id === m.id);
+            return (
+              <div
+                onClick={() => onSelect(m.id)}
+                style={{
+                  ...rowBase,
+                  background: selectedId === m.id ? "rgba(88,204,2,0.08)" : "transparent",
+                  borderLeft: selectedId === m.id ? "3px solid #58cc02" : "3px solid transparent",
+                  borderColor: isDragging ? "#58cc02" : undefined,
+                  boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
+                }}
+              >
+                <DragHandle handleProps={handleProps} />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                    <span style={{ fontSize: 10, fontWeight: 800, color: TRACK_BADGE[m.track].color }}>{TRACK_BADGE[m.track].label}</span>
+                    <span style={{ fontSize: 10, color: "var(--c-sub)" }}>· N{m.level}</span>
+                    {!m.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>· brouillon</span>}
+                  </div>
+                  <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{m.title}</div>
+                  <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{m.slug} · {m._count?.lessons ?? 0} leçon(s)</div>
+                </div>
+                <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); togglePublished(m.id, !m.isPublished); }}
+                    style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 14, color: m.isPublished ? "#58cc02" : "#ff8800", padding: 3 }}
+                    title={m.isPublished ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+                  >{m.isPublished ? "👁️" : "🙈"}</button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); moveBy(idx, -1); }}
+                    disabled={idx === 0}
+                    style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
+                    title="Monter"
+                  >↑</button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); moveBy(idx, 1); }}
+                    disabled={idx === modules.length - 1}
+                    style={{ background: "transparent", border: "none", cursor: idx === modules.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === modules.length - 1 ? 0.25 : 1 }}
+                    title="Descendre"
+                  >↓</button>
+                  <button onClick={(e) => { e.stopPropagation(); setEditing(m); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
+                  <button onClick={(e) => { e.stopPropagation(); remove(m.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
+                </div>
               </div>
-              <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{m.title}</div>
-              <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{m.slug} · {m._count?.lessons ?? 0} leçon(s)</div>
-            </div>
-            <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
-              <button
-                onClick={(e) => { e.stopPropagation(); onReorder(idx, -1); }}
-                disabled={idx === 0}
-                style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
-                title="Monter"
-              >↑</button>
-              <button
-                onClick={(e) => { e.stopPropagation(); onReorder(idx, 1); }}
-                disabled={idx === modules.length - 1}
-                style={{ background: "transparent", border: "none", cursor: idx === modules.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === modules.length - 1 ? 0.25 : 1 }}
-                title="Descendre"
-              >↓</button>
-              <button onClick={(e) => { e.stopPropagation(); setEditing(m); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
-              <button onClick={(e) => { e.stopPropagation(); remove(m.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
-            </div>
-          </div>
-        ))}
+            );
+          }}
+        />
       </div>}
     </div>
   );
@@ -1007,12 +1320,21 @@ function LessonsColumn({
   onChanged: () => void;
   onError: (t: string) => void;
   onModulesChanged: () => void;
-  onReorder: (idx: number, dir: -1 | 1) => void;
+  onReorder: (orderedIds: string[]) => void;
   onImport: () => void;
   onExport: (moduleSlug: string) => void;
 }) {
   const [editing, setEditing] = useState<Partial<LessonRow> | null>(null);
   const [newSection, setNewSection] = useState<{ title: string; track: Track } | null>(null);
+  const askConfirm = useConfirm();
+
+  function moveBy(idx: number, dir: -1 | 1) {
+    const j = idx + dir;
+    if (j < 0 || j >= lessons.length) return;
+    const next = lessons.map(l => l.id);
+    [next[idx], next[j]] = [next[j], next[idx]];
+    onReorder(next);
+  }
 
   async function createNewSection() {
     if (!newSection?.title.trim()) return;
@@ -1070,11 +1392,28 @@ function LessonsColumn({
   }
 
   async function remove(id: string) {
-    if (!confirm("Supprimer cette leçon ?\n\n(Items vocabulaire détachés, progression utilisateurs perdue.)")) return;
+    const ok = await askConfirm({
+      title: "Supprimer cette leçon ?",
+      message: "Les items vocabulaire seront détachés et la progression des utilisateurs sera perdue.",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
     try {
       await api(`/api/admin/lessons/${id}?hard=true`, { method: "DELETE" });
       onChanged();
     } catch (e: any) { onError(`Suppression: ${e.message}`); }
+  }
+
+  async function togglePublishedLesson(id: string, next: boolean) {
+    try {
+      await api(`/api/admin/lessons/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ isPublished: next }),
+      });
+      onChanged();
+    } catch (e: any) { onError(`Publication: ${e.message}`); }
   }
 
   if (!moduleId) {
@@ -1224,52 +1563,71 @@ function LessonsColumn({
         )}
       </Modal>
 
-      <div style={{ flex: 1, overflow: "auto" }}>
+      <div className="col-scroll" style={{ flex: 1, overflow: "auto" }}>
         {lessons.length === 0 ? (
           <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 12 }}>Aucun cours dans cette section</div>
-        ) : lessons.map((l, idx) => {
-          const seq = (l.content as any)?.sequence as string[] | undefined;
-          return (
-            <div
-              key={l.id}
-              onClick={() => onSelect(l.id)}
-              style={{
-                ...rowBase,
-                background: selectedId === l.id ? "rgba(88,204,2,0.08)" : "transparent",
-                borderLeft: selectedId === l.id ? "3px solid #58cc02" : "3px solid transparent",
-              }}
-            >
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                  <span style={{ fontSize: 10, color: "var(--c-sub)" }}>#{l.order}</span>
-                  <span style={{ fontSize: 10, fontWeight: 800, color: "#1cb0f6" }}>N{l.level}</span>
-                  {!l.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>brouillon</span>}
-                  {seq && seq.length > 0 && (
-                    <span style={{ fontSize: 10, color: "#58cc02", fontWeight: 800 }}>● {seq.length} étape(s)</span>
-                  )}
+        ) : (
+          <SortableList
+            items={lessons}
+            onReorder={onReorder}
+            renderItem={(l, { handleProps, isDragging }) => {
+              const idx = lessons.findIndex(x => x.id === l.id);
+              const seq = (l.content as any)?.sequence as string[] | undefined;
+              return (
+                <div
+                  onClick={() => onSelect(l.id)}
+                  style={{
+                    ...rowBase,
+                    background: selectedId === l.id ? "rgba(88,204,2,0.08)" : "transparent",
+                    borderLeft: selectedId === l.id ? "3px solid #58cc02" : "3px solid transparent",
+                    borderColor: isDragging ? "#58cc02" : undefined,
+                    boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
+                  }}
+                >
+                  <DragHandle handleProps={handleProps} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                      <span style={{ fontSize: 10, color: "var(--c-sub)" }}>#{l.order}</span>
+                      <span style={{ fontSize: 10, fontWeight: 800, color: "#1cb0f6" }}>N{l.level}</span>
+                      {!l.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>brouillon</span>}
+                      {seq && seq.length > 0 && (
+                        <span style={{ fontSize: 10, color: "#58cc02", fontWeight: 800 }}>● {seq.length} étape(s)</span>
+                      )}
+                    </div>
+                    <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{l.title}</div>
+                    {l.slug && <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{l.slug}</div>}
+                  </div>
+                  <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); togglePublishedLesson(l.id, !l.isPublished); }}
+                      style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 14, color: l.isPublished ? "#58cc02" : "#ff8800", padding: 3 }}
+                      title={l.isPublished ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+                    >{l.isPublished ? "👁️" : "🙈"}</button>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); moveBy(idx, -1); }}
+                      disabled={idx === 0}
+                      style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
+                      title="Monter"
+                    >↑</button>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); moveBy(idx, 1); }}
+                      disabled={idx === lessons.length - 1}
+                      style={{ background: "transparent", border: "none", cursor: idx === lessons.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === lessons.length - 1 ? 0.25 : 1 }}
+                      title="Descendre"
+                    >↓</button>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); window.open(`/lesson/${l.id}`, '_blank', 'noopener,noreferrer'); }}
+                      style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#1cb0f6", padding: 4 }}
+                      title="Tester comme un élève (nouvel onglet)"
+                    >🧪</button>
+                    <button onClick={(e) => { e.stopPropagation(); setEditing(l); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
+                    <button onClick={(e) => { e.stopPropagation(); remove(l.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
+                  </div>
                 </div>
-                <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{l.title}</div>
-                {l.slug && <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{l.slug}</div>}
-              </div>
-              <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
-                <button
-                  onClick={(e) => { e.stopPropagation(); onReorder(idx, -1); }}
-                  disabled={idx === 0}
-                  style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
-                  title="Monter"
-                >↑</button>
-                <button
-                  onClick={(e) => { e.stopPropagation(); onReorder(idx, 1); }}
-                  disabled={idx === lessons.length - 1}
-                  style={{ background: "transparent", border: "none", cursor: idx === lessons.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === lessons.length - 1 ? 0.25 : 1 }}
-                  title="Descendre"
-                >↓</button>
-                <button onClick={(e) => { e.stopPropagation(); setEditing(l); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
-                <button onClick={(e) => { e.stopPropagation(); remove(l.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
-              </div>
-            </div>
-          );
-        })}
+              );
+            }}
+          />
+        )}
       </div>
     </div>
   );
@@ -1290,7 +1648,7 @@ function ItemsAndSequenceColumn({
   allLessons: LessonRow[];
   onVocabChanged: () => void;
   onLessonChanged: () => void;
-  onReorderItem: (idx: number, dir: -1 | 1) => void;
+  onReorderItem: (orderedIds: string[]) => void;
   onChanged: (text: string) => void;
   onError: (text: string) => void;
   onImportVocab: () => void;
@@ -1301,6 +1659,7 @@ function ItemsAndSequenceColumn({
   const [editing, setEditing] = useState<Partial<VocabRow> | null>(null);
   const [tab, setTab] = useState<"items" | "exercises">("items");
   const [exercises, setExercises] = useState<AuthoredExercise[]>([]);
+  const askConfirm = useConfirm();
 
   const lessonId = lesson?.id ?? null;
 
@@ -1331,8 +1690,9 @@ function ItemsAndSequenceColumn({
 
   const langId = lesson.languageId;
 
-  async function saveVocab() {
+  async function saveVocab(targetLessonId?: string) {
     if (!editing) return;
+    const moveTo = targetLessonId && targetLessonId !== lesson!.id ? targetLessonId : null;
     try {
       const payload: any = {
         word: editing.word?.trim(),
@@ -1341,6 +1701,7 @@ function ItemsAndSequenceColumn({
           ? editing.translation
           : { fr: typeof editing.translation === "string" ? editing.translation : "" },
         languageId: langId,
+        isPublished: editing.isPublished ?? true,
       };
       let id: string;
       if (editing.id) {
@@ -1350,6 +1711,11 @@ function ItemsAndSequenceColumn({
           body: JSON.stringify(payload),
         });
         id = editing.id;
+        if (moveTo) {
+          // Déplacement : on détache du cours courant, on attache au cours cible.
+          await api(`/api/admin/vocabulary/${id}/attach/${lesson!.id}`, { method: "DELETE" });
+          await api(`/api/admin/vocabulary/${id}/attach/${moveTo}`, { method: "POST" });
+        }
       } else {
         const created = await api<VocabRow>(`/api/admin/vocabulary`, {
           method: "POST",
@@ -1357,20 +1723,38 @@ function ItemsAndSequenceColumn({
           body: JSON.stringify(payload),
         });
         id = created.id;
-        await api(`/api/admin/vocabulary/${id}/attach/${lesson!.id}`, { method: "POST" });
+        // Attache directement au cours choisi (défaut = cours courant).
+        const attachTo = targetLessonId || lesson!.id;
+        await api(`/api/admin/vocabulary/${id}/attach/${attachTo}`, { method: "POST" });
       }
       setEditing(null);
       onVocabChanged();
-      onChanged("Item sauvegardé ✓");
+      onChanged(moveTo ? "Item déplacé + sauvegardé ✓" : "Item sauvegardé ✓");
     } catch (e: any) { onError(`Item: ${e.message}`); }
   }
 
   async function removeVocab(id: string) {
-    if (!confirm("Supprimer cet item ?")) return;
+    const ok = await askConfirm({
+      title: "Supprimer cet item de vocabulaire ?",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
     try {
       await api(`/api/admin/vocabulary/${id}`, { method: "DELETE" });
       onVocabChanged();
     } catch (e: any) { onError(`Suppression: ${e.message}`); }
+  }
+
+  async function togglePublishedVocab(id: string, next: boolean) {
+    try {
+      await api(`/api/admin/vocabulary/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ isPublished: next }),
+      });
+      onVocabChanged();
+    } catch (e: any) { onError(`Publication: ${e.message}`); }
   }
 
   const [moving, setMoving] = useState<VocabRow | null>(null);
@@ -1425,23 +1809,24 @@ function ItemsAndSequenceColumn({
   }
 
   async function deleteExercise(exId: string) {
-    if (!confirm("Supprimer cet exercice ?")) return;
+    const ok = await askConfirm({
+      title: "Supprimer cet exercice ?",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
     try {
       await api(`/api/admin/lessons/${lessonId}/authored-exercises/${exId}`, { method: "DELETE" });
       reloadExercises();
     } catch (e: any) { onError(`Suppression: ${e.message}`); }
   }
 
-  async function reorderExercise(idx: number, dir: -1 | 1) {
-    const j = idx + dir;
-    if (j < 0 || j >= exercises.length) return;
-    const next = exercises.map(e => e.id);
-    [next[idx], next[j]] = [next[j], next[idx]];
+  async function reorderExercises(orderedIds: string[]) {
     try {
       await api(`/api/admin/lessons/${lessonId}/authored-exercises/reorder`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orderedIds: next }),
+        body: JSON.stringify({ orderedIds }),
       });
       reloadExercises();
     } catch (e: any) { onError(`Réordonner: ${e.message}`); }
@@ -1453,8 +1838,8 @@ function ItemsAndSequenceColumn({
   const exportHandler = isItemsTab ? onExportVocab : onExportExos;
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-      <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: 12, height: "100%", minHeight: 0 }}>
+      <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
         <button onClick={() => setTab("items")} style={{
           flex: 1, padding: "10px 14px", borderRadius: 8, border: "none", fontSize: 13, fontWeight: 800, cursor: "pointer",
           background: tab === "items" ? "#58cc02" : "var(--c-card2)",
@@ -1488,7 +1873,7 @@ function ItemsAndSequenceColumn({
         onConfirm={(lessonId) => moving && moveVocab(moving.id, lessonId)}
       />
 
-      <div style={{ border: "1px solid var(--c-border)", borderRadius: 10, overflow: "hidden", background: "var(--c-bg)" }}>
+      <div style={{ border: "1px solid var(--c-border)", borderRadius: 10, overflow: "hidden", background: "var(--c-bg)", flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
         {tab === "items" ? (
           <ItemsTab
             vocab={vocab}
@@ -1499,6 +1884,11 @@ function ItemsAndSequenceColumn({
             onUploadAudio={uploadAudio}
             onReorder={onReorderItem}
             onMove={(v) => setMoving(v)}
+            onTogglePublished={togglePublishedVocab}
+            modules={modules}
+            allLessons={allLessons}
+            currentLessonId={lesson.id}
+            track={modules.find(m => m.id === lesson!.moduleId)?.track ?? "DARIJA"}
           />
         ) : (
           <ExercisesTab
@@ -1507,7 +1897,7 @@ function ItemsAndSequenceColumn({
             onCreate={createExercise}
             onUpdate={updateExercise}
             onDelete={deleteExercise}
-            onReorder={reorderExercise}
+            onReorder={reorderExercises}
           />
         )}
       </div>
@@ -1547,6 +1937,42 @@ function defaultConfigFor(typology: string, vocab: VocabRow[]): any {
         targetVocabId: ids[0] ?? null,
         distractorVocabIds: ids.slice(1, 4),
       };
+    case "TexteReligieux":
+      return { arabe: "", fr: "", source: "" };
+    case "SelectionImages":
+      return {
+        question: "",
+        questionFr: "",
+        items: [
+          { emoji: "🙂", label: "", isCorrect: true },
+          { emoji: "😐", label: "", isCorrect: false },
+        ],
+      };
+    case "TriDeuxCategories":
+      return {
+        question: "",
+        questionFr: "",
+        categorieA: { label: "Catégorie A", color: "#58cc02" },
+        categorieB: { label: "Catégorie B", color: "#ff4b4b" },
+        items: [
+          { emoji: "✅", label: "", correct: "A" },
+          { emoji: "❌", label: "", correct: "B" },
+        ],
+      };
+    case "RelierParTrait":
+      return {
+        question: "",
+        questionFr: "",
+        pairesGauche: [
+          { id: "g1", emoji: "🕌", label: "" },
+          { id: "g2", emoji: "📖", label: "" },
+        ],
+        pairesDroite: [
+          { id: "d1", emoji: "", label: "" },
+          { id: "d2", emoji: "", label: "" },
+        ],
+        correct: { g1: "d1", g2: "d2" },
+      };
     default:
       return {};
   }
@@ -1555,17 +1981,57 @@ function defaultConfigFor(typology: string, vocab: VocabRow[]): any {
 // ── Sous-onglet : Items ──────────────────────────────────────────────────────
 
 function ItemsTab({
-  vocab, editing, setEditing, onSave, onRemove, onUploadAudio, onReorder, onMove,
+  vocab, editing, setEditing, onSave, onRemove, onUploadAudio, onReorder, onMove, onTogglePublished, track,
+  modules, allLessons, currentLessonId,
 }: {
   vocab: VocabRow[];
   editing: Partial<VocabRow> | null;
   setEditing: (e: Partial<VocabRow> | null) => void;
-  onSave: () => void;
+  onSave: (targetLessonId?: string) => void;
   onRemove: (id: string) => void;
   onUploadAudio: (id: string, file: File) => void;
-  onReorder: (idx: number, dir: -1 | 1) => void;
+  onReorder: (orderedIds: string[]) => void;
   onMove: (v: VocabRow) => void;
+  onTogglePublished: (id: string, next: boolean) => void;
+  track: Track;
+  modules: ModuleRow[];
+  allLessons: LessonRow[];
+  currentLessonId: string;
 }) {
+  const isReligion = track === "RELIGION";
+
+  function moveBy(idx: number, dir: -1 | 1) {
+    const j = idx + dir;
+    if (j < 0 || j >= vocab.length) return;
+    const next = vocab.map(v => v.id);
+    [next[idx], next[j]] = [next[j], next[idx]];
+    onReorder(next);
+  }
+
+  // État local des sélecteurs Section/Cours dans la modale d'édition.
+  // Initialisé à la section/cours courant à chaque ouverture de modale,
+  // pour que "Enregistrer" sans changement ne déclenche aucun move.
+  const currentLesson    = allLessons.find(l => l.id === currentLessonId);
+  const currentModuleId  = currentLesson?.moduleId ?? "";
+  const [targetModuleId, setTargetModuleId] = useState<string>(currentModuleId);
+  const [targetLessonId, setTargetLessonId] = useState<string>(currentLessonId);
+
+  useEffect(() => {
+    if (editing) {
+      setTargetModuleId(currentModuleId);
+      setTargetLessonId(currentLessonId);
+    }
+  }, [editing?.id, currentLessonId, currentModuleId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const lessonsInTargetModule = useMemo(
+    () => allLessons
+      .filter(l => l.moduleId === targetModuleId && !l.isDeleted)
+      .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title)),
+    [allLessons, targetModuleId],
+  );
+
+  const willMove = targetLessonId && targetLessonId !== currentLessonId;
+
   return (
     <>
       <div style={{ padding: 10, borderBottom: "1px solid var(--c-border)", display: "flex", justifyContent: "flex-end" }}>
@@ -1577,84 +2043,214 @@ function ItemsTab({
           <>
             <div style={{ marginBottom: 14 }}>
               <label style={lbl}>Arabe (avec diacritiques) *</label>
-              <input style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "10px 14px" }}
-                autoFocus
-                value={editing.word ?? ""}
-                onChange={e => setEditing({ ...editing, word: e.target.value })}
-                placeholder="السَّلَامُ عَلَيْكُمْ" />
+              {isReligion ? (
+                <textarea
+                  style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 20, direction: "rtl", padding: "12px 14px", minHeight: 140, lineHeight: 1.9, resize: "vertical" }}
+                  autoFocus
+                  value={editing.word ?? ""}
+                  onChange={e => setEditing({ ...editing, word: e.target.value })}
+                  placeholder="بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ …"
+                />
+              ) : (
+                <input style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "10px 14px" }}
+                  autoFocus
+                  value={editing.word ?? ""}
+                  onChange={e => setEditing({ ...editing, word: e.target.value })}
+                  placeholder="السَّلَامُ عَلَيْكُمْ" />
+              )}
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
-              <div>
-                <label style={lbl}>Romanisation</label>
-                <input style={inp}
-                  value={editing.transliteration ?? ""}
-                  onChange={e => setEditing({ ...editing, transliteration: e.target.value })}
-                  placeholder="salam 3likom" />
-              </div>
-              <div>
+            {isReligion ? (
+              <div style={{ marginBottom: 16 }}>
                 <label style={lbl}>Français *</label>
-                <input style={inp}
+                <textarea
+                  style={{ ...inp, minHeight: 110, lineHeight: 1.5, padding: "10px 14px", resize: "vertical" }}
                   value={(editing.translation as any)?.fr ?? ""}
                   onChange={e => setEditing({ ...editing, translation: { fr: e.target.value } })}
-                  placeholder="bonjour / paix sur vous" />
+                  placeholder="L'Islam est bâti sur cinq : témoigner…"
+                />
+              </div>
+            ) : (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
+                <div>
+                  <label style={lbl}>Romanisation</label>
+                  <input style={inp}
+                    value={editing.transliteration ?? ""}
+                    onChange={e => setEditing({ ...editing, transliteration: e.target.value })}
+                    placeholder="salam 3likom" />
+                </div>
+                <div>
+                  <label style={lbl}>Français *</label>
+                  <input style={inp}
+                    value={(editing.translation as any)?.fr ?? ""}
+                    onChange={e => setEditing({ ...editing, translation: { fr: e.target.value } })}
+                    placeholder="bonjour / paix sur vous" />
+                </div>
+              </div>
+            )}
+            <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 12, fontSize: 13, color: "var(--c-text)" }}>
+              <input
+                type="checkbox"
+                id="vocab-ispublished"
+                checked={editing.isPublished ?? true}
+                onChange={e => setEditing({ ...editing, isPublished: e.target.checked })}
+              />
+              <label htmlFor="vocab-ispublished" style={{ cursor: "pointer", fontWeight: 700 }}>Publié</label>
+              <span style={{ fontSize: 11, color: "var(--c-sub)", marginLeft: 8 }}>
+                (décoche pour masquer l'item du parcours élève)
+              </span>
+            </div>
+
+            {/* Section / Cours de destination — permet de déplacer l'item
+                vers un autre cours (même section ou autre) au moment du save */}
+            <div style={{
+              padding: 12, marginBottom: 12, borderRadius: 8,
+              background: "var(--c-bg)", border: "1px solid var(--c-border)",
+            }}>
+              <div style={{
+                fontSize: 11, fontWeight: 800, color: "var(--c-sub)",
+                textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 8,
+              }}>
+                Emplacement {willMove && <span style={{ color: "#ff8800" }}>· déplacement prévu</span>}
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                <div>
+                  <label style={lbl}>Section</label>
+                  <select
+                    style={inp}
+                    value={targetModuleId}
+                    onChange={e => {
+                      const v = e.target.value;
+                      setTargetModuleId(v);
+                      const first = allLessons
+                        .filter(l => l.moduleId === v && !l.isDeleted)
+                        .sort((a, b) => a.order - b.order)[0];
+                      setTargetLessonId(first?.id ?? "");
+                    }}
+                  >
+                    {modules.map(m => (
+                      <option key={m.id} value={m.id}>
+                        {TRACK_BADGE[m.track].label} · {m.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label style={lbl}>Cours</label>
+                  <select
+                    style={inp}
+                    value={targetLessonId}
+                    onChange={e => setTargetLessonId(e.target.value)}
+                    disabled={lessonsInTargetModule.length === 0}
+                  >
+                    {lessonsInTargetModule.length === 0 && (
+                      <option value="">— Aucun cours —</option>
+                    )}
+                    {lessonsInTargetModule.map(l => (
+                      <option key={l.id} value={l.id}>
+                        #{l.order} · {l.title}{!l.isPublished ? " (brouillon)" : ""}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
             </div>
+
             <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", paddingTop: 8, borderTop: "1px solid var(--c-border)" }}>
               <button onClick={() => setEditing(null)} style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 13, cursor: "pointer" }}>Annuler</button>
-              <button onClick={onSave} disabled={!editing.word} style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13, cursor: "pointer", opacity: !editing.word ? 0.5 : 1 }}>
-                {editing.id ? "💾 Enregistrer" : "➕ Créer + lier au cours"}
+              <button onClick={() => onSave(targetLessonId || undefined)} disabled={!editing.word || !targetLessonId} style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13, cursor: "pointer", opacity: (!editing.word || !targetLessonId) ? 0.5 : 1 }}>
+                {editing.id
+                  ? (willMove ? "📦 Enregistrer + déplacer" : "💾 Enregistrer")
+                  : (willMove ? "➕ Créer dans le cours choisi" : "➕ Créer + lier au cours")}
               </button>
             </div>
           </>
         )}
       </Modal>
 
-      <div style={{ flex: 1, overflow: "auto" }}>
+      <div className="col-scroll" style={{ flex: 1, overflow: "auto" }}>
         {vocab.length === 0 ? (
           <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 12 }}>Aucun item — clique ➕</div>
-        ) : vocab.map((v, idx) => (
-          <ItemRow
-            key={v.id}
-            v={v}
-            isFirst={idx === 0}
-            isLast={idx === vocab.length - 1}
-            onEdit={() => setEditing(v)}
-            onRemove={() => onRemove(v.id)}
-            onUploadAudio={(f) => onUploadAudio(v.id, f)}
-            onUp={() => onReorder(idx, -1)}
-            onDown={() => onReorder(idx, 1)}
-            onMove={() => onMove(v)}
+        ) : (
+          <SortableList
+            items={vocab}
+            onReorder={onReorder}
+            renderItem={(v, { handleProps, isDragging }) => {
+              const idx = vocab.findIndex(x => x.id === v.id);
+              return (
+                <ItemRow
+                  v={v}
+                  isFirst={idx === 0}
+                  isLast={idx === vocab.length - 1}
+                  hideRomanisation={isReligion}
+                  dragHandle={<DragHandle handleProps={handleProps} />}
+                  isDragging={isDragging}
+                  onEdit={() => setEditing(v)}
+                  onRemove={() => onRemove(v.id)}
+                  onUploadAudio={(f) => onUploadAudio(v.id, f)}
+                  onUp={() => moveBy(idx, -1)}
+                  onDown={() => moveBy(idx, 1)}
+                  onMove={() => onMove(v)}
+                  onTogglePublished={() => onTogglePublished(v.id, !(v.isPublished !== false))}
+                />
+              );
+            }}
           />
-        ))}
+        )}
       </div>
     </>
   );
 }
 
 function ItemRow({
-  v, isFirst, isLast, onEdit, onRemove, onUploadAudio, onUp, onDown, onMove,
+  v, isFirst, isLast, hideRomanisation = false, dragHandle, isDragging, onEdit, onRemove, onUploadAudio, onUp, onDown, onMove, onTogglePublished,
 }: {
   v: VocabRow;
   isFirst: boolean;
   isLast: boolean;
+  hideRomanisation?: boolean;
+  dragHandle?: React.ReactNode;
+  isDragging?: boolean;
   onEdit: () => void;
   onRemove: () => void;
   onUploadAudio: (f: File) => void;
   onUp: () => void;
   onDown: () => void;
   onMove: () => void;
+  onTogglePublished: () => void;
 }) {
   const fileRef = useRef<HTMLInputElement>(null);
   const [uploading, setUploading] = useState(false);
+  const published = v.isPublished !== false;
 
   return (
-    <div style={{ ...rowBase, cursor: "default" }}>
-      <div style={{ flex: 1, minWidth: 0, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, alignItems: "center" }}>
-        <div style={{ fontSize: 18, fontFamily: "var(--font-amiri), serif", direction: "rtl", color: "var(--c-text)" }}>{v.word}</div>
-        <div style={{ fontSize: 12, fontWeight: 700, color: "#58cc02", fontFamily: "monospace" }}>{v.transliteration ?? "—"}</div>
-        <div style={{ fontSize: 12, color: "var(--c-sub)" }}>{fmtTr(v.translation)}</div>
+    <div style={{
+      ...rowBase,
+      cursor: "default",
+      opacity: published ? 1 : 0.55,
+      borderColor: isDragging ? "#58cc02" : undefined,
+      boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
+    }}>
+      {dragHandle}
+      <div style={{ flex: 1, minWidth: 0, display: "grid", gridTemplateColumns: hideRomanisation ? "1fr 1fr" : "1fr 1fr 1fr", gap: 8, alignItems: "center" }}>
+        <div style={{ fontSize: hideRomanisation ? 14 : 18, fontFamily: "var(--font-amiri), serif", direction: "rtl", color: "var(--c-text)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis" }}>{v.word}</span>
+          {!published && (
+            <span style={{ fontSize: 9, fontWeight: 800, color: "#ff8800", background: "rgba(255,136,0,0.15)", border: "1px solid #ff8800", padding: "1px 6px", borderRadius: 4, textTransform: "uppercase", letterSpacing: "0.04em", fontFamily: "system-ui, sans-serif", direction: "ltr" }}>
+              Brouillon
+            </span>
+          )}
+        </div>
+        {!hideRomanisation && (
+          <div style={{ fontSize: 12, fontWeight: 700, color: "#58cc02", fontFamily: "monospace" }}>{v.transliteration ?? "—"}</div>
+        )}
+        <div style={{ fontSize: 12, color: "var(--c-sub)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{fmtTr(v.translation)}</div>
       </div>
       <div style={{ display: "flex", gap: 2, alignItems: "center", flexShrink: 0 }}>
+        <button
+          onClick={onTogglePublished}
+          style={{ background: "transparent", border: "none", cursor: "pointer", color: published ? "#58cc02" : "#ff8800", fontSize: 14, padding: 4 }}
+          title={published ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+        >{published ? "👁️" : "🙈"}</button>
         <input ref={fileRef} type="file" accept="audio/mpeg,audio/wav,audio/mp3" style={{ display: "none" }}
           onChange={async e => {
             const f = e.target.files?.[0]; if (!f) return;
@@ -1793,8 +2389,15 @@ function ExercisesTab({
   onCreate: (typology: string) => void;
   onUpdate: (exId: string, patch: Partial<AuthoredExercise>) => void;
   onDelete: (exId: string) => void;
-  onReorder: (idx: number, dir: -1 | 1) => void;
+  onReorder: (orderedIds: string[]) => void;
 }) {
+  function moveBy(idx: number, dir: -1 | 1) {
+    const j = idx + dir;
+    if (j < 0 || j >= exercises.length) return;
+    const next = exercises.map(e => e.id);
+    [next[idx], next[j]] = [next[j], next[idx]];
+    onReorder(next);
+  }
   const [editing, setEditing] = useState<AuthoredExercise | null>(null);
   const [showAdd, setShowAdd] = useState(false);
 
@@ -1849,52 +2452,73 @@ function ExercisesTab({
         />
       )}
 
-      <div style={{ flex: 1, overflow: "auto", padding: 8 }}>
+      <div className="col-scroll" style={{ flex: 1, overflow: "auto", padding: 8 }}>
         {exercises.length === 0 ? (
           <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 12 }}>
             Aucun exercice — clique ➕ pour en ajouter
           </div>
-        ) : exercises.map((ex, idx) => {
-          const t = EXERCISE_REGISTRY[ex.typology];
-          const summary = summarizeConfig(ex.typology, ex.config, vocab);
-          return (
-            <div key={ex.id} style={{
-              display: "flex", alignItems: "center", gap: 8,
-              padding: "10px 12px", marginBottom: 6,
-              background: t ? "var(--c-card)" : "rgba(255,75,75,0.08)",
-              border: `1px solid ${t ? "var(--c-border)" : "#ff4b4b"}`,
-              borderRadius: 8,
-            }}>
-              <span style={{ fontSize: 11, fontWeight: 800, color: "var(--c-sub)", minWidth: 18 }}>{idx + 1}.</span>
-              <span style={{ fontSize: 18 }}>{t?.icon ?? "❓"}</span>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontWeight: 800, fontSize: 13, color: "var(--c-text)" }}>
-                  {t?.label ?? ex.typology}
-                  {!t && <span style={{ color: "#ff4b4b", fontSize: 10, marginLeft: 6 }}>(typologie inconnue)</span>}
+        ) : (
+          <SortableList
+            items={exercises}
+            onReorder={onReorder}
+            renderItem={(ex, { handleProps, isDragging }) => {
+              const idx = exercises.findIndex(e => e.id === ex.id);
+              const t = EXERCISE_REGISTRY[ex.typology];
+              const summary = summarizeConfig(ex.typology, ex.config, vocab);
+              const published = ex.isPublished !== false;
+              return (
+                <div style={{
+                  display: "flex", alignItems: "center", gap: 8,
+                  padding: "10px 12px", marginBottom: 6,
+                  background: t ? "var(--c-card)" : "rgba(255,75,75,0.08)",
+                  border: `1px solid ${isDragging ? "#58cc02" : (t ? "var(--c-border)" : "#ff4b4b")}`,
+                  borderRadius: 8,
+                  opacity: published ? 1 : 0.55,
+                  boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : "none",
+                }}>
+                  <DragHandle handleProps={handleProps} />
+                  <span style={{ fontSize: 11, fontWeight: 800, color: "var(--c-sub)", minWidth: 18 }}>{idx + 1}.</span>
+                  <span style={{ fontSize: 18 }}>{t?.icon ?? "❓"}</span>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 800, fontSize: 13, color: "var(--c-text)", display: "flex", alignItems: "center", gap: 6 }}>
+                      {t?.label ?? ex.typology}
+                      {!t && <span style={{ color: "#ff4b4b", fontSize: 10 }}>(typologie inconnue)</span>}
+                      {!published && (
+                        <span style={{ fontSize: 9, fontWeight: 800, color: "#ff8800", background: "rgba(255,136,0,0.15)", border: "1px solid #ff8800", padding: "1px 6px", borderRadius: 4, textTransform: "uppercase", letterSpacing: "0.04em" }}>
+                          Brouillon
+                        </span>
+                      )}
+                    </div>
+                    <div style={{ fontSize: 11, color: "var(--c-sub)", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                      {summary || "— config vide"}
+                    </div>
+                  </div>
+                  <div style={{ display: "flex", gap: 2, alignItems: "center", flexShrink: 0 }}>
+                    <button
+                      onClick={() => onUpdate(ex.id, { isPublished: !published })}
+                      style={{ background: "transparent", border: "none", cursor: "pointer", color: published ? "#58cc02" : "#ff8800", fontSize: 14, padding: 4 }}
+                      title={published ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+                    >{published ? "👁️" : "🙈"}</button>
+                    <button
+                      onClick={() => moveBy(idx, -1)}
+                      disabled={idx === 0}
+                      style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: idx === 0 ? 0.3 : 1 }}
+                      title="Monter"
+                    >↑</button>
+                    <button
+                      onClick={() => moveBy(idx, 1)}
+                      disabled={idx === exercises.length - 1}
+                      style={{ background: "transparent", border: "none", cursor: idx === exercises.length - 1 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: idx === exercises.length - 1 ? 0.3 : 1 }}
+                      title="Descendre"
+                    >↓</button>
+                    <button onClick={() => setEditing(ex)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--c-sub)", fontSize: 13, padding: 4 }} title="Éditer le contenu">✏️</button>
+                    <button onClick={() => onDelete(ex.id)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "#ff4b4b", fontSize: 13, padding: 4 }} title="Supprimer">🗑️</button>
+                  </div>
                 </div>
-                <div style={{ fontSize: 11, color: "var(--c-sub)", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                  {summary || "— config vide"}
-                </div>
-              </div>
-              <div style={{ display: "flex", gap: 2, alignItems: "center", flexShrink: 0 }}>
-                <button
-                  onClick={() => onReorder(idx, -1)}
-                  disabled={idx === 0}
-                  style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: idx === 0 ? 0.3 : 1 }}
-                  title="Monter"
-                >↑</button>
-                <button
-                  onClick={() => onReorder(idx, 1)}
-                  disabled={idx === exercises.length - 1}
-                  style={{ background: "transparent", border: "none", cursor: idx === exercises.length - 1 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: idx === exercises.length - 1 ? 0.3 : 1 }}
-                  title="Descendre"
-                >↓</button>
-                <button onClick={() => setEditing(ex)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--c-sub)", fontSize: 13, padding: 4 }} title="Éditer le contenu">✏️</button>
-                <button onClick={() => onDelete(ex.id)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "#ff4b4b", fontSize: 13, padding: 4 }} title="Supprimer">🗑️</button>
-              </div>
-            </div>
-          );
-        })}
+              );
+            }}
+          />
+        )}
       </div>
     </>
   );
@@ -1951,6 +2575,33 @@ function summarizeConfig(typology: string, config: any, vocab: VocabRow[]): stri
       const target = cfg.targetVocabId ? labelOf(cfg.targetVocabId) : "—";
       return `${target} ↔ "${cfg.proposedRomanisation ?? ""}" · ${cfg.isTrue ? "VRAI" : "FAUX"}`;
     }
+    case "TexteReligieux": {
+      const ar = typeof cfg.arabe === "string" ? cfg.arabe : "";
+      const fr = typeof cfg.fr === "string" ? cfg.fr : "";
+      if (!ar && !fr) return "(vide)";
+      const excerpt = (fr || ar).slice(0, 60);
+      return `${excerpt}${excerpt.length === 60 ? "…" : ""}${cfg.source ? ` · ${cfg.source}` : ""}`;
+    }
+    case "SelectionImages": {
+      const items = Array.isArray(cfg.items) ? cfg.items : [];
+      const correct = items.filter((i: any) => i?.isCorrect).length;
+      const mode = cfg.freeSelection ? "libre" : `${correct} correct(s)`;
+      return `${items.length} item(s) · ${mode}`;
+    }
+    case "TriDeuxCategories": {
+      const items = Array.isArray(cfg.items) ? cfg.items : [];
+      const a = items.filter((i: any) => i?.correct === "A").length;
+      const b = items.filter((i: any) => i?.correct === "B").length;
+      const labA = cfg.categorieA?.label ?? "A";
+      const labB = cfg.categorieB?.label ?? "B";
+      return `${labA} (${a}) · ${labB} (${b})`;
+    }
+    case "RelierParTrait": {
+      const pg = Array.isArray(cfg.pairesGauche) ? cfg.pairesGauche : [];
+      const pd = Array.isArray(cfg.pairesDroite) ? cfg.pairesDroite : [];
+      const pairs = cfg.correct ? Object.keys(cfg.correct).length : 0;
+      return `${pg.length}↔${pd.length} · ${pairs} paire(s)`;
+    }
     default:
       return "";
   }
@@ -1969,9 +2620,15 @@ function ExerciseConfigModal({
   onSave: (patch: Partial<AuthoredExercise>) => void;
 }) {
   const [local, setLocal] = useState<any>(exercise.config ?? {});
+  const [localPublished, setLocalPublished] = useState<boolean>(exercise.isPublished !== false);
+  const [showPreview, setShowPreview] = useState<boolean>(true);
   const t = EXERCISE_REGISTRY[exercise.typology];
 
-  const dirty = JSON.stringify(local) !== JSON.stringify(exercise.config ?? {});
+  const initialPublished = exercise.isPublished !== false;
+  const dirty =
+    JSON.stringify(local) !== JSON.stringify(exercise.config ?? {}) ||
+    localPublished !== initialPublished;
+  const needsVocab = (t?.minItems ?? 0) > 0;
 
   return (
     <Modal
@@ -1980,13 +2637,34 @@ function ExerciseConfigModal({
       onClose={onClose}
       width={720}
     >
-      {vocab.length === 0 ? (
+      {needsVocab && vocab.length === 0 ? (
         <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 13 }}>
           Aucun item disponible. Ajoute d'abord des mots dans l'onglet Items.
         </div>
       ) : (
         <>
           <ExerciseConfigEditor typology={exercise.typology} config={local} vocab={vocab} onChange={setLocal} />
+          <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px dashed var(--c-border)" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--c-text)" }}>
+                👁️ Aperçu live
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowPreview(v => !v)}
+                style={{ padding: "4px 10px", borderRadius: 6, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 11, cursor: "pointer", fontWeight: 700 }}
+              >
+                {showPreview ? "Masquer" : "Afficher"}
+              </button>
+            </div>
+            {showPreview && (
+              <div style={{ padding: 10, background: "#1a1f26", borderRadius: 12, border: "1px solid var(--c-border)", overflow: "hidden" }}>
+                <div style={{ zoom: 0.7 }}>
+                  <ExercisePreview typology={exercise.typology} config={local} vocab={vocab} />
+                </div>
+              </div>
+            )}
+          </div>
           <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px dashed var(--c-border)" }}>
             <label style={lbl}>Titre de l'exercice (optionnel)</label>
             <input
@@ -2001,10 +2679,22 @@ function ExerciseConfigModal({
           </div>
         </>
       )}
+      <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 14, paddingTop: 12, borderTop: "1px dashed var(--c-border)", fontSize: 13, color: "var(--c-text)" }}>
+        <input
+          type="checkbox"
+          id="ex-ispublished"
+          checked={localPublished}
+          onChange={e => setLocalPublished(e.target.checked)}
+        />
+        <label htmlFor="ex-ispublished" style={{ cursor: "pointer", fontWeight: 700 }}>Publié</label>
+        <span style={{ fontSize: 11, color: "var(--c-sub)", marginLeft: 8 }}>
+          (décoche pour masquer l'exercice du parcours élève)
+        </span>
+      </div>
       <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", paddingTop: 12, marginTop: 14, borderTop: "1px solid var(--c-border)" }}>
         <button onClick={onClose} style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 13, cursor: "pointer" }}>Annuler</button>
         <button
-          onClick={() => onSave({ config: local })}
+          onClick={() => onSave({ config: local, isPublished: localPublished })}
           disabled={!dirty}
           style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13, cursor: dirty ? "pointer" : "default", opacity: dirty ? 1 : 0.4 }}
         >💾 Enregistrer</button>
@@ -2111,6 +2801,411 @@ function ExerciseConfigEditor({
               Sélectionne les 2 mots pour voir si l'association sera VRAIE ou FAUSSE.
             </div>
           )}
+        </>
+      );
+    }
+    case "TexteReligieux": {
+      const arabe  = typeof cfg.arabe  === "string" ? cfg.arabe  : "";
+      const fr     = typeof cfg.fr     === "string" ? cfg.fr     : "";
+      const source = typeof cfg.source === "string" ? cfg.source : "";
+      const titre  = typeof cfg.titre  === "string" ? cfg.titre  : "";
+      return (
+        <>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Écran de lecture : saisis un bloc arabe (hadith, verset…) et sa traduction française. Pas de romanisation, pas de distracteurs.
+          </div>
+          <div style={{ marginBottom: 14 }}>
+            <label style={lbl}>Titre (optionnel)</label>
+            <input
+              style={inp}
+              value={titre}
+              onChange={(e) => onChange({ ...cfg, titre: e.target.value })}
+              placeholder="ex. Hadith de l'unité"
+            />
+          </div>
+          <div style={{ marginBottom: 14 }}>
+            <label style={lbl}>Texte arabe (avec diacritiques) *</label>
+            <textarea
+              style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "12px 14px", minHeight: 140, lineHeight: 1.8, resize: "vertical" }}
+              value={arabe}
+              onChange={(e) => onChange({ ...cfg, arabe: e.target.value })}
+              placeholder="بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ …"
+            />
+          </div>
+          <div style={{ marginBottom: 14 }}>
+            <label style={lbl}>Traduction française *</label>
+            <textarea
+              style={{ ...inp, minHeight: 110, lineHeight: 1.5, resize: "vertical", padding: "10px 14px" }}
+              value={fr}
+              onChange={(e) => onChange({ ...cfg, fr: e.target.value })}
+              placeholder="L'Islam est bâti sur cinq…"
+            />
+          </div>
+          <div>
+            <label style={lbl}>Source (optionnelle)</label>
+            <input
+              style={inp}
+              value={source}
+              onChange={(e) => onChange({ ...cfg, source: e.target.value })}
+              placeholder="ex. Rapporté par al-Bukhārī et Muslim"
+            />
+          </div>
+          <div style={{ fontSize: 11, color: (!arabe || !fr) ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+            {(!arabe || !fr) ? "Arabe et français sont obligatoires" : "✓ prêt"}
+          </div>
+        </>
+      );
+    }
+    case "SelectionImages": {
+      const items: Array<{ emoji?: string; label?: string; isCorrect?: boolean }> =
+        Array.isArray(cfg.items) ? cfg.items : [];
+      const freeSelection = cfg.freeSelection === true;
+      const correctCount = items.filter(i => i.isCorrect).length;
+      return (
+        <>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Exercice à sélection multiple avec emoji + label. Coche les réponses attendues (sauf mode libre).
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
+            <div>
+              <label style={lbl}>Question (arabe, avec chakle)</label>
+              <input style={{ ...inp, direction: "rtl", fontSize: 16 }}
+                value={cfg.question ?? ""}
+                onChange={e => onChange({ ...cfg, question: e.target.value })}
+                placeholder="اِخْتَرِ اَلْجَوَابَ" />
+            </div>
+            <div>
+              <label style={lbl}>Question (français)</label>
+              <input style={inp}
+                value={cfg.questionFr ?? ""}
+                onChange={e => onChange({ ...cfg, questionFr: e.target.value })}
+                placeholder="Lesquels sont vrais ?" />
+            </div>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 12, flexWrap: "wrap" }}>
+            <label style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, fontWeight: 700 }}>
+              <input type="checkbox" checked={freeSelection}
+                onChange={e => onChange({ ...cfg, freeSelection: e.target.checked })} />
+              Sélection libre (pas de bonne réponse)
+            </label>
+            {!freeSelection && (
+              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ fontSize: 11, color: "var(--c-sub)", fontWeight: 700 }}>Min à cocher :</span>
+                <input type="number" min={0} style={{ ...inp, width: 70, padding: "6px 8px" }}
+                  value={typeof cfg.minSelection === "number" ? cfg.minSelection : ""}
+                  onChange={e => {
+                    const v = e.target.value;
+                    onChange({ ...cfg, minSelection: v === "" ? undefined : Number(v) });
+                  }}
+                  placeholder="auto" />
+              </div>
+            )}
+          </div>
+          <div>
+            <div style={{ ...lbl, marginBottom: 8 }}>Items</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {items.map((it, idx) => (
+                <div key={idx} style={{
+                  display: "grid", gridTemplateColumns: "60px 1fr auto auto", gap: 8,
+                  alignItems: "center", padding: "8px 10px",
+                  border: "1px solid var(--c-border)", borderRadius: 10, background: "var(--c-bg)",
+                }}>
+                  <input style={{ ...inp, textAlign: "center", fontSize: 22, padding: "6px 8px" }}
+                    maxLength={4}
+                    value={it.emoji ?? ""}
+                    onChange={e => {
+                      const next = [...items]; next[idx] = { ...next[idx], emoji: e.target.value };
+                      onChange({ ...cfg, items: next });
+                    }}
+                    placeholder="🙂" />
+                  <input style={inp}
+                    value={it.label ?? ""}
+                    onChange={e => {
+                      const next = [...items]; next[idx] = { ...next[idx], label: e.target.value };
+                      onChange({ ...cfg, items: next });
+                    }}
+                    placeholder="Libellé (optionnel)" />
+                  {!freeSelection && (
+                    <label style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 11, fontWeight: 700 }}>
+                      <input type="checkbox" checked={!!it.isCorrect}
+                        onChange={e => {
+                          const next = [...items]; next[idx] = { ...next[idx], isCorrect: e.target.checked };
+                          onChange({ ...cfg, items: next });
+                        }} />
+                      Correct
+                    </label>
+                  )}
+                  <button type="button" style={{ ...colBtnGhost, padding: "4px 8px" }}
+                    onClick={() => {
+                      const next = items.filter((_, i) => i !== idx);
+                      onChange({ ...cfg, items: next });
+                    }}>🗑</button>
+                </div>
+              ))}
+            </div>
+            <button type="button"
+              onClick={() => onChange({ ...cfg, items: [...items, { emoji: "🙂", label: "", isCorrect: false }] })}
+              style={{ marginTop: 10, padding: "7px 12px", borderRadius: 8, border: "1.5px dashed var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 12, fontWeight: 800, cursor: "pointer" }}>
+              + Ajouter un item
+            </button>
+            <div style={{ fontSize: 11, color: items.length < 2 ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+              {items.length} item(s){!freeSelection && ` · ${correctCount} marqué(s) "correct"`}{items.length < 2 && " · min 2 requis"}
+            </div>
+          </div>
+        </>
+      );
+    }
+    case "TriDeuxCategories": {
+      const items: Array<{ emoji?: string; label?: string; correct: "A" | "B" }> =
+        Array.isArray(cfg.items) ? cfg.items : [];
+      const catA = cfg.categorieA ?? { label: "A" };
+      const catB = cfg.categorieB ?? { label: "B" };
+      return (
+        <>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Trie chaque item dans la catégorie A ou B. Idéal pour "ce qu'Allah aime" / "ce qu'Allah n'aime pas".
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
+            <div>
+              <label style={lbl}>Question (arabe)</label>
+              <input style={{ ...inp, direction: "rtl", fontSize: 16 }}
+                value={cfg.question ?? ""}
+                onChange={e => onChange({ ...cfg, question: e.target.value })} />
+            </div>
+            <div>
+              <label style={lbl}>Question (français)</label>
+              <input style={inp}
+                value={cfg.questionFr ?? ""}
+                onChange={e => onChange({ ...cfg, questionFr: e.target.value })} />
+            </div>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 14 }}>
+            <div style={{ padding: 10, border: "1.5px solid var(--c-border)", borderRadius: 10, background: "rgba(88,204,2,0.05)" }}>
+              <label style={lbl}>Catégorie A</label>
+              <input style={inp}
+                value={catA.label ?? ""}
+                onChange={e => onChange({ ...cfg, categorieA: { ...catA, label: e.target.value } })}
+                placeholder="Ce qu'Allah aime" />
+              <div style={{ marginTop: 6, display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ fontSize: 10, color: "var(--c-sub)", fontWeight: 700 }}>Couleur :</span>
+                <input type="color" value={catA.color ?? "#58cc02"}
+                  onChange={e => onChange({ ...cfg, categorieA: { ...catA, color: e.target.value } })} />
+              </div>
+            </div>
+            <div style={{ padding: 10, border: "1.5px solid var(--c-border)", borderRadius: 10, background: "rgba(255,75,75,0.05)" }}>
+              <label style={lbl}>Catégorie B</label>
+              <input style={inp}
+                value={catB.label ?? ""}
+                onChange={e => onChange({ ...cfg, categorieB: { ...catB, label: e.target.value } })}
+                placeholder="Ce qu'Allah n'aime pas" />
+              <div style={{ marginTop: 6, display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ fontSize: 10, color: "var(--c-sub)", fontWeight: 700 }}>Couleur :</span>
+                <input type="color" value={catB.color ?? "#ff4b4b"}
+                  onChange={e => onChange({ ...cfg, categorieB: { ...catB, color: e.target.value } })} />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style={{ ...lbl, marginBottom: 8 }}>Items à trier</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {items.map((it, idx) => (
+                <div key={idx} style={{
+                  display: "grid", gridTemplateColumns: "60px 1fr auto auto", gap: 8,
+                  alignItems: "center", padding: "8px 10px",
+                  border: "1px solid var(--c-border)", borderRadius: 10, background: "var(--c-bg)",
+                }}>
+                  <input style={{ ...inp, textAlign: "center", fontSize: 22, padding: "6px 8px" }}
+                    maxLength={4}
+                    value={it.emoji ?? ""}
+                    onChange={e => {
+                      const next = [...items]; next[idx] = { ...next[idx], emoji: e.target.value };
+                      onChange({ ...cfg, items: next });
+                    }}
+                    placeholder="✅" />
+                  <input style={inp}
+                    value={it.label ?? ""}
+                    onChange={e => {
+                      const next = [...items]; next[idx] = { ...next[idx], label: e.target.value };
+                      onChange({ ...cfg, items: next });
+                    }}
+                    placeholder="Libellé" />
+                  <select style={{ ...inp, width: 120, padding: "6px 8px" }}
+                    value={it.correct}
+                    onChange={e => {
+                      const next = [...items]; next[idx] = { ...next[idx], correct: e.target.value as "A" | "B" };
+                      onChange({ ...cfg, items: next });
+                    }}>
+                    <option value="A">→ {catA.label ?? "A"}</option>
+                    <option value="B">→ {catB.label ?? "B"}</option>
+                  </select>
+                  <button type="button" style={{ ...colBtnGhost, padding: "4px 8px" }}
+                    onClick={() => {
+                      const next = items.filter((_, i) => i !== idx);
+                      onChange({ ...cfg, items: next });
+                    }}>🗑</button>
+                </div>
+              ))}
+            </div>
+            <button type="button"
+              onClick={() => onChange({ ...cfg, items: [...items, { emoji: "✅", label: "", correct: "A" }] })}
+              style={{ marginTop: 10, padding: "7px 12px", borderRadius: 8, border: "1.5px dashed var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 12, fontWeight: 800, cursor: "pointer" }}>
+              + Ajouter un item
+            </button>
+            <div style={{ fontSize: 11, color: items.length < 2 ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+              {items.length} item(s) · A: {items.filter(i => i.correct === "A").length} / B: {items.filter(i => i.correct === "B").length}
+            </div>
+          </div>
+        </>
+      );
+    }
+    case "RelierParTrait": {
+      const pg: Array<{ id: string; emoji?: string; label?: string }> =
+        Array.isArray(cfg.pairesGauche) ? cfg.pairesGauche : [];
+      const pd: Array<{ id: string; emoji?: string; label?: string }> =
+        Array.isArray(cfg.pairesDroite) ? cfg.pairesDroite : [];
+      const correct: Record<string, string> =
+        cfg.correct && typeof cfg.correct === "object" ? cfg.correct : {};
+      const nextId = (prefix: string, existing: Array<{ id: string }>) => {
+        let i = existing.length + 1;
+        while (existing.some(x => x.id === `${prefix}${i}`)) i++;
+        return `${prefix}${i}`;
+      };
+      return (
+        <>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Chaque item de gauche se relie à un item de droite. Définis les paires correctes dans la table d'association.
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 14 }}>
+            <div>
+              <label style={lbl}>Question (arabe)</label>
+              <input style={{ ...inp, direction: "rtl", fontSize: 16 }}
+                value={cfg.question ?? ""}
+                onChange={e => onChange({ ...cfg, question: e.target.value })} />
+            </div>
+            <div>
+              <label style={lbl}>Question (français)</label>
+              <input style={inp}
+                value={cfg.questionFr ?? ""}
+                onChange={e => onChange({ ...cfg, questionFr: e.target.value })} />
+            </div>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 14 }}>
+            <div>
+              <div style={{ ...lbl, marginBottom: 6 }}>Côté gauche (source)</div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {pg.map((n, idx) => (
+                  <div key={n.id} style={{
+                    display: "grid", gridTemplateColumns: "50px 1fr auto", gap: 6,
+                    alignItems: "center", padding: "6px 8px",
+                    border: "1px solid var(--c-border)", borderRadius: 10, background: "var(--c-bg)",
+                  }}>
+                    <input style={{ ...inp, textAlign: "center", fontSize: 20, padding: "4px 6px" }}
+                      maxLength={4}
+                      value={n.emoji ?? ""}
+                      onChange={e => {
+                        const next = [...pg]; next[idx] = { ...next[idx], emoji: e.target.value };
+                        onChange({ ...cfg, pairesGauche: next });
+                      }} />
+                    <input style={inp}
+                      value={n.label ?? ""}
+                      onChange={e => {
+                        const next = [...pg]; next[idx] = { ...next[idx], label: e.target.value };
+                        onChange({ ...cfg, pairesGauche: next });
+                      }}
+                      placeholder="Libellé" />
+                    <button type="button" style={{ ...colBtnGhost, padding: "4px 8px" }}
+                      onClick={() => {
+                        const removed = pg[idx].id;
+                        const next = pg.filter((_, i) => i !== idx);
+                        const nextCorrect = { ...correct }; delete nextCorrect[removed];
+                        onChange({ ...cfg, pairesGauche: next, correct: nextCorrect });
+                      }}>🗑</button>
+                  </div>
+                ))}
+              </div>
+              <button type="button"
+                onClick={() => onChange({ ...cfg, pairesGauche: [...pg, { id: nextId("g", pg), emoji: "", label: "" }] })}
+                style={{ marginTop: 8, padding: "6px 10px", borderRadius: 8, border: "1.5px dashed var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 11, fontWeight: 800, cursor: "pointer" }}>
+                + Ajouter à gauche
+              </button>
+            </div>
+            <div>
+              <div style={{ ...lbl, marginBottom: 6 }}>Côté droit (cibles)</div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {pd.map((n, idx) => (
+                  <div key={n.id} style={{
+                    display: "grid", gridTemplateColumns: "50px 1fr auto", gap: 6,
+                    alignItems: "center", padding: "6px 8px",
+                    border: "1px solid var(--c-border)", borderRadius: 10, background: "var(--c-bg)",
+                  }}>
+                    <input style={{ ...inp, textAlign: "center", fontSize: 20, padding: "4px 6px" }}
+                      maxLength={4}
+                      value={n.emoji ?? ""}
+                      onChange={e => {
+                        const next = [...pd]; next[idx] = { ...next[idx], emoji: e.target.value };
+                        onChange({ ...cfg, pairesDroite: next });
+                      }} />
+                    <input style={inp}
+                      value={n.label ?? ""}
+                      onChange={e => {
+                        const next = [...pd]; next[idx] = { ...next[idx], label: e.target.value };
+                        onChange({ ...cfg, pairesDroite: next });
+                      }}
+                      placeholder="Libellé" />
+                    <button type="button" style={{ ...colBtnGhost, padding: "4px 8px" }}
+                      onClick={() => {
+                        const removed = pd[idx].id;
+                        const next = pd.filter((_, i) => i !== idx);
+                        const nextCorrect: Record<string, string> = {};
+                        for (const [k, v] of Object.entries(correct)) if (v !== removed) nextCorrect[k] = v;
+                        onChange({ ...cfg, pairesDroite: next, correct: nextCorrect });
+                      }}>🗑</button>
+                  </div>
+                ))}
+              </div>
+              <button type="button"
+                onClick={() => onChange({ ...cfg, pairesDroite: [...pd, { id: nextId("d", pd), emoji: "", label: "" }] })}
+                style={{ marginTop: 8, padding: "6px 10px", borderRadius: 8, border: "1.5px dashed var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 11, fontWeight: 800, cursor: "pointer" }}>
+                + Ajouter à droite
+              </button>
+            </div>
+          </div>
+          <div>
+            <div style={{ ...lbl, marginBottom: 8 }}>Paires correctes (gauche → droite)</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {pg.map(g => (
+                <div key={g.id} style={{
+                  display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 8,
+                  alignItems: "center", padding: "6px 10px",
+                  border: "1px solid var(--c-border)", borderRadius: 10, background: "var(--c-bg)",
+                }}>
+                  <div style={{ fontSize: 13, fontWeight: 700 }}>
+                    <span style={{ fontSize: 18, marginRight: 6 }}>{g.emoji}</span>
+                    {g.label || <span style={{ color: "var(--c-sub)", fontStyle: "italic" }}>(sans libellé)</span>}
+                  </div>
+                  <span style={{ fontSize: 12, color: "var(--c-sub)" }}>→</span>
+                  <select style={inp}
+                    value={correct[g.id] ?? ""}
+                    onChange={e => {
+                      const val = e.target.value;
+                      const nextCorrect = { ...correct };
+                      if (val) nextCorrect[g.id] = val; else delete nextCorrect[g.id];
+                      onChange({ ...cfg, correct: nextCorrect });
+                    }}>
+                    <option value="">— Choisir —</option>
+                    {pd.map(d => (
+                      <option key={d.id} value={d.id}>
+                        {d.emoji ? `${d.emoji} ` : ""}{d.label || d.id}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ))}
+            </div>
+            <div style={{ fontSize: 11, color: Object.keys(correct).length < pg.length ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+              {Object.keys(correct).length} / {pg.length} paires définies
+            </div>
+          </div>
         </>
       );
     }

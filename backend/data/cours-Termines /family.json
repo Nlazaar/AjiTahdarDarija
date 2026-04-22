@@ -1,0 +1,60 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-famille",
+      "title": "Vocabulaire — Famille",
+      "subtitle": "Liens familiaux et proches",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 210,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-famille-base",
+        "title": "La famille",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "عَائِلَة",         "transliteration": "3a2ila",      "translation": { "fr": "famille" },                "tags": ["famille"] },
+          { "word": "مَامَا",           "transliteration": "mama",        "translation": { "fr": "maman" },                  "tags": ["famille"] },
+          { "word": "بَابَا",            "transliteration": "baba",        "translation": { "fr": "papa" },                   "tags": ["famille"] },
+          { "word": "خُو",              "transliteration": "khou",        "translation": { "fr": "frère" },                  "tags": ["famille"] },
+          { "word": "خْت",              "transliteration": "kht",         "translation": { "fr": "sœur" },                   "tags": ["famille"] },
+          { "word": "خُوت",             "transliteration": "khout",       "translation": { "fr": "frères et sœurs" },        "tags": ["famille"] },
+          { "word": "وْلْد",              "transliteration": "wld",         "translation": { "fr": "fils" },                   "tags": ["famille"] },
+          { "word": "بْنْت",              "transliteration": "bnt",         "translation": { "fr": "fille" },                  "tags": ["famille"] },
+          { "word": "طْفْل",              "transliteration": "tfl",         "translation": { "fr": "enfant" },                 "tags": ["famille"] },
+          { "word": "رْضِيع",            "transliteration": "rdi3",        "translation": { "fr": "bébé" },                   "tags": ["famille"] },
+          { "word": "جَدّ",              "transliteration": "jdd",         "translation": { "fr": "grand-père" },             "tags": ["famille"] },
+          { "word": "جَدَّة",             "transliteration": "jdda",        "translation": { "fr": "grand-mère" },             "tags": ["famille"] },
+          { "word": "عَمِّي",            "transliteration": "3mmi",        "translation": { "fr": "oncle paternel" },         "tags": ["famille"] },
+          { "word": "عَمْتِي",           "transliteration": "3mmti",       "translation": { "fr": "tante paternelle" },       "tags": ["famille"] },
+          { "word": "خَالِي",            "transliteration": "khali",       "translation": { "fr": "oncle maternel" },         "tags": ["famille"] },
+          { "word": "خَالْتِي",           "transliteration": "khalti",      "translation": { "fr": "tante maternelle" },       "tags": ["famille"] },
+          { "word": "وْلْد عَمِّي",       "transliteration": "wld 3mmi",    "translation": { "fr": "cousin paternel" },        "tags": ["famille"] },
+          { "word": "بْنْت عَمِّي",       "transliteration": "bnt 3mmi",    "translation": { "fr": "cousine paternelle" },     "tags": ["famille"] },
+          { "word": "وْلْد خَالِي",       "transliteration": "wld khali",   "translation": { "fr": "cousin maternel" },        "tags": ["famille"] },
+          { "word": "بْنْت خَالِي",       "transliteration": "bnt khali",   "translation": { "fr": "cousine maternelle" },     "tags": ["famille"] },
+          { "word": "زُوج",              "transliteration": "zouj",        "translation": { "fr": "mari" },                   "tags": ["famille"] },
+          { "word": "مْرَا",              "transliteration": "mra",         "translation": { "fr": "épouse" },                 "tags": ["famille"] },
+          { "word": "خْطُوبَة",          "transliteration": "khtouba",     "translation": { "fr": "fiançailles" },            "tags": ["famille"] },
+          { "word": "عْرْس",             "transliteration": "3rs",         "translation": { "fr": "mariage" },                "tags": ["famille"] },
+          { "word": "طْلَاق",            "transliteration": "tla9",        "translation": { "fr": "divorce" },                "tags": ["famille"] },
+          { "word": "حْمَاة",            "transliteration": "7ma",         "translation": { "fr": "belle-mère" },             "tags": ["famille"] },
+          { "word": "حْمُو",              "transliteration": "7mou",        "translation": { "fr": "beau-père" },              "tags": ["famille"] },
+          { "word": "نْسِيب",            "transliteration": "nsib",        "translation": { "fr": "beau-frère" },             "tags": ["famille"] },
+          { "word": "نْسِيبَة",           "transliteration": "nsiba",       "translation": { "fr": "belle-sœur" },             "tags": ["famille"] },
+          { "word": "رْبِيبَة",           "transliteration": "rbiba",       "translation": { "fr": "belle-fille" },            "tags": ["famille"] },
+          { "word": "رْبِيب",            "transliteration": "rbib",        "translation": { "fr": "beau-fils" },              "tags": ["famille"] },
+          { "word": "مُول الدَّار",      "transliteration": "moul ddar",   "translation": { "fr": "chef de famille" },        "tags": ["famille"] },
+          { "word": "رَبَّة البَيْت",     "transliteration": "rabbat lbayt","translation": { "fr": "maîtresse de maison" },    "tags": ["famille"] },
+          { "word": "قْرَايْب",           "transliteration": "qra2yb",      "translation": { "fr": "proches" },                "tags": ["famille"] },
+          { "word": "نَاس",              "transliteration": "nas",         "translation": { "fr": "gens / famille élargie" }, "tags": ["famille"] }
+        ]
+      }
+    ]
+  }
+}

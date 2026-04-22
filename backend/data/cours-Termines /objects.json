@@ -1,0 +1,64 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-objets",
+      "title": "Vocabulaire — Objets",
+      "subtitle": "Objets du quotidien",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 200,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-objets-base",
+        "title": "Les objets",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "مْفْتَاح",            "transliteration": "mfta7",          "translation": { "fr": "clé" },                 "tags": ["objet"] },
+          { "word": "تِلِيفُون",            "transliteration": "tilifun",        "translation": { "fr": "téléphone" },           "tags": ["objet"] },
+          { "word": "هَاتِف",              "transliteration": "hatif",          "translation": { "fr": "téléphone (variante)" },"tags": ["objet"] },
+          { "word": "حَاسُوب",             "transliteration": "7asoub",         "translation": { "fr": "ordinateur" },          "tags": ["objet"] },
+          { "word": "قْلْم",                "transliteration": "qelm",           "translation": { "fr": "stylo" },               "tags": ["objet"] },
+          { "word": "وَرْقَة",              "transliteration": "wrqa",           "translation": { "fr": "feuille / papier" },    "tags": ["objet"] },
+          { "word": "كْتَاب",              "transliteration": "ktab",           "translation": { "fr": "livre" },               "tags": ["objet"] },
+          { "word": "مْحْفَظَة",            "transliteration": "m7faDa",         "translation": { "fr": "sac / cartable" },      "tags": ["objet"] },
+          { "word": "مْحْفَظَة نْقُود",     "transliteration": "portmona",       "translation": { "fr": "portefeuille" },        "tags": ["objet"] },
+          { "word": "كُرْسِي",              "transliteration": "kursi",          "translation": { "fr": "chaise" },              "tags": ["objet"] },
+          { "word": "طَابْلَة",             "transliteration": "tabla",          "translation": { "fr": "table" },               "tags": ["objet"] },
+          { "word": "فْرَاش",              "transliteration": "frach",          "translation": { "fr": "lit / matelas" },       "tags": ["objet"] },
+          { "word": "مْخَدَّة",              "transliteration": "mkheda",         "translation": { "fr": "oreiller" },            "tags": ["objet"] },
+          { "word": "بْطَانِيَّة",            "transliteration": "bTaniya",        "translation": { "fr": "couverture" },          "tags": ["objet"] },
+          { "word": "زَرْبِيَّة",             "transliteration": "zrbya",          "translation": { "fr": "tapis" },               "tags": ["objet"] },
+          { "word": "سَاعَة",              "transliteration": "sa3a",           "translation": { "fr": "montre / horloge" },    "tags": ["objet"] },
+          { "word": "سَاعَة حَائِط",       "transliteration": "sa3a 7a2iT",     "translation": { "fr": "horloge murale" },      "tags": ["objet"] },
+          { "word": "مِصْبَاح",             "transliteration": "msba7",          "translation": { "fr": "lampe" },               "tags": ["objet"] },
+          { "word": "تِلْفَاز",             "transliteration": "tilfaz",         "translation": { "fr": "télévision" },          "tags": ["objet"] },
+          { "word": "تِلْفَازَة",            "transliteration": "tlfaza",         "translation": { "fr": "télévision (variante)" }, "tags": ["objet"] },
+          { "word": "رِيمُوت",              "transliteration": "rimot",          "translation": { "fr": "télécommande" },        "tags": ["objet"] },
+          { "word": "رَادْيُو",              "transliteration": "radio",          "translation": { "fr": "radio" },               "tags": ["objet"] },
+          { "word": "كَاس",                "transliteration": "kas",            "translation": { "fr": "verre" },               "tags": ["objet"] },
+          { "word": "طْبْسِيل",             "transliteration": "Tbssil",         "translation": { "fr": "assiette" },            "tags": ["objet"] },
+          { "word": "مْعْلْقَة",              "transliteration": "m3lqa",          "translation": { "fr": "cuillère" },            "tags": ["objet"] },
+          { "word": "فِرْشِيطَة",            "transliteration": "ferchita",       "translation": { "fr": "fourchette" },          "tags": ["objet"] },
+          { "word": "سْكِّين",              "transliteration": "sikin",          "translation": { "fr": "couteau" },             "tags": ["objet"] },
+          { "word": "قْنِينَة",              "transliteration": "qnina",          "translation": { "fr": "bouteille" },           "tags": ["objet"] },
+          { "word": "فْرَّاشَة",             "transliteration": "frrasha",        "translation": { "fr": "brosse / balai" },      "tags": ["objet"] },
+          { "word": "مْرَايَة",              "transliteration": "mraya",          "translation": { "fr": "miroir" },              "tags": ["objet"] },
+          { "word": "مْظَلَّة",              "transliteration": "mDalla",         "translation": { "fr": "parapluie" },           "tags": ["objet"] },
+          { "word": "بَاب",                "transliteration": "bab",            "translation": { "fr": "porte" },               "tags": ["objet"] },
+          { "word": "شَرْجَم",             "transliteration": "cherjm",         "translation": { "fr": "fenêtre" },             "tags": ["objet"] },
+          { "word": "ثْلَاجَة",              "transliteration": "tlaja",          "translation": { "fr": "frigo" },               "tags": ["objet"] },
+          { "word": "فْرَان",               "transliteration": "frran",          "translation": { "fr": "four" },                "tags": ["objet"] },
+          { "word": "مَاكِينَة الصَّابُون",  "transliteration": "makinat ssaboun","translation": { "fr": "machine à laver" },     "tags": ["objet"] },
+          { "word": "صَابُون",             "transliteration": "saboun",         "translation": { "fr": "savon" },               "tags": ["objet"] },
+          { "word": "شَامْبُو",             "transliteration": "champoo",        "translation": { "fr": "shampoing" },           "tags": ["objet"] },
+          { "word": "مْنْشْفَة",             "transliteration": "mnchfa",         "translation": { "fr": "serviette" },           "tags": ["objet"] }
+        ]
+      }
+    ]
+  }
+}

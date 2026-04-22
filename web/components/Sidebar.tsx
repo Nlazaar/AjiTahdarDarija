@@ -6,34 +6,14 @@ import { usePathname } from 'next/navigation';
 import { useUserProgress } from '@/contexts/UserProgressContext';
 
 function NavItem({
-  href, label, icon, isActive, badge = false,
+  href, label, icon, isActive, badge = false, onClick,
 }: {
-  href: string; label: string; icon: string; isActive: boolean; badge?: boolean;
+  href?: string; label: string; icon: string; isActive: boolean; badge?: boolean; onClick?: (e: React.MouseEvent) => void;
 }) {
   const [hovered, setHovered] = useState(false);
 
-  return (
-    <Link
-      href={href}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        gap: 14,
-        padding: '11px 14px',
-        borderRadius: 16,
-        textDecoration: 'none',
-        transition: 'background 0.15s',
-        background: isActive
-          ? 'rgba(88,204,2,0.15)'
-          : hovered
-            ? 'var(--c-card2)'
-            : 'transparent',
-        width: '100%',
-      }}
-    >
+  const inner = (
+    <>
       <span style={{
         width: 42, height: 42, borderRadius: 12,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -69,9 +49,64 @@ function NavItem({
           border: '2px solid var(--c-bg)',
         }}/>
       )}
+    </>
+  );
+
+  const style: React.CSSProperties = {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 14,
+    padding: '11px 14px',
+    borderRadius: 16,
+    textDecoration: 'none',
+    transition: 'background 0.15s',
+    background: isActive
+      ? 'rgba(88,204,2,0.15)'
+      : hovered
+        ? 'var(--c-card2)'
+        : 'transparent',
+    width: '100%',
+    cursor: 'pointer',
+    border: 'none',
+    textAlign: 'left',
+  };
+
+  if (onClick && !href) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={style}
+      >
+        {inner}
+      </button>
+    );
+  }
+
+  return (
+    <Link
+      href={href!}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={style}
+    >
+      {inner}
     </Link>
   );
 }
+
+const MORE_ITEMS = [
+  { href: '/revision',    label: 'Révision',    icon: '🔁' },
+  { href: '/duels',       label: 'Duels',       icon: '⚔️' },
+  { href: '/friends',     label: 'Amis',        icon: '👥' },
+  { href: '/alphabet',    label: 'Alphabet',    icon: 'ا'  },
+  { href: '/abonnement',  label: 'Abonnement',  icon: '💎' },
+  { href: '/aide',        label: 'Aide',        icon: '❓' },
+  { href: '/settings',    label: 'Réglages',    icon: '⚙️' },
+];
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -81,8 +116,12 @@ export default function Sidebar() {
   const hasPracticeDot = progress.streak === 0;
   const isCours = pathname === '/cours' || pathname === '/progress' || pathname?.startsWith('/progress/');
 
+  const isMoreActive = pathname === '/plus'
+    || pathname?.startsWith('/plus/')
+    || MORE_ITEMS.some(m => pathname === m.href || pathname?.startsWith(m.href + '/'));
+
   const items = [
-    { href: '/cours',        label: 'Mon Cours',    icon: '🏠',  id: 'home',         active: isCours },
+    { href: '/progress',     label: 'Mon Cours',    icon: '🏠',  id: 'home',         active: isCours },
     { href: '/review',       label: 'Lettres',      icon: 'أ',   id: 'letters',      active: pathname === '/review' },
     { href: '/practice',     label: 'Entraînement', icon: '🏋️',  id: 'practice',     active: pathname === '/practice', badge: hasPracticeDot },
     { href: '/conversation', label: 'Conversation', icon: '💬',  id: 'conversation', active: pathname === '/conversation' },
@@ -90,8 +129,6 @@ export default function Sidebar() {
     { href: '/quests',       label: 'Quêtes',       icon: '🎁',  id: 'quests',       active: pathname === '/quests', badge: hasQuestDot },
     { href: '/shop',         label: 'Boutique',     icon: '🏪',  id: 'shop',         active: pathname === '/shop' },
     { href: '/profile',      label: 'Profil',       icon: '👤',  id: 'profile',      active: pathname === '/profile' },
-    { href: '/settings',     label: 'Plus',         icon: '⋯',   id: 'more',         active: pathname === '/settings' },
-    { href: '/admin',        label: 'Admin',        icon: '🛠️',  id: 'admin',        active: pathname === '/admin' },
   ];
 
   return (
@@ -101,7 +138,7 @@ export default function Sidebar() {
       background: 'var(--c-bg)', position: 'sticky', top: 0,
       gap: 2, borderRight: '1px solid var(--c-nav-border)',
     }}>
-      <Link href="/cours" style={{ textDecoration: 'none', marginBottom: 20, padding: '0 8px' }}>
+      <Link href="/progress" style={{ textDecoration: 'none', marginBottom: 20, padding: '0 8px' }}>
         <div style={{
           fontSize: 20, fontWeight: 900, color: '#58cc02',
           fontFamily: 'var(--font-amiri), serif',
@@ -122,6 +159,20 @@ export default function Sidebar() {
             badge={item.badge}
           />
         ))}
+
+        <NavItem
+          href="/plus"
+          label="Plus"
+          icon="⋯"
+          isActive={isMoreActive}
+        />
+
+        <NavItem
+          href="/admin"
+          label="Admin"
+          icon="🛠️"
+          isActive={pathname === '/admin' || (pathname?.startsWith('/admin/') ?? false)}
+        />
       </nav>
     </div>
   );

@@ -1,0 +1,40 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-prepositions",
+      "title": "Vocabulaire — Prépositions",
+      "subtitle": "Situer et relier les mots",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 290,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-prepositions-base",
+        "title": "Les prépositions",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "فُوق",    "transliteration": "foq",   "translation": { "fr": "sur / au-dessus" },                "tags": ["preposition"] },
+          { "word": "تْحْت",   "transliteration": "t7t",   "translation": { "fr": "sous / en-dessous" },              "tags": ["preposition"] },
+          { "word": "قْدَّام",  "transliteration": "qddam", "translation": { "fr": "devant" },                         "tags": ["preposition"] },
+          { "word": "وْرَّا",   "transliteration": "wra",   "translation": { "fr": "derrière" },                       "tags": ["preposition"] },
+          { "word": "حْدَا",   "transliteration": "7da",   "translation": { "fr": "à côté de" },                      "tags": ["preposition"] },
+          { "word": "وْسْط",   "transliteration": "wst",   "translation": { "fr": "au milieu / dans" },               "tags": ["preposition"] },
+          { "word": "مْعَا",   "transliteration": "m3a",   "translation": { "fr": "avec" },                           "tags": ["preposition"] },
+          { "word": "بْلَا",   "transliteration": "bla",   "translation": { "fr": "sans" },                           "tags": ["preposition"] },
+          { "word": "عْلَى",   "transliteration": "3la",   "translation": { "fr": "sur / à propos de" },              "tags": ["preposition"] },
+          { "word": "مْن",     "transliteration": "men",   "translation": { "fr": "de / depuis" },                    "tags": ["preposition"] },
+          { "word": "حْتَّى",   "transliteration": "7tta",  "translation": { "fr": "jusqu'à" },                        "tags": ["preposition"] },
+          { "word": "بِين",    "transliteration": "bin",   "translation": { "fr": "entre" },                          "tags": ["preposition"] },
+          { "word": "قْدّ",    "transliteration": "qedd",  "translation": { "fr": "à la hauteur de / autant que" },   "tags": ["preposition"] },
+          { "word": "حِيث",    "transliteration": "7it",   "translation": { "fr": "là où" },                          "tags": ["preposition"] },
+          { "word": "عْنْد",   "transliteration": "3nd",   "translation": { "fr": "chez / avoir" },                   "tags": ["preposition"] }
+        ]
+      }
+    ]
+  }
+}

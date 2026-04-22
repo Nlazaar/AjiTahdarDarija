@@ -1,0 +1,58 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-nourriture",
+      "title": "Vocabulaire — Nourriture",
+      "subtitle": "Manger et boire en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 80,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-nourriture-base",
+        "title": "La nourriture",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "خْبْز",       "transliteration": "khobz",    "translation": { "fr": "pain" },             "tags": ["nourriture"] },
+          { "word": "مَاء",        "transliteration": "ma",       "translation": { "fr": "eau" },              "tags": ["nourriture"] },
+          { "word": "شَاي",        "transliteration": "chay",     "translation": { "fr": "thé" },              "tags": ["nourriture"] },
+          { "word": "قَهْوَة",      "transliteration": "qahwa",    "translation": { "fr": "café" },             "tags": ["nourriture"] },
+          { "word": "حْلِيب",       "transliteration": "7lib",     "translation": { "fr": "lait" },             "tags": ["nourriture"] },
+          { "word": "زْبْدَة",      "transliteration": "zebda",    "translation": { "fr": "beurre" },           "tags": ["nourriture"] },
+          { "word": "جْبْن",        "transliteration": "jben",     "translation": { "fr": "fromage" },          "tags": ["nourriture"] },
+          { "word": "بْيَض",        "transliteration": "biD",      "translation": { "fr": "œufs" },             "tags": ["nourriture"] },
+          { "word": "لْحَم",        "transliteration": "l7em",     "translation": { "fr": "viande" },           "tags": ["nourriture"] },
+          { "word": "دْجَاج",       "transliteration": "djaj",     "translation": { "fr": "poulet" },           "tags": ["nourriture"] },
+          { "word": "سْمَك",        "transliteration": "smak",     "translation": { "fr": "poisson" },          "tags": ["nourriture"] },
+          { "word": "حُوت",        "transliteration": "7out",     "translation": { "fr": "poisson (variante)" }, "tags": ["nourriture"] },
+          { "word": "خْضْرَة",      "transliteration": "khodra",   "translation": { "fr": "légumes" },          "tags": ["nourriture"] },
+          { "word": "خْضَر",        "transliteration": "khodr",    "translation": { "fr": "légumes (variante)" }, "tags": ["nourriture"] },
+          { "word": "فَاكْهَة",     "transliteration": "fakiha",   "translation": { "fr": "fruits" },           "tags": ["nourriture"] },
+          { "word": "تْفَّاح",       "transliteration": "tffah",    "translation": { "fr": "pomme" },            "tags": ["nourriture"] },
+          { "word": "مُوز",         "transliteration": "muz",      "translation": { "fr": "banane" },           "tags": ["nourriture"] },
+          { "word": "بُرْتْقَال",     "transliteration": "bortoqal", "translation": { "fr": "orange" },           "tags": ["nourriture"] },
+          { "word": "عْصِير",       "transliteration": "3sir",     "translation": { "fr": "jus" },              "tags": ["nourriture"] },
+          { "word": "كْسْكْسُو",    "transliteration": "kseksou",  "translation": { "fr": "couscous" },         "tags": ["nourriture"] },
+          { "word": "طَاجِين",      "transliteration": "tajin",    "translation": { "fr": "tajine" },           "tags": ["nourriture"] },
+          { "word": "حْرِيرَة",     "transliteration": "7rira",    "translation": { "fr": "soupe marocaine" },  "tags": ["nourriture"] },
+          { "word": "شُرْبَة",      "transliteration": "chorba",   "translation": { "fr": "soupe" },            "tags": ["nourriture"] },
+          { "word": "مَاكْلَة",     "transliteration": "makla",    "translation": { "fr": "nourriture" },       "tags": ["nourriture"] },
+          { "word": "مْلْح",        "transliteration": "mel7",     "translation": { "fr": "sel" },              "tags": ["nourriture"] },
+          { "word": "سُكَّر",       "transliteration": "skkar",    "translation": { "fr": "sucre" },            "tags": ["nourriture"] },
+          { "word": "زِيت",         "transliteration": "zit",      "translation": { "fr": "huile" },            "tags": ["nourriture"] },
+          { "word": "بْطَاطَا",     "transliteration": "bTata",    "translation": { "fr": "pomme de terre" },   "tags": ["nourriture"] },
+          { "word": "خِيزُو",       "transliteration": "khizo",    "translation": { "fr": "carotte" },          "tags": ["nourriture"] },
+          { "word": "بَصْلَة",      "transliteration": "bSla",     "translation": { "fr": "oignon" },           "tags": ["nourriture"] },
+          { "word": "ثُومَة",       "transliteration": "toma",     "translation": { "fr": "ail" },              "tags": ["nourriture"] },
+          { "word": "رُوز",         "transliteration": "roz",      "translation": { "fr": "riz" },              "tags": ["nourriture"] },
+          { "word": "عْجَائِن",     "transliteration": "3jayn",    "translation": { "fr": "pâtes" },            "tags": ["nourriture"] }
+        ]
+      }
+    ]
+  }
+}

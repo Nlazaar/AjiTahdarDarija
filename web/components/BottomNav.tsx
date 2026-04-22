@@ -8,7 +8,7 @@ import { useUserProgress } from '@/contexts/UserProgressContext';
 const BG = 'var(--c-bg)';
 
 const ITEMS = [
-  { href: '/cours',       icon: '🏠', label: 'Cours'     },
+  { href: '/progress',    icon: '🏠', label: 'Cours'     },
   { href: '/review',      icon: 'أ',  label: 'Lettres'   },
   { href: '/practice',    icon: '🏋️', label: 'Entraîner' },
   { href: '/leaderboard', icon: '🛡️', label: 'Ligues'    },
@@ -31,7 +31,7 @@ export default function BottomNav() {
       paddingBottom: 'env(safe-area-inset-bottom)',
     }}>
       {ITEMS.map(item => {
-        const isActive = item.href === '/cours' ? isCours : pathname === item.href;
+        const isActive = item.href === '/progress' ? isCours : pathname === item.href;
         const hasDot   = item.href === '/practice' && progress.streak === 0;
         return (
           <Link

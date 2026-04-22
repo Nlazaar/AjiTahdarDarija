@@ -32,7 +32,7 @@ export default function LoginPage() {
     }
   };
 
-  const canSubmit = email.trim().length > 0 && password.length >= 6 && !loading;
+  const canSubmit = email.trim().length > 0 && password.length > 0 && !loading;
 
   return (
     <div style={{

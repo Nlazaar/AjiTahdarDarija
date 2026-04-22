@@ -1,0 +1,79 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-nombres",
+      "title": "Vocabulaire — Nombres",
+      "subtitle": "Compter en Darija",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 240,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-nombres-base",
+        "title": "Les nombres de 0 à 20",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "صْفَر",        "transliteration": "sifr",     "translation": { "fr": "zéro" },      "tags": ["nombre"] },
+          { "word": "وَاحَد",      "transliteration": "wa7ed",    "translation": { "fr": "un" },        "tags": ["nombre"] },
+          { "word": "جُوج",        "transliteration": "jouj",     "translation": { "fr": "deux" },      "tags": ["nombre"] },
+          { "word": "تْلَاتَة",     "transliteration": "tlata",    "translation": { "fr": "trois" },     "tags": ["nombre"] },
+          { "word": "رْبْعَة",      "transliteration": "rb3a",     "translation": { "fr": "quatre" },    "tags": ["nombre"] },
+          { "word": "خَمْسَة",      "transliteration": "khmsa",    "translation": { "fr": "cinq" },      "tags": ["nombre"] },
+          { "word": "سْتَّة",       "transliteration": "setta",    "translation": { "fr": "six" },       "tags": ["nombre"] },
+          { "word": "سْبْعَة",      "transliteration": "sb3a",     "translation": { "fr": "sept" },      "tags": ["nombre"] },
+          { "word": "تْمَانْيَة",    "transliteration": "tmnya",    "translation": { "fr": "huit" },      "tags": ["nombre"] },
+          { "word": "تْسْعُود",     "transliteration": "ts3oud",   "translation": { "fr": "neuf" },      "tags": ["nombre"] },
+          { "word": "عْشْرَة",      "transliteration": "3achra",   "translation": { "fr": "dix" },       "tags": ["nombre"] },
+          { "word": "حْدَاش",      "transliteration": "7dach",    "translation": { "fr": "onze" },      "tags": ["nombre"] },
+          { "word": "تْنَاش",       "transliteration": "tnach",    "translation": { "fr": "douze" },     "tags": ["nombre"] },
+          { "word": "تْلْطَاش",    "transliteration": "tltach",   "translation": { "fr": "treize" },    "tags": ["nombre"] },
+          { "word": "رْبْعْتَاش",  "transliteration": "rb3tach",  "translation": { "fr": "quatorze" },  "tags": ["nombre"] },
+          { "word": "خَمْسْتَاش", "transliteration": "khmstach", "translation": { "fr": "quinze" },    "tags": ["nombre"] },
+          { "word": "سْتَاش",     "transliteration": "stach",    "translation": { "fr": "seize" },     "tags": ["nombre"] },
+          { "word": "سْبْعْتَاش",  "transliteration": "sb3tach",  "translation": { "fr": "dix-sept" },  "tags": ["nombre"] },
+          { "word": "تْمَنْتَاش",  "transliteration": "tmntach",  "translation": { "fr": "dix-huit" },  "tags": ["nombre"] },
+          { "word": "تْسْعْتَاش",  "transliteration": "ts3tach",  "translation": { "fr": "dix-neuf" },  "tags": ["nombre"] },
+          { "word": "عْشْرِين",    "transliteration": "3chrin",   "translation": { "fr": "vingt" },     "tags": ["nombre"] }
+        ]
+      },
+      {
+        "slug": "vocab-nombres-dizaines",
+        "title": "Les dizaines (30 — 100)",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "تْلَاتِين",   "transliteration": "tlatin",   "translation": { "fr": "trente" },          "tags": ["nombre"] },
+          { "word": "رْبْعِين",    "transliteration": "rb3in",    "translation": { "fr": "quarante" },        "tags": ["nombre"] },
+          { "word": "خَمْسِين",   "transliteration": "khmsin",   "translation": { "fr": "cinquante" },       "tags": ["nombre"] },
+          { "word": "سْتِّين",     "transliteration": "sttin",    "translation": { "fr": "soixante" },        "tags": ["nombre"] },
+          { "word": "سْبْعِين",    "transliteration": "sb3in",    "translation": { "fr": "soixante-dix" },    "tags": ["nombre"] },
+          { "word": "تْمَانِين",   "transliteration": "tmanin",   "translation": { "fr": "quatre-vingts" },   "tags": ["nombre"] },
+          { "word": "تْسْعِين",    "transliteration": "ts3in",    "translation": { "fr": "quatre-vingt-dix" },"tags": ["nombre"] },
+          { "word": "مِيَّة",       "transliteration": "miya",     "translation": { "fr": "cent" },            "tags": ["nombre"] }
+        ]
+      },
+      {
+        "slug": "vocab-nombres-centaines",
+        "title": "Les centaines (200 — 1000)",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "مِيتِين",       "transliteration": "mitin",      "translation": { "fr": "deux cents" },   "tags": ["nombre"] },
+          { "word": "تْلَاتْمِيَّة",  "transliteration": "tlatt miyya","translation": { "fr": "trois cents" },  "tags": ["nombre"] },
+          { "word": "رْبْعْمِيَّة",   "transliteration": "rb3 miyya",  "translation": { "fr": "quatre cents" }, "tags": ["nombre"] },
+          { "word": "خَمْسْمِيَّة",   "transliteration": "khms miyya", "translation": { "fr": "cinq cents" },   "tags": ["nombre"] },
+          { "word": "سْتْمِيَّة",     "transliteration": "stt miyya",  "translation": { "fr": "six cents" },    "tags": ["nombre"] },
+          { "word": "سْبْعْمِيَّة",   "transliteration": "sb3 miyya",  "translation": { "fr": "sept cents" },   "tags": ["nombre"] },
+          { "word": "تْمَنْمِيَّة",    "transliteration": "tmn miyya",  "translation": { "fr": "huit cents" },   "tags": ["nombre"] },
+          { "word": "تْسْعْمِيَّة",   "transliteration": "ts3 miyya",  "translation": { "fr": "neuf cents" },   "tags": ["nombre"] },
+          { "word": "أَلْف",          "transliteration": "alf",        "translation": { "fr": "mille" },        "tags": ["nombre"] }
+        ]
+      }
+    ]
+  }
+}

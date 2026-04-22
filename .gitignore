@@ -16,6 +16,9 @@ web/tsconfig.tsbuildinfo
 backend/dist/
 mobile/.expo/
 
+# Uploads utilisateurs (photos villes, etc.) — stockage local phase b
+backend/uploads/
+
 # Logs
 *.log
 logs/

@@ -248,7 +248,7 @@ export default function AbonnementPage() {
         <div style={{ fontSize: 13, color: SUB, lineHeight: 1.5 }}>
           Continuer avec le plan <strong style={{ color: TEXT }}>Gratuit</strong> — accès aux premiers chapitres, 5 cœurs par session.
         </div>
-        <Link href="/cours" style={{
+        <Link href="/progress" style={{
           display: 'inline-block', marginTop: 10,
           fontSize: 12, fontWeight: 700, color: SUB, textDecoration: 'none',
         }}>

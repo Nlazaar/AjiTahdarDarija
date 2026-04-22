@@ -1,0 +1,48 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-animaux",
+      "title": "Vocabulaire — Animaux",
+      "subtitle": "23 animaux du quotidien",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 30,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-animaux-base",
+        "title": "Les animaux",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "حَيَوَان",   "transliteration": "7ayawan", "translation": { "fr": "animal" },      "tags": ["animal"] },
+          { "word": "كَلْب",      "transliteration": "kelb",    "translation": { "fr": "chien" },       "tags": ["animal"] },
+          { "word": "قَطّ",       "transliteration": "qeTT",    "translation": { "fr": "chat" },        "tags": ["animal"] },
+          { "word": "حْصَان",    "transliteration": "7san",    "translation": { "fr": "cheval" },      "tags": ["animal"] },
+          { "word": "بْقْرَة",    "transliteration": "bqra",    "translation": { "fr": "vache" },       "tags": ["animal"] },
+          { "word": "خْرُوف",    "transliteration": "khrouf",  "translation": { "fr": "mouton" },      "tags": ["animal"] },
+          { "word": "مَاعَز",    "transliteration": "ma3z",    "translation": { "fr": "chèvre" },      "tags": ["animal"] },
+          { "word": "جْمَل",     "transliteration": "jmel",    "translation": { "fr": "chameau" },     "tags": ["animal"] },
+          { "word": "دِيك",      "transliteration": "dik",     "translation": { "fr": "coq" },         "tags": ["animal"] },
+          { "word": "دْجَاجَة",   "transliteration": "djaja",   "translation": { "fr": "poule" },       "tags": ["animal"] },
+          { "word": "سْمْكَة",    "transliteration": "smka",    "translation": { "fr": "poisson" },     "tags": ["animal"] },
+          { "word": "عْصْفُور",   "transliteration": "3sfor",   "translation": { "fr": "oiseau" },      "tags": ["animal"] },
+          { "word": "نْحْلَة",    "transliteration": "n7la",    "translation": { "fr": "abeille" },     "tags": ["animal"] },
+          { "word": "فِيل",      "transliteration": "fil",     "translation": { "fr": "éléphant" },    "tags": ["animal"] },
+          { "word": "أَسَد",     "transliteration": "asad",    "translation": { "fr": "lion" },        "tags": ["animal"] },
+          { "word": "نْمَر",     "transliteration": "nmr",     "translation": { "fr": "tigre" },       "tags": ["animal"] },
+          { "word": "قْرْد",     "transliteration": "qerd",    "translation": { "fr": "singe" },       "tags": ["animal"] },
+          { "word": "ثَعْلَب",    "transliteration": "tha3lab", "translation": { "fr": "renard" },      "tags": ["animal"] },
+          { "word": "ذِئْب",     "transliteration": "di2b",    "translation": { "fr": "loup" },        "tags": ["animal"] },
+          { "word": "ضْفْدَع",    "transliteration": "Dfda3",   "translation": { "fr": "grenouille" },  "tags": ["animal"] },
+          { "word": "حْيَة",     "transliteration": "7ya",     "translation": { "fr": "serpent" },     "tags": ["animal"] },
+          { "word": "بَطَّة",     "transliteration": "baTTa",   "translation": { "fr": "canard" },      "tags": ["animal"] },
+          { "word": "أَرْنَب",    "transliteration": "arnab",   "translation": { "fr": "lapin" },       "tags": ["animal"] }
+        ]
+      }
+    ]
+  }
+}

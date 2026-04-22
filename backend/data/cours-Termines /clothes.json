@@ -1,0 +1,56 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-vetements",
+      "title": "Vocabulaire — Vêtements",
+      "subtitle": "31 vêtements et accessoires",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 50,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-vetements-base",
+        "title": "Les vêtements",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "حْوَايَج",    "transliteration": "7wayej",   "translation": { "fr": "vêtements" },            "tags": ["vetement"] },
+          { "word": "قْمِيجَة",    "transliteration": "qmija",    "translation": { "fr": "chemise" },              "tags": ["vetement"] },
+          { "word": "قْمِيص",      "transliteration": "qmis",     "translation": { "fr": "chemise (variante)" },   "tags": ["vetement"] },
+          { "word": "تِيشِيرْت",    "transliteration": "tichirt",  "translation": { "fr": "t-shirt" },              "tags": ["vetement"] },
+          { "word": "سَرْوَال",    "transliteration": "serwal",   "translation": { "fr": "pantalon" },             "tags": ["vetement"] },
+          { "word": "شُورْت",      "transliteration": "short",    "translation": { "fr": "short" },                "tags": ["vetement"] },
+          { "word": "جَاكِيطَة",   "transliteration": "jakita",   "translation": { "fr": "veste" },                "tags": ["vetement"] },
+          { "word": "مَعْطَف",     "transliteration": "m3Taf",    "translation": { "fr": "manteau" },              "tags": ["vetement"] },
+          { "word": "حْذَاء",      "transliteration": "7da2",     "translation": { "fr": "chaussures" },           "tags": ["vetement"] },
+          { "word": "صْبَاط",      "transliteration": "SbaT",     "translation": { "fr": "chaussures (courant)" }, "tags": ["vetement"] },
+          { "word": "صَنْدَالَة",   "transliteration": "Sndala",   "translation": { "fr": "sandales" },             "tags": ["vetement"] },
+          { "word": "شْرَاب",      "transliteration": "chrab",    "translation": { "fr": "chaussettes" },          "tags": ["vetement"] },
+          { "word": "جْوَارْب",    "transliteration": "jwaryb",   "translation": { "fr": "chaussettes (variante)" }, "tags": ["vetement"] },
+          { "word": "طَاقِيَة",    "transliteration": "Taqiya",   "translation": { "fr": "casquette / bonnet" },   "tags": ["vetement"] },
+          { "word": "قَبّ",        "transliteration": "qobb",     "translation": { "fr": "casquette" },            "tags": ["vetement"] },
+          { "word": "قُبْعَة",     "transliteration": "qob3a",    "translation": { "fr": "chapeau" },              "tags": ["vetement"] },
+          { "word": "نْظَاضَر",    "transliteration": "nDader",   "translation": { "fr": "lunettes" },             "tags": ["vetement"] },
+          { "word": "نَظَارَات",   "transliteration": "naDarat",  "translation": { "fr": "lunettes (variante)" },  "tags": ["vetement"] },
+          { "word": "سَاعَة",     "transliteration": "sa3a",     "translation": { "fr": "montre" },               "tags": ["vetement"] },
+          { "word": "حْزَام",     "transliteration": "7zam",     "translation": { "fr": "ceinture" },             "tags": ["vetement"] },
+          { "word": "شَال",       "transliteration": "chal",     "translation": { "fr": "écharpe" },              "tags": ["vetement"] },
+          { "word": "قْفَازَات",   "transliteration": "qfafat",   "translation": { "fr": "gants" },                "tags": ["vetement"] },
+          { "word": "حْجَاب",     "transliteration": "7jab",     "translation": { "fr": "voile" },                "tags": ["vetement"] },
+          { "word": "نْقَاب",     "transliteration": "neqab",    "translation": { "fr": "voile (visage)" },       "tags": ["vetement"] },
+          { "word": "جَلَّابَة",    "transliteration": "jellaba",  "translation": { "fr": "djellaba" },             "tags": ["vetement"] },
+          { "word": "قَنْدُورَة",   "transliteration": "gandoura", "translation": { "fr": "gandoura" },             "tags": ["vetement"] },
+          { "word": "قَفْطَان",    "transliteration": "qaftan",   "translation": { "fr": "caftan" },               "tags": ["vetement"] },
+          { "word": "فُسْطَان",    "transliteration": "fstan",    "translation": { "fr": "robe" },                 "tags": ["vetement"] },
+          { "word": "تَنُّورَة",    "transliteration": "tnoura",   "translation": { "fr": "jupe" },                 "tags": ["vetement"] },
+          { "word": "خَاتَم",     "transliteration": "khatem",   "translation": { "fr": "bague" },                "tags": ["vetement"] },
+          { "word": "سَلْسْلَة",    "transliteration": "selsla",   "translation": { "fr": "collier" },              "tags": ["vetement"] }
+        ]
+      }
+    ]
+  }
+}

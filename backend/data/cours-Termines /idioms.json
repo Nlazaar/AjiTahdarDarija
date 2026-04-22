@@ -1,0 +1,40 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-idiomes",
+      "title": "Vocabulaire — Idiomes & expressions imagées",
+      "subtitle": "Parler comme un vrai Marocain",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 300,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-idiomes-base",
+        "title": "Idiomes marocains",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "اللَّه يَرْحَم الوَالِدِين",    "transliteration": "allah yer7em lwalidin", "translation": { "fr": "je t'en prie / merci beaucoup (fort)" },          "tags": ["idiome", "religieux"] },
+          { "word": "اللَّه يَعْطِيك الصِّحَّة",     "transliteration": "allah y3tik SSe77a",   "translation": { "fr": "merci, que Dieu te donne la santé" },             "tags": ["idiome", "religieux"] },
+          { "word": "اللَّه يْسَهَّل عْلِيك",        "transliteration": "allah ysshel 3lik",    "translation": { "fr": "bonne chance / que Dieu facilite pour toi" },     "tags": ["idiome", "religieux"] },
+          { "word": "دِير النِّيَّة",                "transliteration": "dir enniya",           "translation": { "fr": "fais les choses avec de bonnes intentions" },     "tags": ["idiome"] },
+          { "word": "مَا تْدِيرْش مْن الحْبَّة قُبَّة","transliteration": "ma tdirch men l7ba qobba","translation": { "fr": "n'exagère pas / n'en fais pas une montagne" },"tags": ["idiome"] },
+          { "word": "ضْرَبْهَا بْسَكْتَة",          "transliteration": "Drebha b sktta",       "translation": { "fr": "il/elle est parti(e) sans prévenir" },           "tags": ["idiome"] },
+          { "word": "شْدّ الأَرْض",                 "transliteration": "chdd l'arD",           "translation": { "fr": "tiens bon / reste solide" },                      "tags": ["idiome"] },
+          { "word": "طَاح عْلَى وْجْهُو",           "transliteration": "Ta7 3la wjho",         "translation": { "fr": "il s'est ridiculisé" },                            "tags": ["idiome"] },
+          { "word": "مَا بْقَى مَا يْعْجَب",         "transliteration": "ma bqa ma y3jeb",      "translation": { "fr": "plus rien ne va" },                                "tags": ["idiome"] },
+          { "word": "كُلْشِي بْيَد اللَّه",          "transliteration": "kolchi b yed allah",   "translation": { "fr": "tout est entre les mains de Dieu" },              "tags": ["idiome", "religieux"] },
+          { "word": "ضْرَبْهَا بْسْكَات",            "transliteration": "Drebha b skkat",       "translation": { "fr": "il/elle a disparu du jour au lendemain" },        "tags": ["idiome"] },
+          { "word": "جَابْهَا فْرَاسُو",             "transliteration": "jabha f rasso",        "translation": { "fr": "il l'a cherché / il l'a mérité" },                "tags": ["idiome"] },
+          { "word": "مَا عَنْدُو زَهْر",              "transliteration": "ma 3ndou zahr",        "translation": { "fr": "il n'a pas de chance" },                          "tags": ["idiome"] },
+          { "word": "عَنْدُو الزَّهْر",               "transliteration": "3ndou zahr",           "translation": { "fr": "il a de la chance" },                             "tags": ["idiome"] },
+          { "word": "مَاشِي دْيَال هَاد الشِّي",    "transliteration": "machi dyal had chi",   "translation": { "fr": "ce n'est pas fait pour lui / ce n'est pas son domaine" },"tags": ["idiome"] }
+        ]
+      }
+    ]
+  }
+}

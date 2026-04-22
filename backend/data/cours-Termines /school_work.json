@@ -1,0 +1,56 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-ecole-travail",
+      "title": "Vocabulaire — École & Travail",
+      "subtitle": "Études, bureau et entreprise",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 150,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-ecole-travail-base",
+        "title": "École et travail",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "مْدْرَسَة",      "transliteration": "mdrasa",  "translation": { "fr": "école" },             "tags": ["ecole", "travail"] },
+          { "word": "جَامْعَة",       "transliteration": "jam3a",   "translation": { "fr": "université" },        "tags": ["ecole"] },
+          { "word": "قِسْم",          "transliteration": "qism",    "translation": { "fr": "classe" },            "tags": ["ecole"] },
+          { "word": "أُسْتَاذ",       "transliteration": "ostad",   "translation": { "fr": "professeur" },        "tags": ["ecole"] },
+          { "word": "تِلْمِيذ",        "transliteration": "tilmid",  "translation": { "fr": "élève" },             "tags": ["ecole"] },
+          { "word": "طَالِب",         "transliteration": "Talib",   "translation": { "fr": "étudiant" },          "tags": ["ecole"] },
+          { "word": "دْفْتَر",         "transliteration": "deftar",  "translation": { "fr": "cahier" },            "tags": ["ecole"] },
+          { "word": "كْتَاب",         "transliteration": "ktab",    "translation": { "fr": "livre" },             "tags": ["ecole"] },
+          { "word": "قْلْم",          "transliteration": "qelm",    "translation": { "fr": "stylo" },             "tags": ["ecole"] },
+          { "word": "سْبُّورَة",       "transliteration": "sboura",  "translation": { "fr": "tableau" },           "tags": ["ecole"] },
+          { "word": "مْمْحَاة",        "transliteration": "mm7at",   "translation": { "fr": "gomme" },             "tags": ["ecole"] },
+          { "word": "مْسْطَرَة",       "transliteration": "msTara",  "translation": { "fr": "règle" },             "tags": ["ecole"] },
+          { "word": "امْتِحَان",       "transliteration": "emti7an", "translation": { "fr": "examen" },            "tags": ["ecole"] },
+          { "word": "فَرْض",          "transliteration": "farD",    "translation": { "fr": "contrôle / test" },   "tags": ["ecole"] },
+          { "word": "نُقْطَة",         "transliteration": "noqTa",   "translation": { "fr": "note" },              "tags": ["ecole"] },
+          { "word": "عُطْلَة",         "transliteration": "3oTla",   "translation": { "fr": "vacances" },          "tags": ["ecole"] },
+          { "word": "بْحْث",          "transliteration": "b7t",     "translation": { "fr": "recherche / exposé" },"tags": ["ecole"] },
+          { "word": "مَكْتَبَة",       "transliteration": "maktaba", "translation": { "fr": "bibliothèque" },      "tags": ["ecole"] },
+          { "word": "مِنْحَة",          "transliteration": "mn7a",    "translation": { "fr": "bourse" },            "tags": ["ecole"] },
+          { "word": "دِرَاسَة",        "transliteration": "dirasa",  "translation": { "fr": "études" },            "tags": ["ecole"] },
+          { "word": "خْدْمَة",         "transliteration": "khdma",   "translation": { "fr": "travail" },           "tags": ["travail"] },
+          { "word": "مُوَظَّف",        "transliteration": "mwaDDaf", "translation": { "fr": "employé" },           "tags": ["travail"] },
+          { "word": "مُدِير",          "transliteration": "modir",   "translation": { "fr": "directeur" },         "tags": ["travail"] },
+          { "word": "شَرِكَة",         "transliteration": "cherka",  "translation": { "fr": "entreprise" },        "tags": ["travail"] },
+          { "word": "اجْتِمَاع",       "transliteration": "ijtima3", "translation": { "fr": "réunion" },           "tags": ["travail"] },
+          { "word": "مَكْتَب",         "transliteration": "mektab",  "translation": { "fr": "bureau" },            "tags": ["travail"] },
+          { "word": "حَاسُوب",         "transliteration": "7asoub",  "translation": { "fr": "ordinateur" },        "tags": ["travail"] },
+          { "word": "مُهِمَّة",         "transliteration": "mohimma", "translation": { "fr": "tâche" },             "tags": ["travail"] },
+          { "word": "مَشْرُوع",        "transliteration": "mchrou3", "translation": { "fr": "projet" },            "tags": ["travail"] },
+          { "word": "رَاتِب",          "transliteration": "ratib",   "translation": { "fr": "salaire" },           "tags": ["travail"] },
+          { "word": "اسْتِرَاحَة",     "transliteration": "istra7a", "translation": { "fr": "pause" },             "tags": ["travail"] }
+        ]
+      }
+    ]
+  }
+}

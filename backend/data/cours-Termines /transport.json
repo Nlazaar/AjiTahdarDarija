@@ -1,0 +1,62 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-transport",
+      "title": "Vocabulaire — Transport",
+      "subtitle": "Se déplacer au Maroc",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 180,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-transport-base",
+        "title": "Le transport",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "طُومُوبِيل",        "transliteration": "tomobil",      "translation": { "fr": "voiture" },              "tags": ["transport"] },
+          { "word": "سَيَّارَة",           "transliteration": "sayyara",      "translation": { "fr": "voiture (variante)" },   "tags": ["transport"] },
+          { "word": "طَاكْسِي",           "transliteration": "taksi",        "translation": { "fr": "taxi" },                 "tags": ["transport"] },
+          { "word": "طَاكْسِي كْبِير",     "transliteration": "taksi kbir",   "translation": { "fr": "grand taxi" },           "tags": ["transport"] },
+          { "word": "طَاكْسِي صْغِير",    "transliteration": "taksi sghir",  "translation": { "fr": "petit taxi" },           "tags": ["transport"] },
+          { "word": "طُوبِيس",            "transliteration": "tobis",        "translation": { "fr": "bus" },                  "tags": ["transport"] },
+          { "word": "تْرَام",              "transliteration": "tram",         "translation": { "fr": "tramway" },              "tags": ["transport"] },
+          { "word": "قْطَار",              "transliteration": "qTar",         "translation": { "fr": "train" },                "tags": ["transport"] },
+          { "word": "طْيَارَة",            "transliteration": "Tiyara",       "translation": { "fr": "avion" },                "tags": ["transport"] },
+          { "word": "طَائِرَة",            "transliteration": "ta2ira",       "translation": { "fr": "avion (variante)" },     "tags": ["transport"] },
+          { "word": "بَاخْرَة",            "transliteration": "bakhra",       "translation": { "fr": "bateau" },               "tags": ["transport"] },
+          { "word": "مُوتُور",             "transliteration": "motor",        "translation": { "fr": "moto" },                 "tags": ["transport"] },
+          { "word": "بِيكَالَا",            "transliteration": "bikala",       "translation": { "fr": "vélo" },                 "tags": ["transport"] },
+          { "word": "كَار",                "transliteration": "kar",          "translation": { "fr": "autocar" },              "tags": ["transport"] },
+          { "word": "لُوطُو كَار",         "transliteration": "loto kar",     "translation": { "fr": "minibus inter‑ville" },  "tags": ["transport"] },
+          { "word": "مَحَطَّة",             "transliteration": "ma7aTTa",      "translation": { "fr": "gare / station" },       "tags": ["transport"] },
+          { "word": "طْرِيق",              "transliteration": "Triq",         "translation": { "fr": "route" },                "tags": ["transport"] },
+          { "word": "زَنْقَة",              "transliteration": "zanqa",        "translation": { "fr": "rue" },                  "tags": ["transport"] },
+          { "word": "بَارْكِينْغ",          "transliteration": "parking",      "translation": { "fr": "parking" },              "tags": ["transport"] },
+          { "word": "مَوْقِف",             "transliteration": "mwqef",        "translation": { "fr": "parking / arrêt" },      "tags": ["transport"] },
+          { "word": "رَادَار",             "transliteration": "radar",        "translation": { "fr": "radar" },                "tags": ["transport"] },
+          { "word": "رُخْصَة السْيَاقَة",  "transliteration": "rokhsa ssya9a","translation": { "fr": "permis de conduire" },   "tags": ["transport"] },
+          { "word": "بَنْزِين",             "transliteration": "benzine",      "translation": { "fr": "essence" },              "tags": ["transport"] },
+          { "word": "مَازُوط",             "transliteration": "mazout",       "translation": { "fr": "diesel" },               "tags": ["transport"] },
+          { "word": "كْلَاكْسُون",         "transliteration": "klakson",      "translation": { "fr": "klaxon" },               "tags": ["transport"] },
+          { "word": "كَرُّوصَة",            "transliteration": "karossa",      "translation": { "fr": "charrette" },            "tags": ["transport"] },
+          { "word": "مِيتْرُو",             "transliteration": "mitro",        "translation": { "fr": "métro" },                "tags": ["transport"] },
+          { "word": "مَطَار",              "transliteration": "maTar",        "translation": { "fr": "aéroport" },             "tags": ["transport"] },
+          { "word": "مِينَاء",              "transliteration": "mina2",        "translation": { "fr": "port" },                 "tags": ["transport"] },
+          { "word": "أُوطُورُوت",          "transliteration": "autoroute",    "translation": { "fr": "autoroute" },            "tags": ["transport"] },
+          { "word": "جِسْر",               "transliteration": "jsr",          "translation": { "fr": "pont" },                 "tags": ["transport"] },
+          { "word": "فْرَان",              "transliteration": "frran",        "translation": { "fr": "frein" },                "tags": ["transport"] },
+          { "word": "مُوتُور السَّيَّارَة",  "transliteration": "motour ssayara","translation": { "fr": "moteur" },              "tags": ["transport"] },
+          { "word": "عَجْلَة",              "transliteration": "3ajla",        "translation": { "fr": "roue" },                 "tags": ["transport"] },
+          { "word": "حْزَام السَّلَامَة",   "transliteration": "7zam ssalama", "translation": { "fr": "ceinture de sécurité" }, "tags": ["transport"] },
+          { "word": "حَادِثَة",             "transliteration": "7aditha",      "translation": { "fr": "accident" },             "tags": ["transport"] },
+          { "word": "شُرْطَة المُرُور",    "transliteration": "chorta lmorour","translation": { "fr": "police routière" },      "tags": ["transport"] }
+        ]
+      }
+    ]
+  }
+}

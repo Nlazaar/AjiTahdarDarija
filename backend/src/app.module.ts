@@ -13,10 +13,12 @@ import { UsersModule } from './modules/users/users.module';
 import { CoursesModule } from './modules/courses/courses.module';
 import { LessonsModule } from './modules/lessons/lessons.module';
 import { VocabularyModule } from './modules/vocabulary/vocabulary.module';
+import { UserVocabularyModule } from './modules/user-vocabulary/user-vocabulary.module';
 import { ExercisesModule } from './modules/exercises/exercises.module';
 import { ProgressModule } from './modules/progress/progress.module';
 import { GamificationModule } from './modules/gamification/gamification.module';
 import { I18nModule } from './modules/i18n/i18n.module';
+import { StorageModule } from './storage/storage.module';
 
 @Module({
   imports: [
@@ -24,6 +26,11 @@ import { I18nModule } from './modules/i18n/i18n.module';
       rootPath: join(__dirname, '..', 'public'),
       serveRoot: '/',
     }),
+    ServeStaticModule.forRoot({
+      rootPath: join(process.cwd(), 'uploads'),
+      serveRoot: '/uploads',
+    }),
+    StorageModule,
     PrismaModule,
     TasksModule,
     AuthModule,
@@ -31,6 +38,8 @@ import { I18nModule } from './modules/i18n/i18n.module';
     CoursesModule,
     LessonsModule,
     VocabularyModule,
+    UserVocabularyModule,
+    require('./modules/push/push.module').PushModule,
     ExercisesModule,
     ProgressModule,
     GamificationModule,
@@ -54,6 +63,7 @@ import { I18nModule } from './modules/i18n/i18n.module';
     require('./modules/duels/duels.module').DuelsModule,
     require('./modules/cultural/cultural.module').CulturalModule,
     require('./modules/io/io.module').IoModule,
+    require('./modules/admin-debug/admin-debug.module').AdminDebugModule,
   ],
   controllers: [AppController],
   providers: [AppService],

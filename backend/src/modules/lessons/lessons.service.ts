@@ -1,4 +1,4 @@
-import { Injectable, BadRequestException } from '@nestjs/common';
+import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 import { QuestsService } from '../quests/quests.service';
 
@@ -83,6 +83,29 @@ export class LessonsService {
     return this.prisma.lesson.delete({ where: { id } })
   }
 
+  /**
+   * Met à jour la séquence d'exercices d'une leçon (typologies + items vocab).
+   * Stocke dans Lesson.content : { sequence: string[], itemIds: string[], mode?: 'lettre'|'mot' }
+   * Préserve les autres clés de content déjà présentes.
+   */
+  async updateSequence(
+    id: string,
+    payload: { sequence?: string[]; itemIds?: string[]; mode?: 'lettre' | 'mot' },
+  ) {
+    const lesson = await this.prisma.lesson.findUnique({ where: { id } });
+    if (!lesson) throw new BadRequestException('Lesson not found');
+
+    const prev = (lesson.content as any) ?? {};
+    const next = {
+      ...prev,
+      ...(payload.sequence !== undefined ? { sequence: payload.sequence } : {}),
+      ...(payload.itemIds !== undefined ? { itemIds: payload.itemIds } : {}),
+      ...(payload.mode !== undefined ? { mode: payload.mode } : {}),
+    };
+
+    return this.prisma.lesson.update({ where: { id }, data: { content: next } });
+  }
+
   async findBySlug(slug: string) {
     if (!slug) return null;
     return this.prisma.lesson.findUnique({ where: { slug } });
@@ -108,7 +131,28 @@ export class LessonsService {
       include: { vocabulary: true },
       distinct: ['vocabularyId'],
     });
-    return exercises.map(e => e.vocabulary).filter(Boolean);
+    const items = exercises
+      .map(e => e.vocabulary)
+      .filter((v): v is NonNullable<typeof v> => !!v && v.isPublished);
+
+    // Respecter l'ordre canonique stocké dans Lesson.content.vocabOrder (si présent)
+    const lesson = await this.prisma.lesson.findUnique({
+      where: { id: lessonId },
+      select: { content: true },
+    });
+    const vo = (lesson?.content as any)?.vocabOrder;
+    const order: string[] = Array.isArray(vo)
+      ? vo.filter((s: any): s is string => typeof s === 'string')
+      : [];
+    if (order.length === 0) return items;
+
+    const indexOf = new Map(order.map((id, i) => [id, i]));
+    return items.slice().sort((a, b) => {
+      const ia = indexOf.has(a.id) ? indexOf.get(a.id)! : Number.POSITIVE_INFINITY;
+      const ib = indexOf.has(b.id) ? indexOf.get(b.id)! : Number.POSITIVE_INFINITY;
+      if (ia !== ib) return ia - ib;
+      return a.createdAt.getTime() - b.createdAt.getTime();
+    });
   }
 
   /**
@@ -174,5 +218,113 @@ export class LessonsService {
       gemmesEarned,
       progress: updatedProgress,
     };
+  }
+
+  // ── Authored exercises (LessonExercise) ────────────────────────────────────
+
+  private static readonly KNOWN_TYPOLOGIES = new Set([
+    'FlashCard',
+    'ChoixLettre',
+    'AssocierLettres',
+    'TrouverLesPaires',
+    'EntendreEtChoisir',
+    'VraiFaux',
+    'DicterRomanisation',
+    'NumeroterOrdre',
+    'PlacerDansEtoile',
+    'TexteReligieux',
+    'SelectionImages',
+    'TriDeuxCategories',
+    'RelierParTrait',
+  ]);
+
+  // Public : uniquement les exos publiés (consommé par le player)
+  async listAuthoredExercises(lessonId: string) {
+    return this.prisma.lessonExercise.findMany({
+      where: { lessonId, isPublished: true },
+      orderBy: { order: 'asc' },
+    });
+  }
+
+  // Admin : tous les exos (y compris brouillons)
+  async listAuthoredExercisesAdmin(lessonId: string) {
+    return this.prisma.lessonExercise.findMany({
+      where: { lessonId },
+      orderBy: { order: 'asc' },
+    });
+  }
+
+  async createAuthoredExercise(lessonId: string, data: { typology?: string; config?: any; order?: number }) {
+    const lesson = await this.prisma.lesson.findUnique({ where: { id: lessonId } });
+    if (!lesson) throw new NotFoundException('Lesson not found');
+    if (!data.typology || !LessonsService.KNOWN_TYPOLOGIES.has(data.typology)) {
+      throw new BadRequestException(`typology must be one of ${[...LessonsService.KNOWN_TYPOLOGIES].join(', ')}`);
+    }
+    const order = typeof data.order === 'number'
+      ? data.order
+      : (await this.prisma.lessonExercise.count({ where: { lessonId } }));
+    return this.prisma.lessonExercise.create({
+      data: {
+        lessonId,
+        typology: data.typology,
+        config: data.config ?? {},
+        order,
+      },
+    });
+  }
+
+  async updateAuthoredExercise(lessonId: string, exId: string, data: { typology?: string; config?: any; order?: number; isPublished?: boolean }) {
+    const existing = await this.prisma.lessonExercise.findFirst({ where: { id: exId, lessonId } });
+    if (!existing) throw new NotFoundException('LessonExercise not found');
+    if (data.typology && !LessonsService.KNOWN_TYPOLOGIES.has(data.typology)) {
+      throw new BadRequestException(`typology must be one of ${[...LessonsService.KNOWN_TYPOLOGIES].join(', ')}`);
+    }
+    return this.prisma.lessonExercise.update({
+      where: { id: exId },
+      data: {
+        ...(data.typology !== undefined ? { typology: data.typology } : {}),
+        ...(data.config !== undefined ? { config: data.config } : {}),
+        ...(typeof data.order === 'number' ? { order: data.order } : {}),
+        ...(typeof data.isPublished === 'boolean' ? { isPublished: data.isPublished } : {}),
+      },
+    });
+  }
+
+  async deleteAuthoredExercise(lessonId: string, exId: string) {
+    const existing = await this.prisma.lessonExercise.findFirst({ where: { id: exId, lessonId } });
+    if (!existing) throw new NotFoundException('LessonExercise not found');
+    await this.prisma.lessonExercise.delete({ where: { id: exId } });
+    return { ok: true };
+  }
+
+  async reorderVocabulary(lessonId: string, orderedIds: string[]) {
+    if (!Array.isArray(orderedIds)) throw new BadRequestException('orderedIds must be an array');
+    const lesson = await this.prisma.lesson.findUnique({ where: { id: lessonId } });
+    if (!lesson) throw new NotFoundException('Lesson not found');
+    const content = (lesson.content as any) ?? {};
+    return this.prisma.lesson.update({
+      where: { id: lessonId },
+      data: { content: { ...content, vocabOrder: orderedIds } },
+    });
+  }
+
+  async reorderAuthoredExercises(lessonId: string, orderedIds: string[]) {
+    if (!Array.isArray(orderedIds) || orderedIds.length === 0) {
+      throw new BadRequestException('orderedIds must be a non-empty array');
+    }
+    const existing = await this.prisma.lessonExercise.findMany({
+      where: { lessonId },
+      select: { id: true },
+    });
+    const existingIds = new Set(existing.map(e => e.id));
+    for (const id of orderedIds) {
+      if (!existingIds.has(id)) throw new BadRequestException(`exercise ${id} does not belong to this lesson`);
+    }
+    await this.prisma.$transaction(
+      orderedIds.map((id, idx) =>
+        this.prisma.lessonExercise.update({ where: { id }, data: { order: idx } }),
+      ),
+    );
+    return this.listAuthoredExercises(lessonId);
   }
 }

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Sidebar from '@/components/Sidebar';
 import StatsPanel from '@/components/StatsPanel';
 import BottomNav from '@/components/BottomNav';
+import CartePostalePanel from '@/components/carte-postale/CartePostalePanel';
 
 const BG = 'var(--c-bg)';
 
@@ -15,6 +16,8 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   const isLesson  = pathname?.startsWith('/lesson');
   const isChat    = pathname?.startsWith('/practice');
   const showSidebar = !isAuth && !isLesson;
+  // Carte postale : uniquement sur la page parcours (là où elle a du sens).
+  const showPostcard = pathname?.startsWith('/progress');
 
   if (!showSidebar) {
     return <>{children}</>;
@@ -41,9 +44,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         <Sidebar />
       </aside>
 
+      {/* ── Panneau carte postale — fixé à droite de la sidebar, xl+ uniquement ── */}
+      {showPostcard && <CartePostalePanel />}
+
       {/* ── Zone centrale : contenu + panneau droit ── */}
       <div
-        className="flex flex-1 justify-center md:ml-[260px]"
+        className={`flex flex-1 justify-center md:ml-[260px] ${showPostcard ? 'xl:ml-[660px]' : ''}`}
         style={{ minHeight: '100vh' }}
       >
         {/* Contenu principal */}
@@ -70,20 +76,22 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           </div>
         </main>
 
-        {/* Panneau droit — seulement sur xl+ */}
+        {/* Panneau droit — seulement sur 2xl+ (la carte postale prend priorité en xl) */}
         <aside
-          className="hidden xl:flex flex-col gap-4"
+          className="hidden 2xl:flex flex-col gap-4"
           style={{
             marginLeft: 32,
             position: 'sticky',
             top: 0,
             width: 340,
             height: '100vh',
-            padding: '1.5rem',
+            padding: '80px 1.5rem 1.5rem',
             overflowY: 'auto',
             overflowX: 'hidden',
             backgroundColor: BG,
             flexShrink: 0,
+            /* Passe au-dessus du track-switcher (zIndex 30) pour ne pas être masqué */
+            zIndex: 40,
           }}
         >
           <StatsPanel />

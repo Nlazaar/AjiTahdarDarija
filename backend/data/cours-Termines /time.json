@@ -1,0 +1,41 @@
+{
+  "kind": "section",
+  "version": 1,
+  "data": {
+    "module": {
+      "slug": "vocab-temps",
+      "title": "Vocabulaire — Temps",
+      "subtitle": "Moments, durées et repères",
+      "track": "DARIJA",
+      "level": 1,
+      "canonicalOrder": 170,
+      "isPublished": true
+    },
+    "lessons": [
+      {
+        "slug": "vocab-temps-base",
+        "title": "Le temps",
+        "languageCode": "ar-MA",
+        "isPublished": true,
+        "vocabulary": [
+          { "word": "نْهَار",       "transliteration": "nhar",     "translation": { "fr": "jour" },         "tags": ["temps"] },
+          { "word": "لِيل",         "transliteration": "lil",      "translation": { "fr": "nuit" },         "tags": ["temps"] },
+          { "word": "صْبَاح",       "transliteration": "sba7",     "translation": { "fr": "matin" },        "tags": ["temps"] },
+          { "word": "عْشِيَّة",      "transliteration": "3chiya",   "translation": { "fr": "après-midi" },   "tags": ["temps"] },
+          { "word": "عَشَّان",      "transliteration": "3ch-chyan","translation": { "fr": "soir" },         "tags": ["temps"] },
+          { "word": "دْقِيقَة",      "transliteration": "dqiqa",    "translation": { "fr": "minute" },       "tags": ["temps"] },
+          { "word": "سَاعَة",       "transliteration": "sa3a",     "translation": { "fr": "heure" },        "tags": ["temps"] },
+          { "word": "أُسْبُوع",      "transliteration": "sbou3",    "translation": { "fr": "semaine" },      "tags": ["temps"] },
+          { "word": "شْهْر",        "transliteration": "chhr",     "translation": { "fr": "mois" },         "tags": ["temps"] },
+          { "word": "عَام",         "transliteration": "3am",      "translation": { "fr": "année" },        "tags": ["temps"] },
+          { "word": "دَابَا",        "transliteration": "daba",     "translation": { "fr": "maintenant" },   "tags": ["temps"] },
+          { "word": "مْن بَعْد",     "transliteration": "men b3d",  "translation": { "fr": "après" },        "tags": ["temps"] },
+          { "word": "قْبْل",         "transliteration": "qbl",      "translation": { "fr": "avant" },        "tags": ["temps"] },
+          { "word": "اليُوم",        "transliteration": "lyoum",    "translation": { "fr": "aujourd'hui" },  "tags": ["temps"] },
+          { "word": "غْدَّا",         "transliteration": "ghdda",    "translation": { "fr": "demain" },       "tags": ["temps"] },
+          { "word": "البَارْح",      "transliteration": "bare7",    "translation": { "fr": "hier" },         "tags": ["temps"] }
+        ]
+      }
+    ]
+  }
+}

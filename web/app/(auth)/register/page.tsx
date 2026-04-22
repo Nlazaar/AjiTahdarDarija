@@ -5,10 +5,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@/context/UserContext';
 import { apiRegister, storeAuth } from '@/lib/auth';
+import HomeLogoLink from '@/components/HomeLogoLink';
+import { TRACK_COLORS, TRACK_GRADIENT, ONBOARDING_BG } from '@/lib/trackColors';
 
 export default function RegisterPage() {
-  const { mascot, setUser, setUserName } = useUser();
+  const { mascot, setUser, setUserName, langTrack } = useUser();
   const router = useRouter();
+  const tc = TRACK_COLORS[langTrack];
 
   const [name,     setName]     = useState('');
   const [email,    setEmail]    = useState('');
@@ -39,13 +42,17 @@ export default function RegisterPage() {
   return (
     <div style={{
       display: 'flex', flexDirection: 'column', alignItems: 'center',
-      minHeight: '100vh', width: '100vw', backgroundColor: '#ffffff',
+      minHeight: '100vh', width: '100vw', backgroundColor: ONBOARDING_BG,
       fontFamily: '"Nunito", "Inter", sans-serif',
     }}>
-      {/* Progress Bar */}
-      <div style={{ width: '100%', maxWidth: 1000, padding: '24px 20px', display: 'flex', alignItems: 'center' }}>
+      {/* Bande décorative 3-parcours */}
+      <div style={{ width: '100%', height: 4, background: TRACK_GRADIENT }} />
+
+      {/* Header : logo home-link + progress bar */}
+      <div style={{ width: '100%', maxWidth: 1000, padding: '16px 20px 20px', display: 'flex', alignItems: 'center', gap: 16 }}>
+        <HomeLogoLink />
         <div style={{ flex: 1, height: 16, backgroundColor: '#e5e5e5', borderRadius: 10, overflow: 'hidden' }}>
-          <div style={{ width: '70%', height: '100%', backgroundColor: '#58cc02', borderRadius: 10 }} />
+          <div style={{ width: '70%', height: '100%', backgroundColor: tc.color, borderRadius: 10, transition: 'background-color 0.3s' }} />
         </div>
       </div>
 
@@ -60,13 +67,13 @@ export default function RegisterPage() {
             <img src={mascot} alt="Mascotte" style={{ width: '100%', height: 'auto' }} />
           </div>
           <div style={{
-            position: 'relative', backgroundColor: 'white', border: '2px solid #e5e5e5',
-            borderRadius: 20, padding: '18px 22px', maxWidth: 300, boxShadow: '0 4px 0 #e5e5e5',
+            position: 'relative', backgroundColor: 'white', border: `2px solid ${tc.color}`,
+            borderRadius: 20, padding: '18px 22px', maxWidth: 300, boxShadow: `0 4px 0 ${tc.tint}`,
           }}>
             <div style={{
               position: 'absolute', left: -10, top: '50%', transform: 'translateY(-50%) rotate(45deg)',
               width: 16, height: 16, backgroundColor: 'white',
-              borderLeft: '2px solid #e5e5e5', borderBottom: '2px solid #e5e5e5',
+              borderLeft: `2px solid ${tc.color}`, borderBottom: `2px solid ${tc.color}`,
             }} />
             <p style={{ fontSize: 17, fontWeight: 800, color: '#4b4b4b', margin: '0 0 4px' }}>
               C&apos;est l&apos;heure de créer ton profil !
@@ -132,12 +139,12 @@ export default function RegisterPage() {
             onClick={handleSubmit as any}
             disabled={!canSubmit}
             style={{
-              backgroundColor: canSubmit ? '#58cc02' : '#e5e5e5',
+              backgroundColor: canSubmit ? tc.color : '#e5e5e5',
               color: canSubmit ? 'white' : '#afafaf',
               border: 'none', borderRadius: 16, padding: '15px 0',
               fontSize: 15, fontWeight: 900, letterSpacing: '0.08em',
               cursor: canSubmit ? 'pointer' : 'default',
-              boxShadow: canSubmit ? '0 5px 0 #46a302' : 'none',
+              boxShadow: canSubmit ? `0 5px 0 ${tc.shadow}` : 'none',
               width: '100%', maxWidth: 280, textTransform: 'uppercase', transition: 'all 0.15s',
             }}
           >

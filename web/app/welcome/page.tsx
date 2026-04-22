@@ -3,17 +3,59 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { useUser } from '@/context/UserContext';
+import { useUser, type LangTrack } from '@/context/UserContext';
 import { useMascot, type MascotId } from '@/contexts/MascotContext';
+import HomeLogoLink from '@/components/HomeLogoLink';
+import LottiePlayer from '@/components/LottiePlayer';
+import { TRACK_COLORS, TRACK_GRADIENT, ONBOARDING_BG } from '@/lib/trackColors';
+
+type DialogueStrings = {
+  salam: string;       // Ligne 1 (AR) — présentation du prof
+  askName: string;     // Ligne 2 (AR) — demande du prénom
+  giveNice: string;    // Après "oui", relance amicale
+  salamSubFR: string;  // Sous-titre FR de la ligne salam
+  askNameSubFR: string;
+  giveNiceSubFR: string;
+};
+
+const DIALOGUES: Record<LangTrack, DialogueStrings> = {
+  DARIJA: {
+    salam: 'سلام، أنا الأستاذة ديالك.',
+    askName: 'واش بغيتي تعطيني شي سمية؟',
+    giveNice: 'عطيني شي سمية زوينة !',
+    salamSubFR: 'Salam, je suis ta prof de Darija.',
+    askNameSubFR: 'Tu veux bien me donner un prénom ?',
+    giveNiceSubFR: 'Donne-moi un joli prénom !',
+  },
+  MSA: {
+    salam: 'السَّلَامُ عَلَيْكُمْ، أَنَا مُعَلِّمَتُكَ.',
+    askName: 'هَلْ تَوَدُّ أَنْ تُعْطِيَنِي اسْمَكَ؟',
+    giveNice: 'أَعْطِنِي اسْمًا جَمِيلًا !',
+    salamSubFR: 'Bonjour, je suis ton enseignante d\'arabe standard.',
+    askNameSubFR: 'Accepterais-tu de me donner ton prénom ?',
+    giveNiceSubFR: 'Donne-moi un beau prénom !',
+  },
+  RELIGION: {
+    salam: 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ.',
+    askName: 'بِاسْمِ اللَّهِ، مَا اسْمُكَ الكَرِيم؟',
+    giveNice: 'أَعْطِنِي اسْمًا طَيِّبًا بَارَكَ اللَّهُ فِيك !',
+    salamSubFR: 'As-salāmu ʿalaykum — la paix soit sur toi.',
+    askNameSubFR: 'Au nom de Dieu, quel est ton prénom ?',
+    giveNiceSubFR: 'Donne-moi un beau prénom, qu\'Allah te bénisse !',
+  },
+};
 
 export default function WelcomePage() {
   const { t } = useLanguage();
-  const { setMascot, setUserName } = useUser();
+  const { setMascot, setUserName, langTrack } = useUser();
   const { setMascot: setMascotConfig } = useMascot();
   const [step, setStep] = React.useState(0);
   const [selectedMascot, setSelectedMascotLocal] = React.useState('/images/maroccan-lion.png');
   const [showInput, setShowInput] = React.useState(false);
   const [localName, setLocalName] = React.useState('');
+
+  const d = DIALOGUES[langTrack];
+  const tc = TRACK_COLORS[langTrack];
 
   const mascots = [
     { id: 'boy' as MascotId, name: t.welcome.mascotBoy, img: '/images/maroccan-child.png' },
@@ -39,30 +81,34 @@ export default function WelcomePage() {
       alignItems: 'center', 
       minHeight: '100vh', 
       width: '100vw', 
-      backgroundColor: '#ffffff', 
+      backgroundColor: ONBOARDING_BG,
       fontFamily: '"Nunito", "Inter", sans-serif',
       position: 'relative'
     }}>
-      {/* 1. Progress Bar */}
-      <div style={{ 
-        width: '100%', 
-        maxWidth: '1000px', 
-        padding: '24px 20px', 
-        display: 'flex', 
-        alignItems: 'center', 
-        gap: '20px' 
+      {/* Bande décorative 3-parcours */}
+      <div style={{ width: '100%', height: 4, background: TRACK_GRADIENT }} />
+
+      {/* 1. Header : logo home-link + Progress Bar */}
+      <div style={{
+        width: '100%',
+        maxWidth: '1000px',
+        padding: '16px 20px 20px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '16px'
       }}>
-        <div style={{ 
-          flex: 1, 
-          height: '16px', 
-          backgroundColor: '#e5e5e5', 
-          borderRadius: '10px', 
-          overflow: 'hidden' 
+        <HomeLogoLink />
+        <div style={{
+          flex: 1,
+          height: '16px',
+          backgroundColor: '#e5e5e5',
+          borderRadius: '10px',
+          overflow: 'hidden'
         }}>
-          <div style={{ 
-            width: step === 0 ? '5%' : '15%', 
-            height: '100%', 
-            backgroundColor: '#58cc02', 
+          <div style={{
+            width: step === 0 ? '5%' : '15%',
+            height: '100%',
+            backgroundColor: tc.color,
             borderRadius: '10px',
             transition: 'width 0.5s ease-out'
           }} />
@@ -84,6 +130,9 @@ export default function WelcomePage() {
         
         {step === 0 ? (
           <div style={{ textAlign: 'center', animation: 'fadeIn 0.5s ease-out' }}>
+            <div style={{ width: 180, height: 180, margin: '0 auto 8px' }}>
+              <LottiePlayer src="hello-buddy.json" size="100%" />
+            </div>
             <h1 style={{ fontSize: '32px', fontWeight: '900', color: '#4b4b4b', marginBottom: '48px' }}>
               {t.welcome.chooseMascot}
             </h1>
@@ -157,13 +206,13 @@ export default function WelcomePage() {
               {/* Speech Bubble */}
               <div style={{
                 backgroundColor: 'white',
-                border: '2px solid #e5e5e5',
+                border: `2px solid ${tc.color}`,
                 borderRadius: '24px',
                 padding: '30px',
                 position: 'relative',
                 width: '100%',
                 marginBottom: '40px',
-                boxShadow: '0 4px 0 #e5e5e5'
+                boxShadow: `0 4px 0 ${tc.tint}`
               }}>
                 {/* Arrow */}
                 <div style={{
@@ -173,8 +222,8 @@ export default function WelcomePage() {
                   width: '20px',
                   height: '20px',
                   backgroundColor: 'white',
-                  borderLeft: '2px solid #e5e5e5',
-                  borderBottom: '2px solid #e5e5e5',
+                  borderLeft: `2px solid ${tc.color}`,
+                  borderBottom: `2px solid ${tc.color}`,
                   transform: 'rotate(45deg)'
                 }} />
 
@@ -188,18 +237,18 @@ export default function WelcomePage() {
                     {!showInput ? (
                       <>
                         <div style={{ marginBottom: '15px' }}>
-                          <span style={{ fontWeight: '900', fontSize: '24px' }}>سلام، أنا الأستاذة ديالك.</span><br />
-                          <span style={{ color: '#777' }}>{t.welcome.salamTeacher}</span>
+                          <span style={{ fontWeight: '900', fontSize: '24px', color: tc.color }}>{d.salam}</span><br />
+                          <span style={{ color: '#777' }}>{d.salamSubFR}</span>
                         </div>
                         <div>
-                          <span style={{ fontWeight: '900', fontSize: '24px' }}>واش بغيتي تعطيني شي سمية؟</span><br />
-                          <span style={{ color: '#777' }}>{t.welcome.giveMeName}</span>
+                          <span style={{ fontWeight: '900', fontSize: '24px', color: tc.color }}>{d.askName}</span><br />
+                          <span style={{ color: '#777' }}>{d.askNameSubFR}</span>
                         </div>
                       </>
                     ) : (
                       <div style={{ textAlign: 'center' }}>
-                        <span style={{ fontWeight: '900', fontSize: '24px' }}>عطيني شي سمية زوينة !</span><br />
-                        <span style={{ color: '#777' }}>{t.welcome.giveMeNiceName}</span>
+                        <span style={{ fontWeight: '900', fontSize: '24px', color: tc.color }}>{d.giveNice}</span><br />
+                        <span style={{ color: '#777' }}>{d.giveNiceSubFR}</span>
                       </div>
                     )}
                   </div>
@@ -209,9 +258,9 @@ export default function WelcomePage() {
               {/* Interaction Elements */}
               {!showInput ? (
                 <div style={{ display: 'flex', gap: '20px', width: '100%', justifyContent: 'center' }}>
-                  <button 
+                  <button
                     onClick={() => setShowInput(true)}
-                    style={iconButtonStyle('#58cc02', '#46a302')}
+                    style={iconButtonStyle(tc.color, tc.shadow)}
                   >
                     {t.common.yes}
                   </button>
@@ -243,7 +292,7 @@ export default function WelcomePage() {
                       color: '#4b4b4b',
                       transition: 'border-color 0.2s'
                     }}
-                    onFocus={(e) => e.target.style.borderColor = '#1cb0f6'}
+                    onFocus={(e) => e.target.style.borderColor = tc.color}
                     onBlur={(e) => e.target.style.borderColor = '#e5e5e5'}
                   />
                   <Link href="/welcome/level" style={{ textDecoration: 'none', width: '100%' }}>
@@ -251,7 +300,7 @@ export default function WelcomePage() {
                       onClick={handleNameSubmit}
                       style={{
                         width: '100%',
-                        backgroundColor: '#58cc02',
+                        backgroundColor: tc.color,
                         color: 'white',
                         border: 'none',
                         borderRadius: '16px',
@@ -260,7 +309,7 @@ export default function WelcomePage() {
                         fontWeight: '900',
                         letterSpacing: '0.08em',
                         cursor: 'pointer',
-                        boxShadow: '0 5px 0 #46a302',
+                        boxShadow: `0 5px 0 ${tc.shadow}`,
                         textTransform: 'uppercase',
                         transition: 'filter 0.1s'
                       }}

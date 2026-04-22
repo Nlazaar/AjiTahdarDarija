@@ -166,9 +166,9 @@ function Dot({ delay }: { delay: number }) {
 // ── Page principale ──────────────────────────────────────────────────────────
 
 const WELCOME: Record<string, string> = {
-  DARIJA: "أهلاً! أنا أجي، أستاذك الافتراضي.\n(Ahlan! Ana Aji, ustad-ek el-iftiradi.)\n\nBienvenue ! Je suis Aji, ton professeur de **Darija marocaine**. Que veux-tu apprendre aujourd'hui ?",
-  MSA:    "مَرْحَباً! أَنَا أَجِي، أُسْتَاذُكَ الاِفْتِرَاضِي.\n(Marhaban! Ana Aji, ustadhuka l-iftiradi.)\n\nBienvenue ! Je suis Aji, ton professeur d'**arabe littéraire (MSA)**. Que veux-tu apprendre aujourd'hui ?",
-  BOTH:   "أهلاً / مَرْحَباً!\n\nBienvenue ! Je suis Aji, ton professeur de **Darija + Arabe Littéraire**. Je t'enseignerai les deux en parallèle. Par quoi veux-tu commencer ?",
+  DARIJA:   "أهلاً! أنا أجي، أستاذك الافتراضي.\n(Ahlan! Ana Aji, ustad-ek el-iftiradi.)\n\nBienvenue ! Je suis Aji, ton professeur de **Darija marocaine**. Que veux-tu apprendre aujourd'hui ?",
+  MSA:      "مَرْحَباً! أَنَا أَجِي، أُسْتَاذُكَ الاِفْتِرَاضِي.\n(Marhaban! Ana Aji, ustadhuka l-iftiradi.)\n\nBienvenue ! Je suis Aji, ton professeur d'**arabe littéraire (MSA)**. Que veux-tu apprendre aujourd'hui ?",
+  RELIGION: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ!\n(As-salāmu ʿalaykum wa raḥmatullāh)\n\nBienvenue ! Je suis Aji, ton guide pour le parcours **religieux**. Que veux-tu explorer aujourd'hui ?",
 };
 
 export default function ConversationPage() {

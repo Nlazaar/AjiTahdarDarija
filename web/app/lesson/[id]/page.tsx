@@ -1,4 +1,4 @@
-import { getLesson, getExercises, getLessonsByModule, getVocabularyByLesson } from '@/lib/api'
+import { getLesson, getExercises, getLessonsByModule, getVocabularyByLesson, getAuthoredExercises } from '@/lib/api'
 import LessonClient from './LessonClient'
 
 const MOCK_LESSON = { id: 'l1', title: 'Les Bases (Tanger)' }
@@ -41,7 +41,7 @@ export default async function LessonPage({ params, searchParams }: { params: { i
     const MinimalProgress = (await import('./MinimalProgress')).default;
     return <MinimalProgress value={25} />;
   }
-  let lesson: any, exercises: any[] = [], vocabulary: any[] = [];
+  let lesson: any, exercises: any[] = [], vocabulary: any[] = [], authoredExercises: any[] = [];
 
   let nextLessonId: string | null = null
 
@@ -49,9 +49,11 @@ export default async function LessonPage({ params, searchParams }: { params: { i
     lesson    = await getLesson(id)
     exercises = await getExercises(id)
     vocabulary = await getVocabularyByLesson(id).catch(() => [])
+    authoredExercises = await getAuthoredExercises(id).catch(() => [])
     if (!lesson || !lesson.id) lesson = MOCK_LESSON
     if (!Array.isArray(exercises))   exercises = []
     if (!Array.isArray(vocabulary))  vocabulary = []
+    if (!Array.isArray(authoredExercises)) authoredExercises = []
 
     // Trouve la leçon suivante dans le même module
     if (lesson?.moduleId) {
@@ -64,6 +66,7 @@ export default async function LessonPage({ params, searchParams }: { params: { i
     lesson    = MOCK_LESSON
     exercises = []
     vocabulary = []
+    authoredExercises = []
   }
 
   const userId = 'user_123'
@@ -73,6 +76,7 @@ export default async function LessonPage({ params, searchParams }: { params: { i
       lesson={lesson}
       exercises={exercises}
       vocabulary={vocabulary}
+      authoredExercises={authoredExercises}
       userId={userId}
       nextLessonId={nextLessonId}
       isLastLesson={!nextLessonId}

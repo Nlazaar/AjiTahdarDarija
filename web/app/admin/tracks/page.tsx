@@ -2,6 +2,7 @@
 
 import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { SortableList, DragHandle } from "@/components/admin/SortableList";
 
 interface TrackRow {
   id: string;
@@ -81,14 +82,13 @@ export default function AdminTracksPage() {
     setTimeout(() => setMsg(null), 3500);
   }
 
-  async function move(id: string, dir: -1 | 1) {
+  async function reorderByIds(orderedIds: string[]) {
     if (!tracks) return;
-    const idx = tracks.findIndex(t => t.id === id);
-    const target = idx + dir;
-    if (idx < 0 || target < 0 || target >= tracks.length) return;
-    const next = [...tracks];
-    [next[idx], next[target]] = [next[target], next[idx]];
-    const reordered = next.map((t, i) => ({ ...t, order: i }));
+    const byId = new Map(tracks.map(t => [t.id, t]));
+    const reordered = orderedIds.map((id, i) => {
+      const t = byId.get(id);
+      return t ? { ...t, order: i } : null;
+    }).filter(Boolean) as TrackRow[];
     setTracks(reordered);
     try {
       const r = await fetch(`/api/admin/tracks/reorder`, {
@@ -102,6 +102,16 @@ export default function AdminTracksPage() {
       setMsg({ ok: false, text: `Réordre: ${e.message}` });
       load();
     }
+  }
+
+  function move(id: string, dir: -1 | 1) {
+    if (!tracks) return;
+    const idx = tracks.findIndex(t => t.id === id);
+    const target = idx + dir;
+    if (idx < 0 || target < 0 || target >= tracks.length) return;
+    const next = tracks.map(t => t.id);
+    [next[idx], next[target]] = [next[target], next[idx]];
+    reorderByIds(next);
   }
 
   return (
@@ -154,13 +164,22 @@ export default function AdminTracksPage() {
       )}
 
       <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-        {tracks?.map((t, idx) => (
-          <div key={t.id} style={{
-            background: "var(--c-card)", border: "1px solid var(--c-border)",
+        {tracks && (
+          <SortableList
+            items={tracks}
+            onReorder={reorderByIds}
+            renderItem={(t, { handleProps, isDragging }) => {
+              const idx = tracks.findIndex(x => x.id === t.id);
+              return (
+          <div style={{
+            background: "var(--c-card)", border: `1px solid ${isDragging ? "#58cc02" : "var(--c-border)"}`,
             borderRadius: 14, padding: "16px 18px",
             borderLeft: `4px solid ${t.color ?? "var(--c-border)"}`,
+            boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
+            marginBottom: 14,
           }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+              <DragHandle handleProps={handleProps} />
               <span style={{ fontSize: 24 }}>{t.emoji ?? "🗂️"}</span>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 10, fontWeight: 800, color: "var(--c-sub)", letterSpacing: "0.06em", textTransform: "uppercase" }}>{t.code}</div>
@@ -227,7 +246,10 @@ export default function AdminTracksPage() {
               </span>
             </div>
           </div>
-        ))}
+              );
+            }}
+          />
+        )}
       </div>
     </div>
   );

@@ -12,12 +12,19 @@ interface AudioContextType {
 const AudioCtx = createContext<AudioContextType | null>(null);
 
 function pickArabicVoice(voices: SpeechSynthesisVoice[], lang: string): SpeechSynthesisVoice | null {
+  const target = lang.toLowerCase();
+  const isMsa  = target.startsWith('ar-sa');
+  // Pour le MSA, on évite ar-MA en fallback (accent darija sur un texte arabe standard).
+  const avoid  = isMsa ? 'ar-ma' : '';
   return (
-    voices.find(v => v.lang === lang) ||
-    voices.find(v => v.lang.toLowerCase().startsWith(lang.toLowerCase())) ||
-    voices.find(v => v.lang === 'ar-MA') ||
-    voices.find(v => v.lang.toLowerCase().startsWith('ar-ma')) ||
-    voices.find(v => v.lang === 'ar-SA') ||
+    voices.find(v => v.lang.toLowerCase() === target) ||
+    voices.find(v => v.lang.toLowerCase().startsWith(target)) ||
+    // Fallback 1 : toute voix arabe standard (ar-SA, ar-EG, etc.) pour MSA
+    (isMsa
+      ? voices.find(v => v.lang.toLowerCase().startsWith('ar-sa') || v.lang.toLowerCase().startsWith('ar-eg'))
+      : voices.find(v => v.lang === 'ar-MA') || voices.find(v => v.lang.toLowerCase().startsWith('ar-ma'))) ||
+    // Fallback 2 : n'importe quelle voix arabe, sauf celle à éviter
+    voices.find(v => v.lang.toLowerCase().startsWith('ar') && !(avoid && v.lang.toLowerCase().startsWith(avoid))) ||
     voices.find(v => v.lang.toLowerCase().startsWith('ar')) ||
     null
   );
@@ -46,6 +53,15 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
 
   const speak = useCallback(async (text: string, lang: string = 'ar-MA') => {
     if (!text?.trim() || typeof window === 'undefined') return;
+
+    // Si le track actif est MSA, force la voix arabe standard (ar-SA) même
+    // si les callers historiques passent 'ar-MA' en dur.
+    const track = typeof localStorage !== 'undefined'
+      ? localStorage.getItem('darija_lang_track')
+      : null;
+    if (track === 'MSA' && lang.toLowerCase().startsWith('ar-ma')) {
+      lang = 'ar-SA';
+    }
 
     // Ne parler QUE l'arabe si la chaîne est mélangée (évite de lire "bonjour en arabe :" à voix haute)
     const arabicOnly = text
