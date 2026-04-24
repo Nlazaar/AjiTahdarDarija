@@ -97,6 +97,44 @@ export const getDailyVocab         = (track?: string)   => request<{ id: string;
   track ? `/vocabulary/daily?track=${encodeURIComponent(track)}` : `/vocabulary/daily`
 );
 export const getAuthoredExercises  = (lessonId: string) => request<any[]>(`/lessons/${lessonId}/authored-exercises`);
+
+export type RevisionConversationContent = {
+  kind?: 'conversation';
+  setting?: string;
+  theme?: string;
+  turns: Array<{
+    speaker: 'A' | 'B';
+    darija: string;
+    french: string;
+    transliteration?: string;
+    audioUrl?: string;
+  }>;
+};
+
+export type RevisionExercisesContent = {
+  kind: 'exercises';
+  setting?: string;
+  theme?: string;
+  exercises: Array<{ typology: string; config: any }>;
+};
+
+export type RevisionContent = RevisionConversationContent | RevisionExercisesContent;
+
+export type RevisionDetail = {
+  id: string;
+  moduleId: string;
+  position: 'MIDDLE' | 'END';
+  title: string | null;
+  isPublished: boolean;
+  content: RevisionContent;
+  module?: { id: string; slug: string; title: string; cityName: string | null; colorA: string | null };
+};
+export const getRevision = (id: string) => request<RevisionDetail>(`/revisions/${id}`);
+export const completeRevisionApi = (id: string) =>
+  request<{ ok: boolean; alreadyCompleted: boolean; xpAwarded: number; position: 'MIDDLE' | 'END' }>(
+    `/revisions/${id}/complete`,
+    { method: 'POST' },
+  );
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
 export const updateProfile         = (data: { avatar?: string; name?: string }) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });

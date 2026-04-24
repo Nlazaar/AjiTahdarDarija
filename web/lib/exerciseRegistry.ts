@@ -32,6 +32,8 @@ import TexteReligieux from '@/components/exercises/TexteReligieux';
 import SelectionImages from '@/components/exercises/SelectionImages';
 import TriDeuxCategories from '@/components/exercises/TriDeuxCategories';
 import RelierParTrait from '@/components/exercises/RelierParTrait';
+import VoixVisuel from '@/components/exercises/VoixVisuel';
+import TrouverIntrus from '@/components/exercises/TrouverIntrus';
 
 export type ExerciseMode = 'lettre' | 'mot' | 'both';
 
@@ -154,6 +156,22 @@ export const EXERCISE_REGISTRY: Record<string, ExerciseRegistryEntry> = {
     description: 'Relier chaque item de gauche à sa cible de droite (paires arbitraires avec emoji).',
     supports: 'mot',
     minItems: 0,
+  },
+  VoixVisuel: {
+    component: VoixVisuel,
+    label: 'Voix ↔ Visuel',
+    icon: '🎙️',
+    description: "Associer chaque voix à son visuel (texte, emoji ou couleur). Modes ligne ou glisser-déposer.",
+    supports: 'mot',
+    minItems: 2,
+  },
+  TrouverIntrus: {
+    component: TrouverIntrus,
+    label: "Trouver l'intrus",
+    icon: '🕵️',
+    description: "Écouter une série de voix et repérer le visuel qui n'a pas été prononcé.",
+    supports: 'mot',
+    minItems: 2,
   },
 };
 

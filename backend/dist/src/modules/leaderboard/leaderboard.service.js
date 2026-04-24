@@ -8,30 +8,55 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var LeaderboardService_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LeaderboardService = void 0;
 const common_1 = require("@nestjs/common");
 const prisma_service_1 = require("../../prisma/prisma.service");
-let LeaderboardService = class LeaderboardService {
-    constructor(prisma) {
+const ttl_cache_service_1 = require("../../common/cache/ttl-cache.service");
+const GLOBAL_TTL = 60; // 1 minute
+const WEEKLY_TTL = 120; // 2 minutes
+let LeaderboardService = LeaderboardService_1 = class LeaderboardService {
+    constructor(prisma, cache) {
         this.prisma = prisma;
+        this.cache = cache;
+        this.logger = new common_1.Logger(LeaderboardService_1.name);
     }
     async global(limit = 50) {
-        return this.prisma.user.findMany({
+        const key = `lb:global:${limit}`;
+        const cached = this.cache.get(key);
+        if (cached)
+            return cached;
+        const result = await this.prisma.user.findMany({
             orderBy: { xp: 'desc' },
             take: limit,
             select: { id: true, name: true, xp: true, level: true, streak: true },
         });
+        this.cache.set(key, result, GLOBAL_TTL);
+        return result;
     }
     async weekly(limit = 50) {
+        const key = `lb:weekly:${limit}`;
+        const cached = this.cache.get(key);
+        if (cached)
+            return cached;
         const since = new Date();
         since.setDate(since.getDate() - 7);
-        return this.prisma.user.findMany({
+        const result = await this.prisma.user.findMany({
             where: { updatedAt: { gt: since } },
             orderBy: { xp: 'desc' },
             take: limit,
             select: { id: true, name: true, xp: true, level: true, streak: true },
         });
+        this.cache.set(key, result, WEEKLY_TTL);
+        return result;
+    }
+    async myRank(userId) {
+        const user = await this.prisma.user.findUnique({ where: { id: userId }, select: { xp: true } });
+        if (!user)
+            return { rank: null, xp: 0 };
+        const ahead = await this.prisma.user.count({ where: { xp: { gt: user.xp } } });
+        return { rank: ahead + 1, xp: user.xp };
     }
     async friendsRanking(userId) {
         const accepted = await this.prisma.friendRequest.findMany({
@@ -47,7 +72,8 @@ let LeaderboardService = class LeaderboardService {
     }
 };
 exports.LeaderboardService = LeaderboardService;
-exports.LeaderboardService = LeaderboardService = __decorate([
+exports.LeaderboardService = LeaderboardService = LeaderboardService_1 = __decorate([
     (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [prisma_service_1.PrismaService])
+    __metadata("design:paramtypes", [prisma_service_1.PrismaService,
+        ttl_cache_service_1.TTLCacheService])
 ], LeaderboardService);

@@ -16,6 +16,14 @@ let ProgressService = class ProgressService {
     constructor(prisma) {
         this.prisma = prisma;
     }
+    async completeLesson(userId, lessonId) {
+        await this.prisma.userProgress.upsert({
+            where: { userId_lessonId: { userId, lessonId } },
+            create: { userId, lessonId, completed: true, progress: 100, xpEarned: 0, finishedAt: new Date() },
+            update: { completed: true, progress: 100, finishedAt: new Date() },
+        });
+        return { ok: true };
+    }
     async getUserProgress(userId) {
         const progresses = await this.prisma.userProgress.findMany({
             where: { userId },
@@ -38,6 +46,45 @@ let ProgressService = class ProgressService {
                 finishedAt: p.finishedAt,
             })),
         };
+    }
+    /**
+     * Parcours Maroc : pour chaque module DARIJA publié ayant un cityKey dans
+     * cityInfo, renvoie la séquence ordonnée par canonicalOrder + la ville
+     * "courante" (dernière leçon complétée → son module → sa ville).
+     */
+    async getJourney(userId) {
+        const modules = await this.prisma.module.findMany({
+            where: { track: 'DARIJA', isPublished: true },
+            orderBy: { canonicalOrder: 'asc' },
+            select: { id: true, slug: true, canonicalOrder: true, cityInfo: true },
+        });
+        const route = modules
+            .map(m => {
+            const ci = (m.cityInfo ?? {});
+            const cityKey = typeof ci.cityKey === 'string' ? ci.cityKey : null;
+            return cityKey ? { moduleId: m.id, moduleSlug: m.slug, canonicalOrder: m.canonicalOrder, cityKey } : null;
+        })
+            .filter((x) => x !== null);
+        const moduleIds = route.map(r => r.moduleId);
+        // Leçons complétées par module (une leçon complétée → ville "visitée")
+        const completed = await this.prisma.userProgress.findMany({
+            where: { userId, completed: true, lesson: { moduleId: { in: moduleIds } } },
+            include: { lesson: { select: { moduleId: true } } },
+            orderBy: { finishedAt: 'asc' },
+        });
+        const visitedModuleIds = new Set();
+        let lastModuleId = null;
+        for (const p of completed) {
+            if (p.lesson.moduleId) {
+                visitedModuleIds.add(p.lesson.moduleId);
+                lastModuleId = p.lesson.moduleId;
+            }
+        }
+        const visitedCityKeys = route.filter(r => visitedModuleIds.has(r.moduleId)).map(r => r.cityKey);
+        const currentCityKey = lastModuleId
+            ? route.find(r => r.moduleId === lastModuleId)?.cityKey ?? null
+            : (route[0]?.cityKey ?? null);
+        return { currentCityKey, visitedCityKeys, route };
     }
 };
 exports.ProgressService = ProgressService;

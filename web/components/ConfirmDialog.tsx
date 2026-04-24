@@ -71,7 +71,7 @@ function ConfirmModal({
         position: "fixed", inset: 0, zIndex: 2000,
         background: "rgba(0,0,0,0.55)",
         display: "flex", alignItems: "center", justifyContent: "center",
-        padding: 20,
+        padding: "calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left))",
       }}
     >
       <div

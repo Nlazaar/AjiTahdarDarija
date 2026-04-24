@@ -9,6 +9,7 @@ export declare class UsersService {
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -19,14 +20,19 @@ export declare class UsersService {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }[]>;
     findOne(id: string): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -37,14 +43,19 @@ export declare class UsersService {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     create(data: CreateUserDto): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -55,14 +66,19 @@ export declare class UsersService {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     update(id: string, data: UpdateUserDto): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -73,14 +89,19 @@ export declare class UsersService {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     remove(id: string): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -91,7 +112,11 @@ export declare class UsersService {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
 }

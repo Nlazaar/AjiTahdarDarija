@@ -23,6 +23,12 @@ let ProgressController = class ProgressController {
     me(req) {
         return this.progressService.getUserProgress(req.user.id);
     }
+    journey(req) {
+        return this.progressService.getJourney(req.user.id);
+    }
+    complete(req, lessonId) {
+        return this.progressService.completeLesson(req.user.id, lessonId);
+    }
 };
 exports.ProgressController = ProgressController;
 __decorate([
@@ -32,6 +38,21 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], ProgressController.prototype, "me", null);
+__decorate([
+    (0, common_1.Get)('journey'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ProgressController.prototype, "journey", null);
+__decorate([
+    (0, common_1.Post)('complete/:lessonId'),
+    __param(0, (0, common_1.Request)()),
+    __param(1, (0, common_1.Param)('lessonId')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:returntype", void 0)
+], ProgressController.prototype, "complete", null);
 exports.ProgressController = ProgressController = __decorate([
     (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
     (0, common_1.Controller)('progress'),

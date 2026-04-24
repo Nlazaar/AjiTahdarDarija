@@ -14,6 +14,8 @@ import TexteReligieux     from "./TexteReligieux";
 import SelectionImages    from "./SelectionImages";
 import TriDeuxCategories  from "./TriDeuxCategories";
 import RelierParTrait     from "./RelierParTrait";
+import VoixVisuel, { type VoixVisuelItem } from "./VoixVisuel";
+import TrouverIntrus, { type TrouverIntrusItem } from "./TrouverIntrus";
 import type { DarijaLetter } from "./types";
 
 export type PreviewVocab = {
@@ -22,6 +24,7 @@ export type PreviewVocab = {
   transliteration?: string | null;
   translation?: any;
   imageUrl?: string | null;
+  audioUrl?: string | null;
 };
 
 interface Props {
@@ -222,6 +225,52 @@ export default function ExercisePreview({ typology, config, vocab }: Props) {
           onConfirm={noop}
           onReadyChange={noopReady}
           prompt={prompt}
+        />
+      );
+    }
+    case 'VoixVisuel': {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const items: VoixVisuelItem[] = ids
+        .map((id) => map.get(id))
+        .filter((v): v is PreviewVocab => !!v)
+        .map((v) => ({
+          id: v.id,
+          audio: { url: v.audioUrl ?? undefined, fallbackText: v.word },
+          visual: { kind: 'text', value: v.word, lang: 'ar' as const },
+          label: typeof v.translation === 'object' && v.translation?.fr ? v.translation.fr : v.transliteration ?? v.word,
+        }));
+      if (items.length < 2) return <Empty msg="Sélectionne au moins 2 items." />;
+      return (
+        <VoixVisuel
+          config={{
+            mode: cfg.mode === 'drag' ? 'drag' : 'ligne',
+            prompt,
+            items,
+          }}
+          onReadyChange={noopReady}
+        />
+      );
+    }
+    case 'TrouverIntrus': {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const played: string[] = Array.isArray(cfg.playedIds) ? cfg.playedIds : [];
+      const items: TrouverIntrusItem[] = ids
+        .map((id) => map.get(id))
+        .filter((v): v is PreviewVocab => !!v)
+        .map((v) => ({
+          id: v.id,
+          audio: { url: v.audioUrl ?? undefined, fallbackText: v.word },
+          visual: { kind: 'text', value: v.word, lang: 'ar' as const },
+          label: typeof v.translation === 'object' && v.translation?.fr ? v.translation.fr : v.transliteration ?? v.word,
+        }));
+      if (items.length < 3) return <Empty msg="Sélectionne au moins 3 items." />;
+      if (played.length === 0 || played.length >= items.length) {
+        return <Empty msg="Coche 1 à N-1 voix pour définir un intrus." />;
+      }
+      return (
+        <TrouverIntrus
+          config={{ prompt, items, playedIds: played }}
+          onReadyChange={noopReady}
         />
       );
     }

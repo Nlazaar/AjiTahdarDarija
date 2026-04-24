@@ -18,8 +18,8 @@ export declare class ChatbotController {
         id: string;
         createdAt: Date;
         userId: string | null;
+        audioUrl: string | null;
         text: string;
         role: string;
-        audioUrl: string | null;
     }[]>;
 }

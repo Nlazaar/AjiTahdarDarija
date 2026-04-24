@@ -98,7 +98,7 @@ export default function Home() {
       {/* ── Navbar ── */}
       <nav style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '14px 28px', background: '#fff',
+        padding: 'calc(14px + env(safe-area-inset-top)) 28px 14px', background: '#fff',
         borderBottom: '1px solid #e5e7eb',
         position: 'sticky', top: 0, zIndex: 50,
       }}>

@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from "react"
-import { ContinueButton } from "@/components/ui"
 import type { AlphabetLetter, Haraka } from "./types"
 
 interface HarakatCardProps {
@@ -117,7 +116,6 @@ export default function HarakatCard({ letter, onContinue, onSpeak, progress }: H
         ))}
       </div>
 
-      <ContinueButton onClick={onContinue} label="Continuer" />
     </div>
   )
 }

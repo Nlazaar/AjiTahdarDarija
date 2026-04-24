@@ -7,8 +7,8 @@ export declare class PacksService {
         createdAt: Date;
         title: string;
         description: string | null;
-        difficulty: string | null;
         category: string | null;
+        difficulty: string | null;
         premiumOnly: boolean;
     }[]>;
     getById(id: string): Promise<{
@@ -16,18 +16,21 @@ export declare class PacksService {
         createdAt: Date;
         title: string;
         description: string | null;
-        difficulty: string | null;
         category: string | null;
+        difficulty: string | null;
         premiumOnly: boolean;
     }>;
     getWords(packId: string): Promise<{
         id: string;
         createdAt: Date;
         updatedAt: Date;
+        isPublished: boolean;
         languageId: string;
         word: string;
         transliteration: string | null;
         translation: import("@prisma/client/runtime/library").JsonValue | null;
+        audioUrl: string | null;
+        imageUrl: string | null;
         partOfSpeech: import(".prisma/client").$Enums.PartOfSpeech | null;
         examples: import("@prisma/client/runtime/library").JsonValue | null;
         tags: string[];

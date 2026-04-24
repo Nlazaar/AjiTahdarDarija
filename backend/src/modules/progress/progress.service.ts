@@ -15,17 +15,25 @@ export class ProgressService {
   }
 
   async getUserProgress(userId: string) {
-    const progresses = await this.prisma.userProgress.findMany({
-      where: { userId },
-      include: { lesson: { select: { id: true, title: true, moduleId: true, order: true } } },
-      orderBy: { updatedAt: 'desc' },
-    });
+    const [progresses, revisionProgress] = await Promise.all([
+      this.prisma.userProgress.findMany({
+        where: { userId },
+        include: { lesson: { select: { id: true, title: true, moduleId: true, order: true } } },
+        orderBy: { updatedAt: 'desc' },
+      }),
+      this.prisma.userRevisionProgress.findMany({
+        where: { userId },
+        select: { revisionId: true, completedAt: true },
+      }),
+    ]);
 
-    const completedLessons = progresses.filter(p => p.completed).map(p => p.lessonId);
-    const totalXpEarned    = progresses.reduce((sum, p) => sum + (p.xpEarned ?? 0), 0);
+    const completedLessons   = progresses.filter(p => p.completed).map(p => p.lessonId);
+    const completedRevisions = revisionProgress.map(r => r.revisionId);
+    const totalXpEarned      = progresses.reduce((sum, p) => sum + (p.xpEarned ?? 0), 0);
 
     return {
       completedLessons,
+      completedRevisions,
       totalXpEarned,
       progresses: progresses.map(p => ({
         lessonId:    p.lessonId,

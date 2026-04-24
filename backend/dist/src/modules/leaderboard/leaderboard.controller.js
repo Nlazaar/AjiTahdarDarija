@@ -20,24 +20,39 @@ let LeaderboardController = class LeaderboardController {
     constructor(svc) {
         this.svc = svc;
     }
-    global() { return this.svc.global(); }
-    weekly() { return this.svc.weekly(); }
+    global(limit) {
+        return this.svc.global(Math.min(parseInt(limit ?? '50') || 50, 100));
+    }
+    weekly(limit) {
+        return this.svc.weekly(Math.min(parseInt(limit ?? '50') || 50, 100));
+    }
+    myRank(req) { return this.svc.myRank(req.user.id); }
     friends(req) { return this.svc.friendsRanking(req.user.id); }
 };
 exports.LeaderboardController = LeaderboardController;
 __decorate([
     (0, common_1.Get)('global'),
+    __param(0, (0, common_1.Query)('limit')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], LeaderboardController.prototype, "global", null);
 __decorate([
     (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
     (0, common_1.Get)('weekly'),
+    __param(0, (0, common_1.Query)('limit')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], LeaderboardController.prototype, "weekly", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
+    (0, common_1.Get)('my-rank'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], LeaderboardController.prototype, "myRank", null);
 __decorate([
     (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
     (0, common_1.Get)('friends'),

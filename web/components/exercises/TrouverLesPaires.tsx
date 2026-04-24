@@ -207,8 +207,6 @@ export default function TrouverLesPaires({ pairs, onConfirm, onReadyChange, mode
   useEffect(() => {
     if (!selectedLeft || !selectedRight) return;
     if (selectedLeft === selectedRight) {
-      const matched = pairs.find(p => p.latin === selectedLeft);
-      if (matched) playLetter(matched.letter);
       setMatchedIds(prev => new Set(prev).add(selectedLeft));
       setSelectedLeft(null);
       setSelectedRight(null);

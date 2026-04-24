@@ -7,6 +7,7 @@ export declare class UsersController {
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -17,14 +18,19 @@ export declare class UsersController {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }[]>;
     findOne(id: string): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -35,14 +41,19 @@ export declare class UsersController {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     create(body: any): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -53,14 +64,19 @@ export declare class UsersController {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     update(id: string, body: any): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -71,14 +87,19 @@ export declare class UsersController {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
     remove(id: string): Promise<{
         email: string;
         name: string | null;
         id: string;
         passwordHash: string | null;
+        avatar: string | null;
         locale: string;
         createdAt: Date;
         updatedAt: Date;
@@ -89,7 +110,11 @@ export declare class UsersController {
         lastStreakAt: Date | null;
         hearts: number;
         gemmes: number;
+        langTrack: import(".prisma/client").$Enums.LangTrack;
         subscriptionStatus: string | null;
         subscriptionExpiresAt: Date | null;
+        oneSignalSubId: string | null;
+        pushOptedInAt: Date | null;
+        lastStreakNotifAt: Date | null;
     }>;
 }

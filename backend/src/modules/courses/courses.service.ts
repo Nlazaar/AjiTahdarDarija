@@ -80,7 +80,10 @@ export class CoursesService {
 
   async findAll(track?: ModuleTrack) {
     const modules = await this.prisma.module.findMany({
-      include: { lessons: { where: { isDeleted: false }, orderBy: { order: 'asc' } } },
+      include: {
+        lessons: { where: { isDeleted: false }, orderBy: { order: 'asc' } },
+        revisions: { where: { isPublished: true } },
+      },
       // Tri par track puis par canonicalOrder = ordre pédagogique aligné Darija/MSA
       orderBy: [{ canonicalOrder: 'asc' }, { level: 'asc' }, { createdAt: 'asc' }],
       where: {
@@ -114,6 +117,12 @@ export class CoursesService {
         subtitle: l.subtitle,
         order: l.order,
         moduleId: m.id,
+      })),
+      revisions: ((m as any).revisions || []).map((r: any) => ({
+        id: r.id,
+        position: r.position,
+        title: r.title,
+        anchorAfterOrder: r.anchorAfterOrder ?? null,
       })),
     }));
   }

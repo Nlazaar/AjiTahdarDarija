@@ -1,7 +1,7 @@
 "use client"
 import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from "react"
 import { getToken } from "@/lib/auth"
-import { addXp, updateStreak, getGamification, updateHearts, getMyProgress, completeLessonApi } from "@/lib/api"
+import { addXp, updateStreak, getGamification, updateHearts, getMyProgress, completeLessonApi, completeRevisionApi } from "@/lib/api"
 
 export interface Quete {
   id:      string
@@ -12,25 +12,27 @@ export interface Quete {
 }
 
 interface UserProgress {
-  xp:               number
-  gemmes:           number
-  streak:           number
-  hearts:           number
-  niveau:           string
-  level:            number
-  quetes:           Quete[]
-  completedLessons: string[]
+  xp:                  number
+  gemmes:              number
+  streak:              number
+  hearts:              number
+  niveau:              string
+  level:               number
+  quetes:              Quete[]
+  completedLessons:    string[]
+  completedRevisions:  string[]
 }
 
 interface UserProgressContextType {
-  progress:        UserProgress
-  addXP:           (amount: number) => void
-  addGemmes:       (amount: number) => void
-  incrementStreak: () => void
-  loseHeart:       () => void
-  updateQuete:     (id: string, current: number) => void
-  completeLesson:  (lessonId: string) => void
-  syncFromBackend: () => Promise<void>
+  progress:         UserProgress
+  addXP:            (amount: number) => void
+  addGemmes:        (amount: number) => void
+  incrementStreak:  () => void
+  loseHeart:        () => void
+  updateQuete:      (id: string, current: number) => void
+  completeLesson:   (lessonId: string) => void
+  completeRevision: (revisionId: string) => Promise<{ xpAwarded: number; alreadyCompleted: boolean } | null>
+  syncFromBackend:  () => Promise<void>
 }
 
 const getNiveau = (xp: number) =>
@@ -39,6 +41,7 @@ const getNiveau = (xp: number) =>
 const defaultProgress: UserProgress = {
   xp: 0, gemmes: 0, streak: 0, hearts: 5, niveau: "Bronze", level: 1,
   completedLessons: [],
+  completedRevisions: [],
   quetes: [
     { id: "lecons",  icon: "🕌", label: "Finir 3 leçons",    current: 0, total: 3   },
     { id: "xp",      icon: "⭐", label: "Gagner 100 XP",      current: 0, total: 100 },
@@ -73,6 +76,9 @@ export function UserProgressProvider({ children }: { children: React.ReactNode }
         }
         if (prog.status === 'fulfilled' && Array.isArray(prog.value?.completedLessons)) {
           next = { ...next, completedLessons: prog.value.completedLessons }
+        }
+        if (prog.status === 'fulfilled' && Array.isArray(prog.value?.completedRevisions)) {
+          next = { ...next, completedRevisions: prog.value.completedRevisions }
         }
         return next
       })
@@ -145,10 +151,40 @@ export function UserProgressProvider({ children }: { children: React.ReactNode }
     if (getToken()) completeLessonApi(lessonId).catch(() => {})
   }, [])
 
+  const completeRevision = useCallback(async (revisionId: string) => {
+    // Optimiste : ajoute immédiatement à completedRevisions
+    setProgress(p => ({
+      ...p,
+      completedRevisions: p.completedRevisions.includes(revisionId)
+        ? p.completedRevisions
+        : [...p.completedRevisions, revisionId],
+    }))
+    if (!getToken()) return null
+    try {
+      const res = await completeRevisionApi(revisionId)
+      if (res.xpAwarded > 0) {
+        setProgress(p => {
+          const newXP = p.xp + res.xpAwarded
+          return {
+            ...p,
+            xp: newXP,
+            niveau: getNiveau(newXP),
+            quetes: p.quetes.map(q =>
+              q.id === "xp" ? { ...q, current: Math.min(q.current + res.xpAwarded, q.total) } : q
+            ),
+          }
+        })
+      }
+      return { xpAwarded: res.xpAwarded, alreadyCompleted: res.alreadyCompleted }
+    } catch {
+      return null
+    }
+  }, [])
+
   return (
     <UserProgressContext.Provider value={{
       progress, addXP, addGemmes, incrementStreak, loseHeart,
-      updateQuete, completeLesson, syncFromBackend,
+      updateQuete, completeLesson, completeRevision, syncFromBackend,
     }}>
       {children}
     </UserProgressContext.Provider>

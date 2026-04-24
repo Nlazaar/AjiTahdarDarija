@@ -5,6 +5,7 @@ export declare class FriendsService {
     sendRequest(fromId: string, toEmail: string): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -19,6 +20,7 @@ export declare class FriendsService {
         };
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -34,6 +36,7 @@ export declare class FriendsService {
     respond(requestId: string, userId: string, accept: boolean): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -41,6 +44,7 @@ export declare class FriendsService {
     remove(requestId: string, userId: string): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;

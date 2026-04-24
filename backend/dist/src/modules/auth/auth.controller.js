@@ -31,6 +31,17 @@ let AuthController = class AuthController {
     me(req) {
         return this.authService.getProfile(req.user.id);
     }
+    updateMe(req, body) {
+        return this.authService.updateProfile(req.user.id, body);
+    }
+    /** RGPD — Droit à la portabilité : exporter toutes ses données */
+    exportData(req) {
+        return this.authService.exportUserData(req.user.id);
+    }
+    /** RGPD — Droit à l'effacement : supprimer le compte et anonymiser les données PII */
+    deleteAccount(req) {
+        return this.authService.deleteAccount(req.user.id);
+    }
 };
 exports.AuthController = AuthController;
 __decorate([
@@ -55,6 +66,31 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], AuthController.prototype, "me", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
+    (0, common_1.Patch)('me'),
+    __param(0, (0, common_1.Request)()),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", void 0)
+], AuthController.prototype, "updateMe", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
+    (0, common_1.Get)('me/export'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], AuthController.prototype, "exportData", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_guard_1.JwtGuard),
+    (0, common_1.Delete)('me'),
+    __param(0, (0, common_1.Request)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], AuthController.prototype, "deleteAccount", null);
 exports.AuthController = AuthController = __decorate([
     (0, common_1.Controller)('auth'),
     __metadata("design:paramtypes", [auth_service_1.AuthService])

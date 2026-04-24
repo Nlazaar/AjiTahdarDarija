@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from "react"
-import { ContinueButton } from "@/components/ui"
 import type { DarijaLetter } from "./types"
 
 /** Palette DarijaMaroc — voir project_design_system memory. */
@@ -224,7 +223,6 @@ export default function FlashCard({ letter, onContinue, onSpeak, progress, mode 
         </div>
       </div>
 
-      <ContinueButton onClick={onContinue} label="Continuer" />
     </div>
   )
 }

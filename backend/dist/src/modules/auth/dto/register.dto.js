@@ -20,8 +20,11 @@ __decorate([
 ], RegisterDto.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
-    (0, class_validator_1.MinLength)(6, { message: 'Le mot de passe doit faire au moins 6 caractères' }),
+    (0, class_validator_1.MinLength)(8, { message: 'Le mot de passe doit faire au moins 8 caractères' }),
     (0, class_validator_1.MaxLength)(72),
+    (0, class_validator_1.Matches)(/^(?=.*[A-Za-z])(?=.*\d).+$/, {
+        message: 'Le mot de passe doit contenir au moins une lettre et un chiffre',
+    }),
     __metadata("design:type", String)
 ], RegisterDto.prototype, "password", void 0);
 __decorate([

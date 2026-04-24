@@ -69,6 +69,12 @@ enum DuelStatus {
   CANCELLED
 }
 
+/// Position d'une révision dans un module (check-point milieu ou synthèse fin).
+enum RevisionPosition {
+  MIDDLE
+  END
+}
+
 /// ──────────── Core ────────────
 model User {
   id           String   @id @default(cuid())
@@ -118,6 +124,7 @@ model User {
   duelsAsP2            Duel[]                 @relation("DuelP2")
   duelsWon             Duel[]                 @relation("DuelWinner")
   culturalUnlocks      UserCulturalUnlock[]
+  revisionProgress     UserRevisionProgress[]
 
   @@index([email])
   @@index([xp])
@@ -164,11 +171,57 @@ model Module {
   updatedAt      DateTime    @updatedAt
   isPublished    Boolean     @default(false)
 
-  lessons Lesson[]
+  lessons   Lesson[]
+  revisions ModuleRevision[]
 
   @@index([slug])
   @@index([track, canonicalOrder])
   @@index([level, createdAt])
+}
+
+/// Révision = dialogue court en Darija/FR/MSA réutilisant le vocabulaire du
+/// module. Deux points d'insertion par module : MIDDLE (check-point, ~50%)
+/// et END (synthèse avant trophée). Contenu rédigé à la main en admin.
+/// content JSON shape :
+///   { setting?: string, theme?: string, turns: [
+///       { speaker: 'A' | 'B', darija: string, french: string,
+///         transliteration?: string, audioUrl?: string }
+///     ] }
+model ModuleRevision {
+  id               String           @id @default(cuid())
+  module           Module           @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  moduleId         String
+  position         RevisionPosition
+  title            String?
+  content          Json
+  isPublished      Boolean          @default(false)
+  /// Insère la pseudo-ligne après la leçon d'index `anchorAfterOrder` (0-indexed).
+  /// null → défaut (MIDDLE = floor(n/2), END = après la dernière leçon).
+  anchorAfterOrder Int?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  progress UserRevisionProgress[]
+
+  @@unique([moduleId, position])
+  @@index([moduleId])
+  @@index([isPublished])
+}
+
+/// Progression d'un utilisateur sur une révision (complétion unique).
+/// Un seul enregistrement par (user, revision). Le champ completedAt sert à
+/// l'analytics ; l'existence suffit à considérer la révision comme faite.
+model UserRevisionProgress {
+  id          String         @id @default(cuid())
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  revision    ModuleRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  revisionId  String
+  completedAt DateTime       @default(now())
+
+  @@unique([userId, revisionId])
+  @@index([userId])
+  @@index([revisionId])
 }
 
 model Lesson {

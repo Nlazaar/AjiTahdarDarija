@@ -20,6 +20,7 @@ export declare class FriendsController {
         };
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -36,6 +37,7 @@ export declare class FriendsController {
     }): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -45,6 +47,7 @@ export declare class FriendsController {
     }): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;
@@ -52,6 +55,7 @@ export declare class FriendsController {
     remove(req: any, id: string): Promise<{
         id: string;
         createdAt: Date;
+        updatedAt: Date;
         status: string;
         fromId: string;
         toId: string;

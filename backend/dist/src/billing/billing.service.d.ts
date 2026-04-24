@@ -6,7 +6,7 @@ export declare class BillingService {
     createCheckoutSession(userId: string | null, plan: 'monthly' | 'yearly' | 'free'): Promise<{
         url: any;
     }>;
-    handleWebhook(payload: any, sig?: string): Promise<void>;
+    handleWebhook(rawBody: Buffer, sig?: string): Promise<void>;
     getStatus(userId: string): Promise<{
         subscriptionStatus: string;
         subscriptionExpiresAt: Date;

@@ -122,7 +122,7 @@ export default function MapMaroc() {
   }, [isReligion])
 
   // Projection fittée à chaque changement de track
-  const { outlineD, cityPoints, highlightedPaths, insetOutlineD, insetBox } = useMemo(() => {
+  const { outlineD, cityPoints, highlightedPaths, insetOutlineD, insetBox, viewBox } = useMemo(() => {
     // RELIGION : Indonésie / Malaisie / Brunei sont très à l'est — on les exclut
     // de la projection principale pour garder un zoom confortable, puis on les
     // dessine en cartouche (inset) bas-droite avec leur propre projection.
@@ -179,7 +179,22 @@ export default function MapMaroc() {
         insetB = box
       }
     }
-    return { outlineD: d, cityPoints: pts, highlightedPaths: highlights, insetOutlineD: insetD, insetBox: insetB }
+    // viewBox serré au contour pour éviter les marges vides (Maroc portrait
+     // dans un viewBox ~ carré laisse des bandes latérales vides). On reste
+     // en boîte WIDTH×HEIGHT pour RELIGION (inset box bas-droite).
+    let viewBox = `0 0 ${WIDTH} ${HEIGHT}`
+    if (!isReligion) {
+      try {
+        const [[bx0, by0], [bx1, by1]] = path.bounds(mainTarget) as [[number, number], [number, number]]
+        if (Number.isFinite(bx0) && Number.isFinite(by0) && Number.isFinite(bx1) && Number.isFinite(by1)) {
+          const vx = bx0 - PAD, vy = by0 - PAD
+          const vw = (bx1 - bx0) + 2 * PAD
+          const vh = (by1 - by0) + 2 * PAD
+          viewBox = `${vx} ${vy} ${vw} ${vh}`
+        }
+      } catch { /* fallback to full box */ }
+    }
+    return { outlineD: d, cityPoints: pts, highlightedPaths: highlights, insetOutlineD: insetD, insetBox: insetB, viewBox }
   }, [outline, cities, WIDTH, HEIGHT, highlightIso3, isReligion])
 
   const fullRouteD = useMemo(() => {
@@ -253,7 +268,7 @@ export default function MapMaroc() {
 
       <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', marginTop: 32 }}>
         <svg
-          viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+          viewBox={viewBox}
           style={{ width: '100%', height: 'auto', display: 'block' }}
         >
           <path
@@ -360,9 +375,12 @@ export default function MapMaroc() {
               </circle>
               <circle cx={currentPoint.x} cy={currentPoint.y} r={5} fill={countryColor} stroke="white" strokeWidth={1.5}/>
               {(() => {
-                // Si la ville est trop proche du bord haut, on flippe le label
-                // en dessous du marqueur pour éviter qu'il soit tronqué par le viewBox.
-                const labelAbove = currentPoint.y > 22
+                // Flippe le label sous le marqueur s'il n'a pas assez de place
+                // au-dessus (halo de stroke + ascendeurs ~ 14 px à partir du viewBox top).
+                const [vx, vy] = viewBox.split(' ').map(Number)
+                void vx
+                const clearanceAbove = currentPoint.y - vy
+                const labelAbove = clearanceAbove > 22
                 return (
                   <text
                     x={currentPoint.x}
@@ -385,30 +403,46 @@ export default function MapMaroc() {
           )}
         </svg>
 
-        {hovered && (
-          <div style={{
-            position: 'absolute', left: 6, bottom: 6,
-            background: 'var(--c-card2)',
-            border: '1.5px solid var(--c-border-hard)',
-            borderRadius: 10,
-            padding: '6px 9px',
-            fontSize: 11,
-            lineHeight: 1.3,
-            pointerEvents: 'none',
-            maxWidth: 160,
-            boxShadow: '0 4px 12px rgba(0,0,0,0.12)',
-          }}>
-            <div style={{ fontWeight: 900, color: 'var(--c-text)', fontSize: 12 }}>
-              {hovered.nameFr}
+        {hovered && (() => {
+          const hp = cityPoints.find(p => p.city.key === hovered.key)
+          if (!hp) return null
+          const [vx, vy, vw, vh] = viewBox.split(' ').map(Number)
+          const leftPct = ((hp.x - vx) / vw) * 100
+          const topPct  = ((hp.y - vy) / vh) * 100
+          // Si la ville est dans la moitié haute, on place sous le marqueur
+          const below = topPct < 40
+          return (
+            <div style={{
+              position: 'absolute',
+              left: `${leftPct}%`,
+              top: `${topPct}%`,
+              transform: below
+                ? 'translate(-50%, 14px)'
+                : 'translate(-50%, calc(-100% - 14px))',
+              background: 'var(--c-card2)',
+              border: '1.5px solid var(--c-border-hard)',
+              borderRadius: 10,
+              padding: '6px 9px',
+              fontSize: 11,
+              lineHeight: 1.3,
+              pointerEvents: 'none',
+              maxWidth: 160,
+              boxShadow: '0 4px 12px rgba(0,0,0,0.18)',
+              zIndex: 2,
+              whiteSpace: 'nowrap',
+            }}>
+              <div style={{ fontWeight: 900, color: 'var(--c-text)', fontSize: 12 }}>
+                {hovered.nameFr}
+              </div>
+              <div style={{ color: countryColor, fontFamily: 'var(--font-amiri), serif', fontSize: 14, direction: 'rtl', margin: '2px 0' }}>
+                {hovered.nameAr}
+              </div>
+              <div style={{ color: 'var(--c-sub)', fontSize: 10, fontStyle: 'italic' }}>
+                {hovered.transliteration} · {hovered.sub}
+              </div>
             </div>
-            <div style={{ color: countryColor, fontFamily: 'var(--font-amiri), serif', fontSize: 14, direction: 'rtl', margin: '2px 0' }}>
-              {hovered.nameAr}
-            </div>
-            <div style={{ color: 'var(--c-sub)', fontSize: 10, fontStyle: 'italic' }}>
-              {hovered.transliteration} · {hovered.sub}
-            </div>
-          </div>
-        )}
+          )
+        })()}
       </div>
     </div>
   )

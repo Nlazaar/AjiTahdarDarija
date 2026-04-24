@@ -3,7 +3,7 @@ import React from "react"
 import { useRouter } from "next/navigation"
 
 export type NodeStatus = "done" | "active" | "locked"
-export type NodeShape  = "star" | "circle" | "arch" | "hex" | "medallion"
+export type NodeShape  = "star" | "circle" | "arch" | "hex" | "medallion" | "crown"
 
 export const NODE_SHAPES: Array<{
   key: NodeShape
@@ -16,6 +16,7 @@ export const NODE_SHAPES: Array<{
   { key: 'arch',      label: 'Arc marocain',      description: "Porte de médina / mihrab, arc brisé.",              icon: '⌒' },
   { key: 'hex',       label: 'Hexagone tapis',    description: "Hexagone avec motif radial discret, esprit tissé.", icon: '⬡' },
   { key: 'medallion', label: 'Médaillon cranté',  description: "Disque avec couronne crantée, hybride élégant.",    icon: '❋' },
+  { key: 'crown',     label: 'Couronne Khatem',   description: "Médaillon central + Khatem (2 carrés) tournant, comme les révisions.", icon: '❈' },
 ]
 
 interface ZelligeNodeProps {
@@ -28,14 +29,21 @@ interface ZelligeNodeProps {
   interactive?: boolean
   /** Si true, affiche `icon` tel quel au lieu des ✓ / 🔒 automatiques */
   forceIcon?: boolean
+  /** Couleur principale de l'unité (utilisée par `crown` pour teinter le Khatem). */
+  tint?:   string
+  /** Couleur sombre associée (stroke / ring pour `crown`). */
+  tintDark?: string
 }
 
 const SIZES = { sm: 56, md: 66, lg: 78 }
 
 export const ZelligeNode: React.FC<ZelligeNodeProps> = ({
   status, icon, label, route, size = "md", shape = "star", interactive = true, forceIcon = false,
+  tint, tintDark,
 }) => {
   const router = useRouter()
+  const reactUid = React.useId()
+  const gradSeed = reactUid.replace(/[:]/g, '')
   const base = SIZES[size]
   const isActive = status === "active"
   const w = isActive ? base + 8 : base
@@ -62,9 +70,9 @@ export const ZelligeNode: React.FC<ZelligeNodeProps> = ({
         height={h}
         viewBox={viewBox}
         shapeRendering="geometricPrecision"
-        style={getSVGStyle(status)}
+        style={getSVGStyle(status, shape, tint, tintDark)}
       >
-        {renderShape(shape, status, icon, forceIcon)}
+        {renderShape(shape, status, icon, forceIcon, tint, tintDark, gradSeed)}
       </svg>
       {label ? <span style={getLabelStyle(status)}>{label}</span> : null}
     </div>
@@ -115,13 +123,14 @@ const PALETTES: Record<NodeStatus, { fillId: string; from: string; to: string; r
 }
 
 /* ─── Dispatcher ──────────────────────────────────────────── */
-function renderShape(shape: NodeShape, status: NodeStatus, icon: string, forceIcon: boolean) {
+function renderShape(shape: NodeShape, status: NodeStatus, icon: string, forceIcon: boolean, tint: string | undefined, tintDark: string | undefined, gradSeed: string) {
   switch (shape) {
-    case 'arch':      return renderArch(status, icon, forceIcon)
-    case 'circle':    return renderCircle(status, icon, forceIcon)
-    case 'hex':       return renderHex(status, icon, forceIcon)
-    case 'medallion': return renderMedallion(status, icon, forceIcon)
-    default:          return renderStar(status, icon, forceIcon)
+    case 'arch':      return renderArch(status, icon, forceIcon, gradSeed)
+    case 'circle':    return renderCircle(status, icon, forceIcon, gradSeed)
+    case 'hex':       return renderHex(status, icon, forceIcon, gradSeed)
+    case 'medallion': return renderMedallion(status, icon, forceIcon, gradSeed)
+    case 'crown':     return renderCrown(status, icon, forceIcon, tint, tintDark, gradSeed)
+    default:          return renderStar(status, icon, forceIcon, gradSeed)
   }
 }
 
@@ -136,20 +145,21 @@ function iconFor(status: NodeStatus, icon: string, forceIcon: boolean): string {
 const ARCH_OUTER = "M 18 94 L 18 42 C 18 22, 32 10, 50 6 C 68 10, 82 22, 82 42 L 82 94 Z"
 const ARCH_INNER = "M 30 90 L 30 47 C 30 30, 40 20, 50 17 C 60 20, 70 30, 70 47 L 70 90 Z"
 
-function renderArch(status: NodeStatus, icon: string, forceIcon: boolean) {
+function renderArch(status: NodeStatus, icon: string, forceIcon: boolean, gradSeed: string) {
   const p = PALETTES[status]
   const label = iconFor(status, icon, forceIcon)
+  const gid = `${p.fillId}-arch-${gradSeed}`
   return (
     <>
       <defs>
-        <linearGradient id={`${p.fillId}-arch`} x1="0%" y1="0%" x2="0%" y2="100%">
+        <linearGradient id={gid} x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%"  stopColor={p.from}/>
           <stop offset="100%" stopColor={p.to}/>
         </linearGradient>
       </defs>
       <path
         d={ARCH_OUTER}
-        fill={`url(#${p.fillId}-arch)`}
+        fill={`url(#${gid})`}
         stroke={p.ring}
         strokeWidth={2.5}
         strokeLinejoin="round"
@@ -171,19 +181,20 @@ function renderArch(status: NodeStatus, icon: string, forceIcon: boolean) {
 }
 
 /* ─── Circle (pastille Duolingo) ──────────────────────────── */
-function renderCircle(status: NodeStatus, icon: string, forceIcon: boolean) {
+function renderCircle(status: NodeStatus, icon: string, forceIcon: boolean, gradSeed: string) {
   const p = PALETTES[status]
   const label = iconFor(status, icon, forceIcon)
+  const gid = `${p.fillId}-circ-${gradSeed}`
   return (
     <>
       <defs>
-        <radialGradient id={`${p.fillId}-circ`} cx="50%" cy="38%" r="65%">
+        <radialGradient id={gid} cx="50%" cy="38%" r="65%">
           <stop offset="0%"  stopColor={p.from}/>
           <stop offset="100%" stopColor={p.to}/>
         </radialGradient>
       </defs>
       <circle cx="55" cy="55" r="46" fill={p.ring} />
-      <circle cx="55" cy="55" r="42" fill={`url(#${p.fillId}-circ)`} stroke={p.ring} strokeWidth={2.2} />
+      <circle cx="55" cy="55" r="42" fill={`url(#${gid})`} stroke={p.ring} strokeWidth={2.2} />
       <ellipse cx="55" cy="40" rx="26" ry="12" fill={p.inner} />
       <text
         x="55" y="58"
@@ -203,20 +214,21 @@ function renderCircle(status: NodeStatus, icon: string, forceIcon: boolean) {
 /* ─── Hexagone (tapis, pointy-top) ────────────────────────── */
 const HEX_POINTS = "55,6 96,30 96,80 55,104 14,80 14,30"
 
-function renderHex(status: NodeStatus, icon: string, forceIcon: boolean) {
+function renderHex(status: NodeStatus, icon: string, forceIcon: boolean, gradSeed: string) {
   const p = PALETTES[status]
   const label = iconFor(status, icon, forceIcon)
+  const gid = `${p.fillId}-hex-${gradSeed}`
   return (
     <>
       <defs>
-        <radialGradient id={`${p.fillId}-hex`} cx="50%" cy="40%" r="65%">
+        <radialGradient id={gid} cx="50%" cy="40%" r="65%">
           <stop offset="0%"  stopColor={p.from}/>
           <stop offset="100%" stopColor={p.to}/>
         </radialGradient>
       </defs>
       <polygon
         points={HEX_POINTS}
-        fill={`url(#${p.fillId}-hex)`}
+        fill={`url(#${gid})`}
         stroke={p.ring}
         strokeWidth={2.5}
         strokeLinejoin="round"
@@ -258,13 +270,14 @@ const MEDALLION_POINTS = (() => {
   return pts.join(' ')
 })()
 
-function renderMedallion(status: NodeStatus, icon: string, forceIcon: boolean) {
+function renderMedallion(status: NodeStatus, icon: string, forceIcon: boolean, gradSeed: string) {
   const p = PALETTES[status]
   const label = iconFor(status, icon, forceIcon)
+  const gid = `${p.fillId}-med-${gradSeed}`
   return (
     <>
       <defs>
-        <radialGradient id={`${p.fillId}-med`} cx="50%" cy="38%" r="65%">
+        <radialGradient id={gid} cx="50%" cy="38%" r="65%">
           <stop offset="0%"  stopColor={p.from}/>
           <stop offset="100%" stopColor={p.to}/>
         </radialGradient>
@@ -276,7 +289,7 @@ function renderMedallion(status: NodeStatus, icon: string, forceIcon: boolean) {
         strokeWidth={1}
         strokeLinejoin="round"
       />
-      <circle cx="55" cy="55" r="36" fill={`url(#${p.fillId}-med)`} stroke={p.ring} strokeWidth={1} />
+      <circle cx="55" cy="55" r="36" fill={`url(#${gid})`} stroke={p.ring} strokeWidth={1} />
       <circle cx="55" cy="40" r="12" fill={p.inner} opacity={0.6} />
       <text
         x="55" y="58"
@@ -293,20 +306,92 @@ function renderMedallion(status: NodeStatus, icon: string, forceIcon: boolean) {
   )
 }
 
-function renderStar(status: NodeStatus, icon: string, forceIcon: boolean) {
+/* ─── Couronne Khatem (style révision, teintée par l'unité) ── */
+function renderCrown(status: NodeStatus, icon: string, forceIcon: boolean, tint: string | undefined, tintDark: string | undefined, gradSeed: string) {
   const p = PALETTES[status]
   const label = iconFor(status, icon, forceIcon)
+  const uid = `${p.fillId}-crown-${gradSeed}`
+
+  // Couleurs du médaillon : teintées par la couleur d'unité si fournie, sinon palette statut.
+  const lightColor = status === 'locked' ? p.from : (tint ?? p.from)
+  const darkColor  = status === 'locked' ? p.to   : (tintDark ?? p.to)
+  const ringColor  = status === 'locked' ? p.ring : (tintDark ?? p.ring)
+
   return (
     <>
       <defs>
-        <radialGradient id={p.fillId} cx="50%" cy="38%" r="65%">
+        <radialGradient id={`${uid}-med`} cx="30%" cy="30%" r="80%">
+          <stop offset="0%"  stopColor={lightColor} />
+          <stop offset="85%" stopColor={darkColor} />
+        </radialGradient>
+        <linearGradient id={`${uid}-ring`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"   stopColor={lightColor} />
+          <stop offset="100%" stopColor={ringColor} />
+        </linearGradient>
+      </defs>
+
+      {/* Khatem tournant : 2 carrés superposés, rotation 14s */}
+      <g
+        style={{
+          transformOrigin: '55px 55px',
+          transformBox: 'view-box' as React.CSSProperties['transformBox'],
+          animation: status !== 'active' ? 'none' : 'zelligeSpin 14s linear infinite',
+        }}
+      >
+        <g
+          transform="translate(55 55)"
+          fill="none"
+          stroke={`url(#${uid}-ring)`}
+          strokeWidth={2}
+          strokeLinejoin="round"
+          opacity={status === 'locked' ? 0.5 : 1}
+        >
+          <rect x={-44} y={-44} width={88} height={88} rx={6} opacity={0.85} />
+          <rect x={-44} y={-44} width={88} height={88} rx={6} transform="rotate(45)" opacity={0.6} />
+        </g>
+        {Array.from({ length: 8 }).map((_, i) => {
+          const a = (i * Math.PI) / 4
+          const r = 48
+          const x = 55 + Math.cos(a) * r
+          const y = 55 + Math.sin(a) * r
+          return <circle key={i} cx={x} cy={y} r={1.6} fill={lightColor} opacity={status === 'locked' ? 0.5 : 0.9} />
+        })}
+      </g>
+
+      {/* Médaillon central */}
+      <circle cx="55" cy="55" r="32" fill={ringColor} />
+      <circle cx="55" cy="55" r="30" fill={`url(#${uid}-med)`} stroke={ringColor} strokeWidth={1.5} />
+      <ellipse cx="55" cy="44" rx="16" ry="6" fill={p.inner} opacity={0.65} />
+      <text
+        x="55" y="58"
+        textAnchor="middle" dominantBaseline="central"
+        fontSize={status === "done" ? 22 : 20}
+        fill={p.iconColor}
+        fontWeight="900"
+        fontFamily="sans-serif"
+        style={{ filter: status === "locked" ? "none" : "drop-shadow(0 1px 1px rgba(0,0,0,0.35))" }}
+      >
+        {label}
+      </text>
+    </>
+  )
+}
+
+function renderStar(status: NodeStatus, icon: string, forceIcon: boolean, gradSeed: string) {
+  const p = PALETTES[status]
+  const label = iconFor(status, icon, forceIcon)
+  const gid = `${p.fillId}-star-${gradSeed}`
+  return (
+    <>
+      <defs>
+        <radialGradient id={gid} cx="50%" cy="38%" r="65%">
           <stop offset="0%"  stopColor={p.from}/>
           <stop offset="100%" stopColor={p.to}/>
         </radialGradient>
       </defs>
       <polygon
         points={STAR_8}
-        fill={`url(#${p.fillId})`}
+        fill={`url(#${gid})`}
         stroke={p.ring}
         strokeWidth={2.2}
         strokeLinejoin="round"
@@ -328,14 +413,26 @@ function renderStar(status: NodeStatus, icon: string, forceIcon: boolean) {
 }
 
 /* ─── Styles ──────────────────────────────────────────────── */
-function getSVGStyle(status: NodeStatus): React.CSSProperties {
+function getSVGStyle(status: NodeStatus, shape: NodeShape, tint?: string, tintDark?: string): React.CSSProperties {
+  // Pour la forme "crown" teintée, on n'applique pas le drop-shadow rouge/orange
+  // par défaut — il s'écraserait sur la couleur de l'unité. On reproduit un
+  // relief léger dans le ton de l'unité via deux drop-shadow teintés.
+  const tintedShadow = tint && tintDark
+    ? `drop-shadow(0 5px 0 ${tintDark}) drop-shadow(0 0 10px ${tint}aa)`
+    : PALETTES[status].shadow
+  const useTinted = shape === 'crown' && tint && tintDark && status !== 'locked'
+
   const base: React.CSSProperties = {
     transition: 'transform 0.2s',
-    filter: PALETTES[status].shadow,
+    filter: useTinted ? tintedShadow : PALETTES[status].shadow,
     display: 'block',
     transformOrigin: '50% 50%',
   }
-  if (status === "active") return { ...base, animation: 'zelligePulse 2s ease-in-out infinite' }
+  if (status === "active") {
+    // Couronne teintée → pulsation simple (scale) sans filter orange/rouge.
+    if (useTinted) return { ...base, animation: 'nodePulse 2s ease-in-out infinite' }
+    return { ...base, animation: 'zelligePulse 2s ease-in-out infinite' }
+  }
   if (status === "locked") return { ...base, opacity: 0.6 }
   return base
 }
@@ -360,7 +457,7 @@ function showToast() {
     toast = document.createElement('div')
     toast.id = 'zellige-toast'
     toast.style.cssText = `
-      position:fixed;bottom:80px;left:50%;transform:translateX(-50%);
+      position:fixed;bottom:calc(80px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
       background:#1f2937;border:1.5px solid #374151;color:#fff;
       font-size:11px;font-weight:700;padding:8px 14px;border-radius:10px;
       white-space:nowrap;z-index:999;opacity:0;transition:opacity 0.2s;

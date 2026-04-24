@@ -352,6 +352,12 @@ body {
   }
 }
 
+/* ── ZELLIGE CROWN SPIN (forme "crown") ── */
+@keyframes zelligeSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 /* ── POSTCARD LESSON DOT PULSE ── */
 @keyframes postcardDotPulse {
   0%, 100% { opacity: 1; transform: scale(1); }

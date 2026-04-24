@@ -7,11 +7,20 @@ import { useUser } from '@/context/UserContext';
 import type { CityDescription, HadithDescription } from '@/types/parcours';
 
 export type NodeStatus = 'completed' | 'current' | 'locked';
+export type RevisionPosition = 'MIDDLE' | 'END';
 
 export interface Lecon {
   id: string;
   title: string;
   status: NodeStatus;
+}
+
+export interface Revision {
+  id: string;
+  position: RevisionPosition;
+  title: string | null;
+  status: NodeStatus;
+  anchorAfterOrder: number | null;
 }
 
 export interface Unite {
@@ -24,7 +33,7 @@ export interface Unite {
   colorB: string;
   shadow: string;
   lecons: Lecon[];
-  chestUnlocked: boolean;
+  revisions: Revision[];
   trophyUnlocked: boolean;
   unlocked: boolean;
   completed: boolean;
@@ -67,6 +76,13 @@ interface RawLesson {
   order?: number;
 }
 
+interface RawRevision {
+  id: string;
+  position: RevisionPosition;
+  title?: string | null;
+  anchorAfterOrder?: number | null;
+}
+
 type RawTrack = 'DARIJA' | 'MSA' | 'RELIGION';
 
 interface RawModule {
@@ -87,6 +103,7 @@ interface RawModule {
   photoCaption?: string | null;
   cityInfo?: RawCityInfo | null;
   lessons?: RawLesson[];
+  revisions?: RawRevision[];
 }
 
 function buildDescription(m: RawModule): CityDescription | undefined {
@@ -140,11 +157,72 @@ function buildLecons(lessons: RawLesson[], unlocked: boolean, completedSet: Set<
   });
 }
 
-function moduleToUnite(m: RawModule, idx: number, unlocked: boolean, completedSet: Set<string>): Unite {
+function buildRevisions(
+  raw: RawRevision[],
+  lecons: Lecon[],
+  completedRevisionIds: Set<string>,
+): Revision[] {
+  const rawByPos = new Map<RevisionPosition, RawRevision>();
+  for (const r of raw) rawByPos.set(r.position, r);
+  const out: Revision[] = [];
+  const n = lecons.length;
+
+  const mid = rawByPos.get('MIDDLE');
+  if (mid) {
+    const rawAnchor = mid.anchorAfterOrder ?? Math.floor(n / 2);
+    const midAnchor = Math.max(0, Math.min(n, rawAnchor));
+    const midLessonsDone = lecons.slice(0, midAnchor).every((l) => l.status === 'completed');
+    const status: NodeStatus = completedRevisionIds.has(mid.id)
+      ? 'completed'
+      : midLessonsDone
+        ? 'current'
+        : 'locked';
+    out.push({
+      id: mid.id,
+      position: 'MIDDLE',
+      title: mid.title ?? null,
+      status,
+      anchorAfterOrder: midAnchor,
+    });
+  }
+
+  const end = rawByPos.get('END');
+  if (end) {
+    const rawAnchor = end.anchorAfterOrder ?? n;
+    const endAnchor = Math.max(0, Math.min(n, rawAnchor));
+    const allLessonsDone = n > 0 && lecons.slice(0, endAnchor).every((l) => l.status === 'completed');
+    const midOk = !mid || completedRevisionIds.has(mid.id);
+    const status: NodeStatus = completedRevisionIds.has(end.id)
+      ? 'completed'
+      : allLessonsDone && midOk
+        ? 'current'
+        : 'locked';
+    out.push({
+      id: end.id,
+      position: 'END',
+      title: end.title ?? null,
+      status,
+      anchorAfterOrder: endAnchor,
+    });
+  }
+
+  return out;
+}
+
+function moduleToUnite(
+  m: RawModule,
+  idx: number,
+  unlocked: boolean,
+  completedSet: Set<string>,
+  completedRevisionIds: Set<string>,
+): Unite {
   const palette = PALETTE[idx % PALETTE.length];
   const lessons = m.lessons ?? [];
   const lecons = buildLecons(lessons, unlocked, completedSet);
-  const allDone = lessons.length > 0 && lessons.every((l) => completedSet.has(l.id));
+  const revisions = buildRevisions(m.revisions ?? [], lecons, completedRevisionIds);
+  const allLessonsDone = lessons.length > 0 && lessons.every((l) => completedSet.has(l.id));
+  const endRev = revisions.find((r) => r.position === 'END');
+  const allDone = allLessonsDone && (!endRev || endRev.status === 'completed');
   const title = m.cityName?.trim() || m.title;
   const titleAr = m.cityNameAr?.trim() || m.titleAr?.trim() || undefined;
   return {
@@ -157,7 +235,7 @@ function moduleToUnite(m: RawModule, idx: number, unlocked: boolean, completedSe
     colorB: m.colorB ?? palette.colorB,
     shadow: m.shadowColor ?? palette.shadow,
     lecons,
-    chestUnlocked: lessons.length > 0 && lecons.slice(0, Math.max(1, lessons.length - 1)).every((l) => l.status === 'completed'),
+    revisions,
     trophyUnlocked: allDone,
     unlocked,
     completed: allDone,
@@ -193,17 +271,22 @@ export function useParcours() {
     [progress.completedLessons]
   );
 
+  const completedRevisionIds = useMemo<Set<string>>(
+    () => new Set<string>((progress.completedRevisions ?? []).map(String)),
+    [progress.completedRevisions]
+  );
+
   const unites: Unite[] = useMemo(() => {
     const out: Unite[] = [];
     let prevCompleted = true;
     modules.forEach((m, idx) => {
       const unlocked = prevCompleted;
-      const unite = moduleToUnite(m, idx, unlocked, completedSet);
+      const unite = moduleToUnite(m, idx, unlocked, completedSet, completedRevisionIds);
       out.push(unite);
       prevCompleted = unite.completed;
     });
     return out;
-  }, [modules, completedSet]);
+  }, [modules, completedSet, completedRevisionIds]);
 
   return { unites, loading };
 }

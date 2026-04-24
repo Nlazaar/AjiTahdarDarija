@@ -23,9 +23,13 @@ exports.AuthModule = AuthModule = __decorate([
         imports: [
             prisma_module_1.PrismaModule,
             passport_1.PassportModule.register({ defaultStrategy: 'jwt' }),
-            jwt_1.JwtModule.register({
-                secret: process.env.JWT_SECRET || 'darija_secret_change_in_production',
-                signOptions: { expiresIn: '7d' },
+            jwt_1.JwtModule.registerAsync({
+                useFactory: () => {
+                    const secret = process.env.JWT_SECRET;
+                    if (!secret)
+                        throw new Error('JWT_SECRET environment variable is required');
+                    return { secret, signOptions: { expiresIn: '7d' } };
+                },
             }),
         ],
         providers: [auth_service_1.AuthService, jwt_strategy_1.JwtStrategy, jwt_guard_1.JwtGuard],

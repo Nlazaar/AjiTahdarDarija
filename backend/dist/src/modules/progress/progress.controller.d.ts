@@ -16,4 +16,17 @@ export declare class ProgressController {
             finishedAt: Date;
         }[];
     }>;
+    journey(req: any): Promise<{
+        currentCityKey: string;
+        visitedCityKeys: string[];
+        route: {
+            moduleId: string;
+            moduleSlug: string;
+            canonicalOrder: number;
+            cityKey: string;
+        }[];
+    }>;
+    complete(req: any, lessonId: string): Promise<{
+        ok: boolean;
+    }>;
 }

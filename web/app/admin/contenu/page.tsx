@@ -7,6 +7,7 @@ import ExercisePreview from "@/components/exercises/ExercisePreview";
 import { MOROCCO_CITIES } from "@/data/morocco-cities";
 import { ConfirmProvider, useConfirm } from "@/components/ConfirmDialog";
 import { SortableList, DragHandle } from "@/components/admin/SortableList";
+import ArabicKeyboard from "@/components/admin/ArabicKeyboard";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -456,6 +457,8 @@ function AdminContenuInner() {
   const [selectedLessonId, setSelectedLessonId] = useState<string | null>(null);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [io, setIo] = useState<{ mode: IoMode; kind: IoKind; slug: string | null } | null>(null);
+  const [revisionModal, setRevisionModal] = useState<{ moduleId: string; moduleTitle: string; initialPosition: "MIDDLE" | "END"; initialAnchor: number | null } | null>(null);
+  const [revisionsTick, setRevisionsTick] = useState(0);
 
   const flash = useCallback((ok: boolean, text: string) => {
     setMsg({ ok, text });
@@ -780,6 +783,7 @@ function AdminContenuInner() {
             modules={filteredModules}
             moduleId={selectedModuleId}
             moduleSlug={modules.find(m => m.id === selectedModuleId)?.slug ?? null}
+            moduleTitle={modules.find(m => m.id === selectedModuleId)?.title ?? ""}
             selectedId={selectedLessonId}
             trackFilter={trackFilter}
             onSelect={(id) => setSelectedLessonId(id)}
@@ -789,6 +793,8 @@ function AdminContenuInner() {
             onReorder={reorderLessons}
             onImport={() => setIo({ mode: 'import', kind: 'lessons', slug: null })}
             onExport={(slug) => setIo({ mode: 'export', kind: 'lessons', slug })}
+            onOpenRevision={(mid, mtitle, pos, initialAnchor) => setRevisionModal({ moduleId: mid, moduleTitle: mtitle, initialPosition: pos, initialAnchor: initialAnchor ?? null })}
+            revisionsTick={revisionsTick}
           />
         )}
         {selectedLessonId && (
@@ -822,7 +828,1033 @@ function AdminContenuInner() {
           onError={(t) => flash(false, t)}
         />
       )}
+
+      <RevisionsEditorModal
+        moduleId={revisionModal?.moduleId ?? null}
+        moduleTitle={revisionModal?.moduleTitle ?? ""}
+        initialPosition={revisionModal?.initialPosition ?? "MIDDLE"}
+        initialAnchor={revisionModal?.initialAnchor ?? null}
+        moduleLessons={revisionModal ? lessons.filter(l => l.moduleId === revisionModal.moduleId && !l.isDeleted).sort((a, b) => a.order - b.order) : []}
+        open={!!revisionModal}
+        onClose={() => { setRevisionModal(null); setRevisionsTick(t => t + 1); }}
+        onError={(t) => flash(false, t)}
+      />
     </div>
+  );
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+//  Révisions — éditeur (2 positions: MIDDLE + END) pour une section
+// ════════════════════════════════════════════════════════════════════════════
+
+type RevPos = "MIDDLE" | "END";
+
+interface RevisionTurn {
+  speaker: "A" | "B";
+  darija: string;
+  french: string;
+  transliteration?: string;
+  audioUrl?: string;
+}
+
+type RevKind = "conversation" | "exercises";
+
+interface RevisionExerciseDraft {
+  typology: string;
+  config: any;
+  isPublished: boolean;
+}
+
+interface RevisionDraft {
+  id?: string;
+  position: RevPos;
+  title: string;
+  isPublished: boolean;
+  kind: RevKind;
+  setting: string;
+  theme: string;
+  turns: RevisionTurn[];
+  exercises: RevisionExerciseDraft[];
+  exists: boolean;
+  anchorAfterOrder: number | null;
+}
+
+function emptyDraft(position: RevPos): RevisionDraft {
+  return {
+    position,
+    title: position === "MIDDLE" ? "Pause — Mini-conversation" : "Révision finale — Conversation complète",
+    isPublished: false,
+    kind: "conversation",
+    setting: "",
+    theme: "",
+    turns: [
+      { speaker: "A", darija: "", french: "", transliteration: "" },
+      { speaker: "B", darija: "", french: "", transliteration: "" },
+    ],
+    exercises: [],
+    exists: false,
+    anchorAfterOrder: null,
+  };
+}
+
+function RevisionsEditorModal({
+  moduleId, moduleTitle, open, onClose, onError, initialPosition = "MIDDLE", initialAnchor = null, moduleLessons = [],
+}: {
+  moduleId: string | null;
+  moduleTitle: string;
+  open: boolean;
+  onClose: () => void;
+  onError: (text: string) => void;
+  initialPosition?: RevPos;
+  initialAnchor?: number | null;
+  moduleLessons?: LessonRow[];
+}) {
+  const [drafts, setDrafts] = useState<Record<RevPos, RevisionDraft>>({
+    MIDDLE: emptyDraft("MIDDLE"),
+    END: emptyDraft("END"),
+  });
+  const [active, setActive] = useState<RevPos>(initialPosition);
+  const [vocabByLesson, setVocabByLesson] = useState<Record<string, VocabRow[]>>({});
+
+  useEffect(() => {
+    if (open) setActive(initialPosition);
+  }, [open, initialPosition]);
+
+  useEffect(() => {
+    if (!open || moduleLessons.length === 0) { setVocabByLesson({}); return; }
+    let cancelled = false;
+    (async () => {
+      try {
+        const results = await Promise.all(
+          moduleLessons.map(async (l) => {
+            try {
+              const v = await api<VocabRow[]>(`/api/admin/vocabulary?lessonId=${encodeURIComponent(l.id)}&includeDrafts=1`);
+              return [l.id, Array.isArray(v) ? v : []] as const;
+            } catch {
+              return [l.id, [] as VocabRow[]] as const;
+            }
+          }),
+        );
+        if (cancelled) return;
+        const map: Record<string, VocabRow[]> = {};
+        for (const [id, v] of results) map[id] = v;
+        setVocabByLesson(map);
+      } catch {
+        if (!cancelled) setVocabByLesson({});
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [open, moduleId, moduleLessons]);
+  const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState<RevPos | null>(null);
+  const [banner, setBanner] = useState<{ type: "ok" | "error"; text: string } | null>(null);
+  const askConfirm = useConfirm();
+
+  useEffect(() => {
+    if (!banner) return;
+    const t = setTimeout(() => setBanner(null), banner.type === "error" ? 4500 : 2500);
+    return () => clearTimeout(t);
+  }, [banner]);
+
+  useEffect(() => {
+    if (!open || !moduleId) return;
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      try {
+        const list = await api<any[]>(`/api/admin/modules/${moduleId}/revisions`);
+        if (cancelled) return;
+        const next: Record<RevPos, RevisionDraft> = {
+          MIDDLE: emptyDraft("MIDDLE"),
+          END: emptyDraft("END"),
+        };
+        // Pré-remplit l'ancrage de la position ouverte si l'admin a déjà choisi
+        // une position localement avant la première sauvegarde.
+        if (initialAnchor !== null && initialAnchor !== undefined) {
+          next[initialPosition] = { ...next[initialPosition], anchorAfterOrder: initialAnchor };
+        }
+        for (const r of list ?? []) {
+          const pos = r.position as RevPos;
+          if (pos !== "MIDDLE" && pos !== "END") continue;
+          const c = r.content ?? {};
+          const isExercisesKind = c?.kind === "exercises" || Array.isArray(c?.exercises);
+          next[pos] = {
+            id: r.id,
+            position: pos,
+            title: r.title ?? next[pos].title,
+            isPublished: !!r.isPublished,
+            kind: isExercisesKind ? "exercises" : "conversation",
+            setting: c.setting ?? "",
+            theme: c.theme ?? "",
+            turns: Array.isArray(c.turns) && c.turns.length
+              ? c.turns.map((t: any) => ({
+                  speaker: t.speaker === "B" ? "B" : "A",
+                  darija: t.darija ?? "",
+                  french: t.french ?? "",
+                  transliteration: t.transliteration ?? "",
+                  audioUrl: t.audioUrl ?? "",
+                }))
+              : next[pos].turns,
+            exercises: Array.isArray(c.exercises)
+              ? c.exercises.map((ex: any) => ({
+                  typology: String(ex?.typology ?? ""),
+                  config: ex?.config ?? {},
+                  isPublished: ex?.isPublished !== false,
+                }))
+              : [],
+            exists: true,
+            anchorAfterOrder: r.anchorAfterOrder ?? null,
+          };
+        }
+        setDrafts(next);
+      } catch (e: any) {
+        onError(`Révisions: ${e.message}`);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [open, moduleId, onError, initialPosition, initialAnchor]);
+
+  function updateDraft(pos: RevPos, patch: Partial<RevisionDraft>) {
+    setDrafts(d => ({ ...d, [pos]: { ...d[pos], ...patch } }));
+  }
+
+  function updateTurn(pos: RevPos, idx: number, patch: Partial<RevisionTurn>) {
+    setDrafts(d => {
+      const turns = d[pos].turns.map((t, i) => i === idx ? { ...t, ...patch } : t);
+      return { ...d, [pos]: { ...d[pos], turns } };
+    });
+  }
+
+  function addTurn(pos: RevPos) {
+    setDrafts(d => {
+      const last = d[pos].turns[d[pos].turns.length - 1];
+      const speaker: "A" | "B" = last?.speaker === "A" ? "B" : "A";
+      return { ...d, [pos]: { ...d[pos], turns: [...d[pos].turns, { speaker, darija: "", french: "", transliteration: "" }] } };
+    });
+  }
+
+  function removeTurn(pos: RevPos, idx: number) {
+    setDrafts(d => {
+      if (d[pos].turns.length <= 1) return d;
+      return { ...d, [pos]: { ...d[pos], turns: d[pos].turns.filter((_, i) => i !== idx) } };
+    });
+  }
+
+  function moveTurn(pos: RevPos, idx: number, dir: -1 | 1) {
+    setDrafts(d => {
+      const turns = [...d[pos].turns];
+      const j = idx + dir;
+      if (j < 0 || j >= turns.length) return d;
+      [turns[idx], turns[j]] = [turns[j], turns[idx]];
+      return { ...d, [pos]: { ...d[pos], turns } };
+    });
+  }
+
+  async function save(pos: RevPos) {
+    if (!moduleId) {
+      setBanner({ type: "error", text: "Section introuvable — rouvre la révision depuis la colonne Cours." });
+      return;
+    }
+    const draft = drafts[pos];
+
+    let contentPayload: any;
+    if (draft.kind === "exercises") {
+      const pool = aggregatedVocab;
+      const byId = new Map(pool.map(v => [v.id, v]));
+      const publishedExos = draft.exercises.filter(e => e.isPublished !== false);
+      if (publishedExos.length === 0) {
+        setBanner({ type: "error", text: "Ajoute au moins un exercice publié avant d'enregistrer." });
+        return;
+      }
+      const resolvedExos: Array<{ typology: string; config: any }> = [];
+      for (let i = 0; i < publishedExos.length; i++) {
+        const ex = publishedExos[i];
+        const t = EXERCISE_REGISTRY[ex.typology];
+        if (!t) {
+          setBanner({ type: "error", text: `Exo ${i + 1} : typologie inconnue « ${ex.typology} ».` });
+          return;
+        }
+        const resolved = resolveExerciseConfigForSave(ex.typology, ex.config, byId);
+        if (!resolved.ok) {
+          setBanner({ type: "error", text: `Exo ${i + 1} (${t.label}) : ${resolved.error}` });
+          return;
+        }
+        resolvedExos.push({ typology: ex.typology, config: resolved.config });
+      }
+      contentPayload = {
+        kind: "exercises",
+        setting: draft.setting.trim() || undefined,
+        theme: draft.theme.trim() || undefined,
+        exercises: resolvedExos,
+      };
+    } else {
+      const cleanTurns = draft.turns
+        .map(t => ({
+          speaker: t.speaker,
+          darija: (t.darija ?? "").trim(),
+          french: (t.french ?? "").trim(),
+          transliteration: (t.transliteration ?? "").trim() || undefined,
+          audioUrl: (t.audioUrl ?? "").trim() || undefined,
+        }))
+        .filter(t => t.darija || t.french);
+      if (cleanTurns.length === 0) {
+        setBanner({ type: "error", text: "Ajoute au moins un tour avec darija + français avant d'enregistrer." });
+        return;
+      }
+      for (let i = 0; i < cleanTurns.length; i++) {
+        if (!cleanTurns[i].darija || !cleanTurns[i].french) {
+          setBanner({ type: "error", text: `Tour ${i + 1} incomplet : darija ET français requis.` });
+          return;
+        }
+      }
+      contentPayload = {
+        kind: "conversation",
+        setting: draft.setting.trim() || undefined,
+        theme: draft.theme.trim() || undefined,
+        turns: cleanTurns,
+      };
+    }
+
+    setSaving(pos);
+    try {
+      const payload = {
+        title: draft.title.trim() || null,
+        isPublished: draft.isPublished,
+        anchorAfterOrder: draft.anchorAfterOrder,
+        content: contentPayload,
+      };
+      const updated = await api<any>(`/api/admin/modules/${moduleId}/revisions/${pos}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      updateDraft(pos, { id: updated?.id, exists: true });
+      setBanner({ type: "ok", text: `Révision ${pos === "MIDDLE" ? "milieu" : "fin"} enregistrée ✓` });
+    } catch (e: any) {
+      setBanner({ type: "error", text: `Échec enregistrement : ${e.message}` });
+    } finally {
+      setSaving(null);
+    }
+  }
+
+  async function removeRev(pos: RevPos) {
+    if (!moduleId) return;
+    const draft = drafts[pos];
+    if (!draft.exists) return;
+    const ok = await askConfirm({
+      title: `Supprimer la révision ${pos === "MIDDLE" ? "milieu" : "fin"} ?`,
+      message: "Le contenu rédigé sera effacé. La progression des utilisateurs est conservée.",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
+    try {
+      await api(`/api/admin/modules/${moduleId}/revisions/${pos}`, { method: "DELETE" });
+      setDrafts(d => ({ ...d, [pos]: emptyDraft(pos) }));
+      setBanner({ type: "ok", text: `Révision ${pos === "MIDDLE" ? "milieu" : "fin"} supprimée ✓` });
+    } catch (e: any) {
+      setBanner({ type: "error", text: `Échec suppression : ${e.message}` });
+    }
+  }
+
+  const draft = drafts[active];
+
+  // Leçons précédant l'ancrage → vocabulaire à insérer directement dans les tours.
+  const relevantLessons = useMemo(() => {
+    const n = moduleLessons.length;
+    const rawAnchor = draft.anchorAfterOrder ?? (active === "MIDDLE" ? Math.floor(n / 2) : n);
+    const anchor = Math.max(0, Math.min(n, rawAnchor));
+    return moduleLessons.slice(0, anchor);
+  }, [moduleLessons, draft.anchorAfterOrder, active]);
+
+  const totalRelevantVocab = useMemo(
+    () => relevantLessons.reduce((acc, l) => acc + (vocabByLesson[l.id]?.length ?? 0), 0),
+    [relevantLessons, vocabByLesson],
+  );
+
+  // Pool agrégé de vocab (déduplique par id) pour l'éditeur d'exercices.
+  const aggregatedVocab = useMemo(() => {
+    const out: VocabRow[] = [];
+    const seen = new Set<string>();
+    for (const l of relevantLessons) {
+      for (const v of vocabByLesson[l.id] ?? []) {
+        if (seen.has(v.id)) continue;
+        seen.add(v.id);
+        out.push(v);
+      }
+    }
+    return out;
+  }, [relevantLessons, vocabByLesson]);
+
+  // Normalise une config d'exercice chargée depuis l'API : si elle contient déjà
+  // des `items` pré-résolus (script populate), tente de mapper chaque `item.id`
+  // sur un vocab du module (par id réel, puis par translit).
+  const normalizeLoadedConfig = useCallback((typology: string, config: any): any => {
+    if (!config || typeof config !== "object") return config;
+    const needsItems = typology === "VoixVisuel" || typology === "TrouverIntrus";
+    if (!needsItems) return config;
+    if (Array.isArray(config.vocabIds)) return config;
+    const items = Array.isArray(config.items) ? config.items : [];
+    if (items.length === 0) return config;
+    const byId = new Map(aggregatedVocab.map(v => [v.id, v]));
+    const byTranslit = new Map(aggregatedVocab.filter(v => v.transliteration).map(v => [v.transliteration as string, v]));
+    const remap = (key: string): string | null => {
+      if (byId.has(key)) return key;
+      const v = byTranslit.get(key);
+      return v ? v.id : null;
+    };
+    const vocabIds: string[] = [];
+    for (const it of items) {
+      const mapped = remap(String(it?.id ?? ""));
+      if (mapped) vocabIds.push(mapped);
+    }
+    const out: any = { ...config, vocabIds };
+    if (typology === "TrouverIntrus" && Array.isArray(config.playedIds)) {
+      out.playedIds = config.playedIds.map((k: any) => remap(String(k))).filter((x: string | null): x is string => !!x);
+    }
+    return out;
+  }, [aggregatedVocab]);
+
+  // Post-chargement : une fois le pool de vocab prêt, rétro-convertit les exos
+  // populate-script (items pré-résolus) en format vocabIds pour l'éditeur.
+  useEffect(() => {
+    if (aggregatedVocab.length === 0) return;
+    setDrafts(d => {
+      let changed = false;
+      const next: Record<RevPos, RevisionDraft> = { ...d };
+      for (const p of ["MIDDLE", "END"] as RevPos[]) {
+        const cur = d[p];
+        if (cur.exercises.length === 0) continue;
+        const remapped = cur.exercises.map(ex => {
+          const normalized = normalizeLoadedConfig(ex.typology, ex.config);
+          if (normalized === ex.config) return ex;
+          changed = true;
+          return { ...ex, config: normalized };
+        });
+        if (changed) next[p] = { ...cur, exercises: remapped };
+      }
+      return changed ? next : d;
+    });
+  }, [aggregatedVocab, normalizeLoadedConfig]);
+
+  function updateExercise(pos: RevPos, idx: number, patch: Partial<RevisionExerciseDraft>) {
+    setDrafts(d => {
+      const cur = d[pos];
+      const exercises = cur.exercises.map((e, i) => i === idx ? { ...e, ...patch } : e);
+      return { ...d, [pos]: { ...cur, exercises } };
+    });
+  }
+
+  function addExercise(pos: RevPos, typology: string) {
+    const config = defaultConfigFor(typology, aggregatedVocab);
+    setDrafts(d => ({
+      ...d,
+      [pos]: { ...d[pos], exercises: [...d[pos].exercises, { typology, config, isPublished: true }] },
+    }));
+  }
+
+  function removeExercise(pos: RevPos, idx: number) {
+    setDrafts(d => ({
+      ...d,
+      [pos]: { ...d[pos], exercises: d[pos].exercises.filter((_, i) => i !== idx) },
+    }));
+  }
+
+  function moveExercise(pos: RevPos, idx: number, dir: -1 | 1) {
+    setDrafts(d => {
+      const exercises = [...d[pos].exercises];
+      const j = idx + dir;
+      if (j < 0 || j >= exercises.length) return d;
+      [exercises[idx], exercises[j]] = [exercises[j], exercises[idx]];
+      return { ...d, [pos]: { ...d[pos], exercises } };
+    });
+  }
+
+  // Insère un mot/phrase dans un tour EN L'AJOUTANT à la suite (pas en remplaçant),
+  // pour permettre à une voix d'enchaîner plusieurs items dans un même tour.
+  // Les champs restent éditables librement après insertion — source vocab inchangée.
+  const insertVocabIntoTurn = useCallback((turnIdx: number, lessonId: string, vocabId: string) => {
+    const v = vocabByLesson[lessonId]?.find(x => x.id === vocabId);
+    if (!v) return;
+    const fr = typeof v.translation === "string" ? v.translation : (v.translation?.fr ?? "");
+    const appendWithSpace = (existing: string | undefined, addition: string) => {
+      const add = (addition ?? "").trim();
+      if (!add) return existing ?? "";
+      const cur = (existing ?? "").trimEnd();
+      if (!cur) return add;
+      // Enchaînement naturel : si la fin est une ponctuation ouverte, juste un espace ;
+      // si c'est un mot, on ajoute un espace.
+      return `${cur} ${add}`;
+    };
+    setDrafts(d => {
+      const cur = d[active];
+      const turns = cur.turns.map((t, i) => i === turnIdx ? {
+        ...t,
+        darija: appendWithSpace(t.darija, v.word ?? ""),
+        french: appendWithSpace(t.french, fr),
+        transliteration: appendWithSpace(t.transliteration, v.transliteration ?? ""),
+      } : t);
+      return { ...d, [active]: { ...cur, turns } };
+    });
+  }, [vocabByLesson, active]);
+
+  return (
+    <Modal open={open} title={`Révisions — ${moduleTitle}`} onClose={onClose} width={780}>
+      {loading ? (
+        <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 13 }}>Chargement…</div>
+      ) : (
+        <>
+          <div style={{ fontSize: 11, color: "var(--c-sub)", marginBottom: 14, lineHeight: 1.5 }}>
+            Deux noeuds de révision par section : un au <strong>milieu</strong> (pause checkpoint 💬) et un à la <strong>fin</strong> (synthèse avant trophée 🎓). Contenu rédigé à la main, pas d'IA. Dialogue à 2 voix (A / B) réutilisant le vocabulaire du parcours.
+          </div>
+
+          {banner && (
+            <div style={{
+              marginBottom: 12,
+              padding: "8px 12px",
+              borderRadius: 8,
+              background: banner.type === "ok" ? "rgba(88,204,2,0.12)" : "rgba(255,75,75,0.12)",
+              border: `1px solid ${banner.type === "ok" ? "rgba(88,204,2,0.4)" : "rgba(255,75,75,0.4)"}`,
+              color: banner.type === "ok" ? "#58cc02" : "#ff4b4b",
+              fontSize: 12,
+              fontWeight: 700,
+            }}>
+              {banner.text}
+            </div>
+          )}
+
+          <div style={{ display: "flex", gap: 6, marginBottom: 14, borderBottom: "1px solid var(--c-border)" }}>
+            {(["MIDDLE", "END"] as RevPos[]).map(p => {
+              const d = drafts[p];
+              const isActive = active === p;
+              return (
+                <button
+                  key={p}
+                  onClick={() => setActive(p)}
+                  style={{
+                    padding: "8px 14px",
+                    border: "none",
+                    background: "transparent",
+                    color: isActive ? "var(--c-text)" : "var(--c-sub)",
+                    fontWeight: 800,
+                    fontSize: 13,
+                    cursor: "pointer",
+                    borderBottom: isActive ? "2px solid #58cc02" : "2px solid transparent",
+                    marginBottom: -1,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 6,
+                  }}
+                >
+                  {p === "MIDDLE" ? "💬 Milieu" : "🎓 Fin"}
+                  {d.exists && (
+                    <span style={{ fontSize: 9, padding: "2px 6px", borderRadius: 99, background: d.isPublished ? "rgba(88,204,2,0.18)" : "rgba(255,136,0,0.18)", color: d.isPublished ? "#58cc02" : "#ff8800" }}>
+                      {d.isPublished ? "publié" : "brouillon"}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          <div style={{ marginBottom: 12 }}>
+            <label style={lbl}>Format de révision</label>
+            <div style={{ display: "flex", gap: 6 }}>
+              {([
+                { k: "conversation", icon: "💬", label: "Conversation", hint: "Dialogue 2 voix" },
+                { k: "exercises", icon: "🎯", label: "Exercices", hint: "Voix↔Visuel, Intrus…" },
+              ] as Array<{ k: RevKind; icon: string; label: string; hint: string }>).map(opt => {
+                const isOn = draft.kind === opt.k;
+                return (
+                  <button
+                    key={opt.k}
+                    type="button"
+                    onClick={() => updateDraft(active, { kind: opt.k })}
+                    style={{
+                      flex: 1,
+                      padding: "8px 12px",
+                      borderRadius: 8,
+                      border: `1.5px solid ${isOn ? "#58cc02" : "var(--c-border)"}`,
+                      background: isOn ? "rgba(88,204,2,0.12)" : "transparent",
+                      color: isOn ? "#58cc02" : "var(--c-sub)",
+                      fontSize: 12,
+                      fontWeight: 800,
+                      cursor: "pointer",
+                      textAlign: "left",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 2,
+                    }}
+                  >
+                    <span>{opt.icon} {opt.label}</span>
+                    <span style={{ fontSize: 10, color: "var(--c-sub)", fontWeight: 600 }}>{opt.hint}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
+            <div>
+              <label style={lbl}>Titre</label>
+              <input
+                style={inp}
+                value={draft.title}
+                onChange={e => updateDraft(active, { title: e.target.value })}
+                placeholder="Ex. Au café de Tanger"
+              />
+            </div>
+            <div>
+              <label style={lbl}>Thème</label>
+              <input
+                style={inp}
+                value={draft.theme}
+                onChange={e => updateDraft(active, { theme: e.target.value })}
+                placeholder="salutations, commande, politesse…"
+              />
+            </div>
+          </div>
+
+          <div style={{ marginBottom: 12 }}>
+            <label style={lbl}>Décor / contexte (optionnel)</label>
+            <input
+              style={inp}
+              value={draft.setting}
+              onChange={e => updateDraft(active, { setting: e.target.value })}
+              placeholder="Deux amis se retrouvent au café…"
+            />
+          </div>
+
+          <label style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, marginBottom: 14 }}>
+            <input
+              type="checkbox"
+              checked={draft.isPublished}
+              onChange={e => updateDraft(active, { isPublished: e.target.checked })}
+            />
+            Publié (visible dans le parcours)
+          </label>
+
+          {draft.kind === "conversation" && (
+          <div style={{ marginBottom: 8 }}>
+            <span style={{ ...lbl, marginBottom: 0 }}>
+              Tours de parole · {draft.turns.length}
+              {relevantLessons.length > 0 && (
+                <span style={{ marginLeft: 8, color: "var(--c-sub)", fontWeight: 600, fontSize: 10 }}>
+                  · {totalRelevantVocab} mot(s)/phrase(s) disponible(s) dans les cours précédents
+                </span>
+              )}
+            </span>
+          </div>
+          )}
+
+          {draft.kind === "conversation" && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 16 }}>
+            {draft.turns.map((t, i) => (
+              <div key={i} style={{ border: "1px solid var(--c-border)", borderRadius: 10, padding: 10, background: "var(--c-bg)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                  <span style={{ fontSize: 10, fontWeight: 900, color: "var(--c-sub)" }}>#{i + 1}</span>
+                  <div style={{ display: "flex", gap: 4 }}>
+                    {(["A", "B"] as const).map(s => (
+                      <button
+                        key={s}
+                        onClick={() => updateTurn(active, i, { speaker: s })}
+                        style={{
+                          padding: "4px 10px",
+                          borderRadius: 6,
+                          border: "1.5px solid " + (t.speaker === s ? (s === "A" ? "#1cb0f6" : "#ff9600") : "var(--c-border)"),
+                          background: t.speaker === s ? (s === "A" ? "rgba(28,176,246,0.12)" : "rgba(255,150,0,0.12)") : "transparent",
+                          color: t.speaker === s ? (s === "A" ? "#1cb0f6" : "#ff9600") : "var(--c-sub)",
+                          fontSize: 11,
+                          fontWeight: 900,
+                          cursor: "pointer",
+                        }}
+                      >
+                        Voix {s}
+                      </button>
+                    ))}
+                  </div>
+                  <div style={{ marginLeft: "auto", display: "flex", gap: 2 }}>
+                    <button
+                      onClick={() => moveTurn(active, i, -1)}
+                      disabled={i === 0}
+                      style={{ background: "transparent", border: "none", cursor: i === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: i === 0 ? 0.25 : 1 }}
+                      title="Monter"
+                    >↑</button>
+                    <button
+                      onClick={() => moveTurn(active, i, 1)}
+                      disabled={i === draft.turns.length - 1}
+                      style={{ background: "transparent", border: "none", cursor: i === draft.turns.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: i === draft.turns.length - 1 ? 0.25 : 1 }}
+                      title="Descendre"
+                    >↓</button>
+                    <button
+                      onClick={() => removeTurn(active, i)}
+                      disabled={draft.turns.length <= 1}
+                      style={{ background: "transparent", border: "none", cursor: draft.turns.length <= 1 ? "default" : "pointer", fontSize: 13, color: "#ff4b4b", padding: 3, opacity: draft.turns.length <= 1 ? 0.25 : 1 }}
+                      title="Supprimer"
+                    >🗑️</button>
+                  </div>
+                </div>
+                {relevantLessons.length > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8, fontSize: 11 }}>
+                    <span style={{ color: "var(--c-sub)", fontWeight: 700, whiteSpace: "nowrap" }}>📖 Enchaîner :</span>
+                    <select
+                      value=""
+                      onChange={e => {
+                        const raw = e.target.value;
+                        if (!raw) return;
+                        const sep = raw.indexOf("::");
+                        if (sep === -1) return;
+                        const lid = raw.slice(0, sep);
+                        const vid = raw.slice(sep + 2);
+                        insertVocabIntoTurn(i, lid, vid);
+                        e.currentTarget.value = "";
+                      }}
+                      style={{ ...inp, padding: "4px 8px", fontSize: 11, flex: 1, minHeight: 28 }}
+                      title="Chaque sélection est ajoutée à la suite du tour — tu peux enchaîner plusieurs mots/phrases dans une même voix. Les champs restent éditables."
+                    >
+                      <option value="">— Ajouter un mot/phrase au tour (enchaînement possible) —</option>
+                      {relevantLessons.map(l => {
+                        const items = vocabByLesson[l.id] ?? [];
+                        if (items.length === 0) return null;
+                        return (
+                          <optgroup key={l.id} label={`#${l.order} — ${l.title}`}>
+                            {items.map(v => {
+                              const fr = typeof v.translation === "string" ? v.translation : (v.translation?.fr ?? "");
+                              return (
+                                <option key={v.id} value={`${l.id}::${v.id}`}>
+                                  {v.word}{fr ? ` — ${fr}` : ""}
+                                </option>
+                              );
+                            })}
+                          </optgroup>
+                        );
+                      })}
+                    </select>
+                  </div>
+                )}
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginBottom: 8 }}>
+                  <div>
+                    <label style={lbl}>Darija (latin)</label>
+                    <input
+                      style={inp}
+                      value={t.darija}
+                      onChange={e => updateTurn(active, i, { darija: e.target.value })}
+                      placeholder="Salam, kidayr ?"
+                    />
+                  </div>
+                  <div>
+                    <label style={lbl}>Français</label>
+                    <input
+                      style={inp}
+                      value={t.french}
+                      onChange={e => updateTurn(active, i, { french: e.target.value })}
+                      placeholder="Salut, comment vas-tu ?"
+                    />
+                  </div>
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
+                  <div>
+                    <label style={lbl}>Translittération arabe (optionnel)</label>
+                    <input
+                      style={{ ...inp, direction: "rtl", fontFamily: "var(--font-amiri), serif", fontSize: 15 }}
+                      value={t.transliteration ?? ""}
+                      onChange={e => updateTurn(active, i, { transliteration: e.target.value })}
+                      placeholder="سلام، كي داير؟"
+                    />
+                  </div>
+                  <div>
+                    <label style={lbl}>URL audio (optionnel)</label>
+                    <input
+                      style={{ ...inp, fontFamily: "monospace", fontSize: 11 }}
+                      value={t.audioUrl ?? ""}
+                      onChange={e => updateTurn(active, i, { audioUrl: e.target.value })}
+                      placeholder="/audio/revisions/..."
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+            <button
+              onClick={() => addTurn(active)}
+              style={{
+                padding: "10px 14px",
+                borderRadius: 10,
+                border: "1.5px dashed var(--c-border)",
+                background: "transparent",
+                color: "var(--c-sub)",
+                fontSize: 13,
+                fontWeight: 800,
+                cursor: "pointer",
+                width: "100%",
+              }}
+              title="Ajouter un nouveau tour à la fin de la conversation"
+            >
+              ➕ Ajouter un tour
+            </button>
+          </div>
+          )}
+
+          {draft.kind === "exercises" && (
+            <RevisionExercisesSection
+              exercises={draft.exercises}
+              vocab={aggregatedVocab}
+              relevantLessonsCount={relevantLessons.length}
+              totalRelevantVocab={totalRelevantVocab}
+              onAdd={(typology) => addExercise(active, typology)}
+              onUpdate={(idx, patch) => updateExercise(active, idx, patch)}
+              onRemove={(idx) => removeExercise(active, idx)}
+              onMove={(idx, dir) => moveExercise(active, idx, dir)}
+            />
+          )}
+
+          <div style={{ display: "flex", gap: 8, justifyContent: "space-between", alignItems: "center", paddingTop: 12, borderTop: "1px solid var(--c-border)" }}>
+            <button
+              onClick={() => removeRev(active)}
+              disabled={!draft.exists || saving !== null}
+              style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid var(--c-border)", background: "transparent", color: draft.exists ? "#ff4b4b" : "var(--c-sub)", fontSize: 12, fontWeight: 700, cursor: draft.exists && saving === null ? "pointer" : "not-allowed", opacity: draft.exists ? 1 : 0.4 }}
+            >
+              🗑️ Supprimer
+            </button>
+            <div style={{ display: "flex", gap: 8 }}>
+              <button
+                onClick={onClose}
+                style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 13, cursor: "pointer" }}
+              >
+                Fermer
+              </button>
+              <button
+                onClick={() => save(active)}
+                disabled={saving !== null}
+                style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13, cursor: saving !== null ? "wait" : "pointer", opacity: saving !== null ? 0.6 : 1 }}
+              >
+                {saving === active ? "Enregistrement…" : (draft.exists ? "💾 Enregistrer" : "➕ Créer la révision")}
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+    </Modal>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+//  Révisions — section "exercices" (quand kind === 'exercises')
+// ────────────────────────────────────────────────────────────────────────────
+
+function RevisionExercisesSection({
+  exercises, vocab, relevantLessonsCount, totalRelevantVocab,
+  onAdd, onUpdate, onRemove, onMove,
+}: {
+  exercises: RevisionExerciseDraft[];
+  vocab: VocabRow[];
+  relevantLessonsCount: number;
+  totalRelevantVocab: number;
+  onAdd: (typology: string) => void;
+  onUpdate: (idx: number, patch: Partial<RevisionExerciseDraft>) => void;
+  onRemove: (idx: number) => void;
+  onMove: (idx: number, dir: -1 | 1) => void;
+}) {
+  const [editingIdx, setEditingIdx] = useState<number | null>(null);
+  const [showPicker, setShowPicker] = useState(false);
+
+  // Typologies adaptées aux révisions (pool vocab seulement, sans saisie libre)
+  const allowedTypologies = ["VoixVisuel", "TrouverIntrus"] as const;
+  const pickableTypes = EXERCISE_TYPES.filter(t => (allowedTypologies as readonly string[]).includes(t.key));
+
+  const editing = editingIdx !== null ? exercises[editingIdx] : null;
+
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 8 }}>
+        <span style={{ ...lbl, marginBottom: 0 }}>
+          Exercices · {exercises.length}
+          {relevantLessonsCount > 0 && (
+            <span style={{ marginLeft: 8, color: "var(--c-sub)", fontWeight: 600, fontSize: 10 }}>
+              · {totalRelevantVocab} mot(s) disponible(s) dans les cours précédents
+            </span>
+          )}
+        </span>
+      </div>
+
+      {vocab.length === 0 && (
+        <div style={{ padding: 14, marginBottom: 10, borderRadius: 10, border: "1px dashed var(--c-border)", background: "rgba(255,136,0,0.08)", color: "#ff8800", fontSize: 12, textAlign: "center" }}>
+          ⚠️ Aucun vocabulaire disponible dans les leçons précédentes — ajoute d'abord des mots dans les leçons ou ajuste l'ancrage.
+        </div>
+      )}
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 10 }}>
+        {exercises.map((ex, i) => {
+          const t = EXERCISE_REGISTRY[ex.typology];
+          const summary = summarizeConfig(ex.typology, ex.config, vocab);
+          const published = ex.isPublished !== false;
+          return (
+            <div key={i} style={{
+              display: "flex", alignItems: "center", gap: 8,
+              padding: "10px 12px",
+              background: t ? "var(--c-card)" : "rgba(255,75,75,0.08)",
+              border: `1px solid ${t ? "var(--c-border)" : "#ff4b4b"}`,
+              borderRadius: 10,
+              opacity: published ? 1 : 0.55,
+            }}>
+              <span style={{ fontSize: 11, fontWeight: 800, color: "var(--c-sub)", minWidth: 18 }}>{i + 1}.</span>
+              <span style={{ fontSize: 18 }}>{t?.icon ?? "❓"}</span>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontWeight: 800, fontSize: 13, color: "var(--c-text)", display: "flex", alignItems: "center", gap: 6 }}>
+                  {t?.label ?? ex.typology}
+                  {!t && <span style={{ color: "#ff4b4b", fontSize: 10 }}>(inconnue)</span>}
+                  {!published && (
+                    <span style={{ fontSize: 9, fontWeight: 800, color: "#ff8800", background: "rgba(255,136,0,0.15)", border: "1px solid #ff8800", padding: "1px 6px", borderRadius: 4, textTransform: "uppercase", letterSpacing: "0.04em" }}>
+                      Brouillon
+                    </span>
+                  )}
+                </div>
+                <div style={{ fontSize: 11, color: "var(--c-sub)", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                  {summary || "— config vide"}
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 2, alignItems: "center", flexShrink: 0 }}>
+                <button
+                  onClick={() => onUpdate(i, { isPublished: !published })}
+                  style={{ background: "transparent", border: "none", cursor: "pointer", color: published ? "#58cc02" : "#ff8800", fontSize: 14, padding: 4 }}
+                  title={published ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+                >{published ? "👁️" : "🙈"}</button>
+                <button
+                  onClick={() => onMove(i, -1)}
+                  disabled={i === 0}
+                  style={{ background: "transparent", border: "none", cursor: i === 0 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: i === 0 ? 0.3 : 1 }}
+                  title="Monter"
+                >↑</button>
+                <button
+                  onClick={() => onMove(i, 1)}
+                  disabled={i === exercises.length - 1}
+                  style={{ background: "transparent", border: "none", cursor: i === exercises.length - 1 ? "default" : "pointer", color: "var(--c-sub)", fontSize: 14, opacity: i === exercises.length - 1 ? 0.3 : 1 }}
+                  title="Descendre"
+                >↓</button>
+                <button onClick={() => setEditingIdx(i)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--c-sub)", fontSize: 13, padding: 4 }} title="Éditer">✏️</button>
+                <button onClick={() => onRemove(i)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "#ff4b4b", fontSize: 13, padding: 4 }} title="Supprimer">🗑️</button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => setShowPicker(true)}
+        disabled={vocab.length === 0}
+        style={{
+          padding: "10px 14px",
+          borderRadius: 10,
+          border: "1.5px dashed var(--c-border)",
+          background: "transparent",
+          color: vocab.length === 0 ? "var(--c-sub)" : "#58cc02",
+          fontSize: 13,
+          fontWeight: 800,
+          cursor: vocab.length === 0 ? "not-allowed" : "pointer",
+          width: "100%",
+          opacity: vocab.length === 0 ? 0.5 : 1,
+        }}
+        title="Ajouter un exercice à cette révision"
+      >
+        ➕ Ajouter un exercice
+      </button>
+
+      <Modal open={showPicker} title="Choisir un exercice" onClose={() => setShowPicker(false)} width={560}>
+        <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 14 }}>
+          Les révisions supportent les exercices jouables avec le vocabulaire déjà vu.
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 8 }}>
+          {pickableTypes.map(t => (
+            <TypologyCard key={t.key} t={t} onPick={() => { onAdd(t.key); setShowPicker(false); }} />
+          ))}
+        </div>
+      </Modal>
+
+      {editing !== null && editingIdx !== null && (
+        <RevisionExerciseEditor
+          key={editingIdx}
+          exercise={editing}
+          vocab={vocab}
+          onClose={() => setEditingIdx(null)}
+          onSave={(patch) => { onUpdate(editingIdx, patch); setEditingIdx(null); }}
+        />
+      )}
+    </div>
+  );
+}
+
+function RevisionExerciseEditor({
+  exercise, vocab, onClose, onSave,
+}: {
+  exercise: RevisionExerciseDraft;
+  vocab: VocabRow[];
+  onClose: () => void;
+  onSave: (patch: Partial<RevisionExerciseDraft>) => void;
+}) {
+  const [local, setLocal] = useState<any>(exercise.config ?? {});
+  const [localPublished, setLocalPublished] = useState<boolean>(exercise.isPublished !== false);
+  const [showPreview, setShowPreview] = useState(true);
+  const t = EXERCISE_REGISTRY[exercise.typology];
+
+  const dirty =
+    JSON.stringify(local) !== JSON.stringify(exercise.config ?? {}) ||
+    localPublished !== (exercise.isPublished !== false);
+
+  return (
+    <Modal
+      open
+      title={`${t?.icon ?? ""} ${t?.label ?? exercise.typology} — éditer`}
+      onClose={onClose}
+      width={720}
+    >
+      {vocab.length === 0 ? (
+        <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 13 }}>
+          Aucun item disponible dans les leçons précédentes.
+        </div>
+      ) : (
+        <>
+          <ExerciseConfigEditor typology={exercise.typology} config={local} vocab={vocab} onChange={setLocal} />
+          <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px dashed var(--c-border)" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--c-text)" }}>👁️ Aperçu live</div>
+              <button type="button" onClick={() => setShowPreview(v => !v)} style={{ padding: "4px 10px", borderRadius: 6, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 11, cursor: "pointer", fontWeight: 700 }}>
+                {showPreview ? "Masquer" : "Afficher"}
+              </button>
+            </div>
+            {showPreview && (
+              <div style={{ padding: 10, background: "#1a1f26", borderRadius: 12, border: "1px solid var(--c-border)", overflow: "hidden" }}>
+                <div style={{ zoom: 0.7 }}>
+                  <ExercisePreview typology={exercise.typology} config={local} vocab={vocab} />
+                </div>
+              </div>
+            )}
+          </div>
+          <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px dashed var(--c-border)" }}>
+            <label style={lbl}>Consigne affichée (optionnel)</label>
+            <input
+              style={inp}
+              value={local?.prompt ?? ""}
+              onChange={(e) => setLocal({ ...local, prompt: e.target.value })}
+              placeholder="Ex. Relie chaque voix à sa couleur."
+            />
+          </div>
+        </>
+      )}
+      <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 14, paddingTop: 12, borderTop: "1px dashed var(--c-border)", fontSize: 13, color: "var(--c-text)" }}>
+        <input type="checkbox" id="rev-ex-pub" checked={localPublished} onChange={e => setLocalPublished(e.target.checked)} />
+        <label htmlFor="rev-ex-pub" style={{ cursor: "pointer", fontWeight: 700 }}>Publié</label>
+      </div>
+      <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", paddingTop: 12, marginTop: 14, borderTop: "1px solid var(--c-border)" }}>
+        <button onClick={onClose} style={{ padding: "8px 16px", borderRadius: 8, border: "1px solid var(--c-border)", background: "var(--c-bg)", color: "var(--c-sub)", fontSize: 13, cursor: "pointer" }}>Annuler</button>
+        <button
+          onClick={() => onSave({ config: local, isPublished: localPublished })}
+          disabled={!dirty}
+          style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#58cc02", color: "white", fontWeight: 800, fontSize: 13, cursor: dirty ? "pointer" : "default", opacity: dirty ? 1 : 0.4 }}
+        >💾 Enregistrer</button>
+      </div>
+    </Modal>
   );
 }
 
@@ -1307,13 +2339,14 @@ function SectionsColumn({
 // ════════════════════════════════════════════════════════════════════════════
 
 function LessonsColumn({
-  lessons, languages, modules, moduleId, moduleSlug, selectedId, trackFilter, onSelect, onChanged, onError, onModulesChanged, onReorder, onImport, onExport,
+  lessons, languages, modules, moduleId, moduleSlug, moduleTitle, selectedId, trackFilter, onSelect, onChanged, onError, onModulesChanged, onReorder, onImport, onExport, onOpenRevision, revisionsTick,
 }: {
   lessons: LessonRow[];
   languages: Language[];
   modules: ModuleRow[];
   moduleId: string | null;
   moduleSlug: string | null;
+  moduleTitle: string;
   selectedId: string | null;
   trackFilter: Track | "ALL";
   onSelect: (id: string) => void;
@@ -1323,10 +2356,107 @@ function LessonsColumn({
   onReorder: (orderedIds: string[]) => void;
   onImport: () => void;
   onExport: (moduleSlug: string) => void;
+  onOpenRevision: (moduleId: string, moduleTitle: string, position: "MIDDLE" | "END", initialAnchor?: number | null) => void;
+  revisionsTick: number;
 }) {
   const [editing, setEditing] = useState<Partial<LessonRow> | null>(null);
   const [newSection, setNewSection] = useState<{ title: string; track: Track } | null>(null);
+  type RevRow = { id: string; title: string | null; isPublished: boolean; anchorAfterOrder: number | null };
+  const [revisionsByPos, setRevisionsByPos] = useState<Record<"MIDDLE" | "END", RevRow | null>>({ MIDDLE: null, END: null });
+  // Ancrages locaux : permettent de déplacer la révision milieu avant même qu'elle
+  // n'existe en base. Pour une révision déjà créée, ils reflètent la valeur serveur
+  // après chaque PATCH.
+  const [localAnchors, setLocalAnchors] = useState<Record<"MIDDLE" | "END", number | null>>({ MIDDLE: null, END: null });
+  const [localTick, setLocalTick] = useState(0);
   const askConfirm = useConfirm();
+
+  const reloadRevisions = useCallback(async () => {
+    if (!moduleId) { setRevisionsByPos({ MIDDLE: null, END: null }); return; }
+    try {
+      const list = await api<any[]>(`/api/admin/modules/${moduleId}/revisions`);
+      const next: Record<"MIDDLE" | "END", RevRow | null> = { MIDDLE: null, END: null };
+      for (const r of list ?? []) {
+        const pos = r.position as "MIDDLE" | "END";
+        if (pos === "MIDDLE" || pos === "END") {
+          next[pos] = { id: r.id, title: r.title ?? null, isPublished: !!r.isPublished, anchorAfterOrder: r.anchorAfterOrder ?? null };
+        }
+      }
+      setRevisionsByPos(next);
+    } catch {
+      setRevisionsByPos({ MIDDLE: null, END: null });
+    }
+  }, [moduleId]);
+
+  useEffect(() => { reloadRevisions(); }, [reloadRevisions, revisionsTick, localTick]);
+
+  // Reset des ancrages locaux à chaque changement de section
+  useEffect(() => { setLocalAnchors({ MIDDLE: null, END: null }); }, [moduleId]);
+
+  // Hydrate les ancrages locaux depuis le serveur dès que les révisions sont chargées
+  // (si l'admin n'a encore rien modifié localement pour cette position).
+  useEffect(() => {
+    setLocalAnchors(prev => ({
+      MIDDLE: prev.MIDDLE ?? revisionsByPos.MIDDLE?.anchorAfterOrder ?? null,
+      END: prev.END ?? revisionsByPos.END?.anchorAfterOrder ?? null,
+    }));
+  }, [revisionsByPos]);
+
+  const n = lessons.length;
+  const resolveAnchor = (pos: "MIDDLE" | "END"): number => {
+    const local = localAnchors[pos];
+    if (local !== null && local !== undefined) return Math.max(0, Math.min(n, local));
+    const fromDb = revisionsByPos[pos]?.anchorAfterOrder ?? null;
+    if (fromDb !== null) return Math.max(0, Math.min(n, fromDb));
+    return pos === "MIDDLE" ? Math.floor(n / 2) : n;
+  };
+
+  async function persistAnchor(pos: "MIDDLE" | "END", anchor: number) {
+    if (!moduleId) return;
+    const rev = revisionsByPos[pos];
+    if (!rev) return; // pas de révision en base → on ne persiste rien, l'ancrage local suffit
+    try {
+      await api(`/api/admin/modules/${moduleId}/revisions/${pos}/anchor`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ anchorAfterOrder: anchor }),
+      });
+      setLocalTick(t => t + 1);
+    } catch (e: any) { onError(`Révision: ${e.message}`); }
+  }
+
+  async function moveRevisionAnchor(pos: "MIDDLE" | "END", dir: -1 | 1) {
+    if (!moduleId) return;
+    const current = resolveAnchor(pos);
+    const next = Math.max(0, Math.min(n, current + dir));
+    if (next === current) return;
+    setLocalAnchors(a => ({ ...a, [pos]: next }));
+    await persistAnchor(pos, next);
+  }
+
+  function setAnchorFromDrag(pos: "MIDDLE" | "END", anchor: number) {
+    const clamped = Math.max(0, Math.min(n, anchor));
+    const current = resolveAnchor(pos);
+    if (clamped === current) return;
+    setLocalAnchors(a => ({ ...a, [pos]: clamped }));
+    void persistAnchor(pos, clamped);
+  }
+
+  async function removeRevision(pos: "MIDDLE" | "END") {
+    if (!moduleId) return;
+    const rev = revisionsByPos[pos];
+    if (!rev) return;
+    const ok = await askConfirm({
+      title: `Supprimer la révision ${pos === "MIDDLE" ? "milieu" : "fin"} ?`,
+      message: "Le contenu rédigé sera effacé. La progression des utilisateurs sur cette révision est conservée.",
+      confirmLabel: "Supprimer",
+      tone: "danger",
+    });
+    if (!ok) return;
+    try {
+      await api(`/api/admin/modules/${moduleId}/revisions/${pos}`, { method: "DELETE" });
+      setLocalTick(t => t + 1);
+    } catch (e: any) { onError(`Révision: ${e.message}`); }
+  }
 
   function moveBy(idx: number, dir: -1 | 1) {
     const j = idx + dir;
@@ -1564,70 +2694,237 @@ function LessonsColumn({
       </Modal>
 
       <div className="col-scroll" style={{ flex: 1, overflow: "auto" }}>
-        {lessons.length === 0 ? (
-          <div style={{ padding: 30, textAlign: "center", color: "var(--c-sub)", fontSize: 12 }}>Aucun cours dans cette section</div>
-        ) : (
-          <SortableList
-            items={lessons}
-            onReorder={onReorder}
-            renderItem={(l, { handleProps, isDragging }) => {
-              const idx = lessons.findIndex(x => x.id === l.id);
-              const seq = (l.content as any)?.sequence as string[] | undefined;
-              return (
-                <div
-                  onClick={() => onSelect(l.id)}
-                  style={{
-                    ...rowBase,
-                    background: selectedId === l.id ? "rgba(88,204,2,0.08)" : "transparent",
-                    borderLeft: selectedId === l.id ? "3px solid #58cc02" : "3px solid transparent",
-                    borderColor: isDragging ? "#58cc02" : undefined,
-                    boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
-                  }}
-                >
-                  <DragHandle handleProps={handleProps} />
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
-                      <span style={{ fontSize: 10, color: "var(--c-sub)" }}>#{l.order}</span>
-                      <span style={{ fontSize: 10, fontWeight: 800, color: "#1cb0f6" }}>N{l.level}</span>
-                      {!l.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>brouillon</span>}
-                      {seq && seq.length > 0 && (
-                        <span style={{ fontSize: 10, color: "#58cc02", fontWeight: 800 }}>● {seq.length} étape(s)</span>
-                      )}
+        {(() => {
+          const mid = revisionsByPos.MIDDLE;
+          const end = revisionsByPos.END;
+          const midAnchor = resolveAnchor("MIDDLE");
+          const endNode = (
+            <RevisionPseudoRow
+              position="END"
+              rev={end}
+              onClick={() => moduleId && onOpenRevision(moduleId, moduleTitle, "END", resolveAnchor("END"))}
+              onDelete={() => removeRevision("END")}
+            />
+          );
+          if (n === 0) {
+            const midNodeZero = (
+              <RevisionPseudoRow
+                position="MIDDLE"
+                rev={mid}
+                canMoveUp={false}
+                canMoveDown={false}
+                onClick={() => moduleId && onOpenRevision(moduleId, moduleTitle, "MIDDLE", midAnchor)}
+                onMoveUp={() => moveRevisionAnchor("MIDDLE", -1)}
+                onMoveDown={() => moveRevisionAnchor("MIDDLE", 1)}
+                onDelete={() => removeRevision("MIDDLE")}
+              />
+            );
+            return (
+              <>
+                <div style={{ padding: 20, textAlign: "center", color: "var(--c-sub)", fontSize: 12 }}>Aucun cours dans cette section</div>
+                {midNodeZero}
+                {endNode}
+              </>
+            );
+          }
+
+          // Construit la liste combinée : leçons + pseudo-ligne MIDDLE à l'ancrage.
+          const MID_ID = "__rev_MIDDLE__";
+          type CombinedItem =
+            | { id: string; kind: "lesson"; data: LessonRow }
+            | { id: typeof MID_ID; kind: "rev" };
+          const combined: CombinedItem[] = [];
+          lessons.forEach((l, i) => {
+            if (midAnchor === i) combined.push({ id: MID_ID, kind: "rev" });
+            combined.push({ id: l.id, kind: "lesson", data: l });
+          });
+          if (midAnchor >= lessons.length) combined.push({ id: MID_ID, kind: "rev" });
+
+          const handleCombinedReorder = (orderedIds: string[]) => {
+            const newMidIdx = orderedIds.indexOf(MID_ID);
+            const lessonIds = orderedIds.filter(id => id !== MID_ID);
+            const prevLessonIds = lessons.map(l => l.id);
+            const lessonsChanged =
+              lessonIds.length !== prevLessonIds.length ||
+              lessonIds.some((id, i) => prevLessonIds[i] !== id);
+            if (lessonsChanged) onReorder(lessonIds);
+            if (newMidIdx !== -1 && newMidIdx !== midAnchor) {
+              setAnchorFromDrag("MIDDLE", newMidIdx);
+            }
+          };
+
+          return (
+            <>
+              <SortableList
+                items={combined}
+                onReorder={handleCombinedReorder}
+                renderItem={(item, { handleProps, isDragging }) => {
+                  if (item.kind === "rev") {
+                    return (
+                      <RevisionPseudoRow
+                        position="MIDDLE"
+                        rev={mid}
+                        canMoveUp={midAnchor > 0}
+                        canMoveDown={midAnchor < n}
+                        onClick={() => moduleId && onOpenRevision(moduleId, moduleTitle, "MIDDLE", midAnchor)}
+                        onMoveUp={() => moveRevisionAnchor("MIDDLE", -1)}
+                        onMoveDown={() => moveRevisionAnchor("MIDDLE", 1)}
+                        onDelete={() => removeRevision("MIDDLE")}
+                        handleProps={handleProps}
+                        isDragging={isDragging}
+                      />
+                    );
+                  }
+                  const l = item.data;
+                  const idx = lessons.findIndex(x => x.id === l.id);
+                  const seq = (l.content as any)?.sequence as string[] | undefined;
+                  return (
+                    <div
+                      onClick={() => onSelect(l.id)}
+                      style={{
+                        ...rowBase,
+                        background: selectedId === l.id ? "rgba(88,204,2,0.08)" : "transparent",
+                        borderLeft: selectedId === l.id ? "3px solid #58cc02" : "3px solid transparent",
+                        borderColor: isDragging ? "#58cc02" : undefined,
+                        boxShadow: isDragging ? "0 4px 12px rgba(0,0,0,0.15)" : undefined,
+                      }}
+                    >
+                      <DragHandle handleProps={handleProps} />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
+                          <span style={{ fontSize: 10, color: "var(--c-sub)" }}>#{l.order}</span>
+                          <span style={{ fontSize: 10, fontWeight: 800, color: "#1cb0f6" }}>N{l.level}</span>
+                          {!l.isPublished && <span style={{ fontSize: 10, color: "#ff8800" }}>brouillon</span>}
+                          {seq && seq.length > 0 && (
+                            <span style={{ fontSize: 10, color: "#58cc02", fontWeight: 800 }}>● {seq.length} étape(s)</span>
+                          )}
+                        </div>
+                        <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{l.title}</div>
+                        {l.slug && <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{l.slug}</div>}
+                      </div>
+                      <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); togglePublishedLesson(l.id, !l.isPublished); }}
+                          style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 14, color: l.isPublished ? "#58cc02" : "#ff8800", padding: 3 }}
+                          title={l.isPublished ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
+                        >{l.isPublished ? "👁️" : "🙈"}</button>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); moveBy(idx, -1); }}
+                          disabled={idx === 0}
+                          style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
+                          title="Monter"
+                        >↑</button>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); moveBy(idx, 1); }}
+                          disabled={idx === lessons.length - 1}
+                          style={{ background: "transparent", border: "none", cursor: idx === lessons.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === lessons.length - 1 ? 0.25 : 1 }}
+                          title="Descendre"
+                        >↓</button>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); window.open(`/lesson/${l.id}`, '_blank', 'noopener,noreferrer'); }}
+                          style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#1cb0f6", padding: 4 }}
+                          title="Tester comme un élève (nouvel onglet)"
+                        >🧪</button>
+                        <button onClick={(e) => { e.stopPropagation(); setEditing(l); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
+                        <button onClick={(e) => { e.stopPropagation(); remove(l.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
+                      </div>
                     </div>
-                    <div style={{ fontWeight: 700, fontSize: 13, color: "var(--c-text)" }}>{l.title}</div>
-                    {l.slug && <div style={{ fontSize: 10, color: "var(--c-sub)", fontFamily: "monospace" }}>{l.slug}</div>}
-                  </div>
-                  <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); togglePublishedLesson(l.id, !l.isPublished); }}
-                      style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 14, color: l.isPublished ? "#58cc02" : "#ff8800", padding: 3 }}
-                      title={l.isPublished ? "Publié (cliquer pour mettre en brouillon)" : "Brouillon (cliquer pour publier)"}
-                    >{l.isPublished ? "👁️" : "🙈"}</button>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); moveBy(idx, -1); }}
-                      disabled={idx === 0}
-                      style={{ background: "transparent", border: "none", cursor: idx === 0 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === 0 ? 0.25 : 1 }}
-                      title="Monter"
-                    >↑</button>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); moveBy(idx, 1); }}
-                      disabled={idx === lessons.length - 1}
-                      style={{ background: "transparent", border: "none", cursor: idx === lessons.length - 1 ? "default" : "pointer", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: idx === lessons.length - 1 ? 0.25 : 1 }}
-                      title="Descendre"
-                    >↓</button>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); window.open(`/lesson/${l.id}`, '_blank', 'noopener,noreferrer'); }}
-                      style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#1cb0f6", padding: 4 }}
-                      title="Tester comme un élève (nouvel onglet)"
-                    >🧪</button>
-                    <button onClick={(e) => { e.stopPropagation(); setEditing(l); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "var(--c-sub)", padding: 4 }} title="Éditer">✏️</button>
-                    <button onClick={(e) => { e.stopPropagation(); remove(l.id); }} style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }} title="Supprimer">🗑️</button>
-                  </div>
-                </div>
-              );
-            }}
-          />
+                  );
+                }}
+              />
+              {endNode}
+            </>
+          );
+        })()}
+      </div>
+    </div>
+  );
+}
+
+function RevisionPseudoRow({
+  position, rev, onClick, onMoveUp, onMoveDown, onDelete, canMoveUp, canMoveDown, handleProps, isDragging,
+}: {
+  position: "MIDDLE" | "END";
+  rev: { id: string; title: string | null; isPublished: boolean; anchorAfterOrder: number | null } | null;
+  onClick: () => void;
+  onMoveUp?: () => void;
+  onMoveDown?: () => void;
+  onDelete?: () => void;
+  canMoveUp?: boolean;
+  canMoveDown?: boolean;
+  handleProps?: React.HTMLAttributes<HTMLElement> & { style?: React.CSSProperties };
+  isDragging?: boolean;
+}) {
+  const icon = position === "MIDDLE" ? "💬" : "🎓";
+  const label = position === "MIDDLE" ? "Révision — Milieu" : "Révision — Fin";
+  const exists = !!rev;
+  const gold = "#d4a84b";
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        padding: "10px 14px",
+        borderBottom: "1px solid var(--c-border)",
+        borderLeft: `3px solid ${gold}`,
+        background: exists ? "rgba(212,168,75,0.06)" : "rgba(212,168,75,0.03)",
+        borderColor: isDragging ? gold : undefined,
+        boxShadow: isDragging ? `0 4px 12px ${gold}55` : undefined,
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        gap: 10,
+        fontSize: 13,
+      }}
+      title={exists ? "Éditer cette révision" : "Créer cette révision"}
+    >
+      {handleProps && <DragHandle handleProps={handleProps} />}
+      <span style={{ fontSize: 18, width: 22, textAlign: "center" }}>{icon}</span>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 2 }}>
+          <span style={{ fontSize: 9, fontWeight: 900, color: gold, textTransform: "uppercase", letterSpacing: "0.05em" }}>{label}</span>
+          {exists ? (
+            <span style={{
+              fontSize: 9, padding: "1px 6px", borderRadius: 99, fontWeight: 800,
+              background: rev!.isPublished ? "rgba(88,204,2,0.18)" : "rgba(255,136,0,0.18)",
+              color: rev!.isPublished ? "#58cc02" : "#ff8800",
+            }}>
+              {rev!.isPublished ? "publié" : "brouillon"}
+            </span>
+          ) : (
+            <span style={{ fontSize: 9, padding: "1px 6px", borderRadius: 99, background: "rgba(212,168,75,0.18)", color: gold, fontWeight: 800 }}>
+              à rédiger
+            </span>
+          )}
+        </div>
+        <div style={{ fontWeight: 700, fontSize: 13, color: exists ? "var(--c-text)" : "var(--c-sub)", fontStyle: exists ? "normal" : "italic" }}>
+          {exists ? (rev!.title || (position === "MIDDLE" ? "Mini-conversation" : "Conversation complète")) : "Cliquer pour rédiger le dialogue"}
+        </div>
+      </div>
+      <div style={{ display: "flex", gap: 2, flexShrink: 0, alignItems: "center" }}>
+        {position === "MIDDLE" && onMoveUp && (
+          <button
+            onClick={(e) => { e.stopPropagation(); onMoveUp(); }}
+            disabled={!canMoveUp}
+            style={{ background: "transparent", border: "none", cursor: canMoveUp ? "pointer" : "default", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: canMoveUp ? 1 : 0.25 }}
+            title="Remonter la révision"
+          >↑</button>
         )}
+        {position === "MIDDLE" && onMoveDown && (
+          <button
+            onClick={(e) => { e.stopPropagation(); onMoveDown(); }}
+            disabled={!canMoveDown}
+            style={{ background: "transparent", border: "none", cursor: canMoveDown ? "pointer" : "default", fontSize: 14, color: "var(--c-sub)", padding: 3, opacity: canMoveDown ? 1 : 0.25 }}
+            title="Descendre la révision"
+          >↓</button>
+        )}
+        {exists && onDelete && (
+          <button
+            onClick={(e) => { e.stopPropagation(); onDelete(); }}
+            style={{ background: "transparent", border: "none", cursor: "pointer", fontSize: 13, color: "#ff4b4b", padding: 4 }}
+            title="Supprimer cette révision"
+          >🗑️</button>
+        )}
+        <span style={{ fontSize: 14, color: gold, fontWeight: 900, padding: 4 }}>{exists ? "✏️" : "➕"}</span>
       </div>
     </div>
   );
@@ -1905,6 +3202,55 @@ function ItemsAndSequenceColumn({
   );
 }
 
+// ── Helper : résout une config d'exercice vers sa forme sauvegardée ─────────
+//
+// Pour VoixVisuel / TrouverIntrus stockés dans une révision, le runtime
+// (RevisionPlayer) attend des `items` pré-résolus (audio, visual, label).
+// L'éditeur admin manipule en interne un format vocabIds plus pratique ;
+// cette fonction convertit au moment du save.
+
+function resolveExerciseConfigForSave(
+  typology: string,
+  config: any,
+  byId: Map<string, VocabRow>,
+): { ok: true; config: any } | { ok: false; error: string } {
+  const cfg = config ?? {};
+  const prompt = typeof cfg.prompt === "string" ? cfg.prompt.trim() : "";
+
+  if (typology === "VoixVisuel" || typology === "TrouverIntrus") {
+    const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+    const min = EXERCISE_REGISTRY[typology]?.minItems ?? 3;
+    if (ids.length < min) return { ok: false, error: `min ${min} item(s) requis.` };
+    const items: any[] = [];
+    for (const id of ids) {
+      const v = byId.get(id);
+      if (!v) return { ok: false, error: `item introuvable dans le pool (id=${id}).` };
+      const fr = typeof v.translation === "object" && v.translation?.fr
+        ? v.translation.fr
+        : v.transliteration ?? v.word;
+      items.push({
+        id: v.id,
+        audio: { url: v.audioUrl ?? undefined, fallbackText: v.word },
+        visual: { kind: "text", value: v.word, lang: "ar" as const },
+        label: fr,
+      });
+    }
+    if (typology === "VoixVisuel") {
+      const mode = cfg.mode === "drag" ? "drag" : "ligne";
+      return { ok: true, config: { mode, prompt: prompt || undefined, items } };
+    }
+    const played: string[] = Array.isArray(cfg.playedIds) ? cfg.playedIds : [];
+    const validPlayed = played.filter(p => ids.includes(p));
+    if (validPlayed.length === 0 || validPlayed.length >= ids.length) {
+      return { ok: false, error: "playedIds doit contenir 1 à N-1 item(s)." };
+    }
+    return { ok: true, config: { prompt: prompt || undefined, items, playedIds: validPlayed } };
+  }
+
+  // Typologies moins adaptées aux révisions — on passe la config telle quelle.
+  return { ok: true, config: cfg };
+}
+
 // ── Helper : config par défaut pour une typologie donnée ────────────────────
 
 function defaultConfigFor(typology: string, vocab: VocabRow[]): any {
@@ -1973,6 +3319,20 @@ function defaultConfigFor(typology: string, vocab: VocabRow[]): any {
         ],
         correct: { g1: "d1", g2: "d2" },
       };
+    case "VoixVisuel":
+      return {
+        mode: "ligne",
+        prompt: "",
+        vocabIds: ids.slice(0, Math.min(ids.length, 4)),
+      };
+    case "TrouverIntrus": {
+      const base = ids.slice(0, Math.min(ids.length, 4));
+      return {
+        prompt: "",
+        vocabIds: base,
+        playedIds: base.slice(0, Math.max(0, base.length - 1)),
+      };
+    }
     default:
       return {};
   }
@@ -1999,6 +3359,8 @@ function ItemsTab({
   currentLessonId: string;
 }) {
   const isReligion = track === "RELIGION";
+  const arabicInputRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
+  const [kbOpen, setKbOpen] = useState(false);
 
   function moveBy(idx: number, dir: -1 | 1) {
     const j = idx + dir;
@@ -2042,9 +3404,16 @@ function ItemsTab({
         {editing && (
           <>
             <div style={{ marginBottom: 14 }}>
-              <label style={lbl}>Arabe (avec diacritiques) *</label>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+                <label style={{ ...lbl, margin: 0 }}>Arabe (avec diacritiques) *</label>
+                <label style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, color: "var(--c-sub)", cursor: "pointer", userSelect: "none" }}>
+                  <input type="checkbox" checked={kbOpen} onChange={(e) => setKbOpen(e.target.checked)} />
+                  Afficher le clavier arabe
+                </label>
+              </div>
               {isReligion ? (
                 <textarea
+                  ref={arabicInputRef as React.RefObject<HTMLTextAreaElement>}
                   style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 20, direction: "rtl", padding: "12px 14px", minHeight: 140, lineHeight: 1.9, resize: "vertical" }}
                   autoFocus
                   value={editing.word ?? ""}
@@ -2052,12 +3421,20 @@ function ItemsTab({
                   placeholder="بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ …"
                 />
               ) : (
-                <input style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "10px 14px" }}
+                <input
+                  ref={arabicInputRef as React.RefObject<HTMLInputElement>}
+                  style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "10px 14px" }}
                   autoFocus
                   value={editing.word ?? ""}
                   onChange={e => setEditing({ ...editing, word: e.target.value })}
                   placeholder="السَّلَامُ عَلَيْكُمْ" />
               )}
+              <ArabicKeyboard
+                value={editing.word ?? ""}
+                onChange={(next) => setEditing({ ...editing, word: next })}
+                targetRef={arabicInputRef}
+                open={kbOpen}
+              />
             </div>
             {isReligion ? (
               <div style={{ marginBottom: 16 }}>
@@ -2602,6 +3979,16 @@ function summarizeConfig(typology: string, config: any, vocab: VocabRow[]): stri
       const pairs = cfg.correct ? Object.keys(cfg.correct).length : 0;
       return `${pg.length}↔${pd.length} · ${pairs} paire(s)`;
     }
+    case "VoixVisuel": {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const mode = cfg.mode === 'drag' ? 'glisser' : 'ligne';
+      return `${ids.length} mot(s) · mode ${mode}`;
+    }
+    case "TrouverIntrus": {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const played: string[] = Array.isArray(cfg.playedIds) ? cfg.playedIds : [];
+      return `${ids.length} visuel(s) · ${played.length} voix jouée(s)`;
+    }
     default:
       return "";
   }
@@ -2700,6 +4087,76 @@ function ExerciseConfigModal({
         >💾 Enregistrer</button>
       </div>
     </Modal>
+  );
+}
+
+// ── Sous-éditeurs ──────────────────────────────────────────────────────────
+
+function TexteReligieuxEditor({ cfg, onChange }: { cfg: any; onChange: (next: any) => void }) {
+  const arabe  = typeof cfg.arabe  === "string" ? cfg.arabe  : "";
+  const fr     = typeof cfg.fr     === "string" ? cfg.fr     : "";
+  const source = typeof cfg.source === "string" ? cfg.source : "";
+  const titre  = typeof cfg.titre  === "string" ? cfg.titre  : "";
+  const arabeRef = useRef<HTMLTextAreaElement | null>(null);
+  const [kbOpen, setKbOpen] = useState(false);
+  return (
+    <>
+      <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+        Écran de lecture : saisis un bloc arabe (hadith, verset…) et sa traduction française. Pas de romanisation, pas de distracteurs.
+      </div>
+      <div style={{ marginBottom: 14 }}>
+        <label style={lbl}>Titre (optionnel)</label>
+        <input
+          style={inp}
+          value={titre}
+          onChange={(e) => onChange({ ...cfg, titre: e.target.value })}
+          placeholder="ex. Hadith de l'unité"
+        />
+      </div>
+      <div style={{ marginBottom: 14 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+          <label style={{ ...lbl, margin: 0 }}>Texte arabe (avec diacritiques) *</label>
+          <label style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, color: "var(--c-sub)", cursor: "pointer", userSelect: "none" }}>
+            <input type="checkbox" checked={kbOpen} onChange={(e) => setKbOpen(e.target.checked)} />
+            Afficher le clavier arabe
+          </label>
+        </div>
+        <textarea
+          ref={arabeRef}
+          style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "12px 14px", minHeight: 140, lineHeight: 1.8, resize: "vertical" }}
+          value={arabe}
+          onChange={(e) => onChange({ ...cfg, arabe: e.target.value })}
+          placeholder="بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ …"
+        />
+        <ArabicKeyboard
+          value={arabe}
+          onChange={(next) => onChange({ ...cfg, arabe: next })}
+          targetRef={arabeRef}
+          open={kbOpen}
+        />
+      </div>
+      <div style={{ marginBottom: 14 }}>
+        <label style={lbl}>Traduction française *</label>
+        <textarea
+          style={{ ...inp, minHeight: 110, lineHeight: 1.5, resize: "vertical", padding: "10px 14px" }}
+          value={fr}
+          onChange={(e) => onChange({ ...cfg, fr: e.target.value })}
+          placeholder="L'Islam est bâti sur cinq…"
+        />
+      </div>
+      <div>
+        <label style={lbl}>Source (optionnelle)</label>
+        <input
+          style={inp}
+          value={source}
+          onChange={(e) => onChange({ ...cfg, source: e.target.value })}
+          placeholder="ex. Rapporté par al-Bukhārī et Muslim"
+        />
+      </div>
+      <div style={{ fontSize: 11, color: (!arabe || !fr) ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+        {(!arabe || !fr) ? "Arabe et français sont obligatoires" : "✓ prêt"}
+      </div>
+    </>
   );
 }
 
@@ -2805,56 +4262,7 @@ function ExerciseConfigEditor({
       );
     }
     case "TexteReligieux": {
-      const arabe  = typeof cfg.arabe  === "string" ? cfg.arabe  : "";
-      const fr     = typeof cfg.fr     === "string" ? cfg.fr     : "";
-      const source = typeof cfg.source === "string" ? cfg.source : "";
-      const titre  = typeof cfg.titre  === "string" ? cfg.titre  : "";
-      return (
-        <>
-          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
-            Écran de lecture : saisis un bloc arabe (hadith, verset…) et sa traduction française. Pas de romanisation, pas de distracteurs.
-          </div>
-          <div style={{ marginBottom: 14 }}>
-            <label style={lbl}>Titre (optionnel)</label>
-            <input
-              style={inp}
-              value={titre}
-              onChange={(e) => onChange({ ...cfg, titre: e.target.value })}
-              placeholder="ex. Hadith de l'unité"
-            />
-          </div>
-          <div style={{ marginBottom: 14 }}>
-            <label style={lbl}>Texte arabe (avec diacritiques) *</label>
-            <textarea
-              style={{ ...inp, fontFamily: 'var(--font-amiri), serif', fontSize: 18, direction: "rtl", padding: "12px 14px", minHeight: 140, lineHeight: 1.8, resize: "vertical" }}
-              value={arabe}
-              onChange={(e) => onChange({ ...cfg, arabe: e.target.value })}
-              placeholder="بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ …"
-            />
-          </div>
-          <div style={{ marginBottom: 14 }}>
-            <label style={lbl}>Traduction française *</label>
-            <textarea
-              style={{ ...inp, minHeight: 110, lineHeight: 1.5, resize: "vertical", padding: "10px 14px" }}
-              value={fr}
-              onChange={(e) => onChange({ ...cfg, fr: e.target.value })}
-              placeholder="L'Islam est bâti sur cinq…"
-            />
-          </div>
-          <div>
-            <label style={lbl}>Source (optionnelle)</label>
-            <input
-              style={inp}
-              value={source}
-              onChange={(e) => onChange({ ...cfg, source: e.target.value })}
-              placeholder="ex. Rapporté par al-Bukhārī et Muslim"
-            />
-          </div>
-          <div style={{ fontSize: 11, color: (!arabe || !fr) ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
-            {(!arabe || !fr) ? "Arabe et français sont obligatoires" : "✓ prêt"}
-          </div>
-        </>
-      );
+      return <TexteReligieuxEditor cfg={cfg} onChange={onChange} />;
     }
     case "SelectionImages": {
       const items: Array<{ emoji?: string; label?: string; isCorrect?: boolean }> =
@@ -3204,6 +4612,91 @@ function ExerciseConfigEditor({
             </div>
             <div style={{ fontSize: 11, color: Object.keys(correct).length < pg.length ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
               {Object.keys(correct).length} / {pg.length} paires définies
+            </div>
+          </div>
+        </>
+      );
+    }
+    case "VoixVisuel": {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const mode: 'ligne' | 'drag' = cfg.mode === 'drag' ? 'drag' : 'ligne';
+      const min = EXERCISE_REGISTRY["VoixVisuel"]?.minItems ?? 3;
+      return (
+        <>
+          <div style={{ marginBottom: 14 }}>
+            <label style={lbl}>Mode d'interaction</label>
+            <div style={{ display: "flex", gap: 8 }}>
+              {(["ligne", "drag"] as const).map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => onChange({ ...cfg, mode: m })}
+                  style={{
+                    flex: 1, padding: "10px 12px", borderRadius: 10,
+                    border: `2px solid ${mode === m ? "#58cc02" : "var(--c-border)"}`,
+                    background: mode === m ? "rgba(88,204,2,0.12)" : "var(--c-bg)",
+                    color: "var(--c-text)", fontWeight: 800, fontSize: 12, cursor: "pointer",
+                  }}
+                >
+                  {m === "ligne" ? "🖱️ Clique pour relier" : "✋ Glisser-déposer"}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Choisis les mots (l'audio + le mot arabe seront utilisés comme visuel). <strong>Minimum : {min}</strong>
+          </div>
+          <VocabMultiPicker vocab={vocab} selected={ids} onChange={(next) => onChange({ ...cfg, vocabIds: next })} />
+          <div style={{ fontSize: 11, color: ids.length < min ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+            {ids.length} sélectionné(s) {ids.length < min && `· ${min - ids.length} manquant(s)`}
+          </div>
+        </>
+      );
+    }
+    case "TrouverIntrus": {
+      const ids: string[] = Array.isArray(cfg.vocabIds) ? cfg.vocabIds : [];
+      const played: string[] = Array.isArray(cfg.playedIds) ? cfg.playedIds : [];
+      const min = EXERCISE_REGISTRY["TrouverIntrus"]?.minItems ?? 3;
+      const togglePlayed = (id: string) => {
+        const next = played.includes(id) ? played.filter((x) => x !== id) : [...played, id];
+        onChange({ ...cfg, playedIds: next });
+      };
+      return (
+        <>
+          <div style={{ fontSize: 12, color: "var(--c-sub)", marginBottom: 10 }}>
+            Choisis les visuels affichés. <strong>Minimum : {min}</strong>
+          </div>
+          <VocabMultiPicker
+            vocab={vocab}
+            selected={ids}
+            onChange={(next) => onChange({ ...cfg, vocabIds: next, playedIds: played.filter((p) => next.includes(p)) })}
+          />
+          <div style={{ fontSize: 11, color: ids.length < min ? "#ff4b4b" : "var(--c-sub)", marginTop: 8, fontWeight: 700 }}>
+            {ids.length} visuel(s) {ids.length < min && `· ${min - ids.length} manquant(s)`}
+          </div>
+          <div style={{ marginTop: 14 }}>
+            <label style={lbl}>Voix prononcées (l'intrus = visuel NON coché)</label>
+            <div style={{ display: "flex", flexDirection: "column", gap: 4, maxHeight: 180, overflow: "auto", border: "1px solid var(--c-border)", borderRadius: 8, padding: 6, background: "var(--c-bg)" }}>
+              {ids.length === 0 && (
+                <div style={{ fontSize: 11, color: "var(--c-sub)", padding: 6 }}>Sélectionne d'abord les visuels ci-dessus.</div>
+              )}
+              {ids.map((id) => {
+                const v = vocab.find((x) => x.id === id);
+                if (!v) return null;
+                const on = played.includes(id);
+                return (
+                  <label key={id} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12, cursor: "pointer", padding: "4px 6px", borderRadius: 6, background: on ? "rgba(88,204,2,0.08)" : "transparent" }}>
+                    <input type="checkbox" checked={on} onChange={() => togglePlayed(id)} />
+                    <span style={{ fontWeight: 700 }}>{v.word}</span>
+                    {v.transliteration && <span style={{ color: "var(--c-sub)" }}>· {v.transliteration}</span>}
+                  </label>
+                );
+              })}
+            </div>
+            <div style={{ fontSize: 11, color: played.length === 0 || played.length >= ids.length ? "#ff4b4b" : "var(--c-sub)", marginTop: 6, fontWeight: 700 }}>
+              {played.length} / {ids.length} voix jouées
+              {played.length === 0 && " · coche au moins 1 voix"}
+              {played.length >= ids.length && ids.length > 0 && " · il faut laisser 1 intrus non coché"}
             </div>
           </div>
         </>

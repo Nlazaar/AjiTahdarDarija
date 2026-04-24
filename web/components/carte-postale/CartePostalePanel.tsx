@@ -97,11 +97,6 @@ export default function CartePostalePanel() {
     hintMessage = `Termine tes leçons pour révéler ${unite.title}.`;
     hintColor = unite.colorA;
     hintBg = `${unite.colorA}1a`;
-  } else {
-    const remaining = total - completedCount;
-    hintMessage = `Plus que ${remaining} leçon${remaining > 1 ? 's' : ''} pour dévoiler la carte.`;
-    hintColor = unite.colorA;
-    hintBg = `${unite.colorA}1a`;
   }
 
   return (
@@ -545,28 +540,30 @@ export default function CartePostalePanel() {
           </div>
         </div>
 
-        {/* Hint dynamique */}
-        <div
-          style={{
-            background: hintBg,
-            borderLeft: `3px solid ${hintColor}`,
-            borderRadius: 6,
-            padding: '8px 10px',
-            fontSize: 10,
-            fontWeight: 700,
-            lineHeight: 1.4,
-            color: hintColor,
-          }}
-        >
-          {hintMessage}
-        </div>
+        {/* Hint dynamique — masqué pendant la progression */}
+        {hintMessage && (
+          <div
+            style={{
+              background: hintBg,
+              borderLeft: `3px solid ${hintColor}`,
+              borderRadius: 6,
+              padding: '8px 10px',
+              fontSize: 10,
+              fontWeight: 700,
+              lineHeight: 1.4,
+              color: hintColor,
+            }}
+          >
+            {hintMessage}
+          </div>
+        )}
       </div>
 
       {/* ── Carte du Maroc — parcours visité ── */}
       <div
         style={{
           marginTop: 4,
-          padding: '10px 10px 12px',
+          padding: '10px 4px 4px',
           background: 'var(--c-card)',
           border: '1px solid var(--c-border)',
           borderRadius: CARD_RADIUS,

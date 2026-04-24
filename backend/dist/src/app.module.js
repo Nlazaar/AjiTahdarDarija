@@ -8,9 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
+const serve_static_1 = require("@nestjs/serve-static");
+const path_1 = require("path");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const logger_middleware_1 = require("./common/middleware/logger.middleware");
+const tasks_module_1 = require("./common/tasks/tasks.module");
 const metrics_module_1 = require("./metrics/metrics.module");
 const health_module_1 = require("./health/health.module");
 const prisma_module_1 = require("./prisma/prisma.module");
@@ -19,10 +22,12 @@ const users_module_1 = require("./modules/users/users.module");
 const courses_module_1 = require("./modules/courses/courses.module");
 const lessons_module_1 = require("./modules/lessons/lessons.module");
 const vocabulary_module_1 = require("./modules/vocabulary/vocabulary.module");
+const user_vocabulary_module_1 = require("./modules/user-vocabulary/user-vocabulary.module");
 const exercises_module_1 = require("./modules/exercises/exercises.module");
 const progress_module_1 = require("./modules/progress/progress.module");
 const gamification_module_1 = require("./modules/gamification/gamification.module");
 const i18n_module_1 = require("./modules/i18n/i18n.module");
+const storage_module_1 = require("./storage/storage.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer.apply(logger_middleware_1.LoggerMiddleware).forRoutes('*');
@@ -32,12 +37,24 @@ exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
+            serve_static_1.ServeStaticModule.forRoot({
+                rootPath: (0, path_1.join)(__dirname, '..', 'public'),
+                serveRoot: '/',
+            }),
+            serve_static_1.ServeStaticModule.forRoot({
+                rootPath: (0, path_1.join)(process.cwd(), 'uploads'),
+                serveRoot: '/uploads',
+            }),
+            storage_module_1.StorageModule,
             prisma_module_1.PrismaModule,
+            tasks_module_1.TasksModule,
             auth_module_1.AuthModule,
             users_module_1.UsersModule,
             courses_module_1.CoursesModule,
             lessons_module_1.LessonsModule,
             vocabulary_module_1.VocabularyModule,
+            user_vocabulary_module_1.UserVocabularyModule,
+            require('./modules/push/push.module').PushModule,
             exercises_module_1.ExercisesModule,
             progress_module_1.ProgressModule,
             gamification_module_1.GamificationModule,
@@ -54,8 +71,13 @@ exports.AppModule = AppModule = __decorate([
             require('./modules/chatbot/chatbot.module').ChatbotModule,
             require('./modules/shop/shop.module').ShopModule,
             require('./modules/quests/quests.module').QuestsModule,
+            require('./modules/signalement/signalement.module').SignalementModule,
             require('./audio/audio.module').AudioModule,
             require('./modules/modules/modules.module').ModulesModule,
+            require('./modules/tracks/tracks.module').TracksModule,
+            require('./modules/duels/duels.module').DuelsModule,
+            require('./modules/cultural/cultural.module').CulturalModule,
+            require('./modules/io/io.module').IoModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

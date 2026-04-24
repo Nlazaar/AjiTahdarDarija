@@ -1,6 +1,7 @@
 import { OnModuleInit, OnModuleDestroy } from '@nestjs/common';
 export declare class RedisCacheService implements OnModuleInit, OnModuleDestroy {
     private client;
+    private readonly logger;
     onModuleInit(): void;
     onModuleDestroy(): Promise<void>;
     get<T = any>(key: string): Promise<T | null>;

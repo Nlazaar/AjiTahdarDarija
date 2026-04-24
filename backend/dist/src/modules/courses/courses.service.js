@@ -16,20 +16,64 @@ let CoursesService = class CoursesService {
     constructor(prisma) {
         this.prisma = prisma;
     }
-    async findAll() {
+    // ── Admin CRUD ─────────────────────────────────────────────────────────────
+    async listAllForAdmin() {
+        return this.prisma.module.findMany({
+            orderBy: [{ track: 'asc' }, { canonicalOrder: 'asc' }, { level: 'asc' }],
+            include: { _count: { select: { lessons: true } } },
+        });
+    }
+    async createModule(data) {
+        if (!data.title?.trim())
+            throw new common_1.BadRequestException('title is required');
+        if (!data.slug?.trim())
+            throw new common_1.BadRequestException('slug is required');
+        return this.prisma.module.create({ data });
+    }
+    async updateModule(id, data) {
+        const existing = await this.prisma.module.findUnique({ where: { id } });
+        if (!existing)
+            throw new common_1.NotFoundException('Module not found');
+        return this.prisma.module.update({ where: { id }, data });
+    }
+    async deleteModule(id, hard = false) {
+        const existing = await this.prisma.module.findUnique({ where: { id } });
+        if (!existing)
+            throw new common_1.NotFoundException('Module not found');
+        if (hard) {
+            // Détacher les leçons (onDelete:SetNull est déjà câblé sur Lesson.moduleId)
+            return this.prisma.module.delete({ where: { id } });
+        }
+        return this.prisma.module.update({ where: { id }, data: { isPublished: false } });
+    }
+    // ── Lecture publique ───────────────────────────────────────────────────────
+    async findAll(track) {
         const modules = await this.prisma.module.findMany({
-            include: { lessons: { orderBy: { order: 'asc' } } },
-            orderBy: [{ level: 'asc' }, { createdAt: 'asc' }],
-            where: { isPublished: true },
+            include: { lessons: { where: { isDeleted: false }, orderBy: { order: 'asc' } } },
+            // Tri par track puis par canonicalOrder = ordre pédagogique aligné Darija/MSA
+            orderBy: [{ canonicalOrder: 'asc' }, { level: 'asc' }, { createdAt: 'asc' }],
+            where: {
+                isPublished: true,
+                ...(track ? { track } : {}),
+            },
         });
         return modules.map((m) => ({
             id: m.id,
+            slug: m.slug,
             title: m.title,
+            titleAr: m.titleAr ?? null,
             subtitle: m.subtitle,
             level: m.level,
+            track: m.track,
+            canonicalOrder: m.canonicalOrder,
             colorA: m.colorA || null,
             colorB: m.colorB || null,
             shadowColor: m.shadowColor || null,
+            cityName: m.cityName ?? null,
+            cityNameAr: m.cityNameAr ?? null,
+            emoji: m.emoji ?? null,
+            photoCaption: m.photoCaption ?? null,
+            cityInfo: m.cityInfo ?? null,
             lessons: (m.lessons || []).map((l) => ({
                 id: l.id,
                 title: l.title,
@@ -41,13 +85,12 @@ let CoursesService = class CoursesService {
             })),
         }));
     }
-    // Return lessons grouped by module or simple modules list
     async findLessonsByModule(moduleId) {
         const module = await this.prisma.module.findUnique({ where: { id: moduleId } });
         if (!module)
             return null;
         return this.prisma.lesson.findMany({
-            where: { moduleId, isPublished: true },
+            where: { moduleId, isPublished: true, isDeleted: false },
             orderBy: { order: 'asc' },
             include: { _count: { select: { exercises: true } } },
         });

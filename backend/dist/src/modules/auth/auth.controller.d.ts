@@ -24,10 +24,29 @@ export declare class AuthController {
         email: string;
         name: string;
         id: string;
+        avatar: string;
         createdAt: Date;
         xp: number;
         level: number;
         streak: number;
         hearts: number;
+    }>;
+    updateMe(req: any, body: {
+        avatar?: string;
+        name?: string;
+    }): Promise<{
+        email: string;
+        name: string;
+        id: string;
+        avatar: string;
+    }>;
+    /** RGPD — Droit à la portabilité : exporter toutes ses données */
+    exportData(req: any): Promise<{
+        exportedAt: string;
+        data: any;
+    }>;
+    /** RGPD — Droit à l'effacement : supprimer le compte et anonymiser les données PII */
+    deleteAccount(req: any): Promise<{
+        message: string;
     }>;
 }

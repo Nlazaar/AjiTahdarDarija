@@ -9,6 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HttpExceptionFilter = void 0;
 const common_1 = require("@nestjs/common");
 let HttpExceptionFilter = class HttpExceptionFilter {
+    constructor() {
+        this.logger = new common_1.Logger('ExceptionFilter');
+    }
     catch(exception, host) {
         const ctx = host.switchToHttp();
         const response = ctx.getResponse();
@@ -19,6 +22,10 @@ let HttpExceptionFilter = class HttpExceptionFilter {
             status = exception.getStatus();
             const ex = exception.getResponse();
             message = ex.message ?? ex;
+        }
+        // Logger toutes les erreurs serveur (5xx) pour faciliter le débogage
+        if (status >= 500) {
+            this.logger.error(`[${request.method}] ${request.url} — HTTP ${status}`, exception instanceof Error ? exception.stack : String(exception));
         }
         response.status(status).json({
             statusCode: status,

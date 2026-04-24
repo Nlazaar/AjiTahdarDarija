@@ -64,6 +64,7 @@ import { StorageModule } from './storage/storage.module';
     require('./modules/cultural/cultural.module').CulturalModule,
     require('./modules/io/io.module').IoModule,
     require('./modules/admin-debug/admin-debug.module').AdminDebugModule,
+    require('./modules/revisions/revisions.module').RevisionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

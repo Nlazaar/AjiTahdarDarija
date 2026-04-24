@@ -236,6 +236,8 @@ export class LessonsService {
     'SelectionImages',
     'TriDeuxCategories',
     'RelierParTrait',
+    'VoixVisuel',
+    'TrouverIntrus',
   ]);
 
   // Public : uniquement les exos publiés (consommé par le player)

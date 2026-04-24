@@ -3,6 +3,8 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { useParcours } from '@/hooks/useParcours';
 import UnitePath from '@/components/parcours/UnitePath';
+import CalligraphyPath from '@/components/parcours/CalligraphyPath';
+import { usePathStyle } from '@/components/parcours/pathStyle';
 import type { NodeShape } from '@/components/parcours/ZelligeNode';
 import PushOptInBanner from '@/components/PushOptInBanner';
 import ResetAdminMenu from '@/components/parcours/ResetAdminMenu';
@@ -104,13 +106,14 @@ function LevelDivider({ level }: { level: number }) {
   );
 }
 
-const VALID_SHAPES: NodeShape[] = ['star', 'circle', 'arch', 'hex', 'medallion'];
+const VALID_SHAPES: NodeShape[] = ['star', 'circle', 'arch', 'hex', 'medallion', 'crown'];
 
 function ProgressPageInner() {
   const { unites, loading } = useParcours();
   const { langTrack } = useUser();
   const [tabs, setTabs] = useState<TrackTab[]>(FALLBACK_TABS);
   const [shape, setShape] = useState<NodeShape>('star');
+  const pathStyle = usePathStyle();
 
   useEffect(() => {
     const read = () => {
@@ -185,7 +188,9 @@ function ProgressPageInner() {
         return (
           <React.Fragment key={u.id}>
             {showDivider && <LevelDivider level={u.level} />}
-            <UnitePath unite={u} shape={shape} />
+            {pathStyle === 'calligraphie'
+              ? <CalligraphyPath unite={u} />
+              : <UnitePath unite={u} shape={shape} />}
           </React.Fragment>
         );
       })}

@@ -201,7 +201,7 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
           <BigMajorelleAudio onPlay={handlePlay} playing={playing} />
         </div>
 
-        <div className="grid grid-cols-2 gap-3 w-full">
+        <div className={`flex flex-col gap-3 w-full ${isVocab ? '' : 'md:grid md:grid-cols-2'}`}>
           {choices.map((c, i) => (
             <button
               key={c.latin}
@@ -222,9 +222,8 @@ export default function EntendreEtChoisir({ letter, choices, onSuccess, onFailed
                 <StarBadge n={i + 1} state={getStarState(c)} />
               </span>
               {isVocab ? (
-                <div className="flex flex-col items-center gap-1 px-3 text-center" style={{ paddingTop: 18 }}>
-                  <span className="text-xl leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>{c.letter}</span>
-                  <span className="text-sm font-bold" style={{ color: MC.sub }}>{c.latin}</span>
+                <div className="flex flex-col items-center gap-1 px-10 text-center" style={{ paddingTop: 4 }}>
+                  <span className="text-base font-bold text-white leading-snug break-words">{c.fr}</span>
                 </div>
               ) : (
                 <span className="text-[48px] leading-none text-white" style={{ fontFamily: 'Amiri, serif' }}>

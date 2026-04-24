@@ -26,9 +26,9 @@ let BillingController = class BillingController {
         return { url: s.url };
     }
     async webhook(req, res) {
-        // For simplicity, accept parsed payload
-        const payload = req.body;
-        await this.svc.handleWebhook(payload, req.headers['stripe-signature']);
+        // rawBody requis pour la validation de signature HMAC Stripe
+        const rawBody = req.rawBody ?? Buffer.from(JSON.stringify(req.body));
+        await this.svc.handleWebhook(rawBody, req.headers['stripe-signature']);
         res.status(200).send('ok');
     }
     async status(req) {

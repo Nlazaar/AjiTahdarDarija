@@ -15,7 +15,7 @@ interface Props {
 export default function UnitBanner({ unite, isCurrentUnit = false, onContinue }: Props) {
   const [open, setOpen] = useState(false);
   const { selectedId, select } = useSelectedUnite();
-  const headerBg = unite.unlocked ? unite.colorA : '#374151';
+  const headerBg = unite.colorA;
   const hasDescription = !!unite.description || !!unite.hadith;
   const isSelected = selectedId === unite.id;
   // Clic sur la bannière : sélectionne l'unité pour le panneau carte postale
@@ -40,7 +40,7 @@ export default function UnitBanner({ unite, isCurrentUnit = false, onContinue }:
           padding: '14px 18px',
           minHeight: 82,
           cursor: clickable ? 'pointer' : 'default',
-          opacity: unite.unlocked ? 1 : 0.65,
+          opacity: unite.unlocked ? 1 : 0.85,
           display: 'flex',
           alignItems: 'center',
           gap: 12,

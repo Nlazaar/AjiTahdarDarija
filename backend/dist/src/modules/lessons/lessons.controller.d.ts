@@ -16,9 +16,24 @@ export declare class LessonsController {
         order: number;
         content: import("@prisma/client/runtime/library").JsonValue | null;
         duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
         moduleId: string | null;
         authorId: string | null;
         languageId: string;
+    }[]>;
+    listLanguages(): Promise<{
+        name: string;
+        id: string;
+        createdAt: Date;
+        code: string;
+    }[]>;
+    listModulesForAdmin(): Promise<{
+        id: string;
+        level: number;
+        title: string;
+        slug: string;
+        isPublished: boolean;
     }[]>;
     findBySlug(slug: string): Promise<{
         id: string;
@@ -34,6 +49,8 @@ export declare class LessonsController {
         order: number;
         content: import("@prisma/client/runtime/library").JsonValue | null;
         duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
         moduleId: string | null;
         authorId: string | null;
         languageId: string;
@@ -56,6 +73,8 @@ export declare class LessonsController {
         order: number;
         content: import("@prisma/client/runtime/library").JsonValue | null;
         duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
         moduleId: string | null;
         authorId: string | null;
         languageId: string;
@@ -72,6 +91,21 @@ export declare class LessonsController {
         lessonId: string | null;
         vocabularyId: string | null;
     }[]>;
+    getVocabulary(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        languageId: string;
+        word: string;
+        transliteration: string | null;
+        translation: import("@prisma/client/runtime/library").JsonValue | null;
+        audioUrl: string | null;
+        imageUrl: string | null;
+        partOfSpeech: import(".prisma/client").$Enums.PartOfSpeech | null;
+        examples: import("@prisma/client/runtime/library").JsonValue | null;
+        tags: string[];
+    }[]>;
     submit(id: string, req: any, body: any): Promise<{
         score: number;
         errors: {
@@ -82,5 +116,160 @@ export declare class LessonsController {
         xpEarned: number;
         gemmesEarned: number;
         progress: any;
+    }>;
+    create(body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        slug: string | null;
+        isPublished: boolean;
+        order: number;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    update(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        slug: string | null;
+        isPublished: boolean;
+        order: number;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    updateSequence(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        slug: string | null;
+        isPublished: boolean;
+        order: number;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    reorderVocabulary(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        slug: string | null;
+        isPublished: boolean;
+        order: number;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    remove(id: string, hard?: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isDeleted: boolean;
+        level: number;
+        title: string;
+        subtitle: string | null;
+        description: string | null;
+        slug: string | null;
+        isPublished: boolean;
+        order: number;
+        content: import("@prisma/client/runtime/library").JsonValue | null;
+        duration: number | null;
+        videoUrl: string | null;
+        videoPoster: string | null;
+        moduleId: string | null;
+        authorId: string | null;
+        languageId: string;
+    }>;
+    /** Lecture publique : utilisée par le runtime LessonClient (exos publiés uniquement). */
+    listAuthoredExercises(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        order: number;
+        lessonId: string;
+        typology: string;
+        config: import("@prisma/client/runtime/library").JsonValue;
+    }[]>;
+    /** Lecture admin : tous les exos (publiés + brouillons). */
+    listAuthoredExercisesAdmin(id: string): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        order: number;
+        lessonId: string;
+        typology: string;
+        config: import("@prisma/client/runtime/library").JsonValue;
+    }[]>;
+    createAuthoredExercise(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        order: number;
+        lessonId: string;
+        typology: string;
+        config: import("@prisma/client/runtime/library").JsonValue;
+    }>;
+    reorderAuthoredExercises(id: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        order: number;
+        lessonId: string;
+        typology: string;
+        config: import("@prisma/client/runtime/library").JsonValue;
+    }[]>;
+    updateAuthoredExercise(id: string, exId: string, body: any): Promise<{
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        isPublished: boolean;
+        order: number;
+        lessonId: string;
+        typology: string;
+        config: import("@prisma/client/runtime/library").JsonValue;
+    }>;
+    deleteAuthoredExercise(id: string, exId: string): Promise<{
+        ok: boolean;
     }>;
 }

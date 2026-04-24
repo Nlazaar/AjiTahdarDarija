@@ -26,10 +26,12 @@ import TexteReligieux     from "@/components/exercises/TexteReligieux"
 import SelectionImages    from "@/components/exercises/SelectionImages"
 import TriDeuxCategories  from "@/components/exercises/TriDeuxCategories"
 import RelierParTrait     from "@/components/exercises/RelierParTrait"
+import VoixVisuel, { type VoixVisuelItem } from "@/components/exercises/VoixVisuel"
+import TrouverIntrus, { type TrouverIntrusItem } from "@/components/exercises/TrouverIntrus"
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
-type ExPhase  = "flashcard" | "harakat" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter" | "numeroter" | "placer_etoile" | "texte_religieux" | "selection_images" | "tri_deux_cat" | "relier_trait"
+type ExPhase  = "flashcard" | "harakat" | "choix" | "association" | "paires" | "entendre" | "vrai_faux" | "dicter" | "numeroter" | "placer_etoile" | "texte_religieux" | "selection_images" | "tri_deux_cat" | "relier_trait" | "voix_visuel" | "trouver_intrus"
 type TrnPhase = "t1" | "t2" | "t3" | "t4" | "t5" | "t6"
 type Phase    = ExPhase | TrnPhase | "video" | "finished" | "empty"
 
@@ -50,6 +52,8 @@ const REGISTRY_TO_PHASE: Record<string, ExPhase> = {
   SelectionImages:    "selection_images",
   TriDeuxCategories:  "tri_deux_cat",
   RelierParTrait:     "relier_trait",
+  VoixVisuel:         "voix_visuel",
+  TrouverIntrus:      "trouver_intrus",
 }
 
 const TRN_KEYS: TrnPhase[] = ["t1", "t2", "t3", "t4", "t5", "t6"]
@@ -82,9 +86,9 @@ function buildPhaseQueue(registryKeys: string[]): Phase[] | null {
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
-const EX_PHASES: ExPhase[] = ["flashcard", "harakat", "choix", "association", "paires", "entendre", "vrai_faux", "dicter", "numeroter", "placer_etoile", "texte_religieux", "selection_images", "tri_deux_cat", "relier_trait"]
+const EX_PHASES: ExPhase[] = ["flashcard", "harakat", "choix", "association", "paires", "entendre", "vrai_faux", "dicter", "numeroter", "placer_etoile", "texte_religieux", "selection_images", "tri_deux_cat", "relier_trait", "voix_visuel", "trouver_intrus"]
 
-const PHASE_LABELS = ["Lettres", "Voyelles", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter", "Ordre", "Étoile", "Lecture", "Choisir", "Trier", "Relier"]
+const PHASE_LABELS = ["Lettres", "Voyelles", "Prononc.", "Associer", "Paires", "Écoute", "Vrai/Faux", "Dicter", "Ordre", "Étoile", "Lecture", "Choisir", "Trier", "Relier", "Voix↔Vis.", "Intrus"]
 
 const PHASE_SEQUENCE: Phase[] = [
   "flashcard", "harakat", "t1",
@@ -119,7 +123,8 @@ const TRANSITIONS: Record<TrnPhase, { emoji: string; title: string; sub: string 
 
 const HEART_PHASES: ExPhase[] = ["paires", "entendre", "vrai_faux"]
 const FEEDBACK_PHASES: ExPhase[] = ["choix", "entendre", "vrai_faux", "dicter"]
-const MATCHING_PHASES: ExPhase[] = ["association", "paires", "numeroter", "placer_etoile", "selection_images", "tri_deux_cat", "relier_trait"]
+const MATCHING_PHASES: ExPhase[] = ["association", "paires", "numeroter", "placer_etoile", "selection_images", "tri_deux_cat", "relier_trait", "voix_visuel", "trouver_intrus"]
+const CONTINUE_PHASES: ExPhase[] = ["flashcard", "harakat"]
 const FOOTER_PHASES: ExPhase[] = [...FEEDBACK_PHASES, ...MATCHING_PHASES]
 
 const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5)
@@ -402,12 +407,12 @@ export default function LessonClient({
 
     if (!isAlphabetLesson && authoredKeys.length > 0) {
       const built = buildPhaseQueue(authoredKeys)
-      seq = built ?? []
+      seq = built ? [...built, 'finished'] : []
     } else if (!isAlphabetLesson && Array.isArray(dbSeq) && dbSeq.length > 0) {
       const built = buildPhaseQueue(dbSeq as string[])
-      seq = built ?? []
+      seq = built ? [...built, 'finished'] : []
     } else if (isAlphabetLesson) {
-      seq = PHASE_SEQUENCE.filter(p => p !== 'finished')
+      seq = [...PHASE_SEQUENCE]
     } else {
       // Aucun exercice authored : l'écran "Cours en construction" prendra le relais.
       seq = []
@@ -628,6 +633,39 @@ export default function LessonClient({
     return { arabe: '', fr: '', source: undefined as string | undefined, titre: undefined as string | undefined }
   }, [currentAuthored, currentCfg])
 
+  // VoixVisuel / TrouverIntrus : résout vocabIds → items (audio + visuel texte arabe)
+  const voixItemsFromIds = (ids: any): VoixVisuelItem[] => {
+    if (!Array.isArray(ids) || !Array.isArray(_vocabulary)) return []
+    const byId = new Map<string, any>()
+    for (const v of _vocabulary) if (v?.id) byId.set(v.id, v)
+    return ids
+      .map((id: any) => byId.get(id))
+      .filter(Boolean)
+      .map((v: any) => ({
+        id: v.id as string,
+        audio: { url: v.audioUrl ?? undefined, fallbackText: v.word ?? '' },
+        visual: { kind: 'text' as const, value: v.word ?? '', lang: 'ar' as const },
+        label: (v.translation as any)?.fr ?? v.transliteration ?? v.word ?? '',
+      }))
+  }
+
+  const voixVisuelData = useMemo(() => {
+    if (currentAuthored?.typology !== 'VoixVisuel') return null
+    const items = voixItemsFromIds(currentCfg?.vocabIds)
+    const mode: 'ligne' | 'drag' = currentCfg?.mode === 'drag' ? 'drag' : 'ligne'
+    return items.length >= 2 ? { mode, items } : null
+  }, [currentAuthored, currentCfg, _vocabulary])
+
+  const trouverIntrusData = useMemo(() => {
+    if (currentAuthored?.typology !== 'TrouverIntrus') return null
+    const items: TrouverIntrusItem[] = voixItemsFromIds(currentCfg?.vocabIds)
+    const playedIds: string[] = Array.isArray(currentCfg?.playedIds)
+      ? currentCfg.playedIds.filter((s: any) => typeof s === 'string')
+      : []
+    const ok = items.length >= 2 && playedIds.length > 0 && playedIds.length < items.length
+    return ok ? { items, playedIds } : null
+  }, [currentAuthored, currentCfg, _vocabulary])
+
   // Reset l'index FlashCard quand on change d'exercice authored
   useEffect(() => {
     setFlashLetterIdx(0)
@@ -659,7 +697,7 @@ export default function LessonClient({
   }, [isReady, phase, answered]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (queue.length === 0 && !xpAdded) {
+    if ((phase === 'finished' || phase === 'empty') && !xpAdded) {
       addXP(50)
       addGemmes(10)
       incrementStreak()
@@ -668,7 +706,7 @@ export default function LessonClient({
       updateQuete('xp', 50)
       setXpAdded(true)
     }
-  }, [queue.length]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [phase]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleGenericFinish = async (xp: number, answers: CollectedAnswer[]) => {
     try {
@@ -718,6 +756,7 @@ export default function LessonClient({
     : 0
   const showHearts = HEART_PHASES.includes(mainPhase)
   const showFooter   = FOOTER_PHASES.includes(phase as ExPhase)
+  const showContinue = CONTINUE_PHASES.includes(phase as ExPhase)
   const isMatching   = MATCHING_PHASES.includes(phase as ExPhase)
 
   const resetPhaseState = () => {
@@ -1052,6 +1091,32 @@ export default function LessonClient({
             prompt={customPrompt}
           />
         )
+      case "voix_visuel":
+        if (!voixVisuelData) { advancePhase(); return null }
+        return (
+          <VoixVisuel
+            config={{
+              mode: voixVisuelData.mode,
+              prompt: customPrompt,
+              items: voixVisuelData.items,
+            }}
+            onReadyChange={setIsReady}
+            onConfirm={advancePhase}
+          />
+        )
+      case "trouver_intrus":
+        if (!trouverIntrusData) { advancePhase(); return null }
+        return (
+          <TrouverIntrus
+            config={{
+              prompt: customPrompt,
+              items: trouverIntrusData.items,
+              playedIds: trouverIntrusData.playedIds,
+            }}
+            onReadyChange={setIsReady}
+            onConfirm={advancePhase}
+          />
+        )
       default:
         return null
     }
@@ -1127,6 +1192,21 @@ export default function LessonClient({
       {showSignaler && <SignalerModal onClose={() => setShowSignaler(false)} />}
 
       {/* ── FOOTER ──────────────────────────────────────────────────────── */}
+      {showContinue && (
+        <footer className="fixed bottom-0 left-0 right-0 z-50">
+          <div className="bg-[#1e2d35] border-t border-[#2a3d47] px-4 py-4" style={{ animation: 'fadeUp 0.15s ease both' }}>
+            <div className="max-w-lg mx-auto">
+              <button
+                onClick={phase === 'flashcard' ? handleFlashContinue : handleHarakatContinue}
+                className="w-full py-4 rounded-2xl font-black text-base uppercase tracking-widest text-white bg-[#58cc02] hover:bg-[#46a302] active:translate-y-0.5 transition-all"
+                style={{ boxShadow: '0 4px 0 #46a302' }}
+              >
+                CONTINUER
+              </button>
+            </div>
+          </div>
+        </footer>
+      )}
       {showFooter && (
         <footer className="fixed bottom-0 left-0 right-0 z-50">
           {!answered ? (
@@ -1161,11 +1241,8 @@ export default function LessonClient({
                   </div>
                   <div>
                     <div className={`font-black text-sm ${isCorrect ? 'text-[#58cc02]' : 'text-[#ff4b4b]'}`}>
-                      {isCorrect ? feedbackMsg : 'La bonne réponse est :'}
+                      {isCorrect ? feedbackMsg : 'Mauvaise réponse, essaye de nouveau'}
                     </div>
-                    {!isCorrect && (
-                      <div className="text-white text-sm font-bold mt-0.5">{feedbackMsg}</div>
-                    )}
                     <button
                       onClick={() => setShowSignaler(true)}
                       className="flex items-center gap-1 mt-1 text-[11px] font-bold uppercase tracking-wider opacity-60 hover:opacity-100 transition-opacity"
