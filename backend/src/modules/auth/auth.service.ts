@@ -89,9 +89,9 @@ export class AuthService {
       where: { id: userId },
       include: {
         progress: true,
-        vocabulary: true,
+        vocabularies: true,
         badges: true,
-        analytics: { take: 1000, orderBy: { createdAt: 'desc' } },
+        analyticsEvents: { take: 1000, orderBy: { createdAt: 'desc' } },
       },
     });
     if (!user) throw new NotFoundException('Utilisateur introuvable');

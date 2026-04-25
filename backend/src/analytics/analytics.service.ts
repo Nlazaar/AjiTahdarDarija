@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common'
+import { Prisma } from '@prisma/client'
 import { PrismaService } from '../prisma/prisma.service'
 
 /** Événements trackés (funnel onboarding + rétention) */
@@ -37,7 +38,11 @@ export class AnalyticsService {
   async logEvent(userId: string | null, type: AnalyticsEventType | string, payload?: Record<string, unknown>) {
     try {
       await this.prisma.analyticsEvent.create({
-        data: { userId: userId ?? null, type, payload: payload ?? {} },
+        data: {
+          userId: userId ?? null,
+          type,
+          payload: (payload ?? {}) as Prisma.InputJsonValue,
+        },
       })
     } catch (err) {
       // Ne jamais bloquer le flux principal pour un échec d'analytics
