@@ -2,12 +2,12 @@
   "name": "darija-backend",
   "version": "0.1.0",
   "private": true,
-  "main": "dist/main.js",
+  "main": "dist/src/main.js",
   "prisma": {
     "seed": "ts-node-dev --transpile-only prisma/seed.ts"
   },
   "scripts": {
-    "start": "node dist/main.js",
+    "start": "node dist/src/main.js",
     "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
     "build": "nest build && npx tsc prisma/seed.ts --target ES2020 --module commonjs --esModuleInterop --outDir dist/src --rootDir prisma --skipLibCheck",
     "prisma:generate": "prisma generate",
@@ -17,7 +17,7 @@
     "import:content": "node scripts/importContent.js",
     "import:pdf-dataset": "node scripts/importPdfDataset.js",
     "docker:build": "docker build -t YOUR_DOCKERHUB_USERNAME/darija-backend:latest .",
-    "start:prod": "node dist/main.js",
+    "start:prod": "node dist/src/main.js",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "lint": "eslint 'src/**/*.{ts,js}' --fix",
