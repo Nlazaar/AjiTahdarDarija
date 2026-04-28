@@ -1,9 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
+import { GamificationService } from '../gamification/gamification.service';
 
 @Injectable()
 export class ProgressService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly gamification: GamificationService,
+  ) {}
 
   async completeLesson(userId: string, lessonId: string) {
     await this.prisma.userProgress.upsert({
@@ -11,7 +15,8 @@ export class ProgressService {
       create: { userId, lessonId, completed: true, progress: 100, xpEarned: 0, finishedAt: new Date() },
       update: { completed: true, progress: 100, finishedAt: new Date() },
     });
-    return { ok: true };
+    const badgesAwarded = await this.gamification.checkAndAwardBadges(userId);
+    return { ok: true, badgesAwarded };
   }
 
   async getUserProgress(userId: string) {

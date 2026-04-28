@@ -1,6 +1,7 @@
 import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 import { QuestsService } from '../quests/quests.service';
+import { GamificationService } from '../gamification/gamification.service';
 
 type AnswerPayload = { exerciseId: string; answer: any }[];
 
@@ -9,6 +10,7 @@ export class LessonsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly questsService: QuestsService,
+    private readonly gamification: GamificationService,
   ) {}
 
   async findAll() {
@@ -211,12 +213,21 @@ export class LessonsService {
       score,
     }).catch(() => {});
 
+    // Auto-award badges (best-effort : on n'échoue jamais le submit pour ça)
+    let badgesAwarded: string[] = [];
+    try {
+      badgesAwarded = await this.gamification.checkAndAwardBadges(userId, {
+        perfectLesson: score === 100,
+      });
+    } catch { /* noop */ }
+
     return {
       score,
       errors,
       xpEarned,
       gemmesEarned,
       progress: updatedProgress,
+      badgesAwarded,
     };
   }
 
