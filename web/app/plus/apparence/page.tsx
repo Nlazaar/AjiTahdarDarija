@@ -8,10 +8,12 @@ import {
   PATH_STYLE_STORAGE_KEY,
   type PathStyle,
 } from '@/components/parcours/pathStyle';
+import { useUser } from '@/context/UserContext';
 
 const SHAPE_STORAGE_KEY = 'parcoursNodeShape';
 
 export default function ApparencePage() {
+  const { setNodeShape, setPathStyle: setPathStylePref } = useUser();
   const [shape, setShape] = useState<NodeShape>('star');
   const [pathStyle, setPathStyle] = useState<PathStyle>('serpentin');
 
@@ -29,19 +31,15 @@ export default function ApparencePage() {
   }, []);
 
   const pick = (s: NodeShape) => {
+    if (NODE_SHAPES.find(o => o.key === s)?.disabled) return;
     setShape(s);
-    try {
-      localStorage.setItem(SHAPE_STORAGE_KEY, s);
-      window.dispatchEvent(new StorageEvent('storage', { key: SHAPE_STORAGE_KEY, newValue: s }));
-    } catch {}
+    setNodeShape(s); // localStorage + dispatch event + push backend
   };
 
   const pickPath = (s: PathStyle) => {
+    if (PATH_STYLE_OPTIONS.find(o => o.key === s)?.disabled) return;
     setPathStyle(s);
-    try {
-      localStorage.setItem(PATH_STYLE_STORAGE_KEY, s);
-      window.dispatchEvent(new StorageEvent('storage', { key: PATH_STYLE_STORAGE_KEY, newValue: s }));
-    } catch {}
+    setPathStylePref(s); // localStorage + dispatch event + push backend
   };
 
   return (
@@ -71,19 +69,25 @@ export default function ApparencePage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
           {NODE_SHAPES.map(opt => {
             const active = shape === opt.key;
+            const disabled = !!opt.disabled;
             return (
               <button
                 key={opt.key}
                 type="button"
                 onClick={() => pick(opt.key)}
+                disabled={disabled}
+                aria-disabled={disabled}
+                title={disabled ? 'Indisponible pour le moment' : undefined}
                 style={{
                   display: 'flex', alignItems: 'center', gap: 14,
                   padding: '16px 18px',
                   background: active ? 'rgba(88,204,2,0.08)' : 'var(--c-card)',
                   border: `1.5px solid ${active ? '#58cc02' : 'var(--c-border)'}`,
-                  borderRadius: 14, cursor: 'pointer', textAlign: 'left',
+                  borderRadius: 14, cursor: disabled ? 'not-allowed' : 'pointer', textAlign: 'left',
                   transition: 'transform 0.1s, border-color 0.15s, background 0.15s',
                   position: 'relative',
+                  opacity: disabled ? 0.45 : 1,
+                  filter: disabled ? 'grayscale(0.6)' : 'none',
                 }}
               >
                 <div style={{
@@ -113,7 +117,18 @@ export default function ApparencePage() {
                   </div>
                 </div>
 
-                {active && (
+                {disabled && (
+                  <span style={{
+                    position: 'absolute', top: 10, right: 12,
+                    fontSize: 10, fontWeight: 900, color: 'var(--c-sub)',
+                    background: 'var(--c-bg)', border: '1px solid var(--c-border)',
+                    padding: '3px 8px', borderRadius: 999,
+                    letterSpacing: '0.05em', textTransform: 'uppercase',
+                  }}>
+                    Désactivé
+                  </span>
+                )}
+                {!disabled && active && (
                   <span style={{
                     position: 'absolute', top: 10, right: 12,
                     fontSize: 10, fontWeight: 900, color: '#58cc02',
@@ -140,19 +155,25 @@ export default function ApparencePage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
           {PATH_STYLE_OPTIONS.map(opt => {
             const active = pathStyle === opt.key;
+            const disabled = !!opt.disabled;
             return (
               <button
                 key={opt.key}
                 type="button"
                 onClick={() => pickPath(opt.key)}
+                disabled={disabled}
+                aria-disabled={disabled}
+                title={disabled ? 'Indisponible pour le moment' : undefined}
                 style={{
                   display: 'flex', flexDirection: 'column', gap: 6,
                   padding: '14px 16px',
                   background: active ? 'rgba(88,204,2,0.08)' : 'var(--c-card)',
                   border: `1.5px solid ${active ? '#58cc02' : 'var(--c-border)'}`,
-                  borderRadius: 14, cursor: 'pointer', textAlign: 'left',
+                  borderRadius: 14, cursor: disabled ? 'not-allowed' : 'pointer', textAlign: 'left',
                   transition: 'transform 0.1s, border-color 0.15s, background 0.15s',
                   position: 'relative',
+                  opacity: disabled ? 0.45 : 1,
+                  filter: disabled ? 'grayscale(0.6)' : 'none',
                 }}
               >
                 <div style={{
@@ -164,7 +185,18 @@ export default function ApparencePage() {
                 <div style={{ fontSize: 12, color: 'var(--c-sub)', lineHeight: 1.4 }}>
                   {opt.description}
                 </div>
-                {active && (
+                {disabled && (
+                  <span style={{
+                    position: 'absolute', top: 10, right: 12,
+                    fontSize: 10, fontWeight: 900, color: 'var(--c-sub)',
+                    background: 'var(--c-bg)', border: '1px solid var(--c-border)',
+                    padding: '3px 8px', borderRadius: 999,
+                    letterSpacing: '0.05em', textTransform: 'uppercase',
+                  }}>
+                    Désactivé
+                  </span>
+                )}
+                {!disabled && active && (
                   <span style={{
                     position: 'absolute', top: 10, right: 12,
                     fontSize: 10, fontWeight: 900, color: '#58cc02',

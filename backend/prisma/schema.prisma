@@ -95,8 +95,12 @@ model User {
   hearts       Int       @default(5)
   gemmes       Int       @default(0)
 
-  // Préférence de track linguistique (UI)
-  langTrack LangTrack @default(DARIJA)
+  // Préférences UI synchronisées entre devices (PWA web, mobile).
+  // Source de vérité côté serveur ; le client cache en localStorage pour la perf.
+  langTrack       LangTrack @default(DARIJA)
+  preferredMascot String?   // chemin image, ex: '/images/maroccan-lion.png'
+  nodeShape       String?   // 'star' | 'circle' | 'arch' | 'hex' | 'medallion' | 'crown'
+  pathStyle       String?   // 'serpentin' | 'calligraphie'
 
   // Souscription
   subscriptionStatus    String?   @default("free")

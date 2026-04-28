@@ -68,17 +68,56 @@ export class AuthService {
         streak: true,
         hearts: true,
         createdAt: true,
+        // Préférences UI synchronisées
+        langTrack: true,
+        preferredMascot: true,
+        nodeShape: true,
+        pathStyle: true,
       },
     });
     if (!user) throw new NotFoundException('Utilisateur introuvable');
     return user;
   }
 
-  async updateProfile(userId: string, data: { avatar?: string; name?: string }) {
+  async updateProfile(
+    userId: string,
+    data: {
+      avatar?: string;
+      name?: string;
+      // Prefs UI synchronisées entre devices
+      langTrack?: 'DARIJA' | 'MSA' | 'RELIGION';
+      preferredMascot?: string | null;
+      nodeShape?: string | null;
+      pathStyle?: string | null;
+    },
+  ) {
+    // Whitelist : on ne laisse passer que les champs connus pour éviter
+    // les écritures arbitraires dans User via le PATCH.
+    const ALLOWED_TRACKS = new Set(['DARIJA', 'MSA', 'RELIGION']);
+    const ALLOWED_SHAPES = new Set(['star', 'circle', 'arch', 'hex', 'medallion', 'crown']);
+    const ALLOWED_PATHS  = new Set(['serpentin', 'calligraphie']);
+
+    const safeData: Record<string, unknown> = {};
+    if (typeof data.avatar === 'string') safeData.avatar = data.avatar;
+    if (typeof data.name === 'string') safeData.name = data.name;
+    if (data.langTrack && ALLOWED_TRACKS.has(data.langTrack)) safeData.langTrack = data.langTrack;
+    if (data.preferredMascot === null || typeof data.preferredMascot === 'string') {
+      safeData.preferredMascot = data.preferredMascot;
+    }
+    if (data.nodeShape === null || (typeof data.nodeShape === 'string' && ALLOWED_SHAPES.has(data.nodeShape))) {
+      safeData.nodeShape = data.nodeShape;
+    }
+    if (data.pathStyle === null || (typeof data.pathStyle === 'string' && ALLOWED_PATHS.has(data.pathStyle))) {
+      safeData.pathStyle = data.pathStyle;
+    }
+
     const updated = await this.prisma.user.update({
       where: { id: userId },
-      data,
-      select: { id: true, email: true, name: true, avatar: true },
+      data: safeData,
+      select: {
+        id: true, email: true, name: true, avatar: true,
+        langTrack: true, preferredMascot: true, nodeShape: true, pathStyle: true,
+      },
     });
     return updated;
   }

@@ -137,7 +137,14 @@ export const completeRevisionApi = (id: string) =>
   );
 export const getGamification       = ()                 => request<Gamification>('/gamification/me');
 export const getProfile            = ()                 => request<any>('/auth/me');
-export const updateProfile         = (data: { avatar?: string; name?: string }) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });
+export const updateProfile         = (data: {
+  avatar?: string;
+  name?: string;
+  langTrack?: 'DARIJA' | 'MSA' | 'RELIGION';
+  preferredMascot?: string | null;
+  nodeShape?: string | null;
+  pathStyle?: string | null;
+}) => request<any>('/auth/me', { method: 'PATCH', body: JSON.stringify(data) });
 export const getMyProgress         = ()                 => request<any>('/progress/me');
 export const completeLessonApi     = (lessonId: string) => request<any>(`/progress/complete/${lessonId}`, { method: 'POST' });
 export const getMyJourney          = (track?: string)   => request<{

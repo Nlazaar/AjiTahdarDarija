@@ -26,7 +26,17 @@ export class AuthController {
 
   @UseGuards(JwtGuard)
   @Patch('me')
-  updateMe(@Request() req: any, @Body() body: { avatar?: string; name?: string }) {
+  updateMe(
+    @Request() req: any,
+    @Body() body: {
+      avatar?: string;
+      name?: string;
+      langTrack?: 'DARIJA' | 'MSA' | 'RELIGION';
+      preferredMascot?: string | null;
+      nodeShape?: string | null;
+      pathStyle?: string | null;
+    },
+  ) {
     return this.authService.updateProfile(req.user.id, body);
   }
 
