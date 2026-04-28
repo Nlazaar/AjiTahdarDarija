@@ -110,8 +110,11 @@ export default function TrackSelectionPage() {
         flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center',
         padding: '20px', width: '100%', maxWidth: '1000px',
       }}>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px', marginBottom: '40px', justifyContent: 'center' }}>
-          <div style={{ width: '180px', flexShrink: 0 }}>
+        <div
+          className="flex flex-col md:flex-row"
+          style={{ alignItems: 'center', gap: '20px', marginBottom: '40px', justifyContent: 'center', width: '100%' }}
+        >
+          <div style={{ width: 'clamp(120px, 28vw, 180px)', flexShrink: 0 }}>
             <LottiePlayer
               src="mascot-with-bird.json"
               size="100%"
@@ -124,14 +127,16 @@ export default function TrackSelectionPage() {
             padding: '20px 24px', maxWidth: '400px',
             boxShadow: '0 4px 0 #e5e5e5',
           }}>
-            <div style={{
-              position: 'absolute', left: '-10px', top: '50%',
-              transform: 'translateY(-50%) rotate(45deg)',
-              width: '16px', height: '16px',
-              backgroundColor: 'white',
-              borderLeft: '2px solid #e5e5e5',
-              borderBottom: '2px solid #e5e5e5',
-            }} />
+            <div
+              className="hidden md:block"
+              style={{
+                position: 'absolute', left: '-10px', top: '50%',
+                transform: 'translateY(-50%) rotate(45deg)',
+                width: '16px', height: '16px',
+                backgroundColor: 'white',
+                borderLeft: '2px solid #e5e5e5',
+                borderBottom: '2px solid #e5e5e5',
+              }} />
             <h1 style={{ fontSize: '20px', fontWeight: 800, color: '#4b4b4b', margin: '0 0 4px 0', lineHeight: '1.3' }}>
               Quel parcours tu veux apprendre ?
             </h1>

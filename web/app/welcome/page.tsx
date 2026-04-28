@@ -176,30 +176,30 @@ export default function WelcomePage() {
             </div>
           </div>
         ) : (
-          <div style={{ 
-            display: 'flex', 
-            flexDirection: 'row', 
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '20px',
-            width: '100%',
-            maxWidth: '800px',
-            animation: 'fadeIn 0.5s ease-out'
-          }}>
+          <div
+            className="flex flex-col md:flex-row"
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '20px',
+              width: '100%',
+              maxWidth: '800px',
+              animation: 'fadeIn 0.5s ease-out'
+            }}>
             {/* Mascot */}
-            <div className="animate-mascot" style={{ width: '200px', flexShrink: 0 }}>
-              <img 
-                src={selectedMascot} 
-                alt="Mascot Teacher" 
+            <div className="animate-mascot" style={{ width: 'clamp(120px, 32vw, 200px)', flexShrink: 0 }}>
+              <img
+                src={selectedMascot}
+                alt="Mascot Teacher"
                 style={{ width: '100%', height: 'auto' }}
               />
             </div>
 
             {/* Right Column: Bubble + Interaction */}
-            <div style={{ 
-              display: 'flex', 
-              flexDirection: 'column', 
-              alignItems: 'center', 
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
               width: '100%',
               maxWidth: '450px'
             }}>
@@ -214,18 +214,20 @@ export default function WelcomePage() {
                 marginBottom: '40px',
                 boxShadow: `0 4px 0 ${tc.tint}`
               }}>
-                {/* Arrow */}
-                <div style={{
-                  position: 'absolute',
-                  left: '-12px',
-                  top: '40px',
-                  width: '20px',
-                  height: '20px',
-                  backgroundColor: 'white',
-                  borderLeft: `2px solid ${tc.color}`,
-                  borderBottom: `2px solid ${tc.color}`,
-                  transform: 'rotate(45deg)'
-                }} />
+                {/* Arrow — masquée sur mobile (mascotte au-dessus) */}
+                <div
+                  className="hidden md:block"
+                  style={{
+                    position: 'absolute',
+                    left: '-12px',
+                    top: '40px',
+                    width: '20px',
+                    height: '20px',
+                    backgroundColor: 'white',
+                    borderLeft: `2px solid ${tc.color}`,
+                    borderBottom: `2px solid ${tc.color}`,
+                    transform: 'rotate(45deg)'
+                  }} />
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   <div style={{ 

@@ -70,17 +70,17 @@ export default function LevelSelectionPage() {
       }}>
         
         {/* Top: Mascot + Bubble Row */}
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: 'row', 
-          alignItems: 'center', 
-          gap: '20px',
-          marginBottom: '40px',
-          width: '100%',
-          justifyContent: 'center'
-        }}>
+        <div
+          className="flex flex-col md:flex-row"
+          style={{
+            alignItems: 'center',
+            gap: '20px',
+            marginBottom: '40px',
+            width: '100%',
+            justifyContent: 'center'
+          }}>
           {/* Mascot */}
-          <div className="animate-mascot" style={{ width: '140px', flexShrink: 0 }}>
+          <div className="animate-mascot" style={{ width: 'clamp(110px, 26vw, 140px)', flexShrink: 0 }}>
             <img 
               src={mascot} 
               alt="Mascot Teacher" 
@@ -98,17 +98,19 @@ export default function LevelSelectionPage() {
             maxWidth: '380px',
             boxShadow: `0 4px 0 ${tc.tint}`
           }}>
-            <div style={{
-              position: 'absolute',
-              left: '-10px',
-              top: '50%',
-              transform: 'translateY(-50%) rotate(45deg)',
-              width: '16px',
-              height: '16px',
-              backgroundColor: 'white',
-              borderLeft: `2px solid ${tc.color}`,
-              borderBottom: `2px solid ${tc.color}`
-            }}></div>
+            <div
+              className="hidden md:block"
+              style={{
+                position: 'absolute',
+                left: '-10px',
+                top: '50%',
+                transform: 'translateY(-50%) rotate(45deg)',
+                width: '16px',
+                height: '16px',
+                backgroundColor: 'white',
+                borderLeft: `2px solid ${tc.color}`,
+                borderBottom: `2px solid ${tc.color}`
+              }}></div>
 
             <div style={{ textAlign: 'left' }}>
                <h1 style={{ fontSize: '20px', fontWeight: '800', color: '#4b4b4b', margin: '0 0 4px 0', lineHeight: '1.3' }}>
