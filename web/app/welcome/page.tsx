@@ -75,12 +75,13 @@ export default function WelcomePage() {
   };
 
   return (
-    <div style={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', 
-      minHeight: '100vh', 
-      width: '100vw', 
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      minHeight: '100vh',
+      width: '100%',
+      overflowX: 'hidden',
       backgroundColor: ONBOARDING_BG,
       fontFamily: '"Nunito", "Inter", sans-serif',
       position: 'relative'
@@ -129,34 +130,43 @@ export default function WelcomePage() {
       }}>
         
         {step === 0 ? (
-          <div style={{ textAlign: 'center', animation: 'fadeIn 0.5s ease-out' }}>
-            <div style={{ width: 180, height: 180, margin: '0 auto 8px' }}>
+          <div style={{ textAlign: 'center', animation: 'fadeIn 0.5s ease-out', width: '100%' }}>
+            <div style={{ width: 'clamp(140px, 36vw, 180px)', aspectRatio: '1 / 1', margin: '0 auto 8px' }}>
               <LottiePlayer src="hello-buddy.json" size="100%" />
             </div>
-            <h1 style={{ fontSize: '32px', fontWeight: '900', color: '#4b4b4b', marginBottom: '48px' }}>
+            <h1 style={{
+              fontSize: 'clamp(22px, 6vw, 32px)',
+              fontWeight: '900',
+              color: '#4b4b4b',
+              marginBottom: 'clamp(24px, 5vw, 48px)',
+              padding: '0 8px',
+              lineHeight: 1.2,
+            }}>
               {t.welcome.chooseMascot}
             </h1>
-            <div style={{ 
-              display: 'flex', 
-              gap: '40px', 
-              flexWrap: 'wrap', 
+            <div style={{
+              display: 'flex',
+              gap: 'clamp(8px, 3vw, 40px)',
+              flexWrap: 'wrap',
               justifyContent: 'center',
               alignItems: 'flex-end'
             }}>
               {mascots.map((m) => (
-                <div 
-                  key={m.id} 
+                <div
+                  key={m.id}
                   onClick={() => handleMascotSelect(m.id, m.img, m.name)}
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '20px',
+                    gap: 'clamp(8px, 2vw, 20px)',
                     cursor: 'pointer',
                     transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                    padding: '20px',
+                    padding: 'clamp(8px, 2vw, 20px)',
                     borderRadius: '24px',
                     border: '2px solid transparent',
+                    flex: '0 0 calc(50% - clamp(8px, 3vw, 40px))',
+                    maxWidth: '200px',
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-10px)';
@@ -169,8 +179,8 @@ export default function WelcomePage() {
                     e.currentTarget.style.borderColor = 'transparent';
                   }}
                 >
-                  <img src={m.img} alt={m.name} style={{ width: '160px', height: 'auto' }} />
-                  <span style={{ fontWeight: '800', color: '#777', fontSize: '20px' }}>{m.name}</span>
+                  <img src={m.img} alt={m.name} style={{ width: 'clamp(90px, 26vw, 160px)', height: 'auto' }} />
+                  <span style={{ fontWeight: '800', color: '#777', fontSize: 'clamp(14px, 3.5vw, 20px)' }}>{m.name}</span>
                 </div>
               ))}
             </div>

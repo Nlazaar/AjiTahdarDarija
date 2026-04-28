@@ -23,8 +23,9 @@ export default function LevelSelectionPage() {
       display: 'flex', 
       flexDirection: 'column', 
       alignItems: 'center', 
-      minHeight: '100vh', 
-      width: '100vw', 
+      minHeight: '100vh',
+      width: '100%',
+      overflowX: 'hidden',
       backgroundColor: ONBOARDING_BG,
       fontFamily: '"Nunito", "Inter", sans-serif'
     }}>
