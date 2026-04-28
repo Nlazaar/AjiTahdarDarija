@@ -12,7 +12,7 @@ const ITEMS = [
   { href: '/review',      icon: 'أ',  label: 'Lettres'   },
   { href: '/practice',    icon: '🏋️', label: 'Entraîner' },
   { href: '/leaderboard', icon: '🛡️', label: 'Ligues'    },
-  { href: '/profile',     icon: '👤', label: 'Profil'    },
+  { href: '/plus',        icon: '⋯',  label: 'Plus'      },
 ];
 
 export default function BottomNav() {
@@ -20,6 +20,15 @@ export default function BottomNav() {
   const { progress } = useUserProgress();
 
   const isCours = pathname === '/cours' || pathname === '/progress' || pathname?.startsWith('/progress/');
+  const isPlus  = pathname === '/plus' || pathname?.startsWith('/plus/')
+    || pathname === '/profile'
+    || pathname === '/revision' || pathname?.startsWith('/revision/')
+    || pathname === '/duels' || pathname === '/friends'
+    || pathname === '/alphabet'
+    || pathname === '/quests' || pathname === '/conversation'
+    || pathname === '/abonnement' || pathname === '/aide'
+    || pathname === '/settings'
+    || pathname?.startsWith('/decouverte/');
   const hasQuestDot = progress.quetes.some(q => q.current < q.total);
 
   return (
@@ -31,8 +40,13 @@ export default function BottomNav() {
       paddingBottom: 'env(safe-area-inset-bottom)',
     }}>
       {ITEMS.map(item => {
-        const isActive = item.href === '/progress' ? isCours : pathname === item.href;
-        const hasDot   = item.href === '/practice' && progress.streak === 0;
+        const isActive = item.href === '/progress'
+          ? isCours
+          : item.href === '/plus'
+            ? isPlus
+            : pathname === item.href;
+        const hasDot   = (item.href === '/practice' && progress.streak === 0)
+          || (item.href === '/plus' && hasQuestDot);
         return (
           <Link
             key={item.href}
@@ -50,7 +64,7 @@ export default function BottomNav() {
             }}
           >
             <span style={{
-              fontSize: item.icon === 'أ' ? 20 : 22,
+              fontSize: item.icon === 'أ' ? 20 : item.icon === '⋯' ? 26 : 22,
               fontFamily: item.icon === 'أ' ? 'var(--font-amiri), serif' : undefined,
               fontWeight: 900,
               color: isActive ? '#58cc02' : '#6b7f8a',

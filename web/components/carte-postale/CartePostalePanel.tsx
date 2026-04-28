@@ -42,7 +42,7 @@ function lessonDotStyle(status: NodeStatus): React.CSSProperties {
   }
 }
 
-export default function CartePostalePanel() {
+export default function CartePostalePanel({ inline = false }: { inline?: boolean } = {}) {
   const postcard = useCurrentPostcard();
   const [celebrating, setCelebrating] = useState(false);
   const prevAllCompletedRef = useRef<{ id: string; allCompleted: boolean } | null>(null);
@@ -99,10 +99,18 @@ export default function CartePostalePanel() {
     hintBg = `${unite.colorA}1a`;
   }
 
-  return (
-    <aside
-      className="hidden xl:flex"
-      style={{
+  const wrapperClassName = inline ? 'flex' : 'hidden xl:flex';
+  const wrapperStyle: React.CSSProperties = inline
+    ? {
+        width: '100%',
+        maxWidth: PANEL_WIDTH,
+        margin: '0 auto',
+        padding: '0 12px 24px',
+        flexDirection: 'column',
+        gap: 14,
+        backgroundColor: 'var(--c-bg)',
+      }
+    : {
         position: 'fixed',
         top: 0,
         left: 260,
@@ -114,7 +122,12 @@ export default function CartePostalePanel() {
         backgroundColor: 'var(--c-bg)',
         overflowY: 'auto',
         zIndex: 90,
-      }}
+      };
+
+  return (
+    <aside
+      className={wrapperClassName}
+      style={wrapperStyle}
     >
       {/* ── Header ── */}
       <div
