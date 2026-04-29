@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 
 /* ── Quest definitions (static) ───────────────────────────────────────────── */
@@ -82,13 +82,13 @@ export class QuestsService {
     const date      = todayStr();
     const yearMonth = currentYearMonth();
     const def       = DAILY_QUEST_DEFS.find(d => d.key === questKey);
-    if (!def) throw new Error('Quest not found');
+    if (!def) throw new NotFoundException('Quest not found');
 
     const row = await this.prisma.dailyQuestProgress.findUnique({
       where: { userId_date_questKey: { userId, date, questKey } },
     });
-    if (!row || !row.completed) throw new Error('Quest not completed');
-    if (row.claimedAt)          throw new Error('Already claimed');
+    if (!row || !row.completed) throw new BadRequestException('Quest not completed');
+    if (row.claimedAt)          throw new BadRequestException('Already claimed');
 
     // Mark as claimed
     await this.prisma.dailyQuestProgress.update({
@@ -102,19 +102,28 @@ export class QuestsService {
       data:  { gemmes: { increment: def.reward } },
     });
 
+    // S'assurer que la row monthly existe avant l'incrément (la row ne se
+    // crée que via ensureMonthly, qui n'est appelée que par getQuestState).
+    // Si l'utilisateur claim sans avoir jamais ouvert la page /quests
+    // pendant ce mois-ci, la row n'existerait pas et l'incrément serait
+    // silencieusement skip → questsDone resterait à 0.
+    await this.ensureMonthly(userId, yearMonth);
+
     // Increment monthly count
     const monthly = await this.prisma.monthlyQuestProgress.findUnique({
       where: { userId_yearMonth: { userId, yearMonth } },
     });
+    let monthlyJustCompleted = false;
     if (monthly) {
       const newDone = monthly.questsDone + 1;
       const completed = newDone >= monthly.questsTarget;
+      monthlyJustCompleted = completed && !monthly.completed;
       await this.prisma.monthlyQuestProgress.update({
         where: { userId_yearMonth: { userId, yearMonth } },
         data:  { questsDone: newDone, completed },
       });
       // If monthly quest just completed, award bonus
-      if (completed && !monthly.completed) {
+      if (monthlyJustCompleted) {
         await this.prisma.user.update({
           where: { id: userId },
           data:  { gemmes: { increment: 500 } },
@@ -122,7 +131,11 @@ export class QuestsService {
       }
     }
 
-    return { success: true, gemmesEarned: def.reward };
+    return {
+      success: true,
+      gemmesEarned: def.reward + (monthlyJustCompleted ? 500 : 0),
+      monthlyCompleted: monthlyJustCompleted,
+    };
   }
 
   /* ── Called from LessonsService on submit ───────────────────────────────── */
